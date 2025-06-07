@@ -1,0 +1,13 @@
+# Developing the right mindset for this book
+
+One very important characteristic that the reader should bring to this book is a can-do spirit. There will be many places where the going will get tough, and the reader will have to slow down and play around with the material, or refresh their understanding of arithmetic or middle-school algebra. The basic principles of such a can-do spirit are nicely summarized in the book by Burger and Starbird (2012); also see Levy (2021). Although we cannot summarize all the insights from these books in a few words, inspired by the Burger and Starbird (2012) book, here is a short enumeration of the kind of mindset the reader will need to cultivate:
+
+Spend time on the basic, apparently easy material; make sure you understand it deeply. Look for gaps in your understanding. Reading different presentations of the same material (in different books or articles) can yield new insights.
+Let mistakes and errors be your teacher. We instinctively recoil from our mistakes, but errors are ultimately our friends; they have the potential to teach us more than our correct answers can. In this sense, a correct solution can be less interesting than an incorrect one.
+When you are intimidated by some exercise or problem, give up and admit defeat immediately. This relaxes the mind; you’ve already given up, there’s nothing more to do. Then, after a while, try to solve a simpler version of the problem. Sometimes, it is useful to break the problem down to smaller parts, each of which may be easier to solve.
+Create your own questions. Don’t wait to be asked questions; develop your own problems and then try to solve them.
+Don’t expect to understand everything in the first pass. Just mentally note the gaps in your understanding, and return to them later and work on these gaps.
+Step back periodically to try to sketch out a broader picture of what you are learning. Writing down what you know, without looking up anything, is one helpful way to achieve this. Don’t wait for the teacher to give you bullet-point summaries of what you should have learned; develop such summaries yourself.
+Develop the art of finding information. When confronted with something you don’t know, or with some obscure error message, use google to find some answers.
+Do not hesitate to re-read a chapter; often, one only understands a topic after one revisits the material.
+As instructors, we have noticed over the years that students with such a mindset generally do very well. Some students already have that spirit, but others need to explicitly develop it. We firmly believe that everyone can develop such a mindset, but one may have to work on acquiring it. In any case, such an attitude is necessary for a book of this sort.

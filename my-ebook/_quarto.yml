@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "my-ebook"
+  author: "Parmeshvar"
+  date: "7/6/2025"
+  
+  chapters:
+    - part: Preface
+      chapters:
+        - why-read.qmd
+        - Developing.qmd
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+

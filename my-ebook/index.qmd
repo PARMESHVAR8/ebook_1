@@ -1,0 +1,7 @@
+# introduction
+
+The central idea we will explore in this book is how to use Bayes’ theorem to quantify uncertainty about our belief regarding a scientific question of interest, given some data. Before we delve into the details of the underlying theory and its application, it is important to have some familiarity with the following topics: basic concepts of probability, the concept of random variables, probability distributions, and the concept of likelihood. Therefore, we will begin with these topics.
+
+Some of these concepts might seem abstract at first, but they are very relevant for conducting a Bayesian analysis. When reading this book for the first time, it might be helpful to do a quick pass through this chapter and return to it as needed while progressing through the rest of the book.
+
+

@@ -1,0 +1,16 @@
+# Why Read This Book?
+
+This book is intended for MSc Chemistry students who want to develop a deep understanding of core chemistry concepts.
+
+## Target Audience
+
+- MSc Chemistry students
+- Advanced undergraduate students
+- Anyone preparing for competitive exams involving Chemistry
+
+## What Will You Learn?
+
+- Conceptual clarity in acid-base theory
+- Buffers and equilibrium
+- Spectroscopy fundamentals
+- Statistical mechanics basics
