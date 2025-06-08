@@ -4,7 +4,67 @@
     "href": "index.html",
     "title": "my-ebook",
     "section": "",
-    "text": "1 introduction\nThe central idea we will explore in this book is how to use Bayes’ theorem to quantify uncertainty about our belief regarding a scientific question of interest, given some data. Before we delve into the details of the underlying theory and its application, it is important to have some familiarity with the following topics: basic concepts of probability, the concept of random variables, probability distributions, and the concept of likelihood. Therefore, we will begin with these topics.\nSome of these concepts might seem abstract at first, but they are very relevant for conducting a Bayesian analysis. When reading this book for the first time, it might be helpful to do a quick pass through this chapter and return to it as needed while progressing through the rest of the book.",
+    "text": "1 introduction\nProfessor, Dept. of Linguistics, University of Potsdam, 14476 Potsdam, Germany\nSpeaker, Language Cluster, Cognitive Science\nPhone: +49-(0)331-977-2950\nFax: - 2087\nEmail: vasishth at uni-potsdam.de\nGPG public key\nOrcid ID\nGoogle Scholar\nGitHub\nBitbucket\nStatistics Blog\nVasishth Lab Blog\nDoing a PhD with me: README.1st\nBack to home page",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction-what-this-course-is-about",
+    "href": "index.html#introduction-what-this-course-is-about",
+    "title": "my-ebook",
+    "section": "2.1 Introduction: What this course is about",
+    "text": "2.1 Introduction: What this course is about\nThis course provides an introduction to Bayesian data analysis using the probabilistic programming language Stan.\nWe will use a front end software package called brms.\nThis course is for:\n\nMSc Linguistics (MM5, MM6)\nMSc Cognitive Systems\nMSc Cognitive Science\n\nPlease see the PULS FAQs to find out how the sign-up system works (in German).\nWe will be using the software R and RStudio, so make sure you install these on your computer.\nTopics to be covered:\n\nBasic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)\nUsing Bayes’ rule for statistical inference\nAn introduction to (generalized) linear models\nAn introduction to hierarchical models\nMeasurement error models\nMixture models\nModel selection and hypothesis testing (Bayes factor and k-fold cross-validation)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#times-location",
+    "href": "index.html#times-location",
+    "title": "my-ebook",
+    "section": "2.2 Times, location",
+    "text": "2.2 Times, location\nAt Golm campus, Potsdam:\nSeminar: Wednesdays 10:15-11:45AM, II.14.009\nÜbung: Mondays 14:15-15:45AM, II.14.009 (Haus 14 ground floor)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#lecture-notes",
+    "href": "index.html#lecture-notes",
+    "title": "my-ebook",
+    "section": "2.3 Lecture notes",
+    "text": "2.3 Lecture notes\nDownload from here.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#homework",
+    "href": "index.html#homework",
+    "title": "my-ebook",
+    "section": "2.4 Homework",
+    "text": "2.4 Homework\nDetails to be provided.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "my-ebook",
+    "section": "2.5 Grading",
+    "text": "2.5 Grading\nDetails to be provided.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#moodle-website",
+    "href": "index.html#moodle-website",
+    "title": "my-ebook",
+    "section": "2.6 Moodle website",
+    "text": "2.6 Moodle website\nAll communications with students in Potsdam will be done through this website.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
     ]

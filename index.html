@@ -166,6 +166,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> introduction</a></li>
+  <li><a href="#bayesian-linear-modeling-winter-semesters-msc-programs" id="toc-bayesian-linear-modeling-winter-semesters-msc-programs" class="nav-link" data-scroll-target="#bayesian-linear-modeling-winter-semesters-msc-programs"><span class="header-section-number">2</span> Bayesian Linear Modeling (Winter Semesters, MSc programs)</a>
+  <ul class="collapse">
+  <li><a href="#introduction-what-this-course-is-about" id="toc-introduction-what-this-course-is-about" class="nav-link" data-scroll-target="#introduction-what-this-course-is-about"><span class="header-section-number">2.1</span> Introduction: What this course is about</a></li>
+  <li><a href="#times-location" id="toc-times-location" class="nav-link" data-scroll-target="#times-location"><span class="header-section-number">2.2</span> Times, location</a></li>
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes"><span class="header-section-number">2.3</span> Lecture notes</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework"><span class="header-section-number">2.4</span> Homework</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading"><span class="header-section-number">2.5</span> Grading</a></li>
+  <li><a href="#moodle-website" id="toc-moodle-website" class="nav-link" data-scroll-target="#moodle-website"><span class="header-section-number">2.6</span> Moodle website</a></li>
+  </ul></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule"><span class="header-section-number">3</span> Schedule</a></li>
   </ul>
 </nav>
     </div>
@@ -205,8 +215,181 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> introduction</h1>
-<p>The central idea we will explore in this book is how to use Bayes’ theorem to quantify uncertainty about our belief regarding a scientific question of interest, given some data. Before we delve into the details of the underlying theory and its application, it is important to have some familiarity with the following topics: basic concepts of probability, the concept of random variables, probability distributions, and the concept of likelihood. Therefore, we will begin with these topics.</p>
-<p>Some of these concepts might seem abstract at first, but they are very relevant for conducting a Bayesian analysis. When reading this book for the first time, it might be helpful to do a quick pass through this chapter and return to it as needed while progressing through the rest of the book.</p>
+<p><strong>Professor</strong>, <a href="http://www.ling.uni-potsdam.de/en/">Dept. of Linguistics</a>, <a href="http://www.uni-potsdam.de/en/university-of-potsdam.html">University of Potsdam</a>, 14476 Potsdam, Germany<br>
+<strong>Speaker</strong>, <a href="http://www.uni-potsdam.de/humfak/hum-forschungsschwerpunkte/forschungscluster-sprache.html">Language Cluster</a>, <a href="http://www.uni-potsdam.de/humfak/hum-exzellenzbereich.html">Cognitive Science</a></p>
+<p>Phone: +49-(0)331-977-2950<br>
+Fax: - 2087<br>
+Email: vasishth at uni-potsdam.de</p>
+<p><a href="http://www.ling.uni-potsdam.de/~vasishth/GPGkey/shravanvasishthpublickey.txt"><strong>GPG public key</strong></a><br>
+<a href="http://orcid.org/0000-0003-2027-1994">Orcid ID</a><br>
+<a href="https://scholar.google.de/citations?user=HdcXwdUAAAAJ&amp;hl=en">Google Scholar</a><br>
+<a href="https://github.com/vasishth">GitHub</a><br>
+<a href="https://bitbucket.org/vasishth">Bitbucket</a><br>
+<a href="http://vasishth-statistics.blogspot.de/">Statistics Blog</a><br>
+<a href="http://vasishthlab.blogspot.de/">Vasishth Lab Blog</a></p>
+<p><strong>Doing a PhD with me:</strong> <a href="http://www.ling.uni-potsdam.de/~vasishth/doingaphdwithme.html">README.1st</a></p>
+<p><a href="http://www.ling.uni-potsdam.de/~vasishth/index.html">Back to home page</a></p>
+<hr>
+</section>
+<section id="bayesian-linear-modeling-winter-semesters-msc-programs" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Bayesian Linear Modeling (Winter Semesters, MSc programs)</h1>
+<section id="introduction-what-this-course-is-about" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction-what-this-course-is-about"><span class="header-section-number">2.1</span> Introduction: What this course is about</h2>
+<p>This course provides an introduction to Bayesian data analysis using the probabilistic programming language <strong>Stan</strong>.<br>
+We will use a front end software package called <strong>brms</strong>.</p>
+<p>This course is for:</p>
+<ul>
+<li>MSc Linguistics (MM5, MM6)</li>
+<li>MSc Cognitive Systems</li>
+<li>MSc Cognitive Science</li>
+</ul>
+<p>Please see the <a href="http://stud.astaup.de/~linguistik/doku.php?id=puls-faq">PULS FAQs</a> to find out how the sign-up system works (in German).</p>
+<p>We will be using the software <a href="http://cran.r-project.org/">R</a> and <a href="https://www.rstudio.com/">RStudio</a>, so make sure you install these on your computer.</p>
+<p>Topics to be covered:</p>
+<ol type="1">
+<li>Basic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)</li>
+<li>Using Bayes’ rule for statistical inference</li>
+<li>An introduction to (generalized) linear models</li>
+<li>An introduction to hierarchical models</li>
+<li>Measurement error models</li>
+<li>Mixture models</li>
+<li>Model selection and hypothesis testing (Bayes factor and k-fold cross-validation)</li>
+</ol>
+</section>
+<section id="times-location" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="times-location"><span class="header-section-number">2.2</span> Times, location</h2>
+<p>At Golm campus, Potsdam:<br>
+<strong>Seminar:</strong> Wednesdays 10:15-11:45AM, II.14.009<br>
+<strong>Übung:</strong> Mondays 14:15-15:45AM, II.14.009 (Haus 14 ground floor)</p>
+</section>
+<section id="lecture-notes" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="lecture-notes"><span class="header-section-number">2.3</span> Lecture notes</h2>
+<p>Download from <a href="https://osf.io/jhu47/">here</a>.</p>
+</section>
+<section id="homework" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="homework"><span class="header-section-number">2.4</span> Homework</h2>
+<p>Details to be provided.</p>
+</section>
+<section id="grading" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="grading"><span class="header-section-number">2.5</span> Grading</h2>
+<p>Details to be provided.</p>
+</section>
+<section id="moodle-website" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="moodle-website"><span class="header-section-number">2.6</span> Moodle website</h2>
+<p>All communications with students in Potsdam will be done through <a href="https://moodle2.uni-potsdam.de/course/view.php?id=17526">this website</a>.</p>
+</section>
+</section>
+<section id="schedule" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Schedule</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 47%">
+<col style="width: 10%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lecture</th>
+<th>Topic</th>
+<th>Reading</th>
+<th>HW</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(1) Oct 15</td>
+<td>no class</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>(2) Oct 17 + 22</td>
+<td>Foundations I</td>
+<td></td>
+<td>HW 1</td>
+</tr>
+<tr class="odd">
+<td>(3) Oct 24 + 29</td>
+<td>Foundations II</td>
+<td></td>
+<td>HW 2</td>
+</tr>
+<tr class="even">
+<td>(4) Oct 31 + Nov 5</td>
+<td>Introduction to Bayesian data analysis I</td>
+<td></td>
+<td>HW 3</td>
+</tr>
+<tr class="odd">
+<td>(5) Nov 7 + 12</td>
+<td>Introduction to Bayesian data analysis II</td>
+<td></td>
+<td>HW 4</td>
+</tr>
+<tr class="even">
+<td>(6) Nov 14 + 19</td>
+<td>Linear models I</td>
+<td></td>
+<td>HW 5</td>
+</tr>
+<tr class="odd">
+<td>(7) Nov 21 + 26</td>
+<td>Linear models II</td>
+<td></td>
+<td>HW 6</td>
+</tr>
+<tr class="even">
+<td>(8) Nov 28 + Dec 3</td>
+<td>Hierarchical linear models I</td>
+<td></td>
+<td>HW 7</td>
+</tr>
+<tr class="odd">
+<td>(9) Dec 5 + 10</td>
+<td>Hierarchical linear models II</td>
+<td></td>
+<td>HW 8</td>
+</tr>
+<tr class="even">
+<td>(10) Dec 12 + 17</td>
+<td>Hierarchical linear models III</td>
+<td></td>
+<td>HW 9</td>
+</tr>
+<tr class="odd">
+<td>(11) Jan 7</td>
+<td>Review</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>(12) Jan 9 + 14</td>
+<td>Measurement error models</td>
+<td></td>
+<td>HW 10</td>
+</tr>
+<tr class="odd">
+<td>(13) Jan 16 + 21</td>
+<td>(Hierarchical) Mixture models</td>
+<td></td>
+<td>HW 11</td>
+</tr>
+<tr class="even">
+<td>(14) Jan 23 + 28</td>
+<td>Bayesian workflow</td>
+<td></td>
+<td>HW 12</td>
+</tr>
+<tr class="odd">
+<td>(15) Jan 30 + Feb 4</td>
+<td>Model selection and hypothesis testing</td>
+<td></td>
+<td>HW 13</td>
+</tr>
+</tbody>
+</table>
+<hr>
 
 
 </section>
