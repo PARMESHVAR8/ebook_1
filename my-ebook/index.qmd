@@ -1,7 +1,117 @@
-# introduction
+---
+title: "Introduction"
+author: "Parmeshvar"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+---
 
-The central idea we will explore in this book is how to use Bayes’ theorem to quantify uncertainty about our belief regarding a scientific question of interest, given some data. Before we delve into the details of the underlying theory and its application, it is important to have some familiarity with the following topics: basic concepts of probability, the concept of random variables, probability distributions, and the concept of likelihood. Therefore, we will begin with these topics.
+# Introduction
 
-Some of these concepts might seem abstract at first, but they are very relevant for conducting a Bayesian analysis. When reading this book for the first time, it might be helpful to do a quick pass through this chapter and return to it as needed while progressing through the rest of the book.
+**DR.Harsh Pradhan**, [Phone: +91-9930034241 , Email: harsh.231284\@gmail.com](http://www.ling.uni-potsdam.de/en/), [Institute of Management Studies, Banaras Hindu University](http://www.uni-potsdam.de/en/university-of-potsdam.html), Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\
+**Interest**: [Goal Orientation     Job Performance     Consumer Behavior     Behavioral Finance     Bibiliometric Analysis     Options as Derivatives     Statistics     Indian Knowledge System](http://www.uni-potsdam.de/humfak/hum-forschungsschwerpunkte/forschungscluster-sprache.html),
 
 
+
+
+[Orcid ID](https://orcid.org/0000-0002-3332-3610)\
+[Google Scholar](https://scholar.google.com/citations?user=8l5MEd0AAAAJ&hl=en&oi=sra)\
+[GitHub](https://github.com/)\
+[Researcher ID](https://www.webofscience.com/wos/author/record/AIB)\
+[Personal Website](http://https//sites.google.com/view/harshpradhan/home%20%20,%20%20%20%20%20shorturl.at/yzQSX)\
+[Youtube ID](http://www.youtube.com/@dr.harshpradhan742)
+
+**Doing a PhD with me:** [README.1st](http://www.ling.uni-potsdam.de/~vasishth/doingaphdwithme.html)
+
+[Academic Profile](https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562)
+
+------------------------------------------------------------------------
+
+# Bayesian data analysis for cognitive science
+
+## Introduction: What this course is about
+
+This course provides an introduction to Bayesian data analysis using the probabilistic programming language **Stan**.\
+We will use a front end software package called **brms**.
+
+This course is for:
+
+-   Linguistics (MM5, MM6)
+-   Cognitive Systems
+-   Cognitive Science
+
+Please see the [PULS FAQs](http://stud.astaup.de/~linguistik/doku.php?id=puls-faq) to find out how the sign-up system works (in German).
+
+We will be using the software [R](http://cran.r-project.org/) and [RStudio](https://www.rstudio.com/), so make sure you install these on your computer.
+
+Topics to be covered:
+
+1.  Basic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)
+2.  Using Bayes' rule for statistical inference
+3.  An introduction to (generalized) linear models
+4.  An introduction to hierarchical models
+5.  Measurement error models
+6.  Mixture models
+7.  Model selection and hypothesis testing (Bayes factor and k-fold cross-validation)
+
+## Teaching
+Science and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.
+Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis.
+Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here
+Introduction to (frequentist) statistics
+Introduction to Bayesian data analysis for cognitive science
+BDA cover
+
+
+## Lecture notes
+
+Download from [here](https://drive.google.com/drive/folders/1H-jQNOqS3PLgdXADRYF7ag-WqN_tK4qc?usp=share_link).
+
+## Moodle website
+
+All communications with students in Potsdam will be done through [this website](https://moodle2.uni-potsdam.de/course/view.php?id=17526).
+
+# Schedule
+| **Week** | **Lecture** | **Main Topic**                 | **Sub Topic**                    | **Video**                          | **PDF Resource**                      |
+|----------|-------------|--------------------------------|----------------------------------|------------------------------------|---------------------------------------|
+| Jan 30 + Feb 4 | -     | Model Selection & Hypothesis Testing | -                          | -                                  | [HW 13](#)                             |
+| Week 2   | 1           | Descriptive Statistics         | Central Tendency                | [Link](#)                          | [Week 2.pdf](#)                        |
+|          | 2           | Descriptive Statistics         | Measure of Variability          | [Link](#)                          | [Week 2.pdf](#)                        |
+|          | 3           | Descriptive Statistics         | Describing Data                 | [Link](#)                          | [Week 2.pdf](#)                        |
+|          | 4           | Probability                    | -                                | [Link](#)                          | [Week 2.pdf](#)                        |
+|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 2.pdf](#)                        |
+| Week 3   | 1           | Probability                    | Z Table (Normal Distribution)   | [Link](#)                          | [Week 3.pdf](#)                        |
+|          | 2           | Divergence                     | Measuring Divergence            | [Link](#)                          | [Week 3.pdf](#)                        |
+|          | 3           | Inferential Statistics         | Sample and Population           | [Link](#)                          | [Week 3.pdf](#)                        |
+|          | 4           | Model Fit                      | -                                | [Link](#)                          | [Week 3.pdf](#)                        |
+|          | 5           | Hypothesis Testing             | Hypothesis and Error            | [Link](#)                          | [Week 3.pdf](#)                        |
+| Week 4   | 1           | Statistical Terms              | Terms of Statistics             | [Link](#)                          | [Week 4.pdf](#)                        |
+|          | 2           | Hypothesis Testing             | T-Test                          | [Link](#)                          | [Week 4.pdf](#)                        |
+|          | 3           | Hypothesis Testing             | T-Test in Detail                | [Link](#)                          | [Week 4.pdf](#)                        |
+|          | 4           | ANOVA                          | ANOVA                           | [Link](#)                          | [Week 4.pdf](#)                        |
+| Week 5   | 1           | ANOVA                          | Example of ANOVA                | [Link](#)                          | [Week 5.pdf](#)                        |
+|          | 2           | ANOVA                          | Types of ANOVA                  | [Link](#)                          | [Week 5.pdf](#)                        |
+|          | 3           | Correlation                    | Introduction to Correlation     | [Link](#)                          | [Week 5.pdf](#)                        |
+|          | 4           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](#)                        |
+|          | 5           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](#)                        |
+| Week 6   | 1           | Regression                     | R Script for Regression         | [Link](#)                          | [Week 6.pdf](#)                        |
+|          | 2           | Chi-Square                     | Chi Square                      | [Link](#)                          | [Week 6.pdf](#)                        |
+|          | 3           | Chi-Square                     | Chi Square Test                 | [Link](#)                          | [Week 6.pdf](#)                        |
+|          | 4           | Logistic Regression            | Logistic Function               | [Link](#)                          | [Week 6.pdf](#)                        |
+|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 6.pdf](#)                        |
+| Week 7   | 1           | Time Series                    | Intro to Time Series            | [Link](#)                          | [Week 7.pdf](#)                        |
+|          | 2           | Probability                    | Conditional Probability         | [Link](#)                          | [Week 7.pdf](#)                        |
+|          | 3           | Additional Concepts            | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
+|          | 4           | Distribution                   | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
+|          | 5           | Poisson Distribution           | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
+| Week 8   | 1           | Libraries & Documentation      | Effect Size and Packages        | [Link](#)                          | [Week 8.pdf](#)                        |
+|          | 2           | Software Comparison            | RStudio vs RKward               | [Link](#)                          | [Week 8.pdf](#)                        |
+|          | 3           | Visualization                  | Flexplot                        | [Link](#)                          | [Week 8.pdf](#)                        |
+|          | 4           | Programming in R               | Functions                       | [Link](#)                          | [Week 8.pdf](#)                        |
+|          | 5           | R Tools                        | R Shiny and R Markdown          | [Link](#)                          | [Week 8.pdf](#)                        |
+
+------------------------------------------------------------------------

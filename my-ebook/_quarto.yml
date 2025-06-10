@@ -5,13 +5,13 @@ book:
   title: "my-ebook"
   author: "Parmeshvar"
   date: "7/6/2025"
-  
+
   chapters:
+    - index.qmd  # ← This MUST be the first chapter
     - part: Preface
       chapters:
         - why-read.qmd
         - Developing.qmd
-    - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
@@ -26,5 +26,5 @@ format:
   pdf:
     documentclass: scrreprt
 
-
-
+publish:
+  site-url: https://parmeshvar8.github.io/ebook_1

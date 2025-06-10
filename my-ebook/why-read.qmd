@@ -4,10 +4,7 @@ This book is intended for MSc Chemistry students who want to develop a deep unde
 
 ## Target Audience
 
-- MSc Chemistry students
-- Advanced undergraduate students
-- Anyone preparing for competitive exams involving Chemistry
-
+- 
 ## What Will You Learn?
 
 - Conceptual clarity in acid-base theory
