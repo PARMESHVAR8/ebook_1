@@ -50,186 +50,153 @@
     ]
   },
   {
-    "objectID": "why-read.html",
-    "href": "why-read.html",
-    "title": "2  Why Read This Book?",
-    "section": "",
-    "text": "2.1 Target Audience\nThis book is intended for MSc Chemistry students who want to develop a deep understanding of core chemistry concepts.",
-    "crumbs": [
-      "Preface",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Why Read This Book?</span>"
-    ]
-  },
-  {
-    "objectID": "why-read.html#target-audience",
-    "href": "why-read.html#target-audience",
-    "title": "2  Why Read This Book?",
-    "section": "2.2 What Will You Learn?",
-    "text": "2.2 What Will You Learn?\nConceptual clarity in acid-base theory\nBuffers and equilibrium\nSpectroscopy fundamentals\nStatistical mechanics basics",
-    "crumbs": [
-      "Preface",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Why Read This Book?</span>"
-    ]
-  },
-  {
-    "objectID": "Developing.html",
-    "href": "Developing.html",
-    "title": "3  Developing the right mindset for this book",
-    "section": "",
-    "text": "One very important characteristic that the reader should bring to this book is a can-do spirit. There will be many places where the going will get tough, and the reader will have to slow down and play around with the material, or refresh their understanding of arithmetic or middle-school algebra. The basic principles of such a can-do spirit are nicely summarized in the book by Burger and Starbird (2012); also see Levy (2021). Although we cannot summarize all the insights from these books in a few words, inspired by the Burger and Starbird (2012) book, here is a short enumeration of the kind of mindset the reader will need to cultivate:\nSpend time on the basic, apparently easy material; make sure you understand it deeply. Look for gaps in your understanding. Reading different presentations of the same material (in different books or articles) can yield new insights. Let mistakes and errors be your teacher. We instinctively recoil from our mistakes, but errors are ultimately our friends; they have the potential to teach us more than our correct answers can. In this sense, a correct solution can be less interesting than an incorrect one. When you are intimidated by some exercise or problem, give up and admit defeat immediately. This relaxes the mind; you’ve already given up, there’s nothing more to do. Then, after a while, try to solve a simpler version of the problem. Sometimes, it is useful to break the problem down to smaller parts, each of which may be easier to solve. Create your own questions. Don’t wait to be asked questions; develop your own problems and then try to solve them. Don’t expect to understand everything in the first pass. Just mentally note the gaps in your understanding, and return to them later and work on these gaps. Step back periodically to try to sketch out a broader picture of what you are learning. Writing down what you know, without looking up anything, is one helpful way to achieve this. Don’t wait for the teacher to give you bullet-point summaries of what you should have learned; develop such summaries yourself. Develop the art of finding information. When confronted with something you don’t know, or with some obscure error message, use google to find some answers. Do not hesitate to re-read a chapter; often, one only understands a topic after one revisits the material. As instructors, we have noticed over the years that students with such a mindset generally do very well. Some students already have that spirit, but others need to explicitly develop it. We firmly believe that everyone can develop such a mindset, but one may have to work on acquiring it. In any case, such an attitude is necessary for a book of this sort.",
-    "crumbs": [
-      "Preface",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Developing the right mindset for this book</span>"
-    ]
-  },
-  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "4  intro",
+    "title": "2  intro",
     "section": "",
     "text": "hfbv idfvdh hdbfvhjsf bhdbfv hsdbfsd sdfbs efnkj dfvsdgvf dvfsdh",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>intro</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>intro</span>"
     ]
   },
   {
     "objectID": "lec_1.html",
     "href": "lec_1.html",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
     "section": "",
-    "text": "6 📘 Basic Statistics Using GUI-R (RKWard)\nCourse Module: Week 01 – Lecture 1\nTopic: Introduction to Statistics\nInstructor: Dr. Harsh Pradhan\nInstitute: Institute of Management Studies, BHU\nFaculty Profile",
+    "text": "4 📘 Basic Statistics Using GUI-R (RKWard)\nCourse Module: Week 01 – Lecture 1\nTopic: Introduction to Statistics\nInstructor: Dr. Harsh Pradhan\nInstitute: Institute of Management Studies, BHU\nFaculty Profile",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#lecture-agenda",
     "href": "lec_1.html#lecture-agenda",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.1 🎯 Lecture Agenda",
-    "text": "6.1 🎯 Lecture Agenda\n\nMeaning and Scope of Statistics\n\nStatistics vs. Mathematics\n\nNature of Statistics\n\nUses of Statistics\n\nLimitations\n\nMisuse & Fallacies\n\nReferences",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.1 🎯 Lecture Agenda",
+    "text": "4.1 🎯 Lecture Agenda\n\nMeaning and Scope of Statistics\n\nStatistics vs. Mathematics\n\nNature of Statistics\n\nUses of Statistics\n\nLimitations\n\nMisuse & Fallacies\n\nReferences",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#prerequisites",
     "href": "lec_1.html#prerequisites",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.2 🧠 Prerequisites",
-    "text": "6.2 🧠 Prerequisites\n\nJust an open and eager mind\n\nNo prior expertise in mathematics or programming required",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.2 🧠 Prerequisites",
+    "text": "4.2 🧠 Prerequisites\n\nJust an open and eager mind\n\nNo prior expertise in mathematics or programming required",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#mathematics-vs-statistics",
     "href": "lec_1.html#mathematics-vs-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.3 📐 Mathematics vs Statistics",
-    "text": "6.3 📐 Mathematics vs Statistics\n\n\n\n\n\n\n\n\nAspect\nMathematics\nStatistics\n\n\n\n\nNature\nAbstract, theoretical\nApplied, practical\n\n\nFocus\nConceptual reasoning, proofs\nReal-world data analysis and inference\n\n\nTools\nFormal structures, theorems\nHypothesis testing, probability, regression\n\n\nGoal\nUnderstand abstract relationships\nEnable decisions and predictions using data",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.3 📐 Mathematics vs Statistics",
+    "text": "4.3 📐 Mathematics vs Statistics\n\n\n\n\n\n\n\n\nAspect\nMathematics\nStatistics\n\n\n\n\nNature\nAbstract, theoretical\nApplied, practical\n\n\nFocus\nConceptual reasoning, proofs\nReal-world data analysis and inference\n\n\nTools\nFormal structures, theorems\nHypothesis testing, probability, regression\n\n\nGoal\nUnderstand abstract relationships\nEnable decisions and predictions using data",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#what-is-statistics",
     "href": "lec_1.html#what-is-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.4 🔍 What is Statistics?",
-    "text": "6.4 🔍 What is Statistics?\n\n“A science that provides tools for the analysis and interpretation of raw data to support decision-making.”\n\nIt involves: - Collection of data\n- Classification of facts\n- Tabulation and analysis\n- Drawing conclusions and predictions\nKey Terms: - Population\n- Sample\n- Parameter\n- Statistic",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.4 🔍 What is Statistics?",
+    "text": "4.4 🔍 What is Statistics?\n\n“A science that provides tools for the analysis and interpretation of raw data to support decision-making.”\n\nIt involves: - Collection of data\n- Classification of facts\n- Tabulation and analysis\n- Drawing conclusions and predictions\nKey Terms: - Population\n- Sample\n- Parameter\n- Statistic",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#nature-of-statistics",
     "href": "lec_1.html#nature-of-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.5 🌐 Nature of Statistics",
-    "text": "6.5 🌐 Nature of Statistics\nStatistics enables: - Observation and measurement of phenomena\n- Classification and organization of facts\n- Analysis and comparison of outcomes\n- Interpretation and prediction\n- Aiding scientific inquiry",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.5 🌐 Nature of Statistics",
+    "text": "4.5 🌐 Nature of Statistics\nStatistics enables: - Observation and measurement of phenomena\n- Classification and organization of facts\n- Analysis and comparison of outcomes\n- Interpretation and prediction\n- Aiding scientific inquiry",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#uses-of-statistics",
     "href": "lec_1.html#uses-of-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.6 🛠 Uses of Statistics",
-    "text": "6.6 🛠 Uses of Statistics\n\nDrawing and analyzing representative samples\n\nDescribing and summarizing data\n\nInterpreting data to understand behaviors or trends\n\nComparing groups or individuals\n\nPredicting outcomes\n\nAssessing relationships (causation or association)\n\n\nApplications include: Psychology, education, market research, HR development, scientific studies, and social research.",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.6 🛠 Uses of Statistics",
+    "text": "4.6 🛠 Uses of Statistics\n\nDrawing and analyzing representative samples\n\nDescribing and summarizing data\n\nInterpreting data to understand behaviors or trends\n\nComparing groups or individuals\n\nPredicting outcomes\n\nAssessing relationships (causation or association)\n\n\nApplications include: Psychology, education, market research, HR development, scientific studies, and social research.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#prediction-inference",
     "href": "lec_1.html#prediction-inference",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.7 🔮 Prediction & Inference",
-    "text": "6.7 🔮 Prediction & Inference\n\nMaking future predictions based on current trends\n\nExploring relationships between variables\n\nEstimating probabilities and errors\n\nInferring causality or association",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.7 🔮 Prediction & Inference",
+    "text": "4.7 🔮 Prediction & Inference\n\nMaking future predictions based on current trends\n\nExploring relationships between variables\n\nEstimating probabilities and errors\n\nInferring causality or association",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#limitations-of-statistics",
     "href": "lec_1.html#limitations-of-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.8 ⚠ Limitations of Statistics",
-    "text": "6.8 ⚠ Limitations of Statistics\n\n“Statistics is powerful but not absolute.”\n\n\nNot suitable for qualitative data (e.g., emotions, happiness)\n\nDoes not study individuals (only aggregates)\n\nStatistical laws are not exact\n\nCannot be applied indiscriminately\n\nCorrelation does not imply causation\n\nCan be misused",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.8 ⚠ Limitations of Statistics",
+    "text": "4.8 ⚠ Limitations of Statistics\n\n“Statistics is powerful but not absolute.”\n\n\nNot suitable for qualitative data (e.g., emotions, happiness)\n\nDoes not study individuals (only aggregates)\n\nStatistical laws are not exact\n\nCannot be applied indiscriminately\n\nCorrelation does not imply causation\n\nCan be misused",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#misuse-of-statistics",
     "href": "lec_1.html#misuse-of-statistics",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.9 ❌ Misuse of Statistics",
-    "text": "6.9 ❌ Misuse of Statistics\n\nBiased samples (e.g., choosing only top students to prove teaching effectiveness)\n\nUnexpected or unfair comparisons\n\nMisleading graphs or data visualizations",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.9 ❌ Misuse of Statistics",
+    "text": "4.9 ❌ Misuse of Statistics\n\nBiased samples (e.g., choosing only top students to prove teaching effectiveness)\n\nUnexpected or unfair comparisons\n\nMisleading graphs or data visualizations",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#common-fallacies-in-statistical-studies",
     "href": "lec_1.html#common-fallacies-in-statistical-studies",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.10 ⚠ Common Fallacies in Statistical Studies",
-    "text": "6.10 ⚠ Common Fallacies in Statistical Studies\n\nImproper data collection\n\nUnclear definitions of terms\n\nInconsistent units of measurement\n\nFaulty classification\n\nIncorrect statistical methods\n\nInvalid comparisons",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.10 ⚠ Common Fallacies in Statistical Studies",
+    "text": "4.10 ⚠ Common Fallacies in Statistical Studies\n\nImproper data collection\n\nUnclear definitions of terms\n\nInconsistent units of measurement\n\nFaulty classification\n\nIncorrect statistical methods\n\nInvalid comparisons",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#references",
     "href": "lec_1.html#references",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.11 📚 References",
-    "text": "6.11 📚 References\n\nB1: Mohanty, B., & Misra, S. (2016). Statistics for Behavioural and Social Sciences\n\nB2: Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). Statistical Analysis in Simple Steps Using R\n\nB3: Field, A. P., Miles, J., & Field, Z. (2012). Discovering Statistics Using R\n\nB4: Harris, J. K. (2019). Statistics with R: Solving Problems Using Real-World Data, SAGE",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.11 📚 References",
+    "text": "4.11 📚 References\n\nB1: Mohanty, B., & Misra, S. (2016). Statistics for Behavioural and Social Sciences\n\nB2: Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). Statistical Analysis in Simple Steps Using R\n\nB3: Field, A. P., Miles, J., & Field, Z. (2012). Discovering Statistics Using R\n\nB4: Harris, J. K. (2019). Statistics with R: Solving Problems Using Real-World Data, SAGE",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "lec_1.html#whats-next",
     "href": "lec_1.html#whats-next",
-    "title": "5  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.12 🖥 What’s Next?",
-    "text": "6.12 🖥 What’s Next?\nIn the next lecture: - Introduction to RKWard GUI\n- Installation and setup\n- Transition from traditional statistics to software-based analytics\nExplore: https://rkward.kde.org",
+    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "section": "4.12 🖥 What’s Next?",
+    "text": "4.12 🖥 What’s Next?\nIn the next lecture: - Introduction to RKWard GUI\n- Installation and setup\n- Transition from traditional statistics to software-based analytics\nExplore: https://rkward.kde.org",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "6  summary",
+    "title": "4  summary",
     "section": "",
     "text": "This is summary file . 10 june .",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>summary</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>summary</span>"
     ]
   }
 ]

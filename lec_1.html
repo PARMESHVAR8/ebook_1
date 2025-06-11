@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Harsh Pradhan">
 
-<title>5&nbsp; Basic Statistics Using GUI-R (RKWard) – my-ebook</title>
+<title>3&nbsp; Basic Statistics Using GUI-R (RKWard) – my-ebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -83,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec_1.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec_1.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,45 +115,22 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Preface</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./why-read.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Why Read This Book?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Developing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Developing the right mindset for this book</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">intro</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lec_1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -171,20 +149,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#basic-statistics-using-gui-r-rkward" id="toc-basic-statistics-using-gui-r-rkward" class="nav-link active" data-scroll-target="#basic-statistics-using-gui-r-rkward"><span class="header-section-number">6</span> 📘 Basic Statistics Using GUI-R (RKWard)</a>
+  <li><a href="#basic-statistics-using-gui-r-rkward" id="toc-basic-statistics-using-gui-r-rkward" class="nav-link active" data-scroll-target="#basic-statistics-using-gui-r-rkward"><span class="header-section-number">4</span> 📘 Basic Statistics Using GUI-R (RKWard)</a>
   <ul class="collapse">
-  <li><a href="#lecture-agenda" id="toc-lecture-agenda" class="nav-link" data-scroll-target="#lecture-agenda"><span class="header-section-number">6.1</span> 🎯 Lecture Agenda</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="header-section-number">6.2</span> 🧠 Prerequisites</a></li>
-  <li><a href="#mathematics-vs-statistics" id="toc-mathematics-vs-statistics" class="nav-link" data-scroll-target="#mathematics-vs-statistics"><span class="header-section-number">6.3</span> 📐 Mathematics vs Statistics</a></li>
-  <li><a href="#what-is-statistics" id="toc-what-is-statistics" class="nav-link" data-scroll-target="#what-is-statistics"><span class="header-section-number">6.4</span> 🔍 What is Statistics?</a></li>
-  <li><a href="#nature-of-statistics" id="toc-nature-of-statistics" class="nav-link" data-scroll-target="#nature-of-statistics"><span class="header-section-number">6.5</span> 🌐 Nature of Statistics</a></li>
-  <li><a href="#uses-of-statistics" id="toc-uses-of-statistics" class="nav-link" data-scroll-target="#uses-of-statistics"><span class="header-section-number">6.6</span> 🛠 Uses of Statistics</a></li>
-  <li><a href="#prediction-inference" id="toc-prediction-inference" class="nav-link" data-scroll-target="#prediction-inference"><span class="header-section-number">6.7</span> 🔮 Prediction &amp; Inference</a></li>
-  <li><a href="#limitations-of-statistics" id="toc-limitations-of-statistics" class="nav-link" data-scroll-target="#limitations-of-statistics"><span class="header-section-number">6.8</span> ⚠ Limitations of Statistics</a></li>
-  <li><a href="#misuse-of-statistics" id="toc-misuse-of-statistics" class="nav-link" data-scroll-target="#misuse-of-statistics"><span class="header-section-number">6.9</span> ❌ Misuse of Statistics</a></li>
-  <li><a href="#common-fallacies-in-statistical-studies" id="toc-common-fallacies-in-statistical-studies" class="nav-link" data-scroll-target="#common-fallacies-in-statistical-studies"><span class="header-section-number">6.10</span> ⚠ Common Fallacies in Statistical Studies</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.11</span> 📚 References</a></li>
-  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next"><span class="header-section-number">6.12</span> 🖥 What’s Next?</a></li>
+  <li><a href="#lecture-agenda" id="toc-lecture-agenda" class="nav-link" data-scroll-target="#lecture-agenda"><span class="header-section-number">4.1</span> 🎯 Lecture Agenda</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="header-section-number">4.2</span> 🧠 Prerequisites</a></li>
+  <li><a href="#mathematics-vs-statistics" id="toc-mathematics-vs-statistics" class="nav-link" data-scroll-target="#mathematics-vs-statistics"><span class="header-section-number">4.3</span> 📐 Mathematics vs Statistics</a></li>
+  <li><a href="#what-is-statistics" id="toc-what-is-statistics" class="nav-link" data-scroll-target="#what-is-statistics"><span class="header-section-number">4.4</span> 🔍 What is Statistics?</a></li>
+  <li><a href="#nature-of-statistics" id="toc-nature-of-statistics" class="nav-link" data-scroll-target="#nature-of-statistics"><span class="header-section-number">4.5</span> 🌐 Nature of Statistics</a></li>
+  <li><a href="#uses-of-statistics" id="toc-uses-of-statistics" class="nav-link" data-scroll-target="#uses-of-statistics"><span class="header-section-number">4.6</span> 🛠 Uses of Statistics</a></li>
+  <li><a href="#prediction-inference" id="toc-prediction-inference" class="nav-link" data-scroll-target="#prediction-inference"><span class="header-section-number">4.7</span> 🔮 Prediction &amp; Inference</a></li>
+  <li><a href="#limitations-of-statistics" id="toc-limitations-of-statistics" class="nav-link" data-scroll-target="#limitations-of-statistics"><span class="header-section-number">4.8</span> ⚠ Limitations of Statistics</a></li>
+  <li><a href="#misuse-of-statistics" id="toc-misuse-of-statistics" class="nav-link" data-scroll-target="#misuse-of-statistics"><span class="header-section-number">4.9</span> ❌ Misuse of Statistics</a></li>
+  <li><a href="#common-fallacies-in-statistical-studies" id="toc-common-fallacies-in-statistical-studies" class="nav-link" data-scroll-target="#common-fallacies-in-statistical-studies"><span class="header-section-number">4.10</span> ⚠ Common Fallacies in Statistical Studies</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.11</span> 📚 References</a></li>
+  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next"><span class="header-section-number">4.12</span> 🖥 What’s Next?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -194,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></h1>
 </div>
 
 
@@ -223,16 +201,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="basic-statistics-using-gui-r-rkward" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> 📘 Basic Statistics Using GUI-R (RKWard)</h1>
+<section id="basic-statistics-using-gui-r-rkward" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 📘 Basic Statistics Using GUI-R (RKWard)</h1>
 <p><em>Course Module</em>: Week 01 – Lecture 1<br>
 <em>Topic</em>: Introduction to Statistics<br>
 <em>Instructor</em>: Dr.&nbsp;Harsh Pradhan<br>
 <em>Institute</em>: Institute of Management Studies, BHU<br>
 <a href="https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562">Faculty Profile</a></p>
 <hr>
-<section id="lecture-agenda" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="lecture-agenda"><span class="header-section-number">6.1</span> 🎯 Lecture Agenda</h2>
+<section id="lecture-agenda" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="lecture-agenda"><span class="header-section-number">4.1</span> 🎯 Lecture Agenda</h2>
 <ul>
 <li>Meaning and Scope of Statistics<br>
 </li>
@@ -250,8 +228,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="prerequisites" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">6.2</span> 🧠 Prerequisites</h2>
+<section id="prerequisites" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">4.2</span> 🧠 Prerequisites</h2>
 <ul>
 <li>Just an open and eager mind<br>
 </li>
@@ -259,8 +237,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="mathematics-vs-statistics" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="mathematics-vs-statistics"><span class="header-section-number">6.3</span> 📐 Mathematics vs Statistics</h2>
+<section id="mathematics-vs-statistics" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="mathematics-vs-statistics"><span class="header-section-number">4.3</span> 📐 Mathematics vs Statistics</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -299,8 +277,8 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <hr>
 </section>
-<section id="what-is-statistics" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="what-is-statistics"><span class="header-section-number">6.4</span> 🔍 What is Statistics?</h2>
+<section id="what-is-statistics" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="what-is-statistics"><span class="header-section-number">4.4</span> 🔍 What is Statistics?</h2>
 <blockquote class="blockquote">
 <p>“A science that provides tools for the analysis and interpretation of raw data to support decision-making.”</p>
 </blockquote>
@@ -314,8 +292,8 @@ ul.task-list li input[type="checkbox"] {
 - <em>Statistic</em></p>
 <hr>
 </section>
-<section id="nature-of-statistics" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="nature-of-statistics"><span class="header-section-number">6.5</span> 🌐 Nature of Statistics</h2>
+<section id="nature-of-statistics" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="nature-of-statistics"><span class="header-section-number">4.5</span> 🌐 Nature of Statistics</h2>
 <p>Statistics enables: - <em>Observation</em> and measurement of phenomena<br>
 - <em>Classification</em> and <em>organization</em> of facts<br>
 - <em>Analysis and comparison</em> of outcomes<br>
@@ -323,8 +301,8 @@ ul.task-list li input[type="checkbox"] {
 - Aiding <em>scientific inquiry</em></p>
 <hr>
 </section>
-<section id="uses-of-statistics" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="uses-of-statistics"><span class="header-section-number">6.6</span> 🛠 Uses of Statistics</h2>
+<section id="uses-of-statistics" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="uses-of-statistics"><span class="header-section-number">4.6</span> 🛠 Uses of Statistics</h2>
 <ul>
 <li>Drawing and analyzing <em>representative samples</em><br>
 </li>
@@ -343,8 +321,8 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <hr>
 </section>
-<section id="prediction-inference" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="prediction-inference"><span class="header-section-number">6.7</span> 🔮 Prediction &amp; Inference</h2>
+<section id="prediction-inference" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="prediction-inference"><span class="header-section-number">4.7</span> 🔮 Prediction &amp; Inference</h2>
 <ul>
 <li>Making <em>future predictions</em> based on current trends<br>
 </li>
@@ -356,8 +334,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="limitations-of-statistics" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="limitations-of-statistics"><span class="header-section-number">6.8</span> ⚠ Limitations of Statistics</h2>
+<section id="limitations-of-statistics" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="limitations-of-statistics"><span class="header-section-number">4.8</span> ⚠ Limitations of Statistics</h2>
 <blockquote class="blockquote">
 <p>“Statistics is powerful but not absolute.”</p>
 </blockquote>
@@ -376,8 +354,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <hr>
 </section>
-<section id="misuse-of-statistics" class="level2" data-number="6.9">
-<h2 data-number="6.9" class="anchored" data-anchor-id="misuse-of-statistics"><span class="header-section-number">6.9</span> ❌ Misuse of Statistics</h2>
+<section id="misuse-of-statistics" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="misuse-of-statistics"><span class="header-section-number">4.9</span> ❌ Misuse of Statistics</h2>
 <ol type="1">
 <li><em>Biased samples</em> (e.g., choosing only top students to prove teaching effectiveness)<br>
 </li>
@@ -387,8 +365,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <hr>
 </section>
-<section id="common-fallacies-in-statistical-studies" class="level2" data-number="6.10">
-<h2 data-number="6.10" class="anchored" data-anchor-id="common-fallacies-in-statistical-studies"><span class="header-section-number">6.10</span> ⚠ Common Fallacies in Statistical Studies</h2>
+<section id="common-fallacies-in-statistical-studies" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="common-fallacies-in-statistical-studies"><span class="header-section-number">4.10</span> ⚠ Common Fallacies in Statistical Studies</h2>
 <ul>
 <li><em>Improper data collection</em><br>
 </li>
@@ -404,8 +382,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="references" class="level2" data-number="6.11">
-<h2 data-number="6.11" class="anchored" data-anchor-id="references"><span class="header-section-number">6.11</span> 📚 References</h2>
+<section id="references" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="references"><span class="header-section-number">4.11</span> 📚 References</h2>
 <ul>
 <li><strong>B1</strong>: Mohanty, B., &amp; Misra, S. (2016). <em>Statistics for Behavioural and Social Sciences</em><br>
 </li>
@@ -417,8 +395,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="whats-next" class="level2" data-number="6.12">
-<h2 data-number="6.12" class="anchored" data-anchor-id="whats-next"><span class="header-section-number">6.12</span> 🖥 What’s Next?</h2>
+<section id="whats-next" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="whats-next"><span class="header-section-number">4.12</span> 🖥 What’s Next?</h2>
 <p>In the next lecture: - Introduction to <em>RKWard GUI</em><br>
 - Installation and setup<br>
 - Transition from traditional statistics to <em>software-based analytics</em></p>
@@ -831,12 +809,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./intro.html" class="pagination-link" aria-label="intro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">intro</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link" aria-label="summary">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
