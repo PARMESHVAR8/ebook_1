@@ -1,0 +1,231 @@
+
+---
+title: "Basic Statistics Using GUI-R (RKWard)"
+subtitle: "Lectures 05 to 11: Foundations of Statistical Thinking"
+author: "Dr. Harsh Pradhan, Institute of Management Studies, BHU"
+format: pdf
+number-sections: true
+toc: true
+---
+
+# 📘 Lecture 05: Essential Math for Statistics
+
+This lecture lays the foundation of mathematical concepts essential to understanding statistics. Topics include coordinate geometry, linear and exponential functions, and basics of calculus.
+
+## 📌 Key Concepts
+
+### 📐 Number Line & Coordinate Geometry
+
+- A number line represents a variable’s values.
+- Cartesian plane: X-axis (independent), Y-axis (dependent).
+- Linear equation: $Y = mX + C$, where:
+  - $m = \frac{Y_2 - Y_1}{X_2 - X_1}$ (slope)
+  - $C$ is the Y-intercept (Y when X = 0)
+
+### 📊 Exponential Functions
+
+- Form: $Y = a^X$ or $Y = e^X$ (where $e \approx 2.718$)
+- Models rapid, nonlinear growth.
+
+### 🧮 Differentiation
+
+- Measures instantaneous rate of change:
+  $$
+  \frac{dY}{dX} = \lim_{h \to 0} \frac{f(X + h) - f(X)}{h}
+  $$
+
+### 📈 Integration
+
+- Calculates area under the curve:
+  $$
+  \bar{X} = \int X \cdot f(X) \, dX
+  $$
+
+---
+
+# 📘 Lecture 06: Measures of Central Tendency
+
+Central tendency summarizes a dataset with a single representative value.
+
+## 📌 Definitions
+
+- **Mean**: Arithmetic average; sensitive to outliers.
+- **Median**: Middle value; robust to outliers.
+- **Mode**: Most frequent value; best for categorical data.
+
+## 🔍 Characteristics
+
+- Simple, uses all values (mean).
+- Median is stable against extreme values.
+- Mode is useful for nominal data.
+
+## 💡 Suitability by Data Type
+
+| Measure | Data Type      |
+|--------|----------------|
+| Mean   | Interval/Ratio |
+| Median | Ordinal        |
+| Mode   | Nominal        |
+
+## 📉 Skewness
+
+- Positive skew: Mean > Median
+- Negative skew: Mean < Median
+
+---
+
+# 📘 Lecture 07: Measures of Variability
+
+Describes the spread of data.
+
+## 📌 Measures
+
+- **Range**: Max - Min
+- **Interquartile Range (IQR)**: $Q_3 - Q_1$
+- **Variance**: Avg. of squared deviations
+- **Standard Deviation (SD)**: $\sqrt{\text{Variance}}$
+- **Coefficient of Variation (CV)**: $\frac{SD}{Mean}$
+
+## 📐 Theoretical Moments
+
+| Moment | Interpretation |
+|--------|----------------|
+| 1st    | Mean           |
+| 2nd    | Variance       |
+| 3rd    | Skewness       |
+| 4th    | Kurtosis       |
+
+---
+
+# 📘 Lecture 08: Mean-Centered & Standardized Data
+
+Transformation techniques for advanced analysis.
+
+## 🧮 Mean-Centering
+
+- Subtract mean from each data point.
+- New mean becomes zero.
+
+## 📊 Standardization (Z-Score)
+
+- Formula: $Z = \frac{X - \mu}{\sigma}$
+- Mean = 0, SD = 1
+- Unitless; allows comparison across distributions.
+
+## 📌 Applications
+
+- Normalize different scales
+- Preprocessing in statistics and ML
+
+---
+
+# 📘 Lecture 09: Introduction to Probability
+
+Foundation of inferential statistics.
+
+## 📌 Key Concepts
+
+- **Experiment**: Controlled process
+- **Event**: Subset of outcomes
+- **Sample Space (S)**: All possible outcomes
+
+## 📈 Basic Rule
+
+- $P(A) = \frac{\text{Favorable outcomes}}{\text{Total outcomes}}$
+
+## 🧠 Properties
+
+- $0 \leq P(A) \leq 1$
+- $P(S) = 1$
+- $P(A^c) = 1 - P(A)$
+- If $A \subseteq B$, then $P(A) \leq P(B)$
+
+## 🧮 Visual Aids
+
+- Venn diagrams
+- Frequency ↔ Probability distribution linkage
+
+---
+
+# 📘 Lecture 10: Distributions & Binomial Distribution
+
+Probability distributions describe variable behavior.
+
+## 🎲 Bernoulli Trials
+
+- Success (p) or failure (1 – p)
+
+## 📊 Binomial Distribution
+
+- $n$ independent trials
+- $$
+  P(X = r) = \binom{n}{r} p^r (1-p)^{n-r}
+  $$
+
+## 📈 Properties
+
+- Mean: $np$
+- Variance: $np(1-p)$
+
+## 🎮 Tools
+
+- Galton board
+- Pascal’s triangle
+
+---
+
+# 📘 Lecture 11: Normal Distribution
+
+Crucial distribution in statistics.
+
+## 📌 Characteristics
+
+- Bell-shaped, symmetric about $\mu$
+- Area under curve = 1
+- Emerges with large samples
+
+## 📉 Equation
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+$$
+
+## 🧮 Z-Score
+
+- $Z = \frac{X - \mu}{\sigma}$
+
+## 🔍 Empirical Rule
+
+| Range        | Coverage |
+|--------------|----------|
+| ±1 SD        | 68%      |
+| ±2 SD        | 95%      |
+| ±3 SD        | 99.7%    |
+
+## 📌 Applications
+
+- Heights, test scores, measurement errors
+
+---
+
+# 📝 Summary
+
+This section builds statistical fundamentals.
+
+## ✨ Topics Recap
+
+- **Math:** Derivatives, integrals, exponential functions
+- **Descriptive Stats:** Central tendency, variability
+- **Transformation:** Z-scores, mean-centering
+- **Probability:** Events, rules, visual tools
+- **Distributions:** From discrete (binomial) to continuous (normal)
+
+---
+
+# 📚 References
+
+1. Galton, F. (1889). *Natural Inheritance.*
+2. Montgomery, D.C., & Runger, G.C. (2014). *Applied Statistics and Probability for Engineers.*
+3. Casella, G., & Berger, R.L. (2002). *Statistical Inference.*
+4. Lecture transcripts by Dr. Harsh Pradhan, IMS-BHU (Week 2, Lectures 05–11)
+5. Course materials and RKWard demonstrations
