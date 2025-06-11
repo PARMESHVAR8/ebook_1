@@ -50,153 +50,73 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "2  intro",
+    "objectID": "introduction-to-statistics.html",
+    "href": "introduction-to-statistics.html",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
     "section": "",
-    "text": "hfbv idfvdh hdbfvhjsf bhdbfv hsdbfsd sdfbs efnkj dfvsdgvf dvfsdh",
+    "text": "3 Chapter 1: Welcome and Course Overview\nThis course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.\nPre-Requisites:",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>intro</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
-    "objectID": "lec_1.html",
-    "href": "lec_1.html",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "",
-    "text": "4 📘 Basic Statistics Using GUI-R (RKWard)\nCourse Module: Week 01 – Lecture 1\nTopic: Introduction to Statistics\nInstructor: Dr. Harsh Pradhan\nInstitute: Institute of Management Studies, BHU\nFaculty Profile",
+    "objectID": "introduction-to-statistics.html#histogram",
+    "href": "introduction-to-statistics.html#histogram",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.1 1. Histogram",
+    "text": "14.1 1. Histogram\n\nDepicts the distribution of a single variable\n\nCan include frequency, relative frequency, and cumulative frequency\n\nBest for understanding where most data points lie",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
-    "objectID": "lec_1.html#lecture-agenda",
-    "href": "lec_1.html#lecture-agenda",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.1 🎯 Lecture Agenda",
-    "text": "4.1 🎯 Lecture Agenda\n\nMeaning and Scope of Statistics\n\nStatistics vs. Mathematics\n\nNature of Statistics\n\nUses of Statistics\n\nLimitations\n\nMisuse & Fallacies\n\nReferences",
+    "objectID": "introduction-to-statistics.html#pie-chart",
+    "href": "introduction-to-statistics.html#pie-chart",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.2 2. Pie Chart",
+    "text": "14.2 2. Pie Chart\n\nRepresents categorical data as slices of a circle\n\nBest when visualizing proportions",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
-    "objectID": "lec_1.html#prerequisites",
-    "href": "lec_1.html#prerequisites",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.2 🧠 Prerequisites",
-    "text": "4.2 🧠 Prerequisites\n\nJust an open and eager mind\n\nNo prior expertise in mathematics or programming required",
+    "objectID": "introduction-to-statistics.html#scatter-plot",
+    "href": "introduction-to-statistics.html#scatter-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.3 3. Scatter Plot",
+    "text": "14.3 3. Scatter Plot\n\nPlots two variables to examine relationships\n\nX-axis: Independent variable\n\nY-axis: Dependent variable\n\nUseful in exploring associations or potential causality",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
-    "objectID": "lec_1.html#mathematics-vs-statistics",
-    "href": "lec_1.html#mathematics-vs-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.3 📐 Mathematics vs Statistics",
-    "text": "4.3 📐 Mathematics vs Statistics\n\n\n\n\n\n\n\n\nAspect\nMathematics\nStatistics\n\n\n\n\nNature\nAbstract, theoretical\nApplied, practical\n\n\nFocus\nConceptual reasoning, proofs\nReal-world data analysis and inference\n\n\nTools\nFormal structures, theorems\nHypothesis testing, probability, regression\n\n\nGoal\nUnderstand abstract relationships\nEnable decisions and predictions using data",
+    "objectID": "introduction-to-statistics.html#box-plot",
+    "href": "introduction-to-statistics.html#box-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.4 4. Box Plot",
+    "text": "14.4 4. Box Plot\n\nShows data distribution via quartiles\n\nMedian, interquartile range (IQR), and outliers are clearly indicated\n\nUseful for comparing multiple variables",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
-    "objectID": "lec_1.html#what-is-statistics",
-    "href": "lec_1.html#what-is-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.4 🔍 What is Statistics?",
-    "text": "4.4 🔍 What is Statistics?\n\n“A science that provides tools for the analysis and interpretation of raw data to support decision-making.”\n\nIt involves: - Collection of data\n- Classification of facts\n- Tabulation and analysis\n- Drawing conclusions and predictions\nKey Terms: - Population\n- Sample\n- Parameter\n- Statistic",
+    "objectID": "introduction-to-statistics.html#density-plot",
+    "href": "introduction-to-statistics.html#density-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.5 5. Density Plot",
+    "text": "14.5 5. Density Plot\n\nSmoothed version of a histogram\n\nBetter suited for continuous data with decimal variation\n\nKey Tips:\n\nJP_01 was frequently used as an example variable\n\nRKWard allows saving and exporting plots easily\n\nGUI menus guide the user through plot creation\n\n\nAlways choose the plot type that best matches your data and goal: frequency, relationship, or comparison.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#nature-of-statistics",
-    "href": "lec_1.html#nature-of-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.5 🌐 Nature of Statistics",
-    "text": "4.5 🌐 Nature of Statistics\nStatistics enables: - Observation and measurement of phenomena\n- Classification and organization of facts\n- Analysis and comparison of outcomes\n- Interpretation and prediction\n- Aiding scientific inquiry",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#uses-of-statistics",
-    "href": "lec_1.html#uses-of-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.6 🛠 Uses of Statistics",
-    "text": "4.6 🛠 Uses of Statistics\n\nDrawing and analyzing representative samples\n\nDescribing and summarizing data\n\nInterpreting data to understand behaviors or trends\n\nComparing groups or individuals\n\nPredicting outcomes\n\nAssessing relationships (causation or association)\n\n\nApplications include: Psychology, education, market research, HR development, scientific studies, and social research.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#prediction-inference",
-    "href": "lec_1.html#prediction-inference",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.7 🔮 Prediction & Inference",
-    "text": "4.7 🔮 Prediction & Inference\n\nMaking future predictions based on current trends\n\nExploring relationships between variables\n\nEstimating probabilities and errors\n\nInferring causality or association",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#limitations-of-statistics",
-    "href": "lec_1.html#limitations-of-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.8 ⚠ Limitations of Statistics",
-    "text": "4.8 ⚠ Limitations of Statistics\n\n“Statistics is powerful but not absolute.”\n\n\nNot suitable for qualitative data (e.g., emotions, happiness)\n\nDoes not study individuals (only aggregates)\n\nStatistical laws are not exact\n\nCannot be applied indiscriminately\n\nCorrelation does not imply causation\n\nCan be misused",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#misuse-of-statistics",
-    "href": "lec_1.html#misuse-of-statistics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.9 ❌ Misuse of Statistics",
-    "text": "4.9 ❌ Misuse of Statistics\n\nBiased samples (e.g., choosing only top students to prove teaching effectiveness)\n\nUnexpected or unfair comparisons\n\nMisleading graphs or data visualizations",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#common-fallacies-in-statistical-studies",
-    "href": "lec_1.html#common-fallacies-in-statistical-studies",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.10 ⚠ Common Fallacies in Statistical Studies",
-    "text": "4.10 ⚠ Common Fallacies in Statistical Studies\n\nImproper data collection\n\nUnclear definitions of terms\n\nInconsistent units of measurement\n\nFaulty classification\n\nIncorrect statistical methods\n\nInvalid comparisons",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#references",
-    "href": "lec_1.html#references",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.11 📚 References",
-    "text": "4.11 📚 References\n\nB1: Mohanty, B., & Misra, S. (2016). Statistics for Behavioural and Social Sciences\n\nB2: Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). Statistical Analysis in Simple Steps Using R\n\nB3: Field, A. P., Miles, J., & Field, Z. (2012). Discovering Statistics Using R\n\nB4: Harris, J. K. (2019). Statistics with R: Solving Problems Using Real-World Data, SAGE",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "lec_1.html#whats-next",
-    "href": "lec_1.html#whats-next",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.12 🖥 What’s Next?",
-    "text": "4.12 🖥 What’s Next?\nIn the next lecture: - Introduction to RKWard GUI\n- Installation and setup\n- Transition from traditional statistics to software-based analytics\nExplore: https://rkward.kde.org",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  summary",
+    "title": "3  summary",
     "section": "",
     "text": "This is summary file . 10 june .",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>summary</span>"
     ]
   }
 ]

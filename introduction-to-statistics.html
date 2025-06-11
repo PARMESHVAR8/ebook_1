@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Harsh Pradhan">
+<meta name="author" content="Dr.&nbsp;Harsh Pradhan, Institute of Management Studies, BHU">
 
-<title>3&nbsp; Basic Statistics Using GUI-R (RKWard) – my-ebook</title>
+<title>2&nbsp; Introduction to Basic Statistics Using GUI-R (RKWard) – my-ebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./summary.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec_1.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction-to-statistics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Basic Statistics Using GUI-R (RKWard)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -117,26 +152,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lec_1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></span></a>
+  <a href="./introduction-to-statistics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Basic Statistics Using GUI-R (RKWard)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">summary</span></span></a>
   </div>
 </li>
     </ul>
@@ -149,21 +172,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#basic-statistics-using-gui-r-rkward" id="toc-basic-statistics-using-gui-r-rkward" class="nav-link active" data-scroll-target="#basic-statistics-using-gui-r-rkward"><span class="header-section-number">4</span> 📘 Basic Statistics Using GUI-R (RKWard)</a>
+  <li><a href="#chapter-1-welcome-and-course-overview" id="toc-chapter-1-welcome-and-course-overview" class="nav-link active" data-scroll-target="#chapter-1-welcome-and-course-overview"><span class="header-section-number">3</span> Chapter 1: Welcome and Course Overview</a></li>
+  <li><a href="#chapter-2-agenda-and-orientation" id="toc-chapter-2-agenda-and-orientation" class="nav-link" data-scroll-target="#chapter-2-agenda-and-orientation"><span class="header-section-number">4</span> Chapter 2: Agenda and Orientation</a></li>
+  <li><a href="#chapter-3-meaning-and-nature-of-statistics" id="toc-chapter-3-meaning-and-nature-of-statistics" class="nav-link" data-scroll-target="#chapter-3-meaning-and-nature-of-statistics"><span class="header-section-number">5</span> Chapter 3: Meaning and Nature of Statistics</a></li>
+  <li><a href="#chapter-4-applications-and-uses" id="toc-chapter-4-applications-and-uses" class="nav-link" data-scroll-target="#chapter-4-applications-and-uses"><span class="header-section-number">6</span> Chapter 4: Applications and Uses</a></li>
+  <li><a href="#chapter-5-limitations-and-misuse" id="toc-chapter-5-limitations-and-misuse" class="nav-link" data-scroll-target="#chapter-5-limitations-and-misuse"><span class="header-section-number">7</span> Chapter 5: Limitations and Misuse</a></li>
+  <li><a href="#chapter-6-paper-based-vs.-software-based-statistics" id="toc-chapter-6-paper-based-vs.-software-based-statistics" class="nav-link" data-scroll-target="#chapter-6-paper-based-vs.-software-based-statistics"><span class="header-section-number">8</span> Chapter 6: Paper-Based vs.&nbsp;Software-Based Statistics</a></li>
+  <li><a href="#chapter-7-introduction-to-variables-and-spreadsheets" id="toc-chapter-7-introduction-to-variables-and-spreadsheets" class="nav-link" data-scroll-target="#chapter-7-introduction-to-variables-and-spreadsheets"><span class="header-section-number">9</span> Chapter 7: Introduction to Variables and Spreadsheets</a></li>
+  <li><a href="#chapter-8-r-and-gui-interfaces" id="toc-chapter-8-r-and-gui-interfaces" class="nav-link" data-scroll-target="#chapter-8-r-and-gui-interfaces"><span class="header-section-number">10</span> Chapter 8: R and GUI Interfaces</a></li>
+  <li><a href="#chapter-9-importing-data-and-understanding-data-types" id="toc-chapter-9-importing-data-and-understanding-data-types" class="nav-link" data-scroll-target="#chapter-9-importing-data-and-understanding-data-types"><span class="header-section-number">11</span> Chapter 9: Importing Data and Understanding Data Types</a></li>
+  <li><a href="#chapter-10-statistical-data-types" id="toc-chapter-10-statistical-data-types" class="nav-link" data-scroll-target="#chapter-10-statistical-data-types"><span class="header-section-number">12</span> Chapter 10: Statistical Data Types</a></li>
+  <li><a href="#chapter-11-data-preparation-in-rkward" id="toc-chapter-11-data-preparation-in-rkward" class="nav-link" data-scroll-target="#chapter-11-data-preparation-in-rkward"><span class="header-section-number">13</span> Chapter 11: Data Preparation in RKWard</a></li>
+  <li><a href="#chapter-12-visualizing-data-with-plots-in-rkward" id="toc-chapter-12-visualizing-data-with-plots-in-rkward" class="nav-link" data-scroll-target="#chapter-12-visualizing-data-with-plots-in-rkward"><span class="header-section-number">14</span> Chapter 12: Visualizing Data with Plots in RKWard</a>
   <ul class="collapse">
-  <li><a href="#lecture-agenda" id="toc-lecture-agenda" class="nav-link" data-scroll-target="#lecture-agenda"><span class="header-section-number">4.1</span> 🎯 Lecture Agenda</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="header-section-number">4.2</span> 🧠 Prerequisites</a></li>
-  <li><a href="#mathematics-vs-statistics" id="toc-mathematics-vs-statistics" class="nav-link" data-scroll-target="#mathematics-vs-statistics"><span class="header-section-number">4.3</span> 📐 Mathematics vs Statistics</a></li>
-  <li><a href="#what-is-statistics" id="toc-what-is-statistics" class="nav-link" data-scroll-target="#what-is-statistics"><span class="header-section-number">4.4</span> 🔍 What is Statistics?</a></li>
-  <li><a href="#nature-of-statistics" id="toc-nature-of-statistics" class="nav-link" data-scroll-target="#nature-of-statistics"><span class="header-section-number">4.5</span> 🌐 Nature of Statistics</a></li>
-  <li><a href="#uses-of-statistics" id="toc-uses-of-statistics" class="nav-link" data-scroll-target="#uses-of-statistics"><span class="header-section-number">4.6</span> 🛠 Uses of Statistics</a></li>
-  <li><a href="#prediction-inference" id="toc-prediction-inference" class="nav-link" data-scroll-target="#prediction-inference"><span class="header-section-number">4.7</span> 🔮 Prediction &amp; Inference</a></li>
-  <li><a href="#limitations-of-statistics" id="toc-limitations-of-statistics" class="nav-link" data-scroll-target="#limitations-of-statistics"><span class="header-section-number">4.8</span> ⚠ Limitations of Statistics</a></li>
-  <li><a href="#misuse-of-statistics" id="toc-misuse-of-statistics" class="nav-link" data-scroll-target="#misuse-of-statistics"><span class="header-section-number">4.9</span> ❌ Misuse of Statistics</a></li>
-  <li><a href="#common-fallacies-in-statistical-studies" id="toc-common-fallacies-in-statistical-studies" class="nav-link" data-scroll-target="#common-fallacies-in-statistical-studies"><span class="header-section-number">4.10</span> ⚠ Common Fallacies in Statistical Studies</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.11</span> 📚 References</a></li>
-  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next"><span class="header-section-number">4.12</span> 🖥 What’s Next?</a></li>
+  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">14.1</span> 1. Histogram</a></li>
+  <li><a href="#pie-chart" id="toc-pie-chart" class="nav-link" data-scroll-target="#pie-chart"><span class="header-section-number">14.2</span> 2. Pie Chart</a></li>
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot"><span class="header-section-number">14.3</span> 3. Scatter Plot</a></li>
+  <li><a href="#box-plot" id="toc-box-plot" class="nav-link" data-scroll-target="#box-plot"><span class="header-section-number">14.4</span> 4. Box Plot</a></li>
+  <li><a href="#density-plot" id="toc-density-plot" class="nav-link" data-scroll-target="#density-plot"><span class="header-section-number">14.5</span> 5. Density Plot</a></li>
   </ul></li>
+  <li><a href="#chapter-13-summary" id="toc-chapter-13-summary" class="nav-link" data-scroll-target="#chapter-13-summary"><span class="header-section-number">15</span> Chapter 13: Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">16</span> References</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps"><span class="header-section-number">17</span> Next Steps</a></li>
   </ul>
 </nav>
     </div>
@@ -172,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Statistics Using GUI-R (RKWard)</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Basic Statistics Using GUI-R (RKWard)</span></h1>
 </div>
 
 
@@ -182,16 +212,10 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Harsh Pradhan </p>
+             <p>Dr.&nbsp;Harsh Pradhan, Institute of Management Studies, BHU </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
-    </div>
-  </div>
   
     
   </div>
@@ -201,209 +225,416 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="basic-statistics-using-gui-r-rkward" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> 📘 Basic Statistics Using GUI-R (RKWard)</h1>
-<p><em>Course Module</em>: Week 01 – Lecture 1<br>
-<em>Topic</em>: Introduction to Statistics<br>
-<em>Instructor</em>: Dr.&nbsp;Harsh Pradhan<br>
-<em>Institute</em>: Institute of Management Studies, BHU<br>
-<a href="https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562">Faculty Profile</a></p>
-<hr>
-<section id="lecture-agenda" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="lecture-agenda"><span class="header-section-number">4.1</span> 🎯 Lecture Agenda</h2>
+<section id="chapter-1-welcome-and-course-overview" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Chapter 1: Welcome and Course Overview</h1>
+<p>This course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.</p>
+<p><strong>Pre-Requisites:</strong></p>
 <ul>
-<li>Meaning and Scope of Statistics<br>
+<li>Curiosity<br>
 </li>
-<li>Statistics vs.&nbsp;Mathematics<br>
+<li>Basic awareness of numbers<br>
 </li>
-<li>Nature of Statistics<br>
-</li>
-<li>Uses of Statistics<br>
-</li>
-<li>Limitations<br>
-</li>
-<li>Misuse &amp; Fallacies<br>
-</li>
-<li>References</li>
+<li>No fear of statistics or software</li>
 </ul>
-<hr>
+<blockquote class="blockquote">
+<p>“Aapko darne ki zarurat nahi hai… simple understanding aapko statistics ki data ki aage milegi.”</p>
+</blockquote>
 </section>
-<section id="prerequisites" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">4.2</span> 🧠 Prerequisites</h2>
+<section id="chapter-2-agenda-and-orientation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Chapter 2: Agenda and Orientation</h1>
+<p><strong>Key Themes:</strong></p>
 <ul>
-<li>Just an open and eager mind<br>
+<li>Difference between Mathematics and Statistics<br>
 </li>
-<li>No prior expertise in mathematics or programming required</li>
+<li>Nature, Meaning, and Role of Statistics<br>
+</li>
+<li>Uses, Limitations, and Common Fallacies</li>
 </ul>
-<hr>
-</section>
-<section id="mathematics-vs-statistics" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="mathematics-vs-statistics"><span class="header-section-number">4.3</span> 📐 Mathematics vs Statistics</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
-<col style="width: 44%">
-<col style="width: 44%">
+<col style="width: 13%">
+<col style="width: 32%">
+<col style="width: 53%">
 </colgroup>
 <thead>
 <tr class="header">
-<th><em>Aspect</em></th>
-<th><em>Mathematics</em></th>
-<th><em>Statistics</em></th>
+<th>Aspect</th>
+<th>Mathematics</th>
+<th>Statistics</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Nature</td>
 <td>Abstract, theoretical</td>
-<td>Applied, practical</td>
+<td>Applied, data-centric</td>
 </tr>
 <tr class="even">
 <td>Focus</td>
-<td>Conceptual reasoning, proofs</td>
-<td>Real-world data analysis and inference</td>
+<td>Concepts, theorems, proofs</td>
+<td>Tools, interpretation, decision-making</td>
 </tr>
 <tr class="odd">
 <td>Tools</td>
-<td>Formal structures, theorems</td>
-<td>Hypothesis testing, probability, regression</td>
+<td>Logical reasoning, algebra</td>
+<td>Hypothesis testing, regression, probability</td>
 </tr>
 <tr class="even">
-<td>Goal</td>
-<td>Understand abstract relationships</td>
-<td>Enable decisions and predictions using data</td>
+<td>Application</td>
+<td>General structures</td>
+<td>Real-world problems</td>
 </tr>
 </tbody>
 </table>
-<hr>
 </section>
-<section id="what-is-statistics" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="what-is-statistics"><span class="header-section-number">4.4</span> 🔍 What is Statistics?</h2>
-<blockquote class="blockquote">
-<p>“A science that provides tools for the analysis and interpretation of raw data to support decision-making.”</p>
-</blockquote>
-<p>It involves: - <em>Collection</em> of data<br>
-- <em>Classification</em> of facts<br>
-- <em>Tabulation</em> and analysis<br>
-- Drawing conclusions and predictions</p>
-<p><strong>Key Terms:</strong> - <em>Population</em><br>
-- <em>Sample</em><br>
-- <em>Parameter</em><br>
-- <em>Statistic</em></p>
-<hr>
-</section>
-<section id="nature-of-statistics" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="nature-of-statistics"><span class="header-section-number">4.5</span> 🌐 Nature of Statistics</h2>
-<p>Statistics enables: - <em>Observation</em> and measurement of phenomena<br>
-- <em>Classification</em> and <em>organization</em> of facts<br>
-- <em>Analysis and comparison</em> of outcomes<br>
-- <em>Interpretation and prediction</em><br>
-- Aiding <em>scientific inquiry</em></p>
-<hr>
-</section>
-<section id="uses-of-statistics" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="uses-of-statistics"><span class="header-section-number">4.6</span> 🛠 Uses of Statistics</h2>
+<section id="chapter-3-meaning-and-nature-of-statistics" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Chapter 3: Meaning and Nature of Statistics</h1>
+<p><strong>Definition:</strong><br>
+Statistics is the science of collecting, analyzing, interpreting, and presenting data for decision-making.</p>
+<p><strong>Core Concepts:</strong></p>
 <ul>
-<li>Drawing and analyzing <em>representative samples</em><br>
+<li>Population &amp; Sample<br>
 </li>
-<li><em>Describing</em> and summarizing data<br>
+<li>Parameter &amp; Statistic<br>
 </li>
-<li><em>Interpreting</em> data to understand behaviors or trends<br>
+<li>Data classification and tabulation</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li>Describe and explain phenomena<br>
 </li>
-<li><em>Comparing</em> groups or individuals<br>
+<li>Interpret and predict outcomes<br>
 </li>
-<li><em>Predicting</em> outcomes<br>
+<li>Facilitate scientific and social inquiry</li>
+</ul>
+</section>
+<section id="chapter-4-applications-and-uses" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Chapter 4: Applications and Uses</h1>
+<p><strong>Main Uses:</strong></p>
+<ul>
+<li>Summarizing observed data<br>
 </li>
-<li><em>Assessing relationships</em> (causation or association)</li>
+<li>Drawing representative samples<br>
+</li>
+<li>Analyzing relationships and trends<br>
+</li>
+<li>Supporting decision-making in fields like marketing, psychology, education, and public health</li>
+</ul>
+<p><strong>Important Concepts:</strong></p>
+<ul>
+<li>Data summarization<br>
+</li>
+<li>Prediction based on patterns<br>
+</li>
+<li>Comparison across groups<br>
+</li>
+<li>Scientific objectivity</li>
+</ul>
+</section>
+<section id="chapter-5-limitations-and-misuse" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Chapter 5: Limitations and Misuse</h1>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Cannot analyze qualitative phenomena<br>
+</li>
+<li>Not designed for individuals<br>
+</li>
+<li>Results aren’t exact<br>
+</li>
+<li>Misinterpretation leads to incorrect conclusions</li>
+</ul>
+<p><strong>Misuse Includes:</strong></p>
+<ul>
+<li>Small or biased samples<br>
+</li>
+<li>Misleading graphs<br>
+</li>
+<li>Invalid comparisons</li>
 </ul>
 <blockquote class="blockquote">
-<p><em>Applications include</em>: Psychology, education, market research, HR development, scientific studies, and social research.</p>
+<p>“Statistics is not a substitute for common sense or understanding the context.”</p>
 </blockquote>
-<hr>
-</section>
-<section id="prediction-inference" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="prediction-inference"><span class="header-section-number">4.7</span> 🔮 Prediction &amp; Inference</h2>
+<p><strong>Fallacies Stem From:</strong></p>
 <ul>
-<li>Making <em>future predictions</em> based on current trends<br>
+<li>Poor data collection<br>
 </li>
-<li><em>Exploring relationships</em> between variables<br>
+<li>Mislabeling variables<br>
 </li>
-<li><em>Estimating probabilities and errors</em><br>
-</li>
-<li><em>Inferring causality or association</em></li>
+<li>Improper classification or selection</li>
 </ul>
-<hr>
 </section>
-<section id="limitations-of-statistics" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="limitations-of-statistics"><span class="header-section-number">4.8</span> ⚠ Limitations of Statistics</h2>
+<section id="chapter-6-paper-based-vs.-software-based-statistics" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Chapter 6: Paper-Based vs.&nbsp;Software-Based Statistics</h1>
+<p>Traditional exams test pen-paper knowledge, but software-based tools like RKWard make analysis:</p>
+<ul>
+<li>Faster<br>
+</li>
+<li>Collaborative<br>
+</li>
+<li>Easier to store and access<br>
+</li>
+<li>Essential for modern data-centric fields like AI and machine learning</li>
+</ul>
+<p>Understanding both paper and digital approaches ensures comprehensive learning.</p>
+</section>
+<section id="chapter-7-introduction-to-variables-and-spreadsheets" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Chapter 7: Introduction to Variables and Spreadsheets</h1>
+<p><strong>Variables:</strong></p>
+<ul>
+<li>Store information (e.g., <code>x = 5</code>)<br>
+</li>
+<li>Have unique names<br>
+</li>
+<li>Can be manipulated with commands (e.g., <code>x = x + 2</code>)</li>
+</ul>
+<p><strong>Spreadsheets:</strong></p>
+<ul>
+<li>Represent tabular data (rows = observations, columns = variables)<br>
+</li>
+<li>Familiar formats: Excel, Google Sheets<br>
+</li>
+<li>Essential in statistical packages</li>
+</ul>
+</section>
+<section id="chapter-8-r-and-gui-interfaces" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Chapter 8: R and GUI Interfaces</h1>
+<p><strong>Why R?:</strong></p>
+<ul>
+<li>Free and open-source<br>
+</li>
+<li>Strong community support<br>
+</li>
+<li>High flexibility<br>
+</li>
+<li>Powerful graphics and data manipulation capabilities</li>
+</ul>
+<p><strong>GUI Tools in R:</strong></p>
+<ul>
+<li>RKWard <em>(used in this course)</em><br>
+</li>
+<li>R Commander<br>
+</li>
+<li>Rattle<br>
+</li>
+<li>R AnalyticFlow</li>
+</ul>
+<p><strong>Basic Terms:</strong></p>
+<ul>
+<li><strong>Console</strong>: Type commands &amp; view outputs<br>
+</li>
+<li><strong>Working Directory</strong>: File storage location<br>
+</li>
+<li><strong>Package</strong>: Predefined or custom functions<br>
+</li>
+<li><strong>Script</strong>: Collection of reusable commands<br>
+</li>
+<li><strong>Workspace</strong>: All current variables/functions</li>
+</ul>
+</section>
+<section id="chapter-9-importing-data-and-understanding-data-types" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Chapter 9: Importing Data and Understanding Data Types</h1>
+<p><strong>Using RKWard:</strong></p>
+<ul>
+<li>Import CSV files using GUI<br>
+</li>
+<li>Data appears in alphabetical order in workspace<br>
+</li>
+<li>Each header = variable name</li>
+</ul>
+<p><strong>Data Structures:</strong></p>
+<ul>
+<li>Data Frames (most commonly used)<br>
+</li>
+<li>Matrices<br>
+</li>
+<li>Vectors<br>
+</li>
+<li>Lists</li>
+</ul>
+<p><strong>Command Line vs GUI:</strong></p>
+<ul>
+<li>Both achieve the same results<br>
+</li>
+<li>GUI is user-friendly, command line is customizable</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(my_csv.data<span class="sc">$</span>JP_01)  <span class="co"># Calculates the mean of variable JP_01</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="chapter-10-statistical-data-types" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Chapter 10: Statistical Data Types</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 63%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Statistical Type</th>
+<th>Description</th>
+<th>R Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>Names, labels (e.g., Male/Female)</td>
+<td>String</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>Order/rank (e.g., 1st, 2nd)</td>
+<td>Factor</td>
+</tr>
+<tr class="odd">
+<td>Interval</td>
+<td>Ordered + meaningful intervals (e.g., tax slabs)</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>Ratio</td>
+<td>Includes absolute zero (e.g., weight)</td>
+<td>Numeric</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Others in R:</strong></p>
+<ul>
+<li>Logical (TRUE/FALSE)<br>
+</li>
+<li>Integer, Complex</li>
+</ul>
 <blockquote class="blockquote">
-<p>“Statistics is powerful but not absolute.”</p>
+<p>Remember: Not all numbers mean quantity. Shirt numbers (like #18) are nominal, not mathematical.</p>
 </blockquote>
+</section>
+<section id="chapter-11-data-preparation-in-rkward" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Chapter 11: Data Preparation in RKWard</h1>
+<ul>
+<li>Data must be properly <strong>typed</strong> (e.g., “1” as number vs “1” as label)<br>
+</li>
+<li>Check alignment: Left = character, Right = number<br>
+</li>
+<li><strong>Labels</strong> help collaborators understand variables<br>
+</li>
+<li>Example: <code>Gender = 1</code> (Male), <code>0</code> (Female)<br>
+</li>
+<li>Must distinguish between numeric calculations and categorical identifiers</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Define each variable with meaning<br>
+</li>
+<li>Validate data types<br>
+</li>
+<li>Store and share workspace for reproducibility</li>
+</ul>
+</section>
+<section id="chapter-12-visualizing-data-with-plots-in-rkward" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Chapter 12: Visualizing Data with Plots in RKWard</h1>
+<p>Data visualization is essential to reveal patterns, trends, and distributions. RKWard offers multiple graphical tools:</p>
+<section id="histogram" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="histogram"><span class="header-section-number">14.1</span> 1. Histogram</h2>
+<ul>
+<li>Depicts the distribution of a single variable<br>
+</li>
+<li>Can include frequency, relative frequency, and cumulative frequency<br>
+</li>
+<li>Best for understanding where most data points lie</li>
+</ul>
+</section>
+<section id="pie-chart" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="pie-chart"><span class="header-section-number">14.2</span> 2. Pie Chart</h2>
+<ul>
+<li>Represents categorical data as slices of a circle<br>
+</li>
+<li>Best when visualizing proportions</li>
+</ul>
+</section>
+<section id="scatter-plot" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="scatter-plot"><span class="header-section-number">14.3</span> 3. Scatter Plot</h2>
+<ul>
+<li>Plots two variables to examine relationships<br>
+</li>
+<li>X-axis: Independent variable<br>
+</li>
+<li>Y-axis: Dependent variable<br>
+</li>
+<li>Useful in exploring associations or potential causality</li>
+</ul>
+</section>
+<section id="box-plot" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="box-plot"><span class="header-section-number">14.4</span> 4. Box Plot</h2>
+<ul>
+<li>Shows data distribution via quartiles<br>
+</li>
+<li>Median, interquartile range (IQR), and outliers are clearly indicated<br>
+</li>
+<li>Useful for comparing multiple variables</li>
+</ul>
+</section>
+<section id="density-plot" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="density-plot"><span class="header-section-number">14.5</span> 5. Density Plot</h2>
+<ul>
+<li>Smoothed version of a histogram<br>
+</li>
+<li>Better suited for continuous data with decimal variation</li>
+</ul>
+<p><strong>Key Tips:</strong></p>
+<ul>
+<li><code>JP_01</code> was frequently used as an example variable<br>
+</li>
+<li>RKWard allows saving and exporting plots easily<br>
+</li>
+<li>GUI menus guide the user through plot creation</li>
+</ul>
+<blockquote class="blockquote">
+<p>Always choose the plot type that best matches your data and goal: frequency, relationship, or comparison.</p>
+</blockquote>
+</section>
+</section>
+<section id="chapter-13-summary" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Chapter 13: Summary</h1>
+<p>This eBook provided a foundation for understanding and applying statistics using the RKWard GUI tool in R. It covered essential concepts from what statistics is, to importing and handling data, understanding types of variables and their measurement levels, and visualizing data using a variety of plots.</p>
+<p>Learners were introduced to:</p>
+<ul>
+<li>Basic statistical principles<br>
+</li>
+<li>Software versus paper-based understanding<br>
+</li>
+<li>Variable types and spreadsheet usage<br>
+</li>
+<li>Command line and GUI-based tools<br>
+</li>
+<li>Data visualization through histogram, pie, scatter, box, and density plots</li>
+</ul>
+<p>The course emphasized <strong>conceptual clarity</strong>, <strong>practical tools</strong>, and the <strong>power of visualization</strong>. It prepares learners to interpret, analyze, and present data meaningfully in academic or real-world contexts.</p>
+</section>
+<section id="references" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> References</h1>
 <ol type="1">
-<li><em>Not suitable for qualitative data</em> (e.g., emotions, happiness)<br>
+<li>Mohanty, B., &amp; Misra, S. (2020). <em>Statistics for Behavioral and Social Sciences</em>. PHI Learning.<br>
 </li>
-<li><em>Does not study individuals</em> (only aggregates)<br>
+<li>Pandya, D., et al.&nbsp;(2019). <em>Statistical Analysis in Simple Steps Using R</em>. Wiley.<br>
 </li>
-<li><em>Statistical laws are not exact</em><br>
+<li>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering Statistics Using R</em>. SAGE Publications.<br>
 </li>
-<li><em>Cannot be applied indiscriminately</em><br>
+<li>Harris, J. (2021). <em>Statistics with R: Solving Problems Using Real-World Data</em>. Pearson.<br>
 </li>
-<li><em>Correlation does not imply causation</em><br>
-</li>
-<li><em>Can be misused</em></li>
+<li>RKWard Project: <a href="https://rkward.kde.org" class="uri">https://rkward.kde.org</a></li>
 </ol>
-<hr>
 </section>
-<section id="misuse-of-statistics" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="misuse-of-statistics"><span class="header-section-number">4.9</span> ❌ Misuse of Statistics</h2>
-<ol type="1">
-<li><em>Biased samples</em> (e.g., choosing only top students to prove teaching effectiveness)<br>
-</li>
-<li><em>Unexpected or unfair comparisons</em><br>
-</li>
-<li><em>Misleading graphs or data visualizations</em></li>
-</ol>
-<hr>
-</section>
-<section id="common-fallacies-in-statistical-studies" class="level2" data-number="4.10">
-<h2 data-number="4.10" class="anchored" data-anchor-id="common-fallacies-in-statistical-studies"><span class="header-section-number">4.10</span> ⚠ Common Fallacies in Statistical Studies</h2>
+<section id="next-steps" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> Next Steps</h1>
+<p>Upcoming lectures will cover:</p>
 <ul>
-<li><em>Improper data collection</em><br>
+<li>Graph creation<br>
 </li>
-<li><em>Unclear definitions of terms</em><br>
+<li>Data visualization tools<br>
 </li>
-<li><em>Inconsistent units of measurement</em><br>
-</li>
-<li><em>Faulty classification</em><br>
-</li>
-<li><em>Incorrect statistical methods</em><br>
-</li>
-<li><em>Invalid comparisons</em></li>
+<li>Advanced statistical operations in GUI</li>
 </ul>
-<hr>
-</section>
-<section id="references" class="level2" data-number="4.11">
-<h2 data-number="4.11" class="anchored" data-anchor-id="references"><span class="header-section-number">4.11</span> 📚 References</h2>
-<ul>
-<li><strong>B1</strong>: Mohanty, B., &amp; Misra, S. (2016). <em>Statistics for Behavioural and Social Sciences</em><br>
-</li>
-<li><strong>B2</strong>: Pandya, K., Joshi, P., Bulsari, S., &amp; Nachane, D. M. (2018). <em>Statistical Analysis in Simple Steps Using R</em><br>
-</li>
-<li><strong>B3</strong>: Field, A. P., Miles, J., &amp; Field, Z. (2012). <em>Discovering Statistics Using R</em><br>
-</li>
-<li><strong>B4</strong>: Harris, J. K. (2019). <em>Statistics with R: Solving Problems Using Real-World Data</em>, SAGE</li>
-</ul>
-<hr>
-</section>
-<section id="whats-next" class="level2" data-number="4.12">
-<h2 data-number="4.12" class="anchored" data-anchor-id="whats-next"><span class="header-section-number">4.12</span> 🖥 What’s Next?</h2>
-<p>In the next lecture: - Introduction to <em>RKWard GUI</em><br>
-- Installation and setup<br>
-- Transition from traditional statistics to <em>software-based analytics</em></p>
-<p>Explore: <a href="https://rkward.kde.org">https://rkward.kde.org</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -808,13 +1039,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="intro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">intro</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link" aria-label="summary">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
