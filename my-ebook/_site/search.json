@@ -1,0 +1,122 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-ebook",
+    "section": "",
+    "text": "1 Introduction\nDR.Harsh Pradhan, Phone: +91-9930034241 , Email: harsh.231284@gmail.com, Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nGitHub\nResearcher ID\nPersonal Website\nYoutube ID\nDoing a PhD with me: README.1st\nAcademic Profile",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction-what-this-course-is-about",
+    "href": "index.html#introduction-what-this-course-is-about",
+    "title": "my-ebook",
+    "section": "2.1 Introduction: What this course is about",
+    "text": "2.1 Introduction: What this course is about\nThis course provides an introduction to Bayesian data analysis using the probabilistic programming language Stan.\nWe will use a front end software package called brms.\nThis course is for:\n\nLinguistics (MM5, MM6)\nCognitive Systems\nCognitive Science\n\nPlease see the PULS FAQs to find out how the sign-up system works (in German).\nWe will be using the software R and RStudio, so make sure you install these on your computer.\nTopics to be covered:\n\nBasic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)\nUsing Bayes’ rule for statistical inference\nAn introduction to (generalized) linear models\nAn introduction to hierarchical models\nMeasurement error models\nMixture models\nModel selection and hypothesis testing (Bayes factor and k-fold cross-validation)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "my-ebook",
+    "section": "2.2 Teaching",
+    "text": "2.2 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science. Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis. Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here Introduction to (frequentist) statistics Introduction to Bayesian data analysis for cognitive science BDA cover",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#lecture-notes",
+    "href": "index.html#lecture-notes",
+    "title": "my-ebook",
+    "section": "2.3 Lecture notes",
+    "text": "2.3 Lecture notes\nDownload from here.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#moodle-website",
+    "href": "index.html#moodle-website",
+    "title": "my-ebook",
+    "section": "2.4 Moodle website",
+    "text": "2.4 Moodle website\nAll communications with students in Potsdam will be done through this website.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html",
+    "href": "introduction-to-statistics.html",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "",
+    "text": "3 Chapter 1: Welcome and Course Overview\nThis course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.\nPre-Requisites:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#histogram",
+    "href": "introduction-to-statistics.html#histogram",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.1 1. Histogram",
+    "text": "14.1 1. Histogram\n\nDepicts the distribution of a single variable\n\nCan include frequency, relative frequency, and cumulative frequency\n\nBest for understanding where most data points lie",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#pie-chart",
+    "href": "introduction-to-statistics.html#pie-chart",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.2 2. Pie Chart",
+    "text": "14.2 2. Pie Chart\n\nRepresents categorical data as slices of a circle\n\nBest when visualizing proportions",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#scatter-plot",
+    "href": "introduction-to-statistics.html#scatter-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.3 3. Scatter Plot",
+    "text": "14.3 3. Scatter Plot\n\nPlots two variables to examine relationships\n\nX-axis: Independent variable\n\nY-axis: Dependent variable\n\nUseful in exploring associations or potential causality",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#box-plot",
+    "href": "introduction-to-statistics.html#box-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.4 4. Box Plot",
+    "text": "14.4 4. Box Plot\n\nShows data distribution via quartiles\n\nMedian, interquartile range (IQR), and outliers are clearly indicated\n\nUseful for comparing multiple variables",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#density-plot",
+    "href": "introduction-to-statistics.html#density-plot",
+    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "section": "14.5 5. Density Plot",
+    "text": "14.5 5. Density Plot\n\nSmoothed version of a histogram\n\nBetter suited for continuous data with decimal variation\n\nKey Tips:\n\nJP_01 was frequently used as an example variable\n\nRKWard allows saving and exporting plots easily\n\nGUI menus guide the user through plot creation\n\n\nAlways choose the plot type that best matches your data and goal: frequency, relationship, or comparison.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  summary",
+    "section": "",
+    "text": "This is summary file . 10 june .",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>summary</span>"
+    ]
+  }
+]

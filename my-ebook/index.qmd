@@ -6,8 +6,12 @@ format:
     toc: true
     number-sections: true
   pdf:
+    pdf-engine: xelatex
     toc: true
     number-sections: true
+    documentclass: scrreprt
+
+
 ---
 
 # Introduction
@@ -79,39 +83,39 @@ All communications with students in Potsdam will be done through [this website](
 | **Week** | **Lecture** | **Main Topic**                 | **Sub Topic**                    | **Video**                          | **PDF Resource**                      |
 |----------|-------------|--------------------------------|----------------------------------|------------------------------------|---------------------------------------|
 | Jan 30 + Feb 4 | -     | Model Selection & Hypothesis Testing | -                          | -                                  | [HW 13](#)                             |
-| Week 2   | 1           | Descriptive Statistics         | Central Tendency                | [Link](#)                          | [Week 2.pdf](#)                        |
-|          | 2           | Descriptive Statistics         | Measure of Variability          | [Link](#)                          | [Week 2.pdf](#)                        |
-|          | 3           | Descriptive Statistics         | Describing Data                 | [Link](#)                          | [Week 2.pdf](#)                        |
-|          | 4           | Probability                    | -                                | [Link](#)                          | [Week 2.pdf](#)                        |
-|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 2.pdf](#)                        |
-| Week 3   | 1           | Probability                    | Z Table (Normal Distribution)   | [Link](#)                          | [Week 3.pdf](#)                        |
-|          | 2           | Divergence                     | Measuring Divergence            | [Link](#)                          | [Week 3.pdf](#)                        |
-|          | 3           | Inferential Statistics         | Sample and Population           | [Link](#)                          | [Week 3.pdf](#)                        |
-|          | 4           | Model Fit                      | -                                | [Link](#)                          | [Week 3.pdf](#)                        |
-|          | 5           | Hypothesis Testing             | Hypothesis and Error            | [Link](#)                          | [Week 3.pdf](#)                        |
-| Week 4   | 1           | Statistical Terms              | Terms of Statistics             | [Link](#)                          | [Week 4.pdf](#)                        |
-|          | 2           | Hypothesis Testing             | T-Test                          | [Link](#)                          | [Week 4.pdf](#)                        |
-|          | 3           | Hypothesis Testing             | T-Test in Detail                | [Link](#)                          | [Week 4.pdf](#)                        |
-|          | 4           | ANOVA                          | ANOVA                           | [Link](#)                          | [Week 4.pdf](#)                        |
-| Week 5   | 1           | ANOVA                          | Example of ANOVA                | [Link](#)                          | [Week 5.pdf](#)                        |
-|          | 2           | ANOVA                          | Types of ANOVA                  | [Link](#)                          | [Week 5.pdf](#)                        |
-|          | 3           | Correlation                    | Introduction to Correlation     | [Link](#)                          | [Week 5.pdf](#)                        |
-|          | 4           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](#)                        |
-|          | 5           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](#)                        |
-| Week 6   | 1           | Regression                     | R Script for Regression         | [Link](#)                          | [Week 6.pdf](#)                        |
-|          | 2           | Chi-Square                     | Chi Square                      | [Link](#)                          | [Week 6.pdf](#)                        |
-|          | 3           | Chi-Square                     | Chi Square Test                 | [Link](#)                          | [Week 6.pdf](#)                        |
-|          | 4           | Logistic Regression            | Logistic Function               | [Link](#)                          | [Week 6.pdf](#)                        |
-|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 6.pdf](#)                        |
-| Week 7   | 1           | Time Series                    | Intro to Time Series            | [Link](#)                          | [Week 7.pdf](#)                        |
-|          | 2           | Probability                    | Conditional Probability         | [Link](#)                          | [Week 7.pdf](#)                        |
-|          | 3           | Additional Concepts            | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
-|          | 4           | Distribution                   | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
-|          | 5           | Poisson Distribution           | -                                | [Link](#)                          | [Week 7.pdf](#)                        |
-| Week 8   | 1           | Libraries & Documentation      | Effect Size and Packages        | [Link](#)                          | [Week 8.pdf](#)                        |
-|          | 2           | Software Comparison            | RStudio vs RKward               | [Link](#)                          | [Week 8.pdf](#)                        |
-|          | 3           | Visualization                  | Flexplot                        | [Link](#)                          | [Week 8.pdf](#)                        |
-|          | 4           | Programming in R               | Functions                       | [Link](#)                          | [Week 8.pdf](#)                        |
-|          | 5           | R Tools                        | R Shiny and R Markdown          | [Link](#)                          | [Week 8.pdf](#)                        |
+| Week 2   | 1           | Descriptive Statistics         | Central Tendency                | [Link](#)                          | [Week 2.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Descriptive Statistics         | Measure of Variability          | [Link](#)                          | [Week 2.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Descriptive Statistics         | Describing Data                 | [Link](#)                          | [Week 2.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Probability                    | -                                | [Link](#)                          | [Week 2.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 2.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 3   | 1           | Probability                    | Z Table (Normal Distribution)   | [Link](#)                          | [Week 3.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Divergence                     | Measuring Divergence            | [Link](#)                          | [Week 3.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Inferential Statistics         | Sample and Population           | [Link](#)                          | [Week 3.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Model Fit                      | -                                | [Link](#)                          | [Week 3.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | Hypothesis Testing             | Hypothesis and Error            | [Link](#)                          | [Week 3.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 4   | 1           | Statistical Terms              | Terms of Statistics             | [Link](#)                          | [Week 4.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Hypothesis Testing             | T-Test                          | [Link](#)                          | [Week 4.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Hypothesis Testing             | T-Test in Detail                | [Link](#)                          | [Week 4.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | ANOVA                          | ANOVA                           | [Link](#)                          | [Week 4.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 5   | 1           | ANOVA                          | Example of ANOVA                | [Link](#)                          | [Week 5.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | ANOVA                          | Types of ANOVA                  | [Link](#)                          | [Week 5.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Correlation                    | Introduction to Correlation     | [Link](#)                          | [Week 5.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | Regression                     | Regression                      | [Link](#)                          | [Week 5.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 6   | 1           | Regression                     | R Script for Regression         | [Link](#)                          | [Week 6.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Chi-Square                     | Chi Square                      | [Link](#)                          | [Week 6.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Chi-Square                     | Chi Square Test                 | [Link](#)                          | [Week 6.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Logistic Regression            | Logistic Function               | [Link](#)                          | [Week 6.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | Distribution                   | -                                | [Link](#)                          | [Week 6.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 7   | 1           | Time Series                    | Intro to Time Series            | [Link](#)                          | [Week 7.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Probability                    | Conditional Probability         | [Link](#)                          | [Week 7.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Additional Concepts            | -                                | [Link](#)                          | [Week 7.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Distribution                   | -                                | [Link](#)                          | [Week 7.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | Poisson Distribution           | -                                | [Link](#)                          | [Week 7.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+| Week 8   | 1           | Libraries & Documentation      | Effect Size and Packages        | [Link](#)                          | [Week 8.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 2           | Software Comparison            | RStudio vs RKward               | [Link](#)                          | [Week 8.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 3           | Visualization                  | Flexplot                        | [Link](#)                          | [Week 8.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 4           | Programming in R               | Functions                       | [Link](#)                          | [Week 8.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
+|          | 5           | R Tools                        | R Shiny and R Markdown          | [Link](#)                          | [Week 8.pdf](https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0)                        |
 
 ------------------------------------------------------------------------

@@ -1,28 +1,27 @@
 project:
   type: book
+  output-dir: _site
 
 book:
   title: "my-ebook"
   author: "Parmeshvar"
   date: "7/6/2025"
-
   chapters:
-    - index.qmd  # ← This MUST be the first chapter
-    - part: Preface
-      chapters:
-        - why-read.qmd
-        - Developing.qmd
-    - intro.qmd
+    - index.qmd 
+    # - part: Preface
+    #   chapters:
+    #     - why-read.qmd
+    #     - Developing.qmd
+    # - lec_1.qmd
+    - introduction-to-statistics.qmd
     - summary.qmd
-    - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
+    css: styles.css
   pdf:
     documentclass: scrreprt
 
