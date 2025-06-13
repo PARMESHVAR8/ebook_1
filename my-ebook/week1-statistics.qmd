@@ -1,0 +1,141 @@
+---
+title: "Introduction to Statistics"
+author: "Dr. Harsh Pradhan, IMS-BHU"
+format: html
+toc: true
+number-sections: true
+---
+
+# 📌 Meaning of Statistics
+
+Statistics is a **science of data** that offers **tools** for the **analysis and interpretation** of raw data to aid decision-making across disciplines.
+
+Key aspects:
+- Focuses on **population**, **sample**, **parameter**, and **statistic**
+- Involves **collection**, **classification**, and **tabulation** of facts
+- Enables **description**, **comparison**, and **prediction**
+
+> “Statistics is not just about numbers. It’s about understanding what those numbers mean.”  
+— *Dr. Harsh Pradhan, Lec01*:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
+
+---
+
+# 🌱 Nature of Statistics
+
+Statistics is **applied** in nature, helping us to:
+- **Observe and record** social or scientific phenomena
+- **Organize and classify** numerical data
+- **Describe and explain** real-world behavior
+- **Predict** outcomes and aid in **decision-making**
+
+It acts as a **bridge between data and scientific inquiry**.
+
+| Aspect               | Statistics                                      |
+|----------------------|--------------------------------------------------|
+| Type                 | Applied science                                   |
+| Objective            | Interpretation, Prediction, Decision-making      |
+| Data Handling        | Structured classification and analysis           |
+
+> “Without understanding the nature of statistics, one cannot correctly apply it.”  
+— *Lecture 1 Discussion*:contentReference[oaicite:2]{index=2}
+
+---
+
+# 🧰 Uses of Statistics
+
+Statistics is vital in both **research and practice**:
+
+## 🔹 Descriptive Uses
+- Selecting **representative samples**
+- **Summarizing** and describing datasets
+- Arranging and interpreting observed data
+- Making **comparisons** between individuals or groups
+
+## 🔹 Inferential Uses
+- **Predicting** future behavior based on current info
+- Exploring **cause-and-effect** relationships
+- **Estimating errors** in statistical inference
+- Used in:
+  - Psychology, Education
+  - Employment & Market Research
+  - Organizational Planning
+
+| Application Area     | Examples                          |
+|----------------------|-----------------------------------|
+| Education            | Student performance analysis      |
+| Market Research      | Customer behavior prediction      |
+| Health Research      | Drug effectiveness measurement    |
+
+> “Summarizing and comparing — these are the twin powers of statistical analysis.”  
+— *Lecture 1 and PDF*:contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}
+
+---
+
+# 🚫 Limitations of Statistics
+
+Despite its usefulness, statistics has clear boundaries:
+
+- Cannot handle **qualitative phenomena** like happiness or love
+- Does **not study individuals**, only groups or aggregates
+- **Statistical laws are probabilistic**, not exact
+- Must not be **applied indiscriminately**
+- **Correlation ≠ Causation**
+
+> “Per capita income doesn’t mean every citizen earns that amount.”  
+— *Dr. Harsh Pradhan*:contentReference[oaicite:5]{index=5}
+
+> “Context is key — generalization is possible, stereotyping is dangerous.”  
+— *Lecture Notes*:contentReference[oaicite:6]{index=6}
+
+---
+
+# ⚠️ Misuse of Statistics
+
+Statistics can mislead if:
+- **Biased or small sample sizes** are used
+- **Irrelevant comparisons** are made
+- **Misleading graphs** distort data perception
+
+### 🔍 Common Manipulations
+| Method                     | Example                                           |
+|----------------------------|---------------------------------------------------|
+| Biased Sampling            | Only surveying a specific demographic             |
+| Tricky Graphs              | Omitting 0 baseline in bar charts                 |
+| Misleading Averages        | Using mean where median is more appropriate       |
+
+> “It’s not the fault of statistics, it’s how people misuse it.”  
+— *PDF Misuse Section*:contentReference[oaicite:7]{index=7}
+
+---
+
+# ❌ Fallacies in Statistics
+
+Fallacies refer to **errors in statistical thinking** or application:
+
+### 💡 Common Sources of Fallacies
+- Poor **data collection**
+- **Vague definitions**
+- Incorrect **unit selection**
+- **Faulty classification**
+- Inappropriate **methods**
+- Invalid **comparisons**
+
+| Fallacy Source        | What Can Go Wrong                           |
+|------------------------|---------------------------------------------|
+| Classification         | Overlapping or incomplete categories        |
+| Definition of Terms    | Ambiguous meaning in survey questions       |
+| Choice of Methods      | Applying wrong test for data type           |
+
+> “Fallacies arise not from the data, but from the way we handle or define it.”  
+— *Source: PDF + Lecture Discussion*:contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}
+
+---
+
+# 📚 References
+
+- Mohanty, B., & Misra, S. (2016). *Statistics for Behavioural and Social Sciences*
+- Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). *Statistical Analysis Using R*
+- Lecture Transcripts: Lec01 (Dr. Harsh Pradhan)
+- Course Presentation: *week 1.pdf*
+
+---

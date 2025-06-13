@@ -1,0 +1,226 @@
+---
+title: "- basic-statistics_2"
+author: "Statistics Course Materials"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+bibliography: references.bib
+---
+
+# Introduction
+
+## Purpose of the eBook
+
+This eBook aims to provide a comprehensive understanding of basic statistics, focusing on the essential principles necessary for data analysis...
+
+## Importance of Statistics
+
+Statistics is critical in interpreting data efficiently and effectively...
+
+# Basic Concepts of Statistics
+
+## Overview of Statistics
+
+Statistics is the discipline that deals with the collection, analysis...
+
+## Types of Data
+
+- **Qualitative Data**: Represents categories...
+- **Quantitative Data**:
+    - **Discrete Data**: Countable values...
+    - **Continuous Data**: Measurable values...
+
+## Descriptive vs. Inferential Statistics
+
+- **Descriptive Statistics**...
+- **Inferential Statistics**...
+
+# Measures of Central Tendency
+
+## Definition and Importance
+
+Measures of central tendency...
+
+## The Mean
+
+The mean is the arithmetic average...
+
+### Example with Explanation
+
+Consider the data: 2, 3, 5, 7, 11...
+
+## The Median
+
+The median is the middle value...
+
+### Example with Explanation
+
+Consider the data: 3, 5, 1, 7, 9...
+
+## The Mode
+
+The mode is the value that appears most...
+
+### Example with Explanation
+
+Given the dataset: 2, 4, 4, 5, 5, 5, 7, 8...
+
+## Comparison of Measures
+
+| Measure | Description | Strengths | Limitations |
+|--------|-------------|-----------|-------------|
+| Mean | Average... | Utilizes all data points | Sensitive to outliers |
+| Median | Middle... | Robust against outliers | Doesn't use all values |
+| Mode | Most frequent | Useful for categorical | May not exist or be unique |
+
+# Measures of Variability
+
+## Definition and Importance
+
+Measures of variability (or dispersion)...
+
+## Range
+
+The range is the difference...
+
+### Example
+
+Data: 4, 8, 2, 10, 6...
+
+## Variance
+
+Variance is the average...
+
+### Example
+
+Data: 2, 4, 4, 4, 5, 5, 7...
+
+## Standard Deviation
+
+Standard Deviation is the square root...
+
+## Interquartile Range (IQR)
+
+### Example
+
+Data: 1, 2, 3, 4, 5, 6, 7, 8, 9...
+
+# Probability Fundamentals
+
+## Introduction to Probability
+
+Probability measures the likelihood...
+
+## Types of Events
+
+- **Independent Events**
+- **Dependent Events**
+- **Mutually Exclusive Events**
+
+## Basic Probability Rules
+
+1. **Addition Rule**:
+   $$
+   P(A \cup B) = P(A) + P(B)
+   $$
+2. **Multiplication Rule**:
+   $$
+   P(A \cap B) = P(A) \times P(B)
+   $$
+
+## Introduction to Probability Distributions
+
+### Normal Distribution
+
+- Symmetric about the mean...
+- Properties: Mean = Median = Mode...
+
+# Detailed Transcripts
+
+## Transcript from Lec06
+
+**Key Discussion Points**:
+- Effects of outliers on mean...
+- Mean properties...
+
+## Transcript from Lec07
+
+**Key Discussion Points**:
+- Range, variance, SD...
+
+## Transcript from Lec08
+
+**Key Discussion Points**:
+- Z score explanation...
+- Galton board illustration...
+
+## Transcript from Lec09
+
+**Key Discussion Points**:
+- Intro to distributions...
+- Probability terms...
+
+# Summary of Week 2 Content
+
+- Measures of central tendency
+- Measures of variability
+- Basics of probability...
+
+# Tables and Visualizations
+
+## Frequency Distribution Example
+
+| Value | Frequency |
+|-------|-----------|
+| 1     | 4         |
+| 2     | 6         |
+| 3     | 3         |
+| 4     | 2         |
+| 5     | 1         |
+
+## Interquartile Range Example
+
+| Position | Value |
+|----------|-------|
+| 1        | 12    |
+| 2        | 30    |
+| 3        | 45    |
+| 4        | 57    |
+| 5        | 70    |
+
+$$
+\text{IQR} = 57 - 30 = 27
+$$
+
+## Box Plot Visualization
+
+A box plot visualizes:
+
+- Minimum
+- $Q1$
+- Median
+- $Q3$
+- Maximum
+
+# References
+
+::: {#refs}
+1. Mohanty, B., & Misra, S. (2016). *Statistics for Behavioral and Social Sciences*.
+2. Pandya, K., et al. (2018). *Statistical Analysis in Simple Steps Using R*.
+3. Field, A. P., et al. (2012). *Discovering Statistics Using R*.
+4. Harris, J. K. (2019). *Statistics with R: Solving Problems Using Real-World Data*.
+5. Anderson, D. R., et al. (2016). *Statistics for Business & Economics*.
+:::
+
+# Appendices
+
+- Additional exercises
+- Data sets
+- Online resources on RKWard

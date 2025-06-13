@@ -1,0 +1,1945 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={my-ebook},
+  pdfauthor={Parmeshvar},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{my-ebook}
+\author{Parmeshvar}
+\date{2025-07-06}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction}\label{introduction}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction}\label{introduction-1}
+
+\textbf{DR.Harsh Pradhan},
+\href{http://www.ling.uni-potsdam.de/en/}{Phone: +91-9930034241 , Email:
+harsh.231284@gmail.com},
+\href{http://www.uni-potsdam.de/en/university-of-potsdam.html}{Institute
+of Management Studies, Banaras Hindu University}, Address: 18-GF,
+Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\\
+\textbf{Interest}:
+\href{http://www.uni-potsdam.de/humfak/hum-forschungsschwerpunkte/forschungscluster-sprache.html}{Goal
+Orientation Job Performance Consumer Behavior Behavioral Finance
+Bibiliometric Analysis Options as Derivatives Statistics Indian
+Knowledge System},
+
+\href{https://orcid.org/0000-0002-3332-3610}{Orcid ID}\\
+\href{https://scholar.google.com/citations?user=8l5MEd0AAAAJ&hl=en&oi=sra}{Google
+Scholar}\\
+\href{https://github.com/}{GitHub}\\
+\href{https://www.webofscience.com/wos/author/record/AIB}{Researcher
+ID}\\
+\href{http://https//sites.google.com/view/harshpradhan/home\%20\%20,\%20\%20\%20\%20\%20shorturl.at/yzQSX}{Personal
+Website}\\
+\href{http://www.youtube.com/@dr.harshpradhan742}{Youtube ID}
+
+\textbf{Doing a PhD with me:}
+\href{http://www.ling.uni-potsdam.de/~vasishth/doingaphdwithme.html}{README.1st}
+
+\href{https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562}{Academic
+Profile}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{Bayesian data analysis for cognitive
+science}\label{bayesian-data-analysis-for-cognitive-science}
+
+\section{Introduction: What this course is
+about}\label{introduction-what-this-course-is-about}
+
+This course provides an introduction to Bayesian data analysis using the
+probabilistic programming language \textbf{Stan}.\\
+We will use a front end software package called \textbf{brms}.
+
+This course is for:
+
+\begin{itemize}
+\tightlist
+\item
+  Linguistics (MM5, MM6)
+\item
+  Cognitive Systems
+\item
+  Cognitive Science
+\end{itemize}
+
+Please see the
+\href{http://stud.astaup.de/~linguistik/doku.php?id=puls-faq}{PULS FAQs}
+to find out how the sign-up system works (in German).
+
+We will be using the software \href{http://cran.r-project.org/}{R} and
+\href{https://www.rstudio.com/}{RStudio}, so make sure you install these
+on your computer.
+
+Topics to be covered:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Basic probability theory, random variable theory (including jointly
+  distributed RVs), probability distributions (including bivariate
+  distributions)
+\item
+  Using Bayes' rule for statistical inference
+\item
+  An introduction to (generalized) linear models
+\item
+  An introduction to hierarchical models
+\item
+  Measurement error models
+\item
+  Mixture models
+\item
+  Model selection and hypothesis testing (Bayes factor and k-fold
+  cross-validation)
+\end{enumerate}
+
+\section{Teaching}\label{teaching}
+
+Science and statistics is/are one unitary thing; you cannot do one
+without the other. Towards this end, I teach some (in my opinion)
+critically important classes that provide a solid statistical foundation
+for doing research in cognitive science. Free online course, four weeks
+(MOOC), enrollments open: Introduction to Bayesian Data Analysis. Short
+(four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here
+Introduction to (frequentist) statistics Introduction to Bayesian data
+analysis for cognitive science BDA cover
+
+\section{Lecture notes}\label{lecture-notes}
+
+Download from
+\href{https://drive.google.com/drive/folders/1H-jQNOqS3PLgdXADRYF7ag-WqN_tK4qc?usp=share_link}{here}.
+
+\section{Moodle website}\label{moodle-website}
+
+All communications with students in Potsdam will be done through
+\href{https://moodle2.uni-potsdam.de/course/view.php?id=17526}{this
+website}.
+
+\bookmarksetup{startatroot}
+
+\chapter{Schedule}\label{schedule}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.0610}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.0793}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1951}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2073}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2195}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2378}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Week}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Lecture}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Main Topic}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Sub Topic}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Video}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{PDF Resource}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Jan 30 + Feb 4 & - & Model Selection \& Hypothesis Testing & - & - &
+\hyperref[]{HW 13} \\
+Week 2 & 1 & Descriptive Statistics & Central Tendency &
+\hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+2.pdf} \\
+& 2 & Descriptive Statistics & Measure of Variability &
+\hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+2.pdf} \\
+& 3 & Descriptive Statistics & Describing Data & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+2.pdf} \\
+& 4 & Probability & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+2.pdf} \\
+& 5 & Distribution & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+2.pdf} \\
+Week 3 & 1 & Probability & Z Table (Normal Distribution) &
+\hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+3.pdf} \\
+& 2 & Divergence & Measuring Divergence & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+3.pdf} \\
+& 3 & Inferential Statistics & Sample and Population & \hyperref[]{Link}
+&
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+3.pdf} \\
+& 4 & Model Fit & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+3.pdf} \\
+& 5 & Hypothesis Testing & Hypothesis and Error & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+3.pdf} \\
+Week 4 & 1 & Statistical Terms & Terms of Statistics & \hyperref[]{Link}
+&
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+4.pdf} \\
+& 2 & Hypothesis Testing & T-Test & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+4.pdf} \\
+& 3 & Hypothesis Testing & T-Test in Detail & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+4.pdf} \\
+& 4 & ANOVA & ANOVA & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+4.pdf} \\
+Week 5 & 1 & ANOVA & Example of ANOVA & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+5.pdf} \\
+& 2 & ANOVA & Types of ANOVA & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+5.pdf} \\
+& 3 & Correlation & Introduction to Correlation & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+5.pdf} \\
+& 4 & Regression & Regression & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+5.pdf} \\
+& 5 & Regression & Regression & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+5.pdf} \\
+Week 6 & 1 & Regression & R Script for Regression & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+6.pdf} \\
+& 2 & Chi-Square & Chi Square & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+6.pdf} \\
+& 3 & Chi-Square & Chi Square Test & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+6.pdf} \\
+& 4 & Logistic Regression & Logistic Function & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+6.pdf} \\
+& 5 & Distribution & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+6.pdf} \\
+Week 7 & 1 & Time Series & Intro to Time Series & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+7.pdf} \\
+& 2 & Probability & Conditional Probability & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+7.pdf} \\
+& 3 & Additional Concepts & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+7.pdf} \\
+& 4 & Distribution & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+7.pdf} \\
+& 5 & Poisson Distribution & - & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+7.pdf} \\
+Week 8 & 1 & Libraries \& Documentation & Effect Size and Packages &
+\hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+8.pdf} \\
+& 2 & Software Comparison & RStudio vs RKward & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+8.pdf} \\
+& 3 & Visualization & Flexplot & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+8.pdf} \\
+& 4 & Programming in R & Functions & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+8.pdf} \\
+& 5 & R Tools & R Shiny and R Markdown & \hyperref[]{Link} &
+\href{https://drive.google.com/drive/u/0/folders/1_-dD19gdBcDVGIpBiMt1ChTZ-6z3lmw0}{Week
+8.pdf} \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction to Statistics}\label{introduction-to-statistics}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 1: Welcome and Course
+Overview}\label{chapter-1-welcome-and-course-overview}
+
+This course offers an introduction to statistics through the RKWard
+graphical interface of R. Aimed at learners from diverse backgrounds,
+the course emphasizes practical application over theory. You don't need
+a strong background in math or computing---just an eagerness to learn.
+
+\textbf{Pre-Requisites:}
+
+\begin{itemize}
+\tightlist
+\item
+  Curiosity\\
+\item
+  Basic awareness of numbers\\
+\item
+  No fear of statistics or software
+\end{itemize}
+
+\begin{quote}
+``Aapko darne ki zarurat nahi hai\ldots{} simple understanding aapko
+statistics ki data ki aage milegi.''
+\end{quote}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 2: Agenda and
+Orientation}\label{chapter-2-agenda-and-orientation}
+
+\textbf{Key Themes:}
+
+\begin{itemize}
+\tightlist
+\item
+  Difference between Mathematics and Statistics\\
+\item
+  Nature, Meaning, and Role of Statistics\\
+\item
+  Uses, Limitations, and Common Fallacies
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1375}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5375}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Aspect
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mathematics
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statistics
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Nature & Abstract, theoretical & Applied, data-centric \\
+Focus & Concepts, theorems, proofs & Tools, interpretation,
+decision-making \\
+Tools & Logical reasoning, algebra & Hypothesis testing, regression,
+probability \\
+Application & General structures & Real-world problems \\
+\end{longtable}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 3: Meaning and Nature of
+Statistics}\label{chapter-3-meaning-and-nature-of-statistics}
+
+\textbf{Definition:}\\
+Statistics is the science of collecting, analyzing, interpreting, and
+presenting data for decision-making.
+
+\textbf{Core Concepts:}
+
+\begin{itemize}
+\tightlist
+\item
+  Population \& Sample\\
+\item
+  Parameter \& Statistic\\
+\item
+  Data classification and tabulation
+\end{itemize}
+
+\textbf{Purpose:}
+
+\begin{itemize}
+\tightlist
+\item
+  Describe and explain phenomena\\
+\item
+  Interpret and predict outcomes\\
+\item
+  Facilitate scientific and social inquiry
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 4: Applications and
+Uses}\label{chapter-4-applications-and-uses}
+
+\textbf{Main Uses:}
+
+\begin{itemize}
+\tightlist
+\item
+  Summarizing observed data\\
+\item
+  Drawing representative samples\\
+\item
+  Analyzing relationships and trends\\
+\item
+  Supporting decision-making in fields like marketing, psychology,
+  education, and public health
+\end{itemize}
+
+\textbf{Important Concepts:}
+
+\begin{itemize}
+\tightlist
+\item
+  Data summarization\\
+\item
+  Prediction based on patterns\\
+\item
+  Comparison across groups\\
+\item
+  Scientific objectivity
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 5: Limitations and
+Misuse}\label{chapter-5-limitations-and-misuse}
+
+\textbf{Limitations:}
+
+\begin{itemize}
+\tightlist
+\item
+  Cannot analyze qualitative phenomena\\
+\item
+  Not designed for individuals\\
+\item
+  Results aren't exact\\
+\item
+  Misinterpretation leads to incorrect conclusions
+\end{itemize}
+
+\textbf{Misuse Includes:}
+
+\begin{itemize}
+\tightlist
+\item
+  Small or biased samples\\
+\item
+  Misleading graphs\\
+\item
+  Invalid comparisons
+\end{itemize}
+
+\begin{quote}
+``Statistics is not a substitute for common sense or understanding the
+context.''
+\end{quote}
+
+\textbf{Fallacies Stem From:}
+
+\begin{itemize}
+\tightlist
+\item
+  Poor data collection\\
+\item
+  Mislabeling variables\\
+\item
+  Improper classification or selection
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 6: Paper-Based vs.~Software-Based
+Statistics}\label{chapter-6-paper-based-vs.-software-based-statistics}
+
+Traditional exams test pen-paper knowledge, but software-based tools
+like RKWard make analysis:
+
+\begin{itemize}
+\tightlist
+\item
+  Faster\\
+\item
+  Collaborative\\
+\item
+  Easier to store and access\\
+\item
+  Essential for modern data-centric fields like AI and machine learning
+\end{itemize}
+
+Understanding both paper and digital approaches ensures comprehensive
+learning.
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 7: Introduction to Variables and
+Spreadsheets}\label{chapter-7-introduction-to-variables-and-spreadsheets}
+
+\textbf{Variables:}
+
+\begin{itemize}
+\tightlist
+\item
+  Store information (e.g., \texttt{x\ =\ 5})\\
+\item
+  Have unique names\\
+\item
+  Can be manipulated with commands (e.g., \texttt{x\ =\ x\ +\ 2})
+\end{itemize}
+
+\textbf{Spreadsheets:}
+
+\begin{itemize}
+\tightlist
+\item
+  Represent tabular data (rows = observations, columns = variables)\\
+\item
+  Familiar formats: Excel, Google Sheets\\
+\item
+  Essential in statistical packages
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 8: R and GUI
+Interfaces}\label{chapter-8-r-and-gui-interfaces}
+
+\textbf{Why R?:}
+
+\begin{itemize}
+\tightlist
+\item
+  Free and open-source\\
+\item
+  Strong community support\\
+\item
+  High flexibility\\
+\item
+  Powerful graphics and data manipulation capabilities
+\end{itemize}
+
+\textbf{GUI Tools in R:}
+
+\begin{itemize}
+\tightlist
+\item
+  RKWard \emph{(used in this course)}\\
+\item
+  R Commander\\
+\item
+  Rattle\\
+\item
+  R AnalyticFlow
+\end{itemize}
+
+\textbf{Basic Terms:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Console}: Type commands \& view outputs\\
+\item
+  \textbf{Working Directory}: File storage location\\
+\item
+  \textbf{Package}: Predefined or custom functions\\
+\item
+  \textbf{Script}: Collection of reusable commands\\
+\item
+  \textbf{Workspace}: All current variables/functions
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 9: Importing Data and Understanding Data
+Types}\label{chapter-9-importing-data-and-understanding-data-types}
+
+\textbf{Using RKWard:}
+
+\begin{itemize}
+\tightlist
+\item
+  Import CSV files using GUI\\
+\item
+  Data appears in alphabetical order in workspace\\
+\item
+  Each header = variable name
+\end{itemize}
+
+\textbf{Data Structures:}
+
+\begin{itemize}
+\tightlist
+\item
+  Data Frames (most commonly used)\\
+\item
+  Matrices\\
+\item
+  Vectors\\
+\item
+  Lists
+\end{itemize}
+
+\textbf{Command Line vs GUI:}
+
+\begin{itemize}
+\tightlist
+\item
+  Both achieve the same results\\
+\item
+  GUI is user-friendly, command line is customizable
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(my\_csv.data}\SpecialCharTok{$}\NormalTok{JP\_01)  }\CommentTok{\# Calculates the mean of variable JP\_01}
+\end{Highlighting}
+\end{Shaded}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 10: Statistical Data
+Types}\label{chapter-10-statistical-data-types}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2105}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.6316}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1579}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Statistical Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+R Equivalent
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Nominal & Names, labels (e.g., Male/Female) & String \\
+Ordinal & Order/rank (e.g., 1st, 2nd) & Factor \\
+Interval & Ordered + meaningful intervals (e.g., tax slabs) & Numeric \\
+Ratio & Includes absolute zero (e.g., weight) & Numeric \\
+\end{longtable}
+
+\textbf{Others in R:}
+
+\begin{itemize}
+\tightlist
+\item
+  Logical (TRUE/FALSE)\\
+\item
+  Integer, Complex
+\end{itemize}
+
+\begin{quote}
+Remember: Not all numbers mean quantity. Shirt numbers (like \#18) are
+nominal, not mathematical.
+\end{quote}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 11: Data Preparation in
+RKWard}\label{chapter-11-data-preparation-in-rkward}
+
+\begin{itemize}
+\tightlist
+\item
+  Data must be properly \textbf{typed} (e.g., ``1'' as number vs ``1''
+  as label)\\
+\item
+  Check alignment: Left = character, Right = number\\
+\item
+  \textbf{Labels} help collaborators understand variables\\
+\item
+  Example: \texttt{Gender\ =\ 1} (Male), \texttt{0} (Female)\\
+\item
+  Must distinguish between numeric calculations and categorical
+  identifiers
+\end{itemize}
+
+\textbf{Best Practices:}
+
+\begin{itemize}
+\tightlist
+\item
+  Define each variable with meaning\\
+\item
+  Validate data types\\
+\item
+  Store and share workspace for reproducibility
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 12: Visualizing Data with Plots in
+RKWard}\label{chapter-12-visualizing-data-with-plots-in-rkward}
+
+Data visualization is essential to reveal patterns, trends, and
+distributions. RKWard offers multiple graphical tools:
+
+\section{1. Histogram}\label{histogram}
+
+\begin{itemize}
+\tightlist
+\item
+  Depicts the distribution of a single variable\\
+\item
+  Can include frequency, relative frequency, and cumulative frequency\\
+\item
+  Best for understanding where most data points lie
+\end{itemize}
+
+\section{2. Pie Chart}\label{pie-chart}
+
+\begin{itemize}
+\tightlist
+\item
+  Represents categorical data as slices of a circle\\
+\item
+  Best when visualizing proportions
+\end{itemize}
+
+\section{3. Scatter Plot}\label{scatter-plot}
+
+\begin{itemize}
+\tightlist
+\item
+  Plots two variables to examine relationships\\
+\item
+  X-axis: Independent variable\\
+\item
+  Y-axis: Dependent variable\\
+\item
+  Useful in exploring associations or potential causality
+\end{itemize}
+
+\section{4. Box Plot}\label{box-plot}
+
+\begin{itemize}
+\tightlist
+\item
+  Shows data distribution via quartiles\\
+\item
+  Median, interquartile range (IQR), and outliers are clearly
+  indicated\\
+\item
+  Useful for comparing multiple variables
+\end{itemize}
+
+\section{5. Density Plot}\label{density-plot}
+
+\begin{itemize}
+\tightlist
+\item
+  Smoothed version of a histogram\\
+\item
+  Better suited for continuous data with decimal variation
+\end{itemize}
+
+\textbf{Key Tips:}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{JP\_01} was frequently used as an example variable\\
+\item
+  RKWard allows saving and exporting plots easily\\
+\item
+  GUI menus guide the user through plot creation
+\end{itemize}
+
+\begin{quote}
+Always choose the plot type that best matches your data and goal:
+frequency, relationship, or comparison.
+\end{quote}
+
+\bookmarksetup{startatroot}
+
+\chapter{Chapter 13: Summary}\label{chapter-13-summary}
+
+This eBook provided a foundation for understanding and applying
+statistics using the RKWard GUI tool in R. It covered essential concepts
+from what statistics is, to importing and handling data, understanding
+types of variables and their measurement levels, and visualizing data
+using a variety of plots.
+
+Learners were introduced to:
+
+\begin{itemize}
+\tightlist
+\item
+  Basic statistical principles\\
+\item
+  Software versus paper-based understanding\\
+\item
+  Variable types and spreadsheet usage\\
+\item
+  Command line and GUI-based tools\\
+\item
+  Data visualization through histogram, pie, scatter, box, and density
+  plots
+\end{itemize}
+
+The course emphasized \textbf{conceptual clarity}, \textbf{practical
+tools}, and the \textbf{power of visualization}. It prepares learners to
+interpret, analyze, and present data meaningfully in academic or
+real-world contexts.
+
+\bookmarksetup{startatroot}
+
+\chapter{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Mohanty, B., \& Misra, S. (2020). \emph{Statistics for Behavioral and
+  Social Sciences}. PHI Learning.\\
+\item
+  Pandya, D., et al.~(2019). \emph{Statistical Analysis in Simple Steps
+  Using R}. Wiley.\\
+\item
+  Field, A., Miles, J., \& Field, Z. (2012). \emph{Discovering
+  Statistics Using R}. SAGE Publications.\\
+\item
+  Harris, J. (2021). \emph{Statistics with R: Solving Problems Using
+  Real-World Data}. Pearson.\\
+\item
+  RKWard Project: \url{https://rkward.kde.org}
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{Next Steps}\label{next-steps}
+
+Upcoming lectures will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  Graph creation\\
+\item
+  Data visualization tools\\
+\item
+  Advanced statistical operations in GUI
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{basic-statistics\_1}\label{basic-statistics_1}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction}\label{introduction-2}
+
+Welcome to the ``Basic Statistics Using GUI-R (RK Ward)'' course, led by
+Dr.~Harsh Pradhan at the Institute of Management Studies, Banaras Hindu
+University. This course takes an integrated approach to statistical
+analysis, bridging theory with practical skills through the R
+programming language and its GUI, RKWard.
+
+\section{Objectives of the Course}\label{objectives-of-the-course}
+
+\begin{itemize}
+\tightlist
+\item
+  Understand fundamental concepts related to statistics.
+\item
+  Gain proficiency in using R and RKWard for statistical analysis.
+\item
+  Learn to visualize data effectively.
+\item
+  Apply statistical methodologies to real-world datasets.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Overview of R and RKWard}\label{overview-of-r-and-rkward}
+
+\section{R Programming Language}\label{r-programming-language}
+
+R is a versatile, open-source language specifically designed for
+statistical analysis and data visualization. It provides an extensive
+suite of statistical procedures, making it a cornerstone for
+statisticians and data scientists.
+
+\textbf{Key Features of R:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Extensive Libraries:} R hosts thousands of packages that
+  support numerous statistical models such as linear regression, time
+  series, and more.
+\item
+  \textbf{Customizable Graphics:} The base graphics capabilities, along
+  with packages like \texttt{ggplot2}, allow users to create a variety
+  of complex visualizations with relative ease.
+\item
+  \textbf{Data Manipulation Tools:} Packages like \texttt{dplyr} and
+  \texttt{tidyr} provide robust tools for data cleaning and
+  transformation.
+\end{itemize}
+
+\section{Understanding RKWard}\label{understanding-rkward}
+
+RKWard serves as a user-friendly interface that simplifies interactions
+with R, allowing users---especially those less familiar with
+programming---to utilize its powerful capabilities without a steep
+learning curve.
+
+\textbf{Features of RKWard Include:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Graphical User Interface:} Navigation through menus rather
+  than command lines enhances accessibility.
+\item
+  \textbf{Built-in Documentation:} Context-sensitive help facilitates
+  learning and troubleshooting.
+\item
+  \textbf{Integration with R:} Commands executed via the GUI can be
+  viewed and modified, providing a dual-learning experience.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Understanding Variables}\label{understanding-variables}
+
+\section{Types of Variables}\label{types-of-variables}
+
+Variables are the building blocks of statistical analysis, representing
+the characteristics or properties of the data.
+
+\subsection{Qualitative Variables (Categorical
+Variables)}\label{qualitative-variables-categorical-variables}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Nominal Variables:} These variables categorize data without an
+  inherent order. For example, types of fruits (apple, orange) are
+  nominal.
+\item
+  \textbf{Ordinal Variables:} These represent ordered categories. For
+  instance, a customer satisfaction survey may be rated as poor, fair,
+  good, or excellent.
+\end{itemize}
+
+\subsection{Quantitative Variables}\label{quantitative-variables}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Discrete Variables:} These variables take on countable values,
+  such as the number of students in a class.
+\item
+  \textbf{Continuous Variables:} These can take any value within a given
+  range, such as height and weight.
+\end{itemize}
+
+\section{Importance of Defining
+Variables}\label{importance-of-defining-variables}
+
+Properly understanding and defining variables is crucial for:
+
+\begin{itemize}
+\tightlist
+\item
+  Selecting appropriate statistical tests.
+\item
+  Ensuring accurate data interpretation.
+\item
+  Structuring datasets to facilitate analysis.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Data Types and Spreadsheet
+Concepts}\label{data-types-and-spreadsheet-concepts}
+
+\section{Statistical Data Types}\label{statistical-data-types}
+
+Data types are foundational for statistical analysis as they define what
+kind of arithmetic operations can be performed on the data.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5208}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3542}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Data Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Example
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Nominal & Categorical data without order & Blood types (A, B, AB, O) \\
+Ordinal & Categorical data with a defined order & Customer satisfaction
+(poor, fair, good) \\
+Interval & Numerical data with meaningful differences & Temperature in
+Celsius \\
+Ratio & Numerical data with an absolute zero & Weight, height \\
+\end{longtable}
+
+\section{Spreadsheet Basics}\label{spreadsheet-basics}
+
+Spreadsheets provide a structured format for data entry, where rows
+represent instances (e.g., individuals, items) and columns represent
+variables (e.g., age, gender).
+
+\textbf{Key Functions of Spreadsheets:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Organization:} Data is easily sorted and filtered.
+\item
+  \textbf{Formulas and Functions:} Built-in functions allow for quick
+  calculation and data manipulation.
+\item
+  \textbf{Visualization Integration:} Charts and tables can visually
+  represent data.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Importing Data in RKWard}\label{importing-data-in-rkward}
+
+\section{Data Preparation}\label{data-preparation}
+
+Before importing data into RKWard, ensure that your dataset meets
+standards such as:
+
+\begin{itemize}
+\tightlist
+\item
+  Properly labeled columns.
+\item
+  Consistent data types.
+\item
+  Absence of unnecessary formatting or symbols.
+\end{itemize}
+
+\section{Step-by-Step Import Process}\label{step-by-step-import-process}
+
+To import data into RKWard, follow these steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Open RKWard} and access the main interface.
+\item
+  \textbf{Navigate to the ``Data'' Tab:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Select ``Import Data'' option.
+  \end{itemize}
+\item
+  \textbf{Choose the File Type:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Select the file format (e.g., CSV, Excel) of your prepared dataset.
+  \end{itemize}
+\item
+  \textbf{Browse for Your File:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Utilize the ``Browse'' button to locate the file on your system.
+  \end{itemize}
+\item
+  \textbf{Mapping Variables:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    During the import process, specify the data types for each column.
+  \item
+    Ensure the first row is used as header labels.
+  \end{itemize}
+\item
+  \textbf{Review and Confirm Import:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Once the data is imported, review it in the RKWard workspace,
+    ensuring everything is correctly represented.
+  \end{itemize}
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{Basic Statistical Practices}\label{basic-statistical-practices}
+
+\section{Descriptive Statistics}\label{descriptive-statistics}
+
+Descriptive statistics help summarize and organize data in a meaningful
+way.
+
+\subsection{Central Tendency Measures}\label{central-tendency-measures}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Mean:} Average of the dataset.
+\item
+  \textbf{Median:} Middle value when data is ordered.
+\item
+  \textbf{Mode:} Most frequent value in the dataset.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0989}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4835}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4176}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Measure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mean & \(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\) & Average value \\
+Median & (Sorted data, middle item) & Middle value in ordered dataset \\
+Mode & Value that appears most frequently & Most common value \\
+\end{longtable}
+
+\subsection{Dispersion Measures}\label{dispersion-measures}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Range:} Difference between the maximum and minimum values.
+\item
+  \textbf{Variance:} Measurement of the spread of data points.
+\item
+  \textbf{Standard Deviation:} Square root of variance, providing a
+  measure of the average distance from the mean.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2019}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4712}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3269}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Measure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Range & \(Range = Max - Min\) & Spread of dataset \\
+Variance & \(Var(X) = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}\) &
+Spread of data relative to mean \\
+Standard Deviation & \(SD(X) = \sqrt{Var(X)}\) & Average distance from
+mean \\
+\end{longtable}
+
+\section{Inferential Statistics}\label{inferential-statistics}
+
+Inferential statistics allow us to make predictions or inferences about
+a population based on a sample.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Hypothesis Testing:} A method to test assumptions regarding
+  population parameters using sample data.
+\item
+  \textbf{Confidence Intervals:} Define a range of values derived from
+  sample statistics that likely encompass the true population parameter.
+\end{enumerate}
+
+\section{Practical R Commands and
+Functions}\label{practical-r-commands-and-functions}
+
+Understanding and utilizing R functions is crucial for effective data
+analysis. Some key functions include:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{mean()}: Calculates the average.
+\item
+  \texttt{sd()}: Computes standard deviation.
+\item
+  \texttt{t.test()}: Performs a t-test for hypothesis testing.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Visualizing Data with
+Graphs}\label{visualizing-data-with-graphs}
+
+\section{Significance of Data
+Visualization}\label{significance-of-data-visualization}
+
+Visualization enhances comprehension by allowing researchers to observe
+patterns, trends, and anomalies effectively.
+
+\section{Types of Graphs}\label{types-of-graphs}
+
+Variety in graph types caters to different data presentation needs:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.2963}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7037}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Graph Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use Case
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Bar Graph & Comparing categorical data \\
+Histogram & Displaying distribution of continuous data \\
+Box Plot & Summarizing data distributions and spotting outliers \\
+Scatter Plot & Investigating relationships between two quantitative
+variables \\
+\end{longtable}
+
+\section{Implementing Visualization in
+RKWard}\label{implementing-visualization-in-rkward}
+
+Students will learn how to create visualizations within RKWard by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Navigating to the graph creation menu.
+\item
+  Selecting the appropriate kind of graph.
+\item
+  Customizing aesthetics (titles, colors, axes).
+\item
+  Producing and exporting diagrams for reports.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{Practical Applications of
+Statistics}\label{practical-applications-of-statistics}
+
+\section{Case Studies in Various
+Fields}\label{case-studies-in-various-fields}
+
+Statistics plays a pivotal role in diverse disciplines:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.2424}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7576}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Field
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Application
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Healthcare & Analyzing medical test results, outcomes of treatments, and
+patient demographics \\
+Business & Applied for market analyses, customer satisfaction studies,
+and financial forecasting \\
+Social Sciences & Employed in surveys to understand populations,
+opinions, and behavioral patterns \\
+\end{longtable}
+
+\section{Utilizing Statistical Methods for Decision
+Making}\label{utilizing-statistical-methods-for-decision-making}
+
+\begin{itemize}
+\tightlist
+\item
+  Using statistical evidence to guide business strategies.
+\item
+  Making informed policy decisions based on empirical data.
+\item
+  Reporting results in a way that is understandable to stakeholders,
+  ensuring transparency.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary}\label{summary}
+
+The ``Basic Statistics Using GUI-R (RK Ward)'' course equips learners
+with the foundational and practical skills needed for statistical
+analysis using R. Students will understand theoretical concepts, grasp
+practical applications, and use RKWard effectively to analyze real-world
+data.
+
+\section{Key Takeaways}\label{key-takeaways}
+
+\begin{itemize}
+\tightlist
+\item
+  Proficiency in defining and using variables and data types.
+\item
+  Capability to import and manipulate data in RKWard.
+\item
+  Understanding of basic statistical practices and their applications.
+\item
+  Skill in visualizing data for effective communication of results.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{References}\label{references-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Mohanty, B., \& Misra, S. (2016). \emph{Statistics for Behavioral and
+  Social Sciences}.
+\item
+  Pandya, K., Joshi, P., Bulsari, S., \& Nachane, D. M. (2018).
+  \emph{Statistical Analysis in Simple Steps Using R}.
+\item
+  Field, A. P., Miles, J., \& Field, Z. (2012). \emph{Discovering
+  Statistics Using R}.
+\item
+  Harris, J. K. (2019). \emph{Statistics with R: Solving Problems Using
+  Real-World Data}. SAGE Publications.
+\item
+  Kuhnert, P., \& Venables, B. (2013). \emph{An Introduction to R:
+  Software for Statistical Modeling \& Computing}.
+\item
+  Maindonald, J. H. (2010). \emph{Using R for Data Analysis and
+  Graphics}.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{This detailed eBook aggregates insights from lectures and
+presentation materials, offering an in-depth guide to mastering
+statistics using R, specifically through RKWard. It blends theory with
+practice to ensure a thorough understanding of both rudimentary and
+advanced statistical techniques and includes essential tables for better
+comprehension.}
+
+\bookmarksetup{startatroot}
+
+\chapter{- basic-statistics\_2}\label{basic-statistics_2}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction}\label{introduction-3}
+
+\section{Purpose of the eBook}\label{purpose-of-the-ebook}
+
+This eBook aims to provide a comprehensive understanding of basic
+statistics, focusing on the essential principles necessary for data
+analysis\ldots{}
+
+\section{Importance of Statistics}\label{importance-of-statistics}
+
+Statistics is critical in interpreting data efficiently and
+effectively\ldots{}
+
+\bookmarksetup{startatroot}
+
+\chapter{Basic Concepts of
+Statistics}\label{basic-concepts-of-statistics}
+
+\section{Overview of Statistics}\label{overview-of-statistics}
+
+Statistics is the discipline that deals with the collection,
+analysis\ldots{}
+
+\section{Types of Data}\label{types-of-data}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Qualitative Data}: Represents categories\ldots{}
+\item
+  \textbf{Quantitative Data}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Discrete Data}: Countable values\ldots{}
+  \item
+    \textbf{Continuous Data}: Measurable values\ldots{}
+  \end{itemize}
+\end{itemize}
+
+\section{Descriptive vs.~Inferential
+Statistics}\label{descriptive-vs.-inferential-statistics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Descriptive Statistics}\ldots{}
+\item
+  \textbf{Inferential Statistics}\ldots{}
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Measures of Central
+Tendency}\label{measures-of-central-tendency}
+
+\section{Definition and Importance}\label{definition-and-importance}
+
+Measures of central tendency\ldots{}
+
+\section{The Mean}\label{the-mean}
+
+The mean is the arithmetic average\ldots{}
+
+\subsection{Example with Explanation}\label{example-with-explanation}
+
+Consider the data: 2, 3, 5, 7, 11\ldots{}
+
+\section{The Median}\label{the-median}
+
+The median is the middle value\ldots{}
+
+\subsection{Example with Explanation}\label{example-with-explanation-1}
+
+Consider the data: 3, 5, 1, 7, 9\ldots{}
+
+\section{The Mode}\label{the-mode}
+
+The mode is the value that appears most\ldots{}
+
+\subsection{Example with Explanation}\label{example-with-explanation-2}
+
+Given the dataset: 2, 4, 4, 5, 5, 5, 7, 8\ldots{}
+
+\section{Comparison of Measures}\label{comparison-of-measures}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1778}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2889}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2444}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2889}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Measure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Strengths
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Limitations
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mean & Average\ldots{} & Utilizes all data points & Sensitive to
+outliers \\
+Median & Middle\ldots{} & Robust against outliers & Doesn't use all
+values \\
+Mode & Most frequent & Useful for categorical & May not exist or be
+unique \\
+\end{longtable}
+
+\bookmarksetup{startatroot}
+
+\chapter{Measures of Variability}\label{measures-of-variability}
+
+\section{Definition and Importance}\label{definition-and-importance-1}
+
+Measures of variability (or dispersion)\ldots{}
+
+\section{Range}\label{range}
+
+The range is the difference\ldots{}
+
+\subsection{Example}\label{example}
+
+Data: 4, 8, 2, 10, 6\ldots{}
+
+\section{Variance}\label{variance}
+
+Variance is the average\ldots{}
+
+\subsection{Example}\label{example-1}
+
+Data: 2, 4, 4, 4, 5, 5, 7\ldots{}
+
+\section{Standard Deviation}\label{standard-deviation}
+
+Standard Deviation is the square root\ldots{}
+
+\section{Interquartile Range (IQR)}\label{interquartile-range-iqr}
+
+\subsection{Example}\label{example-2}
+
+Data: 1, 2, 3, 4, 5, 6, 7, 8, 9\ldots{}
+
+\bookmarksetup{startatroot}
+
+\chapter{Probability Fundamentals}\label{probability-fundamentals}
+
+\section{Introduction to Probability}\label{introduction-to-probability}
+
+Probability measures the likelihood\ldots{}
+
+\section{Types of Events}\label{types-of-events}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Independent Events}
+\item
+  \textbf{Dependent Events}
+\item
+  \textbf{Mutually Exclusive Events}
+\end{itemize}
+
+\section{Basic Probability Rules}\label{basic-probability-rules}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Addition Rule}: \[
+  P(A \cup B) = P(A) + P(B)
+  \]
+\item
+  \textbf{Multiplication Rule}: \[
+  P(A \cap B) = P(A) \times P(B)
+  \]
+\end{enumerate}
+
+\section{Introduction to Probability
+Distributions}\label{introduction-to-probability-distributions}
+
+\subsection{Normal Distribution}\label{normal-distribution}
+
+\begin{itemize}
+\tightlist
+\item
+  Symmetric about the mean\ldots{}
+\item
+  Properties: Mean = Median = Mode\ldots{}
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Detailed Transcripts}\label{detailed-transcripts}
+
+\section{Transcript from Lec06}\label{transcript-from-lec06}
+
+\textbf{Key Discussion Points}: - Effects of outliers on mean\ldots{} -
+Mean properties\ldots{}
+
+\section{Transcript from Lec07}\label{transcript-from-lec07}
+
+\textbf{Key Discussion Points}: - Range, variance, SD\ldots{}
+
+\section{Transcript from Lec08}\label{transcript-from-lec08}
+
+\textbf{Key Discussion Points}: - Z score explanation\ldots{} - Galton
+board illustration\ldots{}
+
+\section{Transcript from Lec09}\label{transcript-from-lec09}
+
+\textbf{Key Discussion Points}: - Intro to distributions\ldots{} -
+Probability terms\ldots{}
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary of Week 2 Content}\label{summary-of-week-2-content}
+
+\begin{itemize}
+\tightlist
+\item
+  Measures of central tendency
+\item
+  Measures of variability
+\item
+  Basics of probability\ldots{}
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Tables and Visualizations}\label{tables-and-visualizations}
+
+\section{Frequency Distribution
+Example}\label{frequency-distribution-example}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Value & Frequency \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 4 \\
+2 & 6 \\
+3 & 3 \\
+4 & 2 \\
+5 & 1 \\
+\end{longtable}
+
+\section{Interquartile Range Example}\label{interquartile-range-example}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Position & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 12 \\
+2 & 30 \\
+3 & 45 \\
+4 & 57 \\
+5 & 70 \\
+\end{longtable}
+
+\[
+\text{IQR} = 57 - 30 = 27
+\]
+
+\section{Box Plot Visualization}\label{box-plot-visualization}
+
+A box plot visualizes:
+
+\begin{itemize}
+\tightlist
+\item
+  Minimum
+\item
+  \(Q1\)
+\item
+  Median
+\item
+  \(Q3\)
+\item
+  Maximum
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{References}\label{references-2}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Mohanty, B., \& Misra, S. (2016). \emph{Statistics for Behavioral and
+  Social Sciences}.
+\item
+  Pandya, K., et al.~(2018). \emph{Statistical Analysis in Simple Steps
+  Using R}.
+\item
+  Field, A. P., et al.~(2012). \emph{Discovering Statistics Using R}.
+\item
+  Harris, J. K. (2019). \emph{Statistics with R: Solving Problems Using
+  Real-World Data}.
+\item
+  Anderson, D. R., et al.~(2016). \emph{Statistics for Business \&
+  Economics}.
+\end{enumerate}
+
+\end{CSLReferences}
+
+\bookmarksetup{startatroot}
+
+\chapter{Appendices}\label{appendices}
+
+\begin{itemize}
+\tightlist
+\item
+  Additional exercises
+\item
+  Data sets
+\item
+  Online resources on RKWard
+\end{itemize}
+
+
+
+
+\end{document}

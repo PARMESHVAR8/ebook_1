@@ -14,8 +14,9 @@ book:
     #     - Developing.qmd
     # - lec_1.qmd
     - introduction-to-statistics.qmd
-    - Lectures_05_to_11_Statistics_RKWard.qmd
-    - summary.qmd
+    - basic-statistics1.qmd
+    - basic-statistics2.qmd
+    # - week1-statistics.qmd
 
 bibliography: references.bib
 
