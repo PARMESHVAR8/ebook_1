@@ -6,10 +6,20 @@ format:
     toc: true
     number-sections: true
   pdf:
-    pdf-engine: xelatex
     toc: true
     number-sections: true
     documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+      - \usepackage{enumitem}
+      - \setlist[enumerate]{leftmargin=*,itemsep=0.5em}
+      - \setlist[itemize]{leftmargin=*,itemsep=0.5em}
+    geometry:
+      - margin=1in
 
 
 ---
@@ -64,12 +74,14 @@ Topics to be covered:
 
 ## Teaching
 Science and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.
-Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis.
-Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here
-Introduction to (frequentist) statistics
-Introduction to Bayesian data analysis for cognitive science
-BDA cover
 
+Courses offered:
+
+1. Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis
+2. Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here
+3. Introduction to (frequentist) statistics
+4. Introduction to Bayesian data analysis for cognitive science
+5. BDA cover
 
 ## Lecture notes
 

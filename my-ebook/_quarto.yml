@@ -16,6 +16,7 @@ book:
     - introduction-to-statistics.qmd
     - basic-statistics1.qmd
     - basic-statistics2.qmd
+    - basic-statistics3.qmd
     # - week1-statistics.qmd
 
 bibliography: references.bib
@@ -26,6 +27,18 @@ format:
     css: styles.css
   pdf:
     documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+      - \usepackage{enumitem}
+      - \setlist[enumerate]{leftmargin=*,itemsep=0.5em,parsep=0.5em}
+      - \setlist[itemize]{leftmargin=*,itemsep=0.5em,parsep=0.5em}
+      - \setlist[description]{leftmargin=*,itemsep=0.5em,parsep=0.5em}
+    geometry:
+      - margin=1in
 
 publish:
   site-url: https://parmeshvar8.github.io/ebook_1

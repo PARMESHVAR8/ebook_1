@@ -1,5 +1,5 @@
 ---
-title: "- basic-statistics_2"
+title: "basic-statistics_2"
 author: "Statistics Course Materials"
 format: 
   html:
@@ -10,7 +10,15 @@ format:
   pdf:
     toc: true
     number-sections: true
-    geometry: margin=1in
+    documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+    geometry:
+      - margin=1in
 bibliography: references.bib
 ---
 
@@ -18,160 +26,174 @@ bibliography: references.bib
 
 ## Purpose of the eBook
 
-This eBook aims to provide a comprehensive understanding of basic statistics, focusing on the essential principles necessary for data analysis...
+This eBook aims to provide a comprehensive understanding of basic statistics, focusing on the essential principles necessary for data analysis.
 
 ## Importance of Statistics
 
-Statistics is critical in interpreting data efficiently and effectively...
+Statistics is critical in interpreting data efficiently and effectively across disciplines.
 
 # Basic Concepts of Statistics
 
 ## Overview of Statistics
 
-Statistics is the discipline that deals with the collection, analysis...
+Statistics is the discipline that deals with the collection, analysis, interpretation, and presentation of data.
 
 ## Types of Data
 
-- **Qualitative Data**: Represents categories...
+- **Qualitative Data**: Represents categories or labels without numeric value (e.g., gender, religion).
 - **Quantitative Data**:
-    - **Discrete Data**: Countable values...
-    - **Continuous Data**: Measurable values...
+  - **Discrete Data**: Countable values (e.g., number of students).
+  - **Continuous Data**: Measurable values (e.g., height, weight).
 
 ## Descriptive vs. Inferential Statistics
 
-- **Descriptive Statistics**...
-- **Inferential Statistics**...
+- **Descriptive Statistics**: Summarizes or describes the characteristics of a dataset.
+- **Inferential Statistics**: Makes predictions or inferences about a population based on a sample.
 
 # Measures of Central Tendency
 
 ## Definition and Importance
 
-Measures of central tendency...
+Measures of central tendency describe the center point or typical value of a dataset.
 
 ## The Mean
 
-The mean is the arithmetic average...
+The mean is the arithmetic average of a dataset.
 
-### Example with Explanation
+### Example
 
-Consider the data: 2, 3, 5, 7, 11...
+Consider the data: 2, 3, 5, 7, 11  
+Mean = $\frac{2 + 3 + 5 + 7 + 11}{5} = \frac{28}{5} = 5.6$
 
 ## The Median
 
-The median is the middle value...
+The median is the middle value in an ordered dataset.
 
-### Example with Explanation
+### Example
 
-Consider the data: 3, 5, 1, 7, 9...
+Consider the data: 3, 5, 1, 7, 9  
+Ordered: 1, 3, 5, 7, 9 → Median = 5
 
 ## The Mode
 
-The mode is the value that appears most...
+The mode is the value that appears most frequently in a dataset.
 
-### Example with Explanation
+### Example
 
-Given the dataset: 2, 4, 4, 5, 5, 5, 7, 8...
+Data: 2, 4, 4, 5, 5, 5, 7, 8  
+Mode = 5
 
 ## Comparison of Measures
 
 | Measure | Description | Strengths | Limitations |
 |--------|-------------|-----------|-------------|
-| Mean | Average... | Utilizes all data points | Sensitive to outliers |
-| Median | Middle... | Robust against outliers | Doesn't use all values |
-| Mode | Most frequent | Useful for categorical | May not exist or be unique |
+| Mean | Average of all data points | Utilizes all data | Sensitive to outliers |
+| Median | Middle value | Robust to outliers | Ignores extreme values |
+| Mode | Most frequent value | Useful for categorical data | May not exist or be unique |
 
 # Measures of Variability
 
 ## Definition and Importance
 
-Measures of variability (or dispersion)...
+Measures of variability indicate the spread or dispersion within a dataset.
 
 ## Range
 
-The range is the difference...
+The range is the difference between the maximum and minimum values.
 
 ### Example
 
-Data: 4, 8, 2, 10, 6...
+Data: 4, 8, 2, 10, 6  
+Range = 10 - 2 = 8
 
 ## Variance
 
-Variance is the average...
+Variance is the average of the squared deviations from the mean.
 
 ### Example
 
-Data: 2, 4, 4, 4, 5, 5, 7...
+Data: 2, 4, 4, 4, 5, 5, 7  
+Mean = 4.43 (approx.)  
+Variance = $\frac{\sum(x_i - \bar{x})^2}{n - 1}$
 
 ## Standard Deviation
 
-Standard Deviation is the square root...
+Standard deviation is the square root of the variance.
 
 ## Interquartile Range (IQR)
 
+The IQR measures the middle 50% of the data between Q1 and Q3.
+
 ### Example
 
-Data: 1, 2, 3, 4, 5, 6, 7, 8, 9...
+Data: 1, 2, 3, 4, 5, 6, 7, 8, 9  
+Q1 = 3, Q3 = 7  
+IQR = 7 - 3 = 4
 
 # Probability Fundamentals
 
 ## Introduction to Probability
 
-Probability measures the likelihood...
+Probability measures the likelihood of occurrence of an event.
 
 ## Types of Events
 
-- **Independent Events**
-- **Dependent Events**
-- **Mutually Exclusive Events**
+- **Independent Events**: One event does not affect another.
+- **Dependent Events**: One event influences the outcome of another.
+- **Mutually Exclusive Events**: Events that cannot happen at the same time.
 
 ## Basic Probability Rules
 
-1. **Addition Rule**:
+1. **Addition Rule**: This rule applies when you're calculating the probability of event A **or** event B occurring.
    $$
-   P(A \cup B) = P(A) + P(B)
+   P(A \cup B) = P(A) + P(B) - P(A \cap B)
    $$
-2. **Multiplication Rule**:
+
+2. **Multiplication Rule**: This rule applies when you're calculating the probability of event A **and** event B both occurring (for independent events).
    $$
    P(A \cap B) = P(A) \times P(B)
    $$
+
 
 ## Introduction to Probability Distributions
 
 ### Normal Distribution
 
-- Symmetric about the mean...
-- Properties: Mean = Median = Mode...
+- Symmetric about the mean.
+- Bell-shaped curve.
+- Properties: Mean = Median = Mode.
 
 # Detailed Transcripts
 
 ## Transcript from Lec06
 
 **Key Discussion Points**:
-- Effects of outliers on mean...
-- Mean properties...
+- Effects of outliers on the mean.
+- Properties of the mean.
 
 ## Transcript from Lec07
 
 **Key Discussion Points**:
-- Range, variance, SD...
+- Concepts of range, variance, and standard deviation.
 
 ## Transcript from Lec08
 
 **Key Discussion Points**:
-- Z score explanation...
-- Galton board illustration...
+- Explanation of the Z score.
+- Galton board demonstration.
 
 ## Transcript from Lec09
 
 **Key Discussion Points**:
-- Intro to distributions...
-- Probability terms...
+- Introduction to probability distributions.
+- Basic probability concepts and terms.
 
 # Summary of Week 2 Content
 
-- Measures of central tendency
-- Measures of variability
-- Basics of probability...
+- Measures of central tendency.
+- Measures of variability.
+- Basic probability and events.
+- Introduction to distributions.
 
 # Tables and Visualizations
 
@@ -204,23 +226,15 @@ $$
 A box plot visualizes:
 
 - Minimum
-- $Q1$
+- First Quartile ($Q1$)
 - Median
-- $Q3$
+- Third Quartile ($Q3$)
 - Maximum
 
 # References
 
-::: {#refs}
-1. Mohanty, B., & Misra, S. (2016). *Statistics for Behavioral and Social Sciences*.
-2. Pandya, K., et al. (2018). *Statistical Analysis in Simple Steps Using R*.
-3. Field, A. P., et al. (2012). *Discovering Statistics Using R*.
-4. Harris, J. K. (2019). *Statistics with R: Solving Problems Using Real-World Data*.
-5. Anderson, D. R., et al. (2016). *Statistics for Business & Economics*.
-:::
-
 # Appendices
 
 - Additional exercises
-- Data sets
-- Online resources on RKWard
+- Data sets for practice
+- Online resources and guides on RKWard

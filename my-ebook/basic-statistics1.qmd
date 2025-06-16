@@ -10,6 +10,15 @@ format:
   pdf:
     toc: true
     number-sections: true
+    documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+    geometry:
+      - margin=1in
 ---
 
 # Introduction
@@ -31,9 +40,9 @@ R is a versatile, open-source language specifically designed for statistical ana
 
 **Key Features of R:**
 
-- **Extensive Libraries:** R hosts thousands of packages that support numerous statistical models such as linear regression, time series, and more.
-- **Customizable Graphics:** The base graphics capabilities, along with packages like `ggplot2`, allow users to create a variety of complex visualizations with relative ease.
-- **Data Manipulation Tools:** Packages like `dplyr` and `tidyr` provide robust tools for data cleaning and transformation.
+- Extensive Libraries: R hosts thousands of packages that support numerous statistical models such as linear regression, time series, and more.
+- Customizable Graphics: The base graphics capabilities, along with packages like `ggplot2`, allow users to create a variety of complex visualizations with relative ease.
+- Data Manipulation Tools: Packages like `dplyr` and `tidyr` provide robust tools for data cleaning and transformation.
 
 ## Understanding RKWard
 
@@ -41,9 +50,9 @@ RKWard serves as a user-friendly interface that simplifies interactions with R, 
 
 **Features of RKWard Include:**
 
-- **Graphical User Interface:** Navigation through menus rather than command lines enhances accessibility.
-- **Built-in Documentation:** Context-sensitive help facilitates learning and troubleshooting.
-- **Integration with R:** Commands executed via the GUI can be viewed and modified, providing a dual-learning experience.
+- Graphical User Interface: Navigation through menus rather than command lines enhances accessibility.
+- Built-in Documentation: Context-sensitive help facilitates learning and troubleshooting.
+- Integration with R: Commands executed via the GUI can be viewed and modified, providing a dual-learning experience.
 
 # Understanding Variables
 
@@ -88,9 +97,9 @@ Spreadsheets provide a structured format for data entry, where rows represent in
 
 **Key Functions of Spreadsheets:**
 
-- **Data Organization:** Data is easily sorted and filtered.
-- **Formulas and Functions:** Built-in functions allow for quick calculation and data manipulation.
-- **Visualization Integration:** Charts and tables can visually represent data.
+- Data Organization: Data is easily sorted and filtered.
+- Formulas and Functions: Built-in functions allow for quick calculation and data manipulation.
+- Visualization Integration: Charts and tables can visually represent data.
 
 # Importing Data in RKWard
 
@@ -104,20 +113,14 @@ Before importing data into RKWard, ensure that your dataset meets standards such
 
 ## Step-by-Step Import Process
 
-To import data into RKWard, follow these steps:
+Steps to import data into RKWard:
 
-1. **Open RKWard** and access the main interface.
-2. **Navigate to the "Data" Tab:**
-   - Select "Import Data" option.
-3. **Choose the File Type:**
-   - Select the file format (e.g., CSV, Excel) of your prepared dataset.
-4. **Browse for Your File:**
-   - Utilize the "Browse" button to locate the file on your system.
-5. **Mapping Variables:**
-   - During the import process, specify the data types for each column.
-   - Ensure the first row is used as header labels.
-6. **Review and Confirm Import:**
-   - Once the data is imported, review it in the RKWard workspace, ensuring everything is correctly represented.
+1. Open RKWard and access the main interface.
+2. Go to the "Data" tab and select "Import Data".
+3. Choose the file type such as CSV or Excel.
+4. Browse to locate your file.
+5. Specify data types for each column during import and ensure the first row contains headers.
+6. Review the imported data in the workspace to confirm it's properly loaded.
 
 # Basic Statistical Practices
 
@@ -153,8 +156,8 @@ Descriptive statistics help summarize and organize data in a meaningful way.
 
 Inferential statistics allow us to make predictions or inferences about a population based on a sample.
 
-1. **Hypothesis Testing:** A method to test assumptions regarding population parameters using sample data.
-2. **Confidence Intervals:** Define a range of values derived from sample statistics that likely encompass the true population parameter.
+- **Hypothesis Testing:** A method to test assumptions regarding population parameters using sample data.
+- **Confidence Intervals:** Define a range of values derived from sample statistics that likely encompass the true population parameter.
 
 ## Practical R Commands and Functions
 
@@ -183,12 +186,12 @@ Variety in graph types caters to different data presentation needs:
 
 ## Implementing Visualization in RKWard
 
-Students will learn how to create visualizations within RKWard by:
+Students will learn how to create visualizations within RKWard by following these steps:
 
-1. Navigating to the graph creation menu.
-2. Selecting the appropriate kind of graph.
-3. Customizing aesthetics (titles, colors, axes).
-4. Producing and exporting diagrams for reports.
+1. Navigate to the graph creation menu.
+2. Select the desired type of graph.
+3. Customize visual elements such as titles, colors, and axes.
+4. Generate and export the graph for use in reports.
 
 # Practical Applications of Statistics
 
@@ -204,9 +207,9 @@ Statistics plays a pivotal role in diverse disciplines:
 
 ## Utilizing Statistical Methods for Decision Making
 
-- Using statistical evidence to guide business strategies.
-- Making informed policy decisions based on empirical data.
-- Reporting results in a way that is understandable to stakeholders, ensuring transparency.
+- Use statistical evidence to guide business strategies.
+- Make informed policy decisions based on empirical data.
+- Report findings clearly for transparency and comprehension.
 
 # Summary
 
@@ -218,16 +221,3 @@ The "Basic Statistics Using GUI-R (RK Ward)" course equips learners with the fou
 - Capability to import and manipulate data in RKWard.
 - Understanding of basic statistical practices and their applications.
 - Skill in visualizing data for effective communication of results.
-
-# References
-
-1. Mohanty, B., & Misra, S. (2016). *Statistics for Behavioral and Social Sciences*.
-2. Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). *Statistical Analysis in Simple Steps Using R*.
-3. Field, A. P., Miles, J., & Field, Z. (2012). *Discovering Statistics Using R*.
-4. Harris, J. K. (2019). *Statistics with R: Solving Problems Using Real-World Data*. SAGE Publications.
-5. Kuhnert, P., & Venables, B. (2013). *An Introduction to R: Software for Statistical Modeling & Computing*.
-6. Maindonald, J. H. (2010). *Using R for Data Analysis and Graphics*.
-
----
-
-*This detailed eBook aggregates insights from lectures and presentation materials, offering an in-depth guide to mastering statistics using R, specifically through RKWard. It blends theory with practice to ensure a thorough understanding of both rudimentary and advanced statistical techniques and includes essential tables for better comprehension.*

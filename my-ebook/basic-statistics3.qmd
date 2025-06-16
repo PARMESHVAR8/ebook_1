@@ -1,5 +1,5 @@
 ---
-title: "Basic Statistics Using GUI-R (RKWard)"
+title: "basic-statistics_3"
 author: "Dr. Harsh Pradhan"
 affiliation: "Institute of Management Studies, Banaras Hindu University"
 format: 
