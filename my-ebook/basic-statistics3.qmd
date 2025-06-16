@@ -1,0 +1,222 @@
+---
+title: "Basic Statistics Using GUI-R (RKWard)"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+---
+
+# Introduction
+
+## Importance of Statistics
+
+Statistics is a powerful tool used across various disciplines, from economics and social sciences to natural sciences and engineering. It enables researchers to analyze data, draw conclusions, and make predictions about populations based on sample observations. Understanding statistical principles is essential for anyone involved in empirical research, data science, and decision-making processes.
+
+## Overview of Topics
+
+This eBook will delve deeply into core concepts such as populations and samples, hypotheses and errors, various statistical models, the normal distribution, and essential statistical techniques in R using the GUI-R interface. Each chapter will provide detailed explanations, examples, and practical applications to enhance understanding.
+
+# Understanding Populations and Samples
+
+## Definition of Population
+
+In statistics, a population is defined as the entire set of individuals, items, or events of interest. For instance, if a researcher aims to study the average height of adults in the United States, the population would include every adult residing in the country.
+
+## Definition of Sample
+
+A sample is a subset of the population selected for analysis. It is crucial that this sample adequately represents the population to ensure that the conclusions drawn are applicable. For example, selecting individuals from various demographic backgrounds when studying a health-related issue ensures a more accurate reflection of the population.
+
+## Importance in Research
+
+The primary reason for studying a sample rather than the entire population is practicality. Conducting a census can be time-consuming and costly. Hence, researchers select samples that allow them to infer insights about the population efficiently.
+
+## Relationship Between Population and Sample
+
+The relationship between population and sample is crucial, as a well-chosen sample can provide valid insights into the population characteristics. Understanding this relationship helps researchers avoid common pitfalls, such as bias in sampling, which can lead to inaccurate conclusions.
+
+# Hypotheses and Errors
+
+## Understanding Hypotheses
+
+A hypothesis is an educated guess or a statement about the relationship between two or more variables that can be tested through research. For example, one might hypothesize that "students who study more than three hours a day will score higher on exams."
+
+## Crafting Null and Alternative Hypotheses
+
+1. **Null Hypothesis ($H_0$)**: A statement suggesting that there is no effect or difference.  
+   $$H_0: \mu_1 = \mu_2$$
+
+2. **Alternative Hypothesis ($H_a$)**: A statement indicating the presence of an effect or difference.  
+   $$H_a: \mu_1 \neq \mu_2$$
+
+## Types of Errors
+
+- **Type I Error** ($\alpha$): Occurs when a true null hypothesis is incorrectly rejected.  
+- **Type II Error** ($\beta$): Occurs when a false null hypothesis is incorrectly accepted.  
+
+## Significance Level
+
+The significance level (often set at 0.05) helps researchers determine the threshold for rejecting the null hypothesis. If the probability of obtaining the observed data under the null hypothesis is less than the significance level, the null hypothesis can be rejected.
+
+# Inferential Statistics
+
+## Introduction to Inferential Statistics
+
+Inferential statistics allow researchers to draw conclusions about populations based on sample data. It involves estimating population parameters, testing hypotheses, and making predictions.
+
+## Sampling Techniques in Detail
+
+### Simple Random Sampling
+
+Each member of the population has an equal chance of being selected.
+
+### Stratified Sampling
+
+The population is divided into subgroups (strata) and samples are drawn proportionally from each stratum.
+
+### Systematic Sampling
+
+Every nth member of the population is selected after a random start.
+
+### Cluster Sampling
+
+Entire clusters are randomly selected for analysis.
+
+## Estimating Population Parameters
+
+Researchers estimate parameters like the population mean or proportion using sample data and quantify uncertainty through confidence intervals.
+
+## Central Limit Theorem
+
+The Central Limit Theorem (CLT) states that, for sufficiently large samples ($n > 30$), the sampling distribution of the sample mean approximates a normal distribution regardless of the population's distribution.
+
+# Model Fit
+
+## Definition and Importance of Model Fit
+
+Model fit refers to how well a statistical model represents the data it is based upon. A good model fit enables accurate predictions and reliable conclusions.
+
+## Statistical Models Explained
+
+### Linear Regression
+
+Used to predict a dependent variable using one or more independent variables.
+
+$$
+Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \epsilon
+$$
+
+### Logistic Regression
+
+Used when the outcome variable is binary (e.g., yes/no, pass/fail).
+
+### Multiple Regression
+
+An extension of linear regression that includes more than one predictor.
+
+## Evaluating Model Fit
+
+### R-squared
+
+$$
+R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
+$$
+
+Indicates the proportion of variance explained by the model.
+
+### Adjusted R-squared
+
+Adjusts $R^2$ based on the number of predictors in the model.
+
+### AIC and BIC
+
+Model selection metrics that penalize overly complex models to avoid overfitting.
+
+# Understanding Normal Distribution and Z-tables
+
+## Characteristics of Normal Distribution
+
+- Symmetrical bell-shaped curve  
+- Mean = Median = Mode  
+- 68%-95%-99.7% rule applies  
+
+## Practical Application of Z-tables
+
+Z-scores help determine how far a data point is from the mean in terms of standard deviations.
+
+$$
+Z = \frac{(X - \mu)}{\sigma}
+$$
+
+### Application Examples
+
+**Example 1**  
+Average height = 70 inches, SD = 3, height = 74 inches:
+
+$$
+Z = \frac{74 - 70}{3} = 1.33
+$$
+
+This corresponds to roughly 90.82% in the z-table.
+
+# Descriptive Statistics
+
+## Summary Measures
+
+### Mean
+
+$$
+\text{Mean} = \frac{\sum X}{N}
+$$
+
+### Median
+
+The middle value in a sorted dataset.
+
+### Mode
+
+The most frequently occurring value.
+
+### Variance
+
+$$
+\sigma^2 = \frac{\sum (X - \mu)^2}{N}
+$$
+
+### Standard Deviation
+
+$$
+\sigma = \sqrt{\sigma^2}
+$$
+
+## Measures of Shape
+
+### Skewness
+
+Indicates asymmetry.
+
+### Kurtosis
+
+Measures peakness. Normal = 3.
+
+## Data Visualization Techniques
+
+- **Histograms**: Show distribution of data  
+- **Box Plots**: Summarize quartiles and outliers  
+- **Scatter Plots**: Show relationships between two variables  
+
+# Conclusion and Future Directions
+
+This eBook explored key statistical concepts, from foundational definitions to hypothesis testing, model evaluation, and inferential techniques. It also highlighted the importance of visualization and data literacy in research and analytics. Future directions include diving into machine learning, predictive modeling, and advanced analytics in R.
+
+# References
+
+1. Ward, R.K. *Basic Statistics Using GUI-R.*
+2. Pradhan, H. *Lectures on Inferential Statistics.*
+3. Bhushan, S. *Statistical Analysis in R: A Beginner's Guide.*
+4. Moore, D.S., Notz, W.I., & Fligner, M.A. (2013). *The Basic Practice of Statistics*. W.H. Freeman.
+5. Field, A. (2013). *Discovering Statistics Using SPSS*. SAGE Publications.
