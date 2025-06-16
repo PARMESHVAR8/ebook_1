@@ -17,6 +17,7 @@ book:
     - basic-statistics1.qmd
     - basic-statistics2.qmd
     - basic-statistics3.qmd
+    - basic-statistics4.qmd
     # - week1-statistics.qmd
 
 bibliography: references.bib

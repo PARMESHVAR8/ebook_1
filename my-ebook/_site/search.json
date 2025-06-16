@@ -798,5 +798,225 @@
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
     ]
+  },
+  {
+    "objectID": "basic-statistics4.html",
+    "href": "basic-statistics4.html",
+    "title": "6  basic-statistics_4",
+    "section": "",
+    "text": "7 Introduction\nThis eBook serves as a comprehensive guide to understanding basic statistics, focusing particularly on concepts pertinent to the use of GUI-R (RK Ward). It combines theoretical knowledge with practical applications, allowing readers to engage with statistical analysis effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#course-name",
+    "href": "basic-statistics4.html#course-name",
+    "title": "6  basic-statistics_4",
+    "section": "8.1 Course Name",
+    "text": "8.1 Course Name\nBasic Statistics using GUI-R (RKWard)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#instructor-profile",
+    "href": "basic-statistics4.html#instructor-profile",
+    "title": "6  basic-statistics_4",
+    "section": "8.2 Instructor Profile",
+    "text": "8.2 Instructor Profile\nDr. Harsh Pradhan is an Assistant Professor at the Institute of Management Studies, Banaras Hindu University. He specializes in statistical methods and data analysis techniques. For a complete overview of his work, refer to his BHU Faculty Profile.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#learning-objectives",
+    "href": "basic-statistics4.html#learning-objectives",
+    "title": "6  basic-statistics_4",
+    "section": "8.3 Learning Objectives",
+    "text": "8.3 Learning Objectives\n\nUnderstand and apply fundamental statistical concepts.\nPerform T-tests and ANOVA using real data.\nCalculate and interpret confidence intervals.\nUtilize GUI-R for statistical analysis effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#descriptive-statistics",
+    "href": "basic-statistics4.html#descriptive-statistics",
+    "title": "6  basic-statistics_4",
+    "section": "9.1 Descriptive Statistics",
+    "text": "9.1 Descriptive Statistics\nDescriptive statistics summarize and describe the features of a dataset.\n\n9.1.1 Measures of Central Tendency\n\nMean: Average value calculated by summing observations and dividing by the number of observations.\nMedian: The middle value when the data is ordered. If there is an even number of observations, it is the average of the two middle values.\nMode: The most frequently occurring value in a dataset.\n\n\n9.1.1.1 Example Calculation\nGiven the data set: [4, 8, 6, 5, 3]\n\nMean: \\((4 + 8 + 6 + 5 + 3) / 5 = 5.2\\)\nMedian: Ordered data [3, 4, 5, 6, 8], median is 5.\nMode: No mode (all values are unique).\n\n\n\n\n9.1.2 Measures of Dispersion\n\nRange: The difference between the maximum and minimum values in a dataset.\nVariance: The average of the squared differences from the Mean.\nStandard Deviation (SD): The square root of variance, showing how much variation exists from the mean.\n\n\n9.1.2.1 Example Table of Measures\n\n\n\nStatistic\nValue\n\n\n\n\nMean\n5.2\n\n\nMedian\n5\n\n\nMode\nN/A\n\n\nRange\n5\n\n\nVariance\n3.52\n\n\nSD\n1.88",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#inferential-statistics",
+    "href": "basic-statistics4.html#inferential-statistics",
+    "title": "6  basic-statistics_4",
+    "section": "9.2 Inferential Statistics",
+    "text": "9.2 Inferential Statistics\nInferential statistics involves making predictions or inferences about a population based on a sample of data.\n\n9.2.1 Hypothesis Testing\n\nNull Hypothesis (H₀): A statement asserting there is no effect or difference.\nAlternative Hypothesis (H₁): A statement indicating the presence of an effect or difference.\n\n\n\n9.2.2 Confidence Intervals\nA confidence interval (CI) provides a range of values likely to contain the population parameter (e.g., mean) with a certain level of confidence (usually 95%).\nFormula:\n\\[\nCI = \\bar{x} \\pm Z \\times \\frac{s}{\\sqrt{n}}\n\\]\nWhere: - \\(\\bar{x}\\) = sample mean\n- \\(Z\\) = Z-score for the desired confidence level\n- \\(s\\) = standard deviation of the sample\n- \\(n\\) = sample size\n\n\n9.2.3 Types of Errors\n\nType I Error: Rejecting the null hypothesis when it is true (false positive).\nType II Error: Failing to reject the null hypothesis when it is false (false negative).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#introduction-to-t-test",
+    "href": "basic-statistics4.html#introduction-to-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.1 Introduction to T-Test",
+    "text": "10.1 Introduction to T-Test\nThe T-test is a hypothesis test used to determine if there is a significant difference between the means of two groups.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#types-of-t-tests",
+    "href": "basic-statistics4.html#types-of-t-tests",
+    "title": "6  basic-statistics_4",
+    "section": "10.2 Types of T-Tests",
+    "text": "10.2 Types of T-Tests\n\nIndependent T-Test: Compares means of two independent groups.\nPaired T-Test: Compares means of two related groups.\nOne-sample T-Test: Tests the mean from a single group against a known mean.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#performing-t-tests",
+    "href": "basic-statistics4.html#performing-t-tests",
+    "title": "6  basic-statistics_4",
+    "section": "10.3 Performing T-Tests",
+    "text": "10.3 Performing T-Tests\n\n10.3.1 Step-by-Step Process\n\nState the Hypotheses:\n\nH₀: \\(\\mu_1 = \\mu_2\\)\n\nH₁: \\(\\mu_1 \\neq \\mu_2\\)\n\nCalculate the T-statistic: \\[\nt = \\frac{\\bar{x_1} - \\bar{x_2}}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}}\n\\]\nDegrees of Freedom: \\[\ndf = n_1 + n_2 - 2\n\\]\nFind the P-value from statistical tables or software.\nMake a Decision: If p &lt; 0.05, reject H₀.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#assumptions-of-the-t-test",
+    "href": "basic-statistics4.html#assumptions-of-the-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.4 Assumptions of the T-Test",
+    "text": "10.4 Assumptions of the T-Test\n\nNormal distribution.\nIndependent groups (for independent T-tests).\nEqual variances.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example-independent-t-test",
+    "href": "basic-statistics4.html#example-independent-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.5 Example: Independent T-Test",
+    "text": "10.5 Example: Independent T-Test\n\n\n\nGroup\nMean\nSD\nn\n\n\n\n\nGroup A\n78\n10\n30\n\n\nGroup B\n85\n12\n30\n\n\n\nCalculation:\n\\[\nt = \\frac{78 - 85}{\\sqrt{\\frac{10^2}{30} + \\frac{12^2}{30}}} \\approx -2.53\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#t-test-in-gui-r",
+    "href": "basic-statistics4.html#t-test-in-gui-r",
+    "title": "6  basic-statistics_4",
+    "section": "10.6 T-Test in GUI-R",
+    "text": "10.6 T-Test in GUI-R\n\nOpen GUI-R and import your dataset.\nSelect ‘T-Test’ from the menu.\nDefine groups.\nRun the test and interpret the output.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#introduction-1",
+    "href": "basic-statistics4.html#introduction-1",
+    "title": "6  basic-statistics_4",
+    "section": "11.1 Introduction",
+    "text": "11.1 Introduction\nANOVA compares means among 3+ groups to determine if at least one is different.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#one-way-anova",
+    "href": "basic-statistics4.html#one-way-anova",
+    "title": "6  basic-statistics_4",
+    "section": "11.2 One-Way ANOVA",
+    "text": "11.2 One-Way ANOVA\nInvolves one independent variable.\n\n11.2.1 Steps:\n\nHypotheses:\n\nH₀: All group means equal.\nH₁: At least one group mean is different.\n\nCalculate F-statistic:\n\n\\[\nF = \\frac{MS_{Between}}{MS_{Within}}\n\\]\n\nDegrees of Freedom:\n\n\\(df_{Between} = k - 1\\)\n\\(df_{Within} = N - k\\)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example-table",
+    "href": "basic-statistics4.html#example-table",
+    "title": "6  basic-statistics_4",
+    "section": "11.3 Example Table",
+    "text": "11.3 Example Table\n\n\n\nGroup\nMean\nVariance\nn\n\n\n\n\nGroup 1\n5.5\n1.5\n30\n\n\nGroup 2\n7.1\n2.0\n30\n\n\nGroup 3\n6.8\n1.8\n30\n\n\n\n\n11.3.1 Summary Table\n\n\n\nSource\nSS\ndf\nMS\nF\n\n\n\n\nBetween Groups\n42.4\n2\n21.2\n5.24\n\n\nWithin Groups\n122.7\n87\n1.41\n\n\n\nTotal\n165.1\n89",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#anova-in-gui-r",
+    "href": "basic-statistics4.html#anova-in-gui-r",
+    "title": "6  basic-statistics_4",
+    "section": "11.4 ANOVA in GUI-R",
+    "text": "11.4 ANOVA in GUI-R\n\nImport data.\nChoose ANOVA.\nDefine variables.\nRun and interpret.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#concept",
+    "href": "basic-statistics4.html#concept",
+    "title": "6  basic-statistics_4",
+    "section": "12.1 Concept",
+    "text": "12.1 Concept\nShows likely range for population parameter.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#formula",
+    "href": "basic-statistics4.html#formula",
+    "title": "6  basic-statistics_4",
+    "section": "12.2 Formula",
+    "text": "12.2 Formula\n\\[\nCI = \\bar{x} \\pm Z \\cdot \\frac{s}{\\sqrt{n}}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example",
+    "href": "basic-statistics4.html#example",
+    "title": "6  basic-statistics_4",
+    "section": "12.3 Example",
+    "text": "12.3 Example\nSample Mean = 100, SD = 15, n = 30, Z = 1.96\n\\[\nCI = 100 \\pm 1.96 \\times \\frac{15}{\\sqrt{30}} \\approx [98.04, 101.96]\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#gui-r-overview",
+    "href": "basic-statistics4.html#gui-r-overview",
+    "title": "6  basic-statistics_4",
+    "section": "13.1 GUI-R Overview",
+    "text": "13.1 GUI-R Overview\nGUI-based interface for R statistical computing.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#workflow",
+    "href": "basic-statistics4.html#workflow",
+    "title": "6  basic-statistics_4",
+    "section": "13.2 Workflow",
+    "text": "13.2 Workflow\n\nImport Data (CSV/Excel).\nChoose Statistical Test.\nRun & Analyze Results.\nExport or visualize.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#case-studies",
+    "href": "basic-statistics4.html#case-studies",
+    "title": "6  basic-statistics_4",
+    "section": "13.3 Case Studies",
+    "text": "13.3 Case Studies\n\nT-Test: Compare test scores from two teaching methods.\nANOVA: Evaluate effect of 3 different drugs on recovery rate.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
   }
 ]

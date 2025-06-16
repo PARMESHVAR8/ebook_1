@@ -1,0 +1,264 @@
+---
+title: "basic-statistics_4"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+    fontsize: 11pt
+    documentclass: article
+bibliography: references.bib
+---
+
+# Introduction
+
+This eBook serves as a comprehensive guide to understanding basic statistics, focusing particularly on concepts pertinent to the use of GUI-R (RK Ward). It combines theoretical knowledge with practical applications, allowing readers to engage with statistical analysis effectively.
+
+# Course Overview
+
+## Course Name
+
+**Basic Statistics using GUI-R (RKWard)**
+
+## Instructor Profile
+
+Dr. Harsh Pradhan is an Assistant Professor at the Institute of Management Studies, Banaras Hindu University. He specializes in statistical methods and data analysis techniques. For a complete overview of his work, refer to his [BHU Faculty Profile](https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562).
+
+## Learning Objectives
+
+- Understand and apply fundamental statistical concepts.
+- Perform T-tests and ANOVA using real data.
+- Calculate and interpret confidence intervals.
+- Utilize GUI-R for statistical analysis effectively.
+
+# Fundamental Statistical Concepts
+
+## Descriptive Statistics
+
+Descriptive statistics summarize and describe the features of a dataset.
+
+### Measures of Central Tendency
+
+- **Mean**: Average value calculated by summing observations and dividing by the number of observations.
+- **Median**: The middle value when the data is ordered. If there is an even number of observations, it is the average of the two middle values.
+- **Mode**: The most frequently occurring value in a dataset.
+
+#### Example Calculation
+
+Given the data set: `[4, 8, 6, 5, 3]`
+
+- **Mean**: $(4 + 8 + 6 + 5 + 3) / 5 = 5.2$
+- **Median**: Ordered data [3, 4, 5, 6, 8], median is 5.
+- **Mode**: No mode (all values are unique).
+
+### Measures of Dispersion
+
+- **Range**: The difference between the maximum and minimum values in a dataset.
+- **Variance**: The average of the squared differences from the Mean.
+- **Standard Deviation (SD)**: The square root of variance, showing how much variation exists from the mean.
+
+#### Example Table of Measures
+
+| Statistic | Value |
+|-----------|-------|
+| Mean      | 5.2   |
+| Median    | 5     |
+| Mode      | N/A   |
+| Range     | 5     |
+| Variance  | 3.52  |
+| SD        | 1.88  |
+
+## Inferential Statistics
+
+Inferential statistics involves making predictions or inferences about a population based on a sample of data.
+
+### Hypothesis Testing
+
+- **Null Hypothesis (H₀)**: A statement asserting there is no effect or difference.
+- **Alternative Hypothesis (H₁)**: A statement indicating the presence of an effect or difference.
+
+### Confidence Intervals
+
+A confidence interval (CI) provides a range of values likely to contain the population parameter (e.g., mean) with a certain level of confidence (usually 95%).
+
+**Formula**:
+
+$$
+CI = \bar{x} \pm Z \times \frac{s}{\sqrt{n}}
+$$
+
+Where:
+- $\bar{x}$ = sample mean  
+- $Z$ = Z-score for the desired confidence level  
+- $s$ = standard deviation of the sample  
+- $n$ = sample size  
+
+### Types of Errors
+
+- **Type I Error**: Rejecting the null hypothesis when it is true (false positive).
+- **Type II Error**: Failing to reject the null hypothesis when it is false (false negative).
+
+# The Student T-Test
+
+## Introduction to T-Test
+
+The T-test is a hypothesis test used to determine if there is a significant difference between the means of two groups.
+
+## Types of T-Tests
+
+- **Independent T-Test**: Compares means of two independent groups.
+- **Paired T-Test**: Compares means of two related groups.
+- **One-sample T-Test**: Tests the mean from a single group against a known mean.
+
+## Performing T-Tests
+
+### Step-by-Step Process
+
+1. **State the Hypotheses**:
+   - H₀: $\mu_1 = \mu_2$  
+   - H₁: $\mu_1 \neq \mu_2$  
+
+2. **Calculate the T-statistic**:
+   $$
+   t = \frac{\bar{x_1} - \bar{x_2}}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
+   $$
+
+3. **Degrees of Freedom**:
+   $$
+   df = n_1 + n_2 - 2
+   $$
+
+4. **Find the P-value** from statistical tables or software.
+
+5. **Make a Decision**: If p < 0.05, reject H₀.
+
+## Assumptions of the T-Test
+
+- Normal distribution.
+- Independent groups (for independent T-tests).
+- Equal variances.
+
+## Example: Independent T-Test
+
+| Group   | Mean | SD | n  |
+|---------|------|----|----|
+| Group A | 78   | 10 | 30 |
+| Group B | 85   | 12 | 30 |
+
+**Calculation**:
+
+$$
+t = \frac{78 - 85}{\sqrt{\frac{10^2}{30} + \frac{12^2}{30}}} \approx -2.53
+$$
+
+## T-Test in GUI-R
+
+- Open GUI-R and import your dataset.
+- Select 'T-Test' from the menu.
+- Define groups.
+- Run the test and interpret the output.
+
+# Analysis of Variance (ANOVA)
+
+## Introduction
+
+ANOVA compares means among 3+ groups to determine if at least one is different.
+
+## One-Way ANOVA
+
+Involves one independent variable.
+
+### Steps:
+
+1. **Hypotheses**:
+   - H₀: All group means equal.
+   - H₁: At least one group mean is different.
+
+2. **Calculate F-statistic**:
+
+$$
+F = \frac{MS_{Between}}{MS_{Within}}
+$$
+
+3. **Degrees of Freedom**:
+   - $df_{Between} = k - 1$
+   - $df_{Within} = N - k$
+
+## Example Table
+
+| Group   | Mean | Variance | n  |
+|---------|------|----------|----|
+| Group 1 | 5.5  | 1.5      | 30 |
+| Group 2 | 7.1  | 2.0      | 30 |
+| Group 3 | 6.8  | 1.8      | 30 |
+
+### Summary Table
+
+| Source         | SS    | df | MS   | F    |
+|----------------|-------|----|------|------|
+| Between Groups | 42.4  | 2  | 21.2 | 5.24 |
+| Within Groups  | 122.7 | 87 | 1.41 |      |
+| Total          | 165.1 | 89 |      |      |
+
+## ANOVA in GUI-R
+
+- Import data.
+- Choose ANOVA.
+- Define variables.
+- Run and interpret.
+
+# Confidence Intervals
+
+## Concept
+
+Shows likely range for population parameter.
+
+## Formula
+
+$$
+CI = \bar{x} \pm Z \cdot \frac{s}{\sqrt{n}}
+$$
+
+## Example
+
+Sample Mean = 100, SD = 15, n = 30, Z = 1.96
+
+$$
+CI = 100 \pm 1.96 \times \frac{15}{\sqrt{30}} \approx [98.04, 101.96]
+$$
+
+# Practical Applications in GUI-R
+
+## GUI-R Overview
+
+GUI-based interface for R statistical computing.
+
+## Workflow
+
+1. Import Data (CSV/Excel).
+2. Choose Statistical Test.
+3. Run & Analyze Results.
+4. Export or visualize.
+
+## Case Studies
+
+- **T-Test**: Compare test scores from two teaching methods.
+- **ANOVA**: Evaluate effect of 3 different drugs on recovery rate.
+
+# Conclusion
+
+Mastering statistics and GUI-R helps researchers interpret and communicate data insights. T-tests, ANOVA, and confidence intervals are foundational tools, and GUI-R provides an accessible environment for applying them.
+
+# References
+
+- Pradhan, H. (2023). *Basic Statistics using GUI-R (RKWard)*.
+- Methods for Statistical Analysis. Retrieved from [https://methods.sagepub.com](https://methods.sagepub.com)
