@@ -24,7 +24,7 @@
     "href": "index.html#teaching",
     "title": "my-ebook",
     "section": "2.2 Teaching",
-    "text": "2.2 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science. Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis. Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here Introduction to (frequentist) statistics Introduction to Bayesian data analysis for cognitive science BDA cover",
+    "text": "2.2 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.\nCourses offered:\n\nFree online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis\nShort (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here\nIntroduction to (frequentist) statistics\nIntroduction to Bayesian data analysis for cognitive science\nBDA cover",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -52,321 +52,521 @@
   {
     "objectID": "introduction-to-statistics.html",
     "href": "introduction-to-statistics.html",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "",
     "text": "3 Chapter 1: Welcome and Course Overview\nThis course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.\nPre-Requisites:",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
     "objectID": "introduction-to-statistics.html#histogram",
     "href": "introduction-to-statistics.html#histogram",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "14.1 1. Histogram",
     "text": "14.1 1. Histogram\n\nDepicts the distribution of a single variable\n\nCan include frequency, relative frequency, and cumulative frequency\n\nBest for understanding where most data points lie",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
     "objectID": "introduction-to-statistics.html#pie-chart",
     "href": "introduction-to-statistics.html#pie-chart",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "14.2 2. Pie Chart",
     "text": "14.2 2. Pie Chart\n\nRepresents categorical data as slices of a circle\n\nBest when visualizing proportions",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
     "objectID": "introduction-to-statistics.html#scatter-plot",
     "href": "introduction-to-statistics.html#scatter-plot",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "14.3 3. Scatter Plot",
     "text": "14.3 3. Scatter Plot\n\nPlots two variables to examine relationships\n\nX-axis: Independent variable\n\nY-axis: Dependent variable\n\nUseful in exploring associations or potential causality",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
     "objectID": "introduction-to-statistics.html#box-plot",
     "href": "introduction-to-statistics.html#box-plot",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "14.4 4. Box Plot",
     "text": "14.4 4. Box Plot\n\nShows data distribution via quartiles\n\nMedian, interquartile range (IQR), and outliers are clearly indicated\n\nUseful for comparing multiple variables",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
     "objectID": "introduction-to-statistics.html#density-plot",
     "href": "introduction-to-statistics.html#density-plot",
-    "title": "2  Introduction to Basic Statistics Using GUI-R (RKWard)",
+    "title": "2  Introduction to Statistics",
     "section": "14.5 5. Density Plot",
     "text": "14.5 5. Density Plot\n\nSmoothed version of a histogram\n\nBetter suited for continuous data with decimal variation\n\nKey Tips:\n\nJP_01 was frequently used as an example variable\n\nRKWard allows saving and exporting plots easily\n\nGUI menus guide the user through plot creation\n\n\nAlways choose the plot type that best matches your data and goal: frequency, relationship, or comparison.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
+    "objectID": "basic-statistics1.html",
+    "href": "basic-statistics1.html",
+    "title": "3  basic-statistics_1",
     "section": "",
-    "text": "4 📘 Lecture 05: Essential Math for Statistics\nThis lecture lays the foundation of mathematical concepts essential to understanding statistics. Topics include coordinate geometry, linear and exponential functions, and basics of calculus.",
+    "text": "4 Introduction\nWelcome to the “Basic Statistics Using GUI-R (RK Ward)” course, led by Dr. Harsh Pradhan at the Institute of Management Studies, Banaras Hindu University. This course takes an integrated approach to statistical analysis, bridging theory with practical skills through the R programming language and its GUI, RKWard.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#key-concepts",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#key-concepts",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "4.1 📌 Key Concepts",
-    "text": "4.1 📌 Key Concepts\n\n4.1.1 📐 Number Line & Coordinate Geometry\n\nA number line represents a variable’s values.\nCartesian plane: X-axis (independent), Y-axis (dependent).\nLinear equation: \\(Y = mX + C\\), where:\n\n\\(m = \\frac{Y_2 - Y_1}{X_2 - X_1}\\) (slope)\n\\(C\\) is the Y-intercept (Y when X = 0)\n\n\n\n\n4.1.2 📊 Exponential Functions\n\nForm: \\(Y = a^X\\) or \\(Y = e^X\\) (where \\(e \\approx 2.718\\))\nModels rapid, nonlinear growth.\n\n\n\n4.1.3 🧮 Differentiation\n\nMeasures instantaneous rate of change: \\[\n\\frac{dY}{dX} = \\lim_{h \\to 0} \\frac{f(X + h) - f(X)}{h}\n\\]\n\n\n\n4.1.4 📈 Integration\n\nCalculates area under the curve: \\[\n\\bar{X} = \\int X \\cdot f(X) \\, dX\n\\]",
+    "objectID": "basic-statistics1.html#objectives-of-the-course",
+    "href": "basic-statistics1.html#objectives-of-the-course",
+    "title": "3  basic-statistics_1",
+    "section": "4.1 Objectives of the Course",
+    "text": "4.1 Objectives of the Course\n\nUnderstand fundamental concepts related to statistics.\nGain proficiency in using R and RKWard for statistical analysis.\nLearn to visualize data effectively.\nApply statistical methodologies to real-world datasets.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#definitions",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#definitions",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "5.1 📌 Definitions",
-    "text": "5.1 📌 Definitions\n\nMean: Arithmetic average; sensitive to outliers.\nMedian: Middle value; robust to outliers.\nMode: Most frequent value; best for categorical data.",
+    "objectID": "basic-statistics1.html#r-programming-language",
+    "href": "basic-statistics1.html#r-programming-language",
+    "title": "3  basic-statistics_1",
+    "section": "5.1 R Programming Language",
+    "text": "5.1 R Programming Language\nR is a versatile, open-source language specifically designed for statistical analysis and data visualization. It provides an extensive suite of statistical procedures, making it a cornerstone for statisticians and data scientists.\nKey Features of R:\n\nExtensive Libraries: R hosts thousands of packages that support numerous statistical models such as linear regression, time series, and more.\nCustomizable Graphics: The base graphics capabilities, along with packages like ggplot2, allow users to create a variety of complex visualizations with relative ease.\nData Manipulation Tools: Packages like dplyr and tidyr provide robust tools for data cleaning and transformation.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#characteristics",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#characteristics",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "5.2 🔍 Characteristics",
-    "text": "5.2 🔍 Characteristics\n\nSimple, uses all values (mean).\nMedian is stable against extreme values.\nMode is useful for nominal data.",
+    "objectID": "basic-statistics1.html#understanding-rkward",
+    "href": "basic-statistics1.html#understanding-rkward",
+    "title": "3  basic-statistics_1",
+    "section": "5.2 Understanding RKWard",
+    "text": "5.2 Understanding RKWard\nRKWard serves as a user-friendly interface that simplifies interactions with R, allowing users—especially those less familiar with programming—to utilize its powerful capabilities without a steep learning curve.\nFeatures of RKWard Include:\n\nGraphical User Interface: Navigation through menus rather than command lines enhances accessibility.\nBuilt-in Documentation: Context-sensitive help facilitates learning and troubleshooting.\nIntegration with R: Commands executed via the GUI can be viewed and modified, providing a dual-learning experience.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#suitability-by-data-type",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#suitability-by-data-type",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "5.3 💡 Suitability by Data Type",
-    "text": "5.3 💡 Suitability by Data Type\n\n\n\nMeasure\nData Type\n\n\n\n\nMean\nInterval/Ratio\n\n\nMedian\nOrdinal\n\n\nMode\nNominal",
+    "objectID": "basic-statistics1.html#types-of-variables",
+    "href": "basic-statistics1.html#types-of-variables",
+    "title": "3  basic-statistics_1",
+    "section": "6.1 Types of Variables",
+    "text": "6.1 Types of Variables\nVariables are the building blocks of statistical analysis, representing the characteristics or properties of the data.\n\n6.1.1 Qualitative Variables (Categorical Variables)\n\nNominal Variables: These variables categorize data without an inherent order. For example, types of fruits (apple, orange) are nominal.\nOrdinal Variables: These represent ordered categories. For instance, a customer satisfaction survey may be rated as poor, fair, good, or excellent.\n\n\n\n6.1.2 Quantitative Variables\n\nDiscrete Variables: These variables take on countable values, such as the number of students in a class.\nContinuous Variables: These can take any value within a given range, such as height and weight.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#skewness",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#skewness",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "5.4 📉 Skewness",
-    "text": "5.4 📉 Skewness\n\nPositive skew: Mean &gt; Median\nNegative skew: Mean &lt; Median",
+    "objectID": "basic-statistics1.html#importance-of-defining-variables",
+    "href": "basic-statistics1.html#importance-of-defining-variables",
+    "title": "3  basic-statistics_1",
+    "section": "6.2 Importance of Defining Variables",
+    "text": "6.2 Importance of Defining Variables\nProperly understanding and defining variables is crucial for:\n\nSelecting appropriate statistical tests.\nEnsuring accurate data interpretation.\nStructuring datasets to facilitate analysis.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#measures",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#measures",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.1 📌 Measures",
-    "text": "6.1 📌 Measures\n\nRange: Max - Min\nInterquartile Range (IQR): \\(Q_3 - Q_1\\)\nVariance: Avg. of squared deviations\nStandard Deviation (SD): \\(\\sqrt{\\text{Variance}}\\)\nCoefficient of Variation (CV): \\(\\frac{SD}{Mean}\\)",
+    "objectID": "basic-statistics1.html#statistical-data-types",
+    "href": "basic-statistics1.html#statistical-data-types",
+    "title": "3  basic-statistics_1",
+    "section": "7.1 Statistical Data Types",
+    "text": "7.1 Statistical Data Types\nData types are foundational for statistical analysis as they define what kind of arithmetic operations can be performed on the data.\n\n\n\n\n\n\n\n\nData Type\nDescription\nExample\n\n\n\n\nNominal\nCategorical data without order\nBlood types (A, B, AB, O)\n\n\nOrdinal\nCategorical data with a defined order\nCustomer satisfaction (poor, fair, good)\n\n\nInterval\nNumerical data with meaningful differences\nTemperature in Celsius\n\n\nRatio\nNumerical data with an absolute zero\nWeight, height",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#theoretical-moments",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#theoretical-moments",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "6.2 📐 Theoretical Moments",
-    "text": "6.2 📐 Theoretical Moments\n\n\n\nMoment\nInterpretation\n\n\n\n\n1st\nMean\n\n\n2nd\nVariance\n\n\n3rd\nSkewness\n\n\n4th\nKurtosis",
+    "objectID": "basic-statistics1.html#spreadsheet-basics",
+    "href": "basic-statistics1.html#spreadsheet-basics",
+    "title": "3  basic-statistics_1",
+    "section": "7.2 Spreadsheet Basics",
+    "text": "7.2 Spreadsheet Basics\nSpreadsheets provide a structured format for data entry, where rows represent instances (e.g., individuals, items) and columns represent variables (e.g., age, gender).\nKey Functions of Spreadsheets:\n\nData Organization: Data is easily sorted and filtered.\nFormulas and Functions: Built-in functions allow for quick calculation and data manipulation.\nVisualization Integration: Charts and tables can visually represent data.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#mean-centering",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#mean-centering",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "7.1 🧮 Mean-Centering",
-    "text": "7.1 🧮 Mean-Centering\n\nSubtract mean from each data point.\nNew mean becomes zero.",
+    "objectID": "basic-statistics1.html#data-preparation",
+    "href": "basic-statistics1.html#data-preparation",
+    "title": "3  basic-statistics_1",
+    "section": "8.1 Data Preparation",
+    "text": "8.1 Data Preparation\nBefore importing data into RKWard, ensure that your dataset meets standards such as:\n\nProperly labeled columns.\nConsistent data types.\nAbsence of unnecessary formatting or symbols.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#standardization-z-score",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#standardization-z-score",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "7.2 📊 Standardization (Z-Score)",
-    "text": "7.2 📊 Standardization (Z-Score)\n\nFormula: \\(Z = \\frac{X - \\mu}{\\sigma}\\)\nMean = 0, SD = 1\nUnitless; allows comparison across distributions.",
+    "objectID": "basic-statistics1.html#step-by-step-import-process",
+    "href": "basic-statistics1.html#step-by-step-import-process",
+    "title": "3  basic-statistics_1",
+    "section": "8.2 Step-by-Step Import Process",
+    "text": "8.2 Step-by-Step Import Process\nSteps to import data into RKWard:\n\nOpen RKWard and access the main interface.\nGo to the “Data” tab and select “Import Data”.\nChoose the file type such as CSV or Excel.\nBrowse to locate your file.\nSpecify data types for each column during import and ensure the first row contains headers.\nReview the imported data in the workspace to confirm it’s properly loaded.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#applications",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#applications",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "7.3 📌 Applications",
-    "text": "7.3 📌 Applications\n\nNormalize different scales\nPreprocessing in statistics and ML",
+    "objectID": "basic-statistics1.html#descriptive-statistics",
+    "href": "basic-statistics1.html#descriptive-statistics",
+    "title": "3  basic-statistics_1",
+    "section": "9.1 Descriptive Statistics",
+    "text": "9.1 Descriptive Statistics\nDescriptive statistics help summarize and organize data in a meaningful way.\n\n9.1.1 Central Tendency Measures\n\nMean: Average of the dataset.\nMedian: Middle value when data is ordered.\nMode: Most frequent value in the dataset.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nMean\n\\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\)\nAverage value\n\n\nMedian\n(Sorted data, middle item)\nMiddle value in ordered dataset\n\n\nMode\nValue that appears most frequently\nMost common value\n\n\n\n\n\n9.1.2 Dispersion Measures\n\nRange: Difference between the maximum and minimum values.\nVariance: Measurement of the spread of data points.\nStandard Deviation: Square root of variance, providing a measure of the average distance from the mean.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nRange\n\\(Range = Max - Min\\)\nSpread of dataset\n\n\nVariance\n\\(Var(X) = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}\\)\nSpread of data relative to mean\n\n\nStandard Deviation\n\\(SD(X) = \\sqrt{Var(X)}\\)\nAverage distance from mean",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#key-concepts-1",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#key-concepts-1",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "8.1 📌 Key Concepts",
-    "text": "8.1 📌 Key Concepts\n\nExperiment: Controlled process\nEvent: Subset of outcomes\nSample Space (S): All possible outcomes",
+    "objectID": "basic-statistics1.html#inferential-statistics",
+    "href": "basic-statistics1.html#inferential-statistics",
+    "title": "3  basic-statistics_1",
+    "section": "9.2 Inferential Statistics",
+    "text": "9.2 Inferential Statistics\nInferential statistics allow us to make predictions or inferences about a population based on a sample.\n\nHypothesis Testing: A method to test assumptions regarding population parameters using sample data.\nConfidence Intervals: Define a range of values derived from sample statistics that likely encompass the true population parameter.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#basic-rule",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#basic-rule",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "8.2 📈 Basic Rule",
-    "text": "8.2 📈 Basic Rule\n\n\\(P(A) = \\frac{\\text{Favorable outcomes}}{\\text{Total outcomes}}\\)",
+    "objectID": "basic-statistics1.html#practical-r-commands-and-functions",
+    "href": "basic-statistics1.html#practical-r-commands-and-functions",
+    "title": "3  basic-statistics_1",
+    "section": "9.3 Practical R Commands and Functions",
+    "text": "9.3 Practical R Commands and Functions\nUnderstanding and utilizing R functions is crucial for effective data analysis. Some key functions include:\n\nmean(): Calculates the average.\nsd(): Computes standard deviation.\nt.test(): Performs a t-test for hypothesis testing.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#properties",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#properties",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "8.3 🧠 Properties",
-    "text": "8.3 🧠 Properties\n\n\\(0 \\leq P(A) \\leq 1\\)\n\\(P(S) = 1\\)\n\\(P(A^c) = 1 - P(A)\\)\nIf \\(A \\subseteq B\\), then \\(P(A) \\leq P(B)\\)",
+    "objectID": "basic-statistics1.html#significance-of-data-visualization",
+    "href": "basic-statistics1.html#significance-of-data-visualization",
+    "title": "3  basic-statistics_1",
+    "section": "10.1 Significance of Data Visualization",
+    "text": "10.1 Significance of Data Visualization\nVisualization enhances comprehension by allowing researchers to observe patterns, trends, and anomalies effectively.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#visual-aids",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#visual-aids",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "8.4 🧮 Visual Aids",
-    "text": "8.4 🧮 Visual Aids\n\nVenn diagrams\nFrequency ↔︎ Probability distribution linkage",
+    "objectID": "basic-statistics1.html#types-of-graphs",
+    "href": "basic-statistics1.html#types-of-graphs",
+    "title": "3  basic-statistics_1",
+    "section": "10.2 Types of Graphs",
+    "text": "10.2 Types of Graphs\nVariety in graph types caters to different data presentation needs:\n\n\n\n\n\n\n\nGraph Type\nUse Case\n\n\n\n\nBar Graph\nComparing categorical data\n\n\nHistogram\nDisplaying distribution of continuous data\n\n\nBox Plot\nSummarizing data distributions and spotting outliers\n\n\nScatter Plot\nInvestigating relationships between two quantitative variables",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#bernoulli-trials",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#bernoulli-trials",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "9.1 🎲 Bernoulli Trials",
-    "text": "9.1 🎲 Bernoulli Trials\n\nSuccess (p) or failure (1 – p)",
+    "objectID": "basic-statistics1.html#implementing-visualization-in-rkward",
+    "href": "basic-statistics1.html#implementing-visualization-in-rkward",
+    "title": "3  basic-statistics_1",
+    "section": "10.3 Implementing Visualization in RKWard",
+    "text": "10.3 Implementing Visualization in RKWard\nStudents will learn how to create visualizations within RKWard by following these steps:\n\nNavigate to the graph creation menu.\nSelect the desired type of graph.\nCustomize visual elements such as titles, colors, and axes.\nGenerate and export the graph for use in reports.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#binomial-distribution",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#binomial-distribution",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "9.2 📊 Binomial Distribution",
-    "text": "9.2 📊 Binomial Distribution\n\n\\(n\\) independent trials\n\\[\nP(X = r) = \\binom{n}{r} p^r (1-p)^{n-r}\n\\]",
+    "objectID": "basic-statistics1.html#case-studies-in-various-fields",
+    "href": "basic-statistics1.html#case-studies-in-various-fields",
+    "title": "3  basic-statistics_1",
+    "section": "11.1 Case Studies in Various Fields",
+    "text": "11.1 Case Studies in Various Fields\nStatistics plays a pivotal role in diverse disciplines:\n\n\n\n\n\n\n\nField\nApplication\n\n\n\n\nHealthcare\nAnalyzing medical test results, outcomes of treatments, and patient demographics\n\n\nBusiness\nApplied for market analyses, customer satisfaction studies, and financial forecasting\n\n\nSocial Sciences\nEmployed in surveys to understand populations, opinions, and behavioral patterns",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#properties-1",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#properties-1",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "9.3 📈 Properties",
-    "text": "9.3 📈 Properties\n\nMean: \\(np\\)\nVariance: \\(np(1-p)\\)",
+    "objectID": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
+    "href": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
+    "title": "3  basic-statistics_1",
+    "section": "11.2 Utilizing Statistical Methods for Decision Making",
+    "text": "11.2 Utilizing Statistical Methods for Decision Making\n\nUse statistical evidence to guide business strategies.\nMake informed policy decisions based on empirical data.\nReport findings clearly for transparency and comprehension.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#tools",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#tools",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "9.4 🎮 Tools",
-    "text": "9.4 🎮 Tools\n\nGalton board\nPascal’s triangle",
+    "objectID": "basic-statistics1.html#key-takeaways",
+    "href": "basic-statistics1.html#key-takeaways",
+    "title": "3  basic-statistics_1",
+    "section": "12.1 Key Takeaways",
+    "text": "12.1 Key Takeaways\n\nProficiency in defining and using variables and data types.\nCapability to import and manipulate data in RKWard.\nUnderstanding of basic statistical practices and their applications.\nSkill in visualizing data for effective communication of results.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
     ]
   },
   {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#characteristics-1",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#characteristics-1",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "10.1 📌 Characteristics",
-    "text": "10.1 📌 Characteristics\n\nBell-shaped, symmetric about \\(\\mu\\)\nArea under curve = 1\nEmerges with large samples",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#equation",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#equation",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "10.2 📉 Equation",
-    "text": "10.2 📉 Equation\n\\[\nf(x) = \\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-\\frac{(x - \\mu)^2}{2\\sigma^2}}\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#z-score",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#z-score",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "10.3 🧮 Z-Score",
-    "text": "10.3 🧮 Z-Score\n\n\\(Z = \\frac{X - \\mu}{\\sigma}\\)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#empirical-rule",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#empirical-rule",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "10.4 🔍 Empirical Rule",
-    "text": "10.4 🔍 Empirical Rule\n\n\n\nRange\nCoverage\n\n\n\n\n±1 SD\n68%\n\n\n±2 SD\n95%\n\n\n±3 SD\n99.7%",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#applications-1",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#applications-1",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "10.5 📌 Applications",
-    "text": "10.5 📌 Applications\n\nHeights, test scores, measurement errors",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "Lectures_05_to_11_Statistics_RKWard.html#topics-recap",
-    "href": "Lectures_05_to_11_Statistics_RKWard.html#topics-recap",
-    "title": "3  Basic Statistics Using GUI-R (RKWard)",
-    "section": "11.1 ✨ Topics Recap",
-    "text": "11.1 ✨ Topics Recap\n\nMath: Derivatives, integrals, exponential functions\nDescriptive Stats: Central tendency, variability\nTransformation: Z-scores, mean-centering\nProbability: Events, rules, visual tools\nDistributions: From discrete (binomial) to continuous (normal)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "4  summary",
+    "objectID": "basic-statistics2.html",
+    "href": "basic-statistics2.html",
+    "title": "4  basic-statistics_2",
     "section": "",
-    "text": "This is summary file . 10 june .",
+    "text": "5 Introduction",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>summary</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#purpose-of-the-ebook",
+    "href": "basic-statistics2.html#purpose-of-the-ebook",
+    "title": "4  basic-statistics_2",
+    "section": "5.1 Purpose of the eBook",
+    "text": "5.1 Purpose of the eBook\nThis eBook aims to provide a comprehensive understanding of basic statistics, focusing on the essential principles necessary for data analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#importance-of-statistics",
+    "href": "basic-statistics2.html#importance-of-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "5.2 Importance of Statistics",
+    "text": "5.2 Importance of Statistics\nStatistics is critical in interpreting data efficiently and effectively across disciplines.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#overview-of-statistics",
+    "href": "basic-statistics2.html#overview-of-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "6.1 Overview of Statistics",
+    "text": "6.1 Overview of Statistics\nStatistics is the discipline that deals with the collection, analysis, interpretation, and presentation of data.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#types-of-data",
+    "href": "basic-statistics2.html#types-of-data",
+    "title": "4  basic-statistics_2",
+    "section": "6.2 Types of Data",
+    "text": "6.2 Types of Data\n\nQualitative Data: Represents categories or labels without numeric value (e.g., gender, religion).\nQuantitative Data:\n\nDiscrete Data: Countable values (e.g., number of students).\nContinuous Data: Measurable values (e.g., height, weight).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#descriptive-vs.-inferential-statistics",
+    "href": "basic-statistics2.html#descriptive-vs.-inferential-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "6.3 Descriptive vs. Inferential Statistics",
+    "text": "6.3 Descriptive vs. Inferential Statistics\n\nDescriptive Statistics: Summarizes or describes the characteristics of a dataset.\nInferential Statistics: Makes predictions or inferences about a population based on a sample.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#definition-and-importance",
+    "href": "basic-statistics2.html#definition-and-importance",
+    "title": "4  basic-statistics_2",
+    "section": "7.1 Definition and Importance",
+    "text": "7.1 Definition and Importance\nMeasures of central tendency describe the center point or typical value of a dataset.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-mean",
+    "href": "basic-statistics2.html#the-mean",
+    "title": "4  basic-statistics_2",
+    "section": "7.2 The Mean",
+    "text": "7.2 The Mean\nThe mean is the arithmetic average of a dataset.\n\n7.2.1 Example\nConsider the data: 2, 3, 5, 7, 11\nMean = \\(\\frac{2 + 3 + 5 + 7 + 11}{5} = \\frac{28}{5} = 5.6\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-median",
+    "href": "basic-statistics2.html#the-median",
+    "title": "4  basic-statistics_2",
+    "section": "7.3 The Median",
+    "text": "7.3 The Median\nThe median is the middle value in an ordered dataset.\n\n7.3.1 Example\nConsider the data: 3, 5, 1, 7, 9\nOrdered: 1, 3, 5, 7, 9 → Median = 5",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-mode",
+    "href": "basic-statistics2.html#the-mode",
+    "title": "4  basic-statistics_2",
+    "section": "7.4 The Mode",
+    "text": "7.4 The Mode\nThe mode is the value that appears most frequently in a dataset.\n\n7.4.1 Example\nData: 2, 4, 4, 5, 5, 5, 7, 8\nMode = 5",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#comparison-of-measures",
+    "href": "basic-statistics2.html#comparison-of-measures",
+    "title": "4  basic-statistics_2",
+    "section": "7.5 Comparison of Measures",
+    "text": "7.5 Comparison of Measures\n\n\n\n\n\n\n\n\n\nMeasure\nDescription\nStrengths\nLimitations\n\n\n\n\nMean\nAverage of all data points\nUtilizes all data\nSensitive to outliers\n\n\nMedian\nMiddle value\nRobust to outliers\nIgnores extreme values\n\n\nMode\nMost frequent value\nUseful for categorical data\nMay not exist or be unique",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#definition-and-importance-1",
+    "href": "basic-statistics2.html#definition-and-importance-1",
+    "title": "4  basic-statistics_2",
+    "section": "8.1 Definition and Importance",
+    "text": "8.1 Definition and Importance\nMeasures of variability indicate the spread or dispersion within a dataset.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#range",
+    "href": "basic-statistics2.html#range",
+    "title": "4  basic-statistics_2",
+    "section": "8.2 Range",
+    "text": "8.2 Range\nThe range is the difference between the maximum and minimum values.\n\n8.2.1 Example\nData: 4, 8, 2, 10, 6\nRange = 10 - 2 = 8",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#variance",
+    "href": "basic-statistics2.html#variance",
+    "title": "4  basic-statistics_2",
+    "section": "8.3 Variance",
+    "text": "8.3 Variance\nVariance is the average of the squared deviations from the mean.\n\n8.3.1 Example\nData: 2, 4, 4, 4, 5, 5, 7\nMean = 4.43 (approx.)\nVariance = \\(\\frac{\\sum(x_i - \\bar{x})^2}{n - 1}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#standard-deviation",
+    "href": "basic-statistics2.html#standard-deviation",
+    "title": "4  basic-statistics_2",
+    "section": "8.4 Standard Deviation",
+    "text": "8.4 Standard Deviation\nStandard deviation is the square root of the variance.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#interquartile-range-iqr",
+    "href": "basic-statistics2.html#interquartile-range-iqr",
+    "title": "4  basic-statistics_2",
+    "section": "8.5 Interquartile Range (IQR)",
+    "text": "8.5 Interquartile Range (IQR)\nThe IQR measures the middle 50% of the data between Q1 and Q3.\n\n8.5.1 Example\nData: 1, 2, 3, 4, 5, 6, 7, 8, 9\nQ1 = 3, Q3 = 7\nIQR = 7 - 3 = 4",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#introduction-to-probability",
+    "href": "basic-statistics2.html#introduction-to-probability",
+    "title": "4  basic-statistics_2",
+    "section": "9.1 Introduction to Probability",
+    "text": "9.1 Introduction to Probability\nProbability measures the likelihood of occurrence of an event.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#types-of-events",
+    "href": "basic-statistics2.html#types-of-events",
+    "title": "4  basic-statistics_2",
+    "section": "9.2 Types of Events",
+    "text": "9.2 Types of Events\n\nIndependent Events: One event does not affect another.\nDependent Events: One event influences the outcome of another.\nMutually Exclusive Events: Events that cannot happen at the same time.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#basic-probability-rules",
+    "href": "basic-statistics2.html#basic-probability-rules",
+    "title": "4  basic-statistics_2",
+    "section": "9.3 Basic Probability Rules",
+    "text": "9.3 Basic Probability Rules\n\nAddition Rule: This rule applies when you’re calculating the probability of event A or event B occurring. \\[\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\n\\]\nMultiplication Rule: This rule applies when you’re calculating the probability of event A and event B both occurring (for independent events). \\[\nP(A \\cap B) = P(A) \\times P(B)\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#introduction-to-probability-distributions",
+    "href": "basic-statistics2.html#introduction-to-probability-distributions",
+    "title": "4  basic-statistics_2",
+    "section": "9.4 Introduction to Probability Distributions",
+    "text": "9.4 Introduction to Probability Distributions\n\n9.4.1 Normal Distribution\n\nSymmetric about the mean.\nBell-shaped curve.\nProperties: Mean = Median = Mode.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec06",
+    "href": "basic-statistics2.html#transcript-from-lec06",
+    "title": "4  basic-statistics_2",
+    "section": "10.1 Transcript from Lec06",
+    "text": "10.1 Transcript from Lec06\nKey Discussion Points: - Effects of outliers on the mean. - Properties of the mean.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec07",
+    "href": "basic-statistics2.html#transcript-from-lec07",
+    "title": "4  basic-statistics_2",
+    "section": "10.2 Transcript from Lec07",
+    "text": "10.2 Transcript from Lec07\nKey Discussion Points: - Concepts of range, variance, and standard deviation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec08",
+    "href": "basic-statistics2.html#transcript-from-lec08",
+    "title": "4  basic-statistics_2",
+    "section": "10.3 Transcript from Lec08",
+    "text": "10.3 Transcript from Lec08\nKey Discussion Points: - Explanation of the Z score. - Galton board demonstration.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec09",
+    "href": "basic-statistics2.html#transcript-from-lec09",
+    "title": "4  basic-statistics_2",
+    "section": "10.4 Transcript from Lec09",
+    "text": "10.4 Transcript from Lec09\nKey Discussion Points: - Introduction to probability distributions. - Basic probability concepts and terms.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#frequency-distribution-example",
+    "href": "basic-statistics2.html#frequency-distribution-example",
+    "title": "4  basic-statistics_2",
+    "section": "12.1 Frequency Distribution Example",
+    "text": "12.1 Frequency Distribution Example\n\n\n\nValue\nFrequency\n\n\n\n\n1\n4\n\n\n2\n6\n\n\n3\n3\n\n\n4\n2\n\n\n5\n1",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#interquartile-range-example",
+    "href": "basic-statistics2.html#interquartile-range-example",
+    "title": "4  basic-statistics_2",
+    "section": "12.2 Interquartile Range Example",
+    "text": "12.2 Interquartile Range Example\n\n\n\nPosition\nValue\n\n\n\n\n1\n12\n\n\n2\n30\n\n\n3\n45\n\n\n4\n57\n\n\n5\n70\n\n\n\n\\[\n\\text{IQR} = 57 - 30 = 27\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#box-plot-visualization",
+    "href": "basic-statistics2.html#box-plot-visualization",
+    "title": "4  basic-statistics_2",
+    "section": "12.3 Box Plot Visualization",
+    "text": "12.3 Box Plot Visualization\nA box plot visualizes:\n\nMinimum\nFirst Quartile (\\(Q1\\))\nMedian\nThird Quartile (\\(Q3\\))\nMaximum",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
     ]
   }
 ]
