@@ -568,5 +568,235 @@
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
     ]
+  },
+  {
+    "objectID": "basic-statistics3.html",
+    "href": "basic-statistics3.html",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "",
+    "text": "6 Introduction",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#importance-of-statistics",
+    "href": "basic-statistics3.html#importance-of-statistics",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "6.1 Importance of Statistics",
+    "text": "6.1 Importance of Statistics\nStatistics is a powerful tool used across various disciplines, from economics and social sciences to natural sciences and engineering. It enables researchers to analyze data, draw conclusions, and make predictions about populations based on sample observations. Understanding statistical principles is essential for anyone involved in empirical research, data science, and decision-making processes.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#overview-of-topics",
+    "href": "basic-statistics3.html#overview-of-topics",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "6.2 Overview of Topics",
+    "text": "6.2 Overview of Topics\nThis eBook will delve deeply into core concepts such as populations and samples, hypotheses and errors, various statistical models, the normal distribution, and essential statistical techniques in R using the GUI-R interface. Each chapter will provide detailed explanations, examples, and practical applications to enhance understanding.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-of-population",
+    "href": "basic-statistics3.html#definition-of-population",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "7.1 Definition of Population",
+    "text": "7.1 Definition of Population\nIn statistics, a population is defined as the entire set of individuals, items, or events of interest. For instance, if a researcher aims to study the average height of adults in the United States, the population would include every adult residing in the country.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-of-sample",
+    "href": "basic-statistics3.html#definition-of-sample",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "7.2 Definition of Sample",
+    "text": "7.2 Definition of Sample\nA sample is a subset of the population selected for analysis. It is crucial that this sample adequately represents the population to ensure that the conclusions drawn are applicable. For example, selecting individuals from various demographic backgrounds when studying a health-related issue ensures a more accurate reflection of the population.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#importance-in-research",
+    "href": "basic-statistics3.html#importance-in-research",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "7.3 Importance in Research",
+    "text": "7.3 Importance in Research\nThe primary reason for studying a sample rather than the entire population is practicality. Conducting a census can be time-consuming and costly. Hence, researchers select samples that allow them to infer insights about the population efficiently.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#relationship-between-population-and-sample",
+    "href": "basic-statistics3.html#relationship-between-population-and-sample",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "7.4 Relationship Between Population and Sample",
+    "text": "7.4 Relationship Between Population and Sample\nThe relationship between population and sample is crucial, as a well-chosen sample can provide valid insights into the population characteristics. Understanding this relationship helps researchers avoid common pitfalls, such as bias in sampling, which can lead to inaccurate conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#understanding-hypotheses",
+    "href": "basic-statistics3.html#understanding-hypotheses",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "8.1 Understanding Hypotheses",
+    "text": "8.1 Understanding Hypotheses\nA hypothesis is an educated guess or a statement about the relationship between two or more variables that can be tested through research. For example, one might hypothesize that “students who study more than three hours a day will score higher on exams.”",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#crafting-null-and-alternative-hypotheses",
+    "href": "basic-statistics3.html#crafting-null-and-alternative-hypotheses",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "8.2 Crafting Null and Alternative Hypotheses",
+    "text": "8.2 Crafting Null and Alternative Hypotheses\n\nNull Hypothesis (\\(H_0\\)): A statement suggesting that there is no effect or difference.\n\\[H_0: \\mu_1 = \\mu_2\\]\nAlternative Hypothesis (\\(H_a\\)): A statement indicating the presence of an effect or difference.\n\\[H_a: \\mu_1 \\neq \\mu_2\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#types-of-errors",
+    "href": "basic-statistics3.html#types-of-errors",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "8.3 Types of Errors",
+    "text": "8.3 Types of Errors\n\nType I Error (\\(\\alpha\\)): Occurs when a true null hypothesis is incorrectly rejected.\n\nType II Error (\\(\\beta\\)): Occurs when a false null hypothesis is incorrectly accepted.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#significance-level",
+    "href": "basic-statistics3.html#significance-level",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "8.4 Significance Level",
+    "text": "8.4 Significance Level\nThe significance level (often set at 0.05) helps researchers determine the threshold for rejecting the null hypothesis. If the probability of obtaining the observed data under the null hypothesis is less than the significance level, the null hypothesis can be rejected.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#introduction-to-inferential-statistics",
+    "href": "basic-statistics3.html#introduction-to-inferential-statistics",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "9.1 Introduction to Inferential Statistics",
+    "text": "9.1 Introduction to Inferential Statistics\nInferential statistics allow researchers to draw conclusions about populations based on sample data. It involves estimating population parameters, testing hypotheses, and making predictions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#sampling-techniques-in-detail",
+    "href": "basic-statistics3.html#sampling-techniques-in-detail",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "9.2 Sampling Techniques in Detail",
+    "text": "9.2 Sampling Techniques in Detail\n\n9.2.1 Simple Random Sampling\nEach member of the population has an equal chance of being selected.\n\n\n9.2.2 Stratified Sampling\nThe population is divided into subgroups (strata) and samples are drawn proportionally from each stratum.\n\n\n9.2.3 Systematic Sampling\nEvery nth member of the population is selected after a random start.\n\n\n9.2.4 Cluster Sampling\nEntire clusters are randomly selected for analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#estimating-population-parameters",
+    "href": "basic-statistics3.html#estimating-population-parameters",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "9.3 Estimating Population Parameters",
+    "text": "9.3 Estimating Population Parameters\nResearchers estimate parameters like the population mean or proportion using sample data and quantify uncertainty through confidence intervals.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#central-limit-theorem",
+    "href": "basic-statistics3.html#central-limit-theorem",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "9.4 Central Limit Theorem",
+    "text": "9.4 Central Limit Theorem\nThe Central Limit Theorem (CLT) states that, for sufficiently large samples (\\(n &gt; 30\\)), the sampling distribution of the sample mean approximates a normal distribution regardless of the population’s distribution.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-and-importance-of-model-fit",
+    "href": "basic-statistics3.html#definition-and-importance-of-model-fit",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "10.1 Definition and Importance of Model Fit",
+    "text": "10.1 Definition and Importance of Model Fit\nModel fit refers to how well a statistical model represents the data it is based upon. A good model fit enables accurate predictions and reliable conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#statistical-models-explained",
+    "href": "basic-statistics3.html#statistical-models-explained",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "10.2 Statistical Models Explained",
+    "text": "10.2 Statistical Models Explained\n\n10.2.1 Linear Regression\nUsed to predict a dependent variable using one or more independent variables.\n\\[\nY = \\beta_0 + \\beta_1X_1 + \\beta_2X_2 + ... + \\epsilon\n\\]\n\n\n10.2.2 Logistic Regression\nUsed when the outcome variable is binary (e.g., yes/no, pass/fail).\n\n\n10.2.3 Multiple Regression\nAn extension of linear regression that includes more than one predictor.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#evaluating-model-fit",
+    "href": "basic-statistics3.html#evaluating-model-fit",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "10.3 Evaluating Model Fit",
+    "text": "10.3 Evaluating Model Fit\n\n10.3.1 R-squared\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nIndicates the proportion of variance explained by the model.\n\n\n10.3.2 Adjusted R-squared\nAdjusts \\(R^2\\) based on the number of predictors in the model.\n\n\n10.3.3 AIC and BIC\nModel selection metrics that penalize overly complex models to avoid overfitting.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#characteristics-of-normal-distribution",
+    "href": "basic-statistics3.html#characteristics-of-normal-distribution",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "11.1 Characteristics of Normal Distribution",
+    "text": "11.1 Characteristics of Normal Distribution\n\nSymmetrical bell-shaped curve\n\nMean = Median = Mode\n\n68%-95%-99.7% rule applies",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#practical-application-of-z-tables",
+    "href": "basic-statistics3.html#practical-application-of-z-tables",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "11.2 Practical Application of Z-tables",
+    "text": "11.2 Practical Application of Z-tables\nZ-scores help determine how far a data point is from the mean in terms of standard deviations.\n\\[\nZ = \\frac{(X - \\mu)}{\\sigma}\n\\]\n\n11.2.1 Application Examples\nExample 1\nAverage height = 70 inches, SD = 3, height = 74 inches:\n\\[\nZ = \\frac{74 - 70}{3} = 1.33\n\\]\nThis corresponds to roughly 90.82% in the z-table.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#summary-measures",
+    "href": "basic-statistics3.html#summary-measures",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "12.1 Summary Measures",
+    "text": "12.1 Summary Measures\n\n12.1.1 Mean\n\\[\n\\text{Mean} = \\frac{\\sum X}{N}\n\\]\n\n\n12.1.2 Median\nThe middle value in a sorted dataset.\n\n\n12.1.3 Mode\nThe most frequently occurring value.\n\n\n12.1.4 Variance\n\\[\n\\sigma^2 = \\frac{\\sum (X - \\mu)^2}{N}\n\\]\n\n\n12.1.5 Standard Deviation\n\\[\n\\sigma = \\sqrt{\\sigma^2}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#measures-of-shape",
+    "href": "basic-statistics3.html#measures-of-shape",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "12.2 Measures of Shape",
+    "text": "12.2 Measures of Shape\n\n12.2.1 Skewness\nIndicates asymmetry.\n\n\n12.2.2 Kurtosis\nMeasures peakness. Normal = 3.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#data-visualization-techniques",
+    "href": "basic-statistics3.html#data-visualization-techniques",
+    "title": "5  Basic Statistics Using GUI-R (RKWard)",
+    "section": "12.3 Data Visualization Techniques",
+    "text": "12.3 Data Visualization Techniques\n\nHistograms: Show distribution of data\n\nBox Plots: Summarize quartiles and outliers\n\nScatter Plots: Show relationships between two variables",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic Statistics Using GUI-R (RKWard)</span>"
+    ]
   }
 ]
