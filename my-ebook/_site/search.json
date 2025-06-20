@@ -1,0 +1,1102 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-ebook",
+    "section": "",
+    "text": "1 Introduction\nDR.Harsh Pradhan, Phone: +91-9930034241 , Email: harsh.231284@gmail.com, Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nGitHub\nResearcher ID\nPersonal Website\nYoutube ID\nDoing a PhD with me: README.1st\nAcademic Profile",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction-what-this-course-is-about",
+    "href": "index.html#introduction-what-this-course-is-about",
+    "title": "my-ebook",
+    "section": "2.1 Introduction: What this course is about",
+    "text": "2.1 Introduction: What this course is about\nThis course provides an introduction to Bayesian data analysis using the probabilistic programming language Stan.\nWe will use a front end software package called brms.\nThis course is for:\n\nLinguistics (MM5, MM6)\nCognitive Systems\nCognitive Science\n\nPlease see the PULS FAQs to find out how the sign-up system works (in German).\nWe will be using the software R and RStudio, so make sure you install these on your computer.\nTopics to be covered:\n\nBasic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)\nUsing Bayes’ rule for statistical inference\nAn introduction to (generalized) linear models\nAn introduction to hierarchical models\nMeasurement error models\nMixture models\nModel selection and hypothesis testing (Bayes factor and k-fold cross-validation)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "my-ebook",
+    "section": "2.2 Teaching",
+    "text": "2.2 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.\nCourses offered:\n\nFree online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis\nShort (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here\nIntroduction to (frequentist) statistics\nIntroduction to Bayesian data analysis for cognitive science\nBDA cover",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#lecture-notes",
+    "href": "index.html#lecture-notes",
+    "title": "my-ebook",
+    "section": "2.3 Lecture notes",
+    "text": "2.3 Lecture notes\nDownload from here.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#moodle-website",
+    "href": "index.html#moodle-website",
+    "title": "my-ebook",
+    "section": "2.4 Moodle website",
+    "text": "2.4 Moodle website\nAll communications with students in Potsdam will be done through this website.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html",
+    "href": "introduction-to-statistics.html",
+    "title": "2  Introduction to Statistics",
+    "section": "",
+    "text": "3 Chapter 1: Welcome and Course Overview\nThis course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.\nPre-Requisites:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#histogram",
+    "href": "introduction-to-statistics.html#histogram",
+    "title": "2  Introduction to Statistics",
+    "section": "14.1 1. Histogram",
+    "text": "14.1 1. Histogram\n\nDepicts the distribution of a single variable\n\nCan include frequency, relative frequency, and cumulative frequency\n\nBest for understanding where most data points lie",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#pie-chart",
+    "href": "introduction-to-statistics.html#pie-chart",
+    "title": "2  Introduction to Statistics",
+    "section": "14.2 2. Pie Chart",
+    "text": "14.2 2. Pie Chart\n\nRepresents categorical data as slices of a circle\n\nBest when visualizing proportions",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#scatter-plot",
+    "href": "introduction-to-statistics.html#scatter-plot",
+    "title": "2  Introduction to Statistics",
+    "section": "14.3 3. Scatter Plot",
+    "text": "14.3 3. Scatter Plot\n\nPlots two variables to examine relationships\n\nX-axis: Independent variable\n\nY-axis: Dependent variable\n\nUseful in exploring associations or potential causality",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#box-plot",
+    "href": "introduction-to-statistics.html#box-plot",
+    "title": "2  Introduction to Statistics",
+    "section": "14.4 4. Box Plot",
+    "text": "14.4 4. Box Plot\n\nShows data distribution via quartiles\n\nMedian, interquartile range (IQR), and outliers are clearly indicated\n\nUseful for comparing multiple variables",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "introduction-to-statistics.html#density-plot",
+    "href": "introduction-to-statistics.html#density-plot",
+    "title": "2  Introduction to Statistics",
+    "section": "14.5 5. Density Plot",
+    "text": "14.5 5. Density Plot\n\nSmoothed version of a histogram\n\nBetter suited for continuous data with decimal variation\n\nKey Tips:\n\nJP_01 was frequently used as an example variable\n\nRKWard allows saving and exporting plots easily\n\nGUI menus guide the user through plot creation\n\n\nAlways choose the plot type that best matches your data and goal: frequency, relationship, or comparison.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html",
+    "href": "basic-statistics1.html",
+    "title": "3  basic-statistics_1",
+    "section": "",
+    "text": "4 Introduction\nWelcome to the “Basic Statistics Using GUI-R (RK Ward)” course, led by Dr. Harsh Pradhan at the Institute of Management Studies, Banaras Hindu University. This course takes an integrated approach to statistical analysis, bridging theory with practical skills through the R programming language and its GUI, RKWard.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#objectives-of-the-course",
+    "href": "basic-statistics1.html#objectives-of-the-course",
+    "title": "3  basic-statistics_1",
+    "section": "4.1 Objectives of the Course",
+    "text": "4.1 Objectives of the Course\n\nUnderstand fundamental concepts related to statistics.\nGain proficiency in using R and RKWard for statistical analysis.\nLearn to visualize data effectively.\nApply statistical methodologies to real-world datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#r-programming-language",
+    "href": "basic-statistics1.html#r-programming-language",
+    "title": "3  basic-statistics_1",
+    "section": "5.1 R Programming Language",
+    "text": "5.1 R Programming Language\nR is a versatile, open-source language specifically designed for statistical analysis and data visualization. It provides an extensive suite of statistical procedures, making it a cornerstone for statisticians and data scientists.\nKey Features of R:\n\nExtensive Libraries: R hosts thousands of packages that support numerous statistical models such as linear regression, time series, and more.\nCustomizable Graphics: The base graphics capabilities, along with packages like ggplot2, allow users to create a variety of complex visualizations with relative ease.\nData Manipulation Tools: Packages like dplyr and tidyr provide robust tools for data cleaning and transformation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#understanding-rkward",
+    "href": "basic-statistics1.html#understanding-rkward",
+    "title": "3  basic-statistics_1",
+    "section": "5.2 Understanding RKWard",
+    "text": "5.2 Understanding RKWard\nRKWard serves as a user-friendly interface that simplifies interactions with R, allowing users—especially those less familiar with programming—to utilize its powerful capabilities without a steep learning curve.\nFeatures of RKWard Include:\n\nGraphical User Interface: Navigation through menus rather than command lines enhances accessibility.\nBuilt-in Documentation: Context-sensitive help facilitates learning and troubleshooting.\nIntegration with R: Commands executed via the GUI can be viewed and modified, providing a dual-learning experience.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#types-of-variables",
+    "href": "basic-statistics1.html#types-of-variables",
+    "title": "3  basic-statistics_1",
+    "section": "6.1 Types of Variables",
+    "text": "6.1 Types of Variables\nVariables are the building blocks of statistical analysis, representing the characteristics or properties of the data.\n\n6.1.1 Qualitative Variables (Categorical Variables)\n\nNominal Variables: These variables categorize data without an inherent order. For example, types of fruits (apple, orange) are nominal.\nOrdinal Variables: These represent ordered categories. For instance, a customer satisfaction survey may be rated as poor, fair, good, or excellent.\n\n\n\n6.1.2 Quantitative Variables\n\nDiscrete Variables: These variables take on countable values, such as the number of students in a class.\nContinuous Variables: These can take any value within a given range, such as height and weight.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#importance-of-defining-variables",
+    "href": "basic-statistics1.html#importance-of-defining-variables",
+    "title": "3  basic-statistics_1",
+    "section": "6.2 Importance of Defining Variables",
+    "text": "6.2 Importance of Defining Variables\nProperly understanding and defining variables is crucial for:\n\nSelecting appropriate statistical tests.\nEnsuring accurate data interpretation.\nStructuring datasets to facilitate analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#statistical-data-types",
+    "href": "basic-statistics1.html#statistical-data-types",
+    "title": "3  basic-statistics_1",
+    "section": "7.1 Statistical Data Types",
+    "text": "7.1 Statistical Data Types\nData types are foundational for statistical analysis as they define what kind of arithmetic operations can be performed on the data.\n\n\n\n\n\n\n\n\nData Type\nDescription\nExample\n\n\n\n\nNominal\nCategorical data without order\nBlood types (A, B, AB, O)\n\n\nOrdinal\nCategorical data with a defined order\nCustomer satisfaction (poor, fair, good)\n\n\nInterval\nNumerical data with meaningful differences\nTemperature in Celsius\n\n\nRatio\nNumerical data with an absolute zero\nWeight, height",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#spreadsheet-basics",
+    "href": "basic-statistics1.html#spreadsheet-basics",
+    "title": "3  basic-statistics_1",
+    "section": "7.2 Spreadsheet Basics",
+    "text": "7.2 Spreadsheet Basics\nSpreadsheets provide a structured format for data entry, where rows represent instances (e.g., individuals, items) and columns represent variables (e.g., age, gender).\nKey Functions of Spreadsheets:\n\nData Organization: Data is easily sorted and filtered.\nFormulas and Functions: Built-in functions allow for quick calculation and data manipulation.\nVisualization Integration: Charts and tables can visually represent data.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#data-preparation",
+    "href": "basic-statistics1.html#data-preparation",
+    "title": "3  basic-statistics_1",
+    "section": "8.1 Data Preparation",
+    "text": "8.1 Data Preparation\nBefore importing data into RKWard, ensure that your dataset meets standards such as:\n\nProperly labeled columns.\nConsistent data types.\nAbsence of unnecessary formatting or symbols.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#step-by-step-import-process",
+    "href": "basic-statistics1.html#step-by-step-import-process",
+    "title": "3  basic-statistics_1",
+    "section": "8.2 Step-by-Step Import Process",
+    "text": "8.2 Step-by-Step Import Process\nSteps to import data into RKWard:\n\nOpen RKWard and access the main interface.\nGo to the “Data” tab and select “Import Data”.\nChoose the file type such as CSV or Excel.\nBrowse to locate your file.\nSpecify data types for each column during import and ensure the first row contains headers.\nReview the imported data in the workspace to confirm it’s properly loaded.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#descriptive-statistics",
+    "href": "basic-statistics1.html#descriptive-statistics",
+    "title": "3  basic-statistics_1",
+    "section": "9.1 Descriptive Statistics",
+    "text": "9.1 Descriptive Statistics\nDescriptive statistics help summarize and organize data in a meaningful way.\n\n9.1.1 Central Tendency Measures\n\nMean: Average of the dataset.\nMedian: Middle value when data is ordered.\nMode: Most frequent value in the dataset.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nMean\n\\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\)\nAverage value\n\n\nMedian\n(Sorted data, middle item)\nMiddle value in ordered dataset\n\n\nMode\nValue that appears most frequently\nMost common value\n\n\n\n\n\n9.1.2 Dispersion Measures\n\nRange: Difference between the maximum and minimum values.\nVariance: Measurement of the spread of data points.\nStandard Deviation: Square root of variance, providing a measure of the average distance from the mean.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nRange\n\\(Range = Max - Min\\)\nSpread of dataset\n\n\nVariance\n\\(Var(X) = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}\\)\nSpread of data relative to mean\n\n\nStandard Deviation\n\\(SD(X) = \\sqrt{Var(X)}\\)\nAverage distance from mean",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#inferential-statistics",
+    "href": "basic-statistics1.html#inferential-statistics",
+    "title": "3  basic-statistics_1",
+    "section": "9.2 Inferential Statistics",
+    "text": "9.2 Inferential Statistics\nInferential statistics allow us to make predictions or inferences about a population based on a sample.\n\nHypothesis Testing: A method to test assumptions regarding population parameters using sample data.\nConfidence Intervals: Define a range of values derived from sample statistics that likely encompass the true population parameter.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#practical-r-commands-and-functions",
+    "href": "basic-statistics1.html#practical-r-commands-and-functions",
+    "title": "3  basic-statistics_1",
+    "section": "9.3 Practical R Commands and Functions",
+    "text": "9.3 Practical R Commands and Functions\nUnderstanding and utilizing R functions is crucial for effective data analysis. Some key functions include:\n\nmean(): Calculates the average.\nsd(): Computes standard deviation.\nt.test(): Performs a t-test for hypothesis testing.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#significance-of-data-visualization",
+    "href": "basic-statistics1.html#significance-of-data-visualization",
+    "title": "3  basic-statistics_1",
+    "section": "10.1 Significance of Data Visualization",
+    "text": "10.1 Significance of Data Visualization\nVisualization enhances comprehension by allowing researchers to observe patterns, trends, and anomalies effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#types-of-graphs",
+    "href": "basic-statistics1.html#types-of-graphs",
+    "title": "3  basic-statistics_1",
+    "section": "10.2 Types of Graphs",
+    "text": "10.2 Types of Graphs\nVariety in graph types caters to different data presentation needs:\n\n\n\n\n\n\n\nGraph Type\nUse Case\n\n\n\n\nBar Graph\nComparing categorical data\n\n\nHistogram\nDisplaying distribution of continuous data\n\n\nBox Plot\nSummarizing data distributions and spotting outliers\n\n\nScatter Plot\nInvestigating relationships between two quantitative variables",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#implementing-visualization-in-rkward",
+    "href": "basic-statistics1.html#implementing-visualization-in-rkward",
+    "title": "3  basic-statistics_1",
+    "section": "10.3 Implementing Visualization in RKWard",
+    "text": "10.3 Implementing Visualization in RKWard\nStudents will learn how to create visualizations within RKWard by following these steps:\n\nNavigate to the graph creation menu.\nSelect the desired type of graph.\nCustomize visual elements such as titles, colors, and axes.\nGenerate and export the graph for use in reports.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#case-studies-in-various-fields",
+    "href": "basic-statistics1.html#case-studies-in-various-fields",
+    "title": "3  basic-statistics_1",
+    "section": "11.1 Case Studies in Various Fields",
+    "text": "11.1 Case Studies in Various Fields\nStatistics plays a pivotal role in diverse disciplines:\n\n\n\n\n\n\n\nField\nApplication\n\n\n\n\nHealthcare\nAnalyzing medical test results, outcomes of treatments, and patient demographics\n\n\nBusiness\nApplied for market analyses, customer satisfaction studies, and financial forecasting\n\n\nSocial Sciences\nEmployed in surveys to understand populations, opinions, and behavioral patterns",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
+    "href": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
+    "title": "3  basic-statistics_1",
+    "section": "11.2 Utilizing Statistical Methods for Decision Making",
+    "text": "11.2 Utilizing Statistical Methods for Decision Making\n\nUse statistical evidence to guide business strategies.\nMake informed policy decisions based on empirical data.\nReport findings clearly for transparency and comprehension.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics1.html#key-takeaways",
+    "href": "basic-statistics1.html#key-takeaways",
+    "title": "3  basic-statistics_1",
+    "section": "12.1 Key Takeaways",
+    "text": "12.1 Key Takeaways\n\nProficiency in defining and using variables and data types.\nCapability to import and manipulate data in RKWard.\nUnderstanding of basic statistical practices and their applications.\nSkill in visualizing data for effective communication of results.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html",
+    "href": "basic-statistics2.html",
+    "title": "4  basic-statistics_2",
+    "section": "",
+    "text": "5 Introduction",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#purpose-of-the-ebook",
+    "href": "basic-statistics2.html#purpose-of-the-ebook",
+    "title": "4  basic-statistics_2",
+    "section": "5.1 Purpose of the eBook",
+    "text": "5.1 Purpose of the eBook\nThis eBook aims to provide a comprehensive understanding of basic statistics, focusing on the essential principles necessary for data analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#importance-of-statistics",
+    "href": "basic-statistics2.html#importance-of-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "5.2 Importance of Statistics",
+    "text": "5.2 Importance of Statistics\nStatistics is critical in interpreting data efficiently and effectively across disciplines.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#overview-of-statistics",
+    "href": "basic-statistics2.html#overview-of-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "6.1 Overview of Statistics",
+    "text": "6.1 Overview of Statistics\nStatistics is the discipline that deals with the collection, analysis, interpretation, and presentation of data.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#types-of-data",
+    "href": "basic-statistics2.html#types-of-data",
+    "title": "4  basic-statistics_2",
+    "section": "6.2 Types of Data",
+    "text": "6.2 Types of Data\n\nQualitative Data: Represents categories or labels without numeric value (e.g., gender, religion).\nQuantitative Data:\n\nDiscrete Data: Countable values (e.g., number of students).\nContinuous Data: Measurable values (e.g., height, weight).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#descriptive-vs.-inferential-statistics",
+    "href": "basic-statistics2.html#descriptive-vs.-inferential-statistics",
+    "title": "4  basic-statistics_2",
+    "section": "6.3 Descriptive vs. Inferential Statistics",
+    "text": "6.3 Descriptive vs. Inferential Statistics\n\nDescriptive Statistics: Summarizes or describes the characteristics of a dataset.\nInferential Statistics: Makes predictions or inferences about a population based on a sample.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#definition-and-importance",
+    "href": "basic-statistics2.html#definition-and-importance",
+    "title": "4  basic-statistics_2",
+    "section": "7.1 Definition and Importance",
+    "text": "7.1 Definition and Importance\nMeasures of central tendency describe the center point or typical value of a dataset.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-mean",
+    "href": "basic-statistics2.html#the-mean",
+    "title": "4  basic-statistics_2",
+    "section": "7.2 The Mean",
+    "text": "7.2 The Mean\nThe mean is the arithmetic average of a dataset.\n\n7.2.1 Example\nConsider the data: 2, 3, 5, 7, 11\nMean = \\(\\frac{2 + 3 + 5 + 7 + 11}{5} = \\frac{28}{5} = 5.6\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-median",
+    "href": "basic-statistics2.html#the-median",
+    "title": "4  basic-statistics_2",
+    "section": "7.3 The Median",
+    "text": "7.3 The Median\nThe median is the middle value in an ordered dataset.\n\n7.3.1 Example\nConsider the data: 3, 5, 1, 7, 9\nOrdered: 1, 3, 5, 7, 9 → Median = 5",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#the-mode",
+    "href": "basic-statistics2.html#the-mode",
+    "title": "4  basic-statistics_2",
+    "section": "7.4 The Mode",
+    "text": "7.4 The Mode\nThe mode is the value that appears most frequently in a dataset.\n\n7.4.1 Example\nData: 2, 4, 4, 5, 5, 5, 7, 8\nMode = 5",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#comparison-of-measures",
+    "href": "basic-statistics2.html#comparison-of-measures",
+    "title": "4  basic-statistics_2",
+    "section": "7.5 Comparison of Measures",
+    "text": "7.5 Comparison of Measures\n\n\n\n\n\n\n\n\n\nMeasure\nDescription\nStrengths\nLimitations\n\n\n\n\nMean\nAverage of all data points\nUtilizes all data\nSensitive to outliers\n\n\nMedian\nMiddle value\nRobust to outliers\nIgnores extreme values\n\n\nMode\nMost frequent value\nUseful for categorical data\nMay not exist or be unique",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#definition-and-importance-1",
+    "href": "basic-statistics2.html#definition-and-importance-1",
+    "title": "4  basic-statistics_2",
+    "section": "8.1 Definition and Importance",
+    "text": "8.1 Definition and Importance\nMeasures of variability indicate the spread or dispersion within a dataset.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#range",
+    "href": "basic-statistics2.html#range",
+    "title": "4  basic-statistics_2",
+    "section": "8.2 Range",
+    "text": "8.2 Range\nThe range is the difference between the maximum and minimum values.\n\n8.2.1 Example\nData: 4, 8, 2, 10, 6\nRange = 10 - 2 = 8",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#variance",
+    "href": "basic-statistics2.html#variance",
+    "title": "4  basic-statistics_2",
+    "section": "8.3 Variance",
+    "text": "8.3 Variance\nVariance is the average of the squared deviations from the mean.\n\n8.3.1 Example\nData: 2, 4, 4, 4, 5, 5, 7\nMean = 4.43 (approx.)\nVariance = \\(\\frac{\\sum(x_i - \\bar{x})^2}{n - 1}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#standard-deviation",
+    "href": "basic-statistics2.html#standard-deviation",
+    "title": "4  basic-statistics_2",
+    "section": "8.4 Standard Deviation",
+    "text": "8.4 Standard Deviation\nStandard deviation is the square root of the variance.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#interquartile-range-iqr",
+    "href": "basic-statistics2.html#interquartile-range-iqr",
+    "title": "4  basic-statistics_2",
+    "section": "8.5 Interquartile Range (IQR)",
+    "text": "8.5 Interquartile Range (IQR)\nThe IQR measures the middle 50% of the data between Q1 and Q3.\n\n8.5.1 Example\nData: 1, 2, 3, 4, 5, 6, 7, 8, 9\nQ1 = 3, Q3 = 7\nIQR = 7 - 3 = 4",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#introduction-to-probability",
+    "href": "basic-statistics2.html#introduction-to-probability",
+    "title": "4  basic-statistics_2",
+    "section": "9.1 Introduction to Probability",
+    "text": "9.1 Introduction to Probability\nProbability measures the likelihood of occurrence of an event.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#types-of-events",
+    "href": "basic-statistics2.html#types-of-events",
+    "title": "4  basic-statistics_2",
+    "section": "9.2 Types of Events",
+    "text": "9.2 Types of Events\n\nIndependent Events: One event does not affect another.\nDependent Events: One event influences the outcome of another.\nMutually Exclusive Events: Events that cannot happen at the same time.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#basic-probability-rules",
+    "href": "basic-statistics2.html#basic-probability-rules",
+    "title": "4  basic-statistics_2",
+    "section": "9.3 Basic Probability Rules",
+    "text": "9.3 Basic Probability Rules\n\nAddition Rule: This rule applies when you’re calculating the probability of event A or event B occurring. \\[\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\n\\]\nMultiplication Rule: This rule applies when you’re calculating the probability of event A and event B both occurring (for independent events). \\[\nP(A \\cap B) = P(A) \\times P(B)\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#introduction-to-probability-distributions",
+    "href": "basic-statistics2.html#introduction-to-probability-distributions",
+    "title": "4  basic-statistics_2",
+    "section": "9.4 Introduction to Probability Distributions",
+    "text": "9.4 Introduction to Probability Distributions\n\n9.4.1 Normal Distribution\n\nSymmetric about the mean.\nBell-shaped curve.\nProperties: Mean = Median = Mode.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec06",
+    "href": "basic-statistics2.html#transcript-from-lec06",
+    "title": "4  basic-statistics_2",
+    "section": "10.1 Transcript from Lec06",
+    "text": "10.1 Transcript from Lec06\nKey Discussion Points: - Effects of outliers on the mean. - Properties of the mean.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec07",
+    "href": "basic-statistics2.html#transcript-from-lec07",
+    "title": "4  basic-statistics_2",
+    "section": "10.2 Transcript from Lec07",
+    "text": "10.2 Transcript from Lec07\nKey Discussion Points: - Concepts of range, variance, and standard deviation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec08",
+    "href": "basic-statistics2.html#transcript-from-lec08",
+    "title": "4  basic-statistics_2",
+    "section": "10.3 Transcript from Lec08",
+    "text": "10.3 Transcript from Lec08\nKey Discussion Points: - Explanation of the Z score. - Galton board demonstration.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#transcript-from-lec09",
+    "href": "basic-statistics2.html#transcript-from-lec09",
+    "title": "4  basic-statistics_2",
+    "section": "10.4 Transcript from Lec09",
+    "text": "10.4 Transcript from Lec09\nKey Discussion Points: - Introduction to probability distributions. - Basic probability concepts and terms.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#frequency-distribution-example",
+    "href": "basic-statistics2.html#frequency-distribution-example",
+    "title": "4  basic-statistics_2",
+    "section": "12.1 Frequency Distribution Example",
+    "text": "12.1 Frequency Distribution Example\n\n\n\nValue\nFrequency\n\n\n\n\n1\n4\n\n\n2\n6\n\n\n3\n3\n\n\n4\n2\n\n\n5\n1",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#interquartile-range-example",
+    "href": "basic-statistics2.html#interquartile-range-example",
+    "title": "4  basic-statistics_2",
+    "section": "12.2 Interquartile Range Example",
+    "text": "12.2 Interquartile Range Example\n\n\n\nPosition\nValue\n\n\n\n\n1\n12\n\n\n2\n30\n\n\n3\n45\n\n\n4\n57\n\n\n5\n70\n\n\n\n\\[\n\\text{IQR} = 57 - 30 = 27\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics2.html#box-plot-visualization",
+    "href": "basic-statistics2.html#box-plot-visualization",
+    "title": "4  basic-statistics_2",
+    "section": "12.3 Box Plot Visualization",
+    "text": "12.3 Box Plot Visualization\nA box plot visualizes:\n\nMinimum\nFirst Quartile (\\(Q1\\))\nMedian\nThird Quartile (\\(Q3\\))\nMaximum",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>basic-statistics_2</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html",
+    "href": "basic-statistics3.html",
+    "title": "5  basic-statistics_3",
+    "section": "",
+    "text": "6 Introduction",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#importance-of-statistics",
+    "href": "basic-statistics3.html#importance-of-statistics",
+    "title": "5  basic-statistics_3",
+    "section": "6.1 Importance of Statistics",
+    "text": "6.1 Importance of Statistics\nStatistics is a powerful tool used across various disciplines, from economics and social sciences to natural sciences and engineering. It enables researchers to analyze data, draw conclusions, and make predictions about populations based on sample observations. Understanding statistical principles is essential for anyone involved in empirical research, data science, and decision-making processes.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#overview-of-topics",
+    "href": "basic-statistics3.html#overview-of-topics",
+    "title": "5  basic-statistics_3",
+    "section": "6.2 Overview of Topics",
+    "text": "6.2 Overview of Topics\nThis eBook will delve deeply into core concepts such as populations and samples, hypotheses and errors, various statistical models, the normal distribution, and essential statistical techniques in R using the GUI-R interface. Each chapter will provide detailed explanations, examples, and practical applications to enhance understanding.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-of-population",
+    "href": "basic-statistics3.html#definition-of-population",
+    "title": "5  basic-statistics_3",
+    "section": "7.1 Definition of Population",
+    "text": "7.1 Definition of Population\nIn statistics, a population is defined as the entire set of individuals, items, or events of interest. For instance, if a researcher aims to study the average height of adults in the United States, the population would include every adult residing in the country.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-of-sample",
+    "href": "basic-statistics3.html#definition-of-sample",
+    "title": "5  basic-statistics_3",
+    "section": "7.2 Definition of Sample",
+    "text": "7.2 Definition of Sample\nA sample is a subset of the population selected for analysis. It is crucial that this sample adequately represents the population to ensure that the conclusions drawn are applicable. For example, selecting individuals from various demographic backgrounds when studying a health-related issue ensures a more accurate reflection of the population.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#importance-in-research",
+    "href": "basic-statistics3.html#importance-in-research",
+    "title": "5  basic-statistics_3",
+    "section": "7.3 Importance in Research",
+    "text": "7.3 Importance in Research\nThe primary reason for studying a sample rather than the entire population is practicality. Conducting a census can be time-consuming and costly. Hence, researchers select samples that allow them to infer insights about the population efficiently.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#relationship-between-population-and-sample",
+    "href": "basic-statistics3.html#relationship-between-population-and-sample",
+    "title": "5  basic-statistics_3",
+    "section": "7.4 Relationship Between Population and Sample",
+    "text": "7.4 Relationship Between Population and Sample\nThe relationship between population and sample is crucial, as a well-chosen sample can provide valid insights into the population characteristics. Understanding this relationship helps researchers avoid common pitfalls, such as bias in sampling, which can lead to inaccurate conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#understanding-hypotheses",
+    "href": "basic-statistics3.html#understanding-hypotheses",
+    "title": "5  basic-statistics_3",
+    "section": "8.1 Understanding Hypotheses",
+    "text": "8.1 Understanding Hypotheses\nA hypothesis is an educated guess or a statement about the relationship between two or more variables that can be tested through research. For example, one might hypothesize that “students who study more than three hours a day will score higher on exams.”",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#crafting-null-and-alternative-hypotheses",
+    "href": "basic-statistics3.html#crafting-null-and-alternative-hypotheses",
+    "title": "5  basic-statistics_3",
+    "section": "8.2 Crafting Null and Alternative Hypotheses",
+    "text": "8.2 Crafting Null and Alternative Hypotheses\n\nNull Hypothesis (\\(H_0\\)): A statement suggesting that there is no effect or difference.\n\\[H_0: \\mu_1 = \\mu_2\\]\nAlternative Hypothesis (\\(H_a\\)): A statement indicating the presence of an effect or difference.\n\\[H_a: \\mu_1 \\neq \\mu_2\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#types-of-errors",
+    "href": "basic-statistics3.html#types-of-errors",
+    "title": "5  basic-statistics_3",
+    "section": "8.3 Types of Errors",
+    "text": "8.3 Types of Errors\n\nType I Error (\\(\\alpha\\)): Occurs when a true null hypothesis is incorrectly rejected.\n\nType II Error (\\(\\beta\\)): Occurs when a false null hypothesis is incorrectly accepted.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#significance-level",
+    "href": "basic-statistics3.html#significance-level",
+    "title": "5  basic-statistics_3",
+    "section": "8.4 Significance Level",
+    "text": "8.4 Significance Level\nThe significance level (often set at 0.05) helps researchers determine the threshold for rejecting the null hypothesis. If the probability of obtaining the observed data under the null hypothesis is less than the significance level, the null hypothesis can be rejected.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#introduction-to-inferential-statistics",
+    "href": "basic-statistics3.html#introduction-to-inferential-statistics",
+    "title": "5  basic-statistics_3",
+    "section": "9.1 Introduction to Inferential Statistics",
+    "text": "9.1 Introduction to Inferential Statistics\nInferential statistics allow researchers to draw conclusions about populations based on sample data. It involves estimating population parameters, testing hypotheses, and making predictions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#sampling-techniques-in-detail",
+    "href": "basic-statistics3.html#sampling-techniques-in-detail",
+    "title": "5  basic-statistics_3",
+    "section": "9.2 Sampling Techniques in Detail",
+    "text": "9.2 Sampling Techniques in Detail\n\n9.2.1 Simple Random Sampling\nEach member of the population has an equal chance of being selected.\n\n\n9.2.2 Stratified Sampling\nThe population is divided into subgroups (strata) and samples are drawn proportionally from each stratum.\n\n\n9.2.3 Systematic Sampling\nEvery nth member of the population is selected after a random start.\n\n\n9.2.4 Cluster Sampling\nEntire clusters are randomly selected for analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#estimating-population-parameters",
+    "href": "basic-statistics3.html#estimating-population-parameters",
+    "title": "5  basic-statistics_3",
+    "section": "9.3 Estimating Population Parameters",
+    "text": "9.3 Estimating Population Parameters\nResearchers estimate parameters like the population mean or proportion using sample data and quantify uncertainty through confidence intervals.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#central-limit-theorem",
+    "href": "basic-statistics3.html#central-limit-theorem",
+    "title": "5  basic-statistics_3",
+    "section": "9.4 Central Limit Theorem",
+    "text": "9.4 Central Limit Theorem\nThe Central Limit Theorem (CLT) states that, for sufficiently large samples (\\(n &gt; 30\\)), the sampling distribution of the sample mean approximates a normal distribution regardless of the population’s distribution.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#definition-and-importance-of-model-fit",
+    "href": "basic-statistics3.html#definition-and-importance-of-model-fit",
+    "title": "5  basic-statistics_3",
+    "section": "10.1 Definition and Importance of Model Fit",
+    "text": "10.1 Definition and Importance of Model Fit\nModel fit refers to how well a statistical model represents the data it is based upon. A good model fit enables accurate predictions and reliable conclusions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#statistical-models-explained",
+    "href": "basic-statistics3.html#statistical-models-explained",
+    "title": "5  basic-statistics_3",
+    "section": "10.2 Statistical Models Explained",
+    "text": "10.2 Statistical Models Explained\n\n10.2.1 Linear Regression\nUsed to predict a dependent variable using one or more independent variables.\n\\[\nY = \\beta_0 + \\beta_1X_1 + \\beta_2X_2 + ... + \\epsilon\n\\]\n\n\n10.2.2 Logistic Regression\nUsed when the outcome variable is binary (e.g., yes/no, pass/fail).\n\n\n10.2.3 Multiple Regression\nAn extension of linear regression that includes more than one predictor.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#evaluating-model-fit",
+    "href": "basic-statistics3.html#evaluating-model-fit",
+    "title": "5  basic-statistics_3",
+    "section": "10.3 Evaluating Model Fit",
+    "text": "10.3 Evaluating Model Fit\n\n10.3.1 R-squared\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nIndicates the proportion of variance explained by the model.\n\n\n10.3.2 Adjusted R-squared\nAdjusts \\(R^2\\) based on the number of predictors in the model.\n\n\n10.3.3 AIC and BIC\nModel selection metrics that penalize overly complex models to avoid overfitting.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#characteristics-of-normal-distribution",
+    "href": "basic-statistics3.html#characteristics-of-normal-distribution",
+    "title": "5  basic-statistics_3",
+    "section": "11.1 Characteristics of Normal Distribution",
+    "text": "11.1 Characteristics of Normal Distribution\n\nSymmetrical bell-shaped curve\n\nMean = Median = Mode\n\n68%-95%-99.7% rule applies",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#practical-application-of-z-tables",
+    "href": "basic-statistics3.html#practical-application-of-z-tables",
+    "title": "5  basic-statistics_3",
+    "section": "11.2 Practical Application of Z-tables",
+    "text": "11.2 Practical Application of Z-tables\nZ-scores help determine how far a data point is from the mean in terms of standard deviations.\n\\[\nZ = \\frac{(X - \\mu)}{\\sigma}\n\\]\n\n11.2.1 Application Examples\nExample 1\nAverage height = 70 inches, SD = 3, height = 74 inches:\n\\[\nZ = \\frac{74 - 70}{3} = 1.33\n\\]\nThis corresponds to roughly 90.82% in the z-table.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#summary-measures",
+    "href": "basic-statistics3.html#summary-measures",
+    "title": "5  basic-statistics_3",
+    "section": "12.1 Summary Measures",
+    "text": "12.1 Summary Measures\n\n12.1.1 Mean\n\\[\n\\text{Mean} = \\frac{\\sum X}{N}\n\\]\n\n\n12.1.2 Median\nThe middle value in a sorted dataset.\n\n\n12.1.3 Mode\nThe most frequently occurring value.\n\n\n12.1.4 Variance\n\\[\n\\sigma^2 = \\frac{\\sum (X - \\mu)^2}{N}\n\\]\n\n\n12.1.5 Standard Deviation\n\\[\n\\sigma = \\sqrt{\\sigma^2}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#measures-of-shape",
+    "href": "basic-statistics3.html#measures-of-shape",
+    "title": "5  basic-statistics_3",
+    "section": "12.2 Measures of Shape",
+    "text": "12.2 Measures of Shape\n\n12.2.1 Skewness\nIndicates asymmetry.\n\n\n12.2.2 Kurtosis\nMeasures peakness. Normal = 3.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics3.html#data-visualization-techniques",
+    "href": "basic-statistics3.html#data-visualization-techniques",
+    "title": "5  basic-statistics_3",
+    "section": "12.3 Data Visualization Techniques",
+    "text": "12.3 Data Visualization Techniques\n\nHistograms: Show distribution of data\n\nBox Plots: Summarize quartiles and outliers\n\nScatter Plots: Show relationships between two variables",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>basic-statistics_3</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html",
+    "href": "basic-statistics4.html",
+    "title": "6  basic-statistics_4",
+    "section": "",
+    "text": "7 Introduction\nThis eBook serves as a comprehensive guide to understanding basic statistics, focusing particularly on concepts pertinent to the use of GUI-R (RK Ward). It combines theoretical knowledge with practical applications, allowing readers to engage with statistical analysis effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#course-name",
+    "href": "basic-statistics4.html#course-name",
+    "title": "6  basic-statistics_4",
+    "section": "8.1 Course Name",
+    "text": "8.1 Course Name\nBasic Statistics using GUI-R (RKWard)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#instructor-profile",
+    "href": "basic-statistics4.html#instructor-profile",
+    "title": "6  basic-statistics_4",
+    "section": "8.2 Instructor Profile",
+    "text": "8.2 Instructor Profile\nDr. Harsh Pradhan is an Assistant Professor at the Institute of Management Studies, Banaras Hindu University. He specializes in statistical methods and data analysis techniques. For a complete overview of his work, refer to his BHU Faculty Profile.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#learning-objectives",
+    "href": "basic-statistics4.html#learning-objectives",
+    "title": "6  basic-statistics_4",
+    "section": "8.3 Learning Objectives",
+    "text": "8.3 Learning Objectives\n\nUnderstand and apply fundamental statistical concepts.\nPerform T-tests and ANOVA using real data.\nCalculate and interpret confidence intervals.\nUtilize GUI-R for statistical analysis effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#descriptive-statistics",
+    "href": "basic-statistics4.html#descriptive-statistics",
+    "title": "6  basic-statistics_4",
+    "section": "9.1 Descriptive Statistics",
+    "text": "9.1 Descriptive Statistics\nDescriptive statistics summarize and describe the features of a dataset.\n\n9.1.1 Measures of Central Tendency\n\nMean: Average value calculated by summing observations and dividing by the number of observations.\nMedian: The middle value when the data is ordered. If there is an even number of observations, it is the average of the two middle values.\nMode: The most frequently occurring value in a dataset.\n\n\n9.1.1.1 Example Calculation\nGiven the data set: [4, 8, 6, 5, 3]\n\nMean: \\((4 + 8 + 6 + 5 + 3) / 5 = 5.2\\)\nMedian: Ordered data [3, 4, 5, 6, 8], median is 5.\nMode: No mode (all values are unique).\n\n\n\n\n9.1.2 Measures of Dispersion\n\nRange: The difference between the maximum and minimum values in a dataset.\nVariance: The average of the squared differences from the Mean.\nStandard Deviation (SD): The square root of variance, showing how much variation exists from the mean.\n\n\n9.1.2.1 Example Table of Measures\n\n\n\nStatistic\nValue\n\n\n\n\nMean\n5.2\n\n\nMedian\n5\n\n\nMode\nN/A\n\n\nRange\n5\n\n\nVariance\n3.52\n\n\nSD\n1.88",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#inferential-statistics",
+    "href": "basic-statistics4.html#inferential-statistics",
+    "title": "6  basic-statistics_4",
+    "section": "9.2 Inferential Statistics",
+    "text": "9.2 Inferential Statistics\nInferential statistics involves making predictions or inferences about a population based on a sample of data.\n\n9.2.1 Hypothesis Testing\n\nNull Hypothesis (H₀): A statement asserting there is no effect or difference.\nAlternative Hypothesis (H₁): A statement indicating the presence of an effect or difference.\n\n\n\n9.2.2 Confidence Intervals\nA confidence interval (CI) provides a range of values likely to contain the population parameter (e.g., mean) with a certain level of confidence (usually 95%).\nFormula:\n\\[\nCI = \\bar{x} \\pm Z \\times \\frac{s}{\\sqrt{n}}\n\\]\nWhere: - \\(\\bar{x}\\) = sample mean\n- \\(Z\\) = Z-score for the desired confidence level\n- \\(s\\) = standard deviation of the sample\n- \\(n\\) = sample size\n\n\n9.2.3 Types of Errors\n\nType I Error: Rejecting the null hypothesis when it is true (false positive).\nType II Error: Failing to reject the null hypothesis when it is false (false negative).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#introduction-to-t-test",
+    "href": "basic-statistics4.html#introduction-to-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.1 Introduction to T-Test",
+    "text": "10.1 Introduction to T-Test\nThe T-test is a hypothesis test used to determine if there is a significant difference between the means of two groups.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#types-of-t-tests",
+    "href": "basic-statistics4.html#types-of-t-tests",
+    "title": "6  basic-statistics_4",
+    "section": "10.2 Types of T-Tests",
+    "text": "10.2 Types of T-Tests\n\nIndependent T-Test: Compares means of two independent groups.\nPaired T-Test: Compares means of two related groups.\nOne-sample T-Test: Tests the mean from a single group against a known mean.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#performing-t-tests",
+    "href": "basic-statistics4.html#performing-t-tests",
+    "title": "6  basic-statistics_4",
+    "section": "10.3 Performing T-Tests",
+    "text": "10.3 Performing T-Tests\n\n10.3.1 Step-by-Step Process\n\nState the Hypotheses:\n\nH₀: \\(\\mu_1 = \\mu_2\\)\n\nH₁: \\(\\mu_1 \\neq \\mu_2\\)\n\nCalculate the T-statistic: \\[\nt = \\frac{\\bar{x_1} - \\bar{x_2}}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}}\n\\]\nDegrees of Freedom: \\[\ndf = n_1 + n_2 - 2\n\\]\nFind the P-value from statistical tables or software.\nMake a Decision: If p &lt; 0.05, reject H₀.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#assumptions-of-the-t-test",
+    "href": "basic-statistics4.html#assumptions-of-the-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.4 Assumptions of the T-Test",
+    "text": "10.4 Assumptions of the T-Test\n\nNormal distribution.\nIndependent groups (for independent T-tests).\nEqual variances.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example-independent-t-test",
+    "href": "basic-statistics4.html#example-independent-t-test",
+    "title": "6  basic-statistics_4",
+    "section": "10.5 Example: Independent T-Test",
+    "text": "10.5 Example: Independent T-Test\n\n\n\nGroup\nMean\nSD\nn\n\n\n\n\nGroup A\n78\n10\n30\n\n\nGroup B\n85\n12\n30\n\n\n\nCalculation:\n\\[\nt = \\frac{78 - 85}{\\sqrt{\\frac{10^2}{30} + \\frac{12^2}{30}}} \\approx -2.53\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#t-test-in-gui-r",
+    "href": "basic-statistics4.html#t-test-in-gui-r",
+    "title": "6  basic-statistics_4",
+    "section": "10.6 T-Test in GUI-R",
+    "text": "10.6 T-Test in GUI-R\n\nOpen GUI-R and import your dataset.\nSelect ‘T-Test’ from the menu.\nDefine groups.\nRun the test and interpret the output.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#introduction-1",
+    "href": "basic-statistics4.html#introduction-1",
+    "title": "6  basic-statistics_4",
+    "section": "11.1 Introduction",
+    "text": "11.1 Introduction\nANOVA compares means among 3+ groups to determine if at least one is different.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#one-way-anova",
+    "href": "basic-statistics4.html#one-way-anova",
+    "title": "6  basic-statistics_4",
+    "section": "11.2 One-Way ANOVA",
+    "text": "11.2 One-Way ANOVA\nInvolves one independent variable.\n\n11.2.1 Steps:\n\nHypotheses:\n\nH₀: All group means equal.\nH₁: At least one group mean is different.\n\nCalculate F-statistic:\n\n\\[\nF = \\frac{MS_{Between}}{MS_{Within}}\n\\]\n\nDegrees of Freedom:\n\n\\(df_{Between} = k - 1\\)\n\\(df_{Within} = N - k\\)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example-table",
+    "href": "basic-statistics4.html#example-table",
+    "title": "6  basic-statistics_4",
+    "section": "11.3 Example Table",
+    "text": "11.3 Example Table\n\n\n\nGroup\nMean\nVariance\nn\n\n\n\n\nGroup 1\n5.5\n1.5\n30\n\n\nGroup 2\n7.1\n2.0\n30\n\n\nGroup 3\n6.8\n1.8\n30\n\n\n\n\n11.3.1 Summary Table\n\n\n\nSource\nSS\ndf\nMS\nF\n\n\n\n\nBetween Groups\n42.4\n2\n21.2\n5.24\n\n\nWithin Groups\n122.7\n87\n1.41\n\n\n\nTotal\n165.1\n89",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#anova-in-gui-r",
+    "href": "basic-statistics4.html#anova-in-gui-r",
+    "title": "6  basic-statistics_4",
+    "section": "11.4 ANOVA in GUI-R",
+    "text": "11.4 ANOVA in GUI-R\n\nImport data.\nChoose ANOVA.\nDefine variables.\nRun and interpret.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#concept",
+    "href": "basic-statistics4.html#concept",
+    "title": "6  basic-statistics_4",
+    "section": "12.1 Concept",
+    "text": "12.1 Concept\nShows likely range for population parameter.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#formula",
+    "href": "basic-statistics4.html#formula",
+    "title": "6  basic-statistics_4",
+    "section": "12.2 Formula",
+    "text": "12.2 Formula\n\\[\nCI = \\bar{x} \\pm Z \\cdot \\frac{s}{\\sqrt{n}}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#example",
+    "href": "basic-statistics4.html#example",
+    "title": "6  basic-statistics_4",
+    "section": "12.3 Example",
+    "text": "12.3 Example\nSample Mean = 100, SD = 15, n = 30, Z = 1.96\n\\[\nCI = 100 \\pm 1.96 \\times \\frac{15}{\\sqrt{30}} \\approx [98.04, 101.96]\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#gui-r-overview",
+    "href": "basic-statistics4.html#gui-r-overview",
+    "title": "6  basic-statistics_4",
+    "section": "13.1 GUI-R Overview",
+    "text": "13.1 GUI-R Overview\nGUI-based interface for R statistical computing.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#workflow",
+    "href": "basic-statistics4.html#workflow",
+    "title": "6  basic-statistics_4",
+    "section": "13.2 Workflow",
+    "text": "13.2 Workflow\n\nImport Data (CSV/Excel).\nChoose Statistical Test.\nRun & Analyze Results.\nExport or visualize.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics4.html#case-studies",
+    "href": "basic-statistics4.html#case-studies",
+    "title": "6  basic-statistics_4",
+    "section": "13.3 Case Studies",
+    "text": "13.3 Case Studies\n\nT-Test: Compare test scores from two teaching methods.\nANOVA: Evaluate effect of 3 different drugs on recovery rate.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>basic-statistics_4</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html",
+    "href": "basic-statistics5.html",
+    "title": "7  basic-statistics_5",
+    "section": "",
+    "text": "7.1 1. Overview of Relationship Testing\nUnderstanding and quantifying the relationships in data is paramount in statistics. Methods like correlation and regression provide researchers with invaluable tools for analyzing interactions between variables.\nCorrelation focuses on measuring the degree of linear association between two continuous variables. Conversely, regression analysis extends this concept by allowing the prediction of one variable based on the known values of another or multiple independent variables. Researchers often utilize these methodologies not only within academic settings but also across industries including healthcare, finance, and social sciences, where such analyses guide decision-making processes.\nIn cases where the variables in question are categorical, statisticians rely on tests such as the Chi-Square test. The Chi-Square test assesses if distributions of categorical variables differ from one another, which is essential when determining relationships in categorical datasets. Thus, relationship testing via these methodologies allows for comprehensive data analysis and interpretation, which in turn aids in developing conclusions and recommendations.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#lecture-24-introduction-to-correlation",
+    "href": "basic-statistics5.html#lecture-24-introduction-to-correlation",
+    "title": "7  basic-statistics_5",
+    "section": "7.2 2. Lecture 24 – Introduction to Correlation",
+    "text": "7.2 2. Lecture 24 – Introduction to Correlation\nIn this section, a detailed exploration of correlation begins.\n\n7.2.1 2.1 Covariance and Its Importance\nCovariance is a foundational statistic representing how two variables change together. If both variables tend to increase together, the covariance is positive. If one increases while the other decreases, the covariance is negative. However, covariance is not standardized, making it challenging to interpret across different datasets. For example, if height and weight are analyzed, a covariance of 30 might indicate a certain relationship between the two variables, but without context, it is difficult to ascertain the strength of that connection.\nThe formal mathematical representation of covariance between variables \\(X\\) and \\(Y\\) is given by:\n\\[\nCov(X,Y) = \\frac{1}{n-1} \\sum_{i=1}^{n} (X_i - \\bar{X})(Y_i - \\bar{Y})\n\\]\nWhere \\(n\\) is the number of data points, \\(X_i\\) and \\(Y_i\\) are the individual sample points of X and Y, and \\(\\bar{X}\\) and \\(\\bar{Y}\\) are the means of X and Y, respectively.\n\n\n7.2.2 2.2 Correlation Coefficients Explained\nCorrelation transforms the covariance into a standardized metric, the correlation coefficient, which ranges between –1 to +1:\n\nA correlation of +1 indicates a perfect positive linear relationship.\nA correlation of -1 indicates a perfect negative linear relationship.\nA correlation of 0 indicates no linear relationship.\n\nThe most commonly used correlation coefficient is Pearson’s Correlation (r), suitable for continuous variables that are normally distributed:\n\\[\nr = \\frac{Cov(X,Y)}{SD(X) \\cdot SD(Y)}\n\\]\nWhere \\(SD(X)\\) and \\(SD(Y)\\) are the standard deviations of X and Y.\nOther coefficients, such as Spearman’s Rank Correlation and Kendall’s Tau, are used for ordinal data or when assumptions of normality are violated. Spearman’s correlation assesses monotonic relationships, which allows for discovering relationships that aren’t necessarily linear.\n\n\n7.2.3 2.3 Practical Examples Using RKWard\nBefore running the following R code examples, we define a sample dataset:\n\n\nCode\nmydata &lt;- data.frame(\n  Height = c(150, 160, 170, 180, 190),\n  Weight = c(50, 60, 70, 80, 90)\n)\n\n\nUtilizing RKWard, the process of correlating variables becomes straightforward. For instance, researchers often analyze anthropometric measurements such as height and weight. By entering the appropriate data into RKWard and generating a correlation analysis, researchers can obtain:\n\nCovariance: \\(2.57\\) (units: \\(m \\cdot kg\\)).\nCorrelation: \\(0.71\\), suggesting a strong positive relationship.\n\nSteps to perform correlation in RKWard include:\n\nInput the dataset.\nUtilize the correlation function, such as:\n::: {.cell}\n\nCode\ncor(mydata$Height, mydata$Weight)\n\n::: {.cell-output .cell-output-stdout}\n[1] 1\n::: :::\nInterpret the computed correlation coefficient.\n\n\n\n7.2.4 2.4 Visualizing Correlation Using Graphs\nVisualizations play an essential role in understanding correlations. Scatter plots allow one to visually assess relationships between variables. In RKWard, users can generate scatter plots using the following code:\n\n\nCode\nplot(mydata$Height, mydata$Weight, main=\"Height vs Weight\", xlab=\"Height (cm)\", ylab=\"Weight (kg)\")\nabline(lm(Weight ~ Height, data=mydata), col=\"blue\")\n\n\n\n\n\n\n\n\n\nThis scatter plot displays individual data points and the fitted regression line, helping to illustrate how height correlates with weight visually. By adding a regression line, one can further investigate if the relationship appears linear and the strength of that association.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#lecture-25-uses-and-types-of-correlation",
+    "href": "basic-statistics5.html#lecture-25-uses-and-types-of-correlation",
+    "title": "7  basic-statistics_5",
+    "section": "7.3 3. Lecture 25 – Uses and Types of Correlation",
+    "text": "7.3 3. Lecture 25 – Uses and Types of Correlation\nIn expanding the utility of correlation analysis, we delve into its uses and potential pitfalls.\n\n7.3.1 3.1 Correlation vs. Causation\nAs previously mentioned, while correlation can indicate a relationship between variables, it does not infer causation. A classic example is the correlation observed between ice cream sales and drowning incidents. Though both variables may increase during summer months, one does not cause the other; rather, a third variable, temperature, influences both.\nResearchers must ensure clarity when interpreting data, often utilizing controlled experiments to establish causal links. Notably, techniques such as Randomized Controlled Trials (RCTs) are crucial in establishing causation by controlling for confounding factors.\n\n\n7.3.2 3.2 Practical Applications of Correlation\nCorrelation is widely utilized across myriad fields:\n\nHealthcare: Researchers may assess relationships between dietary habits and health outcomes. For example, a study of patients’ sugar intake and diabetes prevalence may reveal significant correlations, informing dietary recommendations.\nMarket Research: Businesses frequently utilize correlation to analyze customer behaviors, such as understanding the relationship between advertising spend and sales revenue.\nEducation: Correlational analyses may explore the connection between study habits and student performance across various subjects, informing educational strategies.\n\n\n\n7.3.3 3.3 Correlation in Different Fields\nTo illustrate the diversity of correlation’s applications, here are some field-specific examples:\n\n\n\n\n\n\n\nField\nExample\n\n\n\n\nPsychology\nAssessing the relationship between stress levels and academic performance.\n\n\nEconomics\nEvaluating the correlation between unemployment rates and inflation.\n\n\nSports Analytics\nAnalyzing the relationship between player statistics and game outcomes.\n\n\nEnvironmental Science\nExamining the correlation between pollution levels and public health metrics.\n\n\n\nIn all these instances, correlations can guide further research and interventions designed to enhance outcomes based on insights gathered.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#lecture-26-linear-regression-and-model-assumptions",
+    "href": "basic-statistics5.html#lecture-26-linear-regression-and-model-assumptions",
+    "title": "7  basic-statistics_5",
+    "section": "7.4 4. Lecture 26 – Linear Regression and Model Assumptions",
+    "text": "7.4 4. Lecture 26 – Linear Regression and Model Assumptions\nThe concept of regression analysis is rooted in its power to model and predict outcomes based on independent variables.\n\n7.4.1 4.1 The Linear Model\nThe primary form of regression is simple linear regression, which describes the relationship between a single independent variable (predictor) and a dependent variable:\n\\[\ny = mx + c\n\\]\nHere, \\(m\\) signifies the slope of the line, indicating the change in \\(y\\) for every one-unit increase in \\(x\\). The constant \\(c\\) represents the y-intercept, where the line intersects the y-axis.\nExample: A researcher finds the regression equation \\(y = 3x + 2\\). This indicates that for every additional hour studied, the test score (\\(y\\)) is expected to increase by 3 points.\n\n\n7.4.2 4.2 Fitting Models in RKWard\nRKWard simplifies the process of conducting regression analysis through intuitive functionalities. The steps include:\n\nInputting Data: Users need to ensure datasets are correctly formatted.\nFitting the Model: Using the lm() function in R:\n::: {.cell}\n\nCode\nmodel &lt;- lm(Weight ~ Height, data=mydata)\n\n:::\nThis fits a linear regression model predicting Weight from Height.\nAnalyzing Model Output: The summary() function provides crucial statistics related to fits, such as coefficients and R² values:\n::: {.cell}\n\nCode\nsummary(model)\n\n::: {.cell-output .cell-output-stderr}\nWarning in summary.lm(model): essentially perfect fit: summary may be\nunreliable\n:::\n::: {.cell-output .cell-output-stdout}\n\nCall:\nlm(formula = Weight ~ Height, data = mydata)\n\nResiduals:\n         1          2          3          4          5 \n 1.270e-14 -1.296e-14 -6.454e-15  9.733e-16  5.736e-15 \n\nCoefficients:\n              Estimate Std. Error    t value Pr(&gt;|t|)    \n(Intercept) -1.000e+02  6.265e-14 -1.596e+15   &lt;2e-16 ***\nHeight       1.000e+00  3.673e-16  2.723e+15   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.161e-14 on 3 degrees of freedom\nMultiple R-squared:      1, Adjusted R-squared:      1 \nF-statistic: 7.413e+30 on 1 and 3 DF,  p-value: &lt; 2.2e-16\n::: :::\nInterpreting Coefficients: The coefficient for Height tells you how much Weight is expected to change for each one-unit increase in Height, holding everything else constant.\n\n\n\n7.4.3 4.3 Assessing Model Performance\nTo assess how well the regression model fits the data, several statistics are gathered during the analysis:\n\nCoefficient of Determination (R²): R² shows the proportion of variance in the dependent variable that is predictable from the independent variable(s). A higher R² value indicates a better fit.\nF-Ratio: This statistic tests the overall significance of the regression model. A significant F-ratio indicates that at least one predictor variable has a significant relationship with the dependent variable.\nP-Values: Each coefficient in the regression output is accompanied by a p-value. A p-value less than 0.05 typically indicates that the predictor is significantly related to the dependent variable.\n\nThe essential fundamentals of regression analysis also include validation of core assumptions:\n\n\n7.4.4 4.4 Common Pitfalls in Regression Analysis\nCommon pitfalls to avoid in regression analysis include:\n\nOverfitting: Developing a complex model that fits the training data too closely may fail to generalize well on test data. To counter this, simplicity in model choice is often preferred.\nMulticollinearity: High correlations among independent variables can distort regression results. Variance Inflation Factor (VIF) assessments help to diagnose multicollinearity issues.\nHomoscedasticity: The assumption that residuals have constant variance across values of the independent variable must be checked. Various graphical plots can identify deviations from this assumption.\nNormality of Residuals: The normality of residuals can be evaluated using a QQ plot or the Shapiro-Wilk test, ensuring that the data meet the normality requirement before proceeding with interpretations.\n\nVisualizing the fitted model along with residual plots, such as:\n\n\nCode\npar(mfrow=c(2,2))\nplot(model)\n\n\n\n\n\n\n\n\n\nallows one to assess these assumptions logically and adjust the approach as needed.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#lecture-27-advanced-regression-diagnostic-tests",
+    "href": "basic-statistics5.html#lecture-27-advanced-regression-diagnostic-tests",
+    "title": "7  basic-statistics_5",
+    "section": "7.5 5. Lecture 27 – Advanced Regression & Diagnostic Tests",
+    "text": "7.5 5. Lecture 27 – Advanced Regression & Diagnostic Tests\nIn advanced regression analyses, there lies a wealth of diagnostic tests and methodologies to identify the robustness of the model trained.\n\n7.5.1 5.1 Exploring Residuals\nResiduals, the differences between observed and predicted values, are vital to understanding model performance. Analyzing these residuals helps identify patterns or systematic errors in the model’s predictions.\nThe ideal residual plot should show no discernible pattern, confirming the appropriateness of linear regression. These residuals can be plotted using:\n\n\nCode\nplot(model$residuals)\n\n\n\n\n\n\n\n\n\n\n\n7.5.2 5.2 Common Diagnostic Tests\nTo validate linear regression assumptions, several tests are essential:\n\nDurbin-Watson Test: Tests for autocorrelation within residuals. The null hypothesis states there is no autocorrelation. A value close to 2 is desirable.\nBreusch-Pagan Test: This test assesses the homoscedasticity of residuals.\nNCV Test: This is a graphical or statistical method to evaluate non-constant variance in errors.\n\nEach of these tests provides critical insights into whether a linear regression model can be relied upon or if adjustments are necessary.\n\n\n7.5.3 5.3 Advanced Topics in Regression Analysis\nBeyond the foundational elements discussed, advanced regression topics include:\n\nMultiple Regression: An extension of simple linear regression where multiple independent variables are considered. The regression equation takes the form:\n\\[\n  y = b_0 + b_1x_1 + b_2x_2 + \\cdots + b_nx_n + \\epsilon\n  \\]\nInteraction Terms: Inclusion of interaction terms in regression models can capture the combined effect of two or more predictors. This is essential in deeper analysis when relationships are not purely linear.\nPolynomial Regression: When data exhibit a non-linear relationship, polynomial regression may be used to model these patterns adequately.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#concepts-from-week-5-6-slides",
+    "href": "basic-statistics5.html#concepts-from-week-5-6-slides",
+    "title": "7  basic-statistics_5",
+    "section": "7.6 6. Concepts from Week 5 & 6 Slides",
+    "text": "7.6 6. Concepts from Week 5 & 6 Slides\n\n7.6.1 6.1 Week 5: ANOVA and Its Variants\nThe insights from ANOVA significantly complement correlation and regression analyses.\nANOVA Types:\n\nOne-Way ANOVA: Ideal for comparing means across three or more groups. It tests the hypothesis that at least one group mean is significantly different from the others. The F-value computed in ANOVA is compared against a critical value from F-distribution tables.\n\n\n\n\nSource\nSS\ndf\nMS\nF\n\n\n\n\nBetween\n461.64\n3\n153.88\n8.27\n\n\nWithin\n167.42\n9\n18.60\n\n\n\nTotal\n629.06\n12\n\n\n\n\n\n\nRepeated Measures ANOVA: This test analyzes means when repeated measurements occur for the same subjects, controlling for variability between subjects.\n\n\n\n7.6.2 6.2 Week 6: Chi-Square and Non-Parametric Tests\nChi-Square Applications:\n\nGoodness of Fit: Tests if sample data matches the expected distribution.\nTest of Independence: Determines if two categorical variables are related or independent.\n\nFor instance, a Chi-Square test might explore whether gender relates to the choice of academic major, providing insight into educational trends within populations.\nNon-Parametric Equivalents:\nThese tests come into play when data does not meet the normality assumption necessary for traditional parametric tests. Key non-parametric tests include:\n\n\n\n\n\n\n\nTest\nDescription\n\n\n\n\nMann–Whitney\nTests differences between two independent groups.\n\n\nKruskal–Wallis\nAn extension of the Mann-Whitney test for three or more groups.\n\n\nWilcoxon Signed-Rank\nCompares two related samples.\n\n\n\nLogistic Regression: As trends in data become more complex, predicting outcomes between two categories is frequently required. For example, in financial sectors, logistic regression may predict default rates based on categorical input variables:\n\\[\np = \\frac{1}{1 + e^{-(a + bx)}}\n\\]\nwhere \\(p\\) is the probability of the outcome, determined by the independent variables included.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#summary",
+    "href": "basic-statistics5.html#summary",
+    "title": "7  basic-statistics_5",
+    "section": "7.7 7. Summary",
+    "text": "7.7 7. Summary\nUltimately, understanding how to quantify and interpret the relationships between variables through correlation, regression, and Chi-Square tests is fundamental for robust statistical analysis.\n\n\n\n\n\n\n\nConcept\nDescription\n\n\n\n\nCorrelation\nMeasures association (e.g., Pearson, Spearman, Kendall)\n\n\nRegression\nPredicts a dependent variable from one or more independent variables\n\n\nChi-Square\nTests associations between categorical variables\n\n\nModel Assumptions\nInclude normality, linearity, homoscedasticity, independence\n\n\nDiagnostic Tools\nResidual plots, QQ plots, Durbin-Watson, NCV test",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  },
+  {
+    "objectID": "basic-statistics5.html#example-data-for-r-code-chunks",
+    "href": "basic-statistics5.html#example-data-for-r-code-chunks",
+    "title": "7  basic-statistics_5",
+    "section": "7.8 Example Data for R Code Chunks",
+    "text": "7.8 Example Data for R Code Chunks\nBefore running the following R code examples, we define a sample dataset:\n\n\nCode\nmydata &lt;- data.frame(\n  Height = c(150, 160, 170, 180, 190),\n  Weight = c(50, 60, 70, 80, 90)\n)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
+    ]
+  }
+]

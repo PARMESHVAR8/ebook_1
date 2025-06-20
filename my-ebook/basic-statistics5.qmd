@@ -1,40 +1,25 @@
 ---
-title: "Understanding Relationships in Data: Correlation, Regression, and Chi-Square"
-subtitle: "Based on Lectures 24–27 of the 'Basic Statistics using GUI-R (RKWard)' Course"
+title: "basic-statistics_5"
 author: "Dr. Harsh Pradhan"
-institute: "Institute of Management Studies, Banaras Hindu University (BHU)"
-format: html
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+    fontsize: 11pt
+    documentclass: article
+bibliography: references.bib
 ---
 
-## 📖 Table of Contents
 
-1. [Overview of Relationship Testing](#overview-of-relationship-testing)
-2. [Lecture 24 – Introduction to Correlation](#lecture-24-introduction-to-correlation)
-    - 2.1 [Covariance and Its Importance](#21-covariance-and-its-importance)
-    - 2.2 [Correlation Coefficients Explained](#22-correlation-coefficients-explained)
-    - 2.3 [Practical Examples Using RKWard](#23-practical-examples-using-rkward)
-    - 2.4 [Visualizing Correlation Using Graphs](#24-visualizing-correlation-using-graphs)
-3. [Lecture 25 – Uses and Types of Correlation](#lecture-25-uses-and-types-of-correlation)
-    - 3.1 [Correlation vs. Causation](#31-correlation-vs-causation)
-    - 3.2 [Practical Applications of Correlation](#32-practical-applications-of-correlation)
-    - 3.3 [Correlation in Different Fields](#33-correlation-in-different-fields)
-4. [Lecture 26 – Linear Regression and Model Assumptions](#lecture-26-linear-regression-and-model-assumptions)
-    - 4.1 [The Linear Model](#41-the-linear-model)
-    - 4.2 [Fitting Models in RKWard](#42-fitting-models-in-rkward)
-    - 4.3 [Assessing Model Performance](#43-assessing-model-performance)
-    - 4.4 [Common Pitfalls in Regression Analysis](#44-common-pitfalls-in-regression-analysis)
-5. [Lecture 27 – Advanced Regression & Diagnostic Tests](#lecture-27-advanced-regression--diagnostic-tests)
-    - 5.1 [Exploring Residuals](#51-exploring-residuals)
-    - 5.2 [Common Diagnostic Tests](#52-common-diagnostic-tests)
-    - 5.3 [Advanced Topics in Regression Analysis](#53-advanced-topics-in-regression-analysis)
-6. [Concepts from Week 5 & 6 Slides](#concepts-from-week-5--6-slides)
-    - 6.1 [Week 5: ANOVA and Its Variants](#61-week-5-anova-and-its-variants)
-    - 6.2 [Week 6: Chi-Square and Non-Parametric Tests](#62-week-6-chi-square-and-non-parametric-tests)
-    - 6.3 [Implications and Importance of ANOVA and Chi-Square](#63-implications-and-importance-of-anova-and-chi-square)
-7. [Summary](#summary)
-8. [References](#references)
-
----
 
 ## 1. Overview of Relationship Testing
 
@@ -76,9 +61,18 @@ $$
 
 Where $SD(X)$ and $SD(Y)$ are the standard deviations of X and Y.
 
-Other coefficients, such as **Spearman's Rank Correlation** and **Kendall's Tau**, are used for ordinal data or when assumptions of normality are violated. Spearman's correlation assesses monotonic relationships, which allows for discovering relationships that aren’t necessarily linear.
+Other coefficients, such as **Spearman's Rank Correlation** and **Kendall's Tau**, are used for ordinal data or when assumptions of normality are violated. Spearman's correlation assesses monotonic relationships, which allows for discovering relationships that aren't necessarily linear.
 
 ### 2.3 Practical Examples Using RKWard
+
+Before running the following R code examples, we define a sample dataset:
+
+```{r}
+mydata <- data.frame(
+  Height = c(150, 160, 170, 180, 190),
+  Weight = c(50, 60, 70, 80, 90)
+)
+```
 
 Utilizing RKWard, the process of correlating variables becomes straightforward. For instance, researchers often analyze anthropometric measurements such as height and weight. By entering the appropriate data into RKWard and generating a correlation analysis, researchers can obtain:
 
@@ -162,8 +156,10 @@ RKWard simplifies the process of conducting regression analysis through intuitiv
 2. **Fitting the Model**: Using the `lm()` function in R:
 
     ```{r}
-    model <- lm(TestScore ~ HoursStudied, data=mydata)
+    model <- lm(Weight ~ Height, data=mydata)
     ```
+
+   This fits a linear regression model predicting `Weight` from `Height`.
 
 3. **Analyzing Model Output**: The `summary()` function provides crucial statistics related to fits, such as coefficients and R² values:
 
@@ -171,7 +167,7 @@ RKWard simplifies the process of conducting regression analysis through intuitiv
     summary(model)
     ```
 
-4. **Interpreting Coefficients**: Each predictor’s coefficient informs how much the dependent variable is expected to change with a one-unit change in the predictor, holding everything else constant.
+4. **Interpreting Coefficients**: The coefficient for `Height` tells you how much `Weight` is expected to change for each one-unit increase in `Height`, holding everything else constant.
 
 ### 4.3 Assessing Model Performance
 
@@ -295,6 +291,15 @@ Ultimately, understanding how to quantify and interpret the relationships betwee
 | **Model Assumptions** | Include normality, linearity, homoscedasticity, independence         |
 | **Diagnostic Tools**  | Residual plots, QQ plots, Durbin-Watson, NCV test                    |
 
+## Example Data for R Code Chunks
 
+Before running the following R code examples, we define a sample dataset:
+
+```{r}
+mydata <- data.frame(
+  Height = c(150, 160, 170, 180, 190),
+  Weight = c(50, 60, 70, 80, 90)
+)
+```
 
 ---
