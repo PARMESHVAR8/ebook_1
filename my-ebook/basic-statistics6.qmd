@@ -1,0 +1,396 @@
+---
+title: "basic-statistics_6"
+author: "Dr. Harsh Pradhan"
+institute: "Institute of Management Studies, Banaras Hindu University"
+course: "Basic Statistics using GUI-R (RKWard)"
+module: "Week 6 – Lectures 28 to 31"
+format: html
+---
+
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Chi-Square Test of Goodness of Fit](#chi-square-test-of-goodness-of-fit)
+3. [Chi-Square Test of Independence](#chi-square-test-of-independence)
+4. [Non-Parametric Tests](#non-parametric-tests)
+5. [Non-Linear and Logistic Regression](#non-linear-and-logistic-regression)
+6. [Poisson Distribution](#poisson-distribution)
+7. [Summary](#summary)
+8. [References](#references)
+
+---
+
+## 1. Introduction
+
+Statistics is a powerful tool used to analyze and interpret data, enabling researchers and decision-makers to draw conclusions and make informed decisions based on empirical evidence. In the field of statistics, certain assumptions must be met for parametric tests to provide reliable results. These assumptions include normality (the data follows a normal distribution), linearity (the relationship between variables is linear), and homoscedasticity (constant variance among the errors). However, many real-world datasets violate these assumptions, and when this occurs, researchers must turn to alternative methods.
+
+This eBook serves as a comprehensive guide to exploring three critical aspects of statistical analysis: **Chi-Square Tests**, **Non-Parametric Alternatives**, and **Non-Linear Regression**, including **Logistic Regression**. By understanding these methodologies, statisticians will be better equipped to handle complex problems that standard methods may overlook, especially when dealing with categorical data or non-linear relationships.
+
+---
+
+## 2. Chi-Square Test of Goodness of Fit
+
+### Definition and Purpose
+
+The Chi-Square Test of Goodness of Fit is a statistical test used to determine whether there is a significant difference between the observed frequencies in categorical data and the expected frequencies derived from a specific distribution. This test enables researchers to assess how well a sample data conforms to a theoretical distribution, such as a uniform distribution in the case of a die.
+
+### Key Formula
+
+The key formula used in calculating the Chi-Square statistic is:
+
+$$
+\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
+$$
+
+Where:
+- $O_i$: Observed frequency for category $i$.
+- $E_i$: Expected frequency for category $i$ based on a theoretical distribution.
+
+### Example: Fairness of a Dice
+
+To illustrate the application of the Chi-Square Goodness of Fit test, let's consider an experiment where a six-sided die is rolled 120 times. The objective is to determine if the die is fair, meaning each face should come up approximately 20 times in the long run.
+
+The observed frequency data from the experiment is as follows:
+
+| Face      | Observed | Expected (20 for each face) |
+|-----------|----------|-----------------------------|
+| 1         | 9        | 20                          |
+| 2         | 7        | 20                          |
+| 3         | 6        | 20                          |
+| 4         | 4        | 20                          |
+| 5         | 3        | 20                          |
+| 6         | 7        | 20                          |
+| **Total** | 36       | 120                         |
+
+**Calculating the Chi-Square Statistic:**
+
+Now we will compute the Chi-Square statistic step by step:
+
+1. **Calculate the difference** between observed and expected frequencies.
+2. **Square the differences**.
+3. **Divide by expected frequencies** and sum the results.
+
+$$
+\chi^2 = \frac{(9 - 20)^2}{20} + \frac{(7 - 20)^2}{20} + \ldots + \frac{(7 - 20)^2}{20}
+$$
+
+$$
+\chi^2 \approx \frac{121}{20} + \frac{169}{20} + \frac{196}{20} + \frac{256}{20} + \frac{289}{20} + \frac{169}{20} = 2.67
+$$
+
+**Degrees of Freedom:**
+
+The degrees of freedom for the goodness of fit test is calculated as:
+
+$$
+df = n - 1
+$$
+
+Where $n$ is the number of categories (faces of the die). Thus, here, $df = 6 - 1 = 5$.
+
+**Comparison with Critical Values:**
+
+Using Chi-Square distribution tables, we find the critical value at a significance level of 0.05 for 5 degrees of freedom is approximately 11.07.
+
+**Conclusion:**
+
+Since our calculated $\chi^2 \approx 2.67$ is less than the critical value of 11.07, we fail to reject the null hypothesis $H_0$. Therefore, there is not enough evidence to conclude that the die is unfair.
+
+---
+
+## 3. Chi-Square Test of Independence
+
+### Definition and Purpose
+
+The Chi-Square Test of Independence assesses whether two categorical variables are independent of each other. It is particularly useful when conducting surveys or experiments to examine the relationship between variables such as gender and product preference, or age and voting behavior.
+
+### Example: Gender vs. Laptop Type
+
+Suppose researchers want to explore whether there is an association between gender (Male, Female) and preference for laptop types (Gaming, Non-Gaming). The following contingency table shows the observational data:
+
+| Gender    | Gaming | Non-Gaming | Total |
+|-----------|--------|------------|-------|
+| Male      | 27     | 8          | 35    |
+| Female    | 5      | 7          | 12    |
+| **Total** | 32     | 15         | 47    |
+
+### Expected Frequencies Calculation
+
+To determine if the observed frequencies differ significantly from what we would expect if the two variables were independent, we must calculate the expected frequencies. The formula for an expected frequency in the cell at row $i$ and column $j$ is:
+
+$$
+E_{ij} = \frac{(Row \: Total)(Column \: Total)}{Grand \: Total}
+$$
+
+For example, the expected frequency for the Male-Gaming category is calculated as follows:
+
+$$
+E_{Male, Gaming} = \frac{35 \times 32}{47} \approx 23.83
+$$
+
+### Chi-Square Statistic Calculation
+
+Now, we can calculate the Chi-Square statistic:
+
+1. Calculate the differences between observed and expected frequencies.
+2. Square the differences.
+3. Divide by expected frequencies and sum the results.
+
+The Chi-Square statistic is given by:
+
+$$
+\chi^2 = \sum \frac{(O - E)^2}{E}
+$$
+
+For instance:
+
+$$
+\chi^2 = \frac{(27 - 23.83)^2}{23.83} + \frac{(8 - 11.17)^2}{11.17} + \frac{(5 - 4.8)^2}{4.8} + \frac{(7 - 7.2)^2}{7.2}
+$$
+
+Calculating each term:
+
+1. For Male-Gaming: $\frac{(27 - 23.83)^2}{23.83} \approx 0.42$
+2. For Male-Non-Gaming: $\frac{(8 - 11.17)^2}{11.17} \approx 1.158$
+3. For Female-Gaming: $\frac{(5 - 4.8)^2}{4.8} \approx 0.00867$
+4. For Female-Non-Gaming: $\frac{(7 - 7.2)^2}{7.2} \approx 0.00710$
+
+Summing these values gives:
+
+$$
+\chi^2 \approx 0.42 + 1.158 + 0.00867 + 0.00710 \approx 3.64
+$$
+
+### Degrees of Freedom Calculation
+
+The degrees of freedom in this case is given by:
+
+$$
+df = (rows - 1) \times (columns - 1) = (2 - 1)(2 - 1) = 1
+$$
+
+**Comparison with Critical Values:**
+
+Using the Chi-Square distribution table for 1 degree of freedom at a significance level of 0.05, the critical value is approximately 3.84.
+
+**Conclusion:**
+
+Since our calculated $\chi^2 \approx 3.64$ is less than the critical value of 3.84, we fail to reject the null hypothesis $H_0$. Hence, there is not enough evidence to suggest that gender and laptop type preference are related.
+
+---
+
+## 4. Non-Parametric Tests
+
+### Definition and Importance
+
+Non-parametric tests are statistical methods that do not assume an underlying distribution for the data being analyzed. These tests are beneficial when dealing with ordinal data, non-normally distributed interval data, or small sample sizes. Such tests provide robustness against violations of parametric assumptions, making them versatile tools in various statistical analyses.
+
+### Common Non-Parametric Tests
+
+Here is a list of some widely used non-parametric tests along with their parametric equivalents:
+
+| Parametric Test      | Non-Parametric Equivalent      |
+|--------------------- |-------------------------------|
+| One-sample t-test    | Wilcoxon Signed-Rank Test      |
+| Two-sample t-test    | Mann-Whitney U Test            |
+| One-Way ANOVA        | Kruskal-Wallis Test            |
+| Two-Way ANOVA        | Friedman Test                  |
+| Pearson Correlation  | Spearman Rank Correlation      |
+
+### Implementation in RKWard
+
+Given the advantages of non-parametric tests, they can be implemented easily using R. Here are some examples of how to perform non-parametric tests in R.
+
+#### Wilcoxon Signed-Rank Test
+```r
+wilcox.test(my.csv.data$CSE_1, mu=3.5)
+```
+
+#### Mann-Whitney U Test
+```r
+wilcox.test(my.csv.data$GroupA, my.csv.data$GroupB)
+```
+
+### Example: Mann-Whitney U Test
+
+Consider a scenario in which we want to test whether two different teaching methods result in different student performance levels. We can use the Mann-Whitney U test (also known as the Wilcoxon rank-sum test) here.
+
+Assume the following data:
+
+- Method A scores: 65, 70, 78, 80
+- Method B scores: 67, 73, 75, 85
+
+Let's conduct the Mann-Whitney U test in R:
+
+```r
+method_a_scores <- c(65, 70, 78, 80)
+method_b_scores <- c(67, 73, 75, 85)
+
+result <- wilcox.test(method_a_scores, method_b_scores, alternative = "two.sided")
+print(result)
+```
+
+The output will indicate whether there is a statistically significant difference between the two methods.
+
+---
+
+## 5. Non-Linear and Logistic Regression
+
+### Non-Linear Regression
+
+Non-Linear Regression is an extension of the linear regression analysis technique wherein the relationship between the independent and dependent variable can be modeled by a non-linear equation. Non-linear models can accommodate more complex relationships, thus allowing for better predictions.
+
+Examples of non-linear equations include polynomial models, exponential growth models, and logarithmic functions:
+
+- **Quadratic Equation:**
+
+$$
+y = ax^2 + bx + c
+$$
+
+- **Exponential Growth:**
+
+$$
+y = ae^{bx}
+$$
+
+### Evaluating Non-Linear Models
+
+Model selection and evaluation for non-linear regressions are often guided by the $R^2$ statistic, which indicates the proportion of variance explained by the model. A higher $R^2$ value suggests a better fit of the model.
+
+### Example: Quadratic Fit
+
+Assume we have a dataset capturing the relationship between the number of hours studied and exam scores:
+
+| Hours Studied | Exam Score |
+|---------------|------------|
+| 1             | 50         |
+| 2             | 60         |
+| 3             | 80         |
+| 4             | 85         |
+| 5             | 90         |
+
+To fit a quadratic regression model using R:
+
+```r
+library(stats)
+
+hrs_studied <- c(1, 2, 3, 4, 5)
+exam_scores <- c(50, 60, 80, 85, 90)
+
+model <- lm(exam_scores ~ poly(hrs_studied, 2))
+summary(model)
+```
+
+Interpreting the summary will reveal coefficients associated with each term of the polynomial and also provide $R^2$ for evaluating the fit of the model.
+
+### Logistic Regression
+
+Logistic regression is a specific type of regression analysis used when the outcome variable is binary (0 or 1). Logistic regression models the probability of the occurrence of an event based on one or more predictor variables.
+
+The logistic regression equation is expressed as:
+
+$$
+\log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n
+$$
+
+Where:
+- $p$: Probability of the event occurring (e.g., success).
+- $\beta_0$: Intercept of the model.
+- $\beta_1, \beta_2, \ldots, \beta_n$: Coefficients of independent variables.
+
+### Example: Logistic Regression
+
+Consider a study interested in predicting whether students will pass (1) or fail (0) based on hours studied:
+
+```r
+# Sample data
+data <- data.frame(hours_studied = c(1, 2, 3, 4, 5, 1, 2, 4, 5, 5),
+                   pass_fail = c(0, 0, 1, 1, 1, 0, 0, 1, 1, 1))
+
+# Logistic Regression Model
+logistic_model <- glm(pass_fail ~ hours_studied, data = data, family = binomial)
+summary(logistic_model)
+```
+
+### Odds Ratio Interpretation
+
+In logistic regression, the odds ratio expresses the change in odds for each unit change in the predictor variable.
+
+$$
+\text{Odds} = \frac{p}{1 - p}
+$$
+
+An odds ratio greater than 1 indicates increased odds of the event occurring as the predictor increases, while an odds ratio less than 1 indicates decreased odds.
+
+---
+
+## 6. Poisson Distribution
+
+### Definition and Use Case
+
+The Poisson distribution is a discrete probability distribution that models the number of events occurring within a fixed interval of time or space, given the events occur independently of each other. It is particularly useful for modeling rare events, such as the number of emails received in an hour or the number of accidents happening at an intersection in a day.
+
+### Poisson Probability Mass Function
+
+The probability of observing exactly $k$ events in a given interval can be calculated using the Poisson formula:
+
+$$
+P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!}
+$$
+
+Where:
+- $\lambda$ (lambda): The average rate of occurrence.
+- $k$: The actual number of occurrences.
+
+### Example in R
+
+Let’s generate random Poisson-distributed values using R:
+
+```r
+lambda <- 2  # Average occurrence
+random_values <- rpois(10, lambda)
+print(random_values)
+
+# Calculate probabilities
+prob_0 <- dpois(0, lambda)
+prob_5 <- dpois(5, lambda)
+```
+
+This code snippet outputs random values following a Poisson distribution with an average rate of 2. 
+
+### Applications of Poisson Distribution
+
+The Poisson distribution finds applications across various fields, including:
+
+- **Healthcare:** Predicting the number of patients arriving at an emergency room.
+- **Telecommunications:** Modeling incoming calls at a call center.
+- **Traffic Management:** Estimating the average number of vehicles passing through a toll booth in an hour.
+
+---
+
+## 7. Summary
+
+Throughout this eBook, we’ve delved into essential statistical methodologies and their applications. Here’s a summary of the key points addressed:
+
+- **Chi-Square Tests**: Excellent for examining categorical data, whether assessing fit against a theoretical distribution or investigating the association between two categorical variables.
+- **Non-Parametric Tests**: Robust alternatives that do not require distributional assumptions, thus offering flexibility in data analysis, especially for ordinal data or small sample sizes.
+- **Non-Linear Regression**: A powerful extension allowing the modeling of complex relationships using polynomial or exponential forms, enhancing predictive accuracy.
+- **Logistic Regression**: Specifically suited for binary outcomes, logistic regression provides insights into the relationship between a binary response variable and one or more predictor variables.
+- **Poisson Distribution**: Essential for modeling count data, particularly for rare events, allowing effective predictions in various practical scenarios.
+
+---
+
+## 8. References
+
+1. Lecture Transcripts: Lectures 28–31 by Dr. Harsh Pradhan, Banaras Hindu University.
+2. Week 6 Slides from the course "Basic Statistics using GUI-R (RKWard)".
+3. Additional Statistical Resources: Various textbooks on statistical analysis and R programming.
+4. Software: R and RKWard (GUI-based interface for R).
+5. R Packages Used: 
+   - `car`: Companion to applied regression.
+   - `vcd`: Visualizing categorical data.
+   - `performance`: Tools for assessing performance of statistical models.
+   - `tidyverse`: A collection of R packages designed for data science.
+
+---
