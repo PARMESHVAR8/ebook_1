@@ -1102,91 +1102,91 @@
   {
     "objectID": "basic-statistics6.html",
     "href": "basic-statistics6.html",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "",
     "text": "9 Table of Contents",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#introduction",
     "href": "basic-statistics6.html#introduction",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.1 1. Introduction",
     "text": "9.1 1. Introduction\nStatistics is a powerful tool used to analyze and interpret data, enabling researchers and decision-makers to draw conclusions and make informed decisions based on empirical evidence. In the field of statistics, certain assumptions must be met for parametric tests to provide reliable results. These assumptions include normality (the data follows a normal distribution), linearity (the relationship between variables is linear), and homoscedasticity (constant variance among the errors). However, many real-world datasets violate these assumptions, and when this occurs, researchers must turn to alternative methods.\nThis eBook serves as a comprehensive guide to exploring three critical aspects of statistical analysis: Chi-Square Tests, Non-Parametric Alternatives, and Non-Linear Regression, including Logistic Regression. By understanding these methodologies, statisticians will be better equipped to handle complex problems that standard methods may overlook, especially when dealing with categorical data or non-linear relationships.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#chi-square-test-of-goodness-of-fit",
     "href": "basic-statistics6.html#chi-square-test-of-goodness-of-fit",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.2 2. Chi-Square Test of Goodness of Fit",
     "text": "9.2 2. Chi-Square Test of Goodness of Fit\n\n9.2.1 Definition and Purpose\nThe Chi-Square Test of Goodness of Fit is a statistical test used to determine whether there is a significant difference between the observed frequencies in categorical data and the expected frequencies derived from a specific distribution. This test enables researchers to assess how well a sample data conforms to a theoretical distribution, such as a uniform distribution in the case of a die.\n\n\n9.2.2 Key Formula\nThe key formula used in calculating the Chi-Square statistic is:\n\\[\n\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}\n\\]\nWhere: - \\(O_i\\): Observed frequency for category \\(i\\). - \\(E_i\\): Expected frequency for category \\(i\\) based on a theoretical distribution.\n\n\n9.2.3 Example: Fairness of a Dice\nTo illustrate the application of the Chi-Square Goodness of Fit test, let’s consider an experiment where a six-sided die is rolled 120 times. The objective is to determine if the die is fair, meaning each face should come up approximately 20 times in the long run.\nThe observed frequency data from the experiment is as follows:\n\n\n\nFace\nObserved\nExpected (20 for each face)\n\n\n\n\n1\n9\n20\n\n\n2\n7\n20\n\n\n3\n6\n20\n\n\n4\n4\n20\n\n\n5\n3\n20\n\n\n6\n7\n20\n\n\nTotal\n36\n120\n\n\n\nCalculating the Chi-Square Statistic:\nNow we will compute the Chi-Square statistic step by step:\n\nCalculate the difference between observed and expected frequencies.\nSquare the differences.\nDivide by expected frequencies and sum the results.\n\n\\[\n\\chi^2 = \\frac{(9 - 20)^2}{20} + \\frac{(7 - 20)^2}{20} + \\ldots + \\frac{(7 - 20)^2}{20}\n\\]\n\\[\n\\chi^2 \\approx \\frac{121}{20} + \\frac{169}{20} + \\frac{196}{20} + \\frac{256}{20} + \\frac{289}{20} + \\frac{169}{20} = 2.67\n\\]\nDegrees of Freedom:\nThe degrees of freedom for the goodness of fit test is calculated as:\n\\[\ndf = n - 1\n\\]\nWhere \\(n\\) is the number of categories (faces of the die). Thus, here, \\(df = 6 - 1 = 5\\).\nComparison with Critical Values:\nUsing Chi-Square distribution tables, we find the critical value at a significance level of 0.05 for 5 degrees of freedom is approximately 11.07.\nConclusion:\nSince our calculated \\(\\chi^2 \\approx 2.67\\) is less than the critical value of 11.07, we fail to reject the null hypothesis \\(H_0\\). Therefore, there is not enough evidence to conclude that the die is unfair.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#chi-square-test-of-independence",
     "href": "basic-statistics6.html#chi-square-test-of-independence",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.3 3. Chi-Square Test of Independence",
     "text": "9.3 3. Chi-Square Test of Independence\n\n9.3.1 Definition and Purpose\nThe Chi-Square Test of Independence assesses whether two categorical variables are independent of each other. It is particularly useful when conducting surveys or experiments to examine the relationship between variables such as gender and product preference, or age and voting behavior.\n\n\n9.3.2 Example: Gender vs. Laptop Type\nSuppose researchers want to explore whether there is an association between gender (Male, Female) and preference for laptop types (Gaming, Non-Gaming). The following contingency table shows the observational data:\n\n\n\nGender\nGaming\nNon-Gaming\nTotal\n\n\n\n\nMale\n27\n8\n35\n\n\nFemale\n5\n7\n12\n\n\nTotal\n32\n15\n47\n\n\n\n\n\n9.3.3 Expected Frequencies Calculation\nTo determine if the observed frequencies differ significantly from what we would expect if the two variables were independent, we must calculate the expected frequencies. The formula for an expected frequency in the cell at row \\(i\\) and column \\(j\\) is:\n\\[\nE_{ij} = \\frac{(Row \\: Total)(Column \\: Total)}{Grand \\: Total}\n\\]\nFor example, the expected frequency for the Male-Gaming category is calculated as follows:\n\\[\nE_{Male, Gaming} = \\frac{35 \\times 32}{47} \\approx 23.83\n\\]\n\n\n9.3.4 Chi-Square Statistic Calculation\nNow, we can calculate the Chi-Square statistic:\n\nCalculate the differences between observed and expected frequencies.\nSquare the differences.\nDivide by expected frequencies and sum the results.\n\nThe Chi-Square statistic is given by:\n\\[\n\\chi^2 = \\sum \\frac{(O - E)^2}{E}\n\\]\nFor instance:\n\\[\n\\chi^2 = \\frac{(27 - 23.83)^2}{23.83} + \\frac{(8 - 11.17)^2}{11.17} + \\frac{(5 - 4.8)^2}{4.8} + \\frac{(7 - 7.2)^2}{7.2}\n\\]\nCalculating each term:\n\nFor Male-Gaming: \\(\\frac{(27 - 23.83)^2}{23.83} \\approx 0.42\\)\nFor Male-Non-Gaming: \\(\\frac{(8 - 11.17)^2}{11.17} \\approx 1.158\\)\nFor Female-Gaming: \\(\\frac{(5 - 4.8)^2}{4.8} \\approx 0.00867\\)\nFor Female-Non-Gaming: \\(\\frac{(7 - 7.2)^2}{7.2} \\approx 0.00710\\)\n\nSumming these values gives:\n\\[\n\\chi^2 \\approx 0.42 + 1.158 + 0.00867 + 0.00710 \\approx 3.64\n\\]\n\n\n9.3.5 Degrees of Freedom Calculation\nThe degrees of freedom in this case is given by:\n\\[\ndf = (rows - 1) \\times (columns - 1) = (2 - 1)(2 - 1) = 1\n\\]\nComparison with Critical Values:\nUsing the Chi-Square distribution table for 1 degree of freedom at a significance level of 0.05, the critical value is approximately 3.84.\nConclusion:\nSince our calculated \\(\\chi^2 \\approx 3.64\\) is less than the critical value of 3.84, we fail to reject the null hypothesis \\(H_0\\). Hence, there is not enough evidence to suggest that gender and laptop type preference are related.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#non-parametric-tests",
     "href": "basic-statistics6.html#non-parametric-tests",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.4 4. Non-Parametric Tests",
     "text": "9.4 4. Non-Parametric Tests\n\n9.4.1 Definition and Importance\nNon-parametric tests are statistical methods that do not assume an underlying distribution for the data being analyzed. These tests are beneficial when dealing with ordinal data, non-normally distributed interval data, or small sample sizes. Such tests provide robustness against violations of parametric assumptions, making them versatile tools in various statistical analyses.\n\n\n9.4.2 Common Non-Parametric Tests\nHere is a list of some widely used non-parametric tests along with their parametric equivalents:\n\n\n\nParametric Test\nNon-Parametric Equivalent\n\n\n\n\nOne-sample t-test\nWilcoxon Signed-Rank Test\n\n\nTwo-sample t-test\nMann-Whitney U Test\n\n\nOne-Way ANOVA\nKruskal-Wallis Test\n\n\nTwo-Way ANOVA\nFriedman Test\n\n\nPearson Correlation\nSpearman Rank Correlation\n\n\n\n\n\n9.4.3 Implementation in RKWard\nGiven the advantages of non-parametric tests, they can be implemented easily using R. Here are some examples of how to perform non-parametric tests in R.\n\n9.4.3.1 Wilcoxon Signed-Rank Test\nwilcox.test(my.csv.data$CSE_1, mu=3.5)\n\n\n9.4.3.2 Mann-Whitney U Test\nwilcox.test(my.csv.data$GroupA, my.csv.data$GroupB)\n\n\n\n9.4.4 Example: Mann-Whitney U Test\nConsider a scenario in which we want to test whether two different teaching methods result in different student performance levels. We can use the Mann-Whitney U test (also known as the Wilcoxon rank-sum test) here.\nAssume the following data:\n\nMethod A scores: 65, 70, 78, 80\nMethod B scores: 67, 73, 75, 85\n\nLet’s conduct the Mann-Whitney U test in R:\nmethod_a_scores &lt;- c(65, 70, 78, 80)\nmethod_b_scores &lt;- c(67, 73, 75, 85)\n\nresult &lt;- wilcox.test(method_a_scores, method_b_scores, alternative = \"two.sided\")\nprint(result)\nThe output will indicate whether there is a statistically significant difference between the two methods.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#non-linear-and-logistic-regression",
     "href": "basic-statistics6.html#non-linear-and-logistic-regression",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.5 5. Non-Linear and Logistic Regression",
     "text": "9.5 5. Non-Linear and Logistic Regression\n\n9.5.1 Non-Linear Regression\nNon-Linear Regression is an extension of the linear regression analysis technique wherein the relationship between the independent and dependent variable can be modeled by a non-linear equation. Non-linear models can accommodate more complex relationships, thus allowing for better predictions.\nExamples of non-linear equations include polynomial models, exponential growth models, and logarithmic functions:\n\nQuadratic Equation:\n\n\\[\ny = ax^2 + bx + c\n\\]\n\nExponential Growth:\n\n\\[\ny = ae^{bx}\n\\]\n\n\n9.5.2 Evaluating Non-Linear Models\nModel selection and evaluation for non-linear regressions are often guided by the \\(R^2\\) statistic, which indicates the proportion of variance explained by the model. A higher \\(R^2\\) value suggests a better fit of the model.\n\n\n9.5.3 Example: Quadratic Fit\nAssume we have a dataset capturing the relationship between the number of hours studied and exam scores:\n\n\n\nHours Studied\nExam Score\n\n\n\n\n1\n50\n\n\n2\n60\n\n\n3\n80\n\n\n4\n85\n\n\n5\n90\n\n\n\nTo fit a quadratic regression model using R:\nlibrary(stats)\n\nhrs_studied &lt;- c(1, 2, 3, 4, 5)\nexam_scores &lt;- c(50, 60, 80, 85, 90)\n\nmodel &lt;- lm(exam_scores ~ poly(hrs_studied, 2))\nsummary(model)\nInterpreting the summary will reveal coefficients associated with each term of the polynomial and also provide \\(R^2\\) for evaluating the fit of the model.\n\n\n9.5.4 Logistic Regression\nLogistic regression is a specific type of regression analysis used when the outcome variable is binary (0 or 1). Logistic regression models the probability of the occurrence of an event based on one or more predictor variables.\nThe logistic regression equation is expressed as:\n\\[\n\\log\\left(\\frac{p}{1 - p}\\right) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\ldots + \\beta_n x_n\n\\]\nWhere: - \\(p\\): Probability of the event occurring (e.g., success). - \\(\\beta_0\\): Intercept of the model. - \\(\\beta_1, \\beta_2, \\ldots, \\beta_n\\): Coefficients of independent variables.\n\n\n9.5.5 Example: Logistic Regression\nConsider a study interested in predicting whether students will pass (1) or fail (0) based on hours studied:\n# Sample data\ndata &lt;- data.frame(hours_studied = c(1, 2, 3, 4, 5, 1, 2, 4, 5, 5),\n                   pass_fail = c(0, 0, 1, 1, 1, 0, 0, 1, 1, 1))\n\n# Logistic Regression Model\nlogistic_model &lt;- glm(pass_fail ~ hours_studied, data = data, family = binomial)\nsummary(logistic_model)\n\n\n9.5.6 Odds Ratio Interpretation\nIn logistic regression, the odds ratio expresses the change in odds for each unit change in the predictor variable.\n\\[\n\\text{Odds} = \\frac{p}{1 - p}\n\\]\nAn odds ratio greater than 1 indicates increased odds of the event occurring as the predictor increases, while an odds ratio less than 1 indicates decreased odds.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#poisson-distribution",
     "href": "basic-statistics6.html#poisson-distribution",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.6 6. Poisson Distribution",
     "text": "9.6 6. Poisson Distribution\n\n9.6.1 Definition and Use Case\nThe Poisson distribution is a discrete probability distribution that models the number of events occurring within a fixed interval of time or space, given the events occur independently of each other. It is particularly useful for modeling rare events, such as the number of emails received in an hour or the number of accidents happening at an intersection in a day.\n\n\n9.6.2 Poisson Probability Mass Function\nThe probability of observing exactly \\(k\\) events in a given interval can be calculated using the Poisson formula:\n\\[\nP(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}\n\\]\nWhere: - \\(\\lambda\\) (lambda): The average rate of occurrence. - \\(k\\): The actual number of occurrences.\n\n\n9.6.3 Example in R\nLet’s generate random Poisson-distributed values using R:\nlambda &lt;- 2  # Average occurrence\nrandom_values &lt;- rpois(10, lambda)\nprint(random_values)\n\n# Calculate probabilities\nprob_0 &lt;- dpois(0, lambda)\nprob_5 &lt;- dpois(5, lambda)\nThis code snippet outputs random values following a Poisson distribution with an average rate of 2.\n\n\n9.6.4 Applications of Poisson Distribution\nThe Poisson distribution finds applications across various fields, including:\n\nHealthcare: Predicting the number of patients arriving at an emergency room.\nTelecommunications: Modeling incoming calls at a call center.\nTraffic Management: Estimating the average number of vehicles passing through a toll booth in an hour.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#summary",
     "href": "basic-statistics6.html#summary",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.7 7. Summary",
     "text": "9.7 7. Summary\nThroughout this eBook, we’ve delved into essential statistical methodologies and their applications. Here’s a summary of the key points addressed:\n\nChi-Square Tests: Excellent for examining categorical data, whether assessing fit against a theoretical distribution or investigating the association between two categorical variables.\nNon-Parametric Tests: Robust alternatives that do not require distributional assumptions, thus offering flexibility in data analysis, especially for ordinal data or small sample sizes.\nNon-Linear Regression: A powerful extension allowing the modeling of complex relationships using polynomial or exponential forms, enhancing predictive accuracy.\nLogistic Regression: Specifically suited for binary outcomes, logistic regression provides insights into the relationship between a binary response variable and one or more predictor variables.\nPoisson Distribution: Essential for modeling count data, particularly for rare events, allowing effective predictions in various practical scenarios.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   },
   {
     "objectID": "basic-statistics6.html#references",
     "href": "basic-statistics6.html#references",
-    "title": "8  Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)",
+    "title": "8  basic-statistics_6",
     "section": "9.8 8. References",
     "text": "9.8 8. References\n\nLecture Transcripts: Lectures 28–31 by Dr. Harsh Pradhan, Banaras Hindu University.\nWeek 6 Slides from the course “Basic Statistics using GUI-R (RKWard)”.\nAdditional Statistical Resources: Various textbooks on statistical analysis and R programming.\nSoftware: R and RKWard (GUI-based interface for R).\nR Packages Used:\n\ncar: Companion to applied regression.\nvcd: Visualizing categorical data.\nperformance: Tools for assessing performance of statistical models.\ntidyverse: A collection of R packages designed for data science.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chi-Square Tests, Non-Parametric Tests & Non-Linear Regression using GUI-R (RKWard)</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>basic-statistics_6</span>"
     ]
   }
 ]
