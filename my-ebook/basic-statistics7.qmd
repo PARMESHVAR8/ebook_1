@@ -1,0 +1,377 @@
+---
+title: "basic-statistics_7"
+author: "Dr. Harsh Pradhan"
+institute: "Institute of Management Studies, BHU"
+course: "Basic Statistics using GUI-R (RKWard)"
+module: "Lectures 32–36 | Week 7"
+format: html
+---
+
+# 📚 Table of Contents
+
+1. [Introduction](#1)
+2. [Time Series Analysis](#2)
+   - [Overview of Time Series Data](#2-1)
+   - [Components of Time Series](#2-2)
+   - [Statistical Methods for Time Series Analysis](#2-3)
+   - [R Implementation of Time Series Data](#2-4)
+   - [Time Series Forecasting Techniques](#2-5)
+   - [Evaluating Forecast Accuracy](#2-6)
+3. [Conditional Probability & Bayes’ Theorem](#3)
+   - [Basic Concepts of Probability](#3-1)
+   - [Bayes’ Theorem and Its Applications](#3-2)
+   - [Applications of Bayes’ Theorem in Real Life](#3-3)
+4. [Expected Value and Bivariate Variables](#4)
+   - [Expected Value Basics](#4-1)
+   - [Bivariate Distributions](#4-2)
+   - [Calculating Joint Probability Mass Functions](#4-3)
+5. [Discrete Distributions](#5)
+   - [Hypergeometric Distribution](#5-1)
+   - [Poisson Distribution](#5-2)
+6. [Practical Applications](#6)
+   - [Application of Bayesian Inference](#6-1)
+   - [Forecasting in Time Series](#6-2)
+7. [Advanced Statistical Concepts](#7)
+   - [Stationarity and Unit Root Tests](#7-1)
+   - [ARIMA Models](#7-2)
+8. [Summary](#8)
+9. [References](#9)
+
+---
+
+<a name="1"></a>
+## 1. Introduction
+
+Statistics functions as the backbone for extracting meaningful insights from data. In many modern fields, including finance, healthcare, and environmental science, statistical methods are employed to make informed decisions and predictions based on observed phenomena. Courses such as *Basic Statistics using GUI-R (RKWard)*, taught by Dr. Harsh Pradhan at the Institute of Management Studies, BHU, focus on equipping students with essential statistical knowledge alongside practical skills in R programming.
+
+This eBook is structured to provide a comprehensive exploration of advanced statistical concepts, focusing on Time Series Analysis, Conditional Probability, Expected Value, and Discrete Distributions while integrating practical R code snippets for implementation. Each section will delve into theory, practical applications, and advanced topics to ensure a robust understanding.
+
+---
+
+<a name="2"></a>
+## 2. Time Series Analysis
+
+### 2.1 Overview of Time Series Data
+
+A **time series** is a sequence of data points collected or recorded at successive points in time. Time series data is crucial for analyzing trends over specific periods to support forecasting and decision-making.
+
+#### Key Features of Time Series Data
+
+- **Chronological Order**: The data is collected sequentially, allowing for time-based analysis.
+- **Regular Intervals**: Observations are taken at uniform time intervals (e.g., daily, weekly, monthly).
+- **Temporal Context**: Each data point has a specific time reference, which is essential for understanding its significance in relation to preceding and succeeding data points.
+
+### 2.2 Components of Time Series
+
+Understanding the distinct components of time series data helps in effectively analyzing it:
+
+| Component      | Description                                                      |
+|----------------|------------------------------------------------------------------|
+| **Trend**      | The long-term progression of the series (e.g., increasing sales over the years). |
+| **Seasonality**| Regular fluctuations occurring at specific intervals (e.g., holiday sales seasons). |
+| **Cyclic**     | Irregular fluctuations occurring over longer durations that are not fixed (e.g., business cycles). |
+
+> **Caution**: It is crucial to differentiate between trend and seasonality as they carry different implications for analysis and forecasting. A trend may indicate a sustained increase or decrease, while seasonality reflects periodic variations.
+
+### 2.3 Statistical Methods for Time Series Analysis
+
+Several statistical methods are employed to analyze time series data effectively:
+
+1. **Smoothing Techniques**: Techniques such as moving averages and exponential smoothing help in identifying the underlying pattern by minimizing noise.
+
+   - **Simple Moving Averages (SMA)**: A method of averaging to smooth out data points by creating a series of averages of different subsets of data. For example, the SMA for a given data series $X$ over $n$ intervals can be calculated as follows:
+
+     $$
+     SMA = \frac{X_1 + X_2 + X_3 + \ldots + X_n}{n}
+     $$
+
+   - **Exponential Smoothing**: A more sophisticated method that assigns exponentially decreasing weights to older observations.
+
+2. **Decomposition**: Breaking down a time series into trend, seasonal, and residual components provides clarity and understanding of the individual influences on the data.
+
+3. **Stationarity Testing**: A stationary time series remains constant over time, implying uniform statistical properties.
+
+   - The **Augmented Dickey-Fuller (ADF) Test** is a statistical test used to determine whether a unit root is present in a univariate time series. If the series is non-stationary, differencing might be required to stabilize the mean and variance.
+
+### 2.4 R Implementation of Time Series Data
+
+R provides extensive capabilities for handling time series data. The following example demonstrates how to gather stock data using the `BatchGetSymbols` package:
+
+```r
+# Install and load the required package
+install.packages("BatchGetSymbols")
+library(BatchGetSymbols)
+
+# Set the date range for fetching stock prices
+first.date <- Sys.Date() - 90  # Data for the past 90 days
+last.date <- Sys.Date()
+stocks <- c("AAPL", "GOOG", "AMZN")  # Example stock tickers
+
+# Fetch stock prices
+stock_data <- BatchGetSymbols(tickers = stocks, first.date = first.date, last.date = last.date)
+
+# Save the data to a CSV for future use
+write.csv(stock_data$data, "stock_prices.csv")
+```
+
+### 2.5 Time Series Forecasting Techniques
+
+Forecasting methods extend beyond basic trend analysis to project future values based on historical data. 
+
+1. **Naive Approach**: This method suggests that the future value is equal to the latest observed value. It is simple yet can be effective in stable environments.
+
+2. **ARIMA Models**: Autoregressive Integrated Moving Average (ARIMA) models are widely used for forecasting in time series analysis. ARIMA models combine autoregression (AR), differencing (I), and moving averages (MA) to model complex data patterns.
+
+   - **Identifying the Model**: The identification of the appropriate ARIMA model is done using ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) plots.
+
+3. **Exponential Smoothing State Space Model (ETS)**: This class of forecasting methods accommodates level, trend, and seasonal components, adapting automatically to changes in the data structure.
+
+### 2.6 Evaluating Forecast Accuracy
+
+Evaluating the accuracy of forecasting models is paramount. Common metrics include:
+
+- **Mean Absolute Error (MAE)**: Measures the average magnitude of errors in a set of forecasts, without considering their direction.
+
+  $$
+  MAE = \frac{1}{n} \sum_{i=1}^n |F_i - A_i|
+  $$
+
+- **Root Mean Square Error (RMSE)**: Measures the square root of the average of squared differences between forecasted and actual values.
+
+  $$
+  RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^n (F_i - A_i)^2}
+  $$
+
+- **Mean Absolute Percentage Error (MAPE)**: Measures the accuracy as a percentage.
+
+  $$
+  MAPE = \frac{100}{n} \sum_{i=1}^n \left| \frac{F_i - A_i}{A_i} \right|
+  $$
+
+These metrics foster an understanding of model performance and provide essential insights for model adjustments.
+
+---
+
+<a name="3"></a>
+## 3. Conditional Probability & Bayes’ Theorem
+
+### 3.1 Basic Concepts of Probability
+
+Probability quantifies how likely an event is to occur, yielding values between 0 (impossible event) and 1 (certain event). Key concepts include:
+
+- **Event**: A specific outcome or combination of outcomes from a random process.
+- **Sample Space**: The set of all possible outcomes of a random experiment.
+
+**Conditional Probability** defines the probability of an event $A$ occurring given that event $B$ has already occurred.
+
+Formula:
+
+$$
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+### 3.2 Bayes’ Theorem and Its Applications
+
+Bayes’ Theorem connects conditional probabilities, allowing the updating of beliefs upon receiving new evidence. The theorem can be expressed as:
+
+$$
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+$$
+
+| Term               | Meaning                         |
+|--------------------|---------------------------------|
+| $P(A|B)$           | The posterior probability       |
+| $P(B|A)$           | The likelihood                  |
+| $P(A)$             | The prior probability           |
+| $P(B)$             | The marginal likelihood         |
+
+This theorem is instrumental in diverse fields, empowering individuals to make informed predictions about uncertain situations based on prior knowledge and new information.
+
+### 3.3 Applications of Bayes’ Theorem in Real Life
+
+1. **Medical Diagnosis**: In healthcare, Bayes’ Theorem is utilized to assess the probability of a disease a patient has based on test results.
+   
+   - Before a diagnosis, a doctor may have a prior probability of a patient's disease, which updates as the doctor considers the test results.
+
+2. **Spam Filtering**: Email services employ Bayesian filters to categorize emails as spam or not spam by calculating probabilities based on various features of known spam messages.
+   
+   - As new types of spam are encountered, the spam filter dynamically updates its rules, improving accuracy.
+
+3. **Risk Assessment in Finance**: Investors can assess the probability of a stock’s performance based on prior market trends and current economic signals, supporting better decision-making.
+
+---
+
+<a name="4"></a>
+## 4. Expected Value and Bivariate Variables
+
+### 4.1 Expected Value Basics
+
+The **Expected Value (EV)** of a random variable quantifies what one can expect to obtain on average over many repetitions of a random experiment.
+
+For a discrete random variable $X$ with potential values $x_i$ and corresponding probabilities $P(x_i)$:
+
+$$
+E(X) = \sum_{i=1}^n x_i \cdot P(x_i)
+$$
+
+#### Properties of Expected Value:
+
+1. **Linearity of Expectation**: If $Y = aX + b$, where $a$ and $b$ are constants, the expected value can be expressed as:
+
+   $$
+   E(Y) = aE(X) + b
+   $$
+
+2. **Expectation of a Constant**: The expected value of a constant is simply the constant itself; for example, $E(c) = c$.
+
+### 4.2 Bivariate Distributions
+
+Exploring two random variables together involves constructing a **Joint Probability Distribution** and understanding their relationship through the Joint Probability Mass Function (JPMF):
+
+$$
+P(X = x, Y = y)
+$$
+
+#### Calculating Joint Probability Mass Functions
+
+To calculate the joint distribution, one can utilize contingency tables that highlight the relationships and frequencies between two variables.
+
+| $X \backslash Y$ | 0   | 1   | 2   | 3   |
+|------------------|-----|-----|-----|-----|
+| 0                | 1/8 | 0   | 0   | 0   |
+| 1                | 0   | 3/8 | 0   | 0   |
+| 2                | 0   | 0   | 3/8 | 0   |
+| 3                | 0   | 0   | 0   | 1/8 |
+
+This table can help compute probabilities associated with specific combinations of events, allowing deeper insights into their interdependence.
+
+---
+
+<a name="5"></a>
+## 5. Discrete Distributions
+
+### 5.1 Hypergeometric Distribution
+
+When samples are drawn from a finite population without replacement, the hypergeometric distribution describes the probability of observing a specific number of successes in the sample.
+
+The formula for the hypergeometric distribution is expressed as:
+
+$$
+P(X = k) = \frac{\binom{K}{k} \cdot \binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+Where:
+- $N$ = total size of the population
+- $K$ = total number of successes in the population
+- $n$ = number of draws
+- $k$ = number of observed successes
+
+#### Example Application
+
+Consider drawing cards from a deck of 52 cards where 12 are face cards:
+
+Suppose you draw 5 cards without replacement, and want to find the probability of drawing exactly 2 face cards.
+
+### 5.2 Poisson Distribution
+
+The Poisson distribution is useful for modeling the number of events that occur in a fixed interval of time or space when these events happen independently of one another.
+
+#### Probability Mass Function
+
+The probability of observing $k$ events in a fixed interval can be described as:
+
+$$
+P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!}
+$$
+
+Where:
+- $\lambda$ is the average rate (mean number of events)
+- $k$ is the actual number of events
+- $e$ is Euler’s number (approximately 2.718)
+
+#### Practical Example in R
+
+To calculate the probability of seeing 3 arrivals in a system during a 10-minute interval when the average arrival rate is 2:
+
+```r
+lambda <- 2
+k <- 3
+probability <- dpois(k, lambda)
+print(probability)  # Outputs the probability of 3 events
+```
+
+The Poisson distribution is crucial in various fields such as telecommunications, traffic flow analysis, and service operations, as it assists in predicting and managing occurrences effectively.
+
+---
+
+<a name="6"></a>
+## 6. Practical Applications
+
+### 6.1 Application of Bayesian Inference
+
+Bayesian inference is pivotal in domains that require integration of prior knowledge with observed data. It is widely applied in:
+
+- **Healthcare**: Assessing new treatment methods' effectiveness by updating beliefs based on clinical trial data.
+- **Marketing**: Personalizing customer experiences by predicting behavior from previous interactions.
+
+### 6.2 Forecasting in Time Series
+
+Forecasting is essential for planning and strategic decision-making in various sectors:
+
+1. **Finance**: Investors predict stock prices based on historical trends to determine buy/sell decisions.
+2. **Inventory Management**: Businesses use historical sales data to manage stock levels, optimizing costs and meeting demand.
+3. **Weather Prediction**: Meteorological data is analyzed to forecast weather patterns and help in disaster preparedness.
+
+---
+
+<a name="7"></a>
+## 7. Advanced Statistical Concepts
+
+### 7.1 Stationarity and Unit Root Tests
+
+Stationarity is a fundamental concept in time series analysis. A stationary time series exhibits constant mean and variance over time, essential for reliable forecasting. The Augmented Dickey-Fuller (ADF) test is employed to assess stationarity:
+
+- **Null Hypothesis**: The time series has a unit root (is non-stationary).
+- **Alternative Hypothesis**: The time series does not have a unit root (is stationary).
+
+A low p-value (typically < 0.05) indicates rejection of the null hypothesis, suggesting stationarity in the data.
+
+### 7.2 ARIMA Models
+
+ARIMA models provide a robust framework for time series forecasting by incorporating autoregressive and moving average components alongside differencing.
+
+1. **Model Identification**: Use ACF and PACF plots to identify appropriate parameters for ARIMA models.
+
+2. **Estimation and Fitting**: Fit the ARIMA model using maximum likelihood estimation for optimal parameters.
+  
+3. **Diagnosis**: Evaluate residuals to ensure no patterns remain, validating the model's appropriateness.
+
+4. **Forecasting**: Use fitted ARIMA models to generate future projections, providing confidence intervals for predictions.
+
+---
+
+<a name="8"></a>
+## 8. Summary
+
+This eBook provides an in-depth exploration of key concepts in advanced statistics, bridging theoretical understanding with practical applications in time series analysis, probability theory, and discrete distributions. Major topics include:
+
+- **Time Series Analysis**: Grasping trends, seasonality, advanced forecasting methods, and model evaluation techniques.
+- **Bayesian Probability**: Gaining insights from past events affecting future predictions.
+- **Expected Value & Discrete Distributions**: Emphasizing the underlying importance of random processes in qualitative decision-making.
+- **Real-world Applications**: Highlighting the roles of these statistical methods in diverse fields ranging from finance to healthcare.
+
+Through integration of theory and practical R programming examples, this resource aims to equip readers with a comprehensive toolkit for addressing complex statistical challenges in varied contexts.
+
+---
+
+<a name="9"></a>
+## 9. References
+
+1. Harsh Pradhan, *Lecture Transcripts (32–36)*, Basic Statistics using GUI-R (RKWard), Institute of Management Studies, BHU.
+2. Week 7 Lecture Slides – *Introduction to Time Series Analysis & Probability Concepts*
+3. Book Source: Chapter 16 - *Introduction to Time Series Analysis*, SAGE Publications.
+4. R Documentation: [BatchGetSymbols](https://cran.r-project.org/web/packages/BatchGetSymbols/), [TSA Package](https://cran.r-project.org/web/packages/TSA/).
+
+---
+
+This eBook serves as a detailed guide for learners and practitioners in statistics, catering specifically to those seeking to deepen their understanding of statistical theory, methodologies, and applications in R. The inclusion of various statistical measures, R code snippets, and practical examples supports the reader's journey toward mastering these advanced statistical concepts.
