@@ -4,17 +4,7 @@
     "href": "index.html",
     "title": "my-ebook",
     "section": "",
-    "text": "1 Introduction\nDR.Harsh Pradhan, Phone: +91-9930034241 , Email: harsh.231284@gmail.com, Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nGitHub\nResearcher ID\nPersonal Website\nYoutube ID\nDoing a PhD with me: README.1st\nAcademic Profile",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#introduction-what-this-course-is-about",
-    "href": "index.html#introduction-what-this-course-is-about",
-    "title": "my-ebook",
-    "section": "2.1 Introduction: What this course is about",
-    "text": "2.1 Introduction: What this course is about\nThis course provides an introduction to Bayesian data analysis using the probabilistic programming language Stan.\nWe will use a front end software package called brms.\nThis course is for:\n\nLinguistics (MM5, MM6)\nCognitive Systems\nCognitive Science\n\nPlease see the PULS FAQs to find out how the sign-up system works (in German).\nWe will be using the software R and RStudio, so make sure you install these on your computer.\nTopics to be covered:\n\nBasic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)\nUsing Bayes’ rule for statistical inference\nAn introduction to (generalized) linear models\nAn introduction to hierarchical models\nMeasurement error models\nMixture models\nModel selection and hypothesis testing (Bayes factor and k-fold cross-validation)",
+    "text": "1 Introduction\nDR.Harsh Pradhan, Phone: +91-9930034241 , Email: harsh.231284@gmail.com, Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nGitHub\nResearcher ID\nPersonal Website\nYoutube ID\nDoing a PhD with me: README.1st\nAcademic Profile\nTopics to be covered:",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -23,8 +13,8 @@
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
     "title": "my-ebook",
-    "section": "2.2 Teaching",
-    "text": "2.2 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.\nCourses offered:\n\nFree online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis\nShort (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here\nIntroduction to (frequentist) statistics\nIntroduction to Bayesian data analysis for cognitive science\nBDA cover",
+    "section": "1.1 Teaching",
+    "text": "1.1 Teaching\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.\nCourses offered:\n\nFree online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis\nShort (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here\nIntroduction to (frequentist) statistics\nIntroduction to Bayesian data analysis for cognitive science\nBDA cover",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -33,8 +23,8 @@
     "objectID": "index.html#lecture-notes",
     "href": "index.html#lecture-notes",
     "title": "my-ebook",
-    "section": "2.3 Lecture notes",
-    "text": "2.3 Lecture notes\nDownload from here.",
+    "section": "1.2 Lecture notes",
+    "text": "1.2 Lecture notes\nDownload from here.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -43,8 +33,8 @@
     "objectID": "index.html#moodle-website",
     "href": "index.html#moodle-website",
     "title": "my-ebook",
-    "section": "2.4 Moodle website",
-    "text": "2.4 Moodle website\nAll communications with students in Potsdam will be done through this website.",
+    "section": "1.3 Moodle website",
+    "text": "1.3 Moodle website\nAll communications with students in Potsdam will be done through this website.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]

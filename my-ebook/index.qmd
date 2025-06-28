@@ -45,22 +45,8 @@ format:
 
 ------------------------------------------------------------------------
 
-# Bayesian data analysis for cognitive science
 
-## Introduction: What this course is about
 
-This course provides an introduction to Bayesian data analysis using the probabilistic programming language **Stan**.\
-We will use a front end software package called **brms**.
-
-This course is for:
-
--   Linguistics (MM5, MM6)
--   Cognitive Systems
--   Cognitive Science
-
-Please see the [PULS FAQs](http://stud.astaup.de/~linguistik/doku.php?id=puls-faq) to find out how the sign-up system works (in German).
-
-We will be using the software [R](http://cran.r-project.org/) and [RStudio](https://www.rstudio.com/), so make sure you install these on your computer.
 
 Topics to be covered:
 
