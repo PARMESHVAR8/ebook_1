@@ -102,191 +102,191 @@
   {
     "objectID": "basic-statistics1.html",
     "href": "basic-statistics1.html",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "",
     "text": "4 Introduction\nWelcome to the “Basic Statistics Using GUI-R (RK Ward)” course, led by Dr. Harsh Pradhan at the Institute of Management Studies, Banaras Hindu University. This course takes an integrated approach to statistical analysis, bridging theory with practical skills through the R programming language and its GUI, RKWard.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#objectives-of-the-course",
     "href": "basic-statistics1.html#objectives-of-the-course",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "4.1 Objectives of the Course",
     "text": "4.1 Objectives of the Course\n\nUnderstand fundamental concepts related to statistics.\nGain proficiency in using R and RKWard for statistical analysis.\nLearn to visualize data effectively.\nApply statistical methodologies to real-world datasets.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#r-programming-language",
     "href": "basic-statistics1.html#r-programming-language",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "5.1 R Programming Language",
     "text": "5.1 R Programming Language\nR is a versatile, open-source language specifically designed for statistical analysis and data visualization. It provides an extensive suite of statistical procedures, making it a cornerstone for statisticians and data scientists.\nKey Features of R:\n\nExtensive Libraries: R hosts thousands of packages that support numerous statistical models such as linear regression, time series, and more.\nCustomizable Graphics: The base graphics capabilities, along with packages like ggplot2, allow users to create a variety of complex visualizations with relative ease.\nData Manipulation Tools: Packages like dplyr and tidyr provide robust tools for data cleaning and transformation.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#understanding-rkward",
     "href": "basic-statistics1.html#understanding-rkward",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "5.2 Understanding RKWard",
     "text": "5.2 Understanding RKWard\nRKWard serves as a user-friendly interface that simplifies interactions with R, allowing users—especially those less familiar with programming—to utilize its powerful capabilities without a steep learning curve.\nFeatures of RKWard Include:\n\nGraphical User Interface: Navigation through menus rather than command lines enhances accessibility.\nBuilt-in Documentation: Context-sensitive help facilitates learning and troubleshooting.\nIntegration with R: Commands executed via the GUI can be viewed and modified, providing a dual-learning experience.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#types-of-variables",
     "href": "basic-statistics1.html#types-of-variables",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "6.1 Types of Variables",
     "text": "6.1 Types of Variables\nVariables are the building blocks of statistical analysis, representing the characteristics or properties of the data.\n\n6.1.1 Qualitative Variables (Categorical Variables)\n\nNominal Variables: These variables categorize data without an inherent order. For example, types of fruits (apple, orange) are nominal.\nOrdinal Variables: These represent ordered categories. For instance, a customer satisfaction survey may be rated as poor, fair, good, or excellent.\n\n\n\n6.1.2 Quantitative Variables\n\nDiscrete Variables: These variables take on countable values, such as the number of students in a class.\nContinuous Variables: These can take any value within a given range, such as height and weight.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#importance-of-defining-variables",
     "href": "basic-statistics1.html#importance-of-defining-variables",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "6.2 Importance of Defining Variables",
     "text": "6.2 Importance of Defining Variables\nProperly understanding and defining variables is crucial for:\n\nSelecting appropriate statistical tests.\nEnsuring accurate data interpretation.\nStructuring datasets to facilitate analysis.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#statistical-data-types",
     "href": "basic-statistics1.html#statistical-data-types",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "7.1 Statistical Data Types",
     "text": "7.1 Statistical Data Types\nData types are foundational for statistical analysis as they define what kind of arithmetic operations can be performed on the data.\n\n\n\n\n\n\n\n\nData Type\nDescription\nExample\n\n\n\n\nNominal\nCategorical data without order\nBlood types (A, B, AB, O)\n\n\nOrdinal\nCategorical data with a defined order\nCustomer satisfaction (poor, fair, good)\n\n\nInterval\nNumerical data with meaningful differences\nTemperature in Celsius\n\n\nRatio\nNumerical data with an absolute zero\nWeight, height",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#spreadsheet-basics",
     "href": "basic-statistics1.html#spreadsheet-basics",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "7.2 Spreadsheet Basics",
     "text": "7.2 Spreadsheet Basics\nSpreadsheets provide a structured format for data entry, where rows represent instances (e.g., individuals, items) and columns represent variables (e.g., age, gender).\nKey Functions of Spreadsheets:\n\nData Organization: Data is easily sorted and filtered.\nFormulas and Functions: Built-in functions allow for quick calculation and data manipulation.\nVisualization Integration: Charts and tables can visually represent data.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#data-preparation",
     "href": "basic-statistics1.html#data-preparation",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "8.1 Data Preparation",
     "text": "8.1 Data Preparation\nBefore importing data into RKWard, ensure that your dataset meets standards such as:\n\nProperly labeled columns.\nConsistent data types.\nAbsence of unnecessary formatting or symbols.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#step-by-step-import-process",
     "href": "basic-statistics1.html#step-by-step-import-process",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "8.2 Step-by-Step Import Process",
     "text": "8.2 Step-by-Step Import Process\nSteps to import data into RKWard:\n\nOpen RKWard and access the main interface.\nGo to the “Data” tab and select “Import Data”.\nChoose the file type such as CSV or Excel.\nBrowse to locate your file.\nSpecify data types for each column during import and ensure the first row contains headers.\nReview the imported data in the workspace to confirm it’s properly loaded.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#descriptive-statistics",
     "href": "basic-statistics1.html#descriptive-statistics",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "9.1 Descriptive Statistics",
     "text": "9.1 Descriptive Statistics\nDescriptive statistics help summarize and organize data in a meaningful way.\n\n9.1.1 Central Tendency Measures\n\nMean: Average of the dataset.\nMedian: Middle value when data is ordered.\nMode: Most frequent value in the dataset.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nMean\n\\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\)\nAverage value\n\n\nMedian\n(Sorted data, middle item)\nMiddle value in ordered dataset\n\n\nMode\nValue that appears most frequently\nMost common value\n\n\n\n\n\n9.1.2 Dispersion Measures\n\nRange: Difference between the maximum and minimum values.\nVariance: Measurement of the spread of data points.\nStandard Deviation: Square root of variance, providing a measure of the average distance from the mean.\n\n\n\n\n\n\n\n\n\nMeasure\nFormula\nDescription\n\n\n\n\nRange\n\\(Range = Max - Min\\)\nSpread of dataset\n\n\nVariance\n\\(Var(X) = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}\\)\nSpread of data relative to mean\n\n\nStandard Deviation\n\\(SD(X) = \\sqrt{Var(X)}\\)\nAverage distance from mean",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#inferential-statistics",
     "href": "basic-statistics1.html#inferential-statistics",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "9.2 Inferential Statistics",
     "text": "9.2 Inferential Statistics\nInferential statistics allow us to make predictions or inferences about a population based on a sample.\n\nHypothesis Testing: A method to test assumptions regarding population parameters using sample data.\nConfidence Intervals: Define a range of values derived from sample statistics that likely encompass the true population parameter.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#practical-r-commands-and-functions",
     "href": "basic-statistics1.html#practical-r-commands-and-functions",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "9.3 Practical R Commands and Functions",
     "text": "9.3 Practical R Commands and Functions\nUnderstanding and utilizing R functions is crucial for effective data analysis. Some key functions include:\n\nmean(): Calculates the average.\nsd(): Computes standard deviation.\nt.test(): Performs a t-test for hypothesis testing.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#significance-of-data-visualization",
     "href": "basic-statistics1.html#significance-of-data-visualization",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "10.1 Significance of Data Visualization",
     "text": "10.1 Significance of Data Visualization\nVisualization enhances comprehension by allowing researchers to observe patterns, trends, and anomalies effectively.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#types-of-graphs",
     "href": "basic-statistics1.html#types-of-graphs",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "10.2 Types of Graphs",
     "text": "10.2 Types of Graphs\nVariety in graph types caters to different data presentation needs:\n\n\n\n\n\n\n\nGraph Type\nUse Case\n\n\n\n\nBar Graph\nComparing categorical data\n\n\nHistogram\nDisplaying distribution of continuous data\n\n\nBox Plot\nSummarizing data distributions and spotting outliers\n\n\nScatter Plot\nInvestigating relationships between two quantitative variables",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#implementing-visualization-in-rkward",
     "href": "basic-statistics1.html#implementing-visualization-in-rkward",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "10.3 Implementing Visualization in RKWard",
     "text": "10.3 Implementing Visualization in RKWard\nStudents will learn how to create visualizations within RKWard by following these steps:\n\nNavigate to the graph creation menu.\nSelect the desired type of graph.\nCustomize visual elements such as titles, colors, and axes.\nGenerate and export the graph for use in reports.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#case-studies-in-various-fields",
     "href": "basic-statistics1.html#case-studies-in-various-fields",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "11.1 Case Studies in Various Fields",
     "text": "11.1 Case Studies in Various Fields\nStatistics plays a pivotal role in diverse disciplines:\n\n\n\n\n\n\n\nField\nApplication\n\n\n\n\nHealthcare\nAnalyzing medical test results, outcomes of treatments, and patient demographics\n\n\nBusiness\nApplied for market analyses, customer satisfaction studies, and financial forecasting\n\n\nSocial Sciences\nEmployed in surveys to understand populations, opinions, and behavioral patterns",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
     "href": "basic-statistics1.html#utilizing-statistical-methods-for-decision-making",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "11.2 Utilizing Statistical Methods for Decision Making",
     "text": "11.2 Utilizing Statistical Methods for Decision Making\n\nUse statistical evidence to guide business strategies.\nMake informed policy decisions based on empirical data.\nReport findings clearly for transparency and comprehension.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
     "objectID": "basic-statistics1.html#key-takeaways",
     "href": "basic-statistics1.html#key-takeaways",
-    "title": "3  basic-statistics_1",
+    "title": "3  week 1",
     "section": "12.1 Key Takeaways",
     "text": "12.1 Key Takeaways\n\nProficiency in defining and using variables and data types.\nCapability to import and manipulate data in RKWard.\nUnderstanding of basic statistical practices and their applications.\nSkill in visualizing data for effective communication of results.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>basic-statistics_1</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>week 1</span>"
     ]
   },
   {
@@ -1044,7 +1044,7 @@
     "href": "basic-statistics5.html#lecture-26-linear-regression-and-model-assumptions",
     "title": "7  basic-statistics_5",
     "section": "7.4 4. Lecture 26 – Linear Regression and Model Assumptions",
-    "text": "7.4 4. Lecture 26 – Linear Regression and Model Assumptions\nThe concept of regression analysis is rooted in its power to model and predict outcomes based on independent variables.\n\n7.4.1 4.1 The Linear Model\nThe primary form of regression is simple linear regression, which describes the relationship between a single independent variable (predictor) and a dependent variable:\n\\[\ny = mx + c\n\\]\nHere, \\(m\\) signifies the slope of the line, indicating the change in \\(y\\) for every one-unit increase in \\(x\\). The constant \\(c\\) represents the y-intercept, where the line intersects the y-axis.\nExample: A researcher finds the regression equation \\(y = 3x + 2\\). This indicates that for every additional hour studied, the test score (\\(y\\)) is expected to increase by 3 points.\n\n\n7.4.2 4.2 Fitting Models in RKWard\nRKWard simplifies the process of conducting regression analysis through intuitive functionalities. The steps include:\n\nInputting Data: Users need to ensure datasets are correctly formatted.\nFitting the Model: Using the lm() function in R:\n::: {.cell}\n\nCode\nmodel &lt;- lm(Weight ~ Height, data=mydata)\n\n:::\nThis fits a linear regression model predicting Weight from Height.\nAnalyzing Model Output: The summary() function provides crucial statistics related to fits, such as coefficients and R² values:\n::: {.cell}\n\nCode\nsummary(model)\n\n::: {.cell-output .cell-output-stderr}\nWarning in summary.lm(model): essentially perfect fit: summary may be\nunreliable\n:::\n::: {.cell-output .cell-output-stdout}\n\nCall:\nlm(formula = Weight ~ Height, data = mydata)\n\nResiduals:\n         1          2          3          4          5 \n 1.270e-14 -1.296e-14 -6.454e-15  9.733e-16  5.736e-15 \n\nCoefficients:\n              Estimate Std. Error    t value Pr(&gt;|t|)    \n(Intercept) -1.000e+02  6.265e-14 -1.596e+15   &lt;2e-16 ***\nHeight       1.000e+00  3.673e-16  2.723e+15   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.161e-14 on 3 degrees of freedom\nMultiple R-squared:      1, Adjusted R-squared:      1 \nF-statistic: 7.413e+30 on 1 and 3 DF,  p-value: &lt; 2.2e-16\n::: :::\nInterpreting Coefficients: The coefficient for Height tells you how much Weight is expected to change for each one-unit increase in Height, holding everything else constant.\n\n\n\n7.4.3 4.3 Assessing Model Performance\nTo assess how well the regression model fits the data, several statistics are gathered during the analysis:\n\nCoefficient of Determination (R²): R² shows the proportion of variance in the dependent variable that is predictable from the independent variable(s). A higher R² value indicates a better fit.\nF-Ratio: This statistic tests the overall significance of the regression model. A significant F-ratio indicates that at least one predictor variable has a significant relationship with the dependent variable.\nP-Values: Each coefficient in the regression output is accompanied by a p-value. A p-value less than 0.05 typically indicates that the predictor is significantly related to the dependent variable.\n\nThe essential fundamentals of regression analysis also include validation of core assumptions:\n\n\n7.4.4 4.4 Common Pitfalls in Regression Analysis\nCommon pitfalls to avoid in regression analysis include:\n\nOverfitting: Developing a complex model that fits the training data too closely may fail to generalize well on test data. To counter this, simplicity in model choice is often preferred.\nMulticollinearity: High correlations among independent variables can distort regression results. Variance Inflation Factor (VIF) assessments help to diagnose multicollinearity issues.\nHomoscedasticity: The assumption that residuals have constant variance across values of the independent variable must be checked. Various graphical plots can identify deviations from this assumption.\nNormality of Residuals: The normality of residuals can be evaluated using a QQ plot or the Shapiro-Wilk test, ensuring that the data meet the normality requirement before proceeding with interpretations.\n\nVisualizing the fitted model along with residual plots, such as:\n\n\nCode\npar(mfrow=c(2,2))\nplot(model)\n\n\n\n\n\n\n\n\n\nallows one to assess these assumptions logically and adjust the approach as needed.",
+    "text": "7.4 4. Lecture 26 – Linear Regression and Model Assumptions\nThe concept of regression analysis is rooted in its power to model and predict outcomes based on independent variables.\n\n7.4.1 4.1 The Linear Model\nThe primary form of regression is simple linear regression, which describes the relationship between a single independent variable (predictor) and a dependent variable:\n\\[\ny = mx + c\n\\]\nHere, \\(m\\) signifies the slope of the line, indicating the change in \\(y\\) for every one-unit increase in \\(x\\). The constant \\(c\\) represents the y-intercept, where the line intersects the y-axis.\nExample: A researcher finds the regression equation \\(y = 3x + 2\\). This indicates that for every additional hour studied, the test score (\\(y\\)) is expected to increase by 3 points.\n\n\n7.4.2 4.2 Fitting Models in RKWard\nRKWard simplifies the process of conducting regression analysis through intuitive functionalities. The steps include:\n\nInputting Data: Users need to ensure datasets are correctly formatted.\nFitting the Model: Using the lm() function in R:\n::: {.cell}\n\nCode\nmodel &lt;- lm(Weight ~ Height, data=mydata)\n\n:::\nThis fits a linear regression model predicting Weight from Height.\nAnalyzing Model Output: The summary() function provides crucial statistics related to fits, such as coefficients and R² values:\n::: {.cell}\n\nCode\nsummary(model)\n\n::: {.cell-output .cell-output-stderr}\nWarning in summary.lm(model): essentially perfect fit: summary may be\nunreliable\n:::\n::: {.cell-output .cell-output-stdout}\n\nCall:\nlm(formula = Weight ~ Height, data = mydata)\n\nResiduals:\n         1          2          3          4          5 \n 1.254e-15 -1.133e-16 -1.267e-15 -2.143e-15  2.269e-15 \n\nCoefficients:\n              Estimate Std. Error    t value Pr(&gt;|t|)    \n(Intercept) -1.000e+02  1.120e-14 -8.929e+15   &lt;2e-16 ***\nHeight       1.000e+00  6.565e-17  1.523e+16   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.076e-15 on 3 degrees of freedom\nMultiple R-squared:      1, Adjusted R-squared:      1 \nF-statistic: 2.32e+32 on 1 and 3 DF,  p-value: &lt; 2.2e-16\n::: :::\nInterpreting Coefficients: The coefficient for Height tells you how much Weight is expected to change for each one-unit increase in Height, holding everything else constant.\n\n\n\n7.4.3 4.3 Assessing Model Performance\nTo assess how well the regression model fits the data, several statistics are gathered during the analysis:\n\nCoefficient of Determination (R²): R² shows the proportion of variance in the dependent variable that is predictable from the independent variable(s). A higher R² value indicates a better fit.\nF-Ratio: This statistic tests the overall significance of the regression model. A significant F-ratio indicates that at least one predictor variable has a significant relationship with the dependent variable.\nP-Values: Each coefficient in the regression output is accompanied by a p-value. A p-value less than 0.05 typically indicates that the predictor is significantly related to the dependent variable.\n\nThe essential fundamentals of regression analysis also include validation of core assumptions:\n\n\n7.4.4 4.4 Common Pitfalls in Regression Analysis\nCommon pitfalls to avoid in regression analysis include:\n\nOverfitting: Developing a complex model that fits the training data too closely may fail to generalize well on test data. To counter this, simplicity in model choice is often preferred.\nMulticollinearity: High correlations among independent variables can distort regression results. Variance Inflation Factor (VIF) assessments help to diagnose multicollinearity issues.\nHomoscedasticity: The assumption that residuals have constant variance across values of the independent variable must be checked. Various graphical plots can identify deviations from this assumption.\nNormality of Residuals: The normality of residuals can be evaluated using a QQ plot or the Shapiro-Wilk test, ensuring that the data meet the normality requirement before proceeding with interpretations.\n\nVisualizing the fitted model along with residual plots, such as:\n\n\nCode\npar(mfrow=c(2,2))\nplot(model)\n\n\n\n\n\n\n\n\n\nallows one to assess these assumptions logically and adjust the approach as needed.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>basic-statistics_5</span>"
     ]
