@@ -1,5 +1,5 @@
 ---
-title: "basic-statistics_1"
+title: "week 1"
 author: "Dr. Harsh Pradhan"
 affiliation: "Institute of Management Studies, Banaras Hindu University"
 format: 
