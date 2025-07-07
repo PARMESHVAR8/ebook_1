@@ -144,397 +144,117 @@
     "href": "week2.html",
     "title": "3  Week 2",
     "section": "",
-    "text": "4 Introduction",
+    "text": "3.1 Introduction",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#purpose-of-the-ebook",
-    "href": "week2.html#purpose-of-the-ebook",
+    "objectID": "week2.html#introduction",
+    "href": "week2.html#introduction",
     "title": "3  Week 2",
-    "section": "4.1 Purpose of the eBook",
-    "text": "4.1 Purpose of the eBook\nThis eBook is designed as a complete beginner-to-intermediate guide for understanding the foundational concepts of statistics. It aims to bridge theoretical knowledge and practical application using RKWard (a GUI for R). Readers will be introduced to descriptive and inferential statistics, probability theory, and probability distributions with ample examples and exercises.",
+    "section": "",
+    "text": "3.1.1 Purpose of the eBook\nThis eBook is designed as a complete beginner-to-intermediate guide for understanding the foundational concepts of statistics. It aims to bridge theoretical knowledge and practical application using RKWard (a GUI for R). Readers will be introduced to descriptive and inferential statistics, probability theory, and probability distributions with ample examples and exercises.\n\n\n3.1.2 Who Should Read This?\n\nUndergraduate students\nMBA and management students\nData analysis beginners\nProfessionals dealing with data\n\n\n\n3.1.3 What You’ll Learn\n\nData classification and types\nDescriptive statistics: central tendency and variability\nBasic probability and events\nProbability distributions: Bernoulli, Binomial, and Normal\nUse of RKWard in statistical analysis",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#who-should-read-this",
-    "href": "week2.html#who-should-read-this",
+    "objectID": "week2.html#fundamentals-of-statistics",
+    "href": "week2.html#fundamentals-of-statistics",
     "title": "3  Week 2",
-    "section": "4.2 Who Should Read This?",
-    "text": "4.2 Who Should Read This?\n\nUndergraduate students\nMBA and management students\nData analysis beginners\nProfessionals dealing with data",
+    "section": "3.2 1. Fundamentals of Statistics",
+    "text": "3.2 1. Fundamentals of Statistics\n\n3.2.1 1.1 What is Statistics?\nStatistics is the science of collecting, organizing, analyzing, and interpreting data to make informed decisions. It involves both theoretical (mathematical) and applied approaches to understanding uncertainty and variability in real-world phenomena.\n\n\n3.2.2 1.2 Key Objectives\n\nSummarizing large datasets effectively\nEstimating population parameters\nTesting hypotheses\nMaking predictions and decisions under uncertainty\n\n\n\n3.2.3 1.3 Types of Statistics\n\nDescriptive Statistics: Deals with the presentation and summarization of data.\nInferential Statistics: Draws conclusions about populations based on sample data.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#what-youll-learn",
-    "href": "week2.html#what-youll-learn",
+    "objectID": "week2.html#types-of-data",
+    "href": "week2.html#types-of-data",
     "title": "3  Week 2",
-    "section": "4.3 What You’ll Learn",
-    "text": "4.3 What You’ll Learn\n\nData classification and types\nDescriptive statistics: central tendency and variability\nBasic probability and events\nProbability distributions: Bernoulli, Binomial, and Normal\nUse of RKWard in statistical analysis",
+    "section": "3.3 2. Types of Data",
+    "text": "3.3 2. Types of Data\n\n3.3.1 2.1 Classification of Data\n\n\n\n\n\n\n\n\nType\nExample\nDescription\n\n\n\n\nQualitative\nGender, Nationality\nNon-numeric labels\n\n\nQuantitative\nHeight, Age\nNumeric values\n\n\nDiscrete\nNo. of Children\nCountable numbers\n\n\nContinuous\nTemperature, Weight\nInfinite values in a range\n\n\n\n\n3.3.1.1 Qualitative (Categorical) Data\n\nNominal: No inherent order (e.g., religion, marital status).\nOrdinal: Natural order (e.g., customer satisfaction: Poor, Average, Good).\n\n\n\n3.3.1.2 Quantitative (Numerical) Data\n\nDiscrete: Integers; e.g., number of books.\nContinuous: Measurable; e.g., weight in kilograms.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#what-is-statistics",
-    "href": "week2.html#what-is-statistics",
+    "objectID": "week2.html#descriptive-statistics",
+    "href": "week2.html#descriptive-statistics",
     "title": "3  Week 2",
-    "section": "5.1 1.1 What is Statistics?",
-    "text": "5.1 1.1 What is Statistics?\nStatistics is the science of collecting, organizing, analyzing, and interpreting data to make informed decisions. It involves both theoretical (mathematical) and applied approaches to understanding uncertainty and variability in real-world phenomena.",
+    "section": "3.4 3. Descriptive Statistics",
+    "text": "3.4 3. Descriptive Statistics\n\n3.4.1 3.1 Measures of Central Tendency\n\n3.4.1.1 What is Central Tendency?\nCentral tendency refers to the center or middle of a dataset. It’s the value that best represents the entire distribution.\n\n\n3.4.1.2 Characteristics of a Good Measure\n\nRigidly defined\nEasy to understand\nTakes all data into account\nAmenable to algebraic treatment\nStable under sampling\nMinimally affected by outliers (except mean)\n\n\n\n\n\n3.4.2 3.2 The Mean\n\n3.4.2.1 Definition\nThe arithmetic mean is the sum of all values divided by the number of values.\n\n\n3.4.2.2 Formula\n\\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\n\n\n3.4.2.3 Properties of Mean\n\nUses all data values\nAffected by extreme values\nThe sum of deviations from the mean is zero\n\n\n\n3.4.2.4 Example\nData: 10, 15, 20, 25, 30\nMean = \\((10 + 15 + 20 + 25 + 30)/5 = 20\\)\n\n\n\n\n3.4.3 3.3 The Median\n\n3.4.3.1 Definition\nThe median is the value separating the higher half from the lower half of a data sample.\n\n\n3.4.3.2 Calculation\n\nOdd number of items: Middle value\nEven number of items: Average of the two middle values\n\n\n\n3.4.3.3 Properties\n\nNot influenced by extreme values\nBest for skewed data\n\n\n\n3.4.3.4 Example\nData: 4, 6, 9, 12, 15, 21, 33\nMedian = 12 (middle value)\n\n\n\n\n3.4.4 3.4 The Mode\n\n3.4.4.1 Definition\nThe mode is the value that appears most frequently in a dataset.\n\n\n3.4.4.2 Characteristics\n\nCan be used for categorical data\nDataset can be unimodal, bimodal, or multimodal\nMay not exist if all values are unique\n\n\n\n3.4.4.3 Example\nData: 4, 4, 6, 8, 9, 10, 4\nMode = 4\n\n\n\n\n3.4.5 3.5 Comparison Table\n\n\n\n\n\n\n\n\n\nMeasure\nUse Case\nAffected by Outliers\nMathematical Use\n\n\n\n\nMean\nSymmetric distributions\nYes\nHigh\n\n\nMedian\nSkewed distributions\nNo\nModerate\n\n\nMode\nCategorical variables\nNo\nLow",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#key-objectives",
-    "href": "week2.html#key-objectives",
+    "objectID": "week2.html#measures-of-variability",
+    "href": "week2.html#measures-of-variability",
     "title": "3  Week 2",
-    "section": "5.2 1.2 Key Objectives",
-    "text": "5.2 1.2 Key Objectives\n\nSummarizing large datasets effectively\nEstimating population parameters\nTesting hypotheses\nMaking predictions and decisions under uncertainty",
+    "section": "3.5 4. Measures of Variability",
+    "text": "3.5 4. Measures of Variability\n\n3.5.1 4.1 Why Measure Variability?\nWhile central tendency summarizes data, variability tells us how spread out the data is. It’s essential in determining consistency and reliability.\n\n\n\n3.5.2 4.2 Range\n\n3.5.2.1 Definition\nThe difference between the maximum and minimum values.\n\\[\n\\text{Range} = x_{\\text{max}} - x_{\\text{min}}\n\\]\n\n\n3.5.2.2 Example\nData: 12, 14, 17, 19, 23\nRange = 23 - 12 = 11\n\n\n3.5.2.3 Limitations\n\nIgnores distribution shape\nExtremely sensitive to outliers\n\n\n\n\n\n3.5.3 4.3 Quartiles and Interquartile Range\n\n3.5.3.1 Quartiles\n\nQ1 (25th percentile): Lower quartile\nQ2 (50th percentile): Median\nQ3 (75th percentile): Upper quartile\n\n\n\n3.5.3.2 Formula for Position\n\\[\nQ_k = \\frac{k(n+1)}{4}\n\\]\n\n\n3.5.3.3 IQR Formula\n\\[\nIQR = Q3 - Q1\n\\]\n\n\n3.5.3.4 Example\nData: 12, 30, 45, 57, 70\nQ1 = 30, Q3 = 57 → IQR = 27\n\n\n\n\n3.5.4 4.4 Variance\n\n3.5.4.1 Concept\nVariance is the average of the squared differences from the Mean.\n\n\n3.5.4.2 Formulas\nPopulation Variance:\n\\[\n\\sigma^2 = \\frac{1}{N} \\sum (x_i - \\mu)^2\n\\]\nSample Variance:\n\\[\ns^2 = \\frac{1}{n-1} \\sum (x_i - \\bar{x})^2\n\\]\n\n\n\n\n3.5.5 4.5 Standard Deviation\n\n3.5.5.1 Concept\nStandard deviation is the square root of variance. It provides a measure of spread in the same units as the data.\n\\[\ns = \\sqrt{s^2}\n\\]\n\n\n3.5.5.2 Properties\n\nSame unit as original data\nMeasures how far values deviate from the mean\nWidely used in most statistical computations\n\n\n\n\n\n3.5.6 4.6 Coefficient of Variation (CV)\n\n3.5.6.1 Definition\nThe ratio of the standard deviation to the mean, expressed as a percentage. Used to compare variability between datasets with different units.\n\\[\nCV = \\left( \\frac{s}{\\bar{x}} \\right) \\times 100\\%\n\\]\n\n\n3.5.6.2 Example\nDataset A: Mean = 100, SD = 10 → CV = 10%\nDataset B: Mean = 50, SD = 5 → CV = 10%\n\n\n\n\n3.5.7 4.7 Moment-Based Measures\n\nFirst Moment (about mean): 0 (since \\(\\sum (x - \\bar{x}) = 0\\))\nSecond Moment: Variance\nThird Moment: Skewness\nFourth Moment: Kurtosis",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#types-of-statistics",
-    "href": "week2.html#types-of-statistics",
+    "objectID": "week2.html#probability-fundamentals",
+    "href": "week2.html#probability-fundamentals",
     "title": "3  Week 2",
-    "section": "5.3 1.3 Types of Statistics",
-    "text": "5.3 1.3 Types of Statistics\n\nDescriptive Statistics: Deals with the presentation and summarization of data.\nInferential Statistics: Draws conclusions about populations based on sample data.",
+    "section": "3.6 5. Probability Fundamentals",
+    "text": "3.6 5. Probability Fundamentals\n\n3.6.1 5.1 Introduction to Probability\nProbability is the mathematical framework for quantifying uncertainty. It helps us estimate how likely an event is to occur.\n\n\n3.6.2 5.2 Key Definitions\n\nExperiment: A process that leads to an outcome.\nOutcome: The result of an experiment.\nSample Space (Ω): All possible outcomes.\nEvent: A subset of the sample space.\n\n\n\n\n3.6.3 5.3 Types of Events\n\n\n\n\n\n\n\nEvent Type\nDescription\n\n\n\n\nIndependent\nOccurrence of one does not affect the other\n\n\nDependent\nOne affects the outcome of another\n\n\nMutually Exclusive\nCannot occur together\n\n\nExhaustive\nIncludes all possible outcomes\n\n\n\n\n\n\n3.6.4 5.4 Classical Probability\nUsed when all outcomes are equally likely.\nFormula: \\[\nP(A) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes in } \\Omega}\n\\]\nExample: Rolling a fair die\nP(rolling a 3) = 1/6\n\n\n\n3.6.5 5.5 Probability Rules\n\n3.6.5.1 Rule 1: Non-Negativity\n\\[\n0 \\leq P(A) \\leq 1\n\\]\n\n\n3.6.5.2 Rule 2: Total Probability\n\\[\nP(\\Omega) = 1\n\\]\n\n\n3.6.5.3 Rule 3: Complement Rule\n\\[\nP(A^c) = 1 - P(A)\n\\]\n\n\n3.6.5.4 Rule 4: Addition Rule\nIf A and B are mutually exclusive:\n\\[\nP(A \\cup B) = P(A) + P(B)\n\\]\nOtherwise:\n\\[\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\n\\]\n\n\n3.6.5.5 Rule 5: Multiplication Rule\n\nFor independent events:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B)\n\\]\n\n\n\n\n\n3.6.6 5.6 Conditional Probability\nFormula:\n\\[\nP(A | B) = \\frac{P(A \\cap B)}{P(B)}\n\\]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#classification-of-data",
-    "href": "week2.html#classification-of-data",
+    "objectID": "week2.html#discrete-probability-distributions",
+    "href": "week2.html#discrete-probability-distributions",
     "title": "3  Week 2",
-    "section": "6.1 2.1 Classification of Data",
-    "text": "6.1 2.1 Classification of Data\n\n\n\n\n\n\n\n\nType\nExample\nDescription\n\n\n\n\nQualitative\nGender, Nationality\nNon-numeric labels\n\n\nQuantitative\nHeight, Age\nNumeric values\n\n\nDiscrete\nNo. of Children\nCountable numbers\n\n\nContinuous\nTemperature, Weight\nInfinite values in a range\n\n\n\n\n6.1.1 2.1.1 Qualitative (Categorical) Data\n\nNominal: No inherent order (e.g., religion, marital status).\nOrdinal: Natural order (e.g., customer satisfaction: Poor, Average, Good).\n\n\n\n6.1.2 2.1.2 Quantitative (Numerical) Data\n\nDiscrete: Integers; e.g., number of books.\nContinuous: Measurable; e.g., weight in kilograms.",
+    "section": "3.7 6. Discrete Probability Distributions",
+    "text": "3.7 6. Discrete Probability Distributions\n\n3.7.1 6.1 Bernoulli Distribution\n\nOne trial, two outcomes (success/failure).\nSuccess = 1, Failure = 0\n\n\\[\nP(X = x) = p^x (1 - p)^{1 - x}, \\quad x \\in \\{0,1\\}\n\\]\n\nMean = \\(p\\)\nVariance = \\(p(1 - p)\\)\n\n\n3.7.1.1 Example:\nFlip a fair coin → p = 0.5\nMean = 0.5, Variance = 0.25\n\n\n\n\n3.7.2 6.2 Binomial Distribution\n\nSeries of \\(n\\) independent Bernoulli trials\nNumber of successes \\(x\\) out of \\(n\\) trials\n\nFormula:\n\\[\nP(X = x) = \\binom{n}{x} p^x (1 - p)^{n - x}\n\\]\n\nMean: \\(\\mu = np\\)\nVariance: \\(\\sigma^2 = np(1 - p)\\)\n\n\n3.7.2.1 Example:\nFlip a coin 5 times (p = 0.5)\nP(X = 3) = \\(\\binom{5}{3} (0.5)^3 (0.5)^2 = 10 \\cdot 0.125 \\cdot 0.25 = 0.3125\\)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#measures-of-central-tendency",
-    "href": "week2.html#measures-of-central-tendency",
+    "objectID": "week2.html#continuous-distributions",
+    "href": "week2.html#continuous-distributions",
     "title": "3  Week 2",
-    "section": "7.1 3.1 Measures of Central Tendency",
-    "text": "7.1 3.1 Measures of Central Tendency\n\n7.1.1 3.1.1 What is Central Tendency?\nCentral tendency refers to the center or middle of a dataset. It’s the value that best represents the entire distribution.\n\n\n7.1.2 3.1.2 Characteristics of a Good Measure\n\nRigidly defined\nEasy to understand\nTakes all data into account\nAmenable to algebraic treatment\nStable under sampling\nMinimally affected by outliers (except mean)",
+    "section": "3.8 7. Continuous Distributions",
+    "text": "3.8 7. Continuous Distributions\n\n3.8.1 7.1 Normal Distribution\nThe most important continuous distribution in statistics.\nProperties:\n\nBell-shaped and symmetric\nDefined by mean (μ) and variance (σ²)\nTotal area under the curve = 1\n\nProbability Density Function (PDF):\n\\[\nf(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\exp \\left( -\\frac{(x - \\mu)^2}{2\\sigma^2} \\right)\n\\]\n\n3.8.1.1 Empirical Rule:\n\n68% of values lie within ±1σ\n95% within ±2σ\n99.7% within ±3σ\n\n\n\n\n\n3.8.2 7.2 Standard Normal Distribution\nA normal distribution with:\n\nMean = 0\nStandard deviation = 1\n\nZ-score Formula:\n\\[\nZ = \\frac{X - \\mu}{\\sigma}\n\\]\n\n3.8.2.1 Example:\nIf \\(\\mu = 100\\), \\(\\sigma = 15\\), and \\(X = 130\\)\nThen \\(Z = \\frac{130 - 100}{15} = 2\\)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#the-mean",
-    "href": "week2.html#the-mean",
+    "objectID": "week2.html#visualizing-data",
+    "href": "week2.html#visualizing-data",
     "title": "3  Week 2",
-    "section": "7.2 3.2 The Mean",
-    "text": "7.2 3.2 The Mean\n\n7.2.1 3.2.1 Definition\nThe arithmetic mean is the sum of all values divided by the number of values.\n\n\n7.2.2 3.2.2 Formula\n\\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\n\n\n7.2.3 3.2.3 Properties of Mean\n\nUses all data values\nAffected by extreme values\nThe sum of deviations from the mean is zero\n\n\n\n7.2.4 3.2.4 Example\nData: 10, 15, 20, 25, 30\nMean = \\((10 + 15 + 20 + 25 + 30)/5 = 20\\)",
+    "section": "3.9 8. Visualizing Data",
+    "text": "3.9 8. Visualizing Data\n\n3.9.1 8.1 Frequency Distribution\n\n\n\nClass Interval\nFrequency\n\n\n\n\n0–10\n3\n\n\n11–20\n7\n\n\n21–30\n9\n\n\n31–40\n6\n\n\n\n\n\n\n3.9.2 8.2 Histogram\nA bar chart representing the frequency distribution of numerical data.\nUse Case: Visualize shape (e.g., normal, skewed)\n\n\n\n3.9.3 8.3 Boxplot (Box-and-Whisker Plot)\nShows:\n\nMinimum\nQ1\nMedian\nQ3\nMaximum\nOutliers (as dots)\n\nHelps identify skewness and outliers quickly.\n\n\n\n3.9.4 8.4 Scatter Plot\nUsed to study the relationship between two quantitative variables.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#the-median",
-    "href": "week2.html#the-median",
+    "objectID": "week2.html#practical-applications",
+    "href": "week2.html#practical-applications",
     "title": "3  Week 2",
-    "section": "7.3 3.3 The Median",
-    "text": "7.3 3.3 The Median\n\n7.3.1 3.3.1 Definition\nThe median is the value separating the higher half from the lower half of a data sample.\n\n\n7.3.2 3.3.2 Calculation\n\nOdd number of items: Middle value\nEven number of items: Average of the two middle values\n\n\n\n7.3.3 3.3.3 Properties\n\nNot influenced by extreme values\nBest for skewed data\n\n\n\n7.3.4 3.3.4 Example\nData: 4, 6, 9, 12, 15, 21, 33\nMedian = 12 (middle value)",
+    "section": "3.10 9. Practical Applications",
+    "text": "3.10 9. Practical Applications\n\n3.10.1 9.1 Business Use Cases\n\nRetail: Analyze sales patterns\nHealthcare: Patient outcome probabilities\nFinance: Stock volatility (using SD, CV)\n\n\n\n\n3.10.2 9.2 Education and Research\n\nStudent test scores: Use mean, SD, and percentile ranking\nExperiment analysis: Use Z-scores and Normal Distribution",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
   },
   {
-    "objectID": "week2.html#the-mode",
-    "href": "week2.html#the-mode",
+    "objectID": "week2.html#using-rkward",
+    "href": "week2.html#using-rkward",
     "title": "3  Week 2",
-    "section": "7.4 3.4 The Mode",
-    "text": "7.4 3.4 The Mode\n\n7.4.1 3.4.1 Definition\nThe mode is the value that appears most frequently in a dataset.\n\n\n7.4.2 3.4.2 Characteristics\n\nCan be used for categorical data\nDataset can be unimodal, bimodal, or multimodal\nMay not exist if all values are unique\n\n\n\n7.4.3 3.4.3 Example\nData: 4, 4, 6, 8, 9, 10, 4\nMode = 4",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#comparison-table",
-    "href": "week2.html#comparison-table",
-    "title": "3  Week 2",
-    "section": "7.5 3.5 Comparison Table",
-    "text": "7.5 3.5 Comparison Table\n\n\n\n\n\n\n\n\n\nMeasure\nUse Case\nAffected by Outliers\nMathematical Use\n\n\n\n\nMean\nSymmetric distributions\nYes\nHigh\n\n\nMedian\nSkewed distributions\nNo\nModerate\n\n\nMode\nCategorical variables\nNo\nLow",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#why-measure-variability",
-    "href": "week2.html#why-measure-variability",
-    "title": "3  Week 2",
-    "section": "8.1 4.1 Why Measure Variability?",
-    "text": "8.1 4.1 Why Measure Variability?\nWhile central tendency summarizes data, variability tells us how spread out the data is. It’s essential in determining consistency and reliability.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#range",
-    "href": "week2.html#range",
-    "title": "3  Week 2",
-    "section": "8.2 4.2 Range",
-    "text": "8.2 4.2 Range\n\n8.2.1 4.2.1 Definition\nThe difference between the maximum and minimum values.\n\\[\n\\text{Range} = x_{\\text{max}} - x_{\\text{min}}\n\\]\n\n\n8.2.2 4.2.2 Example\nData: 12, 14, 17, 19, 23\nRange = 23 - 12 = 11\n\n\n8.2.3 4.2.3 Limitations\n\nIgnores distribution shape\nExtremely sensitive to outliers",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#quartiles-and-interquartile-range",
-    "href": "week2.html#quartiles-and-interquartile-range",
-    "title": "3  Week 2",
-    "section": "8.3 4.3 Quartiles and Interquartile Range",
-    "text": "8.3 4.3 Quartiles and Interquartile Range\n\n8.3.1 4.3.1 Quartiles\n\nQ1 (25th percentile): Lower quartile\nQ2 (50th percentile): Median\nQ3 (75th percentile): Upper quartile\n\n\n\n8.3.2 4.3.2 Formula for Position\n\\[\nQ_k = \\frac{k(n+1)}{4}\n\\]\n\n\n8.3.3 4.3.3 IQR Formula\n\\[\nIQR = Q3 - Q1\n\\]\n\n\n8.3.4 4.3.4 Example\nData: 12, 30, 45, 57, 70\nQ1 = 30, Q3 = 57 → IQR = 27",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#variance",
-    "href": "week2.html#variance",
-    "title": "3  Week 2",
-    "section": "8.4 4.4 Variance",
-    "text": "8.4 4.4 Variance\n\n8.4.1 4.4.1 Concept\nVariance is the average of the squared differences from the Mean.\n\n\n8.4.2 4.4.2 Formulas\nPopulation Variance:\n\\[\n\\sigma^2 = \\frac{1}{N} \\sum (x_i - \\mu)^2\n\\]\nSample Variance:\n\\[\ns^2 = \\frac{1}{n-1} \\sum (x_i - \\bar{x})^2\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#standard-deviation",
-    "href": "week2.html#standard-deviation",
-    "title": "3  Week 2",
-    "section": "8.5 4.5 Standard Deviation",
-    "text": "8.5 4.5 Standard Deviation\n\n8.5.1 4.5.1 Concept\nStandard deviation is the square root of variance. It provides a measure of spread in the same units as the data.\n\\[\ns = \\sqrt{s^2}\n\\]\n\n\n8.5.2 4.5.2 Properties\n\nSame unit as original data\nMeasures how far values deviate from the mean\nWidely used in most statistical computations",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#coefficient-of-variation-cv",
-    "href": "week2.html#coefficient-of-variation-cv",
-    "title": "3  Week 2",
-    "section": "8.6 4.6 Coefficient of Variation (CV)",
-    "text": "8.6 4.6 Coefficient of Variation (CV)\n\n8.6.1 4.6.1 Definition\nThe ratio of the standard deviation to the mean, expressed as a percentage. Used to compare variability between datasets with different units.\n\\[\nCV = \\left( \\frac{s}{\\bar{x}} \\right) \\times 100\\%\n\\]\n\n\n8.6.2 4.6.2 Example\nDataset A: Mean = 100, SD = 10 → CV = 10%\nDataset B: Mean = 50, SD = 5 → CV = 10%",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#moment-based-measures",
-    "href": "week2.html#moment-based-measures",
-    "title": "3  Week 2",
-    "section": "8.7 4.7 Moment-Based Measures",
-    "text": "8.7 4.7 Moment-Based Measures\n\nFirst Moment (about mean): 0 (since \\(\\sum (x - \\bar{x}) = 0\\))\nSecond Moment: Variance\nThird Moment: Skewness\nFourth Moment: Kurtosis",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#introduction-to-probability",
-    "href": "week2.html#introduction-to-probability",
-    "title": "3  Week 2",
-    "section": "9.1 5.1 Introduction to Probability",
-    "text": "9.1 5.1 Introduction to Probability\nProbability is the mathematical framework for quantifying uncertainty. It helps us estimate how likely an event is to occur.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#key-definitions",
-    "href": "week2.html#key-definitions",
-    "title": "3  Week 2",
-    "section": "9.2 5.2 Key Definitions",
-    "text": "9.2 5.2 Key Definitions\n\nExperiment: A process that leads to an outcome.\nOutcome: The result of an experiment.\nSample Space (Ω): All possible outcomes.\nEvent: A subset of the sample space.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#types-of-events",
-    "href": "week2.html#types-of-events",
-    "title": "3  Week 2",
-    "section": "9.3 5.3 Types of Events",
-    "text": "9.3 5.3 Types of Events\n\n\n\n\n\n\n\nEvent Type\nDescription\n\n\n\n\nIndependent\nOccurrence of one does not affect the other\n\n\nDependent\nOne affects the outcome of another\n\n\nMutually Exclusive\nCannot occur together\n\n\nExhaustive\nIncludes all possible outcomes",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#classical-probability",
-    "href": "week2.html#classical-probability",
-    "title": "3  Week 2",
-    "section": "9.4 5.4 Classical Probability",
-    "text": "9.4 5.4 Classical Probability\nUsed when all outcomes are equally likely.\nFormula: \\[\nP(A) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes in } \\Omega}\n\\]\nExample: Rolling a fair die\nP(rolling a 3) = 1/6",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#probability-rules",
-    "href": "week2.html#probability-rules",
-    "title": "3  Week 2",
-    "section": "9.5 5.5 Probability Rules",
-    "text": "9.5 5.5 Probability Rules\n\n9.5.1 Rule 1: Non-Negativity\n\\[\n0 \\leq P(A) \\leq 1\n\\]\n\n\n9.5.2 Rule 2: Total Probability\n\\[\nP(\\Omega) = 1\n\\]\n\n\n9.5.3 Rule 3: Complement Rule\n\\[\nP(A^c) = 1 - P(A)\n\\]\n\n\n9.5.4 Rule 4: Addition Rule\nIf A and B are mutually exclusive:\n\\[\nP(A \\cup B) = P(A) + P(B)\n\\]\nOtherwise:\n\\[\nP(A \\cup B) = P(A) + P(B) - P(A \\cap B)\n\\]\n\n\n9.5.5 Rule 5: Multiplication Rule\n\nFor independent events:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B)\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#conditional-probability",
-    "href": "week2.html#conditional-probability",
-    "title": "3  Week 2",
-    "section": "9.6 5.6 Conditional Probability",
-    "text": "9.6 5.6 Conditional Probability\nFormula:\n\\[\nP(A | B) = \\frac{P(A \\cap B)}{P(B)}\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#bernoulli-distribution",
-    "href": "week2.html#bernoulli-distribution",
-    "title": "3  Week 2",
-    "section": "10.1 6.1 Bernoulli Distribution",
-    "text": "10.1 6.1 Bernoulli Distribution\n\nOne trial, two outcomes (success/failure).\nSuccess = 1, Failure = 0\n\n\\[\nP(X = x) = p^x (1 - p)^{1 - x}, \\quad x \\in \\{0,1\\}\n\\]\n\nMean = \\(p\\)\nVariance = \\(p(1 - p)\\)\n\n\n10.1.1 Example:\nFlip a fair coin → p = 0.5\nMean = 0.5, Variance = 0.25",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#binomial-distribution",
-    "href": "week2.html#binomial-distribution",
-    "title": "3  Week 2",
-    "section": "10.2 6.2 Binomial Distribution",
-    "text": "10.2 6.2 Binomial Distribution\n\nSeries of \\(n\\) independent Bernoulli trials\nNumber of successes \\(x\\) out of \\(n\\) trials\n\nFormula:\n\\[\nP(X = x) = \\binom{n}{x} p^x (1 - p)^{n - x}\n\\]\n\nMean: \\(\\mu = np\\)\nVariance: \\(\\sigma^2 = np(1 - p)\\)\n\n\n10.2.1 Example:\nFlip a coin 5 times (p = 0.5)\nP(X = 3) = \\(\\binom{5}{3} (0.5)^3 (0.5)^2 = 10 \\cdot 0.125 \\cdot 0.25 = 0.3125\\)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#normal-distribution",
-    "href": "week2.html#normal-distribution",
-    "title": "3  Week 2",
-    "section": "11.1 7.1 Normal Distribution",
-    "text": "11.1 7.1 Normal Distribution\nThe most important continuous distribution in statistics.\nProperties:\n\nBell-shaped and symmetric\nDefined by mean (μ) and variance (σ²)\nTotal area under the curve = 1\n\nProbability Density Function (PDF):\n\\[\nf(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\exp \\left( -\\frac{(x - \\mu)^2}{2\\sigma^2} \\right)\n\\]\n\n11.1.1 Empirical Rule:\n\n68% of values lie within ±1σ\n95% within ±2σ\n99.7% within ±3σ",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#standard-normal-distribution",
-    "href": "week2.html#standard-normal-distribution",
-    "title": "3  Week 2",
-    "section": "11.2 7.2 Standard Normal Distribution",
-    "text": "11.2 7.2 Standard Normal Distribution\nA normal distribution with:\n\nMean = 0\nStandard deviation = 1\n\nZ-score Formula:\n\\[\nZ = \\frac{X - \\mu}{\\sigma}\n\\]\n\n11.2.1 Example:\nIf \\(\\mu = 100\\), \\(\\sigma = 15\\), and \\(X = 130\\)\nThen \\(Z = \\frac{130 - 100}{15} = 2\\)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#frequency-distribution",
-    "href": "week2.html#frequency-distribution",
-    "title": "3  Week 2",
-    "section": "12.1 8.1 Frequency Distribution",
-    "text": "12.1 8.1 Frequency Distribution\n\n\n\nClass Interval\nFrequency\n\n\n\n\n0–10\n3\n\n\n11–20\n7\n\n\n21–30\n9\n\n\n31–40\n6",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#histogram",
-    "href": "week2.html#histogram",
-    "title": "3  Week 2",
-    "section": "12.2 8.2 Histogram",
-    "text": "12.2 8.2 Histogram\nA bar chart representing the frequency distribution of numerical data.\nUse Case: Visualize shape (e.g., normal, skewed)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#boxplot-box-and-whisker-plot",
-    "href": "week2.html#boxplot-box-and-whisker-plot",
-    "title": "3  Week 2",
-    "section": "12.3 8.3 Boxplot (Box-and-Whisker Plot)",
-    "text": "12.3 8.3 Boxplot (Box-and-Whisker Plot)\nShows:\n\nMinimum\nQ1\nMedian\nQ3\nMaximum\nOutliers (as dots)\n\nHelps identify skewness and outliers quickly.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#scatter-plot",
-    "href": "week2.html#scatter-plot",
-    "title": "3  Week 2",
-    "section": "12.4 8.4 Scatter Plot",
-    "text": "12.4 8.4 Scatter Plot\nUsed to study the relationship between two quantitative variables.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#business-use-cases",
-    "href": "week2.html#business-use-cases",
-    "title": "3  Week 2",
-    "section": "13.1 9.1 Business Use Cases",
-    "text": "13.1 9.1 Business Use Cases\n\nRetail: Analyze sales patterns\nHealthcare: Patient outcome probabilities\nFinance: Stock volatility (using SD, CV)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#education-and-research",
-    "href": "week2.html#education-and-research",
-    "title": "3  Week 2",
-    "section": "13.2 9.2 Education and Research",
-    "text": "13.2 9.2 Education and Research\n\nStudent test scores: Use mean, SD, and percentile ranking\nExperiment analysis: Use Z-scores and Normal Distribution",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#what-is-rkward",
-    "href": "week2.html#what-is-rkward",
-    "title": "3  Week 2",
-    "section": "14.1 10.1 What is RKWard?",
-    "text": "14.1 10.1 What is RKWard?\nA graphical frontend for the R programming language designed for statistical analysis and data visualization.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#installation-guide",
-    "href": "week2.html#installation-guide",
-    "title": "3  Week 2",
-    "section": "14.2 10.2 Installation Guide",
-    "text": "14.2 10.2 Installation Guide\n\nDownload R from CRAN\nInstall RKWard from rkward.kde.org\nStart RKWard and begin with menu-driven tasks",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#sample-rkward-activities",
-    "href": "week2.html#sample-rkward-activities",
-    "title": "3  Week 2",
-    "section": "14.3 10.3 Sample RKWard Activities",
-    "text": "14.3 10.3 Sample RKWard Activities\n\n14.3.1 Calculate Mean and SD\n\nLoad dataset\nClick Statistics → Descriptive Statistics\nChoose variables and click OK\n\n\n\n14.3.2 Visualize Histogram\n\nClick Graphics → Histogram\nSelect variable and customize bins",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
-    ]
-  },
-  {
-    "objectID": "week2.html#using-r-code-in-rkward",
-    "href": "week2.html#using-r-code-in-rkward",
-    "title": "3  Week 2",
-    "section": "14.4 10.4 Using R Code in RKWard",
-    "text": "14.4 10.4 Using R Code in RKWard\n```r data &lt;- c(12, 15, 17, 18, 21) mean(data) sd(data) hist(data)",
+    "section": "3.11 10. Using RKWard",
+    "text": "3.11 10. Using RKWard\n\n3.11.1 10.1 What is RKWard?\nA graphical frontend for the R programming language designed for statistical analysis and data visualization.\n\n\n\n3.11.2 10.2 Installation Guide\n\nDownload R from CRAN\nInstall RKWard from rkward.kde.org\nStart RKWard and begin with menu-driven tasks\n\n\n\n\n3.11.3 10.3 Sample RKWard Activities\n\n3.11.3.1 Calculate Mean and SD\n\nLoad dataset\nClick Statistics → Descriptive Statistics\nChoose variables and click OK\n\n\n\n3.11.3.2 Visualize Histogram\n\nClick Graphics → Histogram\nSelect variable and customize bins\n\n\n\n\n\n3.11.4 10.4 Using R Code in RKWard\n```r data &lt;- c(12, 15, 17, 18, 21) mean(data) sd(data) hist(data)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
@@ -543,8 +263,8 @@
     "objectID": "week2.html#summary",
     "href": "week2.html#summary",
     "title": "3  Week 2",
-    "section": "14.5 Summary",
-    "text": "14.5 Summary\nThis eBook provided a deep dive into basic statistics including:\nData types and classification Central tendency and variability Probability theory and rules Discrete and continuous distributions Visual interpretation and real-world applications GUI-based statistical analysis using RKWard",
+    "section": "3.12 Summary",
+    "text": "3.12 Summary\nThis eBook provided a deep dive into basic statistics including:\nData types and classification Central tendency and variability Probability theory and rules Discrete and continuous distributions Visual interpretation and real-world applications GUI-based statistical analysis using RKWard",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2</span>"
     ]
