@@ -275,17 +275,10 @@ window.Quarto = {
   <li><a href="#windows-terminal" id="toc-windows-terminal" class="nav-link" data-scroll-target="#windows-terminal"><span class="header-section-number">4.10</span> Windows Terminal</a>
   <ul class="collapse">
   <li><a href="#git-r-project-example" id="toc-git-r-project-example" class="nav-link" data-scroll-target="#git-r-project-example"><span class="header-section-number">4.10.1</span> Git + R Project Example</a></li>
-  <li><a href="#r-script-template-for-analysis" id="toc-r-script-template-for-analysis" class="nav-link" data-scroll-target="#r-script-template-for-analysis"><span class="header-section-number">4.10.2</span> R Script Template for Analysis</a></li>
-  </ul></li>
-  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data"><span class="header-section-number">5</span> Load data</a></li>
-  <li><a href="#descriptive-stats" id="toc-descriptive-stats" class="nav-link" data-scroll-target="#descriptive-stats"><span class="header-section-number">6</span> Descriptive stats</a></li>
-  <li><a href="#histogram-1" id="toc-histogram-1" class="nav-link" data-scroll-target="#histogram-1"><span class="header-section-number">7</span> Histogram</a></li>
-  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression"><span class="header-section-number">8</span> Linear regression</a></li>
-  <li><a href="#scatter-plot-with-regression-line" id="toc-scatter-plot-with-regression-line" class="nav-link" data-scroll-target="#scatter-plot-with-regression-line"><span class="header-section-number">9</span> Scatter plot with regression line</a>
-  <ul class="collapse">
-  <li><a href="#future-applications-of-statistics" id="toc-future-applications-of-statistics" class="nav-link" data-scroll-target="#future-applications-of-statistics"><span class="header-section-number">9.0.1</span> Future Applications of Statistics</a></li>
-  <li><a href="#practice-challenges" id="toc-practice-challenges" class="nav-link" data-scroll-target="#practice-challenges"><span class="header-section-number">9.0.2</span> Practice Challenges</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.0.3</span> Key Takeaways</a></li>
+  <li><a href="#fallacies-and-bias-real-world-cautions" id="toc-fallacies-and-bias-real-world-cautions" class="nav-link" data-scroll-target="#fallacies-and-bias-real-world-cautions"><span class="header-section-number">4.10.2</span> Fallacies and Bias: Real-World Cautions</a></li>
+  <li><a href="#future-applications-of-statistics" id="toc-future-applications-of-statistics" class="nav-link" data-scroll-target="#future-applications-of-statistics"><span class="header-section-number">4.10.3</span> Future Applications of Statistics</a></li>
+  <li><a href="#practice-challenges" id="toc-practice-challenges" class="nav-link" data-scroll-target="#practice-challenges"><span class="header-section-number">4.10.4</span> Practice Challenges</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">4.10.5</span> Key Takeaways</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -801,41 +794,20 @@ git init
 git clone https://github.com/username/project.git
 \]</span></p>
 </section>
-<section id="r-script-template-for-analysis" class="level3" data-number="4.10.2">
-<h3 data-number="4.10.2" class="anchored" data-anchor-id="r-script-template-for-analysis"><span class="header-section-number">4.10.2</span> R Script Template for Analysis</h3>
-<p>$$ # Load packages library(ggplot2) library(dplyr)</p>
-</section>
-</section>
-<section id="load-data" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Load data</h1>
-<p>df &lt;- read.csv(“dataset.csv”)</p>
-</section>
-<section id="descriptive-stats" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Descriptive stats</h1>
-<p>summary(df) sd(df$Score)</p>
-</section>
-<section id="histogram-1" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Histogram</h1>
-<p>ggplot(df, aes(x=Score)) + geom_histogram(bins=10, fill=“skyblue”)</p>
-</section>
-<section id="linear-regression" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Linear regression</h1>
-<p>model &lt;- lm(Score ~ StudyHours, data=df) summary(model)</p>
-</section>
-<section id="scatter-plot-with-regression-line" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Scatter plot with regression line</h1>
-<p>ggplot(df, aes(x=StudyHours, y=Score)) + geom_point() + geom_smooth(method=“lm”) $$ ### Fallacies and Bias: Real-World Cautions</p>
+<section id="fallacies-and-bias-real-world-cautions" class="level3" data-number="4.10.2">
+<h3 data-number="4.10.2" class="anchored" data-anchor-id="fallacies-and-bias-real-world-cautions"><span class="header-section-number">4.10.2</span> Fallacies and Bias: Real-World Cautions</h3>
 <p>Examples of Statistical Abuse</p>
 <p>Cherry-picking data Data dredging (p-hacking) Using relative risk without absolute context Non-random sampling Ethics in Data Analysis</p>
 <p>Be transparent Document sources Disclose methodology Avoid overstating conclusions</p>
-<section id="future-applications-of-statistics" class="level3" data-number="9.0.1">
-<h3 data-number="9.0.1" class="anchored" data-anchor-id="future-applications-of-statistics"><span class="header-section-number">9.0.1</span> Future Applications of Statistics</h3>
+</section>
+<section id="future-applications-of-statistics" class="level3" data-number="4.10.3">
+<h3 data-number="4.10.3" class="anchored" data-anchor-id="future-applications-of-statistics"><span class="header-section-number">4.10.3</span> Future Applications of Statistics</h3>
 <p>Real-World Domains</p>
 <p>Healthcare: Drug effectiveness, diagnostics Economics: Forecasting, policy evaluation Sociology: Survey analysis Sports: Performance analytics AI/ML: Predictive modeling, optimization Next Steps</p>
 <p>Learn tidyverse ecosystem Explore machine learning in R Build Shiny dashboards Get familiar with reproducible research using Quarto</p>
 </section>
-<section id="practice-challenges" class="level3" data-number="9.0.2">
-<h3 data-number="9.0.2" class="anchored" data-anchor-id="practice-challenges"><span class="header-section-number">9.0.2</span> Practice Challenges</h3>
+<section id="practice-challenges" class="level3" data-number="4.10.4">
+<h3 data-number="4.10.4" class="anchored" data-anchor-id="practice-challenges"><span class="header-section-number">4.10.4</span> Practice Challenges</h3>
 <ol type="1">
 <li>Load and summarize data</li>
 </ol>
@@ -843,8 +815,8 @@ git clone https://github.com/username/project.git
 <p>Histogram Boxplot by group Scatter plot with trend line 3. Build a regression model</p>
 <p>Identify predictor and outcome Use lm() and summary() 4. Explore a GUI like RKWard or Rcmdr</p>
 </section>
-<section id="key-takeaways" class="level3" data-number="9.0.3">
-<h3 data-number="9.0.3" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">9.0.3</span> Key Takeaways</h3>
+<section id="key-takeaways" class="level3" data-number="4.10.5">
+<h3 data-number="4.10.5" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">4.10.5</span> Key Takeaways</h3>
 <p>Statistics supports informed decision-making. R and its GUI frontends offer flexibility + power. Understand theory → then automate with code. Avoid fallacies by following robust methods. Visuals are crucial: plot early, plot often.</p>
 
 
