@@ -1,0 +1,462 @@
+---
+title: "Week 1"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, BHU"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+    geometry:
+      - margin=1in
+---
+
+# Module 1: Introduction to Statistics
+
+## Pre-Requisites
+
+- Just an open and eager mind
+- Basic understanding of Mathematics or Statistics
+
+## Agenda
+
+- Meaning of Statistics
+- Nature and Scope
+- Uses of Statistics
+- Limitations
+- Fallacies and Misuse
+- Math vs Statistics
+- GUI Tools & Transition to Software-based Stats
+
+---
+
+## Meaning of Statistics
+
+Statistics is a science which provides tools for **analysis and interpretation** of raw data collected for decision-making in diverse fields.
+
+It includes four core concepts:
+
+- **Population** – Complete data or total group
+- **Sample** – Subset of population
+- **Parameter** – Numerical summary from population
+- **Statistic** – Numerical summary from sample
+
+## Nature of Statistics
+
+- Deals with **numerical facts**
+- Focused on **social phenomena** and real-world data
+- Organizes, classifies, and analyzes data
+- Facilitates **prediction**, **interpretation**, and **decision-making**
+
+---
+
+## Uses of Statistics
+
+- Drawing representative samples
+- Summarizing collected data
+- Tabulation and systematic arrangement
+- Group comparisons
+- Determining behavioral relationships
+- Estimating chance vs causation
+- Application in:
+  - Psychology
+  - Education
+  - Employment surveys
+  - Market Research
+  - Industrial and Organizational studies
+
+
+## Limitations of Statistics
+
+- Cannot study **qualitative phenomena** without quantification
+- Not applicable to individuals
+- **Statistical laws are not exact**
+- Does not guarantee **causal relationships**
+- Vulnerable to misuse
+
+## Misuse of Statistics
+
+- Use of extremely **small or biased** samples
+- **Misleading graphs** or visual misrepresentation
+- Illogical or **unexpected comparisons**
+
+
+## Fallacies in Statistics
+
+Fallacies may arise from:
+
+- Poor data collection methods
+- Vague or manipulated term definitions
+- Improper unit selection
+- Faulty classification or grouping
+- Inappropriate statistical methods
+
+
+# Module 2: Mathematics vs Statistics
+
+| Aspect         | Mathematics                                      | Statistics                                 |
+|----------------|--------------------------------------------------|--------------------------------------------|
+| Nature         | Abstract, symbolic reasoning                     | Applied, data-based reasoning              |
+| Focus          | Pure logic, proofs                               | Real-world data, decision-making           |
+| Techniques     | Algebra, Calculus, Geometry                      | Probability, Hypothesis testing, Regression|
+| Output         | Theorems, functions, formulas                    | Inferences, predictions, summaries         |
+| Tools          | Equations, graphs                                | Charts, tables, models                     |
+
+# Module 3: Software-Based Statistical Revolution
+
+## From Paper to Code
+
+**Why shift to software?**
+
+- **Faster analysis** of massive data
+- **Error-free calculations**
+- **Anywhere-anytime** access
+- **Cloud-based integration**
+- Supports **ML/AI**, automation, and deep visualization
+
+## Popular Statistical Software
+
+| Software        | Type     | Use Case                                |
+|------------------|----------|------------------------------------------|
+| R                | Script   | Core for academic and professional stats |
+| RKWard           | GUI      | GUI wrapper for R                        |
+| R Commander      | GUI      | Menu-based GUI for R                    |
+| Rattle           | GUI      | Data mining toolkit in R                 |
+| Excel            | GUI      | Basic stats with plugins                 |
+| Python (pandas)  | Script   | Modern data science + ML                 |
+
+## GUI vs CLI
+
+| Feature            | GUI (e.g., RKWard)           | Command Line (e.g., R Console)      |
+|--------------------|------------------------------|--------------------------------------|
+| Accessibility      | User-friendly                | Requires learning syntax             |
+| Speed              | Slower for heavy tasks       | High performance                     |
+| Learning Curve     | Minimal                      | Moderate to High                     |
+| Customization      | Limited                      | Fully scriptable                     |
+| Teaching Utility   | Good for beginners           | Good for understanding logic         |
+
+## Recommended GUI Tools for R
+
+- **RKWard**
+- **Rattle**
+- **R Commander**
+- **R AnalyticFlow**
+
+> 🔗 [https://rkward.kde.org](https://rkward.kde.org)
+
+## Installing RKWard on Ubuntu
+
+bash
+sudo apt install kbibtex kate libcurl4-openssl-dev libssl-dev libxml2-dev cmake
+sudo add-apt-repository ppa:rkward-devel/rkward-stable
+echo "deb https://ppa.launchpad.net/rkward-devel/rkward-stable/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/rkward.list
+sudo apt update
+sudo apt-get install rkward
+Awesome. Here's Part 2 of the full markdown, Lines 251–600, continuing the structured content from your Week 1 lecture.
+
+# Module 4: Understanding Variables
+
+## What is a Variable?
+
+A **variable** is a characteristic or attribute that can assume different values across individuals or items.
+
+In statistics, variables are categorized for analysis and measurement.
+
+### R Definition:
+
+In R, variables are containers for data, created by assignment:
+
+```r
+x <- 10
+name <- "Harsh"
+flag <- TRUE
+
+Classification of Variables
+
+A. Qualitative (Categorical)
+
+Type	Description	Example
+
+Nominal	Categories without order	Gender (Male, Female)
+Ordinal	Categories with a meaningful order	Education Level (UG, PG)
+
+
+B. Quantitative (Numerical)
+
+Type	Description	Example
+
+Discrete	Countable numbers	No. of students
+Continuous	Infinite values in a range	Height, Weight
+
+
+Statistical Data Types (Scale of Measurement)
+
+Data Type	Description	Examples
+
+Nominal	Categories with no order	Blood group (A, B, AB, O)
+Ordinal	Ranked categories	Satisfaction (Low, Med, High)
+Interval	Numeric scale with no true zero	Temperature in Celsius
+Ratio	Numeric scale with true zero	Income, Weight, Age
+
+Data Types in R
+
+R Type	Description	Example Code
+
+Numeric	Real numbers	x <- 15.3
+Integer	Whole numbers	y <- as.integer(10)
+Complex	Real + imaginary	z <- 2+3i
+Character	Text strings	c <- "hello"
+Logical	Boolean values	b <- TRUE
+Factor	Categorical encoding	factor(c("yes", "no", "yes"))
+
+
+# Examples in R
+x <- 15.6
+y <- as.integer(18)
+z <- 7 + 5i
+c <- "I am OK"
+b <- TRUE
+
+
+Module 5: Data Structures in R
+
+Vectors
+
+A vector is a one-dimensional array of elements.
+
+vec1 <- c(5, 2, 3, 7, 8, 9, 1, 4, 10, 15)
+
+Matrices
+
+Two-dimensional arrays of rows and columns.
+
+mat <- matrix(1:9, nrow=3, ncol=3)
+
+Arrays
+
+Multidimensional generalization of matrices.
+
+arr <- array(1:24, dim=c(3,4,2))
+
+Lists
+
+Collection of different types of elements.
+
+mylist <- list(name="Alice", age=30, scores=c(89,90))
+
+Data Frames
+
+Tabular data (like a spreadsheet), each column can have a different type.
+
+df <- data.frame(ID=1:3, Name=c("A", "B", "C"), Score=c(85, 90, 95))
+
+Factors
+
+Used for categorical variables.
+
+gender <- factor(c("Male", "Female", "Male"))
+
+Module 6: Descriptive Statistics
+
+Descriptive statistics summarize and simplify data.
+
+Central Tendency
+
+Measure	Formula	Meaning
+
+Mean	$\bar{x} = \frac{\sum x_i}{n}$	Average
+Median	Middle value in sorted data	Central observation
+Mode	Most frequent value	Most common observation
+
+
+Dispersion Measures
+
+Measure	Formula	Purpose
+
+Range	$Range = Max - Min$	Spread of data
+Variance	$s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}$	Spread from mean
+Standard Deviation	$s = \sqrt{Variance}$	Average distance from mean
+
+
+Example in R
+
+x <- c(10, 20, 30, 40, 50)
+mean(x)
+median(x)
+var(x)
+sd(x)
+
+Module 7: Inferential Statistics
+
+Inferential stats allow us to make conclusions about populations using samples.
+
+Key Concepts
+
+Hypothesis Testing: Assesses assumptions about a population.
+
+Confidence Intervals: Estimate population parameters within a range.
+
+Significance Levels (α): Commonly 0.05 or 5%
+
+P-Value: Probability of observing the data assuming the null is true.
+
+
+Hypothesis Types
+
+Type	Description
+
+Null Hypothesis	No difference / no effect
+Alternative	There is a difference / effect
+
+
+R Examples
+
+t.test(x)                 # One-sample t-test
+t.test(x, y)              # Two-sample t-test
+
+Module 8: Visualizing Data
+
+Data visualization helps uncover patterns and insights.
+
+Boxplot
+
+Shows 5-number summary
+
+Identifies outliers
+
+
+boxplot(x)
+
+Histogram
+
+Frequency distribution of continuous data
+
+
+hist(x)
+
+Pie Chart
+
+Shows proportion in categories
+
+
+slices <- c(10, 12, 4, 16, 8)
+labels <- c("A", "B", "C", "D", "E")
+pie(slices, labels=labels)
+
+Scatter Plot
+
+Relationship between two variables
+
+
+plot(x, y)
+
+Ogive (Cumulative Frequency)
+
+# Create cumulative frequency table manually
+
+Module 9: Spreadsheet Basics
+
+Spreadsheets like Excel or Google Sheets are entry points for data work.
+
+Key Features:
+
+Rows → Observations
+
+Columns → Variables
+
+Supports sorting, filtering
+
+Built-in formulas: =SUM(), =AVERAGE(), etc.
+
+Spreadsheets vs R
+
+Feature	Spreadsheet (Excel, GSheets)	R / RKWard
+
+Cost	Usually licensed	Free and open source
+Flexibility	Limited to GUI formulas	Full programming capability
+Graphics	Basic	Advanced (ggplot2)
+Reproducibility	Low	High (script-based)
+
+Module 10: Command Line vs GUI
+
+Command Line (R Console)
+
+# Windows Command Line
+cd ..
+mkdir new_folder
+dir
+
+R Console Commands
+
+getwd()
+setwd("path")
+install.packages("ggplot2")
+library(ggplot2)
+
+GUI (RKWard)
+
+Point-and-click interface
+
+No coding needed
+
+View script history and console
+
+Menu for graphs, models, tables
+
+Learning Resources:
+
+Books
+
+Mohanty, B., & Misra, S. (2016). Statistics for Behavioural and Social Sciences
+
+Pandya et al. (2018). Statistical Analysis in Simple Steps using R
+
+Field, A. P. et al. (2012). Discovering Statistics using R
+
+Harris, J. K. (2019) . Statistics with R: Solving Problems using Real-World Data
+
+## Utilizing Statistical Methods for Decision Making
+
+- Use statistical evidence to guide business strategies.
+- Make informed policy decisions based on empirical data.
+- Report findings clearly for transparency and comprehension.
+
+## Summary
+
+The "Basic Statistics Using GUI-R (RK Ward)" course equips learners with the foundational and practical skills needed for statistical analysis using R. Students will understand theoretical concepts, grasp practical applications, and use RKWard effectively to analyze real-world data.
+
+## Key Takeaways
+
+- Proficiency in defining and using variables and data types.
+- Capability to import and manipulate data in RKWard.
+- Understanding of basic statistical practices and their applications.
+- Skill in visualizing data for effective communication of results.
+
+## Websites
+
+https://rkward.kde.org
+https://r4stats.com
+https://cran.r-project.org
+
+
+## Final Takeaways
+
+-Statistics is both a science and an art.
+-R + RKWard offers an open, flexible system for analysis.
+-GUI tools help beginners; CLI gives full control.
+-Understanding data types, structures, and visualization is essential.
+-Avoid fallacies and misuse; always validate data and logic.
+
+
+
+
