@@ -4,27 +4,7 @@
     "href": "index.html",
     "title": "my-ebook",
     "section": "",
-    "text": "0.1 Teaching\nIntroduction\nDR.Harsh Pradhan, Phone: +91-9930034241 , Email: harsh.231284@gmail.com, Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nGitHub\nResearcher ID\nPersonal Website\nYoutube ID\nDoing a PhD with me: README.1st\nAcademic Profile\nTopics to be covered:\nScience and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.\nCourses offered:",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#teaching",
-    "href": "index.html#teaching",
-    "title": "my-ebook",
-    "section": "",
-    "text": "Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis\nShort (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here\nIntroduction to (frequentist) statistics\nIntroduction to Bayesian data analysis for cognitive science\nBDA cover",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#lecture-notes",
-    "href": "index.html#lecture-notes",
-    "title": "my-ebook",
-    "section": "0.2 Lecture notes",
-    "text": "0.2 Lecture notes\nDownload from here.",
+    "text": "0.1 Lecture notes\nIntroduction\nDR.Harsh Pradhan, [Phone: +91-9930034241 , Email: harsh.231284@gmail.com], Institute of Management Studies, Banaras Hindu University, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 2010\nInterest: Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System,\nOrcid ID\nGoogle Scholar\nYoutube ID\nAcademic Profile\nCourses offered:\nDownload from here.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -33,8 +13,8 @@
     "objectID": "index.html#moodle-website",
     "href": "index.html#moodle-website",
     "title": "my-ebook",
-    "section": "0.3 Moodle website",
-    "text": "0.3 Moodle website\nAll communications with students in Potsdam will be done through this website. # 📘 Schedule\n\n\n\nWeek\nLecture\nMain Topic\nSubtopic\n🎥 Video\n📄 PDF Resource\n\n\n\n\nWeek 2\n1\nDescriptive Statistics\nCentral Tendency\nVideo\nWeek 2.pdf\n\n\n\n2\nDescriptive Statistics\nMeasure of Variability\nVideo\nSame as above\n\n\n\n3\nDescriptive Statistics\nDescribing Data\nVideo\nSame as above\n\n\n\n4\nDescriptive Statistics\nProbability\nVideo\nSame as above\n\n\n\n5\nDescriptive Statistics\nDistribution\nVideo\nSame as above\n\n\nWeek 3\n1\nDescriptive Statistics\nZ Table (Normal Distribution)\nVideo\nWeek 3.pdf\n\n\n\n2\nDescriptive Statistics\nMeasuring Divergence\nVideo\nSame as above\n\n\n\n3\nInferential Statistics\nSample and Population\nVideo\nSame as above\n\n\n\n4\nInferential Statistics\nModel Fit\nVideo\nSame as above\n\n\n\n5\nInferential Statistics\nHypothesis and Error\nVideo\nSame as above\n\n\nWeek 4\n1\nTerms of Statistics\nTerms of Statistics\nVideo\nWeek 4.pdf\n\n\n\n2\nTerms of Statistics\nT-Test\nVideo\nSame as above\n\n\n\n3\nTerms of Statistics\nT-Test in Detail\nVideo\nSame as above\n\n\n\n4\nANOVA\nANOVA\nVideo\nSame as above\n\n\nWeek 5\n1\nANOVA\nExample of ANOVA\nVideo\nWeek 5.pdf\n\n\n\n2\nANOVA\nTypes of ANOVA\nVideo\nSame as above\n\n\n\n3\nCorrelation\nIntroduction to Correlation\nVideo\nSame as above\n\n\n\n4\nCorrelation\nRegression (Part 1)\nVideo\nSame as above\n\n\n\n5\nCorrelation\nRegression (Part 2)\nVideo\nSame as above\n\n\nWeek 6\n1\nCorrelation\nR Script for Regression\nVideo\nWeek 6.pdf\n\n\n\n2\nChi Square\nChi Square\nVideo\nSame as above\n\n\n\n3\nChi Square\nChi Square Test\nVideo\nSame as above\n\n\n\n4\nLogistic Function\nRegression Function\nVideo\nSame as above\n\n\n\n5\nLogistic Function\nDistribution\nVideo\nSame as above\n\n\nWeek 7\n1\nTime Series\nIntro to Time Series\nVideo\nWeek 7.pdf\n\n\n\n2\nTime Series\nConditional Probability\nVideo\nSame as above\n\n\n\n3\nTime Series\nAdditional Concepts\nVideo\nSame as above\n\n\n\n4\nTime Series\nDistribution\nVideo\nSame as above\n\n\n\n5\nTime Series\nPoisson Distribution\nVideo\nSame as above\n\n\n\n6\nIndex Numbers\nPrice & Quantity Index\nVideo\nSame as above\n\n\n\n7\nDecision Environments\nRisk/Uncertainty, Bayes, Trees\nVideo\nSame as above\n\n\n\n8\nTime Series Analysis\nComponents, Trend, Seasonality\nVideo\nSame as above\n\n\n\n9\nTime Series Analysis\nLeast Squares Method\nVideo\nSame as above\n\n\nWeek 8\n1\nEffect Size & Documentation\nPackage/Library\nVideo\nWeek 8.pdf\n\n\n\n2\nEffect Size & Documentation\nRStudio vs RKward\nVideo\nSame as above\n\n\n\n3\nEffect Size & Documentation\nFlexplot\nVideo\nSame as above\n\n\n\n4\nEffect Size & Documentation\nFunctions\nVideo\nSame as above\n\n\n\n5\nEffect Size & Documentation\nR Shiny & R Markdown\nVideo\nSame as above\n\n\n\n6\nEffect Size & Documentation\nApplication with Real Datasets\nVideo\nSame as above\n\n\n\n7\nEffect Size & Interpretation\nImportance in Testing\nVideo\nSame as above\n\n\n\n8\nEffect Size & Interpretation\nInstalling dplyr, ggplot2\nVideo\nSame as above\n\n\n\n9\nEffect Size & Interpretation\nVisual Model Interpretation\nVideo\nSame as above\n\n\n\n10\nEffect Size & Interpretation\nCreating/Using Functions\nVideo\nSame as above\n\n\n\n11\nEffect Size & Interpretation\nReport, Dashboard, Interactivity\nVideo\nSame as above",
+    "section": "0.2 Moodle website",
+    "text": "0.2 Moodle website\nAll communications with students in Potsdam will be done through this website. # 📘 Schedule\n\n\n\nWeek\nLecture\nMain Topic\nSubtopic\n🎥 Video\n📄 PDF Resource\n\n\n\n\nWeek 2\n1\nDescriptive Statistics\nCentral Tendency\nVideo\nWeek 2.pdf\n\n\n\n2\nDescriptive Statistics\nMeasure of Variability\nVideo\nSame as above\n\n\n\n3\nDescriptive Statistics\nDescribing Data\nVideo\nSame as above\n\n\n\n4\nDescriptive Statistics\nProbability\nVideo\nSame as above\n\n\n\n5\nDescriptive Statistics\nDistribution\nVideo\nSame as above\n\n\nWeek 3\n1\nDescriptive Statistics\nZ Table (Normal Distribution)\nVideo\nWeek 3.pdf\n\n\n\n2\nDescriptive Statistics\nMeasuring Divergence\nVideo\nSame as above\n\n\n\n3\nInferential Statistics\nSample and Population\nVideo\nSame as above\n\n\n\n4\nInferential Statistics\nModel Fit\nVideo\nSame as above\n\n\n\n5\nInferential Statistics\nHypothesis and Error\nVideo\nSame as above\n\n\nWeek 4\n1\nTerms of Statistics\nTerms of Statistics\nVideo\nWeek 4.pdf\n\n\n\n2\nTerms of Statistics\nT-Test\nVideo\nSame as above\n\n\n\n3\nTerms of Statistics\nT-Test in Detail\nVideo\nSame as above\n\n\n\n4\nANOVA\nANOVA\nVideo\nSame as above\n\n\nWeek 5\n1\nANOVA\nExample of ANOVA\nVideo\nWeek 5.pdf\n\n\n\n2\nANOVA\nTypes of ANOVA\nVideo\nSame as above\n\n\n\n3\nCorrelation\nIntroduction to Correlation\nVideo\nSame as above\n\n\n\n4\nCorrelation\nRegression (Part 1)\nVideo\nSame as above\n\n\n\n5\nCorrelation\nRegression (Part 2)\nVideo\nSame as above\n\n\nWeek 6\n1\nCorrelation\nR Script for Regression\nVideo\nWeek 6.pdf\n\n\n\n2\nChi Square\nChi Square\nVideo\nSame as above\n\n\n\n3\nChi Square\nChi Square Test\nVideo\nSame as above\n\n\n\n4\nLogistic Function\nRegression Function\nVideo\nSame as above\n\n\n\n5\nLogistic Function\nDistribution\nVideo\nSame as above\n\n\nWeek 7\n1\nTime Series\nIntro to Time Series\nVideo\nWeek 7.pdf\n\n\n\n2\nTime Series\nConditional Probability\nVideo\nSame as above\n\n\n\n3\nTime Series\nAdditional Concepts\nVideo\nSame as above\n\n\n\n4\nTime Series\nDistribution\nVideo\nSame as above\n\n\n\n5\nTime Series\nPoisson Distribution\nVideo\nSame as above\n\n\n\n6\nIndex Numbers\nPrice & Quantity Index\nVideo\nSame as above\n\n\n\n7\nDecision Environments\nRisk/Uncertainty, Bayes, Trees\nVideo\nSame as above\n\n\n\n8\nTime Series Analysis\nComponents, Trend, Seasonality\nVideo\nSame as above\n\n\n\n9\nTime Series Analysis\nLeast Squares Method\nVideo\nSame as above\n\n\nWeek 8\n1\nEffect Size & Documentation\nPackage/Library\nVideo\nWeek 8.pdf\n\n\n\n2\nEffect Size & Documentation\nRStudio vs RKward\nVideo\nSame as above\n\n\n\n3\nEffect Size & Documentation\nFlexplot\nVideo\nSame as above\n\n\n\n4\nEffect Size & Documentation\nFunctions\nVideo\nSame as above\n\n\n\n5\nEffect Size & Documentation\nR Shiny & R Markdown\nVideo\nSame as above\n\n\n\n6\nEffect Size & Documentation\nApplication with Real Datasets\nVideo\nSame as above\n\n\n\n7\nEffect Size & Interpretation\nImportance in Testing\nVideo\nSame as above\n\n\n\n8\nEffect Size & Interpretation\nInstalling dplyr, ggplot2\nVideo\nSame as above\n\n\n\n9\nEffect Size & Interpretation\nVisual Model Interpretation\nVideo\nSame as above\n\n\n\n10\nEffect Size & Interpretation\nCreating/Using Functions\nVideo\nSame as above\n\n\n\n11\nEffect Size & Interpretation\nReport, Dashboard, Interactivity\nVideo\nSame as above",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -274,347 +254,97 @@
     "href": "week3.html",
     "title": "4  Week 3",
     "section": "",
-    "text": "5 Introduction",
+    "text": "4.1 Introduction",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#importance-of-statistics",
-    "href": "week3.html#importance-of-statistics",
+    "objectID": "week3.html#introduction",
+    "href": "week3.html#introduction",
     "title": "4  Week 3",
-    "section": "5.1 Importance of Statistics",
-    "text": "5.1 Importance of Statistics\nStatistics is a powerful tool used across disciplines — from economics and psychology to biology, data science, and machine learning. It enables:\n\nInterpretation of data\nGeneralization from samples to populations\nHypothesis testing and decision-making\nPrediction and modeling\n\nUnderstanding statistics is essential for anyone involved in empirical research, policy making, data-driven decision-making, or scientific inquiry.",
+    "section": "",
+    "text": "4.1.1 Importance of Statistics\nStatistics is a powerful tool used across disciplines — from economics and psychology to biology, data science, and machine learning. It enables:\n\nInterpretation of data\nGeneralization from samples to populations\nHypothesis testing and decision-making\nPrediction and modeling\n\nUnderstanding statistics is essential for anyone involved in empirical research, policy making, data-driven decision-making, or scientific inquiry.\n\n\n\n4.1.2 Overview of Topics\nThis book covers:\n\nPopulation vs Sample\nHypotheses and Errors\nDescriptive vs Inferential Statistics\nData Types (R + Theoretical)\nSampling Techniques\nNormal Distribution\nLinear and Logistic Regression\nGUI-based R interfaces: RKWard, Rcmdr, Rattle\nFallacies and misuse in statistics\nGraphical Methods\nR programming constructs for statistics",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#overview-of-topics",
-    "href": "week3.html#overview-of-topics",
+    "objectID": "week3.html#understanding-populations-and-samples",
+    "href": "week3.html#understanding-populations-and-samples",
     "title": "4  Week 3",
-    "section": "5.2 Overview of Topics",
-    "text": "5.2 Overview of Topics\nThis book covers:\n\nPopulation vs Sample\nHypotheses and Errors\nDescriptive vs Inferential Statistics\nData Types (R + Theoretical)\nSampling Techniques\nNormal Distribution\nLinear and Logistic Regression\nGUI-based R interfaces: RKWard, Rcmdr, Rattle\nFallacies and misuse in statistics\nGraphical Methods\nR programming constructs for statistics",
+    "section": "4.2 Understanding Populations and Samples",
+    "text": "4.2 Understanding Populations and Samples\n\n4.2.1 Population\nThe complete set of all units of interest. Examples:\n\nAll students in India\nAll electric cars in the U.S.\n\n\n\n4.2.2 Sample\nA subset of the population, selected for analysis. Goal: represent the population accurately.\n\n\n4.2.3 Why Use Samples?\n\nMore practical and cost-efficient\nEnables faster analysis\nAllows estimation and inference\n\n\n\n4.2.4 Relation Between Population & Sample\nPopulation → Sample → Statistic → Inference → Population Parameter",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#population",
-    "href": "week3.html#population",
+    "objectID": "week3.html#hypotheses-and-errors",
+    "href": "week3.html#hypotheses-and-errors",
     "title": "4  Week 3",
-    "section": "6.1 Population",
-    "text": "6.1 Population\nThe complete set of all units of interest. Examples:\n\nAll students in India\nAll electric cars in the U.S.",
+    "section": "4.3 Hypotheses and Errors",
+    "text": "4.3 Hypotheses and Errors\n\n4.3.1 Hypothesis Defined\nA hypothesis is a testable assumption about a population.\n\n4.3.1.1 Null Hypothesis (\\(H_0\\))\n\nNo difference or effect\n\nExample: \\(H_0\\): “μ = 100”\n\n\n\n4.3.1.2 Alternative Hypothesis (\\(H_A\\))\n\nA difference or effect exists\n\nExample: \\(H_A\\): “μ ≠ 100”\n\n\n\n\n4.3.2 Types of Errors\n\n\n\nError Type\nDescription\n\n\n\n\nType I Error\nRejecting \\(H_0\\) when it’s true (false positive)\n\n\nType II Error\nFailing to reject \\(H_0\\) when it’s false (false neg)\n\n\n\n\n\n4.3.3 Significance Level (α)\nThe probability of making a Type I error — commonly set to 0.05 (5%)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#sample",
-    "href": "week3.html#sample",
+    "objectID": "week3.html#inferential-statistics",
+    "href": "week3.html#inferential-statistics",
     "title": "4  Week 3",
-    "section": "6.2 Sample",
-    "text": "6.2 Sample\nA subset of the population, selected for analysis. Goal: represent the population accurately.",
+    "section": "4.4 Inferential Statistics",
+    "text": "4.4 Inferential Statistics\n\n4.4.1 Purpose\n\nEstimate unknown population parameters\nTest hypotheses\nPredict outcomes\n\n\n\n4.4.2 Common Techniques\n\nt-test\nz-test\nANOVA\nChi-square\nRegression\n\n\n\n\n4.4.3 Sampling Techniques\n\n4.4.3.1 1. Simple Random Sampling\nEvery unit has equal probability.\n\n\n4.4.3.2 2. Systematic Sampling\nPick every kth element.\n\n\n4.4.3.3 3. Stratified Sampling\nSubdivide population into strata (e.g. age groups), then sample from each.\n\n\n4.4.3.4 4. Cluster Sampling\nRandomly choose entire groups (e.g. schools, cities).\n\n\n\n\n4.4.4 Central Limit Theorem (CLT)\nIf \\(n &gt; 30\\), the distribution of sample means approximates a normal distribution even if the original population is not normal.\nFormula:\n\\[\nZ = \\frac{\\bar{X} - \\mu}{\\sigma / \\sqrt{n}}\n\\]",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#why-use-samples",
-    "href": "week3.html#why-use-samples",
+    "objectID": "week3.html#descriptive-statistics",
+    "href": "week3.html#descriptive-statistics",
     "title": "4  Week 3",
-    "section": "6.3 Why Use Samples?",
-    "text": "6.3 Why Use Samples?\n\nMore practical and cost-efficient\nEnables faster analysis\nAllows estimation and inference",
+    "section": "4.5 Descriptive Statistics",
+    "text": "4.5 Descriptive Statistics\n\n4.5.1 Measures of Central Tendency\n\n4.5.1.1 Mean\n\\[\n\\bar{x} = \\frac{\\sum x_i}{n}\n\\]\n\n\n4.5.1.2 Median\nMiddle value in an ordered dataset.\n\n\n4.5.1.3 Mode\nMost frequent value.\n\n\n\n\n4.5.2 Measures of Dispersion\n\n4.5.2.1 Range\n\\[\nRange = Max - Min\n\\]\n\n\n4.5.2.2 Variance\n\\[\ns^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n - 1}\n\\]\n\n\n4.5.2.3 Standard Deviation\n\\[\ns = \\sqrt{s^2}\n\\]\n\n\n\n\n4.5.3 Measures of Shape\n\nSkewness: Degree of asymmetry\nKurtosis: Peakedness of distribution",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#relation-between-population-sample",
-    "href": "week3.html#relation-between-population-sample",
+    "objectID": "week3.html#graphical-methods",
+    "href": "week3.html#graphical-methods",
     "title": "4  Week 3",
-    "section": "6.4 Relation Between Population & Sample",
-    "text": "6.4 Relation Between Population & Sample\nPopulation → Sample → Statistic → Inference → Population Parameter",
+    "section": "4.6 Graphical Methods",
+    "text": "4.6 Graphical Methods\n\n4.6.1 Histogram\nr hist(data$height, col=“blue”, main=“Height Distribution”) Boxplot\nboxplot(data\\(score ~ data\\)group) Scatter Plot\nplot(data\\(x, data\\)y, col=“red”) Ogive (Cumulative Frequency Plot)\nBuilt using cumulative frequency of class intervals.\n\n\n4.6.2 R Data Types and Structures\nBasic Data Types\nx &lt;- 12.5 # numeric y &lt;- as.integer(5) # integer z &lt;- 4 + 3i # complex name &lt;- “Ravi” # character flag &lt;- TRUE # logical Vectors\nv &lt;- c(1, 2, 3) Matrices\nm &lt;- matrix(1:9, nrow=3, byrow=TRUE) Data Frame\ndf &lt;- data.frame(Name=c(“A”, “B”), Score=c(89, 94)) Lists\nlst &lt;- list(id=101, name=“John”, marks=c(78, 82)) Factors\ngender &lt;- factor(c(“Male”, “Female”, “Male”)) Statistical Fallacies\nWhat are Fallacies?\nFallacies occur when conclusions are drawn based on flawed statistical reasoning.\nCommon Fallacies\nImproper Sampling Misleading Graphs Ambiguous Term Definitions Ignoring Confounding Variables Assuming Correlation Implies Causation Misuse of Statistics\nExamples of Misuse\nUsing biased samples Cherry-picking data Using 3D pie charts to exaggerate results Misrepresenting scale in graphs\n\n\n4.6.3 Comparing R vs Excel vs GUI-R (RKWard)\n\n\n\nFeature\nR (Script)\nExcel\nRKWard GUI\n\n\n\n\nUsability\nMedium\nEasy\nEasy\n\n\nFlexibility\nHigh\nLow-Medium\nMedium\n\n\nStatistical Power\nVery High\nLow\nHigh\n\n\nGraphics\nggplot2\nBasic\nggplot2 supported\n\n\nReproducibility\nHigh\nLow\nHigh\n\n\n\n\n\n4.6.4 Installing RKWard (Ubuntu)\n\\[\nsudo apt install kbibtex kate libcurl4-openssl-dev libssl-dev libxml2-dev cmake\nsudo add-apt-repository ppa:rkward-devel/rkward-stable\necho \"deb https://ppa.launchpad.net/rkward-devel/rkward-stable/ubuntu jammy main\" | sudo tee /etc/apt/sources.list.d/rkward.list\nsudo apt update\nsudo apt-get install rkward\n\\]\n\n\n4.6.5 Teaching Tools in RKWard\n\\[\ninstall.packages(c(\"R2HTML\", \"car\", \"e1071\", \"Hmisc\", \"plyr\", \"ggplot2\", \"prob\", \"ez\", \"multcomp\", \"remotes\"), dependencies=TRUE)\nremotes::install_github(\"cran/prob\")\nremotes::install_github(\"rkward-community/rk.Teaching\")\n\\]\n\n\n4.6.6 GUI-Based Statistical Tools\nRKWard – KDE interface for R Rcmdr – Classic R Commander GUI Rattle – Data mining GUI in R R AnalyticFlow – Flow-based programming for statistics",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#hypothesis-defined",
-    "href": "week3.html#hypothesis-defined",
+    "objectID": "week3.html#linear-regression-in-r",
+    "href": "week3.html#linear-regression-in-r",
     "title": "4  Week 3",
-    "section": "7.1 Hypothesis Defined",
-    "text": "7.1 Hypothesis Defined\nA hypothesis is a testable assumption about a population.\n\n7.1.1 Null Hypothesis (\\(H_0\\))\n\nNo difference or effect\n\nExample: \\(H_0\\): “μ = 100”\n\n\n\n7.1.2 Alternative Hypothesis (\\(H_A\\))\n\nA difference or effect exists\n\nExample: \\(H_A\\): “μ ≠ 100”",
+    "section": "4.7 Linear Regression in R",
+    "text": "4.7 Linear Regression in R\n\n4.7.1 What is Linear Regression?\nLinear regression models the relationship between a dependent variable (Y) and one or more independent variables (X).\n\n4.7.1.1 Simple Linear Regression Equation:\n\\[\nY = \\beta_0 + \\beta_1 X + \\epsilon\n\\]\nWhere:\n\n\\(Y\\) is the dependent variable\n\n\\(X\\) is the independent variable\n\n\\(\\beta_0\\) is the intercept\n\n\\(\\beta_1\\) is the slope\n\n\\(\\epsilon\\) is the error term\n\n\n\n\n4.7.2 Code Example\nr ## Load data data(mtcars)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#types-of-errors",
-    "href": "week3.html#types-of-errors",
+    "objectID": "week3.html#fit-model",
+    "href": "week3.html#fit-model",
     "title": "4  Week 3",
-    "section": "7.2 Types of Errors",
-    "text": "7.2 Types of Errors\n\n\n\nError Type\nDescription\n\n\n\n\nType I Error\nRejecting \\(H_0\\) when it’s true (false positive)\n\n\nType II Error\nFailing to reject \\(H_0\\) when it’s false (false neg)",
+    "section": "4.8 Fit model",
+    "text": "4.8 Fit model\nmodel &lt;- lm(mpg ~ wt, data=mtcars)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
   },
   {
-    "objectID": "week3.html#significance-level-α",
-    "href": "week3.html#significance-level-α",
+    "objectID": "week3.html#summary",
+    "href": "week3.html#summary",
     "title": "4  Week 3",
-    "section": "7.3 Significance Level (α)",
-    "text": "7.3 Significance Level (α)\nThe probability of making a Type I error — commonly set to 0.05 (5%)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#purpose",
-    "href": "week3.html#purpose",
-    "title": "4  Week 3",
-    "section": "8.1 Purpose",
-    "text": "8.1 Purpose\n\nEstimate unknown population parameters\nTest hypotheses\nPredict outcomes",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#common-techniques",
-    "href": "week3.html#common-techniques",
-    "title": "4  Week 3",
-    "section": "8.2 Common Techniques",
-    "text": "8.2 Common Techniques\n\nt-test\nz-test\nANOVA\nChi-square\nRegression",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#sampling-techniques",
-    "href": "week3.html#sampling-techniques",
-    "title": "4  Week 3",
-    "section": "8.3 Sampling Techniques",
-    "text": "8.3 Sampling Techniques\n\n8.3.1 1. Simple Random Sampling\nEvery unit has equal probability.\n\n\n8.3.2 2. Systematic Sampling\nPick every kth element.\n\n\n8.3.3 3. Stratified Sampling\nSubdivide population into strata (e.g. age groups), then sample from each.\n\n\n8.3.4 4. Cluster Sampling\nRandomly choose entire groups (e.g. schools, cities).",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#central-limit-theorem-clt",
-    "href": "week3.html#central-limit-theorem-clt",
-    "title": "4  Week 3",
-    "section": "8.4 Central Limit Theorem (CLT)",
-    "text": "8.4 Central Limit Theorem (CLT)\nIf \\(n &gt; 30\\), the distribution of sample means approximates a normal distribution even if the original population is not normal.\nFormula:\n\\[\nZ = \\frac{\\bar{X} - \\mu}{\\sigma / \\sqrt{n}}\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#measures-of-central-tendency",
-    "href": "week3.html#measures-of-central-tendency",
-    "title": "4  Week 3",
-    "section": "9.1 Measures of Central Tendency",
-    "text": "9.1 Measures of Central Tendency\n\n9.1.1 Mean\n\\[\n\\bar{x} = \\frac{\\sum x_i}{n}\n\\]\n\n\n9.1.2 Median\nMiddle value in an ordered dataset.\n\n\n9.1.3 Mode\nMost frequent value.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#measures-of-dispersion",
-    "href": "week3.html#measures-of-dispersion",
-    "title": "4  Week 3",
-    "section": "9.2 Measures of Dispersion",
-    "text": "9.2 Measures of Dispersion\n\n9.2.1 Range\n\\[\nRange = Max - Min\n\\]\n\n\n9.2.2 Variance\n\\[\ns^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n - 1}\n\\]\n\n\n9.2.3 Standard Deviation\n\\[\ns = \\sqrt{s^2}\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#measures-of-shape",
-    "href": "week3.html#measures-of-shape",
-    "title": "4  Week 3",
-    "section": "9.3 Measures of Shape",
-    "text": "9.3 Measures of Shape\n\nSkewness: Degree of asymmetry\nKurtosis: Peakedness of distribution",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#histogram",
-    "href": "week3.html#histogram",
-    "title": "4  Week 3",
-    "section": "10.1 Histogram",
-    "text": "10.1 Histogram\nr hist(data$height, col=“blue”, main=“Height Distribution”) Boxplot\nboxplot(data\\(score ~ data\\)group) Scatter Plot\nplot(data\\(x, data\\)y, col=“red”) Ogive (Cumulative Frequency Plot)\nBuilt using cumulative frequency of class intervals.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#r-data-types-and-structures",
-    "href": "week3.html#r-data-types-and-structures",
-    "title": "4  Week 3",
-    "section": "10.2 R Data Types and Structures",
-    "text": "10.2 R Data Types and Structures\nBasic Data Types\nx &lt;- 12.5 # numeric y &lt;- as.integer(5) # integer z &lt;- 4 + 3i # complex name &lt;- “Ravi” # character flag &lt;- TRUE # logical Vectors\nv &lt;- c(1, 2, 3) Matrices\nm &lt;- matrix(1:9, nrow=3, byrow=TRUE) Data Frame\ndf &lt;- data.frame(Name=c(“A”, “B”), Score=c(89, 94)) Lists\nlst &lt;- list(id=101, name=“John”, marks=c(78, 82)) Factors\ngender &lt;- factor(c(“Male”, “Female”, “Male”)) Statistical Fallacies\nWhat are Fallacies?\nFallacies occur when conclusions are drawn based on flawed statistical reasoning.\nCommon Fallacies\nImproper Sampling Misleading Graphs Ambiguous Term Definitions Ignoring Confounding Variables Assuming Correlation Implies Causation Misuse of Statistics\nExamples of Misuse\nUsing biased samples Cherry-picking data Using 3D pie charts to exaggerate results Misrepresenting scale in graphs",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#comparing-r-vs-excel-vs-gui-r-rkward",
-    "href": "week3.html#comparing-r-vs-excel-vs-gui-r-rkward",
-    "title": "4  Week 3",
-    "section": "10.3 Comparing R vs Excel vs GUI-R (RKWard)",
-    "text": "10.3 Comparing R vs Excel vs GUI-R (RKWard)\n\n\n\nFeature\nR (Script)\nExcel\nRKWard GUI\n\n\n\n\nUsability\nMedium\nEasy\nEasy\n\n\nFlexibility\nHigh\nLow-Medium\nMedium\n\n\nStatistical Power\nVery High\nLow\nHigh\n\n\nGraphics\nggplot2\nBasic\nggplot2 supported\n\n\nReproducibility\nHigh\nLow\nHigh",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#installing-rkward-ubuntu",
-    "href": "week3.html#installing-rkward-ubuntu",
-    "title": "4  Week 3",
-    "section": "10.4 Installing RKWard (Ubuntu)",
-    "text": "10.4 Installing RKWard (Ubuntu)\n\\[\nsudo apt install kbibtex kate libcurl4-openssl-dev libssl-dev libxml2-dev cmake\nsudo add-apt-repository ppa:rkward-devel/rkward-stable\necho \"deb https://ppa.launchpad.net/rkward-devel/rkward-stable/ubuntu jammy main\" | sudo tee /etc/apt/sources.list.d/rkward.list\nsudo apt update\nsudo apt-get install rkward\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#teaching-tools-in-rkward",
-    "href": "week3.html#teaching-tools-in-rkward",
-    "title": "4  Week 3",
-    "section": "10.5 Teaching Tools in RKWard",
-    "text": "10.5 Teaching Tools in RKWard\n\\[\ninstall.packages(c(\"R2HTML\", \"car\", \"e1071\", \"Hmisc\", \"plyr\", \"ggplot2\", \"prob\", \"ez\", \"multcomp\", \"remotes\"), dependencies=TRUE)\nremotes::install_github(\"cran/prob\")\nremotes::install_github(\"rkward-community/rk.Teaching\")\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#gui-based-statistical-tools",
-    "href": "week3.html#gui-based-statistical-tools",
-    "title": "4  Week 3",
-    "section": "10.6 GUI-Based Statistical Tools",
-    "text": "10.6 GUI-Based Statistical Tools\nRKWard – KDE interface for R Rcmdr – Classic R Commander GUI Rattle – Data mining GUI in R R AnalyticFlow – Flow-based programming for statistics",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#what-is-linear-regression",
-    "href": "week3.html#what-is-linear-regression",
-    "title": "4  Week 3",
-    "section": "11.1 What is Linear Regression?",
-    "text": "11.1 What is Linear Regression?\nLinear regression models the relationship between a dependent variable (Y) and one or more independent variables (X).\n\n11.1.1 Simple Linear Regression Equation:\n\\[\nY = \\beta_0 + \\beta_1 X + \\epsilon\n\\]\nWhere:\n\n\\(Y\\) is the dependent variable\n\n\\(X\\) is the independent variable\n\n\\(\\beta_0\\) is the intercept\n\n\\(\\beta_1\\) is the slope\n\n\\(\\epsilon\\) is the error term",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#code-example",
-    "href": "week3.html#code-example",
-    "title": "4  Week 3",
-    "section": "11.2 Code Example",
-    "text": "11.2 Code Example\nr # Load data data(mtcars)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#adjusted-r-squared",
-    "href": "week3.html#adjusted-r-squared",
-    "title": "4  Week 3",
-    "section": "13.1 Adjusted R-squared",
-    "text": "13.1 Adjusted R-squared\nPenalizes the number of predictors to avoid overfitting.\nAIC & BIC\nAIC: Akaike Information Criterion BIC: Bayesian Information Criterion Lower values of AIC/BIC → better model fit (with penalty for complexity).",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#normal-distribution",
-    "href": "week3.html#normal-distribution",
-    "title": "4  Week 3",
-    "section": "13.2 Normal Distribution",
-    "text": "13.2 Normal Distribution\nKey Properties\nSymmetrical, bell-shaped curve Mean = Median = Mode Total area under curve = 1 Empirical Rule: 68% within ±1 SD 95% within ±2 SD 99.7% within ±3 SD\nExample: Given: Mean = 70, SD = 5, X = 75\nz &lt;- (75 - 70) / 5 # Result: 1.0 Z-Table Usage\nFind the area under the curve to the left of the z-score Useful for probability and percentile ranking",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#data-import-techniques",
-    "href": "week3.html#data-import-techniques",
-    "title": "4  Week 3",
-    "section": "13.3 Data Import Techniques",
-    "text": "13.3 Data Import Techniques\nCSV Import in R\ndf &lt;- read.csv(“data.csv”, header=TRUE) head(df) Excel Import (using readxl)\ninstall.packages(“readxl”) library(readxl)\ndf &lt;- read_excel(“data.xlsx”)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#working-with-the-rkward-interface",
-    "href": "week3.html#working-with-the-rkward-interface",
-    "title": "4  Week 3",
-    "section": "13.4 Working with the RKWard Interface",
-    "text": "13.4 Working with the RKWard Interface\nSections: Console – Run R code Script Editor – Write reusable code Workspace – View loaded variables Teaching Tab – Education-focused modules",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#spreadsheet-concepts",
-    "href": "week3.html#spreadsheet-concepts",
-    "title": "4  Week 3",
-    "section": "13.5 Spreadsheet Concepts",
-    "text": "13.5 Spreadsheet Concepts\nStructure\nComponent |Description Rows |Individual observations Columns |Variables Cells |Data points Header Row| Variable names",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#advantages",
-    "href": "week3.html#advantages",
-    "title": "4  Week 3",
-    "section": "13.6 Advantages",
-    "text": "13.6 Advantages\nEasy data entry Visual inspection Good for small datasets",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#limitations",
-    "href": "week3.html#limitations",
-    "title": "4  Week 3",
-    "section": "13.7 Limitations",
-    "text": "13.7 Limitations\nLimited statistical functionality Hard to reproduce Error-prone for large datasets",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#advanced-plots-and-techniques",
-    "href": "week3.html#advanced-plots-and-techniques",
-    "title": "4  Week 3",
-    "section": "13.8 Advanced Plots and Techniques",
-    "text": "13.8 Advanced Plots and Techniques\nDensity Plot\n\n\nCode\nplot(density(mtcars$mpg), main=\"Density Plot\", col=\"blue\")\n\n\n\n\n\n\n\n\n\nPair Plot\n\n\nCode\npairs(mtcars[, 1:4])\n\n\n\n\n\n\n\n\n\nCorrelation Matrix\n\n\nCode\ncor(mtcars)\n\n\n            mpg        cyl       disp         hp        drat         wt\nmpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.68117191 -0.8676594\ncyl  -0.8521620  1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958\ndisp -0.8475514  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799\nhp   -0.7761684  0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479\ndrat  0.6811719 -0.6999381 -0.7102139 -0.4487591  1.00000000 -0.7124406\nwt   -0.8676594  0.7824958  0.8879799  0.6587479 -0.71244065  1.0000000\nqsec  0.4186840 -0.5912421 -0.4336979 -0.7082234  0.09120476 -0.1747159\nvs    0.6640389 -0.8108118 -0.7104159 -0.7230967  0.44027846 -0.5549157\nam    0.5998324 -0.5226070 -0.5912270 -0.2432043  0.71271113 -0.6924953\ngear  0.4802848 -0.4926866 -0.5555692 -0.1257043  0.69961013 -0.5832870\ncarb -0.5509251  0.5269883  0.3949769  0.7498125 -0.09078980  0.4276059\n            qsec         vs          am       gear        carb\nmpg   0.41868403  0.6640389  0.59983243  0.4802848 -0.55092507\ncyl  -0.59124207 -0.8108118 -0.52260705 -0.4926866  0.52698829\ndisp -0.43369788 -0.7104159 -0.59122704 -0.5555692  0.39497686\nhp   -0.70822339 -0.7230967 -0.24320426 -0.1257043  0.74981247\ndrat  0.09120476  0.4402785  0.71271113  0.6996101 -0.09078980\nwt   -0.17471588 -0.5549157 -0.69249526 -0.5832870  0.42760594\nqsec  1.00000000  0.7445354 -0.22986086 -0.2126822 -0.65624923\nvs    0.74453544  1.0000000  0.16834512  0.2060233 -0.56960714\nam   -0.22986086  0.1683451  1.00000000  0.7940588  0.05753435\ngear -0.21268223  0.2060233  0.79405876  1.0000000  0.27407284\ncarb -0.65624923 -0.5696071  0.05753435  0.2740728  1.00000000\n\n\nHeatmap\n\n\nCode\nheatmap(cor(mtcars), main=\"Correlation Heatmap\")",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#common-r-packages-for-statistics",
-    "href": "week3.html#common-r-packages-for-statistics",
-    "title": "4  Week 3",
-    "section": "13.9 Common R Packages for Statistics",
-    "text": "13.9 Common R Packages for Statistics\nPackage |Purpose ggplot2 |Data visualization dplyr |Data manipulation tidyr |Data tidying Hmisc |Misc stats functions car |Regression diagnostics e1071 |Skewness/kurtosis, ML tools psych |Psychological statistics shiny |Interactive apps caret |Classification and regression",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#introduction-to-command-line",
-    "href": "week3.html#introduction-to-command-line",
-    "title": "4  Week 3",
-    "section": "13.10 Introduction to Command Line",
-    "text": "13.10 Introduction to Command Line",
+    "section": "4.9 Summary",
+    "text": "4.9 Summary\nsummary(model)\n\n4.9.1 Adjusted R-squared\nPenalizes the number of predictors to avoid overfitting.\nAIC & BIC\nAIC: Akaike Information Criterion BIC: Bayesian Information Criterion Lower values of AIC/BIC → better model fit (with penalty for complexity).\n\n\n4.9.2 Normal Distribution\nKey Properties\nSymmetrical, bell-shaped curve Mean = Median = Mode Total area under curve = 1 Empirical Rule: 68% within ±1 SD 95% within ±2 SD 99.7% within ±3 SD\nExample: Given: Mean = 70, SD = 5, X = 75\nz &lt;- (75 - 70) / 5 # Result: 1.0 Z-Table Usage\nFind the area under the curve to the left of the z-score Useful for probability and percentile ranking\n\n\n4.9.3 Data Import Techniques\nCSV Import in R\ndf &lt;- read.csv(“data.csv”, header=TRUE) head(df) Excel Import (using readxl)\ninstall.packages(“readxl”) library(readxl)\ndf &lt;- read_excel(“data.xlsx”)\n\n\n4.9.4 Working with the RKWard Interface\nSections: Console – Run R code Script Editor – Write reusable code Workspace – View loaded variables Teaching Tab – Education-focused modules\n\n\n4.9.5 Spreadsheet Concepts\nStructure\nComponent |Description Rows |Individual observations Columns |Variables Cells |Data points Header Row| Variable names\n\n\n4.9.6 Advantages\nEasy data entry Visual inspection Good for small datasets\n\n\n4.9.7 Limitations\nLimited statistical functionality Hard to reproduce Error-prone for large datasets\n\n\n4.9.8 Advanced Plots and Techniques\nDensity Plot\n\n\nCode\nplot(density(mtcars$mpg), main=\"Density Plot\", col=\"blue\")\n\n\n\n\n\n\n\n\n\nPair Plot\n\n\nCode\npairs(mtcars[, 1:4])\n\n\n\n\n\n\n\n\n\nCorrelation Matrix\n\n\nCode\ncor(mtcars)\n\n\n            mpg        cyl       disp         hp        drat         wt\nmpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.68117191 -0.8676594\ncyl  -0.8521620  1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958\ndisp -0.8475514  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799\nhp   -0.7761684  0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479\ndrat  0.6811719 -0.6999381 -0.7102139 -0.4487591  1.00000000 -0.7124406\nwt   -0.8676594  0.7824958  0.8879799  0.6587479 -0.71244065  1.0000000\nqsec  0.4186840 -0.5912421 -0.4336979 -0.7082234  0.09120476 -0.1747159\nvs    0.6640389 -0.8108118 -0.7104159 -0.7230967  0.44027846 -0.5549157\nam    0.5998324 -0.5226070 -0.5912270 -0.2432043  0.71271113 -0.6924953\ngear  0.4802848 -0.4926866 -0.5555692 -0.1257043  0.69961013 -0.5832870\ncarb -0.5509251  0.5269883  0.3949769  0.7498125 -0.09078980  0.4276059\n            qsec         vs          am       gear        carb\nmpg   0.41868403  0.6640389  0.59983243  0.4802848 -0.55092507\ncyl  -0.59124207 -0.8108118 -0.52260705 -0.4926866  0.52698829\ndisp -0.43369788 -0.7104159 -0.59122704 -0.5555692  0.39497686\nhp   -0.70822339 -0.7230967 -0.24320426 -0.1257043  0.74981247\ndrat  0.09120476  0.4402785  0.71271113  0.6996101 -0.09078980\nwt   -0.17471588 -0.5549157 -0.69249526 -0.5832870  0.42760594\nqsec  1.00000000  0.7445354 -0.22986086 -0.2126822 -0.65624923\nvs    0.74453544  1.0000000  0.16834512  0.2060233 -0.56960714\nam   -0.22986086  0.1683451  1.00000000  0.7940588  0.05753435\ngear -0.21268223  0.2060233  0.79405876  1.0000000  0.27407284\ncarb -0.65624923 -0.5696071  0.05753435  0.2740728  1.00000000\n\n\nHeatmap\n\n\nCode\nheatmap(cor(mtcars), main=\"Correlation Heatmap\")\n\n\n\n\n\n\n\n\n\n\n\n4.9.9 Common R Packages for Statistics\nPackage |Purpose ggplot2 |Data visualization dplyr |Data manipulation tidyr |Data tidying Hmisc |Misc stats functions car |Regression diagnostics e1071 |Skewness/kurtosis, ML tools psych |Psychological statistics shiny |Interactive apps caret |Classification and regression\n\n\n4.9.10 Introduction to Command Line",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
@@ -623,58 +353,8 @@
     "objectID": "week3.html#windows-terminal",
     "href": "week3.html#windows-terminal",
     "title": "4  Week 3",
-    "section": "13.11 Windows Terminal",
-    "text": "13.11 Windows Terminal\n\\[\ncd ..\nmkdir my_project\ndir\n\\] ## Linux Terminal \\[\ncd ~\nmkdir stats_project\nls -l\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#git-r-project-example",
-    "href": "week3.html#git-r-project-example",
-    "title": "4  Week 3",
-    "section": "13.12 Git + R Project Example",
-    "text": "13.12 Git + R Project Example\n\\[\ngit init\ngit clone https://github.com/username/project.git\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#r-script-template-for-analysis",
-    "href": "week3.html#r-script-template-for-analysis",
-    "title": "4  Week 3",
-    "section": "13.13 R Script Template for Analysis",
-    "text": "13.13 R Script Template for Analysis\n$$ # Load packages library(ggplot2) library(dplyr)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#future-applications-of-statistics",
-    "href": "week3.html#future-applications-of-statistics",
-    "title": "4  Week 3",
-    "section": "18.1 Future Applications of Statistics",
-    "text": "18.1 Future Applications of Statistics\nReal-World Domains\nHealthcare: Drug effectiveness, diagnostics Economics: Forecasting, policy evaluation Sociology: Survey analysis Sports: Performance analytics AI/ML: Predictive modeling, optimization Next Steps\nLearn tidyverse ecosystem Explore machine learning in R Build Shiny dashboards Get familiar with reproducible research using Quarto",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#practice-challenges",
-    "href": "week3.html#practice-challenges",
-    "title": "4  Week 3",
-    "section": "18.2 Practice Challenges",
-    "text": "18.2 Practice Challenges\n\nLoad and summarize data\n\nLoad mtcars or your own dataset Use summary(), mean(), sd() 2. Create 3 different plots\nHistogram Boxplot by group Scatter plot with trend line 3. Build a regression model\nIdentify predictor and outcome Use lm() and summary() 4. Explore a GUI like RKWard or Rcmdr",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
-    ]
-  },
-  {
-    "objectID": "week3.html#key-takeaways",
-    "href": "week3.html#key-takeaways",
-    "title": "4  Week 3",
-    "section": "18.3 Key Takeaways",
-    "text": "18.3 Key Takeaways\nStatistics supports informed decision-making. R and its GUI frontends offer flexibility + power. Understand theory → then automate with code. Avoid fallacies by following robust methods. Visuals are crucial: plot early, plot often.",
+    "section": "4.10 Windows Terminal",
+    "text": "4.10 Windows Terminal\n\\[\ncd ..\nmkdir my_project\ndir\n\\] ### Linux Terminal \\[\ncd ~\nmkdir stats_project\nls -l\n\\]\n\n4.10.1 Git + R Project Example\n\\[\ngit init\ngit clone https://github.com/username/project.git\n\\]\n\n\n4.10.2 R Script Template for Analysis\n$$ # Load packages library(ggplot2) library(dplyr)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3</span>"
     ]
@@ -684,387 +364,177 @@
     "href": "week4.html",
     "title": "5  Week 4",
     "section": "",
-    "text": "6 Introduction\nThis eBook is a comprehensive companion to the course Basic Statistics using GUI-R (RKWard). It includes foundational theory, practical examples, and step-by-step explanations, with integrated GUI-R usage.",
+    "text": "5.1 Introduction\nThis eBook is a comprehensive companion to the course Basic Statistics using GUI-R (RKWard). It includes foundational theory, practical examples, and step-by-step explanations, with integrated GUI-R usage.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#course-name",
-    "href": "week4.html#course-name",
+    "objectID": "week4.html#course-overview",
+    "href": "week4.html#course-overview",
     "title": "5  Week 4",
-    "section": "7.1 Course Name",
-    "text": "7.1 Course Name\nBasic Statistics using GUI-R (RKWard)",
+    "section": "5.2 Course Overview",
+    "text": "5.2 Course Overview\n\n5.2.1 Course Name\nBasic Statistics using GUI-R (RKWard)\n\n\n5.2.2 Instructor Profile\nDr. Harsh Pradhan is Assistant Professor at the Institute of Management Studies, Banaras Hindu University.\n📎 Faculty Profile\n\n\n5.2.3 Learning Objectives\n\nUnderstand core concepts in statistics\nApply t-tests and ANOVA using real data\nCompute confidence intervals and test statistics\nUse GUI-R (RKWard) for statistical analysis",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#instructor-profile",
-    "href": "week4.html#instructor-profile",
+    "objectID": "week4.html#chapter-1-fundamental-concepts",
+    "href": "week4.html#chapter-1-fundamental-concepts",
     "title": "5  Week 4",
-    "section": "7.2 Instructor Profile",
-    "text": "7.2 Instructor Profile\nDr. Harsh Pradhan is Assistant Professor at the Institute of Management Studies, Banaras Hindu University.\n📎 Faculty Profile",
+    "section": "5.3 Chapter 1: Fundamental Concepts",
+    "text": "5.3 Chapter 1: Fundamental Concepts\n\n5.3.1 Descriptive Statistics\n\n5.3.1.1 Central Tendency\n\nMean\n\nMedian\n\nMode\n\n\n\n5.3.1.2 Dispersion\n\nRange\n\nVariance\n\nStandard Deviation\n\n\n\n5.3.1.3 Example:\n\n\nCode\ndata &lt;- c(4, 8, 6, 5, 3)\nmean(data)\n\n\n[1] 5.2\n\n\nCode\nmedian(data)\n\n\n[1] 5\n\n\nCode\nsd(data)\n\n\n[1] 1.923538\n\n\n\n\n\n5.3.2 Standard Error\n\\[\nSE = \\frac{s}{\\sqrt{n}}\n\\]\nSmall SE = sample mean is a good estimate of the population mean.\n\n\n5.3.3 Central Limit Theorem\nFor \\(n &gt; 30\\), sampling distribution of the mean approximates normal:\n\\[\n\\bar{X} \\sim \\mathcal{N}(\\mu, \\frac{\\sigma}{\\sqrt{n}})\n\\]\n\n\n5.3.4 Confidence Intervals\n\\[\nCI = \\bar{x} \\pm Z \\cdot \\frac{s}{\\sqrt{n}}\n\\]\nInterpret 95% CI as: 95 of 100 such intervals would contain the true mean.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#learning-objectives",
-    "href": "week4.html#learning-objectives",
+    "objectID": "week4.html#chapter-2-estimation",
+    "href": "week4.html#chapter-2-estimation",
     "title": "5  Week 4",
-    "section": "7.3 Learning Objectives",
-    "text": "7.3 Learning Objectives\n\nUnderstand core concepts in statistics\nApply t-tests and ANOVA using real data\nCompute confidence intervals and test statistics\nUse GUI-R (RKWard) for statistical analysis",
+    "section": "5.4 Chapter 2: Estimation",
+    "text": "5.4 Chapter 2: Estimation\n\n5.4.1 Types of Estimates\n\n\n\nType\nDescription\nExample\n\n\n\n\nPoint Estimate\nSingle value\nSample mean\n\n\nInterval Estimate\nRange + confidence\nConfidence Int\n\n\n\n\n\n5.4.2 Parameter vs Statistic\n\n\n\nTerm\nDescription\n\n\n\n\nParameter\nValue from population (e.g., \\(\\mu\\))\n\n\nStatistic\nValue from sample (e.g., \\(\\bar{x}\\))",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#descriptive-statistics",
-    "href": "week4.html#descriptive-statistics",
+    "objectID": "week4.html#chapter-3-hypothesis-testing",
+    "href": "week4.html#chapter-3-hypothesis-testing",
     "title": "5  Week 4",
-    "section": "8.1 Descriptive Statistics",
-    "text": "8.1 Descriptive Statistics\n\n8.1.1 Central Tendency\n\nMean\n\nMedian\n\nMode\n\n\n\n8.1.2 Dispersion\n\nRange\n\nVariance\n\nStandard Deviation\n\n\n8.1.2.1 Example:\n\n\nCode\ndata &lt;- c(4, 8, 6, 5, 3)\nmean(data)\n\n\n[1] 5.2\n\n\nCode\nmedian(data)\n\n\n[1] 5\n\n\nCode\nsd(data)\n\n\n[1] 1.923538",
+    "section": "5.5 Chapter 3: Hypothesis Testing",
+    "text": "5.5 Chapter 3: Hypothesis Testing\n\nNull Hypothesis (\\(H_0\\)): No effect\n\nAlternative Hypothesis (\\(H_1\\)): Some effect\n\nType I Error: Reject \\(H_0\\) when true\n\nType II Error: Fail to reject \\(H_0\\) when false",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#standard-error",
-    "href": "week4.html#standard-error",
+    "objectID": "week4.html#chapter-4-students-t-test",
+    "href": "week4.html#chapter-4-students-t-test",
     "title": "5  Week 4",
-    "section": "8.2 Standard Error",
-    "text": "8.2 Standard Error\n\\[\nSE = \\frac{s}{\\sqrt{n}}\n\\]\nSmall SE = sample mean is a good estimate of the population mean.",
+    "section": "5.6 Chapter 4: Student’s T-Test",
+    "text": "5.6 Chapter 4: Student’s T-Test\n\n5.6.1 Types\n\n\n\nTest Type\nDescription\n\n\n\n\nOne-Sample\nCompare sample to fixed value\n\n\nIndependent\nCompare two unrelated groups\n\n\nPaired\nCompare two related groups\n\n\n\n\n\n5.6.2 One-Sample T-Test Example\n\n\nCode\ndata &lt;- c(22, 24, 27, 26, 28, 23, 25, 29, 21, 26, 24, 27)\nt.test(data, mu = 25)\n\n\n\n    One Sample t-test\n\ndata:  data\nt = 0.2363, df = 11, p-value = 0.8175\nalternative hypothesis: true mean is not equal to 25\n95 percent confidence interval:\n 23.61427 26.71906\nsample estimates:\nmean of x \n 25.16667 \n\n\n\n\n5.6.3 Test Statistic\n\\[\nt = \\frac{\\bar{x} - \\mu}{SE}\n\\]\n\n\n5.6.4 Degrees of Freedom\n\\[\ndf = n - 1\n\\]\n\n\n5.6.5 Decision Rule\nCompare calculated \\(t\\) to table value. If \\(|t| &gt; t_{critical}\\), reject \\(H_0\\).\n\n\n5.6.6 T-Test in GUI-R\n\nImport data\n\nChoose T-Test\n\nDefine groups\n\nRun & interpret output",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#central-limit-theorem",
-    "href": "week4.html#central-limit-theorem",
+    "objectID": "week4.html#chapter-5-anova",
+    "href": "week4.html#chapter-5-anova",
     "title": "5  Week 4",
-    "section": "8.3 Central Limit Theorem",
-    "text": "8.3 Central Limit Theorem\nFor \\(n &gt; 30\\), sampling distribution of the mean approximates normal:\n\\[\n\\bar{X} \\sim \\mathcal{N}(\\mu, \\frac{\\sigma}{\\sqrt{n}})\n\\]",
+    "section": "5.7 Chapter 5: ANOVA",
+    "text": "5.7 Chapter 5: ANOVA\n\n5.7.1 Purpose\nUsed when comparing means across 3+ groups.\n\n5.7.1.1 One-Way ANOVA Formula\n\\[\nF = \\frac{MS_{between}}{MS_{within}}\n\\]\nWhere:\n\n\\(MS_{between} = \\frac{SS_{between}}{df_{between}}\\)\n\n\\(MS_{within} = \\frac{SS_{within}}{df_{within}}\\)\n\n\n\n5.7.1.2 Assumptions\n\nNormality\n\nHomogeneity of variance\n\nIndependence\n\n\n\n5.7.1.3 Example Table\n\n\n\nGroup\nMean\nVar\nn\n\n\n\n\nA\n5.5\n1.5\n30\n\n\nB\n7.1\n2.0\n30\n\n\nC\n6.8\n1.8\n30\n\n\n\n\n\n\n5.7.2 Post-Hoc Tests\nRun if ANOVA is significant to locate pairwise differences.\n\n\n5.7.3 ANOVA in GUI-R\n\nLoad data\n\nChoose “One-Way ANOVA”\n\nDefine groups\n\nInterpret output",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#confidence-intervals",
-    "href": "week4.html#confidence-intervals",
+    "objectID": "week4.html#chapter-6-gui-r-workflow",
+    "href": "week4.html#chapter-6-gui-r-workflow",
     "title": "5  Week 4",
-    "section": "8.4 Confidence Intervals",
-    "text": "8.4 Confidence Intervals\n\\[\nCI = \\bar{x} \\pm Z \\cdot \\frac{s}{\\sqrt{n}}\n\\]\nInterpret 95% CI as: 95 of 100 such intervals would contain the true mean.",
+    "section": "5.8 Chapter 6: GUI-R Workflow",
+    "text": "5.8 Chapter 6: GUI-R Workflow\n\nImport Data (CSV, Excel)\n\nChoose Test (T-Test, ANOVA, etc.)\n\nRun the analysis\n\nInterpret the output\n\nExport the results or visualizations",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#types-of-estimates",
-    "href": "week4.html#types-of-estimates",
+    "objectID": "week4.html#chapter-7-advanced-concepts",
+    "href": "week4.html#chapter-7-advanced-concepts",
     "title": "5  Week 4",
-    "section": "9.1 Types of Estimates",
-    "text": "9.1 Types of Estimates\n\n\n\nType\nDescription\nExample\n\n\n\n\nPoint Estimate\nSingle value\nSample mean\n\n\nInterval Estimate\nRange + confidence\nConfidence Int",
+    "section": "5.9 Chapter 7: Advanced Concepts",
+    "text": "5.9 Chapter 7: Advanced Concepts\n\n5.9.1 Variance Partitioning\n\\[\n\\text{Total Variance} = \\text{Explained Variance} + \\text{Unexplained Variance}\n\\]\n\n\n\nExplained Terms\nUnexplained Terms\n\n\n\n\nSystematic\nRandom\n\n\nPredictive\nError\n\n\nDeterministic\nNoise\n\n\n\n\n\n5.9.2 Degrees of Freedom\nFor equation \\(x + y + z = 3\\), if 2 values are known, third is fixed.\nHence, \\(df = n - k\\) where \\(n\\) = total variables, \\(k\\) = constraints.\n\n\n5.9.3 Chi-Square and F Distribution\n\nChi-Square: Categorical variable comparison\n\nF-Distribution: Used in ANOVA, variance testing\n\n\n\n5.9.4 Univariate, Bivariate, Multivariate\n\n\n\nType\nVariables\nExample\n\n\n\n\nUnivariate\n1\nHeight\n\n\nBivariate\n2\nHeight vs Weight\n\n\nMultivariate\n&gt;2\nStudy w/ Age, Gender, Income\n\n\n\n\n\n5.9.5 Parametric Test Assumptions\n\nInterval/Ratio DV\n\nRandom Sampling\n\nNormality\n\nEqual Variances\n\nIf assumptions violated → use non-parametric test.\n\n\n5.9.6 Effect Size\n\\[\n\\text{Effect Size} = \\frac{|\\mu_1 - \\mu_2|}{\\sigma}\n\\]\nUsed for comparison across studies.\n\n\n5.9.7 Power of a Test\n\\[\n\\text{Power} = 1 - \\beta\n\\]\nHigher power → lower chance of Type II error\nPower increases with sample size, effect size",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#parameter-vs-statistic",
-    "href": "week4.html#parameter-vs-statistic",
+    "objectID": "week4.html#conclusion",
+    "href": "week4.html#conclusion",
     "title": "5  Week 4",
-    "section": "9.2 Parameter vs Statistic",
-    "text": "9.2 Parameter vs Statistic\n\n\n\nTerm\nDescription\n\n\n\n\nParameter\nValue from population (e.g., \\(\\mu\\))\n\n\nStatistic\nValue from sample (e.g., \\(\\bar{x}\\))",
+    "section": "5.10 Conclusion",
+    "text": "5.10 Conclusion\nStatistics is the language of data. GUI-R makes statistical tools accessible for everyone. This book empowers you to analyze data effectively using t-tests, ANOVA, and confidence intervals in a GUI environment.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#types",
-    "href": "week4.html#types",
+    "objectID": "week4.html#references",
+    "href": "week4.html#references",
     "title": "5  Week 4",
-    "section": "11.1 Types",
-    "text": "11.1 Types\n\n\n\nTest Type\nDescription\n\n\n\n\nOne-Sample\nCompare sample to fixed value\n\n\nIndependent\nCompare two unrelated groups\n\n\nPaired\nCompare two related groups",
+    "section": "5.11 References",
+    "text": "5.11 References\n\nPradhan, H. (2023). Basic Statistics using GUI-R (RKWard)\n\nField, A. (2013). Discovering Statistics Using R.\n\nhttps://methods.sagepub.com",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#one-sample-t-test-example",
-    "href": "week4.html#one-sample-t-test-example",
+    "objectID": "week4.html#chapter-8-advanced-t-test-applications",
+    "href": "week4.html#chapter-8-advanced-t-test-applications",
     "title": "5  Week 4",
-    "section": "11.2 One-Sample T-Test Example",
-    "text": "11.2 One-Sample T-Test Example\n\n\nCode\ndata &lt;- c(22, 24, 27, 26, 28, 23, 25, 29, 21, 26, 24, 27)\nt.test(data, mu = 25)\n\n\n\n    One Sample t-test\n\ndata:  data\nt = 0.2363, df = 11, p-value = 0.8175\nalternative hypothesis: true mean is not equal to 25\n95 percent confidence interval:\n 23.61427 26.71906\nsample estimates:\nmean of x \n 25.16667",
+    "section": "5.12 Chapter 8: Advanced T-Test Applications",
+    "text": "5.12 Chapter 8: Advanced T-Test Applications\n\n5.12.1 Paired Sample T-Test\nUsed when the same group is measured twice (e.g., before and after).\n\n5.12.1.1 Example:\n\n\nCode\nbefore &lt;- c(80, 82, 79, 84, 88)\nafter &lt;- c(78, 81, 76, 83, 86)\nt.test(before, after, paired = TRUE)\n\n\n\n    Paired t-test\n\ndata:  before and after\nt = 4.8107, df = 4, p-value = 0.008581\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n 0.7611494 2.8388506\nsample estimates:\nmean difference \n            1.8 \n\n\n\n\n\n5.12.2 Independent Samples T-Test\nCompare means of two unrelated groups.\n\n\nCode\ngroup1 &lt;- c(85, 90, 88, 92, 87)\ngroup2 &lt;- c(80, 83, 85, 84, 82)\nt.test(group1, group2)\n\n\n\n    Welch Two Sample t-test\n\ndata:  group1 and group2\nt = 3.7755, df = 7.226, p-value = 0.006537\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 2.114814 9.085186\nsample estimates:\nmean of x mean of y \n     88.4      82.8 \n\n\n\n\n5.12.3 One-Sample T-Test with GUI-R\n\nImport dataset\nUse ‘Descriptive Statistics’ to check mean\nNavigate to ‘T-Test’ → ‘One Sample’\nInput hypothesized mean and run",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#test-statistic",
-    "href": "week4.html#test-statistic",
+    "objectID": "week4.html#chapter-9-more-on-confidence-intervals",
+    "href": "week4.html#chapter-9-more-on-confidence-intervals",
     "title": "5  Week 4",
-    "section": "11.3 Test Statistic",
-    "text": "11.3 Test Statistic\n\\[\nt = \\frac{\\bar{x} - \\mu}{SE}\n\\]",
+    "section": "5.13 Chapter 9: More on Confidence Intervals",
+    "text": "5.13 Chapter 9: More on Confidence Intervals\n\n5.13.1 Visualizing Confidence Intervals in R\n\n\nCode\nx &lt;- c(88, 90, 85, 87, 89)\nmean_x &lt;- mean(x)\nse &lt;- sd(x) / sqrt(length(x))\nci_lower &lt;- mean_x - 1.96 * se\nci_upper &lt;- mean_x + 1.96 * se\nc(ci_lower, ci_upper)\n\n\n[1] 86.11394 89.48606\n\n\nPlot using ggplot2:\n\n\nCode\nlibrary(ggplot2)\ndf &lt;- data.frame(x = x)\nggplot(df, aes(y = x, x = 1)) +\n  geom_point() +\n  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#degrees-of-freedom",
-    "href": "week4.html#degrees-of-freedom",
+    "objectID": "week4.html#chapter-10-robust-anova-models",
+    "href": "week4.html#chapter-10-robust-anova-models",
     "title": "5  Week 4",
-    "section": "11.4 Degrees of Freedom",
-    "text": "11.4 Degrees of Freedom\n\\[\ndf = n - 1\n\\]",
+    "section": "5.14 Chapter 10: Robust ANOVA Models",
+    "text": "5.14 Chapter 10: Robust ANOVA Models\n\n5.14.1 Two-Way ANOVA\nExamines the effect of two categorical independent variables on a continuous dependent variable.\n\n\nCode\n# Sample dataset for demonstration\ndataset &lt;- data.frame(\n  score = c(85, 90, 88, 92, 87, 80, 83, 85, 84, 82),\n  gender = rep(c(\"Male\", \"Female\"), each = 5),\n  teaching_method = rep(c(\"A\", \"B\"), times = 5)\n)\naov_result &lt;- aov(score ~ gender * teaching_method, data = dataset)\nsummary(aov_result)\n\n\n                       Df Sum Sq Mean Sq F value  Pr(&gt;F)   \ngender                  1  78.40   78.40  23.718 0.00279 **\nteaching_method         1   6.02    6.02   1.820 0.22598   \ngender:teaching_method  1  18.15   18.15   5.491 0.05759 . \nResiduals               6  19.83    3.31                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\n\n5.14.2 Repeated Measures ANOVA\nUse when the same subjects are used for each treatment.\n\n\nCode\n# Sample repeated measures data in long format\ndata_long &lt;- data.frame(\n  id = rep(1:5, each = 3),\n  condition = rep(c(\"A\", \"B\", \"C\"), times = 5),\n  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91)\n)\nlibrary(ez)\nezANOVA(data = data_long, dv = .(score), wid = .(id), within = .(condition))\n\n\nWarning: Converting \"id\" to factor for ANOVA.\n\n\nWarning: Converting \"condition\" to factor for ANOVA.\n\n\n$ANOVA\n     Effect DFn DFd        F            p p&lt;.05       ges\n2 condition   2   8 88.22222 3.539139e-06     * 0.1479687\n\n$`Mauchly's Test for Sphericity`\n     Effect         W         p p&lt;.05\n2 condition 0.5555556 0.4140867      \n\n$`Sphericity Corrections`\n     Effect       GGe        p[GG] p[GG]&lt;.05       HFe        p[HF] p[HF]&lt;.05\n2 condition 0.6923077 9.135419e-05         * 0.9411765 6.568851e-06         *",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#decision-rule",
-    "href": "week4.html#decision-rule",
+    "objectID": "week4.html#chapter-11-effect-size-measures",
+    "href": "week4.html#chapter-11-effect-size-measures",
     "title": "5  Week 4",
-    "section": "11.5 Decision Rule",
-    "text": "11.5 Decision Rule\nCompare calculated \\(t\\) to table value. If \\(|t| &gt; t_{critical}\\), reject \\(H_0\\).",
+    "section": "5.15 Chapter 11: Effect Size Measures",
+    "text": "5.15 Chapter 11: Effect Size Measures\n\n5.15.1 Cohen’s d\n\\[\nd = \\frac{\\bar{x}_1 - \\bar{x}_2}{s_p}\n\\]\nWhere \\(s_p\\) is the pooled standard deviation.\n\n5.15.1.1 R Example\n\n\nCode\nlibrary(effsize)\ncohen.d(group1, group2)\n\n\n\nCohen's d\n\nd estimate: 2.387848 (large)\n95 percent confidence interval:\n    lower     upper \n0.4791634 4.2965327 \n\n\n\n\n\n5.15.2 Eta-Squared (\\(\\eta^2\\))\nUsed for ANOVA:\n\\[\n\\eta^2 = \\frac{SS_{between}}{SS_{total}}\n\\]",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#t-test-in-gui-r",
-    "href": "week4.html#t-test-in-gui-r",
+    "objectID": "week4.html#chapter-12-statistical-assumptions-checking",
+    "href": "week4.html#chapter-12-statistical-assumptions-checking",
     "title": "5  Week 4",
-    "section": "11.6 T-Test in GUI-R",
-    "text": "11.6 T-Test in GUI-R\n\nImport data\n\nChoose T-Test\n\nDefine groups\n\nRun & interpret output",
+    "section": "5.16 Chapter 12: Statistical Assumptions Checking",
+    "text": "5.16 Chapter 12: Statistical Assumptions Checking\n\n5.16.1 Normality\nUse Shapiro-Wilk test:\n\n\nCode\n# Sample data frame for normality test\ndata &lt;- data.frame(variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87))\nshapiro.test(data$variable)\n\n\n\n    Shapiro-Wilk normality test\n\ndata:  data$variable\nW = 0.97743, p-value = 0.95\n\n\nVisualize:\n\n\nCode\nqqnorm(data$variable)\nqqline(data$variable)\n\n\n\n\n\n\n\n\n\n\n\n5.16.2 Homogeneity of Variance\nUse Levene’s Test:\n\n\nCode\n# Sample data frame for Levene's Test\ndata &lt;- data.frame(\n  variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87),\n  group = rep(c(\"A\", \"B\"), each = 5)\n)\nlibrary(car)\n\n\nLoading required package: carData\n\n\nCode\nleveneTest(variable ~ group, data = data)\n\n\nWarning in leveneTest.default(y = y, group = group, ...): group coerced to\nfactor.\n\n\nLevene's Test for Homogeneity of Variance (center = median)\n      Df F value Pr(&gt;F)\ngroup  1  0.0769 0.7885\n       8",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#purpose",
-    "href": "week4.html#purpose",
+    "objectID": "week4.html#chapter-13-non-parametric-alternatives",
+    "href": "week4.html#chapter-13-non-parametric-alternatives",
     "title": "5  Week 4",
-    "section": "12.1 Purpose",
-    "text": "12.1 Purpose\nUsed when comparing means across 3+ groups.\n\n12.1.1 One-Way ANOVA Formula\n\\[\nF = \\frac{MS_{between}}{MS_{within}}\n\\]\nWhere:\n\n\\(MS_{between} = \\frac{SS_{between}}{df_{between}}\\)\n\n\\(MS_{within} = \\frac{SS_{within}}{df_{within}}\\)\n\n\n\n12.1.2 Assumptions\n\nNormality\n\nHomogeneity of variance\n\nIndependence\n\n\n\n12.1.3 Example Table\n\n\n\nGroup\nMean\nVar\nn\n\n\n\n\nA\n5.5\n1.5\n30\n\n\nB\n7.1\n2.0\n30\n\n\nC\n6.8\n1.8\n30",
+    "section": "5.17 Chapter 13: Non-Parametric Alternatives",
+    "text": "5.17 Chapter 13: Non-Parametric Alternatives\n\n5.17.1 Wilcoxon Signed Rank Test\n\n\nCode\nwilcox.test(before, after, paired = TRUE)\n\n\nWarning in wilcox.test.default(before, after, paired = TRUE): cannot compute\nexact p-value with ties\n\n\n\n    Wilcoxon signed rank test with continuity correction\n\ndata:  before and after\nV = 15, p-value = 0.05676\nalternative hypothesis: true location shift is not equal to 0\n\n\n\n\n5.17.2 Mann-Whitney U Test\n\n\nCode\nwilcox.test(group1, group2)\n\n\nWarning in wilcox.test.default(group1, group2): cannot compute exact p-value\nwith ties\n\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  group1 and group2\nW = 24.5, p-value = 0.01597\nalternative hypothesis: true location shift is not equal to 0\n\n\n\n\n5.17.3 Kruskal-Wallis Test\nNon-parametric alternative to ANOVA.\n\n\nCode\n# Sample data frame for Kruskal-Wallis Test\ndata &lt;- data.frame(\n  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91),\n  group = rep(c(\"A\", \"B\", \"C\"), times = 5)\n)\nkruskal.test(score ~ group, data = data)\n\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  score by group\nKruskal-Wallis chi-squared = 2.2329, df = 2, p-value = 0.3274",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#post-hoc-tests",
-    "href": "week4.html#post-hoc-tests",
+    "objectID": "week4.html#visualizing-statistical-results",
+    "href": "week4.html#visualizing-statistical-results",
     "title": "5  Week 4",
-    "section": "12.2 Post-Hoc Tests",
-    "text": "12.2 Post-Hoc Tests\nRun if ANOVA is significant to locate pairwise differences.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#anova-in-gui-r",
-    "href": "week4.html#anova-in-gui-r",
-    "title": "5  Week 4",
-    "section": "12.3 ANOVA in GUI-R",
-    "text": "12.3 ANOVA in GUI-R\n\nLoad data\n\nChoose “One-Way ANOVA”\n\nDefine groups\n\nInterpret output",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#variance-partitioning",
-    "href": "week4.html#variance-partitioning",
-    "title": "5  Week 4",
-    "section": "14.1 Variance Partitioning",
-    "text": "14.1 Variance Partitioning\n\\[\n\\text{Total Variance} = \\text{Explained Variance} + \\text{Unexplained Variance}\n\\]\n\n\n\nExplained Terms\nUnexplained Terms\n\n\n\n\nSystematic\nRandom\n\n\nPredictive\nError\n\n\nDeterministic\nNoise",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#degrees-of-freedom-1",
-    "href": "week4.html#degrees-of-freedom-1",
-    "title": "5  Week 4",
-    "section": "14.2 Degrees of Freedom",
-    "text": "14.2 Degrees of Freedom\nFor equation \\(x + y + z = 3\\), if 2 values are known, third is fixed.\nHence, \\(df = n - k\\) where \\(n\\) = total variables, \\(k\\) = constraints.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#chi-square-and-f-distribution",
-    "href": "week4.html#chi-square-and-f-distribution",
-    "title": "5  Week 4",
-    "section": "14.3 Chi-Square and F Distribution",
-    "text": "14.3 Chi-Square and F Distribution\n\nChi-Square: Categorical variable comparison\n\nF-Distribution: Used in ANOVA, variance testing",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#univariate-bivariate-multivariate",
-    "href": "week4.html#univariate-bivariate-multivariate",
-    "title": "5  Week 4",
-    "section": "14.4 Univariate, Bivariate, Multivariate",
-    "text": "14.4 Univariate, Bivariate, Multivariate\n\n\n\nType\nVariables\nExample\n\n\n\n\nUnivariate\n1\nHeight\n\n\nBivariate\n2\nHeight vs Weight\n\n\nMultivariate\n&gt;2\nStudy w/ Age, Gender, Income",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#parametric-test-assumptions",
-    "href": "week4.html#parametric-test-assumptions",
-    "title": "5  Week 4",
-    "section": "14.5 Parametric Test Assumptions",
-    "text": "14.5 Parametric Test Assumptions\n\nInterval/Ratio DV\n\nRandom Sampling\n\nNormality\n\nEqual Variances\n\nIf assumptions violated → use non-parametric test.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#effect-size",
-    "href": "week4.html#effect-size",
-    "title": "5  Week 4",
-    "section": "14.6 Effect Size",
-    "text": "14.6 Effect Size\n\\[\n\\text{Effect Size} = \\frac{|\\mu_1 - \\mu_2|}{\\sigma}\n\\]\nUsed for comparison across studies.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#power-of-a-test",
-    "href": "week4.html#power-of-a-test",
-    "title": "5  Week 4",
-    "section": "14.7 Power of a Test",
-    "text": "14.7 Power of a Test\n\\[\n\\text{Power} = 1 - \\beta\n\\]\nHigher power → lower chance of Type II error\nPower increases with sample size, effect size",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#paired-sample-t-test",
-    "href": "week4.html#paired-sample-t-test",
-    "title": "5  Week 4",
-    "section": "17.1 Paired Sample T-Test",
-    "text": "17.1 Paired Sample T-Test\nUsed when the same group is measured twice (e.g., before and after).\n\n17.1.1 Example:\n\n\nCode\nbefore &lt;- c(80, 82, 79, 84, 88)\nafter &lt;- c(78, 81, 76, 83, 86)\nt.test(before, after, paired = TRUE)\n\n\n\n    Paired t-test\n\ndata:  before and after\nt = 4.8107, df = 4, p-value = 0.008581\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n 0.7611494 2.8388506\nsample estimates:\nmean difference \n            1.8",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#independent-samples-t-test",
-    "href": "week4.html#independent-samples-t-test",
-    "title": "5  Week 4",
-    "section": "17.2 Independent Samples T-Test",
-    "text": "17.2 Independent Samples T-Test\nCompare means of two unrelated groups.\n\n\nCode\ngroup1 &lt;- c(85, 90, 88, 92, 87)\ngroup2 &lt;- c(80, 83, 85, 84, 82)\nt.test(group1, group2)\n\n\n\n    Welch Two Sample t-test\n\ndata:  group1 and group2\nt = 3.7755, df = 7.226, p-value = 0.006537\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 2.114814 9.085186\nsample estimates:\nmean of x mean of y \n     88.4      82.8",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#one-sample-t-test-with-gui-r",
-    "href": "week4.html#one-sample-t-test-with-gui-r",
-    "title": "5  Week 4",
-    "section": "17.3 One-Sample T-Test with GUI-R",
-    "text": "17.3 One-Sample T-Test with GUI-R\n\nImport dataset\nUse ‘Descriptive Statistics’ to check mean\nNavigate to ‘T-Test’ → ‘One Sample’\nInput hypothesized mean and run",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#visualizing-confidence-intervals-in-r",
-    "href": "week4.html#visualizing-confidence-intervals-in-r",
-    "title": "5  Week 4",
-    "section": "18.1 Visualizing Confidence Intervals in R",
-    "text": "18.1 Visualizing Confidence Intervals in R\n\n\nCode\nx &lt;- c(88, 90, 85, 87, 89)\nmean_x &lt;- mean(x)\nse &lt;- sd(x) / sqrt(length(x))\nci_lower &lt;- mean_x - 1.96 * se\nci_upper &lt;- mean_x + 1.96 * se\nc(ci_lower, ci_upper)\n\n\n[1] 86.11394 89.48606\n\n\nPlot using ggplot2:\n\n\nCode\nlibrary(ggplot2)\ndf &lt;- data.frame(x = x)\nggplot(df, aes(y = x, x = 1)) +\n  geom_point() +\n  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1)",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#two-way-anova",
-    "href": "week4.html#two-way-anova",
-    "title": "5  Week 4",
-    "section": "19.1 Two-Way ANOVA",
-    "text": "19.1 Two-Way ANOVA\nExamines the effect of two categorical independent variables on a continuous dependent variable.\n\n\nCode\n# Sample dataset for demonstration\ndataset &lt;- data.frame(\n  score = c(85, 90, 88, 92, 87, 80, 83, 85, 84, 82),\n  gender = rep(c(\"Male\", \"Female\"), each = 5),\n  teaching_method = rep(c(\"A\", \"B\"), times = 5)\n)\naov_result &lt;- aov(score ~ gender * teaching_method, data = dataset)\nsummary(aov_result)\n\n\n                       Df Sum Sq Mean Sq F value  Pr(&gt;F)   \ngender                  1  78.40   78.40  23.718 0.00279 **\nteaching_method         1   6.02    6.02   1.820 0.22598   \ngender:teaching_method  1  18.15   18.15   5.491 0.05759 . \nResiduals               6  19.83    3.31                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#repeated-measures-anova",
-    "href": "week4.html#repeated-measures-anova",
-    "title": "5  Week 4",
-    "section": "19.2 Repeated Measures ANOVA",
-    "text": "19.2 Repeated Measures ANOVA\nUse when the same subjects are used for each treatment.\n\n\nCode\n# Sample repeated measures data in long format\ndata_long &lt;- data.frame(\n  id = rep(1:5, each = 3),\n  condition = rep(c(\"A\", \"B\", \"C\"), times = 5),\n  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91)\n)\nlibrary(ez)\nezANOVA(data = data_long, dv = .(score), wid = .(id), within = .(condition))\n\n\nWarning: Converting \"id\" to factor for ANOVA.\n\n\nWarning: Converting \"condition\" to factor for ANOVA.\n\n\n$ANOVA\n     Effect DFn DFd        F            p p&lt;.05       ges\n2 condition   2   8 88.22222 3.539139e-06     * 0.1479687\n\n$`Mauchly's Test for Sphericity`\n     Effect         W         p p&lt;.05\n2 condition 0.5555556 0.4140867      \n\n$`Sphericity Corrections`\n     Effect       GGe        p[GG] p[GG]&lt;.05       HFe        p[HF] p[HF]&lt;.05\n2 condition 0.6923077 9.135419e-05         * 0.9411765 6.568851e-06         *",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#cohens-d",
-    "href": "week4.html#cohens-d",
-    "title": "5  Week 4",
-    "section": "20.1 Cohen’s d",
-    "text": "20.1 Cohen’s d\n\\[\nd = \\frac{\\bar{x}_1 - \\bar{x}_2}{s_p}\n\\]\nWhere \\(s_p\\) is the pooled standard deviation.\n\n20.1.1 R Example\n\n\nCode\nlibrary(effsize)\ncohen.d(group1, group2)\n\n\n\nCohen's d\n\nd estimate: 2.387848 (large)\n95 percent confidence interval:\n    lower     upper \n0.4791634 4.2965327",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#eta-squared-eta2",
-    "href": "week4.html#eta-squared-eta2",
-    "title": "5  Week 4",
-    "section": "20.2 Eta-Squared (\\(\\eta^2\\))",
-    "text": "20.2 Eta-Squared (\\(\\eta^2\\))\nUsed for ANOVA:\n\\[\n\\eta^2 = \\frac{SS_{between}}{SS_{total}}\n\\]",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#normality",
-    "href": "week4.html#normality",
-    "title": "5  Week 4",
-    "section": "21.1 Normality",
-    "text": "21.1 Normality\nUse Shapiro-Wilk test:\n\n\nCode\n# Sample data frame for normality test\ndata &lt;- data.frame(variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87))\nshapiro.test(data$variable)\n\n\n\n    Shapiro-Wilk normality test\n\ndata:  data$variable\nW = 0.97743, p-value = 0.95\n\n\nVisualize:\n\n\nCode\nqqnorm(data$variable)\nqqline(data$variable)",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#homogeneity-of-variance",
-    "href": "week4.html#homogeneity-of-variance",
-    "title": "5  Week 4",
-    "section": "21.2 Homogeneity of Variance",
-    "text": "21.2 Homogeneity of Variance\nUse Levene’s Test:\n\n\nCode\n# Sample data frame for Levene's Test\ndata &lt;- data.frame(\n  variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87),\n  group = rep(c(\"A\", \"B\"), each = 5)\n)\nlibrary(car)\n\n\nLoading required package: carData\n\n\nCode\nleveneTest(variable ~ group, data = data)\n\n\nWarning in leveneTest.default(y = y, group = group, ...): group coerced to\nfactor.\n\n\nLevene's Test for Homogeneity of Variance (center = median)\n      Df F value Pr(&gt;F)\ngroup  1  0.0769 0.7885\n       8",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#wilcoxon-signed-rank-test",
-    "href": "week4.html#wilcoxon-signed-rank-test",
-    "title": "5  Week 4",
-    "section": "22.1 Wilcoxon Signed Rank Test",
-    "text": "22.1 Wilcoxon Signed Rank Test\n\n\nCode\nwilcox.test(before, after, paired = TRUE)\n\n\nWarning in wilcox.test.default(before, after, paired = TRUE): cannot compute\nexact p-value with ties\n\n\n\n    Wilcoxon signed rank test with continuity correction\n\ndata:  before and after\nV = 15, p-value = 0.05676\nalternative hypothesis: true location shift is not equal to 0",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#mann-whitney-u-test",
-    "href": "week4.html#mann-whitney-u-test",
-    "title": "5  Week 4",
-    "section": "22.2 Mann-Whitney U Test",
-    "text": "22.2 Mann-Whitney U Test\n\n\nCode\nwilcox.test(group1, group2)\n\n\nWarning in wilcox.test.default(group1, group2): cannot compute exact p-value\nwith ties\n\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  group1 and group2\nW = 24.5, p-value = 0.01597\nalternative hypothesis: true location shift is not equal to 0",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#kruskal-wallis-test",
-    "href": "week4.html#kruskal-wallis-test",
-    "title": "5  Week 4",
-    "section": "22.3 Kruskal-Wallis Test",
-    "text": "22.3 Kruskal-Wallis Test\nNon-parametric alternative to ANOVA.\n\n\nCode\n# Sample data frame for Kruskal-Wallis Test\ndata &lt;- data.frame(\n  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91),\n  group = rep(c(\"A\", \"B\", \"C\"), times = 5)\n)\nkruskal.test(score ~ group, data = data)\n\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  score by group\nKruskal-Wallis chi-squared = 2.2329, df = 2, p-value = 0.3274",
+    "section": "5.18 Visualizing Statistical Results",
+    "text": "5.18 Visualizing Statistical Results",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
@@ -1073,38 +543,18 @@
     "objectID": "week4.html#boxplots",
     "href": "week4.html#boxplots",
     "title": "5  Week 4",
-    "section": "23.1 Boxplots",
-    "text": "23.1 Boxplots\n\n\nCode\nggplot(data, aes(x = group, y = score)) +\n  geom_boxplot()",
+    "section": "5.19 Boxplots",
+    "text": "5.19 Boxplots\n\n\nCode\nggplot(data, aes(x = group, y = score)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\n\n\n5.19.1 Histograms\n\n\nCode\nggplot(data, aes(x = score)) +\n  geom_histogram(binwidth = 2)\n\n\n\n\n\n\n\n\n\n\n\n5.19.2 Density Plot\n\n\nCode\nggplot(data, aes(x = score)) +\n  geom_density()",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
   },
   {
-    "objectID": "week4.html#histograms",
-    "href": "week4.html#histograms",
+    "objectID": "week4.html#rkward-gui-r-tips",
+    "href": "week4.html#rkward-gui-r-tips",
     "title": "5  Week 4",
-    "section": "23.2 Histograms",
-    "text": "23.2 Histograms\n\n\nCode\nggplot(data, aes(x = score)) +\n  geom_histogram(binwidth = 2)",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#density-plot",
-    "href": "week4.html#density-plot",
-    "title": "5  Week 4",
-    "section": "23.3 Density Plot",
-    "text": "23.3 Density Plot\n\n\nCode\nggplot(data, aes(x = score)) +\n  geom_density()",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
-    ]
-  },
-  {
-    "objectID": "week4.html#summary-basic-statistics-using-gui-r-rkward",
-    "href": "week4.html#summary-basic-statistics-using-gui-r-rkward",
-    "title": "5  Week 4",
-    "section": "24.1 📘Summary: Basic Statistics using GUI-R (RKWard)",
-    "text": "24.1 📘Summary: Basic Statistics using GUI-R (RKWard)\nThis eBook, authored by Dr. Harsh Pradhan (Assistant Professor at the Institute of Management Studies, Banaras Hindu University), serves as a comprehensive guide to understanding and applying basic statistical concepts, particularly in the GUI-based software RKWard (GUI-R).\nKey Highlights: 1. Descriptive Statistics Covers measures of central tendency (mean, median, mode) and variability (range, variance, standard deviation). Introduces standard error and its role in estimating population parameters. 2. Inferential Statistics Introduces the Central Limit Theorem and how it forms the foundation for many statistical techniques. Confidence intervals are explained both theoretically and with practical calculations. 3. T-Tests (Student’s t) Explains one-sample, independent-sample, and paired-sample t-tests. Includes step-by-step computation and GUI-R implementation. Includes interpretation of p-values, degrees of freedom, and test statistics. 4. Analysis of Variance (ANOVA) Covers one-way, two-way, and repeated measures ANOVA. Focuses on the F-statistic, assumptions, and post-hoc analyses. Discusses partitioning of variance into systematic and unsystematic components. 5. Effect Size and Statistical Power Introduces Cohen’s d, eta-squared, and power analysis. Emphasizes that statistical significance does not always imply practical importance. 6. Assumption Testing Tests for normality (Shapiro-Wilk, QQ plot). Tests for homogeneity of variance (Levene’s test). Highlights when to use non-parametric alternatives. 7. Non-Parametric Tests Introduces Wilcoxon signed-rank, Mann-Whitney U, and Kruskal-Wallis tests as robust alternatives to parametric methods. 8. Data Visualization in R Demonstrates use of boxplots, histograms, and density plots using ggplot2. Provides example R code for reproducibility. 9. GUI-R (RKWard) Usage Offers practical steps for using GUI-R for all statistical techniques covered. Designed to bridge the gap for learners unfamiliar with command-line R.",
+    "section": "5.20 RKWard (GUI-R) Tips",
+    "text": "5.20 RKWard (GUI-R) Tips\n\nUse menu-based analysis for beginners\nSave and export plots easily\nIntegrate with R scripts for reproducibility\n\n\n5.20.1 📘Summary: Basic Statistics using GUI-R (RKWard)\nThis eBook, authored by Dr. Harsh Pradhan (Assistant Professor at the Institute of Management Studies, Banaras Hindu University), serves as a comprehensive guide to understanding and applying basic statistical concepts, particularly in the GUI-based software RKWard (GUI-R).\nKey Highlights: 1. Descriptive Statistics Covers measures of central tendency (mean, median, mode) and variability (range, variance, standard deviation). Introduces standard error and its role in estimating population parameters. 2. Inferential Statistics Introduces the Central Limit Theorem and how it forms the foundation for many statistical techniques. Confidence intervals are explained both theoretically and with practical calculations. 3. T-Tests (Student’s t) Explains one-sample, independent-sample, and paired-sample t-tests. Includes step-by-step computation and GUI-R implementation. Includes interpretation of p-values, degrees of freedom, and test statistics. 4. Analysis of Variance (ANOVA) Covers one-way, two-way, and repeated measures ANOVA. Focuses on the F-statistic, assumptions, and post-hoc analyses. Discusses partitioning of variance into systematic and unsystematic components. 5. Effect Size and Statistical Power Introduces Cohen’s d, eta-squared, and power analysis. Emphasizes that statistical significance does not always imply practical importance. 6. Assumption Testing Tests for normality (Shapiro-Wilk, QQ plot). Tests for homogeneity of variance (Levene’s test). Highlights when to use non-parametric alternatives. 7. Non-Parametric Tests Introduces Wilcoxon signed-rank, Mann-Whitney U, and Kruskal-Wallis tests as robust alternatives to parametric methods. 8. Data Visualization in R Demonstrates use of boxplots, histograms, and density plots using ggplot2. Provides example R code for reproducibility. 9. GUI-R (RKWard) Usage Offers practical steps for using GUI-R for all statistical techniques covered. Designed to bridge the gap for learners unfamiliar with command-line R.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
