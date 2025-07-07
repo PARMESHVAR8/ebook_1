@@ -21,7 +21,8 @@ book:
     - basic-statistics5.qmd
     - basic-statistics6.qmd
     - basic-statistics7.qmd
-    - week1.qmd
+    - week5.qmd
+    - text.qmd
     # - week1-statistics.qmd
 
 bibliography: references.bib

@@ -1,0 +1,213 @@
+---
+title: " Week 5"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, BHU"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    code-fold: true
+---
+# Practical Demonstration of ANOVA
+
+ANOVA (Analysis of Variance) is a statistical technique used to compare the means of three or more groups. It helps to determine whether there are any statistically significant differences between the means of independent (unrelated) groups.
+
+## Example Context
+
+In this study, the fairness scores (proportion of money shared in a game) were collected from four different societal groups:
+
+- Hunter-Gatherers (HG)
+- Farmers (F)
+- Natural Resource-based (NR)
+- Industrial (I)
+
+The data was:
+
+| Group | P1 | P2 | P3 | P4 | Mean |
+|-------|----|----|----|----|------|
+| HG    | 28 | 36 | 38 | 31 | 33.25 |
+| F     | 32 | 33 | 40 | —  | 35.00 |
+| NR    | 47 | 43 | 52 | —  | 47.33 |
+| I     | 40 | 47 | 45 | —  | 44.00 |
+
+Total N = 13  
+Grand Mean = 39.385
+
+## Model (Between-Group) Sum of Squares (SSM)
+
+1. Calculate the difference between the mean of each group and the grand mean.
+2. Square each of these differences.
+3. Multiply each result by the number of participants in that group.
+4. Add the values for each group.
+
+## Step-by-Step SSM Calculation (Between-Group)
+
+**SSM (Model Sum of Squares)** is calculated as:
+
+1. Calculate the difference between each group mean and the grand mean.
+2. Square each of those differences.
+3. Multiply the squared differences by the number of observations in each group (weighting).
+4. Sum all the values.
+
+## One-Way ANOVA Table
+
+| Source   | SS     | df  | MS     | F    | p     |
+|----------|--------|-----|--------|------|-------|
+| Between  | 461.64 | 3   | 153.88 | 8.27 | <0.001 |
+| Within   | 167.42 | 9   | 18.60  |      |       |
+| Total    | 629.08 | 12  |        |      |       |
+
+## Degrees of Freedom
+
+- Between Groups: `k - 1 = 4 - 1 = 3`
+- Within Groups: `N - k = 13 - 4 = 9`
+- Total: `N - 1 = 13 - 1 = 12`
+
+## Example Dataset
+
+Fairness score: proportion of money shared in a game
+
+| Group         | P1 | P2 | P3 | P4 | Mean  | N |
+|---------------|----|----|----|----|-------|---|
+| Hunter-Gatherer | 28 | 36 | 38 | 31 | 33.25 | 4 |
+| Farming       | 32 | 33 | 40 |    | 35.00 | 3 |
+| Natural Res.  | 47 | 43 | 52 |    | 47.33 | 3 |
+| Industrial    | 40 | 47 | 45 |    | 44.00 | 3 |
+
+**Grand Mean**: 39.385
+
+**F(3,9) = 8.27**, **p < .001**
+
+[Distributome F Calculator](http://www.distributome.org/V3/calc/index.html)
+
+---
+
+# Lecture 2: Type of ANOVA
+
+## Repeated Measures vs Between-Subjects ANOVA
+
+| Aspect                     | Repeated Measures            | Between-Subjects              |
+|----------------------------|------------------------------|-------------------------------|
+| Experimental Design        | Same subjects, multiple conditions | Different groups, one condition |
+| Dependency                 | Dependent                    | Independent                   |
+| Statistical Power          | Lower (within variability)   | Higher (with more subjects)   |
+| Control of Differences     | Each subject = own control   | Inter-subject differences     |
+| Efficiency                 | Fewer subjects               | May need more subjects        |
+| Example                    | Teaching improvement         | Compare teaching methods      |
+
+## Foundations
+
+- Repeated Measures → Paired Sample t-test  
+- Between Subjects → Independent Sample t-test
+
+## ANOVA Output Example
+
+```r
+summary(aov(Y ~ X))
+```
+
+| Source            | SS      | df | MS       | F       |
+|-------------------|---------|----|----------|---------|
+| Between-Subjects  | 86.667  | 2  | 43.3335  | 2.3552  |
+| Within-Subjects   | 1600    | 87 | 18.3908  |         |
+| Total             | 1686.667| 89 |          |         |
+
+```r
+qf(.95, 2, 87)
+# [1] 3.101
+```
+
+[F Table Reference](http://www.socr.ucla.edu/Applets.dir/F_Table.html)
+
+## MANOVA vs N-Way ANOVA
+
+| Aspect        | MANOVA                                          | N-way ANOVA                                      |
+|---------------|--------------------------------------------------|--------------------------------------------------|
+| Use           | Multiple DVs, 1+ IVs                            | Multiple IVs, one DV                             |
+| Objective     | Group differences in multivariate response      | Interaction and main effects                     |
+| Assumptions   | Multivariate normality, equal covariances       | Normality, homogeneous variances                 |
+| Example       | Teaching method effect on multiple outcomes     | Temp & humidity effects on plant growth          |
+
+```r
+# Two-way ANOVA in R
+model <- aov(Yield ~ Treatment * Dose, data = data)
+summary(model)
+
+# Interaction plot
+HH::interaction2wt(Y ~ Z * X)
+```
+
+---
+
+# Lecture 3: Introduction to Correlation
+
+## Correlation Types
+
+| Data Type        | Correlation Type       |
+|------------------|------------------------|
+| Nominal          | Phi                    |
+| Dichotomous      | Bi-serial              |
+| Ordinal/Rank     | Spearman / Kendall     |
+| Interval/Ratio   | Pearson                |
+| Partial          | Partial Correlation    |
+
+## R Commands
+
+```r
+# Correlation test
+stats::cor.test(my.csv.data$JP_01, my.csv.data$JP_02,
+                alternative = "two.sided", conf.level = 0.95)
+
+# Partial correlation
+ggm::pcor(my.csv.data$JP_01, my.csv.data$JP_02, my.csv.data$JP_03)
+```
+
+---
+
+# Lecture 4: Correlation Continued and Regression Introduction
+
+## Pearson vs Spearman vs Kendall
+
+| Feature          | Pearson           | Spearman         | Kendall          |
+|------------------|-------------------|------------------|------------------|
+| Description      | Linear relationship | Monotonic       | Monotonic        |
+| Assumptions      | Normality          | No linearity     | No linearity     |
+| Data Type        | Continuous         | Ranked/Ordinal   | Ranked/Ordinal   |
+| Sensitivity      | Sensitive to outliers | Less sensitive | Robust           |
+| R Command        | cor(x, y, method="pearson") | cor(x, y, method="spearman") | cor(x, y, method="kendall") |
+
+## Uses of Correlation
+
+- Grouping similar variables
+- Reliability analysis
+
+---
+
+# Lecture 5: Regression Continued
+
+## Linear Regression
+
+- Predict the value of a **dependent variable (Y)** using an **independent variable (X)**.
+
+## Nonlinear Regression
+
+- For non-linear data relationships.
+- Often uses machine learning methods for non-parametric models.
+
+## Example Equations
+
+```r
+# Regression Coefficients
+b = SSxy / SSxx
+a = ȳ - b * x̄
+```
+
+```r
+# Regression Analysis
+SST = Σ(y − ȳ)² = SSyy
+R² = 1 - (SSE / SST)
+DF_regression = 1
+DF_total = n - 1
+```
