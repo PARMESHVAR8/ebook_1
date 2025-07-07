@@ -1,0 +1,598 @@
+title: "Week5"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+    fontsize: 11pt
+    documentclass: article
+bibliography: references.bib
+---
+
+# 1. Introduction
+
+Welcome to **Week 5** of _Basic Statistics using GUI-R (RKWard)_, where we cover **relationship testing**, **correlation**, **regression**, **ANOVA**, and related diagnostics in **depth**, using both theory and R-based implementation.
+
+This book is designed to:
+
+- Clarify statistical concepts visually
+- Use real data simulations
+- Empower you with reproducible R/RKWard workflows
+- Prepare you to run statistical diagnostics and build interpretations
+
+---
+
+# 2. Lecture 24 – Deep Dive: Correlation
+
+## 2.1 What is Correlation?
+
+Correlation is a statistical measure that expresses the **extent to which two variables are linearly related**.
+
+### 💡 Theory
+
+- If variable X increases as Y increases → **Positive correlation**
+- If variable X increases as Y decreases → **Negative correlation**
+- If there's no linear trend → **Zero correlation**
+
+> Pearson’s r ranges from -1 to +1.
+
+---
+
+## 2.2 Types of Correlation and Use Cases
+
+| Data Type          | Correlation Type | Use Case Example                      |
+|--------------------|------------------|----------------------------------------|
+| Nominal            | Phi              | Gender vs. Yes/No Preferences         |
+| Dichotomous        | Point-Biserial   | Pass/Fail vs. Exam Score              |
+| Ordinal/Rank       | Spearman/Kendall | Rank in class vs. Test anxiety        |
+| Ratio/Interval     | Pearson          | Height vs. Weight                     |
+| Multivariate       | Partial Correl.  | Control confounders                   |
+
+---
+
+## 2.3 Pearson, Spearman, Kendall Comparison
+
+{r}
+# Simulate linear data
+set.seed(123)
+x <- rnorm(100)
+y <- 2 * x + rnorm(100)
+
+# Add non-linear data
+z <- x^2 + rnorm(100)
+
+# Pearson (linear)
+cor(x, y, method = "pearson")
+
+# Spearman (rank, monotonic)
+cor(x, z, method = "spearman")
+
+# Kendall (ordinal)
+cor(x, z, method = "kendall")
+2.4 Visualizing Correlations
+# Visualization
+library(ggplot2)
+data <- data.frame(x, y, z)
+
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(title = "Scatter Plot with Linear Fit", x = "X", y = "Y")
+
+ggplot(data, aes(x = x, y = z)) +
+  geom_point(color = "darkred") +
+  labs(title = "Non-Linear Relationship", x = "X", y = "Z")
+2.5 Correlation Matrix in RKWard
+Steps:
+
+Load data into RKWard.
+
+Navigate to Statistics → Summaries → Correlation Matrix.
+
+Choose the appropriate variables.
+
+Choose correlation type (Pearson, Spearman).
+
+Run and interpret the matrix output.
+
+2.6 Partial Correlation in R
+When you want to compute the correlation between two variables while controlling for a third:
+
+# install.packages("ggm")
+library(ggm)
+X1 <- rnorm(100)
+X2 <- X1 + rnorm(100, sd = 0.5)
+X3 <- rnorm(100)
+pcor(c("X1", "X2", "X3"), cov(cbind(X1, X2, X3)))
+Interpretation: This tells you the pure correlation between X1 and X2, controlling for X3.
+
+2.7 R Code to Automate All
+
+# Simulate data
+set.seed(100)
+data <- data.frame(
+  A = rnorm(100),
+  B = rnorm(100),
+  C = rnorm(100)
+)
+
+# Generate all pairwise correlations
+cor(data)
+
+# Visualize matrix with corrplot
+library(corrplot)
+corrplot(cor(data), method = "color", tl.col = "black", addCoef.col = "black")
+2.8 Spearman vs Pearson – When to Use?
+Use Pearson when data is normally distributed, continuous, and linear.
+
+Use Spearman when data is ordinal, ranked, or non-linear but monotonic.
+
+Kendall’s Tau is more robust for small sample sizes.
+
+👀 **Next Up: Part 2/4** will include:
+
+- One-Way ANOVA full theory + math  
+- Repeated Measures ANOVA (detailed)  
+- Visualization of F-distributions  
+- MANOVA + N-Way examples  
+- 10+ R code exercises
+
+
+# 3. Lecture 25 – One-Way ANOVA (Detailed)
+
+## 3.1 Concept Overview
+
+**Analysis of Variance (ANOVA)** is used when comparing the **means of three or more groups**.
+
+### 💡 Formula Breakdown
+
+- **SSM (Sum of Squares Model)**: Variation between groups
+- **SSR (Sum of Squares Residual)**: Variation within groups
+- **SST (Total)**: Total variation
+
+**F-Ratio**:
+
+$$
+F = \frac{MS_{between}}{MS_{within}} = \frac{SSM / df_M}{SSR / df_R}
+$$
+
+
+## 3.2 ANOVA Table Example
+
+| Source   | SS     | df  | MS     | F    |
+|----------|--------|-----|--------|------|
+| Between  | 461.64 | 3   | 153.88 | 8.27 |
+| Within   | 167.42 | 9   | 18.60  |      |
+| Total    | 629.08 | 12  |        |      |
+
+---
+
+## 3.3 R Code – One-Way ANOVA
+
+```{r}
+group1 <- c(28, 36, 38, 31)
+group2 <- c(32, 33, 40)
+group3 <- c(47, 43, 52)
+group4 <- c(40, 47, 45)
+
+score <- c(group1, group2, group3, group4)
+group <- factor(rep(c("Hunter", "Farming", "Natural", "Industrial"), times=c(4,3,3,3)))
+
+data <- data.frame(score, group)
+anova_model <- aov(score ~ group, data=data)
+summary(anova_model)
+3.4 Post-Hoc Analysis (Tukey HSD)
+
+TukeyHSD(anova_model)
+3.5 Visualize Group Differences
+
+boxplot(score ~ group, data = data, col = c("lightblue", "pink", "lightgreen", "yellow"))
+4. Lecture 26 – Repeated Measures ANOVA
+4.1 Theory
+Repeated measures involve the same subjects measured under multiple conditions.
+
+Aspect	Repeated Measures	Between-Subjects
+Subjects	Same across treatments	Different per group
+Variability Control	Higher (less noise)	Lower
+Efficiency	More efficient	Requires more samples
+
+4.2 R Code – Repeated Measures
+
+library(ez)
+subject <- factor(rep(1:10, each=3))
+treatment <- factor(rep(c("Pre", "Mid", "Post"), times=10))
+score <- c(rnorm(10, 65), rnorm(10, 70), rnorm(10, 75))
+rm_df <- data.frame(subject, treatment, score)
+
+ezANOVA(data=rm_df, dv=score, wid=subject, within=treatment)
+4.3 Visual Check
+
+library(ggplot2)
+ggplot(rm_df, aes(x=treatment, y=score, group=subject, color=subject)) +
+  geom_line() + geom_point() +
+  theme_minimal() +
+  labs(title="Repeated Measures ANOVA Plot")
+5. Lecture 27 – MANOVA and N-Way ANOVA
+5.1 What is MANOVA?
+Multivariate Analysis of Variance (MANOVA) extends ANOVA to multiple dependent variables.
+
+Example Use Case:
+
+Investigating how teaching methods affect:
+
+Exam scores
+
+Class participation
+
+Homework submission
+
+5.2 R Code – MANOVA
+
+y1 <- rnorm(30, 60, 5)
+y2 <- rnorm(30, 70, 6)
+y3 <- rnorm(30, 80, 4)
+method <- factor(rep(c("A", "B", "C"), each=10))
+
+manova_model <- manova(cbind(y1, y2, y3) ~ method)
+summary(manova_model)
+5.3 N-Way ANOVA (Interaction Effects)
+
+df <- expand.grid(
+  Teaching = c("Traditional", "Interactive"),
+  Gender = c("Male", "Female"),
+  Rep = 1:20
+)
+df$Score <- rnorm(80, mean = 70, sd = 5)
+
+model_nway <- aov(Score ~ Teaching * Gender, data = df)
+summary(model_nway)
+5.4 Interaction Plot
+{r}
+interaction.plot(df$Teaching, df$Gender, df$Score, col=c("red", "blue"))
+5.5 Assumptions of ANOVA
+Assumption	Check Method	Tool
+Normality	QQ Plot, Shapiro Test	shapiro.test()
+Homogeneity	Levene’s/Bartlett’s Test	car::leveneTest()
+Independence	Design-level assurance	Design phase
+
+5.6 Assumption Check in R
+{r}
+# Normality check
+shapiro.test(residuals(anova_model))
+
+# Homogeneity check
+library(car)
+leveneTest(score ~ group, data = data)
+5.7 Visualizing F-Distribution
+
+curve(df(x, df1=3, df2=9), from=0, to=10, col="blue", lwd=2,
+      ylab="Density", main="F-distribution df(3,9)")
+abline(v=8.27, col="red", lwd=2, lty=2)
+legend("topright", legend=c("F = 8.27"), col="red", lty=2)
+5.8 Simulation: When F is not significant
+
+set.seed(2024)
+group_A <- rnorm(10, mean=50)
+group_B <- rnorm(10, mean=51)
+group_C <- rnorm(10, mean=50.5)
+
+score <- c(group_A, group_B, group_C)
+group <- factor(rep(c("A", "B", "C"), each=10))
+
+df <- data.frame(score, group)
+aov_model <- aov(score ~ group, data=df)
+summary(aov_model)
+➡️ End of Part 2/4. Part 3 includes Regression (Simple, Multiple, Non-linear), VIF, Residuals, and Advanced Modeling
+
+
+# 6. Lecture 28 – Simple Linear Regression
+
+## 6.1 Theory Refresher
+
+Linear regression predicts a **dependent variable (Y)** using an **independent variable (X)**.
+
+**Model Equation**:
+
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
+$$
+
+Where:
+
+- $\beta_0$ = Intercept  
+- $\beta_1$ = Slope  
+- $\epsilon$ = Error term
+
+---
+
+## 6.2 Example in R
+
+```{r}
+study_time <- c(2, 3, 4, 5, 6)
+grades <- c(50, 60, 65, 70, 75)
+
+model <- lm(grades ~ study_time)
+summary(model)
+6.3 Regression Line Visualization
+
+plot(study_time, grades, main="Simple Regression", xlab="Study Time", ylab="Grades")
+abline(model, col="blue", lwd=2)
+6.4 Interpret Coefficients
+
+coef(model)
+Intercept: Grade when study time = 0
+
+Slope: Grade increases per hour of study
+
+6.5 Residual Plots
+
+par(mfrow=c(2,2))
+plot(model)
+Top-left: Residuals vs Fitted
+
+Bottom-left: Scale-Location
+
+Top-right: QQ Plot
+
+Bottom-right: Residuals vs Leverage
+
+6.6 Confidence Intervals
+
+confint(model)
+7. Lecture 29 – Multiple Regression
+7.1 Add More Predictors
+
+df <- data.frame(
+  Exam = c(50, 55, 60, 65, 70),
+  Hours = c(2, 3, 4, 5, 6),
+  Sleep = c(7, 6.5, 6, 5.5, 5)
+)
+multi_model <- lm(Exam ~ Hours + Sleep, data = df)
+summary(multi_model)
+7.2 Check VIF (Multicollinearity)
+
+library(car)
+vif(multi_model)
+VIF > 5 → multicollinearity warning
+VIF > 10 → serious problem
+
+7.3 Partial Residual Plots
+
+avPlots(multi_model)
+7.4 Plot 3D Regression Plane
+
+## install.packages("scatterplot3d")
+library(scatterplot3d)
+scatterplot3d(df$Hours, df$Sleep, df$Exam, highlight.3d=TRUE, type="h",
+              angle=55, color="darkgreen", pch=16)
+8. Lecture 30 – Polynomial and Non-Linear Regression
+8.1 Simulating Non-linear Relationship
+
+x <- seq(0, 10, 0.1)
+y <- 5 + 2 * x^2 + rnorm(length(x), 0, 5)
+plot(x, y, main="Non-linear Pattern", pch=19)
+8.2 Polynomial Regression
+
+poly_model <- lm(y ~ poly(x, 2))
+summary(poly_model)
+
+lines(x, predict(poly_model), col="blue", lwd=2)
+8.3 Compare with Linear Fit
+
+linear_model <- lm(y ~ x)
+lines(x, predict(linear_model), col="red", lwd=2, lty=2)
+legend("topleft", legend=c("Poly", "Linear"), col=c("blue", "red"), lty=c(1,2))
+8.4 Residual Analysis
+
+par(mfrow=c(1,2))
+plot(poly_model$fitted.values, poly_model$residuals, main="Polynomial Residuals")
+plot(linear_model$fitted.values, linear_model$residuals, main="Linear Residuals")
+8.5 Curve Fitting with nls()
+
+x <- seq(0, 10, length.out=100)
+y <- 2 * exp(0.3 * x) + rnorm(100, sd=3)
+
+nls_model <- nls(y ~ a * exp(b * x), start=list(a=2, b=0.3))
+summary(nls_model)
+
+lines(x, predict(nls_model), col="purple", lwd=2)
+9. Lecture 31 – Model Evaluation Metrics
+9.1 R² and Adjusted R²
+
+summary(multi_model)$r.squared
+summary(multi_model)$adj.r.squared
+9.2 MSE and RMSE
+
+pred <- predict(multi_model)
+actual <- df$Exam
+residuals <- actual - pred
+mse <- mean(residuals^2)
+rmse <- sqrt(mse)
+
+# 10. Lecture 32 – Logistic Regression
+
+## 10.1 When to Use
+
+Logistic regression is used when the **dependent variable is categorical** (typically binary: 0/1, Yes/No, Pass/Fail).
+
+## 10.2 Logistic Function
+
+$$
+P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X)}}
+$$
+
+---
+
+## 10.3 R Example: Predicting Admission
+
+```{r}
+df <- data.frame(
+  Admit = c(1,1,0,1,0,0,1,1,0,0),
+  Score = c(80,85,60,90,55,40,88,83,59,52)
+)
+
+logit_model <- glm(Admit ~ Score, data=df, family="binomial")
+summary(logit_model)
+10.4 Probability Prediction
+
+df$Prob <- predict(logit_model, type="response")
+df
+10.5 ROC Curve
+
+library(pROC)
+roc_obj <- roc(df$Admit, df$Prob)
+plot(roc_obj, col="darkgreen")
+auc(roc_obj)
+10.6 Classification Table
+
+df$Pred <- ifelse(df$Prob > 0.5, 1, 0)
+table(Predicted = df$Pred, Actual = df$Admit)
+11. Lecture 33 – Chi-Square Test
+11.1 Categorical Independence
+Used when evaluating if two categorical variables are independent.
+
+11.2 Example: Gender vs Department Choice
+
+gender <- c("Male", "Male", "Female", "Female")
+dept <- c("Science", "Arts", "Science", "Arts")
+counts <- c(30, 20, 25, 25)
+
+chi_df <- data.frame(Gender=rep(gender, counts), Dept=rep(dept, counts))
+tbl <- table(chi_df$Gender, chi_df$Dept)
+chisq.test(tbl)
+12. Lecture 34 – Non-Parametric Tests
+12.1 When to Use
+Data is not normally distributed
+
+Ordinal data or small sample sizes
+
+12.2 Mann–Whitney U
+
+group1 <- c(45, 50, 60, 55)
+group2 <- c(70, 75, 80, 85)
+wilcox.test(group1, group2)
+12.3 Kruskal–Wallis (Non-parametric ANOVA)
+
+g1 <- c(10, 20, 30)
+g2 <- c(40, 50, 60)
+g3 <- c(70, 80, 90)
+kw_df <- data.frame(
+  score = c(g1, g2, g3),
+  group = factor(rep(c("A", "B", "C"), each=3))
+)
+kruskal.test(score ~ group, data=kw_df)
+12.4 Wilcoxon Signed-Rank
+
+before <- c(60, 70, 65, 80)
+after <- c(62, 75, 68, 82)
+wilcox.test(before, after, paired=TRUE)
+13. Case Study – Social Media & Mental Health
+13.1 Dataset Simulation
+
+set.seed(100)
+n <- 100
+hours <- rnorm(n, 3, 1.5)
+stress <- 10 + 1.2 * hours + rnorm(n)
+
+df <- data.frame(hours, stress)
+model <- lm(stress ~ hours, data=df)
+summary(model)
+13.2 Visual
+
+plot(hours, stress, main="Social Media Use vs Stress", pch=19)
+abline(model, col="red", lwd=2)
+13.3 Interpretation
+Positive slope → More hours = more stress
+
+R² tells how well hours predict stress
+
+14. 50 Multiple Choice Questions (MCQs)
+Q1. Pearson’s r is best used when:
+ Data is ordinal
+
+ Data is continuous and normally distributed
+
+ Data has outliers
+
+ You want to rank variables
+
+Q2. Which test compares more than 2 independent means?
+ t-test
+
+ ANOVA
+
+ Chi-Square
+
+ Correlation
+
+Q3. A VIF of 12 means:
+ No multicollinearity
+
+ Severe multicollinearity
+
+ Perfect fit
+
+ Homoscedasticity
+
+
+15. Exercises
+Exercise 1: One-Way ANOVA on Fake Marketing Data
+Generate three ad strategies and test which gives highest customer conversions.
+
+Exercise 2: Correlate temperature and ice cream sales
+Include scatterplot, Pearson's r, regression line.
+
+Exercise 3: Logistic regression predicting credit approval
+Predict using income and debt ratio.
+
+Exercise 4: Chi-Square on survey data
+Test independence of satisfaction vs. purchase intention.
+
+Exercise 5: Repeated Measures ANOVA
+Simulate 10 people tested across 3 time points.
+
+16. Glossary
+Term	Definition
+ANOVA	Test for differences in means across groups
+Regression	Predict numerical output from inputs
+Correlation	Measure of linear association between two variables
+R²	Proportion of variance explained by model
+AIC	Akaike Information Criterion – model quality metric
+VIF	Variance Inflation Factor – checks multicollinearity
+Logistic Regression	Used for binary outcome prediction
+Chi-Square	Test for independence between two categorical variables
+
+17. Appendix
+17.1 RKWard Menus
+Correlation → Statistics → Summaries → Correlation Matrix
+
+ANOVA → Analysis → ANOVA → One-Way or Repeated
+
+Plots → Graphics → Histogram / Boxplot / Scatterplot
+
+Regression → Analysis → Linear Models
+
+17.2 Troubleshooting
+Issue	Solution
+“object not found”	Check variable names (case-sensitive)
+Plot doesn't show	Use print(plot_name) or run outside R chunk
+Model output blank	Use summary(model) instead of just model
+Package not found	Install using install.packages("name")
+
+18. References
+Field, A. (2013). Discovering Statistics Using R.
+
+R Documentation – https://www.rdocumentation.org
+
+BHU Faculty Portal – Dr. Harsh Pradhan
+
+RKWard Guidebook – https://rkward.kde.org

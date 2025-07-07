@@ -1,0 +1,324 @@
+---
+title: "Basic Statistics_6"
+author: "Dr. Harsh Pradhan"
+institute: "Institute of Management Studies, Banaras Hindu University"
+course: "Basic Statistics using GUI-R (RKWard)"
+module: "Week 6 – Lectures 28 to 31"
+format: html
+toc: true
+number-sections: true
+editor: visual
+highlight-style: github
+---
+
+# Table of Contents
+
+1.  [Introduction](#introduction)
+2.  [Chi-Square Test of Goodness of Fit](#chi-square-test-of-goodness-of-fit)
+3.  [Chi-Square Test of Independence](#chi-square-test-of-independence)
+4.  [Non-Parametric Tests](#non-parametric-tests)
+5.  [Non-Linear and Logistic Regression](#non-linear-and-logistic-regression)
+6.  [Poisson & Negative Binomial Distribution](#poisson--negative-binomial-distribution)
+7.  [Robust and Bayesian Regression](#robust-and-bayesian-regression)
+8.  [Model Fit Diagnostics](#model-fit-diagnostics)
+9.  [Exercises, Simulations, & Datasets](#exercises-simulations--datasets)
+10. [Summary](#summary)
+11. [References](#references)
+
+------------------------------------------------------------------------
+
+## 1. Introduction {#introduction}
+
+This Week 6 eBook focuses on advanced statistical procedures for analyzing categorical and non-normal data using **RKWard**, a GUI-based frontend to R.
+
+We address: - When traditional parametric methods fail - Tools for ordinal, non-linear, or count data - How to interpret diagnostic plots, residuals, and goodness-of-fit metrics
+
+------------------------------------------------------------------------
+
+## 2. Chi-Square Test of Goodness of Fit {#chi-square-test-of-goodness-of-fit}
+
+### Theory Refresher
+
+Use this test to see if observed frequency data matches a theoretical distribution (e.g., uniform, binomial, Poisson).
+
+### 📊 Example 1: Dice Fairness
+
+obs \<- c(9, 7, 6, 4, 5, 5) expected \<- rep(sum(obs)/6, 6) chisq.test(obs, p = rep(1/6, 6)) 📊 Example 2: Simulated Biased Die (Monte Carlo)
+
+set.seed(42) sim_data \<- sample(1:6, size = 600, replace = TRUE, prob = c(0.1, 0.1, 0.2, 0.2, 0.2, 0.2)) table_sim \<- table(sim_data) chisq.test(table_sim, p = rep(1/6, 6)) 📊 Example 3: Poisson-GOF for Counts
+
+library(MASS) data_counts \<- rpois(100, lambda = 3) obs_table \<- table(data_counts) exp_probs \<- dpois(as.numeric(names(obs_table)), lambda = 3) chisq.test(obs_table, p = exp_probs/sum(exp_probs)) 🎨 Visualizing Frequencies
+
+barplot(rbind(obs, expected), beside = TRUE, col = c("skyblue", "orange"), legend.text = c("Observed", "Expected"), main = "Dice Roll Distribution") 3. Chi-Square Test of Independence 🔍 Purpose Test whether two categorical variables are independent.
+
+📊 Example 1: Gender vs Preference
+
+df \<- data.frame( Gender = c("Male", "Male", "Female", "Female"), Laptop = c("Gaming", "Non-Gaming", "Gaming", "Non-Gaming"), Freq = c(27, 8, 5, 7) ) table_df \<- xtabs(Freq \~ Gender + Laptop, data = df) chisq.test(table_df) 📊 Example 2: Titanic Survival
+
+library(datasets) data(Titanic) chisq.test(Titanic) 📊 Example 3: Simulated Survey
+
+set.seed(123) survey \<- data.frame( Smoke = sample(c("Yes", "No"), 100, replace = TRUE), Exer = sample(c("None", "Some", "Regular"), 100, replace = TRUE) ) tb \<- table(survey$Smoke, survey$Exer) chisq.test(tb) 📉 Association Strength
+
+library(vcd) assocstats(tb) 4. Non-Parametric Tests 🎯 Why Use Them? Parametric assumptions (normality, equal variance) are not always met. Non-parametric tests allow analysis without these constraints.
+
+📋 Common Tests Parametric Non-Parametric Equivalent One-sample t-test Wilcoxon Signed-Rank Test Two-sample t-test Mann-Whitney U Test One-Way ANOVA Kruskal-Wallis Test Two-Way ANOVA Friedman Test Pearson Correlation Spearman Rank Correlation
+
+📊 Example 1: Wilcoxon Test (Single Sample)
+
+data \<- c(3.1, 3.6, 3.8, 4.0, 3.5) wilcox.test(data, mu = 3.5) 📊 Example 2: Mann-Whitney (Between Groups)
+
+group_a \<- c(10, 12, 14, 16) group_b \<- c(8, 9, 10, 11) wilcox.test(group_a, group_b) 📊 Example 3: Kruskal-Wallis on Iris
+
+kruskal.test(Sepal.Length \~ Species, data = iris) 📊 Example 4: Spearman Rank Correlation
+
+cor.test(iris$Sepal.Length, iris$Petal.Length, method = "spearman") 🚧 Next: Part 2 — covering:
+
+Non-Linear Regression
+
+Logistic Regression
+
+Poisson & Negative Binomial
+
+Robust & Bayesian Regression
+
+Model Fit Diagnostics
+
+Simulations, Interactive Plots
+
+## 5. Non-Linear and Logistic Regression {#non-linear-and-logistic-regression}
+
+### 5.1 Non-Linear Regression
+
+Used when data shows curvature, not a straight-line relationship.
+
+### 📊 Example 1: Quadratic Fit
+
+\`\`\`r x \<- 1:10 y \<- 5 + 2 \* x\^2 + rnorm(10, 0, 10) model_quad \<- lm(y \~ poly(x, 2, raw = TRUE)) summary(model_quad) plot(x, y) lines(x, predict(model_quad), col = "red") 📊 Example 2: Exponential Growth
+
+x \<- 1:20 y \<- 2 \* exp(0.3 \* x) + rnorm(20, 0, 10) df \<- data.frame(x, y) model_exp \<- nls(y \~ a \* exp(b \* x), data = df, start = list(a = 1, b = 0.1)) summary(model_exp) 5.2 Logistic Regression 📊 Example: Student Pass/Fail
+
+students \<- data.frame( Hours = c(1,2,3,4,5,6,7,8,9,10), Pass = c(0,0,0,1,1,1,1,1,1,1) )
+
+log_model \<- glm(Pass \~ Hours, data = students, family = binomial()) summary(log_model) 🔁 Predict Probabilities
+
+students$prob <- predict(log_model, type = "response")
+plot(students$Hours, students\$prob, type = "b", col = "blue") 🎯 ROC Curve
+
+library(pROC) roc_obj \<- roc(students$Pass, students$prob) plot(roc_obj) auc(roc_obj) 6. Poisson & Negative Binomial Distribution 6.1 Poisson: Modeling Rare Events
+
+lambda \<- 4 data_pois \<- rpois(100, lambda) hist(data_pois, col = "steelblue", main = "Poisson Distribution") 🔍 Test Fit
+
+observed \<- table(data_pois) expected \<- dpois(as.numeric(names(observed)), lambda = lambda) chisq.test(observed, p = expected / sum(expected)) 6.2 Negative Binomial: Handling Overdispersion
+
+library(MASS) nb_data \<- rnbinom(100, size = 5, mu = 4) hist(nb_data, col = "darkred", main = "Negative Binomial") 🔬 Compare Fit
+
+mean(data_pois); var(data_pois) \# Poisson: mean ≈ variance mean(nb_data); var(nb_data) \# NB: var \> mean 7. Robust and Bayesian Regression 7.1 Robust Regression
+
+library(MASS) x \<- 1:10 y \<- 2\*x + rnorm(10) y\[10\] \<- 100 \# Outlier
+
+model_rlm \<- rlm(y \~ x) summary(model_rlm) plot(x, y) abline(model_rlm, col = "red") 7.2 Bayesian Regression (brms)
+
+library(brms) data \<- data.frame(x = rnorm(100), y = rnorm(100)) model_brm \<- brm(y \~ x, data = data, family = gaussian(), chains = 2, iter = 1000) summary(model_brm) plot(model_brm) 8. Model Fit Diagnostics 🔎 AIC & BIC
+
+AIC(model_quad, log_model) BIC(model_quad, log_model) 📈 Residual Plots
+
+par(mfrow=c(2,2)) plot(log_model) 🧪 Durbin-Watson Test
+
+library(car) durbinWatsonTest(log_model) 9. Exercises, Simulations, & Datasets 🧠 Challenge 1: Titanic Chi-Square
+
+chisq.test(Titanic) 🧠 Challenge 2: Spearman on mtcars
+
+cor.test(mtcars$mpg, mtcars$hp, method = "spearman") 🧠 Challenge 3: Logistic + Polynomial
+
+mtcars$am <- as.factor(mtcars$am) log_mod \<- glm(am \~ poly(mpg, 2), data = mtcars, family = binomial()) summary(log_mod) 🧠 Challenge 4: Negative Binomial Fit
+
+library(MASS) data \<- rnegbin(100, theta = 2) fit_nb \<- glm.nb(data \~ 1) summary(fit_nb) 10. Summary This module brought together:
+
+💡 Chi-Square Tests for independence and fit
+
+🧱 Non-parametric alternatives to parametric tests
+
+🔁 Logistic Regression for classification
+
+📊 Poisson and NB distributions for count data
+
+🧠 Robust and Bayesian inference for resistant modeling
+
+🧪 Diagnostics to ensure model quality
+
+11. References
+
+Dr. Harsh Pradhan, BHU Lecture Notes R Core Team (2024). The R Project for Statistical Computing. MASS, brms, car, vcd, performance, tidyverse packages Text: Field, A. (2013). Discovering Statistics Using R
+
+### 🚀 Next Steps
+
+Coming in Part 3:
+
+Multinomial and ordinal logistic regression
+
+Zero-inflated Poisson (ZIP) and hurdle models
+
+Bootstrapping and permutation tests
+
+RMarkdown interactivity: sliders, code widgets
+
+Custom diagnostic dashboards
+
+Expanded regression use cases: finance, healthcare, social science
+
+Brute-force simulations, grid search tuning, multiple datasets
+
+Data cleaning + wrangling using dplyr, janitor, and tidymodels
+
+## 12. Advanced Logistic Models
+
+### 12.1 Multinomial Logistic Regression
+
+Used when the outcome variable has more than two categories (e.g., "Low", "Medium", "High").
+
+library(nnet) data(iris) iris$Size <- cut(iris$Sepal.Length, breaks=3, labels=c("Short", "Medium", "Long")) model_multi \<- multinom(Size \~ Sepal.Width + Petal.Length, data=iris) summary(model_multi) 12.2 Ordinal Logistic Regression For ordered categories.
+
+library(MASS) housing \<- data.frame( Sat = factor(sample(1:3, 100, replace = TRUE), labels = c("Low", "Med", "High")), Infl = sample(1:5, 100, replace = TRUE), Type = sample(c("Tower", "Apartment", "House"), 100, replace = TRUE) ) model_ord \<- polr(Sat \~ Infl + Type, data = housing, Hess=TRUE) summary(model_ord) 13. Zero-Inflated and Hurdle Models 13.1 Zero-Inflated Poisson (ZIP) Used when count data has excess zeros.
+
+library(pscl) data("bioChemists", package = "pscl") zip_model \<- zeroinfl(art \~ fem + mar + kid5 + phd + ment, data = bioChemists, dist = "poisson") summary(zip_model) 13.2 Hurdle Model
+
+hurdle_model \<- hurdle(art \~ fem + mar + kid5 + phd + ment, data = bioChemists) summary(hurdle_model) 14. Bootstrapping & Permutation Testing 14.1 Bootstrapping a Mean
+
+library(boot) data \<- rnorm(50, mean = 10, sd = 3)
+
+mean_fn \<- function(data, indices) { d \<- data\[indices\] return(mean(d)) }
+
+boot_out \<- boot(data = data, statistic = mean_fn, R = 1000) boot.ci(boot_out, type = "bca") 14.2 Permutation Test Example
+
+set.seed(100) group1 \<- rnorm(20, mean = 50) group2 \<- rnorm(20, mean = 55)
+
+obs_diff \<- mean(group1) - mean(group2)
+
+combined \<- c(group1, group2) perm_diffs \<- replicate(5000, { shuffled \<- sample(combined) mean(shuffled\[1:20\]) - mean(shuffled\[21:40\]) })
+
+p_value \<- mean(abs(perm_diffs) \>= abs(obs_diff)) hist(perm_diffs, main = "Permutation Test", col = "lightblue") abline(v = obs_diff, col = "red") 15. Interactive Widgets with Quarto Sliders
+
+sliderInput("lambda", "Poisson Rate:", min = 1, max = 10, value = 3) plotOutput("poisPlot")
+
+output$poisPlot <- renderPlot({
+  barplot(dpois(0:10, input$lambda), names.arg = 0:10, main = paste("Poisson Distribution with λ =", input\$lambda), col = "steelblue") }) 16. Data Wrangling Pipelines Cleaning & Summarizing
+
+library(dplyr) library(janitor)
+
+cleaned \<- iris %\>% clean_names() %\>% group_by(species) %\>% summarise(across(everything(), mean, .names = "avg\_{.col}")) 17. Visual Diagnostics 17.1 Residual Diagnostics
+
+library(performance) model \<- lm(mpg \~ wt + hp, data = mtcars) performance::check_model(model) 17.2 Leverage & Influence
+
+influence.measures(model) plot(hatvalues(model), main = "Leverage Values") 18. Grid Search and Cross Validation Using caret package
+
+library(caret) data(iris)
+
+train_control \<- trainControl(method = "cv", number = 5) grid \<- expand.grid(.k = seq(3, 15, by = 2))
+
+model_knn \<- train(Species \~ ., data = iris, method = "knn", trControl = train_control, tuneGrid = grid) plot(model_knn) 19. Case Study: Healthcare Outcomes Predicting hospital readmission using logistic regression.
+
+set.seed(42) df \<- data.frame( age = sample(20:90, 200, replace = TRUE), diabetes = sample(c(0,1), 200, replace = TRUE), readmit = sample(c(0,1), 200, replace = TRUE) )
+
+logit \<- glm(readmit \~ age + diabetes, data = df, family = binomial()) summary(logit) Plot Prediction
+
+df$pred <- predict(logit, type = "response")
+plot(df$age, df$pred, col = df$diabetes + 1, pch = 19, xlab = "Age", ylab = "Predicted Probability") 20. Massive Simulation: Chi-Square Distribution
+
+set.seed(123) sim_data \<- replicate(10000, { obs \<- rpois(6, lambda = 10) exp \<- rep(mean(obs), 6) sum((obs - exp)\^2 / exp) })
+
+hist(sim_data, breaks = 50, col = "gray", main = "Chi-Square Simulated Distribution") abline(v = qchisq(0.95, df = 5), col = "red") 21. Resources for Practice Datasets:
+
+mtcars, iris, Titanic, bioChemists, airquality, faithful
+
+Visual tools:
+
+plotly, ggplot2, performance, brms
+
+Core Packages:
+
+caret, pscl, nnet, MASS, boot, dplyr, tidymodels, vcd
+
+22. Final Thoughts
+
+Testing relationships (Chi-Square)
+
+Modeling categories (Logistic, Ordinal, Multinomial)
+
+Working with counts (Poisson, ZIP, NB)
+
+Handling noise and outliers (Robust Regression)
+
+Going Bayesian (brms + Stan)
+
+Validating rigorously (cross-validation, bootstrap, ROC, AIC/BIC)
+
+This eBook can be extended to predictive modeling, real-world dashboards, and reproducible research.
+
+## 23. Project Template: Real-World Case Study Framework
+
+### Objective
+
+Develop an end-to-end statistical analysis pipeline using tools covered in this course.
+
+------------------------------------------------------------------------
+
+### 📁 Dataset: Custom or Open Data Portal
+
+Options: - UCI Machine Learning Repository - Kaggle Datasets - Indian Government Data Portals (data.gov.in)
+
+------------------------------------------------------------------------
+
+### Steps:
+
+#### 🔍 Step 1: Problem Definition
+
+Define a question like: \> “Is there an association between education level and voting preference?”
+
+------------------------------------------------------------------------
+
+#### 🧹 Step 2: Data Cleaning
+
+library(tidyverse) data \<- read.csv("your_dataset.csv") data_clean \<- data %\>% janitor::clean_names() %\>% drop_na() 📊 Step 3: EDA (Exploratory Data Analysis)
+
+ggplot(data_clean, aes(x = variable1, fill = factor(variable2))) + geom_bar(position = "dodge") + theme_minimal() 📈 Step 4: Modeling Choose one or more:
+
+Chi-square (for independence)
+
+Logistic Regression (for binary outcomes)
+
+Poisson/NB (for count outcomes)
+
+Non-parametric (when assumptions fail)
+
+🧪 Step 5: Validation
+
+library(performance) check_model(your_model) 📋 Step 6: Reporting Use:
+
+Tables
+
+Model summaries
+
+AIC/BIC
+
+Residuals
+
+R² (if applicable)
+
+summary(your_model) 24. Visual Appendix: Model Diagnostic Gallery library(performance) library(see)
+
+# Example with linear model
+
+model \<- lm(mpg \~ hp + wt, data = mtcars)
+
+# Model diagnostics
+
+check_model(model) 25. Bonus: Live Simulation Tool with Shiny
+
+Edit library(shiny)
+
+ui \<- fluidPage( titlePanel("Poisson Simulator"), sidebarLayout( sidebarPanel( sliderInput("lambda", "Lambda (Rate)", 1, 10, value = 3) ), mainPanel( plotOutput("poisPlot") ) ) )
+
+server \<- function(input, output) { output$poisPlot <- renderPlot({
+    barplot(dpois(0:10, input$lambda), names.arg = 0:10, main = paste("Poisson Distribution (λ =", input\$lambda, ")"), col = "steelblue") }) }
+
+shinyApp(ui = ui, server = server) 26. Advanced Topics for Further Exploration Topic Package Description Bayesian Multilevel brms, rstan Hierarchical regression models Structural Equation lavaan Latent variable modeling Time Series Forecasting forecast, tsibble ARIMA, exponential smoothing Mixed-Effects Models lme4, nlme Random intercept/slope models Missing Data Handling mice, missForest Imputation strategies High-Dimensional Data glmnet Lasso and Ridge regression
