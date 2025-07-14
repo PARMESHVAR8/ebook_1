@@ -19,39 +19,39 @@ format:
 bibliography: references.bib
 ---
 
-# Introduction
+## Introduction
 
 This eBook is a comprehensive companion to the course *Basic Statistics using GUI-R (RKWard)*. It includes foundational theory, practical examples, and step-by-step explanations, with integrated GUI-R usage.
 
-# Course Overview
+## Course Overview
 
-## Course Name
+### Course Name
 
 **Basic Statistics using GUI-R (RKWard)**
 
-## Instructor Profile
+### Instructor Profile
 
 Dr. Harsh Pradhan is Assistant Professor at the Institute of Management Studies, Banaras Hindu University.  
 📎 [Faculty Profile](https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562)
 
-## Learning Objectives
+### Learning Objectives
 
 - Understand core concepts in statistics
 - Apply t-tests and ANOVA using real data
 - Compute confidence intervals and test statistics
 - Use GUI-R (RKWard) for statistical analysis
 
-# Chapter 1: Fundamental Concepts
+## Chapter 1: Fundamental Concepts
 
-## Descriptive Statistics
+### Descriptive Statistics
 
-### Central Tendency
+#### Central Tendency
 
 - **Mean**  
 - **Median**  
 - **Mode**  
 
-### Dispersion
+#### Dispersion
 
 - **Range**  
 - **Variance**  
@@ -66,7 +66,7 @@ median(data)
 sd(data)
 ```
 
-## Standard Error
+### Standard Error
 
 $$
 SE = \frac{s}{\sqrt{n}}
@@ -74,7 +74,7 @@ $$
 
 Small SE = sample mean is a good estimate of the population mean.
 
-## Central Limit Theorem
+### Central Limit Theorem
 
 For $n > 30$, sampling distribution of the mean approximates normal:
 
@@ -82,7 +82,7 @@ $$
 \bar{X} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})
 $$
 
-## Confidence Intervals
+### Confidence Intervals
 
 $$
 CI = \bar{x} \pm Z \cdot \frac{s}{\sqrt{n}}
@@ -90,32 +90,32 @@ $$
 
 Interpret 95% CI as: 95 of 100 such intervals would contain the true mean.
 
-# Chapter 2: Estimation
+## Chapter 2: Estimation
 
-## Types of Estimates
+### Types of Estimates
 
 | Type            | Description          | Example        |
 |-----------------|----------------------|----------------|
 | Point Estimate  | Single value         | Sample mean    |
 | Interval Estimate| Range + confidence | Confidence Int |
 
-## Parameter vs Statistic
+### Parameter vs Statistic
 
 | Term       | Description                            |
 |------------|----------------------------------------|
 | Parameter  | Value from population (e.g., $\mu$)    |
 | Statistic  | Value from sample (e.g., $\bar{x}$)    |
 
-# Chapter 3: Hypothesis Testing
+## Chapter 3: Hypothesis Testing
 
 - **Null Hypothesis ($H_0$)**: No effect  
 - **Alternative Hypothesis ($H_1$)**: Some effect  
 - **Type I Error**: Reject $H_0$ when true  
 - **Type II Error**: Fail to reject $H_0$ when false
 
-# Chapter 4: Student’s T-Test
+## Chapter 4: Student's T-Test
 
-## Types
+### Types
 
 | Test Type         | Description                    |
 |-------------------|--------------------------------|
@@ -123,43 +123,43 @@ Interpret 95% CI as: 95 of 100 such intervals would contain the true mean.
 | Independent       | Compare two unrelated groups   |
 | Paired            | Compare two related groups     |
 
-## One-Sample T-Test Example
+### One-Sample T-Test Example
 
 ```{r}
 data <- c(22, 24, 27, 26, 28, 23, 25, 29, 21, 26, 24, 27)
 t.test(data, mu = 25)
 ```
 
-## Test Statistic
+### Test Statistic
 
 $$
 t = \frac{\bar{x} - \mu}{SE}
 $$
 
-## Degrees of Freedom
+### Degrees of Freedom
 
 $$
 df = n - 1
 $$
 
-## Decision Rule
+### Decision Rule
 
 Compare calculated $t$ to table value. If $|t| > t_{critical}$, reject $H_0$.
 
-## T-Test in GUI-R
+### T-Test in GUI-R
 
 1. Import data  
 2. Choose T-Test  
 3. Define groups  
 4. Run & interpret output
 
-# Chapter 5: ANOVA
+## Chapter 5: ANOVA
 
-## Purpose
+### Purpose
 
 Used when comparing means across 3+ groups.
 
-### One-Way ANOVA Formula
+#### One-Way ANOVA Formula
 
 $$
 F = \frac{MS_{between}}{MS_{within}}
@@ -170,13 +170,13 @@ Where:
 - $MS_{between} = \frac{SS_{between}}{df_{between}}$  
 - $MS_{within} = \frac{SS_{within}}{df_{within}}$  
 
-### Assumptions
+#### Assumptions
 
 - Normality  
 - Homogeneity of variance  
 - Independence  
 
-### Example Table
+#### Example Table
 
 | Group | Mean | Var | n  |
 |-------|------|-----|----|
@@ -184,18 +184,18 @@ Where:
 | B     | 7.1  | 2.0 | 30 |
 | C     | 6.8  | 1.8 | 30 |
 
-## Post-Hoc Tests
+### Post-Hoc Tests
 
 Run if ANOVA is significant to locate pairwise differences.
 
-## ANOVA in GUI-R
+### ANOVA in GUI-R
 
 1. Load data  
 2. Choose "One-Way ANOVA"  
 3. Define groups  
 4. Interpret output
 
-# Chapter 6: GUI-R Workflow
+## Chapter 6: GUI-R Workflow
 
 1. **Import Data** (CSV, Excel)  
 2. **Choose Test** (T-Test, ANOVA, etc.)  
@@ -203,9 +203,9 @@ Run if ANOVA is significant to locate pairwise differences.
 4. **Interpret** the output  
 5. **Export** the results or visualizations
 
-# Chapter 7: Advanced Concepts
+## Chapter 7: Advanced Concepts
 
-## Variance Partitioning
+### Variance Partitioning
 
 $$
 \text{Total Variance} = \text{Explained Variance} + \text{Unexplained Variance}
@@ -217,17 +217,17 @@ $$
 | Predictive          | Error               |
 | Deterministic       | Noise               |
 
-## Degrees of Freedom
+### Degrees of Freedom
 
 For equation $x + y + z = 3$, if 2 values are known, third is fixed.  
 Hence, $df = n - k$ where $n$ = total variables, $k$ = constraints.
 
-## Chi-Square and F Distribution
+### Chi-Square and F Distribution
 
 - **Chi-Square**: Categorical variable comparison  
 - **F-Distribution**: Used in ANOVA, variance testing
 
-## Univariate, Bivariate, Multivariate
+### Univariate, Bivariate, Multivariate
 
 | Type        | Variables | Example                         |
 |-------------|-----------|---------------------------------|
@@ -235,7 +235,7 @@ Hence, $df = n - k$ where $n$ = total variables, $k$ = constraints.
 | Bivariate   | 2         | Height vs Weight                |
 | Multivariate| >2        | Study w/ Age, Gender, Income    |
 
-## Parametric Test Assumptions
+### Parametric Test Assumptions
 
 - Interval/Ratio DV  
 - Random Sampling  
@@ -244,7 +244,7 @@ Hence, $df = n - k$ where $n$ = total variables, $k$ = constraints.
 
 If assumptions violated → use non-parametric test.
 
-## Effect Size
+### Effect Size
 
 $$
 \text{Effect Size} = \frac{|\mu_1 - \mu_2|}{\sigma}
@@ -252,7 +252,7 @@ $$
 
 Used for comparison across studies.
 
-## Power of a Test
+### Power of a Test
 
 $$
 \text{Power} = 1 - \beta
@@ -261,23 +261,23 @@ $$
 Higher power → lower chance of Type II error  
 Power increases with sample size, effect size
 
-# Conclusion
+## Conclusion
 
 Statistics is the language of data. GUI-R makes statistical tools accessible for everyone. This book empowers you to analyze data effectively using t-tests, ANOVA, and confidence intervals in a GUI environment.
 
-# References
+## References
 
 - Pradhan, H. (2023). *Basic Statistics using GUI-R (RKWard)*  
 - Field, A. (2013). *Discovering Statistics Using R*.  
 - [https://methods.sagepub.com](https://methods.sagepub.com)  
 
-# Chapter 8: Advanced T-Test Applications
+## Chapter 8: Advanced T-Test Applications
 
-## Paired Sample T-Test
+### Paired Sample T-Test
 
 Used when the same group is measured twice (e.g., before and after).
 
-### Example:
+#### Example:
 
 ```{r}
 before <- c(80, 82, 79, 84, 88)
@@ -285,7 +285,7 @@ after <- c(78, 81, 76, 83, 86)
 t.test(before, after, paired = TRUE)
 ```
 
-## Independent Samples T-Test
+### Independent Samples T-Test
 
 Compare means of two unrelated groups.
 
@@ -295,16 +295,16 @@ group2 <- c(80, 83, 85, 84, 82)
 t.test(group1, group2)
 ```
 
-## One-Sample T-Test with GUI-R
+### One-Sample T-Test with GUI-R
 
 - Import dataset
 - Use 'Descriptive Statistics' to check mean
 - Navigate to 'T-Test' → 'One Sample'
 - Input hypothesized mean and run
 
-# Chapter 9: More on Confidence Intervals
+## Chapter 9: More on Confidence Intervals
 
-## Visualizing Confidence Intervals in R
+### Visualizing Confidence Intervals in R
 
 ```{r}
 x <- c(88, 90, 85, 87, 89)
@@ -325,29 +325,41 @@ ggplot(df, aes(y = x, x = 1)) +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1)
 ```
 
-# Chapter 10: Robust ANOVA Models
+## Chapter 10: Robust ANOVA Models
 
-## Two-Way ANOVA
+### Two-Way ANOVA
 
 Examines the effect of two categorical independent variables on a continuous dependent variable.
 
 ```{r}
+# Sample dataset for demonstration
+dataset <- data.frame(
+  score = c(85, 90, 88, 92, 87, 80, 83, 85, 84, 82),
+  gender = rep(c("Male", "Female"), each = 5),
+  teaching_method = rep(c("A", "B"), times = 5)
+)
 aov_result <- aov(score ~ gender * teaching_method, data = dataset)
 summary(aov_result)
 ```
 
-## Repeated Measures ANOVA
+### Repeated Measures ANOVA
 
 Use when the same subjects are used for each treatment.
 
 ```{r}
+# Sample repeated measures data in long format
+data_long <- data.frame(
+  id = rep(1:5, each = 3),
+  condition = rep(c("A", "B", "C"), times = 5),
+  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91)
+)
 library(ez)
 ezANOVA(data = data_long, dv = .(score), wid = .(id), within = .(condition))
 ```
 
-# Chapter 11: Effect Size Measures
+## Chapter 11: Effect Size Measures
 
-## Cohen’s d
+### Cohen's d
 
 $$
 d = \frac{\bar{x}_1 - \bar{x}_2}{s_p}
@@ -355,14 +367,14 @@ $$
 
 Where $s_p$ is the pooled standard deviation.
 
-### R Example
+#### R Example
 
 ```{r}
 library(effsize)
 cohen.d(group1, group2)
 ```
 
-## Eta-Squared ($\eta^2$)
+### Eta-Squared ($\eta^2$)
 
 Used for ANOVA:
 
@@ -370,13 +382,15 @@ $$
 \eta^2 = \frac{SS_{between}}{SS_{total}}
 $$
 
-# Chapter 12: Statistical Assumptions Checking
+## Chapter 12: Statistical Assumptions Checking
 
-## Normality
+### Normality
 
 Use Shapiro-Wilk test:
 
 ```{r}
+# Sample data frame for normality test
+data <- data.frame(variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87))
 shapiro.test(data$variable)
 ```
 
@@ -387,38 +401,48 @@ qqnorm(data$variable)
 qqline(data$variable)
 ```
 
-## Homogeneity of Variance
+### Homogeneity of Variance
 
-Use Levene’s Test:
+Use Levene's Test:
 
 ```{r}
+# Sample data frame for Levene's Test
+data <- data.frame(
+  variable = c(88, 90, 85, 87, 89, 91, 92, 88, 90, 87),
+  group = rep(c("A", "B"), each = 5)
+)
 library(car)
 leveneTest(variable ~ group, data = data)
 ```
 
-# Chapter 13: Non-Parametric Alternatives
+## Chapter 13: Non-Parametric Alternatives
 
-## Wilcoxon Signed Rank Test
+### Wilcoxon Signed Rank Test
 
 ```{r}
 wilcox.test(before, after, paired = TRUE)
 ```
 
-## Mann-Whitney U Test
+### Mann-Whitney U Test
 
 ```{r}
 wilcox.test(group1, group2)
 ```
 
-## Kruskal-Wallis Test
+### Kruskal-Wallis Test
 
 Non-parametric alternative to ANOVA.
 
 ```{r}
+# Sample data frame for Kruskal-Wallis Test
+data <- data.frame(
+  score = c(85, 88, 90, 80, 82, 85, 78, 80, 83, 90, 92, 95, 88, 90, 91),
+  group = rep(c("A", "B", "C"), times = 5)
+)
 kruskal.test(score ~ group, data = data)
 ```
 
-# Chapter 14: Visualizing Statistical Results
+## Visualizing Statistical Results
 
 ## Boxplots
 
@@ -427,27 +451,27 @@ ggplot(data, aes(x = group, y = score)) +
   geom_boxplot()
 ```
 
-## Histograms
+### Histograms
 
 ```{r}
 ggplot(data, aes(x = score)) +
   geom_histogram(binwidth = 2)
 ```
 
-## Density Plot
+### Density Plot
 
 ```{r}
 ggplot(data, aes(x = score)) +
   geom_density()
 ```
 
-# Chapter 15: RKWard (GUI-R) Tips
+## RKWard (GUI-R) Tips
 
 - Use menu-based analysis for beginners
 - Save and export plots easily
 - Integrate with R scripts for reproducibility
 
-## 📘Summary: Basic Statistics using GUI-R (RKWard)
+### 📘Summary: Basic Statistics using GUI-R (RKWard)
 
 This eBook, authored by Dr. Harsh Pradhan (Assistant Professor at the Institute of Management Studies, Banaras Hindu University), serves as a comprehensive guide to understanding and applying basic statistical concepts, particularly in the GUI-based software RKWard (GUI-R).
 
@@ -482,11 +506,3 @@ Provides example R code for reproducibility.
 Offers practical steps for using GUI-R for all statistical techniques covered.
 Designed to bridge the gap for learners unfamiliar with command-line R.
 
-## 📚 References (Text Format)
-
-Pradhan, H. (2023). Basic Statistics using GUI-R (RKWard). Institute of Management Studies, Banaras Hindu University.
-Field, A. (2013). Discovering Statistics Using R. SAGE Publications.
-SAGE Research Methods. (n.d.). Methods for Statistical Analysis. Retrieved from: https://methods.sagepub.com
-R Core Team (2024). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
-Fox, J. & Weisberg, S. (2019). An R Companion to Applied Regression (3rd ed.). Sage.
-Cohen, J. (1988). Statistical Power Analysis for the Behavioral Sciences (2nd ed.). Lawrence Erlbaum Associates.

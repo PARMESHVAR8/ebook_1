@@ -21,14 +21,14 @@ format:
       - margin=1in
 ---
 
-# Module 1: Introduction to Statistics
+## Module 1: Introduction to Statistics
 
-## Pre-Requisites
+### Pre-Requisites
 
 - Just an open and eager mind
 - Basic understanding of Mathematics or Statistics
 
-## Agenda
+### Agenda
 
 - Meaning of Statistics
 - Nature and Scope
@@ -40,7 +40,7 @@ format:
 
 ---
 
-## Meaning of Statistics
+### Meaning of Statistics
 
 Statistics is a science which provides tools for **analysis and interpretation** of raw data collected for decision-making in diverse fields.
 
@@ -51,7 +51,7 @@ It includes four core concepts:
 - **Parameter** – Numerical summary from population
 - **Statistic** – Numerical summary from sample
 
-## Nature of Statistics
+### Nature of Statistics
 
 - Deals with **numerical facts**
 - Focused on **social phenomena** and real-world data
@@ -60,7 +60,7 @@ It includes four core concepts:
 
 ---
 
-## Uses of Statistics
+### Uses of Statistics
 
 - Drawing representative samples
 - Summarizing collected data
@@ -76,7 +76,7 @@ It includes four core concepts:
   - Industrial and Organizational studies
 
 
-## Limitations of Statistics
+### Limitations of Statistics
 
 - Cannot study **qualitative phenomena** without quantification
 - Not applicable to individuals
@@ -91,7 +91,7 @@ It includes four core concepts:
 - Illogical or **unexpected comparisons**
 
 
-## Fallacies in Statistics
+Fallacies in Statistics
 
 Fallacies may arise from:
 
@@ -102,7 +102,7 @@ Fallacies may arise from:
 - Inappropriate statistical methods
 
 
-# Module 2: Mathematics vs Statistics
+## Module 2: Mathematics vs Statistics
 
 | Aspect         | Mathematics                                      | Statistics                                 |
 |----------------|--------------------------------------------------|--------------------------------------------|
@@ -112,9 +112,9 @@ Fallacies may arise from:
 | Output         | Theorems, functions, formulas                    | Inferences, predictions, summaries         |
 | Tools          | Equations, graphs                                | Charts, tables, models                     |
 
-# Module 3: Software-Based Statistical Revolution
+## Module 3: Software-Based Statistical Revolution
 
-## From Paper to Code
+ ### From Paper to Code
 
 **Why shift to software?**
 
@@ -124,7 +124,7 @@ Fallacies may arise from:
 - **Cloud-based integration**
 - Supports **ML/AI**, automation, and deep visualization
 
-## Popular Statistical Software
+### Popular Statistical Software
 
 | Software        | Type     | Use Case                                |
 |------------------|----------|------------------------------------------|
@@ -135,7 +135,7 @@ Fallacies may arise from:
 | Excel            | GUI      | Basic stats with plugins                 |
 | Python (pandas)  | Script   | Modern data science + ML                 |
 
-## GUI vs CLI
+### GUI vs CLI
 
 | Feature            | GUI (e.g., RKWard)           | Command Line (e.g., R Console)      |
 |--------------------|------------------------------|--------------------------------------|
@@ -145,7 +145,7 @@ Fallacies may arise from:
 | Customization      | Limited                      | Fully scriptable                     |
 | Teaching Utility   | Good for beginners           | Good for understanding logic         |
 
-## Recommended GUI Tools for R
+### Recommended GUI Tools for R
 
 - **RKWard**
 - **Rattle**
@@ -154,7 +154,7 @@ Fallacies may arise from:
 
 > 🔗 [https://rkward.kde.org](https://rkward.kde.org)
 
-## Installing RKWard on Ubuntu
+### Installing RKWard on Ubuntu
 
 bash
 sudo apt install kbibtex kate libcurl4-openssl-dev libssl-dev libxml2-dev cmake
@@ -164,9 +164,9 @@ sudo apt update
 sudo apt-get install rkward
 Awesome. Here's Part 2 of the full markdown, Lines 251–600, continuing the structured content from your Week 1 lecture.
 
-# Module 4: Understanding Variables
+## Module 4: Understanding Variables
 
-## What is a Variable?
+### What is a Variable?
 
 A **variable** is a characteristic or attribute that can assume different values across individuals or items.
 
@@ -448,14 +448,6 @@ https://rkward.kde.org
 https://r4stats.com
 https://cran.r-project.org
 
-
-## Final Takeaways
-
--Statistics is both a science and an art.
--R + RKWard offers an open, flexible system for analysis.
--GUI tools help beginners; CLI gives full control.
--Understanding data types, structures, and visualization is essential.
--Avoid fallacies and misuse; always validate data and logic.
 
 
 

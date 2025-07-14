@@ -24,9 +24,9 @@ format:
 
 ---
 
-# Introduction
+ Introduction
 
-**DR.Harsh Pradhan**, [Phone: +91-9930034241 , Email: harsh.231284\@gmail.com](http://www.ling.uni-potsdam.de/en/), [Institute of Management Studies, Banaras Hindu University](http://www.uni-potsdam.de/en/university-of-potsdam.html), Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 201010\
+**DR.Harsh Pradhan**, [Phone: +91-9930034241 , Email: harsh.231284\@gmail.com], [Institute of Management Studies, Banaras Hindu University](http://www.uni-potsdam.de/en/university-of-potsdam.html), Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 2010\
 **Interest**: [Goal Orientation     Job Performance     Consumer Behavior     Behavioral Finance     Bibiliometric Analysis     Options as Derivatives     Statistics     Indian Knowledge System](http://www.uni-potsdam.de/humfak/hum-forschungsschwerpunkte/forschungscluster-sprache.html),
 
 
@@ -34,32 +34,12 @@ format:
 
 [Orcid ID](https://orcid.org/0000-0002-3332-3610)\
 [Google Scholar](https://scholar.google.com/citations?user=8l5MEd0AAAAJ&hl=en&oi=sra)\
-[GitHub](https://github.com/)\
-[Researcher ID](https://www.webofscience.com/wos/author/record/AIB)\
-[Personal Website](http://https//sites.google.com/view/harshpradhan/home%20%20,%20%20%20%20%20shorturl.at/yzQSX)\
 [Youtube ID](http://www.youtube.com/@dr.harshpradhan742)
 
-**Doing a PhD with me:** [README.1st](http://www.ling.uni-potsdam.de/~vasishth/doingaphdwithme.html)
 
 [Academic Profile](https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562)
 
 ------------------------------------------------------------------------
-
-
-
-
-Topics to be covered:
-
-1.  Basic probability theory, random variable theory (including jointly distributed RVs), probability distributions (including bivariate distributions)
-2.  Using Bayes' rule for statistical inference
-3.  An introduction to (generalized) linear models
-4.  An introduction to hierarchical models
-5.  Measurement error models
-6.  Mixture models
-7.  Model selection and hypothesis testing (Bayes factor and k-fold cross-validation)
-
-## Teaching
-Science and statistics is/are one unitary thing; you cannot do one without the other. Towards this end, I teach some (in my opinion) critically important classes that provide a solid statistical foundation for doing research in cognitive science.
 
 Courses offered:
 
