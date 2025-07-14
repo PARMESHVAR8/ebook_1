@@ -1,0 +1,545 @@
+---
+title: "Week 3"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+---
+
+# Introduction
+
+## Importance of Statistics
+
+Statistics is a powerful tool used across disciplines — from economics and psychology to biology, data science, and machine learning. It enables:
+
+- Interpretation of data
+- Generalization from samples to populations
+- Hypothesis testing and decision-making
+- Prediction and modeling
+
+Understanding statistics is essential for anyone involved in **empirical research**, **policy making**, **data-driven decision-making**, or **scientific inquiry**.
+
+---
+
+## Overview of Topics
+
+This book covers:
+
+- Population vs Sample
+- Hypotheses and Errors
+- Descriptive vs Inferential Statistics
+- Data Types (R + Theoretical)
+- Sampling Techniques
+- Normal Distribution
+- Linear and Logistic Regression
+- GUI-based R interfaces: RKWard, Rcmdr, Rattle
+- Fallacies and misuse in statistics
+- Graphical Methods
+- R programming constructs for statistics
+
+---
+
+# Understanding Populations and Samples
+
+## Population
+
+The complete set of all units of interest. Examples:
+
+- All students in India
+- All electric cars in the U.S.
+
+## Sample
+
+A **subset of the population**, selected for analysis. Goal: represent the population accurately.
+
+## Why Use Samples?
+
+- More practical and cost-efficient
+- Enables faster analysis
+- Allows estimation and inference
+
+## Relation Between Population & Sample
+
+Population → Sample → Statistic → Inference → Population Parameter
+
+---
+
+# Hypotheses and Errors
+
+## Hypothesis Defined
+
+A hypothesis is a testable assumption about a population.
+
+### Null Hypothesis ($H_0$)
+
+- No difference or effect  
+- Example: $H_0$: "μ = 100"
+
+### Alternative Hypothesis ($H_A$)
+
+- A difference or effect exists  
+- Example: $H_A$: "μ ≠ 100"
+
+## Types of Errors
+
+| Error Type   | Description                                          |
+|--------------|------------------------------------------------------|
+| Type I Error | Rejecting $H_0$ when it's true (false positive)     |
+| Type II Error| Failing to reject $H_0$ when it's false (false neg) |
+
+## Significance Level (α)
+
+The probability of making a Type I error — commonly set to **0.05 (5%)**
+
+---
+
+# Inferential Statistics
+
+## Purpose
+
+- Estimate unknown population parameters
+- Test hypotheses
+- Predict outcomes
+
+## Common Techniques
+
+- t-test
+- z-test
+- ANOVA
+- Chi-square
+- Regression
+
+---
+
+## Sampling Techniques
+
+### 1. Simple Random Sampling
+
+Every unit has equal probability.
+
+### 2. Systematic Sampling
+
+Pick every kth element.
+
+### 3. Stratified Sampling
+
+Subdivide population into strata (e.g. age groups), then sample from each.
+
+### 4. Cluster Sampling
+
+Randomly choose entire groups (e.g. schools, cities).
+
+---
+
+## Central Limit Theorem (CLT)
+
+If $n > 30$, the distribution of sample means approximates a **normal distribution** even if the original population is not normal.
+
+Formula:
+
+$$
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}
+$$
+
+---
+
+# Descriptive Statistics
+
+## Measures of Central Tendency
+
+### Mean
+
+$$
+\bar{x} = \frac{\sum x_i}{n}
+$$
+
+### Median
+
+Middle value in an ordered dataset.
+
+### Mode
+
+Most frequent value.
+
+---
+
+## Measures of Dispersion
+
+### Range
+
+$$
+Range = Max - Min
+$$
+
+### Variance
+
+$$
+s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}
+$$
+
+### Standard Deviation
+
+$$
+s = \sqrt{s^2}
+$$
+
+---
+
+## Measures of Shape
+
+- **Skewness**: Degree of asymmetry
+- **Kurtosis**: Peakedness of distribution
+
+---
+
+# Graphical Methods
+
+## Histogram
+
+r
+hist(data$height, col="blue", main="Height Distribution")
+Boxplot
+
+boxplot(data$score ~ data$group)
+Scatter Plot
+
+plot(data$x, data$y, col="red")
+Ogive (Cumulative Frequency Plot)
+
+Built using cumulative frequency of class intervals.
+
+## R Data Types and Structures
+
+Basic Data Types
+
+x <- 12.5         # numeric
+y <- as.integer(5) # integer
+z <- 4 + 3i        # complex
+name <- "Ravi"     # character
+flag <- TRUE       # logical
+Vectors
+
+v <- c(1, 2, 3)
+Matrices
+
+m <- matrix(1:9, nrow=3, byrow=TRUE)
+Data Frame
+
+df <- data.frame(Name=c("A", "B"), Score=c(89, 94))
+Lists
+
+lst <- list(id=101, name="John", marks=c(78, 82))
+Factors
+
+gender <- factor(c("Male", "Female", "Male"))
+Statistical Fallacies
+
+What are Fallacies?
+
+Fallacies occur when conclusions are drawn based on flawed statistical reasoning.
+
+Common Fallacies
+
+Improper Sampling
+Misleading Graphs
+Ambiguous Term Definitions
+Ignoring Confounding Variables
+Assuming Correlation Implies Causation
+Misuse of Statistics
+
+Examples of Misuse
+
+Using biased samples
+Cherry-picking data
+Using 3D pie charts to exaggerate results
+Misrepresenting scale in graphs
+
+## Comparing R vs Excel vs GUI-R (RKWard)
+
+| Feature           | R (Script) | Excel      | RKWard GUI        |
+| ----------------- | ---------- | ---------- | ----------------- |
+| Usability         | Medium     | Easy       | Easy              |
+| Flexibility       | High       | Low-Medium | Medium            |
+| Statistical Power | Very High  | Low        | High              |
+| Graphics          | ggplot2    | Basic      | ggplot2 supported |
+| Reproducibility   | High       | Low        | High              |
+
+## Installing RKWard (Ubuntu)
+$$
+sudo apt install kbibtex kate libcurl4-openssl-dev libssl-dev libxml2-dev cmake
+sudo add-apt-repository ppa:rkward-devel/rkward-stable
+echo "deb https://ppa.launchpad.net/rkward-devel/rkward-stable/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/rkward.list
+sudo apt update
+sudo apt-get install rkward
+$$
+
+## Teaching Tools in RKWard
+
+$$
+install.packages(c("R2HTML", "car", "e1071", "Hmisc", "plyr", "ggplot2", "prob", "ez", "multcomp", "remotes"), dependencies=TRUE)
+remotes::install_github("cran/prob")
+remotes::install_github("rkward-community/rk.Teaching")
+$$
+
+## GUI-Based Statistical Tools
+
+RKWard – KDE interface for R
+Rcmdr – Classic R Commander GUI
+Rattle – Data mining GUI in R
+R AnalyticFlow – Flow-based programming for statistics
+
+# Linear Regression in R
+
+## What is Linear Regression?
+
+Linear regression models the relationship between a **dependent variable (Y)** and one or more **independent variables (X)**.
+
+### Simple Linear Regression Equation:
+
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
+$$
+
+Where:
+
+- $Y$ is the dependent variable  
+- $X$ is the independent variable  
+- $\beta_0$ is the intercept  
+- $\beta_1$ is the slope  
+- $\epsilon$ is the error term  
+
+## Code Example
+
+r
+# Load data
+data(mtcars)
+
+# Fit model
+model <- lm(mpg ~ wt, data=mtcars)
+
+# Summary
+summary(model)
+ 
+## Adjusted R-squared
+
+Penalizes the number of predictors to avoid overfitting.
+
+AIC & BIC
+
+AIC: Akaike Information Criterion
+BIC: Bayesian Information Criterion
+Lower values of AIC/BIC → better model fit (with penalty for complexity).
+
+## Normal Distribution
+
+Key Properties
+
+Symmetrical, bell-shaped curve
+Mean = Median = Mode
+Total area under curve = 1
+Empirical Rule:
+68% within ±1 SD
+95% within ±2 SD
+99.7% within ±3 SD
+
+Example:
+Given: Mean = 70, SD = 5, X = 75
+
+z <- (75 - 70) / 5  # Result: 1.0
+Z-Table Usage
+
+Find the area under the curve to the left of the z-score
+Useful for probability and percentile ranking
+
+## Data Import Techniques
+
+CSV Import in R
+
+df <- read.csv("data.csv", header=TRUE)
+head(df)
+Excel Import (using readxl)
+
+install.packages("readxl")
+library(readxl)
+
+df <- read_excel("data.xlsx")
+
+## Working with the RKWard Interface
+
+Sections:
+Console – Run R code
+Script Editor – Write reusable code
+Workspace – View loaded variables
+Teaching Tab – Education-focused modules
+
+## Spreadsheet Concepts
+
+Structure
+
+Component |Description
+Rows	  |Individual observations
+Columns	  |Variables
+Cells	  |Data points
+Header Row|	Variable names
+
+## Advantages
+
+Easy data entry
+Visual inspection
+Good for small datasets
+
+## Limitations
+
+Limited statistical functionality
+Hard to reproduce
+Error-prone for large datasets
+
+## Advanced Plots and Techniques
+
+Density Plot
+$$
+plot(density(mtcars$mpg), main="Density Plot", col="blue")
+$$
+
+Pair Plot
+$$
+pairs(mtcars[, 1:4])
+$$
+
+Correlation Matrix
+$$
+cor(mtcars)
+$$
+
+Heatmap
+$$
+heatmap(cor(mtcars), main="Correlation Heatmap")
+$$
+## Common R Packages for Statistics
+
+Package	|Purpose
+ggplot2	|Data visualization
+dplyr	|Data manipulation
+tidyr	|Data tidying
+Hmisc	|Misc stats functions
+car	    |Regression diagnostics
+e1071	|Skewness/kurtosis, ML tools
+psych	|Psychological statistics
+shiny	|Interactive apps
+caret	|Classification and regression
+
+## Introduction to Command Line
+
+## Windows Terminal
+$$
+cd ..
+mkdir my_project
+dir
+$$
+## Linux Terminal
+$$
+cd ~
+mkdir stats_project
+ls -l
+$$
+
+## Git + R Project Example
+$$
+git init
+git clone https://github.com/username/project.git
+$$
+
+## R Script Template for Analysis
+$$
+# Load packages
+library(ggplot2)
+library(dplyr)
+
+# Load data
+df <- read.csv("dataset.csv")
+
+# Descriptive stats
+summary(df)
+sd(df$Score)
+
+# Histogram
+ggplot(df, aes(x=Score)) + geom_histogram(bins=10, fill="skyblue")
+
+# Linear regression
+model <- lm(Score ~ StudyHours, data=df)
+summary(model)
+
+# Scatter plot with regression line
+ggplot(df, aes(x=StudyHours, y=Score)) +
+  geom_point() +
+  geom_smooth(method="lm")
+$$
+## Fallacies and Bias: Real-World Cautions
+
+Examples of Statistical Abuse
+
+Cherry-picking data
+Data dredging (p-hacking)
+Using relative risk without absolute context
+Non-random sampling
+Ethics in Data Analysis
+
+Be transparent
+Document sources
+Disclose methodology
+Avoid overstating conclusions
+
+## Future Applications of Statistics
+
+Real-World Domains
+
+Healthcare: Drug effectiveness, diagnostics
+Economics: Forecasting, policy evaluation
+Sociology: Survey analysis
+Sports: Performance analytics
+AI/ML: Predictive modeling, optimization
+Next Steps
+
+Learn tidyverse ecosystem
+Explore machine learning in R
+Build Shiny dashboards
+Get familiar with reproducible research using Quarto
+
+## Practice Challenges
+
+1. Load and summarize data
+
+Load mtcars or your own dataset
+Use summary(), mean(), sd()
+2. Create 3 different plots
+
+Histogram
+Boxplot by group
+Scatter plot with trend line
+3. Build a regression model
+
+Identify predictor and outcome
+Use lm() and summary()
+4. Explore a GUI like RKWard or Rcmdr
+
+## Key Takeaways
+
+Statistics supports informed decision-making.
+R and its GUI frontends offer flexibility + power.
+Understand theory → then automate with code.
+Avoid fallacies by following robust methods.
+Visuals are crucial: plot early, plot often.
+
+## References
+
+Mohanty, B., & Misra, S. (2016). Statistics for Behavioural and Social Sciences.
+Pandya, K., Joshi, P., Bulsari, S., & Nachane, D. M. (2018). Statistical Analysis in Simple Steps Using R.
+Field, A. P., Miles, J., & Field, Z. (2012). Discovering Statistics Using R.
+Harris, J. K. (2019). Statistics with R: Solving Problems Using Real-World Data.
+Rossiter, D. (2010). Intro to R for Spatial Analysis.
+Venables, W. N., & Smith, D. M. (2015). An Introduction to R.

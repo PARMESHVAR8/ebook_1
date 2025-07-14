@@ -13,16 +13,15 @@ book:
     #     - why-read.qmd
     #     - Developing.qmd
     # - lec_1.qmd
-    - introduction-to-statistics.qmd
-    - basic-statistics1.qmd
-    - basic-statistics2.qmd
-    - basic-statistics3.qmd
-    - basic-statistics4.qmd
-    - basic-statistics5.qmd
-    - basic-statistics6.qmd
-    - basic-statistics7.qmd
-    - week5.qmd
-    - text.qmd
+    # - introduction-to-statistics.qmd
+    - week1.qmd
+    - week2.qmd
+    - week3.qmd
+    - week4.qmd
+# /    - basic-statistics5.qmd
+#     - basic-statistics6.qmd
+#     - basic-statistics7.qmd
+#     - week1.qmd
     # - week1-statistics.qmd
 
 bibliography: references.bib
@@ -47,4 +46,4 @@ format:
       - margin=1in
 
 publish:
-  site-url: https://parmeshvar8.github.io/ebook_1
+  site-url: https://parmeshvar8.github.io/ebook_1/

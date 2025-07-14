@@ -1,0 +1,609 @@
+---
+title: "Week 2"
+author: "Statistics Course Materials"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+  pdf:
+    toc: true
+    number-sections: true
+    documentclass: scrreprt
+    papersize: letter
+    classoption:
+      - DIV=11
+      - numbers=noendperiod
+    header-includes:
+      - \KOMAoption{captions}{tableheading}
+    geometry:
+      - margin=1in
+bibliography: references.bib
+---
+
+# Introduction
+
+## Purpose of the eBook
+
+This eBook is designed as a complete beginner-to-intermediate guide for understanding the foundational concepts of statistics. It aims to bridge theoretical knowledge and practical application using RKWard (a GUI for R). Readers will be introduced to descriptive and inferential statistics, probability theory, and probability distributions with ample examples and exercises.
+
+## Who Should Read This?
+
+- Undergraduate students
+- MBA and management students
+- Data analysis beginners
+- Professionals dealing with data
+
+## What You’ll Learn
+
+- Data classification and types
+- Descriptive statistics: central tendency and variability
+- Basic probability and events
+- Probability distributions: Bernoulli, Binomial, and Normal
+- Use of RKWard in statistical analysis
+
+---
+
+# 1. Fundamentals of Statistics
+
+## 1.1 What is Statistics?
+
+Statistics is the science of collecting, organizing, analyzing, and interpreting data to make informed decisions. It involves both **theoretical** (mathematical) and **applied** approaches to understanding uncertainty and variability in real-world phenomena.
+
+## 1.2 Key Objectives
+
+- Summarizing large datasets effectively
+- Estimating population parameters
+- Testing hypotheses
+- Making predictions and decisions under uncertainty
+
+## 1.3 Types of Statistics
+
+- **Descriptive Statistics:** Deals with the presentation and summarization of data.
+- **Inferential Statistics:** Draws conclusions about populations based on sample data.
+
+---
+
+# 2. Types of Data
+
+## 2.1 Classification of Data
+
+| Type           | Example              | Description                     |
+|----------------|----------------------|---------------------------------|
+| Qualitative    | Gender, Nationality  | Non-numeric labels              |
+| Quantitative   | Height, Age          | Numeric values                  |
+| Discrete       | No. of Children      | Countable numbers               |
+| Continuous     | Temperature, Weight  | Infinite values in a range      |
+
+### 2.1.1 Qualitative (Categorical) Data
+
+- **Nominal:** No inherent order (e.g., religion, marital status).
+- **Ordinal:** Natural order (e.g., customer satisfaction: Poor, Average, Good).
+
+### 2.1.2 Quantitative (Numerical) Data
+
+- **Discrete:** Integers; e.g., number of books.
+- **Continuous:** Measurable; e.g., weight in kilograms.
+
+---
+
+# 3. Descriptive Statistics
+
+## 3.1 Measures of Central Tendency
+
+### 3.1.1 What is Central Tendency?
+
+Central tendency refers to the center or middle of a dataset. It's the value that best represents the entire distribution.
+
+### 3.1.2 Characteristics of a Good Measure
+
+- Rigidly defined
+- Easy to understand
+- Takes all data into account
+- Amenable to algebraic treatment
+- Stable under sampling
+- Minimally affected by outliers (except mean)
+
+---
+
+## 3.2 The Mean
+
+### 3.2.1 Definition
+
+The arithmetic mean is the sum of all values divided by the number of values.
+
+### 3.2.2 Formula
+
+$$
+\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+$$
+
+### 3.2.3 Properties of Mean
+
+- Uses all data values
+- Affected by extreme values
+- The sum of deviations from the mean is zero
+
+### 3.2.4 Example
+
+Data: 10, 15, 20, 25, 30  
+Mean = $(10 + 15 + 20 + 25 + 30)/5 = 20$
+
+---
+
+## 3.3 The Median
+
+### 3.3.1 Definition
+
+The median is the value separating the higher half from the lower half of a data sample.
+
+### 3.3.2 Calculation
+
+- Odd number of items: Middle value
+- Even number of items: Average of the two middle values
+
+### 3.3.3 Properties
+
+- Not influenced by extreme values
+- Best for skewed data
+
+### 3.3.4 Example
+
+Data: 4, 6, 9, 12, 15, 21, 33  
+Median = 12 (middle value)
+
+---
+
+## 3.4 The Mode
+
+### 3.4.1 Definition
+
+The mode is the value that appears most frequently in a dataset.
+
+### 3.4.2 Characteristics
+
+- Can be used for categorical data
+- Dataset can be unimodal, bimodal, or multimodal
+- May not exist if all values are unique
+
+### 3.4.3 Example
+
+Data: 4, 4, 6, 8, 9, 10, 4  
+Mode = 4
+
+---
+
+## 3.5 Comparison Table
+
+| Measure | Use Case                 | Affected by Outliers | Mathematical Use |
+|---------|--------------------------|----------------------|------------------|
+| Mean    | Symmetric distributions  | Yes                  | High             |
+| Median  | Skewed distributions     | No                   | Moderate         |
+| Mode    | Categorical variables    | No                   | Low              |
+
+---
+
+# 4. Measures of Variability
+
+## 4.1 Why Measure Variability?
+
+While central tendency summarizes data, variability tells us how spread out the data is. It’s essential in determining consistency and reliability.
+
+---
+
+## 4.2 Range
+
+### 4.2.1 Definition
+
+The difference between the maximum and minimum values.
+
+$$
+\text{Range} = x_{\text{max}} - x_{\text{min}}
+$$
+
+### 4.2.2 Example
+
+Data: 12, 14, 17, 19, 23  
+Range = 23 - 12 = 11
+
+### 4.2.3 Limitations
+
+- Ignores distribution shape
+- Extremely sensitive to outliers
+
+---
+
+## 4.3 Quartiles and Interquartile Range
+
+### 4.3.1 Quartiles
+
+- Q1 (25th percentile): Lower quartile
+- Q2 (50th percentile): Median
+- Q3 (75th percentile): Upper quartile
+
+### 4.3.2 Formula for Position
+
+$$
+Q_k = \frac{k(n+1)}{4}
+$$
+
+### 4.3.3 IQR Formula
+
+$$
+IQR = Q3 - Q1
+$$
+
+### 4.3.4 Example
+
+Data: 12, 30, 45, 57, 70  
+Q1 = 30, Q3 = 57 → IQR = 27
+
+---
+
+## 4.4 Variance
+
+### 4.4.1 Concept
+
+Variance is the average of the squared differences from the Mean.
+
+### 4.4.2 Formulas
+
+**Population Variance:**
+
+$$
+\sigma^2 = \frac{1}{N} \sum (x_i - \mu)^2
+$$
+
+**Sample Variance:**
+
+$$
+s^2 = \frac{1}{n-1} \sum (x_i - \bar{x})^2
+$$
+
+---
+
+## 4.5 Standard Deviation
+
+### 4.5.1 Concept
+
+Standard deviation is the square root of variance. It provides a measure of spread in the same units as the data.
+
+$$
+s = \sqrt{s^2}
+$$
+
+### 4.5.2 Properties
+
+- Same unit as original data
+- Measures how far values deviate from the mean
+- Widely used in most statistical computations
+
+---
+
+## 4.6 Coefficient of Variation (CV)
+
+### 4.6.1 Definition
+
+The ratio of the standard deviation to the mean, expressed as a percentage. Used to compare variability between datasets with different units.
+
+$$
+CV = \left( \frac{s}{\bar{x}} \right) \times 100\%
+$$
+
+### 4.6.2 Example
+
+Dataset A: Mean = 100, SD = 10 → CV = 10%  
+Dataset B: Mean = 50, SD = 5 → CV = 10%
+
+---
+
+## 4.7 Moment-Based Measures
+
+- First Moment (about mean): 0 (since $\sum (x - \bar{x}) = 0$)
+- Second Moment: Variance
+- Third Moment: Skewness
+- Fourth Moment: Kurtosis
+
+---
+
+# 5. Probability Fundamentals
+
+## 5.1 Introduction to Probability
+
+Probability is the mathematical framework for quantifying uncertainty. It helps us estimate how likely an event is to occur.
+
+## 5.2 Key Definitions
+
+- **Experiment:** A process that leads to an outcome.
+- **Outcome:** The result of an experiment.
+- **Sample Space (Ω):** All possible outcomes.
+- **Event:** A subset of the sample space.
+
+---
+
+## 5.3 Types of Events
+
+| Event Type              | Description                                       |
+|-------------------------|---------------------------------------------------|
+| Independent             | Occurrence of one does not affect the other      |
+| Dependent               | One affects the outcome of another               |
+| Mutually Exclusive      | Cannot occur together                            |
+| Exhaustive              | Includes all possible outcomes                   |
+
+---
+
+## 5.4 Classical Probability
+
+Used when all outcomes are equally likely.
+
+**Formula:**
+$$
+P(A) = \frac{\text{Number of favorable outcomes}}{\text{Total outcomes in } \Omega}
+$$
+
+**Example:** Rolling a fair die  
+P(rolling a 3) = 1/6
+
+---
+
+## 5.5 Probability Rules
+
+### Rule 1: Non-Negativity
+
+$$
+0 \leq P(A) \leq 1
+$$
+
+### Rule 2: Total Probability
+
+$$
+P(\Omega) = 1
+$$
+
+### Rule 3: Complement Rule
+
+$$
+P(A^c) = 1 - P(A)
+$$
+
+### Rule 4: Addition Rule
+
+If A and B are mutually exclusive:
+
+$$
+P(A \cup B) = P(A) + P(B)
+$$
+
+Otherwise:
+
+$$
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+$$
+
+### Rule 5: Multiplication Rule
+
+- For independent events:  
+$$
+P(A \cap B) = P(A) \cdot P(B)
+$$
+
+---
+
+## 5.6 Conditional Probability
+
+**Formula:**
+
+$$
+P(A | B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+---
+
+# 6. Discrete Probability Distributions
+
+## 6.1 Bernoulli Distribution
+
+- One trial, two outcomes (success/failure).
+- Success = 1, Failure = 0
+
+$$
+P(X = x) = p^x (1 - p)^{1 - x}, \quad x \in \{0,1\}
+$$
+
+- Mean = $p$
+- Variance = $p(1 - p)$
+
+### Example:
+
+Flip a fair coin → p = 0.5  
+Mean = 0.5, Variance = 0.25
+
+---
+
+## 6.2 Binomial Distribution
+
+- Series of $n$ independent Bernoulli trials
+- Number of successes $x$ out of $n$ trials
+
+**Formula:**
+
+$$
+P(X = x) = \binom{n}{x} p^x (1 - p)^{n - x}
+$$
+
+- Mean: $\mu = np$
+- Variance: $\sigma^2 = np(1 - p)$
+
+### Example:
+
+Flip a coin 5 times (p = 0.5)  
+P(X = 3) = $\binom{5}{3} (0.5)^3 (0.5)^2 = 10 \cdot 0.125 \cdot 0.25 = 0.3125$
+
+---
+
+# 7. Continuous Distributions
+
+## 7.1 Normal Distribution
+
+The most important continuous distribution in statistics.
+
+**Properties:**
+
+- Bell-shaped and symmetric
+- Defined by mean (μ) and variance (σ²)
+- Total area under the curve = 1
+
+**Probability Density Function (PDF):**
+
+$$
+f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp \left( -\frac{(x - \mu)^2}{2\sigma^2} \right)
+$$
+
+### Empirical Rule:
+
+- 68% of values lie within ±1σ
+- 95% within ±2σ
+- 99.7% within ±3σ
+
+---
+
+## 7.2 Standard Normal Distribution
+
+A normal distribution with:
+
+- Mean = 0
+- Standard deviation = 1
+
+**Z-score Formula:**
+
+$$
+Z = \frac{X - \mu}{\sigma}
+$$
+
+### Example:
+
+If $\mu = 100$, $\sigma = 15$, and $X = 130$  
+Then $Z = \frac{130 - 100}{15} = 2$
+
+---
+
+# 8. Visualizing Data
+
+## 8.1 Frequency Distribution
+
+| Class Interval | Frequency |
+|----------------|-----------|
+| 0–10           | 3         |
+| 11–20          | 7         |
+| 21–30          | 9         |
+| 31–40          | 6         |
+
+---
+
+## 8.2 Histogram
+
+A bar chart representing the frequency distribution of numerical data.
+
+**Use Case:** Visualize shape (e.g., normal, skewed)
+
+---
+
+## 8.3 Boxplot (Box-and-Whisker Plot)
+
+Shows:
+
+- Minimum
+- Q1
+- Median
+- Q3
+- Maximum
+- Outliers (as dots)
+
+Helps identify skewness and outliers quickly.
+
+---
+
+## 8.4 Scatter Plot
+
+Used to study the relationship between two quantitative variables.
+
+---
+
+# 9. Practical Applications
+
+## 9.1 Business Use Cases
+
+- Retail: Analyze sales patterns
+- Healthcare: Patient outcome probabilities
+- Finance: Stock volatility (using SD, CV)
+
+---
+
+## 9.2 Education and Research
+
+- Student test scores: Use mean, SD, and percentile ranking
+- Experiment analysis: Use Z-scores and Normal Distribution
+
+---
+
+# 10. Using RKWard
+
+## 10.1 What is RKWard?
+
+A graphical frontend for the R programming language designed for statistical analysis and data visualization.
+
+---
+
+## 10.2 Installation Guide
+
+1. Download R from [CRAN](https://cran.r-project.org)
+2. Install RKWard from [rkward.kde.org](https://rkward.kde.org)
+3. Start RKWard and begin with menu-driven tasks
+
+---
+
+## 10.3 Sample RKWard Activities
+
+### Calculate Mean and SD
+
+- Load dataset
+- Click *Statistics* → *Descriptive Statistics*
+- Choose variables and click *OK*
+
+### Visualize Histogram
+
+- Click *Graphics* → *Histogram*
+- Select variable and customize bins
+
+---
+
+## 10.4 Using R Code in RKWard
+
+```r
+data <- c(12, 15, 17, 18, 21)
+mean(data)
+sd(data)
+hist(data)
+
+## Summary
+
+This eBook provided a deep dive into basic statistics including:
+
+Data types and classification
+Central tendency and variability
+Probability theory and rules
+Discrete and continuous distributions
+Visual interpretation and real-world applications
+GUI-based statistical analysis using RKWard
+
+
+## References
+
+Anderson, D. R., Sweeney, D. J., Williams, T. A. (2016). Statistics for Business and Economics. Cengage.
+Field, A., Miles, J., Field, Z. (2012). Discovering Statistics Using R. SAGE.
+Harris, J. K. (2019). Statistics with R. SAGE.
+Mohanty, B., Misra, S. (2016). Statistics for Behavioural Sciences.
+RKWard Project. https://rkward.kde.org
+
+
