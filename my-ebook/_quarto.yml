@@ -18,6 +18,10 @@ book:
     - week2.qmd
     - week3.qmd
     - week4.qmd
+    - week5.qmd
+    # - week6.qmd
+    - week7.qmd
+    - week8.qmd
 # /    - basic-statistics5.qmd
 #     - basic-statistics6.qmd
 #     - basic-statistics7.qmd
@@ -44,6 +48,7 @@ format:
       - \setlist[description]{leftmargin=*,itemsep=0.5em,parsep=0.5em}
     geometry:
       - margin=1in
+
 
 publish:
   site-url: https://parmeshvar8.github.io/ebook_1/

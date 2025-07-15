@@ -1,0 +1,369 @@
+---
+title: "Week 7"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+    fontsize: 11pt
+    documentclass: article
+bibliography: references.bib
+---
+## 1. Introduction
+
+This eBook focuses on key statistical topics covered in **Week 7** of the course *Basic Statistics using GUI-R (RKWard)*. From **time series forecasting** to **Bayesian probability** and **discrete distributions**, each concept is explored with R-based demonstrations, code implementations, and visual outputs.
+
+---
+
+## 2. Time Series Analysis
+
+### 2.1 Overview of Time Series Data
+
+# Load and visualize example data
+install.packages("TSA")
+library(TSA)
+data(tempdub)
+plot(tempdub, main="Monthly Temperature in Dubuque")
+Trend: Long-term increase or decrease
+
+Seasonality: Predictable recurring patterns
+
+Cyclic: Irregular, long-term fluctuations
+
+2.2 Data Import and Price Fetching
+
+install.packages("BatchGetSymbols")
+library(BatchGetSymbols)
+
+first.date <- Sys.Date() - 90
+last.date <- Sys.Date()
+stocks <- c("TCS.NS")
+tcs_prices <- BatchGetSymbols(tickers = stocks, first.date, last.date)
+write.csv(tcs_prices$data, "tcs.csv")
+2.3 Handling Seasonality
+
+rt <- diff(log(tempdub), 12)  # Seasonal difference for monthly data
+plot(rt, main = "Seasonally Differenced Series")
+
+library(tseries)
+adf.test(rt)  # Test for stationarity
+Monthly Dummies
+
+month <- season(tempdub)
+m1 <- lm(tempdub ~ month - 1)
+summary(m1)
+resid <- residuals(m1)
+adf.test(resid)
+2.4 Trend Extraction & Detrending
+
+sim <- rnorm(100, mean = 0, sd = 10)
+x <- 5 + time(sim)*3 + ts(sim)
+x <- ts(x)
+plot(x)
+
+model2 <- lm(x ~ time(x))
+resid2 <- resid(model2)
+adf.test(resid2)
+2.5 Smoothing Techniques
+Simple Moving Average (SMA)
+
+library(forecast)
+ts_data <- ts(c(10, 15, 20, 25, 30, 35, 40))
+sma <- ma(ts_data, order = 3)
+plot(sma, type = 'l', col = 'blue')
+Exponential Moving Average (EMA)
+
+library(TTR)
+data <- c(23, 45, 67, 34, 56, 78, 90)
+ts_data <- ts(data)
+ema <- EMA(ts_data, n = 3)
+plot(ema, type = 'l', col = 'darkgreen')
+2.6 Forecasting Models
+Naive Forecasting: Future = last value
+
+ARIMA:
+
+library(forecast)
+fit <- auto.arima(AirPassengers)
+forecast(fit, h = 12)
+plot(forecast(fit, h = 12))
+ETS Models:
+
+ets_model <- ets(AirPassengers)
+plot(forecast(ets_model))
+2.7 Accuracy Metrics
+
+actual <- c(100, 110, 120)
+pred <- c(98, 112, 119)
+
+MAE <- mean(abs(actual - pred))
+RMSE <- sqrt(mean((actual - pred)^2))
+MAPE <- mean(abs((actual - pred)/actual)) * 100
+
+print(c(MAE = MAE, RMSE = RMSE, MAPE = MAPE))
+3. Conditional Probability & Bayes’ Theorem
+3.1 Conditional Probability
+If $P(B) > 0$, then:
+
+# Simulate joint probability
+joint <- matrix(c(0.1, 0.2, 0.2, 0.5), nrow = 2)
+P_A_given_B <- joint[1,2] / (joint[1,2] + joint[2,2])
+print(P_A_given_B)
+3.2 Bayes’ Theorem
+
+# Prior probabilities
+P_user <- 0.05
+P_pos_given_user <- 0.9
+P_neg_given_nonuser <- 0.8
+P_nonuser <- 1 - P_user
+P_pos_given_nonuser <- 1 - P_neg_given_nonuser
+
+# Bayes' formula
+P_user_given_pos <- (P_pos_given_user * P_user) / 
+  ((P_pos_given_user * P_user) + (P_pos_given_nonuser * P_nonuser))
+
+print(P_user_given_pos)
+3.3 Real-Life Applications
+Medical Testing
+
+Spam Filtering
+
+Credit Risk Modeling
+
+---
+
+## 4. Expected Value and Bivariate Variables
+
+### 4.1 Expected Value Basics
+
+For discrete variable $X$:
+
+$$
+E(X) = \sum x_i \cdot P(x_i)
+$$
+
+```r
+x <- c(1, 2, 3, 4)
+p <- c(0.1, 0.3, 0.4, 0.2)
+expected_value <- sum(x * p)
+print(expected_value)
+4.2 Linearity of Expectation
+If $Y = aX + b$:
+
+a <- 3
+b <- 5
+E_X <- expected_value
+E_Y <- a * E_X + b
+print(E_Y)
+4.3 Bivariate Distributions
+Example: Coin Toss (from PPT)
+Let:
+
+$X$ = number of heads
+
+$Y$ = |heads - tails|
+
+Then, for 3 coin tosses:
+
+joint_pmf <- matrix(c(
+  0,     0,     0,  1/8,
+  0,  3/8,     0,    0,
+  0,  3/8,     0,    0,
+  0,     0,     0,  1/8
+), nrow = 4, byrow = TRUE)
+
+colnames(joint_pmf) <- c("Y=0", "Y=1", "Y=2", "Y=3")
+rownames(joint_pmf) <- c("X=0", "X=1", "X=2", "X=3")
+print(joint_pmf)
+4.4 Marginal Probabilities
+
+# Marginal P(X)
+rowSums(joint_pmf)
+
+# Marginal P(Y)
+colSums(joint_pmf)
+
+5. Discrete Distributions
+5.1 Hypergeometric Distribution
+
+get_probability <- function(N, K, n, k) {
+  choose(K, k) * choose(N - K, n - k) / choose(N, n)
+}
+
+N <- 10
+K <- 6
+n <- 5
+possible_k <- 0:n
+
+probabilities <- sapply(possible_k, function(k) get_probability(N, K, n, k))
+
+barplot(probabilities, names.arg = possible_k,
+        xlab = "White Balls in Sample", ylab = "Probability",
+        col = "lightblue", main = "Hypergeometric Distribution")
+5.2 Poisson Distribution
+
+lambda <- 2
+values <- 0:10
+prob_pois <- dpois(values, lambda)
+
+barplot(prob_pois, names.arg = values,
+        main = "Poisson(λ=2)", col = "orange")
+5.3 Negative Binomial Distribution
+
+p <- 0.70
+r <- 5
+attempts <- 5:20
+pmf <- dnbinom(attempts - r, size = r, prob = p)
+
+plot(attempts, pmf, type = "h", lwd = 2, col = "blue",
+     main = "Negative Binomial Distribution",
+     xlab = "Attempts", ylab = "Probability")
+5.4 Geometric Distribution
+
+p <- 0.3
+x_vals <- 1:20
+geo_prob <- dgeom(x_vals - 1, prob = p)
+
+plot(x_vals, geo_prob, type = "h", col = "darkgreen",
+     main = "Geometric Distribution",
+     xlab = "Trial", ylab = "P(success at k-th trial)")
+6. Practical Applications
+6.1 Bayesian Inference in R
+Bayes inference example with normal prior/posterior:
+
+library(ggplot2)
+
+prior <- rnorm(10000, mean = 0.3, sd = 0.1)
+likelihood <- rnorm(10000, mean = 0.35, sd = 0.05)
+posterior <- (prior + likelihood)/2
+
+df <- data.frame(
+  value = c(prior, likelihood, posterior),
+  dist = factor(rep(c("Prior", "Likelihood", "Posterior"), each = 10000))
+)
+
+ggplot(df, aes(x = value, fill = dist)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Bayesian Updating")
+6.2 Forecasting in Finance and Healthcare
+Finance: Time series of stock returns
+
+Healthcare: Spread of diseases
+
+# Example of forecast in time series
+library(forecast)
+fit <- auto.arima(AirPassengers)
+forecast_vals <- forecast(fit, h = 24)
+plot(forecast_vals, main = "AirPassengers Forecast")
+6.3 Effect Size Estimation
+
+install.packages("lsr")
+library(lsr)
+
+cohensD(c(3.2, 3.4, 3.5), mu = 3.0)
+Effect size values:
+
+Small: 0.2
+
+Medium: 0.5
+
+Large: 0.8
+
+This section wraps up with:
+
+📈 ARIMA modeling
+
+📊 Stationarity & Unit Root tests (ADF)
+
+🧪 Residual analysis
+
+🧠 Advanced diagnostics
+
+📋 Summary & references
+
+---
+
+## 7. Advanced Statistical Concepts
+
+### 7.1 Stationarity and Unit Root Testing
+
+A **stationary time series** has constant mean and variance over time. Its essential for:
+- Forecasting
+- Valid modeling
+- Avoiding spurious regression
+
+#### Unit Root: Augmented Dickey-Fuller (ADF) Test
+
+library(tseries)
+set.seed(42)
+x <- cumsum(rnorm(100))  # non-stationary random walk
+plot.ts(x, main = "Simulated Random Walk")
+
+adf.test(x)  # Likely non-stationary (p > 0.05)
+7.2 Detrending Time Series
+
+t <- time(x)
+trend_model <- lm(x ~ t)
+resid_trend <- resid(trend_model)
+plot(resid_trend, main = "Detrended Series")
+adf.test(resid_trend)  # Residuals should now be stationary
+7.3 ARIMA Modeling
+Autoregressive Integrated Moving Average
+AR(p): Autoregression
+
+I(d): Differencing
+
+MA(q): Moving average
+
+library(forecast)
+auto.arima(AirPassengers)
+Full Workflow
+
+tsdata <- AirPassengers
+plot(tsdata)
+
+# Step 1: Stationarity check
+adf.test(tsdata)  # May need differencing
+
+# Step 2: Model Selection
+fit <- auto.arima(tsdata)
+summary(fit)
+
+# Step 3: Forecasting
+fc <- forecast(fit, h = 12)
+plot(fc)
+7.4 ACF & PACF Plots
+Used for identifying model orders:
+
+acf(diff(log(AirPassengers)))
+pacf(diff(log(AirPassengers)))
+7.5 Residual Diagnostics
+
+checkresiduals(fit)  # From forecast package
+Box.test(residuals(fit), lag = 20, type = "Ljung-Box")
+7.6 Forecast Accuracy
+
+actuals <- window(AirPassengers, start = c(1960,1))
+preds <- forecast(fit, h = 12)$mean
+accuracy(preds, actuals)
+8. Summary
+🎓 This eBook covered advanced Week 7 content with practical R implementation:
+
+Topic	Key Concepts & Tools
+Time Series Analysis	TSA, decomposition, ADF test, ARIMA
+Conditional Probability	Bayes theorem, real-life problems
+Expected Value	Joint PMFs, linearity of expectation
+Discrete Distributions	Poisson, Hypergeometric, Negative Binomial
+Forecasting Techniques	SMA, EMA, ETS, ARIMA
+Bayesian Applications	Posterior inference, medical testing
+Model Evaluation	AIC, BIC, RMSE, MAPE, residuals
+

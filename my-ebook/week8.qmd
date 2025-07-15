@@ -1,0 +1,331 @@
+---
+title: "Week 8"
+author: "Dr. Harsh Pradhan"
+affiliation: "Institute of Management Studies, Banaras Hindu University"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+    fontsize: 11pt
+    documentclass: article
+bibliography: references.bib
+---
+
+## 1. Introduction
+
+This module explores the powerful integration of visual analytics and statistical reasoning. While traditional models often rely on tabular outputs, the **flexplot** package and similar tools highlight the importance of **graphical modeling**, especially in response to the **replication crisis**. The week also emphasizes how GUIs like **RKWard** and **RStudio** serve different user bases for statistical analysis.
+
+---
+
+## 2. Effect Size and Cohen’s d
+
+Effect size quantifies the **magnitude** of the difference, independent of sample size. One of the most common effect size measures is **Cohen’s d**, which compares two means.
+
+### ✅ Interpretation of d:
+| d       | Meaning         |
+|---------|-----------------|
+| 0.2     | Small effect    |
+| 0.5     | Medium effect   |
+| 0.8     | Large effect    |
+
+### 📌 R Code Example (Cohen’s d)
+
+# Load required package
+install.packages("lsr")
+library(lsr)
+
+# Load your data (CSV format)
+my.csv.data <- read.csv("yourdata.csv")
+
+# Independent groups Cohen's d
+lsr::cohensD(my.csv.data[["CSE_1"]], my.csv.data[["CSE_2"]])
+
+# One-sample mean vs population mean
+lsr::cohensD(my.csv.data[["CSE_1"]], mu = 3.9)
+🧠 Practical Use:
+Effect size helps you understand practical significance, especially in behavioral research where p-values alone are insufficient.
+
+Note: Effect sizes should always accompany inferential statistics to avoid overreliance on significance testing.
+
+3. Understanding flexplot: Graphical Statistical Modeling
+The flexplot package allows for intuitive, formula-driven visual modeling. It uses GLM-style formulas like y ~ x1 + x2, bringing clarity between statistical models and their graphical representations.
+
+🔍 Key Features:
+Visualize univariate, bivariate, and multivariate models
+
+Supports linear, logistic, and mixed models
+
+Matches graphical output directly with statistical models
+
+Requires only one line of code for most use cases
+
+✅ Installation and Setup:
+
+install.packages("flexplot")
+library(flexplot)
+library(cowplot)  # For arranging multiple plots
+💡 More Coming in Part 2:
+Univariate & Bivariate flexplot() demos
+
+GLM integration
+
+Paneling, Ghost Lines, Beeswarm Visuals
+
+Overlap handling and jitter control
+
+
+## 4. Using flexplot: Examples and Best Practices
+
+### 4.1 Univariate Visualization
+
+flexplot(CSE_1 ~ 1, data = my.csv.data)
+Plots raw data (jittered) with mean overlay
+
+Useful for outlier detection and distribution shape
+
+4.2 Bivariate Continuous vs Categorical
+
+# Visualizing continuous DV vs categorical IV
+flexplot(CSE_1 ~ Gender, data = my.csv.data)
+Automatically creates beeswarm or violin plots
+
+Overlay: mean ± error bars
+
+Jitter is used to prevent overlap of points
+
+4.3 Continuous DV vs Continuous IV
+
+flexplot(CSE_1 ~ Age, data = my.csv.data)
+Shows scatterplot + best-fit line
+
+Adds error ribbons
+
+Outliers stand out visually
+
+4.4 Multiple Predictors (Additive Models)
+
+flexplot(CSE_1 ~ Age + Gender, data = my.csv.data)
+Panels by Gender
+
+Linear fits across Age
+
+Helps uncover interaction
+
+4.5 Logistic Regression Visualization
+
+# Convert pass/fail variable to factor
+my.csv.data$Pass <- as.factor(my.csv.data$Pass)
+
+# Logistic visualization
+flexplot(Pass ~ Hours, data = my.csv.data, family = "binomial")
+5. RKWard vs RStudio: Interface & Functionality
+Feature	RKWard	RStudio
+Target Users	Beginners, GUI-centric	Coders, devs, advanced users
+Data Handling	Spreadsheet-like	Tidyverse-friendly
+Plots	Auto-generated via dialogs	ggplot2 required manually
+Statistical Models	GUI for t-tests, ANOVA	Syntax for all models
+
+🔎 Conclusion: RKWard is ideal for non-programmers, while RStudio is better for reproducible analysis via code and markdown.
+
+6. Cognitive Fit and Visual Communication
+Flexplot builds upon Cognitive Fit Theory — visual representations should match the task and viewer's expectation.
+
+Key Graph Types in flexplot
+Type	Best For
+Beeswarm	Small-to-medium samples
+Violin	Density + mean overlay
+Ghost Lines	Slope visualization across panels
+Panels	2–3 categorical moderators
+
+7. Advanced Flexplot Controls
+7.1 Ghost Lines for Slope Tracking
+
+flexplot(mpg ~ wt + cyl, data = mtcars)
+Panels by cyl
+
+Gray reference slope: overall trend
+
+Colored slope: panel-specific
+
+7.2 Model Overlays
+
+flexplot(CSE_1 ~ CSE_2 + Gender, data = my.csv.data)
+Adds regression lines
+
+Includes model summaries in plot captions
+
+7.3 Added Plot (Influence Visualization)
+
+model <- lm(CSE_1 ~ CSE_2 + Age, data = my.csv.data)
+added.plot(model)
+Visualizes the unique contribution of predictors
+
+Residual scatter by regressor
+
+8. Association, AVPs, and Repeated Measures
+8.1 Visualizing Correlation
+
+flexplot(mpg ~ hp, data = mtcars)
+Adds correlation line
+
+Includes Pearson’s r
+
+8.2 Repeated Measures (Paneling)
+
+flexplot(score ~ time + condition, data = repeated_df)
+Each condition as panel
+
+Time as predictor
+
+Fits separate lines
+
+8.3 Binned Paneling (Continuous Moderators)
+
+flexplot(CSE_1 ~ Age + Income, data = my.csv.data)
+Age: X-axis
+
+Income: Panel bins (equal-width)
+
+Visualizes moderation effects
+
+8.4 Jitter, Transparency, Point Customization
+
+flexplot(CSE_1 ~ Age + Gender, data = my.csv.data,
+         jitter = 0.3, alpha = 0.5, point.size = 2)
+9. Interactive Plots and R Markdown Integration
+
+install.packages("plotly")
+library(plotly)
+p <- flexplot(mpg ~ wt + cyl, data = mtcars)
+ggplotly(p)  # Adds interactivity
+Quarto Embedding
+markdown
+
+flexplot(CSE_1 ~ Gender, data = my.csv.data)
+
+
+---
+
+## 🧠 What’s Next in Part 3?
+
+- 📈 Full-scale simulation for effect size
+- 🧪 Reproducible workflows
+- 🧰 Custom function design
+- 📘 Summary + export instructions
+
+
+This final section includes:
+
+📊 Simulation for effect size
+
+🧪 Custom model visuals
+
+📦 Reproducible workflows
+
+📋 Summary + rendering/export notes
+
+---
+
+## 10. Simulation: Effect Size and Visual Inference
+
+### 10.1 Simulate Cohen’s d with Flexplot
+
+set.seed(123)
+group1 <- rnorm(50, mean = 5, sd = 1)
+group2 <- rnorm(50, mean = 6.2, sd = 1)
+
+group <- factor(rep(c("A", "B"), each = 50))
+score <- c(group1, group2)
+
+sim_df <- data.frame(group, score)
+
+library(lsr)
+cohensD(score ~ group, data = sim_df)  # Should return d ≈ 1.2
+
+flexplot(score ~ group, data = sim_df)
+10.2 Power and Confidence Visualization
+
+library(pwr)
+pwr.t.test(d = 0.8, power = 0.8, sig.level = 0.05, type = "two.sample")
+10.3 Monte Carlo Effect Size Estimation
+
+sim_d <- replicate(1000, {
+  g1 <- rnorm(30, 5, 1)
+  g2 <- rnorm(30, 6, 1)
+  cohensD(g1, g2)
+})
+
+hist(sim_d, breaks = 50, col = "lightblue", main = "Simulated Cohen's d Distribution")
+abline(v = mean(sim_d), col = "red")
+11. Visual Inference in Teaching
+🎓 Overlay Raw + Model Together
+
+flexplot(mpg ~ wt + cyl, data = mtcars)
+Cyl = Panel
+
+Gray slope = overall
+
+Color slope = per panel
+
+R² and p-values appear below
+
+12. Workflow: Reproducible Visual Analytics in R
+12.1 Data Import
+
+df <- read.csv("CSE_scores.csv")
+str(df)
+12.2 Visualization Plan
+Start with flexplot()
+
+Panel by categorical moderators
+
+Add continuous predictors
+
+Use added.plot() to show incremental effect
+
+Report both visualization + model summary
+
+12.3 R Markdown Report
+markdown
+
+---
+title: "Visual Model Summary"
+output: html_document
+---
+
+
+library(flexplot)
+flexplot(score ~ gender + age, data = df)
+
+
+---
+
+## 13. Model Summary with Visual + Numeric Layers
+
+model <- lm(CSE_1 ~ CSE_2 + Age + Gender, data = my.csv.data)
+summary(model)
+
+added.plot(model)  # Visual version of unique effect
+14. Combining flexplot with ggplot2
+
+p1 <- flexplot(CSE_1 ~ CSE_2 + Gender, data = my.csv.data)
+p2 <- ggplot(my.csv.data, aes(CSE_2, CSE_1)) + geom_point() + geom_smooth(method = "lm")
+
+cowplot::plot_grid(p1, p2, labels = c("Flexplot", "GGplot"))
+15. Summary
+Concept	Tool Used
+Effect Size	cohensD() from lsr
+Graphical Modeling	flexplot()
+Simulation	Monte Carlo
+Association Plot	Slope Panels
+Influence Plot	added.plot()
+Interactive Graphs	ggplotly()
+

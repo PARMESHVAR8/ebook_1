@@ -558,5 +558,345 @@
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4</span>"
     ]
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "6  Week 5",
+    "section": "",
+    "text": "6.1 1. Introduction\nWelcome to Week 5 of Basic Statistics using GUI-R (RKWard), where we cover relationship testing, correlation, regression, ANOVA, and related diagnostics in depth, using both theory and R-based implementation.\nThis book is designed to:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#introduction",
+    "href": "week5.html#introduction",
+    "title": "6  Week 5",
+    "section": "",
+    "text": "Clarify statistical concepts visually\nUse real data simulations\nEmpower you with reproducible R/RKWard workflows\nPrepare you to run statistical diagnostics and build interpretations",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#lecture-24-deep-dive-correlation",
+    "href": "week5.html#lecture-24-deep-dive-correlation",
+    "title": "6  Week 5",
+    "section": "6.2 2. Lecture 24 – Deep Dive: Correlation",
+    "text": "6.2 2. Lecture 24 – Deep Dive: Correlation\n\n6.2.1 2.1 What is Correlation?\nCorrelation is a statistical measure that expresses the extent to which two variables are linearly related.\n\n6.2.1.1 💡 Theory\n\nIf variable X increases as Y increases → Positive correlation\nIf variable X increases as Y decreases → Negative correlation\nIf there’s no linear trend → Zero correlation\n\n\nPearson’s r ranges from -1 to +1.\n\n\n\n\n\n6.2.2 2.2 Types of Correlation and Use Cases\n\n\n\n\n\n\n\n\nData Type\nCorrelation Type\nUse Case Example\n\n\n\n\nNominal\nPhi\nGender vs. Yes/No Preferences\n\n\nDichotomous\nPoint-Biserial\nPass/Fail vs. Exam Score\n\n\nOrdinal/Rank\nSpearman/Kendall\nRank in class vs. Test anxiety\n\n\nRatio/Interval\nPearson\nHeight vs. Weight\n\n\nMultivariate\nPartial Correl.\nControl confounders\n\n\n\n\n\n\n6.2.3 2.3 Pearson, Spearman, Kendall Comparison\n{r} ## Simulate linear data set.seed(123) x &lt;- rnorm(100) y &lt;- 2 * x + rnorm(100)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#add-non-linear-data",
+    "href": "week5.html#add-non-linear-data",
+    "title": "6  Week 5",
+    "section": "6.3 Add non-linear data",
+    "text": "6.3 Add non-linear data\nz &lt;- x^2 + rnorm(100)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#pearson-linear",
+    "href": "week5.html#pearson-linear",
+    "title": "6  Week 5",
+    "section": "6.4 Pearson (linear)",
+    "text": "6.4 Pearson (linear)\ncor(x, y, method = “pearson”)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#spearman-rank-monotonic",
+    "href": "week5.html#spearman-rank-monotonic",
+    "title": "6  Week 5",
+    "section": "6.5 Spearman (rank, monotonic)",
+    "text": "6.5 Spearman (rank, monotonic)\ncor(x, z, method = “spearman”)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#kendall-ordinal",
+    "href": "week5.html#kendall-ordinal",
+    "title": "6  Week 5",
+    "section": "6.6 Kendall (ordinal)",
+    "text": "6.6 Kendall (ordinal)\ncor(x, z, method = “kendall”) 2.4 Visualizing Correlations ## Visualization library(ggplot2) data &lt;- data.frame(x, y, z)\nggplot(data, aes(x = x, y = y)) + geom_point() + geom_smooth(method = “lm”, se = FALSE, color = “blue”) + labs(title = “Scatter Plot with Linear Fit”, x = “X”, y = “Y”)\nggplot(data, aes(x = x, y = z)) + geom_point(color = “darkred”) + labs(title = “Non-Linear Relationship”, x = “X”, y = “Z”) 2.5 Correlation Matrix in RKWard Steps:\nLoad data into RKWard.\nNavigate to Statistics → Summaries → Correlation Matrix.\nChoose the appropriate variables.\nChoose correlation type (Pearson, Spearman).\nRun and interpret the matrix output.\n2.6 Partial Correlation in R When you want to compute the correlation between two variables while controlling for a third:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#install.packagesggm",
+    "href": "week5.html#install.packagesggm",
+    "title": "6  Week 5",
+    "section": "6.7 install.packages(“ggm”)",
+    "text": "6.7 install.packages(“ggm”)\nlibrary(ggm) X1 &lt;- rnorm(100) X2 &lt;- X1 + rnorm(100, sd = 0.5) X3 &lt;- rnorm(100) pcor(c(“X1”, “X2”, “X3”), cov(cbind(X1, X2, X3))) Interpretation: This tells you the pure correlation between X1 and X2, controlling for X3.\n2.7 R Code to Automate All",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#simulate-data",
+    "href": "week5.html#simulate-data",
+    "title": "6  Week 5",
+    "section": "6.8 Simulate data",
+    "text": "6.8 Simulate data\nset.seed(100) data &lt;- data.frame( A = rnorm(100), B = rnorm(100), C = rnorm(100) )",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#generate-all-pairwise-correlations",
+    "href": "week5.html#generate-all-pairwise-correlations",
+    "title": "6  Week 5",
+    "section": "6.9 Generate all pairwise correlations",
+    "text": "6.9 Generate all pairwise correlations\ncor(data)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#visualize-matrix-with-corrplot",
+    "href": "week5.html#visualize-matrix-with-corrplot",
+    "title": "6  Week 5",
+    "section": "6.10 Visualize matrix with corrplot",
+    "text": "6.10 Visualize matrix with corrplot\nlibrary(corrplot) corrplot(cor(data), method = “color”, tl.col = “black”, addCoef.col = “black”) 2.8 Spearman vs Pearson – When to Use? Use Pearson when data is normally distributed, continuous, and linear.\nUse Spearman when data is ordinal, ranked, or non-linear but monotonic.\nKendall’s Tau is more robust for small sample sizes.\n👀 Next Up: Part 2/4 will include:\n\nOne-Way ANOVA full theory + math\n\nRepeated Measures ANOVA (detailed)\n\nVisualization of F-distributions\n\nMANOVA + N-Way examples\n\n10+ R code exercises",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#lecture-25-one-way-anova-detailed",
+    "href": "week5.html#lecture-25-one-way-anova-detailed",
+    "title": "6  Week 5",
+    "section": "6.11 3. Lecture 25 – One-Way ANOVA (Detailed)",
+    "text": "6.11 3. Lecture 25 – One-Way ANOVA (Detailed)\n\n6.11.1 3.1 Concept Overview\nAnalysis of Variance (ANOVA) is used when comparing the means of three or more groups.\n\n6.11.1.1 💡 Formula Breakdown\n\nSSM (Sum of Squares Model): Variation between groups\nSSR (Sum of Squares Residual): Variation within groups\nSST (Total): Total variation\n\nF-Ratio:\n\\[\nF = \\frac{MS_{between}}{MS_{within}} = \\frac{SSM / df_M}{SSR / df_R}\n\\]\n\n\n\n6.11.2 3.2 ANOVA Table Example\n\n\n\nSource\nSS\ndf\nMS\nF\n\n\n\n\nBetween\n461.64\n3\n153.88\n8.27\n\n\nWithin\n167.42\n9\n18.60\n\n\n\nTotal\n629.08\n12\n\n\n\n\n\n\n\n\n6.11.3 3.3 R Code – One-Way ANOVA\ngroup1 &lt;- c(28, 36, 38, 31) group2 &lt;- c(32, 33, 40) group3 &lt;- c(47, 43, 52) group4 &lt;- c(40, 47, 45)\nscore &lt;- c(group1, group2, group3, group4) group &lt;- factor(rep(c(“Hunter”, “Farming”, “Natural”, “Industrial”), times=c(4,3,3,3)))\ndata &lt;- data.frame(score, group) anova_model &lt;- aov(score ~ group, data=data) summary(anova_model) 3.4 Post-Hoc Analysis (Tukey HSD)\nTukeyHSD(anova_model) 3.5 Visualize Group Differences\nboxplot(score ~ group, data = data, col = c(“lightblue”, “pink”, “lightgreen”, “yellow”)) 4. Lecture 26 – Repeated Measures ANOVA 4.1 Theory Repeated measures involve the same subjects measured under multiple conditions.\nAspect Repeated Measures Between-Subjects Subjects Same across treatments Different per group Variability Control Higher (less noise) Lower Efficiency More efficient Requires more samples\n4.2 R Code – Repeated Measures\nlibrary(ez) subject &lt;- factor(rep(1:10, each=3)) treatment &lt;- factor(rep(c(“Pre”, “Mid”, “Post”), times=10)) score &lt;- c(rnorm(10, 65), rnorm(10, 70), rnorm(10, 75)) rm_df &lt;- data.frame(subject, treatment, score)\nezANOVA(data=rm_df, dv=score, wid=subject, within=treatment) 4.3 Visual Check\nlibrary(ggplot2) ggplot(rm_df, aes(x=treatment, y=score, group=subject, color=subject)) + geom_line() + geom_point() + theme_minimal() + labs(title=“Repeated Measures ANOVA Plot”) 5. Lecture 27 – MANOVA and N-Way ANOVA 5.1 What is MANOVA? Multivariate Analysis of Variance (MANOVA) extends ANOVA to multiple dependent variables.\nExample Use Case:\nInvestigating how teaching methods affect:\nExam scores\nClass participation\nHomework submission\n5.2 R Code – MANOVA\ny1 &lt;- rnorm(30, 60, 5) y2 &lt;- rnorm(30, 70, 6) y3 &lt;- rnorm(30, 80, 4) method &lt;- factor(rep(c(“A”, “B”, “C”), each=10))\nmanova_model &lt;- manova(cbind(y1, y2, y3) ~ method) summary(manova_model) 5.3 N-Way ANOVA (Interaction Effects)\ndf &lt;- expand.grid( Teaching = c(“Traditional”, “Interactive”), Gender = c(“Male”, “Female”), Rep = 1:20 ) df$Score &lt;- rnorm(80, mean = 70, sd = 5)\nmodel_nway &lt;- aov(Score ~ Teaching * Gender, data = df) summary(model_nway) 5.4 Interaction Plot {r} interaction.plot(df\\(Teaching, df\\)Gender, df$Score, col=c(“red”, “blue”)) 5.5 Assumptions of ANOVA Assumption Check Method Tool Normality QQ Plot, Shapiro Test shapiro.test() Homogeneity Levene’s/Bartlett’s Test car::leveneTest() Independence Design-level assurance Design phase\n5.6 Assumption Check in R {r} # Normality check shapiro.test(residuals(anova_model))",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#theory-refresher",
+    "href": "week5.html#theory-refresher",
+    "title": "6  Week 5",
+    "section": "8.1 6.1 Theory Refresher",
+    "text": "8.1 6.1 Theory Refresher\nLinear regression predicts a dependent variable (Y) using an independent variable (X).\nModel Equation:\n\\[\nY = \\beta_0 + \\beta_1 X + \\epsilon\n\\]\nWhere:\n\n\\(\\beta_0\\) = Intercept\n\n\\(\\beta_1\\) = Slope\n\n\\(\\epsilon\\) = Error term",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#example-in-r",
+    "href": "week5.html#example-in-r",
+    "title": "6  Week 5",
+    "section": "8.2 6.2 Example in R",
+    "text": "8.2 6.2 Example in R\nstudy_time &lt;- c(2, 3, 4, 5, 6) grades &lt;- c(50, 60, 65, 70, 75)\nmodel &lt;- lm(grades ~ study_time) summary(model) 6.3 Regression Line Visualization\nplot(study_time, grades, main=“Simple Regression”, xlab=“Study Time”, ylab=“Grades”) abline(model, col=“blue”, lwd=2) 6.4 Interpret Coefficients\ncoef(model) Intercept: Grade when study time = 0\nSlope: Grade increases per hour of study\n6.5 Residual Plots\npar(mfrow=c(2,2)) plot(model) Top-left: Residuals vs Fitted\nBottom-left: Scale-Location\nTop-right: QQ Plot\nBottom-right: Residuals vs Leverage\n6.6 Confidence Intervals\nconfint(model) 7. Lecture 29 – Multiple Regression 7.1 Add More Predictors\ndf &lt;- data.frame( Exam = c(50, 55, 60, 65, 70), Hours = c(2, 3, 4, 5, 6), Sleep = c(7, 6.5, 6, 5.5, 5) ) multi_model &lt;- lm(Exam ~ Hours + Sleep, data = df) summary(multi_model) 7.2 Check VIF (Multicollinearity)\nlibrary(car) vif(multi_model) VIF &gt; 5 → multicollinearity warning VIF &gt; 10 → serious problem\n7.3 Partial Residual Plots\navPlots(multi_model) 7.4 Plot 3D Regression Plane",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#install.packagesscatterplot3d",
+    "href": "week5.html#install.packagesscatterplot3d",
+    "title": "6  Week 5",
+    "section": "8.3 install.packages(“scatterplot3d”)",
+    "text": "8.3 install.packages(“scatterplot3d”)\nlibrary(scatterplot3d) scatterplot3d(df\\(Hours, df\\)Sleep, df$Exam, highlight.3d=TRUE, type=“h”, angle=55, color=“darkgreen”, pch=16) 8. Lecture 30 – Polynomial and Non-Linear Regression 8.1 Simulating Non-linear Relationship\nx &lt;- seq(0, 10, 0.1) y &lt;- 5 + 2 * x^2 + rnorm(length(x), 0, 5) plot(x, y, main=“Non-linear Pattern”, pch=19) 8.2 Polynomial Regression\npoly_model &lt;- lm(y ~ poly(x, 2)) summary(poly_model)\nlines(x, predict(poly_model), col=“blue”, lwd=2) 8.3 Compare with Linear Fit\nlinear_model &lt;- lm(y ~ x) lines(x, predict(linear_model), col=“red”, lwd=2, lty=2) legend(“topleft”, legend=c(“Poly”, “Linear”), col=c(“blue”, “red”), lty=c(1,2)) 8.4 Residual Analysis\npar(mfrow=c(1,2)) plot(poly_model\\(fitted.values, poly_model\\)residuals, main=“Polynomial Residuals”) plot(linear_model\\(fitted.values, linear_model\\)residuals, main=“Linear Residuals”) 8.5 Curve Fitting with nls()\nx &lt;- seq(0, 10, length.out=100) y &lt;- 2 * exp(0.3 * x) + rnorm(100, sd=3)\nnls_model &lt;- nls(y ~ a * exp(b * x), start=list(a=2, b=0.3)) summary(nls_model)\nlines(x, predict(nls_model), col=“purple”, lwd=2) 9. Lecture 31 – Model Evaluation Metrics 9.1 R² and Adjusted R²\nsummary(multi_model)\\(r.squared\nsummary(multi_model)\\)adj.r.squared 9.2 MSE and RMSE\npred &lt;- predict(multi_model) actual &lt;- df$Exam residuals &lt;- actual - pred mse &lt;- mean(residuals^2) rmse &lt;- sqrt(mse)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#when-to-use",
+    "href": "week5.html#when-to-use",
+    "title": "6  Week 5",
+    "section": "9.1 10.1 When to Use",
+    "text": "9.1 10.1 When to Use\nLogistic regression is used when the dependent variable is categorical (typically binary: 0/1, Yes/No, Pass/Fail).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#logistic-function",
+    "href": "week5.html#logistic-function",
+    "title": "6  Week 5",
+    "section": "9.2 10.2 Logistic Function",
+    "text": "9.2 10.2 Logistic Function\n\\[\nP(Y=1) = \\frac{1}{1 + e^{-(\\beta_0 + \\beta_1 X)}}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#r-example-predicting-admission",
+    "href": "week5.html#r-example-predicting-admission",
+    "title": "6  Week 5",
+    "section": "9.3 10.3 R Example: Predicting Admission",
+    "text": "9.3 10.3 R Example: Predicting Admission\ndf &lt;- data.frame( Admit = c(1,1,0,1,0,0,1,1,0,0), Score = c(80,85,60,90,55,40,88,83,59,52) )\nlogit_model &lt;- glm(Admit ~ Score, data=df, family=“binomial”) summary(logit_model) 10.4 Probability Prediction\ndf$Prob &lt;- predict(logit_model, type=“response”) df 10.5 ROC Curve\nlibrary(pROC) roc_obj &lt;- roc(df\\(Admit, df\\)Prob) plot(roc_obj, col=“darkgreen”) auc(roc_obj) 10.6 Classification Table\ndf\\(Pred &lt;- ifelse(df\\)Prob &gt; 0.5, 1, 0) table(Predicted = df\\(Pred, Actual = df\\)Admit) 11. Lecture 33 – Chi-Square Test 11.1 Categorical Independence Used when evaluating if two categorical variables are independent.\n11.2 Example: Gender vs Department Choice\ngender &lt;- c(“Male”, “Male”, “Female”, “Female”) dept &lt;- c(“Science”, “Arts”, “Science”, “Arts”) counts &lt;- c(30, 20, 25, 25)\nchi_df &lt;- data.frame(Gender=rep(gender, counts), Dept=rep(dept, counts)) tbl &lt;- table(chi_df\\(Gender, chi_df\\)Dept) chisq.test(tbl) 12. Lecture 34 – Non-Parametric Tests 12.1 When to Use Data is not normally distributed\nOrdinal data or small sample sizes\n12.2 Mann–Whitney U\ngroup1 &lt;- c(45, 50, 60, 55) group2 &lt;- c(70, 75, 80, 85) wilcox.test(group1, group2) 12.3 Kruskal–Wallis (Non-parametric ANOVA)\ng1 &lt;- c(10, 20, 30) g2 &lt;- c(40, 50, 60) g3 &lt;- c(70, 80, 90) kw_df &lt;- data.frame( score = c(g1, g2, g3), group = factor(rep(c(“A”, “B”, “C”), each=3)) ) kruskal.test(score ~ group, data=kw_df) 12.4 Wilcoxon Signed-Rank\nbefore &lt;- c(60, 70, 65, 80) after &lt;- c(62, 75, 68, 82) wilcox.test(before, after, paired=TRUE) 13. Case Study – Social Media & Mental Health 13.1 Dataset Simulation\nset.seed(100) n &lt;- 100 hours &lt;- rnorm(n, 3, 1.5) stress &lt;- 10 + 1.2 * hours + rnorm(n)\ndf &lt;- data.frame(hours, stress) model &lt;- lm(stress ~ hours, data=df) summary(model) 13.2 Visual\nplot(hours, stress, main=“Social Media Use vs Stress”, pch=19) abline(model, col=“red”, lwd=2) 13.3 Interpretation Positive slope → More hours = more stress\nR² tells how well hours predict stress\n\n50 Multiple Choice Questions (MCQs) Q1. Pearson’s r is best used when: Data is ordinal\n\nData is continuous and normally distributed\nData has outliers\nYou want to rank variables\nQ2. Which test compares more than 2 independent means? t-test\nANOVA\nChi-Square\nCorrelation\nQ3. A VIF of 12 means: No multicollinearity\nSevere multicollinearity\nPerfect fit\nHomoscedasticity\n\nExercises Exercise 1: One-Way ANOVA on Fake Marketing Data Generate three ad strategies and test which gives highest customer conversions.\n\nExercise 2: Correlate temperature and ice cream sales Include scatterplot, Pearson’s r, regression line.\nExercise 3: Logistic regression predicting credit approval Predict using income and debt ratio.\nExercise 4: Chi-Square on survey data Test independence of satisfaction vs. purchase intention.\nExercise 5: Repeated Measures ANOVA Simulate 10 people tested across 3 time points.\n\nGlossary Term Definition ANOVA Test for differences in means across groups Regression Predict numerical output from inputs Correlation Measure of linear association between two variables R² Proportion of variance explained by model AIC Akaike Information Criterion – model quality metric VIF Variance Inflation Factor – checks multicollinearity Logistic Regression Used for binary outcome prediction Chi-Square Test for independence between two categorical variables\nAppendix 17.1 RKWard Menus Correlation → Statistics → Summaries → Correlation Matrix\n\nANOVA → Analysis → ANOVA → One-Way or Repeated\nPlots → Graphics → Histogram / Boxplot / Scatterplot\nRegression → Analysis → Linear Models\n17.2 Troubleshooting Issue Solution “object not found” Check variable names (case-sensitive) Plot doesn’t show Use print(plot_name) or run outside R chunk Model output blank Use summary(model) instead of just model Package not found Install using install.packages(“name”)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "7  week 6",
+    "section": "",
+    "text": "8 Table of Contents",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#introduction",
+    "href": "week6.html#introduction",
+    "title": "7  week 6",
+    "section": "8.1 1. Introduction",
+    "text": "8.1 1. Introduction\nThis Week 6 eBook focuses on advanced statistical procedures for analyzing categorical and non-normal data using RKWard, a GUI-based frontend to R.\nWe address: - When traditional parametric methods fail - Tools for ordinal, non-linear, or count data - How to interpret diagnostic plots, residuals, and goodness-of-fit metrics",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#chi-square-test-of-goodness-of-fit",
+    "href": "week6.html#chi-square-test-of-goodness-of-fit",
+    "title": "7  week 6",
+    "section": "8.2 2. Chi-Square Test of Goodness of Fit",
+    "text": "8.2 2. Chi-Square Test of Goodness of Fit\n\n8.2.1 Theory Refresher\nUse this test to see if observed frequency data matches a theoretical distribution (e.g., uniform, binomial, Poisson).\n\n\n8.2.2 📊 Example 1: Dice Fairness\nobs &lt;- c(9, 7, 6, 4, 5, 5) expected &lt;- rep(sum(obs)/6, 6) chisq.test(obs, p = rep(1/6, 6)) 📊 Example 2: Simulated Biased Die (Monte Carlo)\nset.seed(42) sim_data &lt;- sample(1:6, size = 600, replace = TRUE, prob = c(0.1, 0.1, 0.2, 0.2, 0.2, 0.2)) table_sim &lt;- table(sim_data) chisq.test(table_sim, p = rep(1/6, 6)) 📊 Example 3: Poisson-GOF for Counts\nlibrary(MASS) data_counts &lt;- rpois(100, lambda = 3) obs_table &lt;- table(data_counts) exp_probs &lt;- dpois(as.numeric(names(obs_table)), lambda = 3) chisq.test(obs_table, p = exp_probs/sum(exp_probs)) 🎨 Visualizing Frequencies\nbarplot(rbind(obs, expected), beside = TRUE, col = c(“skyblue”, “orange”), legend.text = c(“Observed”, “Expected”), main = “Dice Roll Distribution”) 3. Chi-Square Test of Independence 🔍 Purpose Test whether two categorical variables are independent.\n📊 Example 1: Gender vs Preference\ndf &lt;- data.frame( Gender = c(“Male”, “Male”, “Female”, “Female”), Laptop = c(“Gaming”, “Non-Gaming”, “Gaming”, “Non-Gaming”), Freq = c(27, 8, 5, 7) ) table_df &lt;- xtabs(Freq ~ Gender + Laptop, data = df) chisq.test(table_df) 📊 Example 2: Titanic Survival\nlibrary(datasets) data(Titanic) chisq.test(Titanic) 📊 Example 3: Simulated Survey\nset.seed(123) survey &lt;- data.frame( Smoke = sample(c(“Yes”, “No”), 100, replace = TRUE), Exer = sample(c(“None”, “Some”, “Regular”), 100, replace = TRUE) ) tb &lt;- table(survey\\(Smoke, survey\\)Exer) chisq.test(tb) 📉 Association Strength\nlibrary(vcd) assocstats(tb) 4. Non-Parametric Tests 🎯 Why Use Them? Parametric assumptions (normality, equal variance) are not always met. Non-parametric tests allow analysis without these constraints.\n📋 Common Tests Parametric Non-Parametric Equivalent One-sample t-test Wilcoxon Signed-Rank Test Two-sample t-test Mann-Whitney U Test One-Way ANOVA Kruskal-Wallis Test Two-Way ANOVA Friedman Test Pearson Correlation Spearman Rank Correlation\n📊 Example 1: Wilcoxon Test (Single Sample)\ndata &lt;- c(3.1, 3.6, 3.8, 4.0, 3.5) wilcox.test(data, mu = 3.5) 📊 Example 2: Mann-Whitney (Between Groups)\ngroup_a &lt;- c(10, 12, 14, 16) group_b &lt;- c(8, 9, 10, 11) wilcox.test(group_a, group_b) 📊 Example 3: Kruskal-Wallis on Iris\nkruskal.test(Sepal.Length ~ Species, data = iris) 📊 Example 4: Spearman Rank Correlation\ncor.test(iris\\(Sepal.Length, iris\\)Petal.Length, method = “spearman”) 🚧 Next: Part 2 — covering:\nNon-Linear Regression\nLogistic Regression\nPoisson & Negative Binomial\nRobust & Bayesian Regression\nModel Fit Diagnostics\nSimulations, Interactive Plots",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#non-linear-and-logistic-regression",
+    "href": "week6.html#non-linear-and-logistic-regression",
+    "title": "7  week 6",
+    "section": "8.3 5. Non-Linear and Logistic Regression",
+    "text": "8.3 5. Non-Linear and Logistic Regression\n\n8.3.1 5.1 Non-Linear Regression\nUsed when data shows curvature, not a straight-line relationship.\n\n\n8.3.2 📊 Example 1: Quadratic Fit\n```r x &lt;- 1:10 y &lt;- 5 + 2 * x^2 + rnorm(10, 0, 10) model_quad &lt;- lm(y ~ poly(x, 2, raw = TRUE)) summary(model_quad) plot(x, y) lines(x, predict(model_quad), col = “red”) 📊 Example 2: Exponential Growth\nx &lt;- 1:20 y &lt;- 2 * exp(0.3 * x) + rnorm(20, 0, 10) df &lt;- data.frame(x, y) model_exp &lt;- nls(y ~ a * exp(b * x), data = df, start = list(a = 1, b = 0.1)) summary(model_exp) 5.2 Logistic Regression 📊 Example: Student Pass/Fail\nstudents &lt;- data.frame( Hours = c(1,2,3,4,5,6,7,8,9,10), Pass = c(0,0,0,1,1,1,1,1,1,1) )\nlog_model &lt;- glm(Pass ~ Hours, data = students, family = binomial()) summary(log_model) 🔁 Predict Probabilities\nstudents\\(prob &lt;- predict(log_model, type = \"response\")\nplot(students\\)Hours, students$prob, type = “b”, col = “blue”) 🎯 ROC Curve\nlibrary(pROC) roc_obj &lt;- roc(students\\(Pass, students\\)prob) plot(roc_obj) auc(roc_obj) 6. Poisson & Negative Binomial Distribution 6.1 Poisson: Modeling Rare Events\nlambda &lt;- 4 data_pois &lt;- rpois(100, lambda) hist(data_pois, col = “steelblue”, main = “Poisson Distribution”) 🔍 Test Fit\nobserved &lt;- table(data_pois) expected &lt;- dpois(as.numeric(names(observed)), lambda = lambda) chisq.test(observed, p = expected / sum(expected)) 6.2 Negative Binomial: Handling Overdispersion\nlibrary(MASS) nb_data &lt;- rnbinom(100, size = 5, mu = 4) hist(nb_data, col = “darkred”, main = “Negative Binomial”) 🔬 Compare Fit\nmean(data_pois); var(data_pois) # Poisson: mean ≈ variance mean(nb_data); var(nb_data) # NB: var &gt; mean 7. Robust and Bayesian Regression 7.1 Robust Regression\nlibrary(MASS) x &lt;- 1:10 y &lt;- 2*x + rnorm(10) y[10] &lt;- 100 # Outlier\nmodel_rlm &lt;- rlm(y ~ x) summary(model_rlm) plot(x, y) abline(model_rlm, col = “red”) 7.2 Bayesian Regression (brms)\nlibrary(brms) data &lt;- data.frame(x = rnorm(100), y = rnorm(100)) model_brm &lt;- brm(y ~ x, data = data, family = gaussian(), chains = 2, iter = 1000) summary(model_brm) plot(model_brm) 8. Model Fit Diagnostics 🔎 AIC & BIC\nAIC(model_quad, log_model) BIC(model_quad, log_model) 📈 Residual Plots\npar(mfrow=c(2,2)) plot(log_model) 🧪 Durbin-Watson Test\nlibrary(car) durbinWatsonTest(log_model) 9. Exercises, Simulations, & Datasets 🧠 Challenge 1: Titanic Chi-Square\nchisq.test(Titanic) 🧠 Challenge 2: Spearman on mtcars\ncor.test(mtcars\\(mpg, mtcars\\)hp, method = “spearman”) 🧠 Challenge 3: Logistic + Polynomial\nmtcars\\(am &lt;- as.factor(mtcars\\)am) log_mod &lt;- glm(am ~ poly(mpg, 2), data = mtcars, family = binomial()) summary(log_mod) 🧠 Challenge 4: Negative Binomial Fit\nlibrary(MASS) data &lt;- rnegbin(100, theta = 2) fit_nb &lt;- glm.nb(data ~ 1) summary(fit_nb) 10. Summary This module brought together:\n💡 Chi-Square Tests for independence and fit\n🧱 Non-parametric alternatives to parametric tests\n🔁 Logistic Regression for classification\n📊 Poisson and NB distributions for count data\n🧠 Robust and Bayesian inference for resistant modeling\n🧪 Diagnostics to ensure model quality\n\nReferences\n\nDr. Harsh Pradhan, BHU Lecture Notes R Core Team (2024). The R Project for Statistical Computing. MASS, brms, car, vcd, performance, tidyverse packages Text: Field, A. (2013). Discovering Statistics Using R\n\n\n8.3.3 🚀 Next Steps\nComing in Part 3:\nMultinomial and ordinal logistic regression\nZero-inflated Poisson (ZIP) and hurdle models\nBootstrapping and permutation tests\nRMarkdown interactivity: sliders, code widgets\nCustom diagnostic dashboards\nExpanded regression use cases: finance, healthcare, social science\nBrute-force simulations, grid search tuning, multiple datasets\nData cleaning + wrangling using dplyr, janitor, and tidymodels",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#advanced-logistic-models",
+    "href": "week6.html#advanced-logistic-models",
+    "title": "7  week 6",
+    "section": "8.4 12. Advanced Logistic Models",
+    "text": "8.4 12. Advanced Logistic Models\n\n8.4.1 12.1 Multinomial Logistic Regression\nUsed when the outcome variable has more than two categories (e.g., “Low”, “Medium”, “High”).\nlibrary(nnet) data(iris) iris\\(Size &lt;- cut(iris\\)Sepal.Length, breaks=3, labels=c(“Short”, “Medium”, “Long”)) model_multi &lt;- multinom(Size ~ Sepal.Width + Petal.Length, data=iris) summary(model_multi) 12.2 Ordinal Logistic Regression For ordered categories.\nlibrary(MASS) housing &lt;- data.frame( Sat = factor(sample(1:3, 100, replace = TRUE), labels = c(“Low”, “Med”, “High”)), Infl = sample(1:5, 100, replace = TRUE), Type = sample(c(“Tower”, “Apartment”, “House”), 100, replace = TRUE) ) model_ord &lt;- polr(Sat ~ Infl + Type, data = housing, Hess=TRUE) summary(model_ord) 13. Zero-Inflated and Hurdle Models 13.1 Zero-Inflated Poisson (ZIP) Used when count data has excess zeros.\nlibrary(pscl) data(“bioChemists”, package = “pscl”) zip_model &lt;- zeroinfl(art ~ fem + mar + kid5 + phd + ment, data = bioChemists, dist = “poisson”) summary(zip_model) 13.2 Hurdle Model\nhurdle_model &lt;- hurdle(art ~ fem + mar + kid5 + phd + ment, data = bioChemists) summary(hurdle_model) 14. Bootstrapping & Permutation Testing 14.1 Bootstrapping a Mean\nlibrary(boot) data &lt;- rnorm(50, mean = 10, sd = 3)\nmean_fn &lt;- function(data, indices) { d &lt;- data[indices] return(mean(d)) }\nboot_out &lt;- boot(data = data, statistic = mean_fn, R = 1000) boot.ci(boot_out, type = “bca”) 14.2 Permutation Test Example\nset.seed(100) group1 &lt;- rnorm(20, mean = 50) group2 &lt;- rnorm(20, mean = 55)\nobs_diff &lt;- mean(group1) - mean(group2)\ncombined &lt;- c(group1, group2) perm_diffs &lt;- replicate(5000, { shuffled &lt;- sample(combined) mean(shuffled[1:20]) - mean(shuffled[21:40]) })\np_value &lt;- mean(abs(perm_diffs) &gt;= abs(obs_diff)) hist(perm_diffs, main = “Permutation Test”, col = “lightblue”) abline(v = obs_diff, col = “red”) 15. Interactive Widgets with Quarto Sliders\nsliderInput(“lambda”, “Poisson Rate:”, min = 1, max = 10, value = 3) plotOutput(“poisPlot”)\noutput\\(poisPlot &lt;- renderPlot({\n  barplot(dpois(0:10, input\\)lambda), names.arg = 0:10, main = paste(“Poisson Distribution with λ =”, input$lambda), col = “steelblue”) }) 16. Data Wrangling Pipelines Cleaning & Summarizing\nlibrary(dplyr) library(janitor)\ncleaned &lt;- iris %&gt;% clean_names() %&gt;% group_by(species) %&gt;% summarise(across(everything(), mean, .names = “avg_{.col}”)) 17. Visual Diagnostics 17.1 Residual Diagnostics\nlibrary(performance) model &lt;- lm(mpg ~ wt + hp, data = mtcars) performance::check_model(model) 17.2 Leverage & Influence\ninfluence.measures(model) plot(hatvalues(model), main = “Leverage Values”) 18. Grid Search and Cross Validation Using caret package\nlibrary(caret) data(iris)\ntrain_control &lt;- trainControl(method = “cv”, number = 5) grid &lt;- expand.grid(.k = seq(3, 15, by = 2))\nmodel_knn &lt;- train(Species ~ ., data = iris, method = “knn”, trControl = train_control, tuneGrid = grid) plot(model_knn) 19. Case Study: Healthcare Outcomes Predicting hospital readmission using logistic regression.\nset.seed(42) df &lt;- data.frame( age = sample(20:90, 200, replace = TRUE), diabetes = sample(c(0,1), 200, replace = TRUE), readmit = sample(c(0,1), 200, replace = TRUE) )\nlogit &lt;- glm(readmit ~ age + diabetes, data = df, family = binomial()) summary(logit) Plot Prediction\ndf\\(pred &lt;- predict(logit, type = \"response\")\nplot(df\\)age, df\\(pred, col = df\\)diabetes + 1, pch = 19, xlab = “Age”, ylab = “Predicted Probability”) 20. Massive Simulation: Chi-Square Distribution\nset.seed(123) sim_data &lt;- replicate(10000, { obs &lt;- rpois(6, lambda = 10) exp &lt;- rep(mean(obs), 6) sum((obs - exp)^2 / exp) })\nhist(sim_data, breaks = 50, col = “gray”, main = “Chi-Square Simulated Distribution”) abline(v = qchisq(0.95, df = 5), col = “red”) 21. Resources for Practice Datasets:\nmtcars, iris, Titanic, bioChemists, airquality, faithful\nVisual tools:\nplotly, ggplot2, performance, brms\nCore Packages:\ncaret, pscl, nnet, MASS, boot, dplyr, tidymodels, vcd\n\nFinal Thoughts\n\nTesting relationships (Chi-Square)\nModeling categories (Logistic, Ordinal, Multinomial)\nWorking with counts (Poisson, ZIP, NB)\nHandling noise and outliers (Robust Regression)\nGoing Bayesian (brms + Stan)\nValidating rigorously (cross-validation, bootstrap, ROC, AIC/BIC)\nThis eBook can be extended to predictive modeling, real-world dashboards, and reproducible research.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#project-template-real-world-case-study-framework",
+    "href": "week6.html#project-template-real-world-case-study-framework",
+    "title": "7  week 6",
+    "section": "8.5 23. Project Template: Real-World Case Study Framework",
+    "text": "8.5 23. Project Template: Real-World Case Study Framework\n\n8.5.1 Objective\nDevelop an end-to-end statistical analysis pipeline using tools covered in this course.\n\n\n\n8.5.2 📁 Dataset: Custom or Open Data Portal\nOptions: - UCI Machine Learning Repository - Kaggle Datasets - Indian Government Data Portals (data.gov.in)\n\n\n\n8.5.3 Steps:\n\n8.5.3.1 🔍 Step 1: Problem Definition\nDefine a question like: &gt; “Is there an association between education level and voting preference?”\n\n\n\n8.5.3.2 🧹 Step 2: Data Cleaning\nlibrary(tidyverse) data &lt;- read.csv(“your_dataset.csv”) data_clean &lt;- data %&gt;% janitor::clean_names() %&gt;% drop_na() 📊 Step 3: EDA (Exploratory Data Analysis)\nggplot(data_clean, aes(x = variable1, fill = factor(variable2))) + geom_bar(position = “dodge”) + theme_minimal() 📈 Step 4: Modeling Choose one or more:\nChi-square (for independence)\nLogistic Regression (for binary outcomes)\nPoisson/NB (for count outcomes)\nNon-parametric (when assumptions fail)\n🧪 Step 5: Validation\nlibrary(performance) check_model(your_model) 📋 Step 6: Reporting Use:\nTables\nModel summaries\nAIC/BIC\nResiduals\nR² (if applicable)\nsummary(your_model) 24. Visual Appendix: Model Diagnostic Gallery library(performance) library(see)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week 6</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "8  Week 7",
+    "section": "",
+    "text": "8.1 1. Introduction\nThis eBook focuses on key statistical topics covered in Week 7 of the course Basic Statistics using GUI-R (RKWard). From time series forecasting to Bayesian probability and discrete distributions, each concept is explored with R-based demonstrations, code implementations, and visual outputs.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#time-series-analysis",
+    "href": "week7.html#time-series-analysis",
+    "title": "8  Week 7",
+    "section": "8.2 2. Time Series Analysis",
+    "text": "8.2 2. Time Series Analysis\n\n8.2.1 2.1 Overview of Time Series Data",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#expected-value-and-bivariate-variables",
+    "href": "week7.html#expected-value-and-bivariate-variables",
+    "title": "8  Week 7",
+    "section": "12.1 4. Expected Value and Bivariate Variables",
+    "text": "12.1 4. Expected Value and Bivariate Variables\n\n12.1.1 4.1 Expected Value Basics\nFor discrete variable \\(X\\):\n\\[\nE(X) = \\sum x_i \\cdot P(x_i)\n\\]\n```r x &lt;- c(1, 2, 3, 4) p &lt;- c(0.1, 0.3, 0.4, 0.2) expected_value &lt;- sum(x * p) print(expected_value) 4.2 Linearity of Expectation If \\(Y = aX + b\\):\na &lt;- 3 b &lt;- 5 E_X &lt;- expected_value E_Y &lt;- a * E_X + b print(E_Y) 4.3 Bivariate Distributions Example: Coin Toss (from PPT) Let:\n\\(X\\) = number of heads\n\\(Y\\) = |heads - tails|\nThen, for 3 coin tosses:\njoint_pmf &lt;- matrix(c( 0, 0, 0, 1/8, 0, 3/8, 0, 0, 0, 3/8, 0, 0, 0, 0, 0, 1/8 ), nrow = 4, byrow = TRUE)\ncolnames(joint_pmf) &lt;- c(“Y=0”, “Y=1”, “Y=2”, “Y=3”) rownames(joint_pmf) &lt;- c(“X=0”, “X=1”, “X=2”, “X=3”) print(joint_pmf) 4.4 Marginal Probabilities",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#advanced-statistical-concepts",
+    "href": "week7.html#advanced-statistical-concepts",
+    "title": "8  Week 7",
+    "section": "15.1 7. Advanced Statistical Concepts",
+    "text": "15.1 7. Advanced Statistical Concepts\n\n15.1.1 7.1 Stationarity and Unit Root Testing\nA stationary time series has constant mean and variance over time. Its essential for: - Forecasting - Valid modeling - Avoiding spurious regression\n\n15.1.1.1 Unit Root: Augmented Dickey-Fuller (ADF) Test\nlibrary(tseries) set.seed(42) x &lt;- cumsum(rnorm(100)) # non-stationary random walk plot.ts(x, main = “Simulated Random Walk”)\nadf.test(x) # Likely non-stationary (p &gt; 0.05) 7.2 Detrending Time Series\nt &lt;- time(x) trend_model &lt;- lm(x ~ t) resid_trend &lt;- resid(trend_model) plot(resid_trend, main = “Detrended Series”) adf.test(resid_trend) # Residuals should now be stationary 7.3 ARIMA Modeling Autoregressive Integrated Moving Average AR(p): Autoregression\nI(d): Differencing\nMA(q): Moving average\nlibrary(forecast) auto.arima(AirPassengers) Full Workflow\ntsdata &lt;- AirPassengers plot(tsdata)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "Visual Model Summary",
+    "section": "",
+    "text": "9.1 1. Introduction\nThis module explores the powerful integration of visual analytics and statistical reasoning. While traditional models often rely on tabular outputs, the flexplot package and similar tools highlight the importance of graphical modeling, especially in response to the replication crisis. The week also emphasizes how GUIs like RKWard and RStudio serve different user bases for statistical analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#effect-size-and-cohens-d",
+    "href": "week8.html#effect-size-and-cohens-d",
+    "title": "Visual Model Summary",
+    "section": "9.2 2. Effect Size and Cohen’s d",
+    "text": "9.2 2. Effect Size and Cohen’s d\nEffect size quantifies the magnitude of the difference, independent of sample size. One of the most common effect size measures is Cohen’s d, which compares two means.\n\n9.2.1 ✅ Interpretation of d:\n\n\n\nd\nMeaning\n\n\n\n\n0.2\nSmall effect\n\n\n0.5\nMedium effect\n\n\n0.8\nLarge effect\n\n\n\n\n\n9.2.2 📌 R Code Example (Cohen’s d)",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#using-flexplot-examples-and-best-practices",
+    "href": "week8.html#using-flexplot-examples-and-best-practices",
+    "title": "Visual Model Summary",
+    "section": "13.1 4. Using flexplot: Examples and Best Practices",
+    "text": "13.1 4. Using flexplot: Examples and Best Practices\n\n13.1.1 4.1 Univariate Visualization\nflexplot(CSE_1 ~ 1, data = my.csv.data) Plots raw data (jittered) with mean overlay\nUseful for outlier detection and distribution shape\n4.2 Bivariate Continuous vs Categorical",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#whats-next-in-part-3",
+    "href": "week8.html#whats-next-in-part-3",
+    "title": "Visual Model Summary",
+    "section": "16.1 🧠 What’s Next in Part 3?",
+    "text": "16.1 🧠 What’s Next in Part 3?\n\n📈 Full-scale simulation for effect size\n🧪 Reproducible workflows\n🧰 Custom function design\n📘 Summary + export instructions\n\nThis final section includes:\n📊 Simulation for effect size\n🧪 Custom model visuals\n📦 Reproducible workflows\n📋 Summary + rendering/export notes",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#simulation-effect-size-and-visual-inference",
+    "href": "week8.html#simulation-effect-size-and-visual-inference",
+    "title": "Visual Model Summary",
+    "section": "16.2 10. Simulation: Effect Size and Visual Inference",
+    "text": "16.2 10. Simulation: Effect Size and Visual Inference\n\n16.2.1 10.1 Simulate Cohen’s d with Flexplot\nset.seed(123) group1 &lt;- rnorm(50, mean = 5, sd = 1) group2 &lt;- rnorm(50, mean = 6.2, sd = 1)\ngroup &lt;- factor(rep(c(“A”, “B”), each = 50)) score &lt;- c(group1, group2)\nsim_df &lt;- data.frame(group, score)\nlibrary(lsr) cohensD(score ~ group, data = sim_df) # Should return d ≈ 1.2\nflexplot(score ~ group, data = sim_df) 10.2 Power and Confidence Visualization\nlibrary(pwr) pwr.t.test(d = 0.8, power = 0.8, sig.level = 0.05, type = “two.sample”) 10.3 Monte Carlo Effect Size Estimation\nsim_d &lt;- replicate(1000, { g1 &lt;- rnorm(30, 5, 1) g2 &lt;- rnorm(30, 6, 1) cohensD(g1, g2) })\nhist(sim_d, breaks = 50, col = “lightblue”, main = “Simulated Cohen’s d Distribution”) abline(v = mean(sim_d), col = “red”) 11. Visual Inference in Teaching 🎓 Overlay Raw + Model Together\nflexplot(mpg ~ wt + cyl, data = mtcars) Cyl = Panel\nGray slope = overall\nColor slope = per panel\nR² and p-values appear below\n\nWorkflow: Reproducible Visual Analytics in R 12.1 Data Import\n\ndf &lt;- read.csv(“CSE_scores.csv”) str(df) 12.2 Visualization Plan Start with flexplot()\nPanel by categorical moderators\nAdd continuous predictors\nUse added.plot() to show incremental effect\nReport both visualization + model summary\n12.3 R Markdown Report markdown\nlibrary(flexplot) flexplot(score ~ gender + age, data = df)",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#model-summary-with-visual-numeric-layers",
+    "href": "week8.html#model-summary-with-visual-numeric-layers",
+    "title": "Visual Model Summary",
+    "section": "16.3 13. Model Summary with Visual + Numeric Layers",
+    "text": "16.3 13. Model Summary with Visual + Numeric Layers\nmodel &lt;- lm(CSE_1 ~ CSE_2 + Age + Gender, data = my.csv.data) summary(model)\nadded.plot(model) # Visual version of unique effect 14. Combining flexplot with ggplot2\np1 &lt;- flexplot(CSE_1 ~ CSE_2 + Gender, data = my.csv.data) p2 &lt;- ggplot(my.csv.data, aes(CSE_2, CSE_1)) + geom_point() + geom_smooth(method = “lm”)\ncowplot::plot_grid(p1, p2, labels = c(“Flexplot”, “GGplot”)) 15. Summary Concept Tool Used Effect Size cohensD() from lsr Graphical Modeling flexplot() Simulation Monte Carlo Association Plot Slope Panels Influence Plot added.plot() Interactive Graphs ggplotly()",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8</span>"
+    ]
   }
 ]
