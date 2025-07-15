@@ -223,18 +223,18 @@ window.Quarto = {
   <li><a href="#anova-table-example" id="toc-anova-table-example" class="nav-link" data-scroll-target="#anova-table-example"><span class="header-section-number">6.11.2</span> 3.2 ANOVA Table Example</a></li>
   <li><a href="#r-code-one-way-anova" id="toc-r-code-one-way-anova" class="nav-link" data-scroll-target="#r-code-one-way-anova"><span class="header-section-number">6.11.3</span> 3.3 R Code – One-Way ANOVA</a></li>
   </ul></li>
-  <li><a href="#homogeneity-check" id="toc-homogeneity-check" class="nav-link" data-scroll-target="#homogeneity-check"><span class="header-section-number">7</span> Homogeneity check</a></li>
-  <li><a href="#lecture-28-simple-linear-regression" id="toc-lecture-28-simple-linear-regression" class="nav-link" data-scroll-target="#lecture-28-simple-linear-regression"><span class="header-section-number">8</span> 6. Lecture 28 – Simple Linear Regression</a>
+  <li><a href="#homogeneity-check" id="toc-homogeneity-check" class="nav-link" data-scroll-target="#homogeneity-check"><span class="header-section-number">6.12</span> Homogeneity check</a></li>
+  <li><a href="#lecture-28-simple-linear-regression" id="toc-lecture-28-simple-linear-regression" class="nav-link" data-scroll-target="#lecture-28-simple-linear-regression"><span class="header-section-number">6.13</span> 6. Lecture 28 – Simple Linear Regression</a>
   <ul>
-  <li><a href="#theory-refresher" id="toc-theory-refresher" class="nav-link" data-scroll-target="#theory-refresher"><span class="header-section-number">8.1</span> 6.1 Theory Refresher</a></li>
-  <li><a href="#example-in-r" id="toc-example-in-r" class="nav-link" data-scroll-target="#example-in-r"><span class="header-section-number">8.2</span> 6.2 Example in R</a></li>
-  <li><a href="#install.packagesscatterplot3d" id="toc-install.packagesscatterplot3d" class="nav-link" data-scroll-target="#install.packagesscatterplot3d"><span class="header-section-number">8.3</span> install.packages(“scatterplot3d”)</a></li>
+  <li><a href="#theory-refresher" id="toc-theory-refresher" class="nav-link" data-scroll-target="#theory-refresher"><span class="header-section-number">6.13.1</span> 6.1 Theory Refresher</a></li>
+  <li><a href="#example-in-r" id="toc-example-in-r" class="nav-link" data-scroll-target="#example-in-r"><span class="header-section-number">6.13.2</span> 6.2 Example in R</a></li>
+  <li><a href="#install.packagesscatterplot3d" id="toc-install.packagesscatterplot3d" class="nav-link" data-scroll-target="#install.packagesscatterplot3d"><span class="header-section-number">6.13.3</span> install.packages(“scatterplot3d”)</a></li>
   </ul></li>
-  <li><a href="#lecture-32-logistic-regression" id="toc-lecture-32-logistic-regression" class="nav-link" data-scroll-target="#lecture-32-logistic-regression"><span class="header-section-number">9</span> 10. Lecture 32 – Logistic Regression</a>
+  <li><a href="#lecture-32-logistic-regression" id="toc-lecture-32-logistic-regression" class="nav-link" data-scroll-target="#lecture-32-logistic-regression"><span class="header-section-number">6.14</span> 10. Lecture 32 – Logistic Regression</a>
   <ul>
-  <li><a href="#when-to-use" id="toc-when-to-use" class="nav-link" data-scroll-target="#when-to-use"><span class="header-section-number">9.1</span> 10.1 When to Use</a></li>
-  <li><a href="#logistic-function" id="toc-logistic-function" class="nav-link" data-scroll-target="#logistic-function"><span class="header-section-number">9.2</span> 10.2 Logistic Function</a></li>
-  <li><a href="#r-example-predicting-admission" id="toc-r-example-predicting-admission" class="nav-link" data-scroll-target="#r-example-predicting-admission"><span class="header-section-number">9.3</span> 10.3 R Example: Predicting Admission</a></li>
+  <li><a href="#when-to-use" id="toc-when-to-use" class="nav-link" data-scroll-target="#when-to-use"><span class="header-section-number">6.14.1</span> 10.1 When to Use</a></li>
+  <li><a href="#logistic-function" id="toc-logistic-function" class="nav-link" data-scroll-target="#logistic-function"><span class="header-section-number">6.14.2</span> 10.2 Logistic Function</a></li>
+  <li><a href="#r-example-predicting-admission" id="toc-r-example-predicting-admission" class="nav-link" data-scroll-target="#r-example-predicting-admission"><span class="header-section-number">6.14.3</span> 10.3 R Example: Predicting Admission</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -483,18 +483,18 @@ F = \frac{MS_{between}}{MS_{within}} = \frac{SSM / df_M}{SSR / df_R}
 <p>5.6 Assumption Check in R {r} # Normality check shapiro.test(residuals(anova_model))</p>
 </section>
 </section>
-<section id="homogeneity-check" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Homogeneity check</h1>
+<section id="homogeneity-check" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="homogeneity-check"><span class="header-section-number">6.12</span> Homogeneity check</h2>
 <p>library(car) leveneTest(score ~ group, data = data) 5.7 Visualizing F-Distribution</p>
 <p>curve(df(x, df1=3, df2=9), from=0, to=10, col=“blue”, lwd=2, ylab=“Density”, main=“F-distribution df(3,9)”) abline(v=8.27, col=“red”, lwd=2, lty=2) legend(“topright”, legend=c(“F = 8.27”), col=“red”, lty=2) 5.8 Simulation: When F is not significant</p>
 <p>set.seed(2024) group_A &lt;- rnorm(10, mean=50) group_B &lt;- rnorm(10, mean=51) group_C &lt;- rnorm(10, mean=50.5)</p>
 <p>score &lt;- c(group_A, group_B, group_C) group &lt;- factor(rep(c(“A”, “B”, “C”), each=10))</p>
 <p>df &lt;- data.frame(score, group) aov_model &lt;- aov(score ~ group, data=df) summary(aov_model) ➡️ End of Part 2/4. Part 3 includes Regression (Simple, Multiple, Non-linear), VIF, Residuals, and Advanced Modeling</p>
 </section>
-<section id="lecture-28-simple-linear-regression" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> 6. Lecture 28 – Simple Linear Regression</h1>
-<section id="theory-refresher" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="theory-refresher"><span class="header-section-number">8.1</span> 6.1 Theory Refresher</h2>
+<section id="lecture-28-simple-linear-regression" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="lecture-28-simple-linear-regression"><span class="header-section-number">6.13</span> 6. Lecture 28 – Simple Linear Regression</h2>
+<section id="theory-refresher" class="level3" data-number="6.13.1">
+<h3 data-number="6.13.1" class="anchored" data-anchor-id="theory-refresher"><span class="header-section-number">6.13.1</span> 6.1 Theory Refresher</h3>
 <p>Linear regression predicts a <strong>dependent variable (Y)</strong> using an <strong>independent variable (X)</strong>.</p>
 <p><strong>Model Equation</strong>:</p>
 <p><span class="math display">\[
@@ -510,8 +510,8 @@ Y = \beta_0 + \beta_1 X + \epsilon
 </ul>
 <hr>
 </section>
-<section id="example-in-r" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="example-in-r"><span class="header-section-number">8.2</span> 6.2 Example in R</h2>
+<section id="example-in-r" class="level3" data-number="6.13.2">
+<h3 data-number="6.13.2" class="anchored" data-anchor-id="example-in-r"><span class="header-section-number">6.13.2</span> 6.2 Example in R</h3>
 <p>study_time &lt;- c(2, 3, 4, 5, 6) grades &lt;- c(50, 60, 65, 70, 75)</p>
 <p>model &lt;- lm(grades ~ study_time) summary(model) 6.3 Regression Line Visualization</p>
 <p>plot(study_time, grades, main=“Simple Regression”, xlab=“Study Time”, ylab=“Grades”) abline(model, col=“blue”, lwd=2) 6.4 Interpret Coefficients</p>
@@ -529,8 +529,8 @@ Y = \beta_0 + \beta_1 X + \epsilon
 <p>7.3 Partial Residual Plots</p>
 <p>avPlots(multi_model) 7.4 Plot 3D Regression Plane</p>
 </section>
-<section id="install.packagesscatterplot3d" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="install.packagesscatterplot3d"><span class="header-section-number">8.3</span> install.packages(“scatterplot3d”)</h2>
+<section id="install.packagesscatterplot3d" class="level3" data-number="6.13.3">
+<h3 data-number="6.13.3" class="anchored" data-anchor-id="install.packagesscatterplot3d"><span class="header-section-number">6.13.3</span> install.packages(“scatterplot3d”)</h3>
 <p>library(scatterplot3d) scatterplot3d(df<span class="math inline">\(Hours, df\)</span>Sleep, df$Exam, highlight.3d=TRUE, type=“h”, angle=55, color=“darkgreen”, pch=16) 8. Lecture 30 – Polynomial and Non-Linear Regression 8.1 Simulating Non-linear Relationship</p>
 <p>x &lt;- seq(0, 10, 0.1) y &lt;- 5 + 2 * x^2 + rnorm(length(x), 0, 5) plot(x, y, main=“Non-linear Pattern”, pch=19) 8.2 Polynomial Regression</p>
 <p>poly_model &lt;- lm(y ~ poly(x, 2)) summary(poly_model)</p>
@@ -545,21 +545,21 @@ summary(multi_model)\)</span>adj.r.squared 9.2 MSE and RMSE</p>
 <p>pred &lt;- predict(multi_model) actual &lt;- df$Exam residuals &lt;- actual - pred mse &lt;- mean(residuals^2) rmse &lt;- sqrt(mse)</p>
 </section>
 </section>
-<section id="lecture-32-logistic-regression" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> 10. Lecture 32 – Logistic Regression</h1>
-<section id="when-to-use" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="when-to-use"><span class="header-section-number">9.1</span> 10.1 When to Use</h2>
+<section id="lecture-32-logistic-regression" class="level2" data-number="6.14">
+<h2 data-number="6.14" class="anchored" data-anchor-id="lecture-32-logistic-regression"><span class="header-section-number">6.14</span> 10. Lecture 32 – Logistic Regression</h2>
+<section id="when-to-use" class="level3" data-number="6.14.1">
+<h3 data-number="6.14.1" class="anchored" data-anchor-id="when-to-use"><span class="header-section-number">6.14.1</span> 10.1 When to Use</h3>
 <p>Logistic regression is used when the <strong>dependent variable is categorical</strong> (typically binary: 0/1, Yes/No, Pass/Fail).</p>
 </section>
-<section id="logistic-function" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="logistic-function"><span class="header-section-number">9.2</span> 10.2 Logistic Function</h2>
+<section id="logistic-function" class="level3" data-number="6.14.2">
+<h3 data-number="6.14.2" class="anchored" data-anchor-id="logistic-function"><span class="header-section-number">6.14.2</span> 10.2 Logistic Function</h3>
 <p><span class="math display">\[
 P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X)}}
 \]</span></p>
 <hr>
 </section>
-<section id="r-example-predicting-admission" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="r-example-predicting-admission"><span class="header-section-number">9.3</span> 10.3 R Example: Predicting Admission</h2>
+<section id="r-example-predicting-admission" class="level3" data-number="6.14.3">
+<h3 data-number="6.14.3" class="anchored" data-anchor-id="r-example-predicting-admission"><span class="header-section-number">6.14.3</span> 10.3 R Example: Predicting Admission</h3>
 <p>df &lt;- data.frame( Admit = c(1,1,0,1,0,0,1,1,0,0), Score = c(80,85,60,90,55,40,88,83,59,52) )</p>
 <p>logit_model &lt;- glm(Admit ~ Score, data=df, family=“binomial”) summary(logit_model) 10.4 Probability Prediction</p>
 <p>df$Prob &lt;- predict(logit_model, type=“response”) df 10.5 ROC Curve</p>
