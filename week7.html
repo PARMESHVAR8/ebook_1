@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Parmeshvar">
-<meta name="dcterms.date" content="2025-07-06">
+<meta name="author" content="Dr.&nbsp;Harsh Pradhan">
 
-<title>my-ebook</title>
+<title>7&nbsp; Week 7 – my-ebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week1.html" rel="next">
+<link href="./week8.html" rel="next">
+<link href="./week5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -111,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -147,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span></a>
   </div>
 </li>
@@ -167,8 +196,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link active" data-scroll-target="#lecture-notes"><span class="header-section-number">0.1</span> Lecture notes</a></li>
-  <li><a href="#moodle-website" id="toc-moodle-website" class="nav-link" data-scroll-target="#moodle-website"><span class="header-section-number">0.2</span> Moodle website</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> 1. Introduction</a></li>
+  <li><a href="#time-series-analysis" id="toc-time-series-analysis" class="nav-link" data-scroll-target="#time-series-analysis"><span class="header-section-number">7.2</span> 2. Time Series Analysis</a>
+  <ul>
+  <li><a href="#overview-of-time-series-data" id="toc-overview-of-time-series-data" class="nav-link" data-scroll-target="#overview-of-time-series-data"><span class="header-section-number">7.2.1</span> 2.1 Overview of Time Series Data</a></li>
+  </ul></li>
+  <li><a href="#load-and-visualize-example-data" id="toc-load-and-visualize-example-data" class="nav-link" data-scroll-target="#load-and-visualize-example-data"><span class="header-section-number">8</span> Load and visualize example data</a></li>
+  <li><a href="#simulate-joint-probability" id="toc-simulate-joint-probability" class="nav-link" data-scroll-target="#simulate-joint-probability"><span class="header-section-number">9</span> Simulate joint probability</a></li>
+  <li><a href="#prior-probabilities" id="toc-prior-probabilities" class="nav-link" data-scroll-target="#prior-probabilities"><span class="header-section-number">10</span> Prior probabilities</a></li>
+  <li><a href="#bayes-formula" id="toc-bayes-formula" class="nav-link" data-scroll-target="#bayes-formula"><span class="header-section-number">11</span> Bayes’ formula</a>
+  <ul>
+  <li><a href="#expected-value-and-bivariate-variables" id="toc-expected-value-and-bivariate-variables" class="nav-link" data-scroll-target="#expected-value-and-bivariate-variables"><span class="header-section-number">11.1</span> 4. Expected Value and Bivariate Variables</a>
+  <ul class="collapse">
+  <li><a href="#expected-value-basics" id="toc-expected-value-basics" class="nav-link" data-scroll-target="#expected-value-basics"><span class="header-section-number">11.1.1</span> 4.1 Expected Value Basics</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#marginal-px" id="toc-marginal-px" class="nav-link" data-scroll-target="#marginal-px"><span class="header-section-number">12</span> Marginal P(X)</a></li>
+  <li><a href="#marginal-py" id="toc-marginal-py" class="nav-link" data-scroll-target="#marginal-py"><span class="header-section-number">13</span> Marginal P(Y)</a></li>
+  <li><a href="#example-of-forecast-in-time-series" id="toc-example-of-forecast-in-time-series" class="nav-link" data-scroll-target="#example-of-forecast-in-time-series"><span class="header-section-number">14</span> Example of forecast in time series</a>
+  <ul>
+  <li><a href="#advanced-statistical-concepts" id="toc-advanced-statistical-concepts" class="nav-link" data-scroll-target="#advanced-statistical-concepts"><span class="header-section-number">14.1</span> 7. Advanced Statistical Concepts</a>
+  <ul class="collapse">
+  <li><a href="#stationarity-and-unit-root-testing" id="toc-stationarity-and-unit-root-testing" class="nav-link" data-scroll-target="#stationarity-and-unit-root-testing"><span class="header-section-number">14.1.1</span> 7.1 Stationarity and Unit Root Testing</a>
+  <ul class="collapse">
+  <li><a href="#unit-root-augmented-dickey-fuller-adf-test" id="toc-unit-root-augmented-dickey-fuller-adf-test" class="nav-link" data-scroll-target="#unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">14.1.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#step-1-stationarity-check" id="toc-step-1-stationarity-check" class="nav-link" data-scroll-target="#step-1-stationarity-check"><span class="header-section-number">15</span> Step 1: Stationarity check</a></li>
+  <li><a href="#step-2-model-selection" id="toc-step-2-model-selection" class="nav-link" data-scroll-target="#step-2-model-selection"><span class="header-section-number">16</span> Step 2: Model Selection</a></li>
+  <li><a href="#step-3-forecasting" id="toc-step-3-forecasting" class="nav-link" data-scroll-target="#step-3-forecasting"><span class="header-section-number">17</span> Step 3: Forecasting</a></li>
   </ul>
 </nav>
     </div>
@@ -177,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">my-ebook</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></h1>
 </div>
 
 
@@ -187,16 +244,10 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Parmeshvar </p>
+             <p>Dr.&nbsp;Harsh Pradhan </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 6, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -206,395 +257,146 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Introduction</p>
-<p><strong>DR.Harsh Pradhan</strong>, [Phone: +91-9930034241 , Email: harsh.231284@gmail.com], <a href="http://www.uni-potsdam.de/en/university-of-potsdam.html">Institute of Management Studies, Banaras Hindu University</a>, Address: 18-GF, Jaipuria Enclave, Kaushambhi, Ghaziabad, India, 2010<br>
-<strong>Interest</strong>: <a href="http://www.uni-potsdam.de/humfak/hum-forschungsschwerpunkte/forschungscluster-sprache.html">Goal Orientation Job Performance Consumer Behavior Behavioral Finance Bibiliometric Analysis Options as Derivatives Statistics Indian Knowledge System</a>,</p>
-<p><a href="https://orcid.org/0000-0002-3332-3610">Orcid ID</a><br>
-<a href="https://scholar.google.com/citations?user=8l5MEd0AAAAJ&amp;hl=en&amp;oi=sra">Google Scholar</a><br>
-<a href="http://www.youtube.com/@dr.harshpradhan742">Youtube ID</a></p>
-<p><a href="https://bhu.ac.in/Site/FacultyProfile/1_5?FA000562">Academic Profile</a></p>
+<section id="introduction" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> 1. Introduction</h2>
+<p>This eBook focuses on key statistical topics covered in <strong>Week 7</strong> of the course <em>Basic Statistics using GUI-R (RKWard)</em>. From <strong>time series forecasting</strong> to <strong>Bayesian probability</strong> and <strong>discrete distributions</strong>, each concept is explored with R-based demonstrations, code implementations, and visual outputs.</p>
 <hr>
-<p>Courses offered:</p>
-<ol type="1">
-<li>Free online course, four weeks (MOOC), enrollments open: Introduction to Bayesian Data Analysis</li>
-<li>Short (four-hour) tutorial on Bayesian statistics, taught at EMLAR 2022: here</li>
-<li>Introduction to (frequentist) statistics</li>
-<li>Introduction to Bayesian data analysis for cognitive science</li>
-<li>BDA cover</li>
-</ol>
-<section id="lecture-notes" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="lecture-notes"><span class="header-section-number">0.1</span> Lecture notes</h2>
-<p>Download from <a href="https://drive.google.com/drive/folders/1H-jQNOqS3PLgdXADRYF7ag-WqN_tK4qc?usp=share_link">here</a>.</p>
 </section>
-<section id="moodle-website" class="level2" data-number="0.2">
-<h2 data-number="0.2" class="anchored" data-anchor-id="moodle-website"><span class="header-section-number">0.2</span> Moodle website</h2>
-<p>All communications with students in Potsdam will be done through <a href="https://moodle2.uni-potsdam.de/course/view.php?id=17526">this website</a>. # 📘 Schedule</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th><strong>Week</strong></th>
-<th><strong>Lecture</strong></th>
-<th><strong>Main Topic</strong></th>
-<th><strong>Subtopic</strong></th>
-<th><strong>🎥 Video</strong></th>
-<th><strong>📄 PDF Resource</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Week 2</td>
-<td>1</td>
-<td>Descriptive Statistics</td>
-<td>Central Tendency</td>
-<td><a href="https://youtu.be/9709cbHi4-8?t=173">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1CXkLjlvsMt6-BcrDLrNPsTt6SIUSq7NG/view">Week 2.pdf</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>2</td>
-<td>Descriptive Statistics</td>
-<td>Measure of Variability</td>
-<td><a href="https://youtu.be/Wn-buo8ARUY">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3</td>
-<td>Descriptive Statistics</td>
-<td>Describing Data</td>
-<td><a href="https://youtu.be/LS9jxi9t06A">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4</td>
-<td>Descriptive Statistics</td>
-<td>Probability</td>
-<td><a href="https://youtu.be/DImY6pmX8UA">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>5</td>
-<td>Descriptive Statistics</td>
-<td>Distribution</td>
-<td><a href="https://youtu.be/RZVFQ_wlQBI">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td>Week 3</td>
-<td>1</td>
-<td>Descriptive Statistics</td>
-<td>Z Table (Normal Distribution)</td>
-<td><a href="https://youtu.be/mh92FQKFFlA">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1sVwyzDjitecinjyR4LxbOafHe8ol0JIu/view">Week 3.pdf</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>2</td>
-<td>Descriptive Statistics</td>
-<td>Measuring Divergence</td>
-<td><a href="https://youtu.be/SdghNy_5oe0">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3</td>
-<td>Inferential Statistics</td>
-<td>Sample and Population</td>
-<td><a href="https://youtu.be/eYjtWoMb21s">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>4</td>
-<td>Inferential Statistics</td>
-<td>Model Fit</td>
-<td><a href="https://youtu.be/1hdzMWcj5a0">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>5</td>
-<td>Inferential Statistics</td>
-<td>Hypothesis and Error</td>
-<td><a href="https://youtu.be/pP3yKhIgJQw">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td>Week 4</td>
-<td>1</td>
-<td>Terms of Statistics</td>
-<td>Terms of Statistics</td>
-<td><a href="https://youtu.be/lO7jZJIlTgU">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1dDDUXCdCBp6VxKbQzsnsIwQY-kZL8U3D/view">Week 4.pdf</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>2</td>
-<td>Terms of Statistics</td>
-<td>T-Test</td>
-<td><a href="https://youtu.be/4i-2uZ2LuXg">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3</td>
-<td>Terms of Statistics</td>
-<td>T-Test in Detail</td>
-<td><a href="https://youtu.be/Vo48lLCR3yk">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4</td>
-<td>ANOVA</td>
-<td>ANOVA</td>
-<td><a href="https://youtu.be/jz-lu_HtkXo">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td>Week 5</td>
-<td>1</td>
-<td>ANOVA</td>
-<td>Example of ANOVA</td>
-<td><a href="https://youtu.be/AQL2fVlc2EA">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1f3LZJRQS-Lnxy0_kNaAASZppPJk8pUX_/view">Week 5.pdf</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>2</td>
-<td>ANOVA</td>
-<td>Types of ANOVA</td>
-<td><a href="https://youtu.be/MQ9GFyXZtQA">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3</td>
-<td>Correlation</td>
-<td>Introduction to Correlation</td>
-<td><a href="https://youtu.be/5zMCSIa2YqE">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4</td>
-<td>Correlation</td>
-<td>Regression (Part 1)</td>
-<td><a href="https://youtu.be/ELEeZNyySSM">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>5</td>
-<td>Correlation</td>
-<td>Regression (Part 2)</td>
-<td><a href="https://youtu.be/3hJdWKV0alw">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td>Week 6</td>
-<td>1</td>
-<td>Correlation</td>
-<td>R Script for Regression</td>
-<td><a href="https://youtu.be/V151yC8cCMs">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1mA1-nFxjmXK_QC8vbW4BhoKO6HNS0wZy/view">Week 6.pdf</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>2</td>
-<td>Chi Square</td>
-<td>Chi Square</td>
-<td><a href="https://youtu.be/Z9DxCZzXAz4">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3</td>
-<td>Chi Square</td>
-<td>Chi Square Test</td>
-<td><a href="https://youtu.be/ZhUTidqrPbI">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>4</td>
-<td>Logistic Function</td>
-<td>Regression Function</td>
-<td><a href="https://youtu.be/3EXiuBJYTn4">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>5</td>
-<td>Logistic Function</td>
-<td>Distribution</td>
-<td><a href="https://youtu.be/9NhApiDlFrs">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td>Week 7</td>
-<td>1</td>
-<td>Time Series</td>
-<td>Intro to Time Series</td>
-<td><a href="https://youtu.be/t5z9cM-PgoQ">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1ACloSOgbYVlxmqGfUe_mBDvirLJzCZnB/view">Week 7.pdf</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>2</td>
-<td>Time Series</td>
-<td>Conditional Probability</td>
-<td><a href="https://youtu.be/SjaJNBilHcM">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3</td>
-<td>Time Series</td>
-<td>Additional Concepts</td>
-<td><a href="https://youtu.be/pm1SXK0kFpg">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4</td>
-<td>Time Series</td>
-<td>Distribution</td>
-<td><a href="https://youtu.be/0V0UTi5fbPc">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>5</td>
-<td>Time Series</td>
-<td>Poisson Distribution</td>
-<td><a href="https://youtu.be/MM-MkuJa_KY">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>6</td>
-<td>Index Numbers</td>
-<td>Price &amp; Quantity Index</td>
-<td><a href="https://youtu.be/YZv8H2PlymQ">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>7</td>
-<td>Decision Environments</td>
-<td>Risk/Uncertainty, Bayes, Trees</td>
-<td><a href="https://youtu.be/b0jP5anQiUg">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>8</td>
-<td>Time Series Analysis</td>
-<td>Components, Trend, Seasonality</td>
-<td><a href="https://youtu.be/C77jZeYkBBU">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>9</td>
-<td>Time Series Analysis</td>
-<td>Least Squares Method</td>
-<td><a href="https://youtu.be/yiJjJaL7z5w">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td>Week 8</td>
-<td>1</td>
-<td>Effect Size &amp; Documentation</td>
-<td>Package/Library</td>
-<td><a href="https://youtu.be/C77jZeYkBBU">Video</a></td>
-<td><a href="https://drive.google.com/file/d/1dUv8rXI3vhsMkBcYnlStYg-xJpYtCYSF/view">Week 8.pdf</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>2</td>
-<td>Effect Size &amp; Documentation</td>
-<td>RStudio vs RKward</td>
-<td><a href="https://youtu.be/Z9DxCZzXAz4">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3</td>
-<td>Effect Size &amp; Documentation</td>
-<td>Flexplot</td>
-<td><a href="https://youtu.be/ZhUTidqrPbI">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>4</td>
-<td>Effect Size &amp; Documentation</td>
-<td>Functions</td>
-<td><a href="https://youtu.be/3EXiuBJYTn4">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>5</td>
-<td>Effect Size &amp; Documentation</td>
-<td>R Shiny &amp; R Markdown</td>
-<td><a href="https://youtu.be/9NhApiDlFrs">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>6</td>
-<td>Effect Size &amp; Documentation</td>
-<td>Application with Real Datasets</td>
-<td><a href="https://youtu.be/t5z9cM-PgoQ">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>7</td>
-<td>Effect Size &amp; Interpretation</td>
-<td>Importance in Testing</td>
-<td><a href="https://youtu.be/SjaJNBilHcM">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>8</td>
-<td>Effect Size &amp; Interpretation</td>
-<td>Installing dplyr, ggplot2</td>
-<td><a href="https://youtu.be/MM-MkuJa_KY">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>9</td>
-<td>Effect Size &amp; Interpretation</td>
-<td>Visual Model Interpretation</td>
-<td><a href="https://youtu.be/YZv8H2PlymQ">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10</td>
-<td>Effect Size &amp; Interpretation</td>
-<td>Creating/Using Functions</td>
-<td><a href="https://youtu.be/b0jP5anQiUg">Video</a></td>
-<td>Same as above</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11</td>
-<td>Effect Size &amp; Interpretation</td>
-<td>Report, Dashboard, Interactivity</td>
-<td><a href="https://youtu.be/C77jZeYkBBU">Video</a></td>
-<td>Same as above</td>
-</tr>
-</tbody>
-</table>
+<section id="time-series-analysis" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="time-series-analysis"><span class="header-section-number">7.2</span> 2. Time Series Analysis</h2>
+<section id="overview-of-time-series-data" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="overview-of-time-series-data"><span class="header-section-number">7.2.1</span> 2.1 Overview of Time Series Data</h3>
+</section>
+</section>
+<section id="load-and-visualize-example-data" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Load and visualize example data</h1>
+<p>install.packages(“TSA”) library(TSA) data(tempdub) plot(tempdub, main=“Monthly Temperature in Dubuque”) Trend: Long-term increase or decrease</p>
+<p>Seasonality: Predictable recurring patterns</p>
+<p>Cyclic: Irregular, long-term fluctuations</p>
+<p>2.2 Data Import and Price Fetching</p>
+<p>install.packages(“BatchGetSymbols”) library(BatchGetSymbols)</p>
+<p>first.date &lt;- Sys.Date() - 90 last.date &lt;- Sys.Date() stocks &lt;- c(“TCS.NS”) tcs_prices &lt;- BatchGetSymbols(tickers = stocks, first.date, last.date) write.csv(tcs_prices$data, “tcs.csv”) 2.3 Handling Seasonality</p>
+<p>rt &lt;- diff(log(tempdub), 12) # Seasonal difference for monthly data plot(rt, main = “Seasonally Differenced Series”)</p>
+<p>library(tseries) adf.test(rt) # Test for stationarity Monthly Dummies</p>
+<p>month &lt;- season(tempdub) m1 &lt;- lm(tempdub ~ month - 1) summary(m1) resid &lt;- residuals(m1) adf.test(resid) 2.4 Trend Extraction &amp; Detrending</p>
+<p>sim &lt;- rnorm(100, mean = 0, sd = 10) x &lt;- 5 + time(sim)*3 + ts(sim) x &lt;- ts(x) plot(x)</p>
+<p>model2 &lt;- lm(x ~ time(x)) resid2 &lt;- resid(model2) adf.test(resid2) 2.5 Smoothing Techniques Simple Moving Average (SMA)</p>
+<p>library(forecast) ts_data &lt;- ts(c(10, 15, 20, 25, 30, 35, 40)) sma &lt;- ma(ts_data, order = 3) plot(sma, type = ‘l’, col = ‘blue’) Exponential Moving Average (EMA)</p>
+<p>library(TTR) data &lt;- c(23, 45, 67, 34, 56, 78, 90) ts_data &lt;- ts(data) ema &lt;- EMA(ts_data, n = 3) plot(ema, type = ‘l’, col = ‘darkgreen’) 2.6 Forecasting Models Naive Forecasting: Future = last value</p>
+<p>ARIMA:</p>
+<p>library(forecast) fit &lt;- auto.arima(AirPassengers) forecast(fit, h = 12) plot(forecast(fit, h = 12)) ETS Models:</p>
+<p>ets_model &lt;- ets(AirPassengers) plot(forecast(ets_model)) 2.7 Accuracy Metrics</p>
+<p>actual &lt;- c(100, 110, 120) pred &lt;- c(98, 112, 119)</p>
+<p>MAE &lt;- mean(abs(actual - pred)) RMSE &lt;- sqrt(mean((actual - pred)^2)) MAPE &lt;- mean(abs((actual - pred)/actual)) * 100</p>
+<p>print(c(MAE = MAE, RMSE = RMSE, MAPE = MAPE)) 3. Conditional Probability &amp; Bayes’ Theorem 3.1 Conditional Probability If <span class="math inline">\(P(B) &gt; 0\)</span>, then:</p>
+</section>
+<section id="simulate-joint-probability" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Simulate joint probability</h1>
+<p>joint &lt;- matrix(c(0.1, 0.2, 0.2, 0.5), nrow = 2) P_A_given_B &lt;- joint[1,2] / (joint[1,2] + joint[2,2]) print(P_A_given_B) 3.2 Bayes’ Theorem</p>
+</section>
+<section id="prior-probabilities" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Prior probabilities</h1>
+<p>P_user &lt;- 0.05 P_pos_given_user &lt;- 0.9 P_neg_given_nonuser &lt;- 0.8 P_nonuser &lt;- 1 - P_user P_pos_given_nonuser &lt;- 1 - P_neg_given_nonuser</p>
+</section>
+<section id="bayes-formula" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Bayes’ formula</h1>
+<p>P_user_given_pos &lt;- (P_pos_given_user * P_user) / ((P_pos_given_user * P_user) + (P_pos_given_nonuser * P_nonuser))</p>
+<p>print(P_user_given_pos) 3.3 Real-Life Applications Medical Testing</p>
+<p>Spam Filtering</p>
+<p>Credit Risk Modeling</p>
+<hr>
+<section id="expected-value-and-bivariate-variables" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="expected-value-and-bivariate-variables"><span class="header-section-number">11.1</span> 4. Expected Value and Bivariate Variables</h2>
+<section id="expected-value-basics" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="expected-value-basics"><span class="header-section-number">11.1.1</span> 4.1 Expected Value Basics</h3>
+<p>For discrete variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+E(X) = \sum x_i \cdot P(x_i)
+\]</span></p>
+<p>```r x &lt;- c(1, 2, 3, 4) p &lt;- c(0.1, 0.3, 0.4, 0.2) expected_value &lt;- sum(x * p) print(expected_value) 4.2 Linearity of Expectation If <span class="math inline">\(Y = aX + b\)</span>:</p>
+<p>a &lt;- 3 b &lt;- 5 E_X &lt;- expected_value E_Y &lt;- a * E_X + b print(E_Y) 4.3 Bivariate Distributions Example: Coin Toss (from PPT) Let:</p>
+<p><span class="math inline">\(X\)</span> = number of heads</p>
+<p><span class="math inline">\(Y\)</span> = |heads - tails|</p>
+<p>Then, for 3 coin tosses:</p>
+<p>joint_pmf &lt;- matrix(c( 0, 0, 0, 1/8, 0, 3/8, 0, 0, 0, 3/8, 0, 0, 0, 0, 0, 1/8 ), nrow = 4, byrow = TRUE)</p>
+<p>colnames(joint_pmf) &lt;- c(“Y=0”, “Y=1”, “Y=2”, “Y=3”) rownames(joint_pmf) &lt;- c(“X=0”, “X=1”, “X=2”, “X=3”) print(joint_pmf) 4.4 Marginal Probabilities</p>
+</section>
+</section>
+</section>
+<section id="marginal-px" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Marginal P(X)</h1>
+<p>rowSums(joint_pmf)</p>
+</section>
+<section id="marginal-py" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Marginal P(Y)</h1>
+<p>colSums(joint_pmf)</p>
+<ol start="5" type="1">
+<li>Discrete Distributions 5.1 Hypergeometric Distribution</li>
+</ol>
+<p>get_probability &lt;- function(N, K, n, k) { choose(K, k) * choose(N - K, n - k) / choose(N, n) }</p>
+<p>N &lt;- 10 K &lt;- 6 n &lt;- 5 possible_k &lt;- 0:n</p>
+<p>probabilities &lt;- sapply(possible_k, function(k) get_probability(N, K, n, k))</p>
+<p>barplot(probabilities, names.arg = possible_k, xlab = “White Balls in Sample”, ylab = “Probability”, col = “lightblue”, main = “Hypergeometric Distribution”) 5.2 Poisson Distribution</p>
+<p>lambda &lt;- 2 values &lt;- 0:10 prob_pois &lt;- dpois(values, lambda)</p>
+<p>barplot(prob_pois, names.arg = values, main = “Poisson(λ=2)”, col = “orange”) 5.3 Negative Binomial Distribution</p>
+<p>p &lt;- 0.70 r &lt;- 5 attempts &lt;- 5:20 pmf &lt;- dnbinom(attempts - r, size = r, prob = p)</p>
+<p>plot(attempts, pmf, type = “h”, lwd = 2, col = “blue”, main = “Negative Binomial Distribution”, xlab = “Attempts”, ylab = “Probability”) 5.4 Geometric Distribution</p>
+<p>p &lt;- 0.3 x_vals &lt;- 1:20 geo_prob &lt;- dgeom(x_vals - 1, prob = p)</p>
+<p>plot(x_vals, geo_prob, type = “h”, col = “darkgreen”, main = “Geometric Distribution”, xlab = “Trial”, ylab = “P(success at k-th trial)”) 6. Practical Applications 6.1 Bayesian Inference in R Bayes inference example with normal prior/posterior:</p>
+<p>library(ggplot2)</p>
+<p>prior &lt;- rnorm(10000, mean = 0.3, sd = 0.1) likelihood &lt;- rnorm(10000, mean = 0.35, sd = 0.05) posterior &lt;- (prior + likelihood)/2</p>
+<p>df &lt;- data.frame( value = c(prior, likelihood, posterior), dist = factor(rep(c(“Prior”, “Likelihood”, “Posterior”), each = 10000)) )</p>
+<p>ggplot(df, aes(x = value, fill = dist)) + geom_density(alpha = 0.5) + labs(title = “Bayesian Updating”) 6.2 Forecasting in Finance and Healthcare Finance: Time series of stock returns</p>
+<p>Healthcare: Spread of diseases</p>
+</section>
+<section id="example-of-forecast-in-time-series" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Example of forecast in time series</h1>
+<p>library(forecast) fit &lt;- auto.arima(AirPassengers) forecast_vals &lt;- forecast(fit, h = 24) plot(forecast_vals, main = “AirPassengers Forecast”) 6.3 Effect Size Estimation</p>
+<p>install.packages(“lsr”) library(lsr)</p>
+<p>cohensD(c(3.2, 3.4, 3.5), mu = 3.0) Effect size values:</p>
+<p>Small: 0.2</p>
+<p>Medium: 0.5</p>
+<p>Large: 0.8</p>
+<p>This section wraps up with:</p>
+<p>📈 ARIMA modeling</p>
+<p>📊 Stationarity &amp; Unit Root tests (ADF)</p>
+<p>🧪 Residual analysis</p>
+<p>🧠 Advanced diagnostics</p>
+<p>📋 Summary &amp; references</p>
+<hr>
+<section id="advanced-statistical-concepts" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="advanced-statistical-concepts"><span class="header-section-number">14.1</span> 7. Advanced Statistical Concepts</h2>
+<section id="stationarity-and-unit-root-testing" class="level3" data-number="14.1.1">
+<h3 data-number="14.1.1" class="anchored" data-anchor-id="stationarity-and-unit-root-testing"><span class="header-section-number">14.1.1</span> 7.1 Stationarity and Unit Root Testing</h3>
+<p>A <strong>stationary time series</strong> has constant mean and variance over time. Its essential for: - Forecasting - Valid modeling - Avoiding spurious regression</p>
+<section id="unit-root-augmented-dickey-fuller-adf-test" class="level4" data-number="14.1.1.1">
+<h4 data-number="14.1.1.1" class="anchored" data-anchor-id="unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">14.1.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</h4>
+<p>library(tseries) set.seed(42) x &lt;- cumsum(rnorm(100)) # non-stationary random walk plot.ts(x, main = “Simulated Random Walk”)</p>
+<p>adf.test(x) # Likely non-stationary (p &gt; 0.05) 7.2 Detrending Time Series</p>
+<p>t &lt;- time(x) trend_model &lt;- lm(x ~ t) resid_trend &lt;- resid(trend_model) plot(resid_trend, main = “Detrended Series”) adf.test(resid_trend) # Residuals should now be stationary 7.3 ARIMA Modeling Autoregressive Integrated Moving Average AR(p): Autoregression</p>
+<p>I(d): Differencing</p>
+<p>MA(q): Moving average</p>
+<p>library(forecast) auto.arima(AirPassengers) Full Workflow</p>
+<p>tsdata &lt;- AirPassengers plot(tsdata)</p>
+</section>
+</section>
+</section>
+</section>
+<section id="step-1-stationarity-check" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Step 1: Stationarity check</h1>
+<p>adf.test(tsdata) # May need differencing</p>
+</section>
+<section id="step-2-model-selection" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Step 2: Model Selection</h1>
+<p>fit &lt;- auto.arima(tsdata) summary(fit)</p>
+</section>
+<section id="step-3-forecasting" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> Step 3: Forecasting</h1>
+<p>fc &lt;- forecast(fit, h = 12) plot(fc) 7.4 ACF &amp; PACF Plots Used for identifying model orders:</p>
+<p>acf(diff(log(AirPassengers))) pacf(diff(log(AirPassengers))) 7.5 Residual Diagnostics</p>
+<p>checkresiduals(fit) # From forecast package Box.test(residuals(fit), lag = 20, type = “Ljung-Box”) 7.6 Forecast Accuracy</p>
+<p>actuals &lt;- window(AirPassengers, start = c(1960,1)) preds &lt;- forecast(fit, h = 12)$mean accuracy(preds, actuals) 8. Summary 🎓 This eBook covered advanced Week 7 content with practical R implementation:</p>
+<p>Topic Key Concepts &amp; Tools Time Series Analysis TSA, decomposition, ADF test, ARIMA Conditional Probability Bayes theorem, real-life problems Expected Value Joint PMFs, linearity of expectation Discrete Distributions Poisson, Hypergeometric, Negative Binomial Forecasting Techniques SMA, EMA, ETS, ARIMA Bayesian Applications Posterior inference, medical testing Model Evaluation AIC, BIC, RMSE, MAPE, residuals</p>
 
 
 </section>
@@ -1001,10 +803,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./week5.html" class="pagination-link" aria-label="Week 5">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week1.html" class="pagination-link" aria-label="Week 1">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week8.html" class="pagination-link" aria-label="Week 8">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

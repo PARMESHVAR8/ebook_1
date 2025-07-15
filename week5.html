@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Harsh Pradhan">
 
-<title>10&nbsp; Week 5 – my-ebook</title>
+<title>6&nbsp; Week 5 – my-ebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,7 +31,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./basic-statistics7.html" rel="prev">
+<link href="./week7.html" rel="next">
+<link href="./week4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -105,6 +71,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week5.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Week 5</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,56 +146,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction-to-statistics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Statistics</span></span></a>
+  <a href="./week1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-statistics1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">week 1</span></span></a>
+  <a href="./week2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-statistics2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">basic-statistics_2</span></span></a>
+  <a href="./week3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basic-statistics3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">basic-statistics_3</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-statistics4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">basic-statistics_4</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-statistics5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">basic-statistics_5</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-statistics6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">basic-statistics_6</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./basic-statistics7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">basic-statistics_7</span></span></a>
+  <a href="./week4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></span></a>
   </div>
 </li>
     </ul>
@@ -213,37 +196,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#practical-demonstration-of-anova" id="toc-practical-demonstration-of-anova" class="nav-link active" data-scroll-target="#practical-demonstration-of-anova"><span class="header-section-number">11</span> Practical Demonstration of ANOVA</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">6.1</span> 1. Introduction</a></li>
+  <li><a href="#lecture-24-deep-dive-correlation" id="toc-lecture-24-deep-dive-correlation" class="nav-link" data-scroll-target="#lecture-24-deep-dive-correlation"><span class="header-section-number">6.2</span> 2. Lecture 24 – Deep Dive: Correlation</a>
+  <ul>
+  <li><a href="#what-is-correlation" id="toc-what-is-correlation" class="nav-link" data-scroll-target="#what-is-correlation"><span class="header-section-number">6.2.1</span> 2.1 What is Correlation?</a>
   <ul class="collapse">
-  <li><a href="#example-context" id="toc-example-context" class="nav-link" data-scroll-target="#example-context"><span class="header-section-number">11.1</span> Example Context</a></li>
-  <li><a href="#model-between-group-sum-of-squares-ssm" id="toc-model-between-group-sum-of-squares-ssm" class="nav-link" data-scroll-target="#model-between-group-sum-of-squares-ssm"><span class="header-section-number">11.2</span> Model (Between-Group) Sum of Squares (SSM)</a></li>
-  <li><a href="#step-by-step-ssm-calculation-between-group" id="toc-step-by-step-ssm-calculation-between-group" class="nav-link" data-scroll-target="#step-by-step-ssm-calculation-between-group"><span class="header-section-number">11.3</span> Step-by-Step SSM Calculation (Between-Group)</a></li>
-  <li><a href="#one-way-anova-table" id="toc-one-way-anova-table" class="nav-link" data-scroll-target="#one-way-anova-table"><span class="header-section-number">11.4</span> One-Way ANOVA Table</a></li>
-  <li><a href="#degrees-of-freedom" id="toc-degrees-of-freedom" class="nav-link" data-scroll-target="#degrees-of-freedom"><span class="header-section-number">11.5</span> Degrees of Freedom</a></li>
-  <li><a href="#example-dataset" id="toc-example-dataset" class="nav-link" data-scroll-target="#example-dataset"><span class="header-section-number">11.6</span> Example Dataset</a></li>
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory"><span class="header-section-number">6.2.1.1</span> 💡 Theory</a></li>
   </ul></li>
-  <li><a href="#lecture-2-type-of-anova" id="toc-lecture-2-type-of-anova" class="nav-link" data-scroll-target="#lecture-2-type-of-anova"><span class="header-section-number">12</span> Lecture 2: Type of ANOVA</a>
-  <ul class="collapse">
-  <li><a href="#repeated-measures-vs-between-subjects-anova" id="toc-repeated-measures-vs-between-subjects-anova" class="nav-link" data-scroll-target="#repeated-measures-vs-between-subjects-anova"><span class="header-section-number">12.1</span> Repeated Measures vs Between-Subjects ANOVA</a></li>
-  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations"><span class="header-section-number">12.2</span> Foundations</a></li>
-  <li><a href="#anova-output-example" id="toc-anova-output-example" class="nav-link" data-scroll-target="#anova-output-example"><span class="header-section-number">12.3</span> ANOVA Output Example</a></li>
-  <li><a href="#manova-vs-n-way-anova" id="toc-manova-vs-n-way-anova" class="nav-link" data-scroll-target="#manova-vs-n-way-anova"><span class="header-section-number">12.4</span> MANOVA vs N-Way ANOVA</a></li>
+  <li><a href="#types-of-correlation-and-use-cases" id="toc-types-of-correlation-and-use-cases" class="nav-link" data-scroll-target="#types-of-correlation-and-use-cases"><span class="header-section-number">6.2.2</span> 2.2 Types of Correlation and Use Cases</a></li>
+  <li><a href="#pearson-spearman-kendall-comparison" id="toc-pearson-spearman-kendall-comparison" class="nav-link" data-scroll-target="#pearson-spearman-kendall-comparison"><span class="header-section-number">6.2.3</span> 2.3 Pearson, Spearman, Kendall Comparison</a></li>
   </ul></li>
-  <li><a href="#lecture-3-introduction-to-correlation" id="toc-lecture-3-introduction-to-correlation" class="nav-link" data-scroll-target="#lecture-3-introduction-to-correlation"><span class="header-section-number">13</span> Lecture 3: Introduction to Correlation</a>
+  <li><a href="#add-non-linear-data" id="toc-add-non-linear-data" class="nav-link" data-scroll-target="#add-non-linear-data"><span class="header-section-number">6.3</span> Add non-linear data</a></li>
+  <li><a href="#pearson-linear" id="toc-pearson-linear" class="nav-link" data-scroll-target="#pearson-linear"><span class="header-section-number">6.4</span> Pearson (linear)</a></li>
+  <li><a href="#spearman-rank-monotonic" id="toc-spearman-rank-monotonic" class="nav-link" data-scroll-target="#spearman-rank-monotonic"><span class="header-section-number">6.5</span> Spearman (rank, monotonic)</a></li>
+  <li><a href="#kendall-ordinal" id="toc-kendall-ordinal" class="nav-link" data-scroll-target="#kendall-ordinal"><span class="header-section-number">6.6</span> Kendall (ordinal)</a></li>
+  <li><a href="#install.packagesggm" id="toc-install.packagesggm" class="nav-link" data-scroll-target="#install.packagesggm"><span class="header-section-number">6.7</span> install.packages(“ggm”)</a></li>
+  <li><a href="#simulate-data" id="toc-simulate-data" class="nav-link" data-scroll-target="#simulate-data"><span class="header-section-number">6.8</span> Simulate data</a></li>
+  <li><a href="#generate-all-pairwise-correlations" id="toc-generate-all-pairwise-correlations" class="nav-link" data-scroll-target="#generate-all-pairwise-correlations"><span class="header-section-number">6.9</span> Generate all pairwise correlations</a></li>
+  <li><a href="#visualize-matrix-with-corrplot" id="toc-visualize-matrix-with-corrplot" class="nav-link" data-scroll-target="#visualize-matrix-with-corrplot"><span class="header-section-number">6.10</span> Visualize matrix with corrplot</a></li>
+  <li><a href="#lecture-25-one-way-anova-detailed" id="toc-lecture-25-one-way-anova-detailed" class="nav-link" data-scroll-target="#lecture-25-one-way-anova-detailed"><span class="header-section-number">6.11</span> 3. Lecture 25 – One-Way ANOVA (Detailed)</a>
+  <ul>
+  <li><a href="#concept-overview" id="toc-concept-overview" class="nav-link" data-scroll-target="#concept-overview"><span class="header-section-number">6.11.1</span> 3.1 Concept Overview</a>
   <ul class="collapse">
-  <li><a href="#correlation-types" id="toc-correlation-types" class="nav-link" data-scroll-target="#correlation-types"><span class="header-section-number">13.1</span> Correlation Types</a></li>
-  <li><a href="#r-commands" id="toc-r-commands" class="nav-link" data-scroll-target="#r-commands"><span class="header-section-number">13.2</span> R Commands</a></li>
+  <li><a href="#formula-breakdown" id="toc-formula-breakdown" class="nav-link" data-scroll-target="#formula-breakdown"><span class="header-section-number">6.11.1.1</span> 💡 Formula Breakdown</a></li>
   </ul></li>
-  <li><a href="#lecture-4-correlation-continued-and-regression-introduction" id="toc-lecture-4-correlation-continued-and-regression-introduction" class="nav-link" data-scroll-target="#lecture-4-correlation-continued-and-regression-introduction"><span class="header-section-number">14</span> Lecture 4: Correlation Continued and Regression Introduction</a>
-  <ul class="collapse">
-  <li><a href="#pearson-vs-spearman-vs-kendall" id="toc-pearson-vs-spearman-vs-kendall" class="nav-link" data-scroll-target="#pearson-vs-spearman-vs-kendall"><span class="header-section-number">14.1</span> Pearson vs Spearman vs Kendall</a></li>
-  <li><a href="#uses-of-correlation" id="toc-uses-of-correlation" class="nav-link" data-scroll-target="#uses-of-correlation"><span class="header-section-number">14.2</span> Uses of Correlation</a></li>
+  <li><a href="#anova-table-example" id="toc-anova-table-example" class="nav-link" data-scroll-target="#anova-table-example"><span class="header-section-number">6.11.2</span> 3.2 ANOVA Table Example</a></li>
+  <li><a href="#r-code-one-way-anova" id="toc-r-code-one-way-anova" class="nav-link" data-scroll-target="#r-code-one-way-anova"><span class="header-section-number">6.11.3</span> 3.3 R Code – One-Way ANOVA</a></li>
   </ul></li>
-  <li><a href="#lecture-5-regression-continued" id="toc-lecture-5-regression-continued" class="nav-link" data-scroll-target="#lecture-5-regression-continued"><span class="header-section-number">15</span> Lecture 5: Regression Continued</a>
-  <ul class="collapse">
-  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression"><span class="header-section-number">15.1</span> Linear Regression</a></li>
-  <li><a href="#nonlinear-regression" id="toc-nonlinear-regression" class="nav-link" data-scroll-target="#nonlinear-regression"><span class="header-section-number">15.2</span> Nonlinear Regression</a></li>
-  <li><a href="#example-equations" id="toc-example-equations" class="nav-link" data-scroll-target="#example-equations"><span class="header-section-number">15.3</span> Example Equations</a></li>
+  <li><a href="#homogeneity-check" id="toc-homogeneity-check" class="nav-link" data-scroll-target="#homogeneity-check"><span class="header-section-number">7</span> Homogeneity check</a></li>
+  <li><a href="#lecture-28-simple-linear-regression" id="toc-lecture-28-simple-linear-regression" class="nav-link" data-scroll-target="#lecture-28-simple-linear-regression"><span class="header-section-number">8</span> 6. Lecture 28 – Simple Linear Regression</a>
+  <ul>
+  <li><a href="#theory-refresher" id="toc-theory-refresher" class="nav-link" data-scroll-target="#theory-refresher"><span class="header-section-number">8.1</span> 6.1 Theory Refresher</a></li>
+  <li><a href="#example-in-r" id="toc-example-in-r" class="nav-link" data-scroll-target="#example-in-r"><span class="header-section-number">8.2</span> 6.2 Example in R</a></li>
+  <li><a href="#install.packagesscatterplot3d" id="toc-install.packagesscatterplot3d" class="nav-link" data-scroll-target="#install.packagesscatterplot3d"><span class="header-section-number">8.3</span> install.packages(“scatterplot3d”)</a></li>
+  </ul></li>
+  <li><a href="#lecture-32-logistic-regression" id="toc-lecture-32-logistic-regression" class="nav-link" data-scroll-target="#lecture-32-logistic-regression"><span class="header-section-number">9</span> 10. Lecture 32 – Logistic Regression</a>
+  <ul>
+  <li><a href="#when-to-use" id="toc-when-to-use" class="nav-link" data-scroll-target="#when-to-use"><span class="header-section-number">9.1</span> 10.1 When to Use</a></li>
+  <li><a href="#logistic-function" id="toc-logistic-function" class="nav-link" data-scroll-target="#logistic-function"><span class="header-section-number">9.2</span> 10.2 Logistic Function</a></li>
+  <li><a href="#r-example-predicting-admission" id="toc-r-example-predicting-admission" class="nav-link" data-scroll-target="#r-example-predicting-admission"><span class="header-section-number">9.3</span> 10.3 R Example: Predicting Admission</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -253,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Week 5</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5</span></h1>
 </div>
 
 
@@ -276,89 +267,161 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="practical-demonstration-of-anova" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Practical Demonstration of ANOVA</h1>
-<p>ANOVA (Analysis of Variance) is a statistical technique used to compare the means of three or more groups. It helps to determine whether there are any statistically significant differences between the means of independent (unrelated) groups.</p>
-<section id="example-context" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="example-context"><span class="header-section-number">11.1</span> Example Context</h2>
-<p>In this study, the fairness scores (proportion of money shared in a game) were collected from four different societal groups:</p>
+<section id="introduction" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">6.1</span> 1. Introduction</h2>
+<p>Welcome to <strong>Week 5</strong> of <em>Basic Statistics using GUI-R (RKWard)</em>, where we cover <strong>relationship testing</strong>, <strong>correlation</strong>, <strong>regression</strong>, <strong>ANOVA</strong>, and related diagnostics in <strong>depth</strong>, using both theory and R-based implementation.</p>
+<p>This book is designed to:</p>
 <ul>
-<li>Hunter-Gatherers (HG)</li>
-<li>Farmers (F)</li>
-<li>Natural Resource-based (NR)</li>
-<li>Industrial (I)</li>
+<li>Clarify statistical concepts visually</li>
+<li>Use real data simulations</li>
+<li>Empower you with reproducible R/RKWard workflows</li>
+<li>Prepare you to run statistical diagnostics and build interpretations</li>
 </ul>
-<p>The data was:</p>
+<hr>
+</section>
+<section id="lecture-24-deep-dive-correlation" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="lecture-24-deep-dive-correlation"><span class="header-section-number">6.2</span> 2. Lecture 24 – Deep Dive: Correlation</h2>
+<section id="what-is-correlation" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="what-is-correlation"><span class="header-section-number">6.2.1</span> 2.1 What is Correlation?</h3>
+<p>Correlation is a statistical measure that expresses the <strong>extent to which two variables are linearly related</strong>.</p>
+<section id="theory" class="level4" data-number="6.2.1.1">
+<h4 data-number="6.2.1.1" class="anchored" data-anchor-id="theory"><span class="header-section-number">6.2.1.1</span> 💡 Theory</h4>
+<ul>
+<li>If variable X increases as Y increases → <strong>Positive correlation</strong></li>
+<li>If variable X increases as Y decreases → <strong>Negative correlation</strong></li>
+<li>If there’s no linear trend → <strong>Zero correlation</strong></li>
+</ul>
+<blockquote class="blockquote">
+<p>Pearson’s r ranges from -1 to +1.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="types-of-correlation-and-use-cases" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="types-of-correlation-and-use-cases"><span class="header-section-number">6.2.2</span> 2.2 Types of Correlation and Use Cases</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 51%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Group</th>
-<th>P1</th>
-<th>P2</th>
-<th>P3</th>
-<th>P4</th>
-<th>Mean</th>
+<th>Data Type</th>
+<th>Correlation Type</th>
+<th>Use Case Example</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>HG</td>
-<td>28</td>
-<td>36</td>
-<td>38</td>
-<td>31</td>
-<td>33.25</td>
+<td>Nominal</td>
+<td>Phi</td>
+<td>Gender vs.&nbsp;Yes/No Preferences</td>
 </tr>
 <tr class="even">
-<td>F</td>
-<td>32</td>
-<td>33</td>
-<td>40</td>
-<td>—</td>
-<td>35.00</td>
+<td>Dichotomous</td>
+<td>Point-Biserial</td>
+<td>Pass/Fail vs.&nbsp;Exam Score</td>
 </tr>
 <tr class="odd">
-<td>NR</td>
-<td>47</td>
-<td>43</td>
-<td>52</td>
-<td>—</td>
-<td>47.33</td>
+<td>Ordinal/Rank</td>
+<td>Spearman/Kendall</td>
+<td>Rank in class vs.&nbsp;Test anxiety</td>
 </tr>
 <tr class="even">
-<td>I</td>
-<td>40</td>
-<td>47</td>
-<td>45</td>
-<td>—</td>
-<td>44.00</td>
+<td>Ratio/Interval</td>
+<td>Pearson</td>
+<td>Height vs.&nbsp;Weight</td>
+</tr>
+<tr class="odd">
+<td>Multivariate</td>
+<td>Partial Correl.</td>
+<td>Control confounders</td>
 </tr>
 </tbody>
 </table>
-<p>Total N = 13<br>
-Grand Mean = 39.385</p>
+<hr>
 </section>
-<section id="model-between-group-sum-of-squares-ssm" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="model-between-group-sum-of-squares-ssm"><span class="header-section-number">11.2</span> Model (Between-Group) Sum of Squares (SSM)</h2>
-<ol type="1">
-<li>Calculate the difference between the mean of each group and the grand mean.</li>
-<li>Square each of these differences.</li>
-<li>Multiply each result by the number of participants in that group.</li>
-<li>Add the values for each group.</li>
-</ol>
+<section id="pearson-spearman-kendall-comparison" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="pearson-spearman-kendall-comparison"><span class="header-section-number">6.2.3</span> 2.3 Pearson, Spearman, Kendall Comparison</h3>
+<p>{r} ## Simulate linear data set.seed(123) x &lt;- rnorm(100) y &lt;- 2 * x + rnorm(100)</p>
 </section>
-<section id="step-by-step-ssm-calculation-between-group" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="step-by-step-ssm-calculation-between-group"><span class="header-section-number">11.3</span> Step-by-Step SSM Calculation (Between-Group)</h2>
-<p><strong>SSM (Model Sum of Squares)</strong> is calculated as:</p>
-<ol type="1">
-<li>Calculate the difference between each group mean and the grand mean.</li>
-<li>Square each of those differences.</li>
-<li>Multiply the squared differences by the number of observations in each group (weighting).</li>
-<li>Sum all the values.</li>
-</ol>
 </section>
-<section id="one-way-anova-table" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="one-way-anova-table"><span class="header-section-number">11.4</span> One-Way ANOVA Table</h2>
+<section id="add-non-linear-data" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="add-non-linear-data"><span class="header-section-number">6.3</span> Add non-linear data</h2>
+<p>z &lt;- x^2 + rnorm(100)</p>
+</section>
+<section id="pearson-linear" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="pearson-linear"><span class="header-section-number">6.4</span> Pearson (linear)</h2>
+<p>cor(x, y, method = “pearson”)</p>
+</section>
+<section id="spearman-rank-monotonic" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="spearman-rank-monotonic"><span class="header-section-number">6.5</span> Spearman (rank, monotonic)</h2>
+<p>cor(x, z, method = “spearman”)</p>
+</section>
+<section id="kendall-ordinal" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="kendall-ordinal"><span class="header-section-number">6.6</span> Kendall (ordinal)</h2>
+<p>cor(x, z, method = “kendall”) 2.4 Visualizing Correlations ## Visualization library(ggplot2) data &lt;- data.frame(x, y, z)</p>
+<p>ggplot(data, aes(x = x, y = y)) + geom_point() + geom_smooth(method = “lm”, se = FALSE, color = “blue”) + labs(title = “Scatter Plot with Linear Fit”, x = “X”, y = “Y”)</p>
+<p>ggplot(data, aes(x = x, y = z)) + geom_point(color = “darkred”) + labs(title = “Non-Linear Relationship”, x = “X”, y = “Z”) 2.5 Correlation Matrix in RKWard Steps:</p>
+<p>Load data into RKWard.</p>
+<p>Navigate to Statistics → Summaries → Correlation Matrix.</p>
+<p>Choose the appropriate variables.</p>
+<p>Choose correlation type (Pearson, Spearman).</p>
+<p>Run and interpret the matrix output.</p>
+<p>2.6 Partial Correlation in R When you want to compute the correlation between two variables while controlling for a third:</p>
+</section>
+<section id="install.packagesggm" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="install.packagesggm"><span class="header-section-number">6.7</span> install.packages(“ggm”)</h2>
+<p>library(ggm) X1 &lt;- rnorm(100) X2 &lt;- X1 + rnorm(100, sd = 0.5) X3 &lt;- rnorm(100) pcor(c(“X1”, “X2”, “X3”), cov(cbind(X1, X2, X3))) Interpretation: This tells you the pure correlation between X1 and X2, controlling for X3.</p>
+<p>2.7 R Code to Automate All</p>
+</section>
+<section id="simulate-data" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="simulate-data"><span class="header-section-number">6.8</span> Simulate data</h2>
+<p>set.seed(100) data &lt;- data.frame( A = rnorm(100), B = rnorm(100), C = rnorm(100) )</p>
+</section>
+<section id="generate-all-pairwise-correlations" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="generate-all-pairwise-correlations"><span class="header-section-number">6.9</span> Generate all pairwise correlations</h2>
+<p>cor(data)</p>
+</section>
+<section id="visualize-matrix-with-corrplot" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="visualize-matrix-with-corrplot"><span class="header-section-number">6.10</span> Visualize matrix with corrplot</h2>
+<p>library(corrplot) corrplot(cor(data), method = “color”, tl.col = “black”, addCoef.col = “black”) 2.8 Spearman vs Pearson – When to Use? Use Pearson when data is normally distributed, continuous, and linear.</p>
+<p>Use Spearman when data is ordinal, ranked, or non-linear but monotonic.</p>
+<p>Kendall’s Tau is more robust for small sample sizes.</p>
+<p>👀 <strong>Next Up: Part 2/4</strong> will include:</p>
+<ul>
+<li>One-Way ANOVA full theory + math<br>
+</li>
+<li>Repeated Measures ANOVA (detailed)<br>
+</li>
+<li>Visualization of F-distributions<br>
+</li>
+<li>MANOVA + N-Way examples<br>
+</li>
+<li>10+ R code exercises</li>
+</ul>
+</section>
+<section id="lecture-25-one-way-anova-detailed" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="lecture-25-one-way-anova-detailed"><span class="header-section-number">6.11</span> 3. Lecture 25 – One-Way ANOVA (Detailed)</h2>
+<section id="concept-overview" class="level3" data-number="6.11.1">
+<h3 data-number="6.11.1" class="anchored" data-anchor-id="concept-overview"><span class="header-section-number">6.11.1</span> 3.1 Concept Overview</h3>
+<p><strong>Analysis of Variance (ANOVA)</strong> is used when comparing the <strong>means of three or more groups</strong>.</p>
+<section id="formula-breakdown" class="level4" data-number="6.11.1.1">
+<h4 data-number="6.11.1.1" class="anchored" data-anchor-id="formula-breakdown"><span class="header-section-number">6.11.1.1</span> 💡 Formula Breakdown</h4>
+<ul>
+<li><strong>SSM (Sum of Squares Model)</strong>: Variation between groups</li>
+<li><strong>SSR (Sum of Squares Residual)</strong>: Variation within groups</li>
+<li><strong>SST (Total)</strong>: Total variation</li>
+</ul>
+<p><strong>F-Ratio</strong>:</p>
+<p><span class="math display">\[
+F = \frac{MS_{between}}{MS_{within}} = \frac{SSM / df_M}{SSR / df_R}
+\]</span></p>
+</section>
+</section>
+<section id="anova-table-example" class="level3" data-number="6.11.2">
+<h3 data-number="6.11.2" class="anchored" data-anchor-id="anova-table-example"><span class="header-section-number">6.11.2</span> 3.2 ANOVA Table Example</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -367,7 +430,6 @@ Grand Mean = 39.385</p>
 <th>df</th>
 <th>MS</th>
 <th>F</th>
-<th>p</th>
 </tr>
 </thead>
 <tbody>
@@ -377,14 +439,12 @@ Grand Mean = 39.385</p>
 <td>3</td>
 <td>153.88</td>
 <td>8.27</td>
-<td>&lt;0.001</td>
 </tr>
 <tr class="even">
 <td>Within</td>
 <td>167.42</td>
 <td>9</td>
 <td>18.60</td>
-<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -393,359 +453,159 @@ Grand Mean = 39.385</p>
 <td>12</td>
 <td></td>
 <td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="degrees-of-freedom" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="degrees-of-freedom"><span class="header-section-number">11.5</span> Degrees of Freedom</h2>
-<ul>
-<li>Between Groups: <code>k - 1 = 4 - 1 = 3</code></li>
-<li>Within Groups: <code>N - k = 13 - 4 = 9</code></li>
-<li>Total: <code>N - 1 = 13 - 1 = 12</code></li>
-</ul>
-</section>
-<section id="example-dataset" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="example-dataset"><span class="header-section-number">11.6</span> Example Dataset</h2>
-<p>Fairness score: proportion of money shared in a game</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Group</th>
-<th>P1</th>
-<th>P2</th>
-<th>P3</th>
-<th>P4</th>
-<th>Mean</th>
-<th>N</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Hunter-Gatherer</td>
-<td>28</td>
-<td>36</td>
-<td>38</td>
-<td>31</td>
-<td>33.25</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>Farming</td>
-<td>32</td>
-<td>33</td>
-<td>40</td>
-<td></td>
-<td>35.00</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>Natural Res.</td>
-<td>47</td>
-<td>43</td>
-<td>52</td>
-<td></td>
-<td>47.33</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>Industrial</td>
-<td>40</td>
-<td>47</td>
-<td>45</td>
-<td></td>
-<td>44.00</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Grand Mean</strong>: 39.385</p>
-<p><strong>F(3,9) = 8.27</strong>, <strong>p &lt; .001</strong></p>
-<p><a href="http://www.distributome.org/V3/calc/index.html">Distributome F Calculator</a></p>
 <hr>
 </section>
+<section id="r-code-one-way-anova" class="level3" data-number="6.11.3">
+<h3 data-number="6.11.3" class="anchored" data-anchor-id="r-code-one-way-anova"><span class="header-section-number">6.11.3</span> 3.3 R Code – One-Way ANOVA</h3>
+<p>group1 &lt;- c(28, 36, 38, 31) group2 &lt;- c(32, 33, 40) group3 &lt;- c(47, 43, 52) group4 &lt;- c(40, 47, 45)</p>
+<p>score &lt;- c(group1, group2, group3, group4) group &lt;- factor(rep(c(“Hunter”, “Farming”, “Natural”, “Industrial”), times=c(4,3,3,3)))</p>
+<p>data &lt;- data.frame(score, group) anova_model &lt;- aov(score ~ group, data=data) summary(anova_model) 3.4 Post-Hoc Analysis (Tukey HSD)</p>
+<p>TukeyHSD(anova_model) 3.5 Visualize Group Differences</p>
+<p>boxplot(score ~ group, data = data, col = c(“lightblue”, “pink”, “lightgreen”, “yellow”)) 4. Lecture 26 – Repeated Measures ANOVA 4.1 Theory Repeated measures involve the same subjects measured under multiple conditions.</p>
+<p>Aspect Repeated Measures Between-Subjects Subjects Same across treatments Different per group Variability Control Higher (less noise) Lower Efficiency More efficient Requires more samples</p>
+<p>4.2 R Code – Repeated Measures</p>
+<p>library(ez) subject &lt;- factor(rep(1:10, each=3)) treatment &lt;- factor(rep(c(“Pre”, “Mid”, “Post”), times=10)) score &lt;- c(rnorm(10, 65), rnorm(10, 70), rnorm(10, 75)) rm_df &lt;- data.frame(subject, treatment, score)</p>
+<p>ezANOVA(data=rm_df, dv=score, wid=subject, within=treatment) 4.3 Visual Check</p>
+<p>library(ggplot2) ggplot(rm_df, aes(x=treatment, y=score, group=subject, color=subject)) + geom_line() + geom_point() + theme_minimal() + labs(title=“Repeated Measures ANOVA Plot”) 5. Lecture 27 – MANOVA and N-Way ANOVA 5.1 What is MANOVA? Multivariate Analysis of Variance (MANOVA) extends ANOVA to multiple dependent variables.</p>
+<p>Example Use Case:</p>
+<p>Investigating how teaching methods affect:</p>
+<p>Exam scores</p>
+<p>Class participation</p>
+<p>Homework submission</p>
+<p>5.2 R Code – MANOVA</p>
+<p>y1 &lt;- rnorm(30, 60, 5) y2 &lt;- rnorm(30, 70, 6) y3 &lt;- rnorm(30, 80, 4) method &lt;- factor(rep(c(“A”, “B”, “C”), each=10))</p>
+<p>manova_model &lt;- manova(cbind(y1, y2, y3) ~ method) summary(manova_model) 5.3 N-Way ANOVA (Interaction Effects)</p>
+<p>df &lt;- expand.grid( Teaching = c(“Traditional”, “Interactive”), Gender = c(“Male”, “Female”), Rep = 1:20 ) df$Score &lt;- rnorm(80, mean = 70, sd = 5)</p>
+<p>model_nway &lt;- aov(Score ~ Teaching * Gender, data = df) summary(model_nway) 5.4 Interaction Plot {r} interaction.plot(df<span class="math inline">\(Teaching, df\)</span>Gender, df$Score, col=c(“red”, “blue”)) 5.5 Assumptions of ANOVA Assumption Check Method Tool Normality QQ Plot, Shapiro Test shapiro.test() Homogeneity Levene’s/Bartlett’s Test car::leveneTest() Independence Design-level assurance Design phase</p>
+<p>5.6 Assumption Check in R {r} # Normality check shapiro.test(residuals(anova_model))</p>
 </section>
-<section id="lecture-2-type-of-anova" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Lecture 2: Type of ANOVA</h1>
-<section id="repeated-measures-vs-between-subjects-anova" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="repeated-measures-vs-between-subjects-anova"><span class="header-section-number">12.1</span> Repeated Measures vs Between-Subjects ANOVA</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 33%">
-<col style="width: 34%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Repeated Measures</th>
-<th>Between-Subjects</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Experimental Design</td>
-<td>Same subjects, multiple conditions</td>
-<td>Different groups, one condition</td>
-</tr>
-<tr class="even">
-<td>Dependency</td>
-<td>Dependent</td>
-<td>Independent</td>
-</tr>
-<tr class="odd">
-<td>Statistical Power</td>
-<td>Lower (within variability)</td>
-<td>Higher (with more subjects)</td>
-</tr>
-<tr class="even">
-<td>Control of Differences</td>
-<td>Each subject = own control</td>
-<td>Inter-subject differences</td>
-</tr>
-<tr class="odd">
-<td>Efficiency</td>
-<td>Fewer subjects</td>
-<td>May need more subjects</td>
-</tr>
-<tr class="even">
-<td>Example</td>
-<td>Teaching improvement</td>
-<td>Compare teaching methods</td>
-</tr>
-</tbody>
-</table>
 </section>
-<section id="foundations" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="foundations"><span class="header-section-number">12.2</span> Foundations</h2>
+<section id="homogeneity-check" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Homogeneity check</h1>
+<p>library(car) leveneTest(score ~ group, data = data) 5.7 Visualizing F-Distribution</p>
+<p>curve(df(x, df1=3, df2=9), from=0, to=10, col=“blue”, lwd=2, ylab=“Density”, main=“F-distribution df(3,9)”) abline(v=8.27, col=“red”, lwd=2, lty=2) legend(“topright”, legend=c(“F = 8.27”), col=“red”, lty=2) 5.8 Simulation: When F is not significant</p>
+<p>set.seed(2024) group_A &lt;- rnorm(10, mean=50) group_B &lt;- rnorm(10, mean=51) group_C &lt;- rnorm(10, mean=50.5)</p>
+<p>score &lt;- c(group_A, group_B, group_C) group &lt;- factor(rep(c(“A”, “B”, “C”), each=10))</p>
+<p>df &lt;- data.frame(score, group) aov_model &lt;- aov(score ~ group, data=df) summary(aov_model) ➡️ End of Part 2/4. Part 3 includes Regression (Simple, Multiple, Non-linear), VIF, Residuals, and Advanced Modeling</p>
+</section>
+<section id="lecture-28-simple-linear-regression" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 6. Lecture 28 – Simple Linear Regression</h1>
+<section id="theory-refresher" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="theory-refresher"><span class="header-section-number">8.1</span> 6.1 Theory Refresher</h2>
+<p>Linear regression predicts a <strong>dependent variable (Y)</strong> using an <strong>independent variable (X)</strong>.</p>
+<p><strong>Model Equation</strong>:</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1 X + \epsilon
+\]</span></p>
+<p>Where:</p>
 <ul>
-<li>Repeated Measures → Paired Sample t-test<br>
+<li><span class="math inline">\(\beta_0\)</span> = Intercept<br>
 </li>
-<li>Between Subjects → Independent Sample t-test</li>
-</ul>
-</section>
-<section id="anova-output-example" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="anova-output-example"><span class="header-section-number">12.3</span> ANOVA Output Example</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">aov</span>(Y <span class="sc">~</span> X))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Source</th>
-<th>SS</th>
-<th>df</th>
-<th>MS</th>
-<th>F</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Between-Subjects</td>
-<td>86.667</td>
-<td>2</td>
-<td>43.3335</td>
-<td>2.3552</td>
-</tr>
-<tr class="even">
-<td>Within-Subjects</td>
-<td>1600</td>
-<td>87</td>
-<td>18.3908</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Total</td>
-<td>1686.667</td>
-<td>89</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qf</span>(.<span class="dv">95</span>, <span class="dv">2</span>, <span class="dv">87</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] 3.101</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="http://www.socr.ucla.edu/Applets.dir/F_Table.html">F Table Reference</a></p>
-</section>
-<section id="manova-vs-n-way-anova" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="manova-vs-n-way-anova"><span class="header-section-number">12.4</span> MANOVA vs N-Way ANOVA</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 43%">
-<col style="width: 43%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>MANOVA</th>
-<th>N-way ANOVA</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Use</td>
-<td>Multiple DVs, 1+ IVs</td>
-<td>Multiple IVs, one DV</td>
-</tr>
-<tr class="even">
-<td>Objective</td>
-<td>Group differences in multivariate response</td>
-<td>Interaction and main effects</td>
-</tr>
-<tr class="odd">
-<td>Assumptions</td>
-<td>Multivariate normality, equal covariances</td>
-<td>Normality, homogeneous variances</td>
-</tr>
-<tr class="even">
-<td>Example</td>
-<td>Teaching method effect on multiple outcomes</td>
-<td>Temp &amp; humidity effects on plant growth</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Two-way ANOVA in R</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">aov</span>(Yield <span class="sc">~</span> Treatment <span class="sc">*</span> Dose, <span class="at">data =</span> data)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction plot</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>HH<span class="sc">::</span><span class="fu">interaction2wt</span>(Y <span class="sc">~</span> Z <span class="sc">*</span> X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="lecture-3-introduction-to-correlation" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Lecture 3: Introduction to Correlation</h1>
-<section id="correlation-types" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="correlation-types"><span class="header-section-number">13.1</span> Correlation Types</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Data Type</th>
-<th>Correlation Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nominal</td>
-<td>Phi</td>
-</tr>
-<tr class="even">
-<td>Dichotomous</td>
-<td>Bi-serial</td>
-</tr>
-<tr class="odd">
-<td>Ordinal/Rank</td>
-<td>Spearman / Kendall</td>
-</tr>
-<tr class="even">
-<td>Interval/Ratio</td>
-<td>Pearson</td>
-</tr>
-<tr class="odd">
-<td>Partial</td>
-<td>Partial Correlation</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="r-commands" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="r-commands"><span class="header-section-number">13.2</span> R Commands</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation test</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>stats<span class="sc">::</span><span class="fu">cor.test</span>(my.csv.data<span class="sc">$</span>JP_01, my.csv.data<span class="sc">$</span>JP_02,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Partial correlation</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ggm<span class="sc">::</span><span class="fu">pcor</span>(my.csv.data<span class="sc">$</span>JP_01, my.csv.data<span class="sc">$</span>JP_02, my.csv.data<span class="sc">$</span>JP_03)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="lecture-4-correlation-continued-and-regression-introduction" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Lecture 4: Correlation Continued and Regression Introduction</h1>
-<section id="pearson-vs-spearman-vs-kendall" class="level2" data-number="14.1">
-<h2 data-number="14.1" class="anchored" data-anchor-id="pearson-vs-spearman-vs-kendall"><span class="header-section-number">14.1</span> Pearson vs Spearman vs Kendall</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 26%">
-<col style="width: 24%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Pearson</th>
-<th>Spearman</th>
-<th>Kendall</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Description</td>
-<td>Linear relationship</td>
-<td>Monotonic</td>
-<td>Monotonic</td>
-</tr>
-<tr class="even">
-<td>Assumptions</td>
-<td>Normality</td>
-<td>No linearity</td>
-<td>No linearity</td>
-</tr>
-<tr class="odd">
-<td>Data Type</td>
-<td>Continuous</td>
-<td>Ranked/Ordinal</td>
-<td>Ranked/Ordinal</td>
-</tr>
-<tr class="even">
-<td>Sensitivity</td>
-<td>Sensitive to outliers</td>
-<td>Less sensitive</td>
-<td>Robust</td>
-</tr>
-<tr class="odd">
-<td>R Command</td>
-<td>cor(x, y, method=“pearson”)</td>
-<td>cor(x, y, method=“spearman”)</td>
-<td>cor(x, y, method=“kendall”)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="uses-of-correlation" class="level2" data-number="14.2">
-<h2 data-number="14.2" class="anchored" data-anchor-id="uses-of-correlation"><span class="header-section-number">14.2</span> Uses of Correlation</h2>
-<ul>
-<li>Grouping similar variables</li>
-<li>Reliability analysis</li>
+<li><span class="math inline">\(\beta_1\)</span> = Slope<br>
+</li>
+<li><span class="math inline">\(\epsilon\)</span> = Error term</li>
 </ul>
 <hr>
 </section>
+<section id="example-in-r" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="example-in-r"><span class="header-section-number">8.2</span> 6.2 Example in R</h2>
+<p>study_time &lt;- c(2, 3, 4, 5, 6) grades &lt;- c(50, 60, 65, 70, 75)</p>
+<p>model &lt;- lm(grades ~ study_time) summary(model) 6.3 Regression Line Visualization</p>
+<p>plot(study_time, grades, main=“Simple Regression”, xlab=“Study Time”, ylab=“Grades”) abline(model, col=“blue”, lwd=2) 6.4 Interpret Coefficients</p>
+<p>coef(model) Intercept: Grade when study time = 0</p>
+<p>Slope: Grade increases per hour of study</p>
+<p>6.5 Residual Plots</p>
+<p>par(mfrow=c(2,2)) plot(model) Top-left: Residuals vs Fitted</p>
+<p>Bottom-left: Scale-Location</p>
+<p>Top-right: QQ Plot</p>
+<p>Bottom-right: Residuals vs Leverage</p>
+<p>6.6 Confidence Intervals</p>
+<p>confint(model) 7. Lecture 29 – Multiple Regression 7.1 Add More Predictors</p>
+<p>df &lt;- data.frame( Exam = c(50, 55, 60, 65, 70), Hours = c(2, 3, 4, 5, 6), Sleep = c(7, 6.5, 6, 5.5, 5) ) multi_model &lt;- lm(Exam ~ Hours + Sleep, data = df) summary(multi_model) 7.2 Check VIF (Multicollinearity)</p>
+<p>library(car) vif(multi_model) VIF &gt; 5 → multicollinearity warning VIF &gt; 10 → serious problem</p>
+<p>7.3 Partial Residual Plots</p>
+<p>avPlots(multi_model) 7.4 Plot 3D Regression Plane</p>
 </section>
-<section id="lecture-5-regression-continued" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Lecture 5: Regression Continued</h1>
-<section id="linear-regression" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="linear-regression"><span class="header-section-number">15.1</span> Linear Regression</h2>
-<ul>
-<li>Predict the value of a <strong>dependent variable (Y)</strong> using an <strong>independent variable (X)</strong>.</li>
-</ul>
+<section id="install.packagesscatterplot3d" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="install.packagesscatterplot3d"><span class="header-section-number">8.3</span> install.packages(“scatterplot3d”)</h2>
+<p>library(scatterplot3d) scatterplot3d(df<span class="math inline">\(Hours, df\)</span>Sleep, df$Exam, highlight.3d=TRUE, type=“h”, angle=55, color=“darkgreen”, pch=16) 8. Lecture 30 – Polynomial and Non-Linear Regression 8.1 Simulating Non-linear Relationship</p>
+<p>x &lt;- seq(0, 10, 0.1) y &lt;- 5 + 2 * x^2 + rnorm(length(x), 0, 5) plot(x, y, main=“Non-linear Pattern”, pch=19) 8.2 Polynomial Regression</p>
+<p>poly_model &lt;- lm(y ~ poly(x, 2)) summary(poly_model)</p>
+<p>lines(x, predict(poly_model), col=“blue”, lwd=2) 8.3 Compare with Linear Fit</p>
+<p>linear_model &lt;- lm(y ~ x) lines(x, predict(linear_model), col=“red”, lwd=2, lty=2) legend(“topleft”, legend=c(“Poly”, “Linear”), col=c(“blue”, “red”), lty=c(1,2)) 8.4 Residual Analysis</p>
+<p>par(mfrow=c(1,2)) plot(poly_model<span class="math inline">\(fitted.values, poly_model\)</span>residuals, main=“Polynomial Residuals”) plot(linear_model<span class="math inline">\(fitted.values, linear_model\)</span>residuals, main=“Linear Residuals”) 8.5 Curve Fitting with nls()</p>
+<p>x &lt;- seq(0, 10, length.out=100) y &lt;- 2 * exp(0.3 * x) + rnorm(100, sd=3)</p>
+<p>nls_model &lt;- nls(y ~ a * exp(b * x), start=list(a=2, b=0.3)) summary(nls_model)</p>
+<p>lines(x, predict(nls_model), col=“purple”, lwd=2) 9. Lecture 31 – Model Evaluation Metrics 9.1 R² and Adjusted R²</p>
+<p>summary(multi_model)<span class="math inline">\(r.squared
+summary(multi_model)\)</span>adj.r.squared 9.2 MSE and RMSE</p>
+<p>pred &lt;- predict(multi_model) actual &lt;- df$Exam residuals &lt;- actual - pred mse &lt;- mean(residuals^2) rmse &lt;- sqrt(mse)</p>
 </section>
-<section id="nonlinear-regression" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="nonlinear-regression"><span class="header-section-number">15.2</span> Nonlinear Regression</h2>
-<ul>
-<li>For non-linear data relationships.</li>
-<li>Often uses machine learning methods for non-parametric models.</li>
-</ul>
 </section>
-<section id="example-equations" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="example-equations"><span class="header-section-number">15.3</span> Example Equations</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Regression Coefficients</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">=</span> SSxy <span class="sc">/</span> SSxx</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">=</span> ȳ <span class="sc">-</span> b <span class="sc">*</span> x̄</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Regression Analysis</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>SST <span class="ot">=</span> Σ(y − ȳ)² <span class="ot">=</span> SSyy</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>R² <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> (SSE <span class="sc">/</span> SST)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>DF_regression <span class="ot">=</span> <span class="dv">1</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>DF_total <span class="ot">=</span> n <span class="sc">-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="lecture-32-logistic-regression" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 10. Lecture 32 – Logistic Regression</h1>
+<section id="when-to-use" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="when-to-use"><span class="header-section-number">9.1</span> 10.1 When to Use</h2>
+<p>Logistic regression is used when the <strong>dependent variable is categorical</strong> (typically binary: 0/1, Yes/No, Pass/Fail).</p>
+</section>
+<section id="logistic-function" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="logistic-function"><span class="header-section-number">9.2</span> 10.2 Logistic Function</h2>
+<p><span class="math display">\[
+P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X)}}
+\]</span></p>
+<hr>
+</section>
+<section id="r-example-predicting-admission" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="r-example-predicting-admission"><span class="header-section-number">9.3</span> 10.3 R Example: Predicting Admission</h2>
+<p>df &lt;- data.frame( Admit = c(1,1,0,1,0,0,1,1,0,0), Score = c(80,85,60,90,55,40,88,83,59,52) )</p>
+<p>logit_model &lt;- glm(Admit ~ Score, data=df, family=“binomial”) summary(logit_model) 10.4 Probability Prediction</p>
+<p>df$Prob &lt;- predict(logit_model, type=“response”) df 10.5 ROC Curve</p>
+<p>library(pROC) roc_obj &lt;- roc(df<span class="math inline">\(Admit, df\)</span>Prob) plot(roc_obj, col=“darkgreen”) auc(roc_obj) 10.6 Classification Table</p>
+<p>df<span class="math inline">\(Pred &lt;- ifelse(df\)</span>Prob &gt; 0.5, 1, 0) table(Predicted = df<span class="math inline">\(Pred, Actual = df\)</span>Admit) 11. Lecture 33 – Chi-Square Test 11.1 Categorical Independence Used when evaluating if two categorical variables are independent.</p>
+<p>11.2 Example: Gender vs Department Choice</p>
+<p>gender &lt;- c(“Male”, “Male”, “Female”, “Female”) dept &lt;- c(“Science”, “Arts”, “Science”, “Arts”) counts &lt;- c(30, 20, 25, 25)</p>
+<p>chi_df &lt;- data.frame(Gender=rep(gender, counts), Dept=rep(dept, counts)) tbl &lt;- table(chi_df<span class="math inline">\(Gender, chi_df\)</span>Dept) chisq.test(tbl) 12. Lecture 34 – Non-Parametric Tests 12.1 When to Use Data is not normally distributed</p>
+<p>Ordinal data or small sample sizes</p>
+<p>12.2 Mann–Whitney U</p>
+<p>group1 &lt;- c(45, 50, 60, 55) group2 &lt;- c(70, 75, 80, 85) wilcox.test(group1, group2) 12.3 Kruskal–Wallis (Non-parametric ANOVA)</p>
+<p>g1 &lt;- c(10, 20, 30) g2 &lt;- c(40, 50, 60) g3 &lt;- c(70, 80, 90) kw_df &lt;- data.frame( score = c(g1, g2, g3), group = factor(rep(c(“A”, “B”, “C”), each=3)) ) kruskal.test(score ~ group, data=kw_df) 12.4 Wilcoxon Signed-Rank</p>
+<p>before &lt;- c(60, 70, 65, 80) after &lt;- c(62, 75, 68, 82) wilcox.test(before, after, paired=TRUE) 13. Case Study – Social Media &amp; Mental Health 13.1 Dataset Simulation</p>
+<p>set.seed(100) n &lt;- 100 hours &lt;- rnorm(n, 3, 1.5) stress &lt;- 10 + 1.2 * hours + rnorm(n)</p>
+<p>df &lt;- data.frame(hours, stress) model &lt;- lm(stress ~ hours, data=df) summary(model) 13.2 Visual</p>
+<p>plot(hours, stress, main=“Social Media Use vs Stress”, pch=19) abline(model, col=“red”, lwd=2) 13.3 Interpretation Positive slope → More hours = more stress</p>
+<p>R² tells how well hours predict stress</p>
+<ol start="14" type="1">
+<li>50 Multiple Choice Questions (MCQs) Q1. Pearson’s r is best used when: Data is ordinal</li>
+</ol>
+<p>Data is continuous and normally distributed</p>
+<p>Data has outliers</p>
+<p>You want to rank variables</p>
+<p>Q2. Which test compares more than 2 independent means? t-test</p>
+<p>ANOVA</p>
+<p>Chi-Square</p>
+<p>Correlation</p>
+<p>Q3. A VIF of 12 means: No multicollinearity</p>
+<p>Severe multicollinearity</p>
+<p>Perfect fit</p>
+<p>Homoscedasticity</p>
+<ol start="15" type="1">
+<li>Exercises Exercise 1: One-Way ANOVA on Fake Marketing Data Generate three ad strategies and test which gives highest customer conversions.</li>
+</ol>
+<p>Exercise 2: Correlate temperature and ice cream sales Include scatterplot, Pearson’s r, regression line.</p>
+<p>Exercise 3: Logistic regression predicting credit approval Predict using income and debt ratio.</p>
+<p>Exercise 4: Chi-Square on survey data Test independence of satisfaction vs.&nbsp;purchase intention.</p>
+<p>Exercise 5: Repeated Measures ANOVA Simulate 10 people tested across 3 time points.</p>
+<ol start="16" type="1">
+<li><p>Glossary Term Definition ANOVA Test for differences in means across groups Regression Predict numerical output from inputs Correlation Measure of linear association between two variables R² Proportion of variance explained by model AIC Akaike Information Criterion – model quality metric VIF Variance Inflation Factor – checks multicollinearity Logistic Regression Used for binary outcome prediction Chi-Square Test for independence between two categorical variables</p></li>
+<li><p>Appendix 17.1 RKWard Menus Correlation → Statistics → Summaries → Correlation Matrix</p></li>
+</ol>
+<p>ANOVA → Analysis → ANOVA → One-Way or Repeated</p>
+<p>Plots → Graphics → Histogram / Boxplot / Scatterplot</p>
+<p>Regression → Analysis → Linear Models</p>
+<p>17.2 Troubleshooting Issue Solution “object not found” Check variable names (case-sensitive) Plot doesn’t show Use print(plot_name) or run outside R chunk Model output blank Use summary(model) instead of just model Package not found Install using install.packages(“name”)</p>
 
 
 </section>
@@ -1153,11 +1013,14 @@ Grand Mean = 39.385</p>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./basic-statistics7.html" class="pagination-link" aria-label="basic-statistics_7">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">basic-statistics_7</span></span>
+      <a href="./week4.html" class="pagination-link" aria-label="Week 4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./week7.html" class="pagination-link" aria-label="Week 7">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

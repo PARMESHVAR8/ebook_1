@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Harsh Pradhan, Institute of Management Studies, BHU">
+<meta name="author" content="Dr.&nbsp;Harsh Pradhan">
 
-<title>2&nbsp; Introduction to Statistics – my-ebook</title>
+<title>Visual Model Summary – my-ebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +31,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week1.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./week7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -106,6 +70,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -119,7 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction-to-statistics.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Statistics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -152,32 +145,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction-to-statistics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Statistics</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./week1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></span></a>
   </div>
 </li>
     </ul>
@@ -190,28 +195,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#chapter-1-welcome-and-course-overview" id="toc-chapter-1-welcome-and-course-overview" class="nav-link active" data-scroll-target="#chapter-1-welcome-and-course-overview"><span class="header-section-number">3</span> Chapter 1: Welcome and Course Overview</a></li>
-  <li><a href="#chapter-2-agenda-and-orientation" id="toc-chapter-2-agenda-and-orientation" class="nav-link" data-scroll-target="#chapter-2-agenda-and-orientation"><span class="header-section-number">4</span> Chapter 2: Agenda and Orientation</a></li>
-  <li><a href="#chapter-3-meaning-and-nature-of-statistics" id="toc-chapter-3-meaning-and-nature-of-statistics" class="nav-link" data-scroll-target="#chapter-3-meaning-and-nature-of-statistics"><span class="header-section-number">5</span> Chapter 3: Meaning and Nature of Statistics</a></li>
-  <li><a href="#chapter-4-applications-and-uses" id="toc-chapter-4-applications-and-uses" class="nav-link" data-scroll-target="#chapter-4-applications-and-uses"><span class="header-section-number">6</span> Chapter 4: Applications and Uses</a></li>
-  <li><a href="#chapter-5-limitations-and-misuse" id="toc-chapter-5-limitations-and-misuse" class="nav-link" data-scroll-target="#chapter-5-limitations-and-misuse"><span class="header-section-number">7</span> Chapter 5: Limitations and Misuse</a></li>
-  <li><a href="#chapter-6-paper-based-vs.-software-based-statistics" id="toc-chapter-6-paper-based-vs.-software-based-statistics" class="nav-link" data-scroll-target="#chapter-6-paper-based-vs.-software-based-statistics"><span class="header-section-number">8</span> Chapter 6: Paper-Based vs.&nbsp;Software-Based Statistics</a></li>
-  <li><a href="#chapter-7-introduction-to-variables-and-spreadsheets" id="toc-chapter-7-introduction-to-variables-and-spreadsheets" class="nav-link" data-scroll-target="#chapter-7-introduction-to-variables-and-spreadsheets"><span class="header-section-number">9</span> Chapter 7: Introduction to Variables and Spreadsheets</a></li>
-  <li><a href="#chapter-8-r-and-gui-interfaces" id="toc-chapter-8-r-and-gui-interfaces" class="nav-link" data-scroll-target="#chapter-8-r-and-gui-interfaces"><span class="header-section-number">10</span> Chapter 8: R and GUI Interfaces</a></li>
-  <li><a href="#chapter-9-importing-data-and-understanding-data-types" id="toc-chapter-9-importing-data-and-understanding-data-types" class="nav-link" data-scroll-target="#chapter-9-importing-data-and-understanding-data-types"><span class="header-section-number">11</span> Chapter 9: Importing Data and Understanding Data Types</a></li>
-  <li><a href="#chapter-10-statistical-data-types" id="toc-chapter-10-statistical-data-types" class="nav-link" data-scroll-target="#chapter-10-statistical-data-types"><span class="header-section-number">12</span> Chapter 10: Statistical Data Types</a></li>
-  <li><a href="#chapter-11-data-preparation-in-rkward" id="toc-chapter-11-data-preparation-in-rkward" class="nav-link" data-scroll-target="#chapter-11-data-preparation-in-rkward"><span class="header-section-number">13</span> Chapter 11: Data Preparation in RKWard</a></li>
-  <li><a href="#chapter-12-visualizing-data-with-plots-in-rkward" id="toc-chapter-12-visualizing-data-with-plots-in-rkward" class="nav-link" data-scroll-target="#chapter-12-visualizing-data-with-plots-in-rkward"><span class="header-section-number">14</span> Chapter 12: Visualizing Data with Plots in RKWard</a>
-  <ul class="collapse">
-  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">14.1</span> 1. Histogram</a></li>
-  <li><a href="#pie-chart" id="toc-pie-chart" class="nav-link" data-scroll-target="#pie-chart"><span class="header-section-number">14.2</span> 2. Pie Chart</a></li>
-  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot"><span class="header-section-number">14.3</span> 3. Scatter Plot</a></li>
-  <li><a href="#box-plot" id="toc-box-plot" class="nav-link" data-scroll-target="#box-plot"><span class="header-section-number">14.4</span> 4. Box Plot</a></li>
-  <li><a href="#density-plot" id="toc-density-plot" class="nav-link" data-scroll-target="#density-plot"><span class="header-section-number">14.5</span> 5. Density Plot</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> 1. Introduction</a></li>
+  <li><a href="#effect-size-and-cohens-d" id="toc-effect-size-and-cohens-d" class="nav-link" data-scroll-target="#effect-size-and-cohens-d"><span class="header-section-number">8.2</span> 2. Effect Size and Cohen’s d</a>
+  <ul>
+  <li><a href="#interpretation-of-d" id="toc-interpretation-of-d" class="nav-link" data-scroll-target="#interpretation-of-d"><span class="header-section-number">8.2.1</span> ✅ Interpretation of d:</a></li>
+  <li><a href="#r-code-example-cohens-d" id="toc-r-code-example-cohens-d" class="nav-link" data-scroll-target="#r-code-example-cohens-d"><span class="header-section-number">8.2.2</span> 📌 R Code Example (Cohen’s d)</a></li>
   </ul></li>
-  <li><a href="#chapter-13-summary" id="toc-chapter-13-summary" class="nav-link" data-scroll-target="#chapter-13-summary"><span class="header-section-number">15</span> Chapter 13: Summary</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">16</span> References</a></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps"><span class="header-section-number">17</span> Next Steps</a></li>
+  <li><a href="#load-required-package" id="toc-load-required-package" class="nav-link" data-scroll-target="#load-required-package"><span class="header-section-number">9</span> Load required package</a></li>
+  <li><a href="#load-your-data-csv-format" id="toc-load-your-data-csv-format" class="nav-link" data-scroll-target="#load-your-data-csv-format"><span class="header-section-number">10</span> Load your data (CSV format)</a></li>
+  <li><a href="#independent-groups-cohens-d" id="toc-independent-groups-cohens-d" class="nav-link" data-scroll-target="#independent-groups-cohens-d"><span class="header-section-number">11</span> Independent groups Cohen’s d</a></li>
+  <li><a href="#one-sample-mean-vs-population-mean" id="toc-one-sample-mean-vs-population-mean" class="nav-link" data-scroll-target="#one-sample-mean-vs-population-mean"><span class="header-section-number">12</span> One-sample mean vs population mean</a>
+  <ul>
+  <li><a href="#using-flexplot-examples-and-best-practices" id="toc-using-flexplot-examples-and-best-practices" class="nav-link" data-scroll-target="#using-flexplot-examples-and-best-practices"><span class="header-section-number">12.1</span> 4. Using flexplot: Examples and Best Practices</a>
+  <ul class="collapse">
+  <li><a href="#univariate-visualization" id="toc-univariate-visualization" class="nav-link" data-scroll-target="#univariate-visualization"><span class="header-section-number">12.1.1</span> 4.1 Univariate Visualization</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#visualizing-continuous-dv-vs-categorical-iv" id="toc-visualizing-continuous-dv-vs-categorical-iv" class="nav-link" data-scroll-target="#visualizing-continuous-dv-vs-categorical-iv"><span class="header-section-number">13</span> Visualizing continuous DV vs categorical IV</a></li>
+  <li><a href="#convert-passfail-variable-to-factor" id="toc-convert-passfail-variable-to-factor" class="nav-link" data-scroll-target="#convert-passfail-variable-to-factor"><span class="header-section-number">14</span> Convert pass/fail variable to factor</a></li>
+  <li><a href="#logistic-visualization" id="toc-logistic-visualization" class="nav-link" data-scroll-target="#logistic-visualization"><span class="header-section-number">15</span> Logistic visualization</a>
+  <ul>
+  <li><a href="#whats-next-in-part-3" id="toc-whats-next-in-part-3" class="nav-link" data-scroll-target="#whats-next-in-part-3"><span class="header-section-number">15.1</span> 🧠 What’s Next in Part 3?</a></li>
+  <li><a href="#simulation-effect-size-and-visual-inference" id="toc-simulation-effect-size-and-visual-inference" class="nav-link" data-scroll-target="#simulation-effect-size-and-visual-inference"><span class="header-section-number">15.2</span> 10. Simulation: Effect Size and Visual Inference</a>
+  <ul class="collapse">
+  <li><a href="#simulate-cohens-d-with-flexplot" id="toc-simulate-cohens-d-with-flexplot" class="nav-link" data-scroll-target="#simulate-cohens-d-with-flexplot"><span class="header-section-number">15.2.1</span> 10.1 Simulate Cohen’s d with Flexplot</a></li>
+  </ul></li>
+  <li><a href="#model-summary-with-visual-numeric-layers" id="toc-model-summary-with-visual-numeric-layers" class="nav-link" data-scroll-target="#model-summary-with-visual-numeric-layers"><span class="header-section-number">15.3</span> 13. Model Summary with Visual + Numeric Layers</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Statistics</span></h1>
+<h1 class="title">Visual Model Summary</h1>
 </div>
 
 
@@ -230,7 +240,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Harsh Pradhan, Institute of Management Studies, BHU </p>
+             <p>Dr.&nbsp;Harsh Pradhan </p>
           </div>
   </div>
     
@@ -243,416 +253,191 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="chapter-1-welcome-and-course-overview" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Chapter 1: Welcome and Course Overview</h1>
-<p>This course offers an introduction to statistics through the RKWard graphical interface of R. Aimed at learners from diverse backgrounds, the course emphasizes practical application over theory. You don’t need a strong background in math or computing—just an eagerness to learn.</p>
-<p><strong>Pre-Requisites:</strong></p>
-<ul>
-<li>Curiosity<br>
-</li>
-<li>Basic awareness of numbers<br>
-</li>
-<li>No fear of statistics or software</li>
-</ul>
-<blockquote class="blockquote">
-<p>“Aapko darne ki zarurat nahi hai… simple understanding aapko statistics ki data ki aage milegi.”</p>
-</blockquote>
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> 1. Introduction</h2>
+<p>This module explores the powerful integration of visual analytics and statistical reasoning. While traditional models often rely on tabular outputs, the <strong>flexplot</strong> package and similar tools highlight the importance of <strong>graphical modeling</strong>, especially in response to the <strong>replication crisis</strong>. The week also emphasizes how GUIs like <strong>RKWard</strong> and <strong>RStudio</strong> serve different user bases for statistical analysis.</p>
+<hr>
 </section>
-<section id="chapter-2-agenda-and-orientation" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Chapter 2: Agenda and Orientation</h1>
-<p><strong>Key Themes:</strong></p>
-<ul>
-<li>Difference between Mathematics and Statistics<br>
-</li>
-<li>Nature, Meaning, and Role of Statistics<br>
-</li>
-<li>Uses, Limitations, and Common Fallacies</li>
-</ul>
+<section id="effect-size-and-cohens-d" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="effect-size-and-cohens-d"><span class="header-section-number">8.2</span> 2. Effect Size and Cohen’s d</h2>
+<p>Effect size quantifies the <strong>magnitude</strong> of the difference, independent of sample size. One of the most common effect size measures is <strong>Cohen’s d</strong>, which compares two means.</p>
+<section id="interpretation-of-d" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="interpretation-of-d"><span class="header-section-number">8.2.1</span> ✅ Interpretation of d:</h3>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 32%">
-<col style="width: 53%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Aspect</th>
-<th>Mathematics</th>
-<th>Statistics</th>
+<th>d</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nature</td>
-<td>Abstract, theoretical</td>
-<td>Applied, data-centric</td>
+<td>0.2</td>
+<td>Small effect</td>
 </tr>
 <tr class="even">
-<td>Focus</td>
-<td>Concepts, theorems, proofs</td>
-<td>Tools, interpretation, decision-making</td>
+<td>0.5</td>
+<td>Medium effect</td>
 </tr>
 <tr class="odd">
-<td>Tools</td>
-<td>Logical reasoning, algebra</td>
-<td>Hypothesis testing, regression, probability</td>
-</tr>
-<tr class="even">
-<td>Application</td>
-<td>General structures</td>
-<td>Real-world problems</td>
+<td>0.8</td>
+<td>Large effect</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="chapter-3-meaning-and-nature-of-statistics" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Chapter 3: Meaning and Nature of Statistics</h1>
-<p><strong>Definition:</strong><br>
-Statistics is the science of collecting, analyzing, interpreting, and presenting data for decision-making.</p>
-<p><strong>Core Concepts:</strong></p>
-<ul>
-<li>Population &amp; Sample<br>
-</li>
-<li>Parameter &amp; Statistic<br>
-</li>
-<li>Data classification and tabulation</li>
-</ul>
-<p><strong>Purpose:</strong></p>
-<ul>
-<li>Describe and explain phenomena<br>
-</li>
-<li>Interpret and predict outcomes<br>
-</li>
-<li>Facilitate scientific and social inquiry</li>
-</ul>
-</section>
-<section id="chapter-4-applications-and-uses" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Chapter 4: Applications and Uses</h1>
-<p><strong>Main Uses:</strong></p>
-<ul>
-<li>Summarizing observed data<br>
-</li>
-<li>Drawing representative samples<br>
-</li>
-<li>Analyzing relationships and trends<br>
-</li>
-<li>Supporting decision-making in fields like marketing, psychology, education, and public health</li>
-</ul>
-<p><strong>Important Concepts:</strong></p>
-<ul>
-<li>Data summarization<br>
-</li>
-<li>Prediction based on patterns<br>
-</li>
-<li>Comparison across groups<br>
-</li>
-<li>Scientific objectivity</li>
-</ul>
-</section>
-<section id="chapter-5-limitations-and-misuse" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Chapter 5: Limitations and Misuse</h1>
-<p><strong>Limitations:</strong></p>
-<ul>
-<li>Cannot analyze qualitative phenomena<br>
-</li>
-<li>Not designed for individuals<br>
-</li>
-<li>Results aren’t exact<br>
-</li>
-<li>Misinterpretation leads to incorrect conclusions</li>
-</ul>
-<p><strong>Misuse Includes:</strong></p>
-<ul>
-<li>Small or biased samples<br>
-</li>
-<li>Misleading graphs<br>
-</li>
-<li>Invalid comparisons</li>
-</ul>
-<blockquote class="blockquote">
-<p>“Statistics is not a substitute for common sense or understanding the context.”</p>
-</blockquote>
-<p><strong>Fallacies Stem From:</strong></p>
-<ul>
-<li>Poor data collection<br>
-</li>
-<li>Mislabeling variables<br>
-</li>
-<li>Improper classification or selection</li>
-</ul>
-</section>
-<section id="chapter-6-paper-based-vs.-software-based-statistics" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Chapter 6: Paper-Based vs.&nbsp;Software-Based Statistics</h1>
-<p>Traditional exams test pen-paper knowledge, but software-based tools like RKWard make analysis:</p>
-<ul>
-<li>Faster<br>
-</li>
-<li>Collaborative<br>
-</li>
-<li>Easier to store and access<br>
-</li>
-<li>Essential for modern data-centric fields like AI and machine learning</li>
-</ul>
-<p>Understanding both paper and digital approaches ensures comprehensive learning.</p>
-</section>
-<section id="chapter-7-introduction-to-variables-and-spreadsheets" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Chapter 7: Introduction to Variables and Spreadsheets</h1>
-<p><strong>Variables:</strong></p>
-<ul>
-<li>Store information (e.g., <code>x = 5</code>)<br>
-</li>
-<li>Have unique names<br>
-</li>
-<li>Can be manipulated with commands (e.g., <code>x = x + 2</code>)</li>
-</ul>
-<p><strong>Spreadsheets:</strong></p>
-<ul>
-<li>Represent tabular data (rows = observations, columns = variables)<br>
-</li>
-<li>Familiar formats: Excel, Google Sheets<br>
-</li>
-<li>Essential in statistical packages</li>
-</ul>
-</section>
-<section id="chapter-8-r-and-gui-interfaces" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Chapter 8: R and GUI Interfaces</h1>
-<p><strong>Why R?:</strong></p>
-<ul>
-<li>Free and open-source<br>
-</li>
-<li>Strong community support<br>
-</li>
-<li>High flexibility<br>
-</li>
-<li>Powerful graphics and data manipulation capabilities</li>
-</ul>
-<p><strong>GUI Tools in R:</strong></p>
-<ul>
-<li>RKWard <em>(used in this course)</em><br>
-</li>
-<li>R Commander<br>
-</li>
-<li>Rattle<br>
-</li>
-<li>R AnalyticFlow</li>
-</ul>
-<p><strong>Basic Terms:</strong></p>
-<ul>
-<li><strong>Console</strong>: Type commands &amp; view outputs<br>
-</li>
-<li><strong>Working Directory</strong>: File storage location<br>
-</li>
-<li><strong>Package</strong>: Predefined or custom functions<br>
-</li>
-<li><strong>Script</strong>: Collection of reusable commands<br>
-</li>
-<li><strong>Workspace</strong>: All current variables/functions</li>
-</ul>
-</section>
-<section id="chapter-9-importing-data-and-understanding-data-types" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Chapter 9: Importing Data and Understanding Data Types</h1>
-<p><strong>Using RKWard:</strong></p>
-<ul>
-<li>Import CSV files using GUI<br>
-</li>
-<li>Data appears in alphabetical order in workspace<br>
-</li>
-<li>Each header = variable name</li>
-</ul>
-<p><strong>Data Structures:</strong></p>
-<ul>
-<li>Data Frames (most commonly used)<br>
-</li>
-<li>Matrices<br>
-</li>
-<li>Vectors<br>
-</li>
-<li>Lists</li>
-</ul>
-<p><strong>Command Line vs GUI:</strong></p>
-<ul>
-<li>Both achieve the same results<br>
-</li>
-<li>GUI is user-friendly, command line is customizable</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(my_csv.data<span class="sc">$</span>JP_01)  <span class="co"># Calculates the mean of variable JP_01</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="chapter-10-statistical-data-types" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Chapter 10: Statistical Data Types</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 63%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Statistical Type</th>
-<th>Description</th>
-<th>R Equivalent</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nominal</td>
-<td>Names, labels (e.g., Male/Female)</td>
-<td>String</td>
-</tr>
-<tr class="even">
-<td>Ordinal</td>
-<td>Order/rank (e.g., 1st, 2nd)</td>
-<td>Factor</td>
-</tr>
-<tr class="odd">
-<td>Interval</td>
-<td>Ordered + meaningful intervals (e.g., tax slabs)</td>
-<td>Numeric</td>
-</tr>
-<tr class="even">
-<td>Ratio</td>
-<td>Includes absolute zero (e.g., weight)</td>
-<td>Numeric</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Others in R:</strong></p>
-<ul>
-<li>Logical (TRUE/FALSE)<br>
-</li>
-<li>Integer, Complex</li>
-</ul>
-<blockquote class="blockquote">
-<p>Remember: Not all numbers mean quantity. Shirt numbers (like #18) are nominal, not mathematical.</p>
-</blockquote>
-</section>
-<section id="chapter-11-data-preparation-in-rkward" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Chapter 11: Data Preparation in RKWard</h1>
-<ul>
-<li>Data must be properly <strong>typed</strong> (e.g., “1” as number vs “1” as label)<br>
-</li>
-<li>Check alignment: Left = character, Right = number<br>
-</li>
-<li><strong>Labels</strong> help collaborators understand variables<br>
-</li>
-<li>Example: <code>Gender = 1</code> (Male), <code>0</code> (Female)<br>
-</li>
-<li>Must distinguish between numeric calculations and categorical identifiers</li>
-</ul>
-<p><strong>Best Practices:</strong></p>
-<ul>
-<li>Define each variable with meaning<br>
-</li>
-<li>Validate data types<br>
-</li>
-<li>Store and share workspace for reproducibility</li>
-</ul>
-</section>
-<section id="chapter-12-visualizing-data-with-plots-in-rkward" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Chapter 12: Visualizing Data with Plots in RKWard</h1>
-<p>Data visualization is essential to reveal patterns, trends, and distributions. RKWard offers multiple graphical tools:</p>
-<section id="histogram" class="level2" data-number="14.1">
-<h2 data-number="14.1" class="anchored" data-anchor-id="histogram"><span class="header-section-number">14.1</span> 1. Histogram</h2>
-<ul>
-<li>Depicts the distribution of a single variable<br>
-</li>
-<li>Can include frequency, relative frequency, and cumulative frequency<br>
-</li>
-<li>Best for understanding where most data points lie</li>
-</ul>
-</section>
-<section id="pie-chart" class="level2" data-number="14.2">
-<h2 data-number="14.2" class="anchored" data-anchor-id="pie-chart"><span class="header-section-number">14.2</span> 2. Pie Chart</h2>
-<ul>
-<li>Represents categorical data as slices of a circle<br>
-</li>
-<li>Best when visualizing proportions</li>
-</ul>
-</section>
-<section id="scatter-plot" class="level2" data-number="14.3">
-<h2 data-number="14.3" class="anchored" data-anchor-id="scatter-plot"><span class="header-section-number">14.3</span> 3. Scatter Plot</h2>
-<ul>
-<li>Plots two variables to examine relationships<br>
-</li>
-<li>X-axis: Independent variable<br>
-</li>
-<li>Y-axis: Dependent variable<br>
-</li>
-<li>Useful in exploring associations or potential causality</li>
-</ul>
-</section>
-<section id="box-plot" class="level2" data-number="14.4">
-<h2 data-number="14.4" class="anchored" data-anchor-id="box-plot"><span class="header-section-number">14.4</span> 4. Box Plot</h2>
-<ul>
-<li>Shows data distribution via quartiles<br>
-</li>
-<li>Median, interquartile range (IQR), and outliers are clearly indicated<br>
-</li>
-<li>Useful for comparing multiple variables</li>
-</ul>
-</section>
-<section id="density-plot" class="level2" data-number="14.5">
-<h2 data-number="14.5" class="anchored" data-anchor-id="density-plot"><span class="header-section-number">14.5</span> 5. Density Plot</h2>
-<ul>
-<li>Smoothed version of a histogram<br>
-</li>
-<li>Better suited for continuous data with decimal variation</li>
-</ul>
-<p><strong>Key Tips:</strong></p>
-<ul>
-<li><code>JP_01</code> was frequently used as an example variable<br>
-</li>
-<li>RKWard allows saving and exporting plots easily<br>
-</li>
-<li>GUI menus guide the user through plot creation</li>
-</ul>
-<blockquote class="blockquote">
-<p>Always choose the plot type that best matches your data and goal: frequency, relationship, or comparison.</p>
-</blockquote>
+<section id="r-code-example-cohens-d" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="r-code-example-cohens-d"><span class="header-section-number">8.2.2</span> 📌 R Code Example (Cohen’s d)</h3>
 </section>
 </section>
-<section id="chapter-13-summary" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Chapter 13: Summary</h1>
-<p>This eBook provided a foundation for understanding and applying statistics using the RKWard GUI tool in R. It covered essential concepts from what statistics is, to importing and handling data, understanding types of variables and their measurement levels, and visualizing data using a variety of plots.</p>
-<p>Learners were introduced to:</p>
-<ul>
-<li>Basic statistical principles<br>
-</li>
-<li>Software versus paper-based understanding<br>
-</li>
-<li>Variable types and spreadsheet usage<br>
-</li>
-<li>Command line and GUI-based tools<br>
-</li>
-<li>Data visualization through histogram, pie, scatter, box, and density plots</li>
-</ul>
-<p>The course emphasized <strong>conceptual clarity</strong>, <strong>practical tools</strong>, and the <strong>power of visualization</strong>. It prepares learners to interpret, analyze, and present data meaningfully in academic or real-world contexts.</p>
+<section id="load-required-package" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Load required package</h1>
+<p>install.packages(“lsr”) library(lsr)</p>
 </section>
-<section id="references" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> References</h1>
-<ol type="1">
-<li>Mohanty, B., &amp; Misra, S. (2020). <em>Statistics for Behavioral and Social Sciences</em>. PHI Learning.<br>
-</li>
-<li>Pandya, D., et al.&nbsp;(2019). <em>Statistical Analysis in Simple Steps Using R</em>. Wiley.<br>
-</li>
-<li>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering Statistics Using R</em>. SAGE Publications.<br>
-</li>
-<li>Harris, J. (2021). <em>Statistics with R: Solving Problems Using Real-World Data</em>. Pearson.<br>
-</li>
-<li>RKWard Project: <a href="https://rkward.kde.org" class="uri">https://rkward.kde.org</a></li>
+<section id="load-your-data-csv-format" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Load your data (CSV format)</h1>
+<p>my.csv.data &lt;- read.csv(“yourdata.csv”)</p>
+</section>
+<section id="independent-groups-cohens-d" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Independent groups Cohen’s d</h1>
+<p>lsr::cohensD(my.csv.data[[“CSE_1”]], my.csv.data[[“CSE_2”]])</p>
+</section>
+<section id="one-sample-mean-vs-population-mean" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> One-sample mean vs population mean</h1>
+<p>lsr::cohensD(my.csv.data[[“CSE_1”]], mu = 3.9) 🧠 Practical Use: Effect size helps you understand practical significance, especially in behavioral research where p-values alone are insufficient.</p>
+<p>Note: Effect sizes should always accompany inferential statistics to avoid overreliance on significance testing.</p>
+<ol start="3" type="1">
+<li>Understanding flexplot: Graphical Statistical Modeling The flexplot package allows for intuitive, formula-driven visual modeling. It uses GLM-style formulas like y ~ x1 + x2, bringing clarity between statistical models and their graphical representations.</li>
 </ol>
+<p>🔍 Key Features: Visualize univariate, bivariate, and multivariate models</p>
+<p>Supports linear, logistic, and mixed models</p>
+<p>Matches graphical output directly with statistical models</p>
+<p>Requires only one line of code for most use cases</p>
+<p>✅ Installation and Setup:</p>
+<p>install.packages(“flexplot”) library(flexplot) library(cowplot) # For arranging multiple plots 💡 More Coming in Part 2: Univariate &amp; Bivariate flexplot() demos</p>
+<p>GLM integration</p>
+<p>Paneling, Ghost Lines, Beeswarm Visuals</p>
+<p>Overlap handling and jitter control</p>
+<section id="using-flexplot-examples-and-best-practices" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="using-flexplot-examples-and-best-practices"><span class="header-section-number">12.1</span> 4. Using flexplot: Examples and Best Practices</h2>
+<section id="univariate-visualization" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="univariate-visualization"><span class="header-section-number">12.1.1</span> 4.1 Univariate Visualization</h3>
+<p>flexplot(CSE_1 ~ 1, data = my.csv.data) Plots raw data (jittered) with mean overlay</p>
+<p>Useful for outlier detection and distribution shape</p>
+<p>4.2 Bivariate Continuous vs Categorical</p>
 </section>
-<section id="next-steps" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> Next Steps</h1>
-<p>Upcoming lectures will cover:</p>
+</section>
+</section>
+<section id="visualizing-continuous-dv-vs-categorical-iv" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Visualizing continuous DV vs categorical IV</h1>
+<p>flexplot(CSE_1 ~ Gender, data = my.csv.data) Automatically creates beeswarm or violin plots</p>
+<p>Overlay: mean ± error bars</p>
+<p>Jitter is used to prevent overlap of points</p>
+<p>4.3 Continuous DV vs Continuous IV</p>
+<p>flexplot(CSE_1 ~ Age, data = my.csv.data) Shows scatterplot + best-fit line</p>
+<p>Adds error ribbons</p>
+<p>Outliers stand out visually</p>
+<p>4.4 Multiple Predictors (Additive Models)</p>
+<p>flexplot(CSE_1 ~ Age + Gender, data = my.csv.data) Panels by Gender</p>
+<p>Linear fits across Age</p>
+<p>Helps uncover interaction</p>
+<p>4.5 Logistic Regression Visualization</p>
+</section>
+<section id="convert-passfail-variable-to-factor" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Convert pass/fail variable to factor</h1>
+<p>my.csv.data<span class="math inline">\(Pass &lt;- as.factor(my.csv.data\)</span>Pass)</p>
+</section>
+<section id="logistic-visualization" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Logistic visualization</h1>
+<p>flexplot(Pass ~ Hours, data = my.csv.data, family = “binomial”) 5. RKWard vs RStudio: Interface &amp; Functionality Feature RKWard RStudio Target Users Beginners, GUI-centric Coders, devs, advanced users Data Handling Spreadsheet-like Tidyverse-friendly Plots Auto-generated via dialogs ggplot2 required manually Statistical Models GUI for t-tests, ANOVA Syntax for all models</p>
+<p>🔎 Conclusion: RKWard is ideal for non-programmers, while RStudio is better for reproducible analysis via code and markdown.</p>
+<ol start="6" type="1">
+<li>Cognitive Fit and Visual Communication Flexplot builds upon Cognitive Fit Theory — visual representations should match the task and viewer’s expectation.</li>
+</ol>
+<p>Key Graph Types in flexplot Type Best For Beeswarm Small-to-medium samples Violin Density + mean overlay Ghost Lines Slope visualization across panels Panels 2–3 categorical moderators</p>
+<ol start="7" type="1">
+<li>Advanced Flexplot Controls 7.1 Ghost Lines for Slope Tracking</li>
+</ol>
+<p>flexplot(mpg ~ wt + cyl, data = mtcars) Panels by cyl</p>
+<p>Gray reference slope: overall trend</p>
+<p>Colored slope: panel-specific</p>
+<p>7.2 Model Overlays</p>
+<p>flexplot(CSE_1 ~ CSE_2 + Gender, data = my.csv.data) Adds regression lines</p>
+<p>Includes model summaries in plot captions</p>
+<p>7.3 Added Plot (Influence Visualization)</p>
+<p>model &lt;- lm(CSE_1 ~ CSE_2 + Age, data = my.csv.data) added.plot(model) Visualizes the unique contribution of predictors</p>
+<p>Residual scatter by regressor</p>
+<ol start="8" type="1">
+<li>Association, AVPs, and Repeated Measures 8.1 Visualizing Correlation</li>
+</ol>
+<p>flexplot(mpg ~ hp, data = mtcars) Adds correlation line</p>
+<p>Includes Pearson’s r</p>
+<p>8.2 Repeated Measures (Paneling)</p>
+<p>flexplot(score ~ time + condition, data = repeated_df) Each condition as panel</p>
+<p>Time as predictor</p>
+<p>Fits separate lines</p>
+<p>8.3 Binned Paneling (Continuous Moderators)</p>
+<p>flexplot(CSE_1 ~ Age + Income, data = my.csv.data) Age: X-axis</p>
+<p>Income: Panel bins (equal-width)</p>
+<p>Visualizes moderation effects</p>
+<p>8.4 Jitter, Transparency, Point Customization</p>
+<p>flexplot(CSE_1 ~ Age + Gender, data = my.csv.data, jitter = 0.3, alpha = 0.5, point.size = 2) 9. Interactive Plots and R Markdown Integration</p>
+<p>install.packages(“plotly”) library(plotly) p &lt;- flexplot(mpg ~ wt + cyl, data = mtcars) ggplotly(p) # Adds interactivity Quarto Embedding markdown</p>
+<p>flexplot(CSE_1 ~ Gender, data = my.csv.data)</p>
+<hr>
+<section id="whats-next-in-part-3" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="whats-next-in-part-3"><span class="header-section-number">15.1</span> 🧠 What’s Next in Part 3?</h2>
 <ul>
-<li>Graph creation<br>
-</li>
-<li>Data visualization tools<br>
-</li>
-<li>Advanced statistical operations in GUI</li>
+<li>📈 Full-scale simulation for effect size</li>
+<li>🧪 Reproducible workflows</li>
+<li>🧰 Custom function design</li>
+<li>📘 Summary + export instructions</li>
 </ul>
+<p>This final section includes:</p>
+<p>📊 Simulation for effect size</p>
+<p>🧪 Custom model visuals</p>
+<p>📦 Reproducible workflows</p>
+<p>📋 Summary + rendering/export notes</p>
+<hr>
+</section>
+<section id="simulation-effect-size-and-visual-inference" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="simulation-effect-size-and-visual-inference"><span class="header-section-number">15.2</span> 10. Simulation: Effect Size and Visual Inference</h2>
+<section id="simulate-cohens-d-with-flexplot" class="level3" data-number="15.2.1">
+<h3 data-number="15.2.1" class="anchored" data-anchor-id="simulate-cohens-d-with-flexplot"><span class="header-section-number">15.2.1</span> 10.1 Simulate Cohen’s d with Flexplot</h3>
+<p>set.seed(123) group1 &lt;- rnorm(50, mean = 5, sd = 1) group2 &lt;- rnorm(50, mean = 6.2, sd = 1)</p>
+<p>group &lt;- factor(rep(c(“A”, “B”), each = 50)) score &lt;- c(group1, group2)</p>
+<p>sim_df &lt;- data.frame(group, score)</p>
+<p>library(lsr) cohensD(score ~ group, data = sim_df) # Should return d ≈ 1.2</p>
+<p>flexplot(score ~ group, data = sim_df) 10.2 Power and Confidence Visualization</p>
+<p>library(pwr) pwr.t.test(d = 0.8, power = 0.8, sig.level = 0.05, type = “two.sample”) 10.3 Monte Carlo Effect Size Estimation</p>
+<p>sim_d &lt;- replicate(1000, { g1 &lt;- rnorm(30, 5, 1) g2 &lt;- rnorm(30, 6, 1) cohensD(g1, g2) })</p>
+<p>hist(sim_d, breaks = 50, col = “lightblue”, main = “Simulated Cohen’s d Distribution”) abline(v = mean(sim_d), col = “red”) 11. Visual Inference in Teaching 🎓 Overlay Raw + Model Together</p>
+<p>flexplot(mpg ~ wt + cyl, data = mtcars) Cyl = Panel</p>
+<p>Gray slope = overall</p>
+<p>Color slope = per panel</p>
+<p>R² and p-values appear below</p>
+<ol start="12" type="1">
+<li>Workflow: Reproducible Visual Analytics in R 12.1 Data Import</li>
+</ol>
+<p>df &lt;- read.csv(“CSE_scores.csv”) str(df) 12.2 Visualization Plan Start with flexplot()</p>
+<p>Panel by categorical moderators</p>
+<p>Add continuous predictors</p>
+<p>Use added.plot() to show incremental effect</p>
+<p>Report both visualization + model summary</p>
+<p>12.3 R Markdown Report markdown</p>
+<p>library(flexplot) flexplot(score ~ gender + age, data = df)</p>
+<hr>
+</section>
+</section>
+<section id="model-summary-with-visual-numeric-layers" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="model-summary-with-visual-numeric-layers"><span class="header-section-number">15.3</span> 13. Model Summary with Visual + Numeric Layers</h2>
+<p>model &lt;- lm(CSE_1 ~ CSE_2 + Age + Gender, data = my.csv.data) summary(model)</p>
+<p>added.plot(model) # Visual version of unique effect 14. Combining flexplot with ggplot2</p>
+<p>p1 &lt;- flexplot(CSE_1 ~ CSE_2 + Gender, data = my.csv.data) p2 &lt;- ggplot(my.csv.data, aes(CSE_2, CSE_1)) + geom_point() + geom_smooth(method = “lm”)</p>
+<p>cowplot::plot_grid(p1, p2, labels = c(“Flexplot”, “GGplot”)) 15. Summary Concept Tool Used Effect Size cohensD() from lsr Graphical Modeling flexplot() Simulation Monte Carlo Association Plot Slope Panels Influence Plot added.plot() Interactive Graphs ggplotly()</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1057,14 +842,11 @@ Statistics is the science of collecting, analyzing, interpreting, and presenting
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./week7.html" class="pagination-link" aria-label="Week 7">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week1.html" class="pagination-link" aria-label="Week 1">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 1</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
