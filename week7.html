@@ -215,21 +215,19 @@ window.Quarto = {
   <ul>
   <li><a href="#expected-value-basics" id="toc-expected-value-basics" class="nav-link" data-scroll-target="#expected-value-basics"><span class="header-section-number">8.7.1</span> 4.1 Expected Value Basics</a></li>
   </ul></li>
-  <li><a href="#marginal-px" id="toc-marginal-px" class="nav-link" data-scroll-target="#marginal-px"><span class="header-section-number">9</span> Marginal P(X)</a></li>
-  <li><a href="#marginal-py" id="toc-marginal-py" class="nav-link" data-scroll-target="#marginal-py"><span class="header-section-number">10</span> Marginal P(Y)</a></li>
-  <li><a href="#example-of-forecast-in-time-series" id="toc-example-of-forecast-in-time-series" class="nav-link" data-scroll-target="#example-of-forecast-in-time-series"><span class="header-section-number">11</span> Example of forecast in time series</a>
+  <li><a href="#marginal-px" id="toc-marginal-px" class="nav-link" data-scroll-target="#marginal-px"><span class="header-section-number">8.8</span> Marginal P(X)</a></li>
+  <li><a href="#marginal-py" id="toc-marginal-py" class="nav-link" data-scroll-target="#marginal-py"><span class="header-section-number">8.9</span> Marginal P(Y)</a></li>
+  <li><a href="#example-of-forecast-in-time-series" id="toc-example-of-forecast-in-time-series" class="nav-link" data-scroll-target="#example-of-forecast-in-time-series"><span class="header-section-number">8.10</span> Example of forecast in time series</a></li>
+  <li><a href="#advanced-statistical-concepts" id="toc-advanced-statistical-concepts" class="nav-link" data-scroll-target="#advanced-statistical-concepts"><span class="header-section-number">8.11</span> 7. Advanced Statistical Concepts</a>
   <ul>
-  <li><a href="#advanced-statistical-concepts" id="toc-advanced-statistical-concepts" class="nav-link" data-scroll-target="#advanced-statistical-concepts"><span class="header-section-number">11.1</span> 7. Advanced Statistical Concepts</a>
+  <li><a href="#stationarity-and-unit-root-testing" id="toc-stationarity-and-unit-root-testing" class="nav-link" data-scroll-target="#stationarity-and-unit-root-testing"><span class="header-section-number">8.11.1</span> 7.1 Stationarity and Unit Root Testing</a>
   <ul class="collapse">
-  <li><a href="#stationarity-and-unit-root-testing" id="toc-stationarity-and-unit-root-testing" class="nav-link" data-scroll-target="#stationarity-and-unit-root-testing"><span class="header-section-number">11.1.1</span> 7.1 Stationarity and Unit Root Testing</a>
-  <ul class="collapse">
-  <li><a href="#unit-root-augmented-dickey-fuller-adf-test" id="toc-unit-root-augmented-dickey-fuller-adf-test" class="nav-link" data-scroll-target="#unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">11.1.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</a></li>
+  <li><a href="#unit-root-augmented-dickey-fuller-adf-test" id="toc-unit-root-augmented-dickey-fuller-adf-test" class="nav-link" data-scroll-target="#unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">8.11.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</a></li>
   </ul></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#step-1-stationarity-check" id="toc-step-1-stationarity-check" class="nav-link" data-scroll-target="#step-1-stationarity-check"><span class="header-section-number">12</span> Step 1: Stationarity check</a></li>
-  <li><a href="#step-2-model-selection" id="toc-step-2-model-selection" class="nav-link" data-scroll-target="#step-2-model-selection"><span class="header-section-number">13</span> Step 2: Model Selection</a></li>
-  <li><a href="#step-3-forecasting" id="toc-step-3-forecasting" class="nav-link" data-scroll-target="#step-3-forecasting"><span class="header-section-number">14</span> Step 3: Forecasting</a></li>
+  <li><a href="#step-1-stationarity-check" id="toc-step-1-stationarity-check" class="nav-link" data-scroll-target="#step-1-stationarity-check"><span class="header-section-number">8.12</span> Step 1: Stationarity check</a></li>
+  <li><a href="#step-2-model-selection" id="toc-step-2-model-selection" class="nav-link" data-scroll-target="#step-2-model-selection"><span class="header-section-number">8.13</span> Step 2: Model Selection</a></li>
+  <li><a href="#step-3-forecasting" id="toc-step-3-forecasting" class="nav-link" data-scroll-target="#step-3-forecasting"><span class="header-section-number">8.14</span> Step 3: Forecasting</a></li>
   </ul>
 </nav>
     </div>
@@ -327,12 +325,12 @@ E(X) = \sum x_i \cdot P(x_i)
 <p>colnames(joint_pmf) &lt;- c(“Y=0”, “Y=1”, “Y=2”, “Y=3”) rownames(joint_pmf) &lt;- c(“X=0”, “X=1”, “X=2”, “X=3”) print(joint_pmf) 4.4 Marginal Probabilities</p>
 </section>
 </section>
-<section id="marginal-px" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Marginal P(X)</h1>
+<section id="marginal-px" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="marginal-px"><span class="header-section-number">8.8</span> Marginal P(X)</h2>
 <p>rowSums(joint_pmf)</p>
 </section>
-<section id="marginal-py" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Marginal P(Y)</h1>
+<section id="marginal-py" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="marginal-py"><span class="header-section-number">8.9</span> Marginal P(Y)</h2>
 <p>colSums(joint_pmf)</p>
 <ol start="5" type="1">
 <li>Discrete Distributions 5.1 Hypergeometric Distribution</li>
@@ -353,8 +351,8 @@ E(X) = \sum x_i \cdot P(x_i)
 <p>ggplot(df, aes(x = value, fill = dist)) + geom_density(alpha = 0.5) + labs(title = “Bayesian Updating”) 6.2 Forecasting in Finance and Healthcare Finance: Time series of stock returns</p>
 <p>Healthcare: Spread of diseases</p>
 </section>
-<section id="example-of-forecast-in-time-series" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Example of forecast in time series</h1>
+<section id="example-of-forecast-in-time-series" class="level2" data-number="8.10">
+<h2 data-number="8.10" class="anchored" data-anchor-id="example-of-forecast-in-time-series"><span class="header-section-number">8.10</span> Example of forecast in time series</h2>
 <p>library(forecast) fit &lt;- auto.arima(AirPassengers) forecast_vals &lt;- forecast(fit, h = 24) plot(forecast_vals, main = “AirPassengers Forecast”) 6.3 Effect Size Estimation</p>
 <p>install.packages(“lsr”) library(lsr)</p>
 <p>cohensD(c(3.2, 3.4, 3.5), mu = 3.0) Effect size values:</p>
@@ -368,13 +366,14 @@ E(X) = \sum x_i \cdot P(x_i)
 <p>🧠 Advanced diagnostics</p>
 <p>📋 Summary &amp; references</p>
 <hr>
-<section id="advanced-statistical-concepts" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="advanced-statistical-concepts"><span class="header-section-number">11.1</span> 7. Advanced Statistical Concepts</h2>
-<section id="stationarity-and-unit-root-testing" class="level3" data-number="11.1.1">
-<h3 data-number="11.1.1" class="anchored" data-anchor-id="stationarity-and-unit-root-testing"><span class="header-section-number">11.1.1</span> 7.1 Stationarity and Unit Root Testing</h3>
+</section>
+<section id="advanced-statistical-concepts" class="level2" data-number="8.11">
+<h2 data-number="8.11" class="anchored" data-anchor-id="advanced-statistical-concepts"><span class="header-section-number">8.11</span> 7. Advanced Statistical Concepts</h2>
+<section id="stationarity-and-unit-root-testing" class="level3" data-number="8.11.1">
+<h3 data-number="8.11.1" class="anchored" data-anchor-id="stationarity-and-unit-root-testing"><span class="header-section-number">8.11.1</span> 7.1 Stationarity and Unit Root Testing</h3>
 <p>A <strong>stationary time series</strong> has constant mean and variance over time. Its essential for: - Forecasting - Valid modeling - Avoiding spurious regression</p>
-<section id="unit-root-augmented-dickey-fuller-adf-test" class="level4" data-number="11.1.1.1">
-<h4 data-number="11.1.1.1" class="anchored" data-anchor-id="unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">11.1.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</h4>
+<section id="unit-root-augmented-dickey-fuller-adf-test" class="level4" data-number="8.11.1.1">
+<h4 data-number="8.11.1.1" class="anchored" data-anchor-id="unit-root-augmented-dickey-fuller-adf-test"><span class="header-section-number">8.11.1.1</span> Unit Root: Augmented Dickey-Fuller (ADF) Test</h4>
 <p>library(tseries) set.seed(42) x &lt;- cumsum(rnorm(100)) # non-stationary random walk plot.ts(x, main = “Simulated Random Walk”)</p>
 <p>adf.test(x) # Likely non-stationary (p &gt; 0.05) 7.2 Detrending Time Series</p>
 <p>t &lt;- time(x) trend_model &lt;- lm(x ~ t) resid_trend &lt;- resid(trend_model) plot(resid_trend, main = “Detrended Series”) adf.test(resid_trend) # Residuals should now be stationary 7.3 ARIMA Modeling Autoregressive Integrated Moving Average AR(p): Autoregression</p>
@@ -385,17 +384,16 @@ E(X) = \sum x_i \cdot P(x_i)
 </section>
 </section>
 </section>
-</section>
-<section id="step-1-stationarity-check" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Step 1: Stationarity check</h1>
+<section id="step-1-stationarity-check" class="level2" data-number="8.12">
+<h2 data-number="8.12" class="anchored" data-anchor-id="step-1-stationarity-check"><span class="header-section-number">8.12</span> Step 1: Stationarity check</h2>
 <p>adf.test(tsdata) # May need differencing</p>
 </section>
-<section id="step-2-model-selection" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Step 2: Model Selection</h1>
+<section id="step-2-model-selection" class="level2" data-number="8.13">
+<h2 data-number="8.13" class="anchored" data-anchor-id="step-2-model-selection"><span class="header-section-number">8.13</span> Step 2: Model Selection</h2>
 <p>fit &lt;- auto.arima(tsdata) summary(fit)</p>
 </section>
-<section id="step-3-forecasting" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Step 3: Forecasting</h1>
+<section id="step-3-forecasting" class="level2" data-number="8.14">
+<h2 data-number="8.14" class="anchored" data-anchor-id="step-3-forecasting"><span class="header-section-number">8.14</span> Step 3: Forecasting</h2>
 <p>fc &lt;- forecast(fit, h = 12) plot(fc) 7.4 ACF &amp; PACF Plots Used for identifying model orders:</p>
 <p>acf(diff(log(AirPassengers))) pacf(diff(log(AirPassengers))) 7.5 Residual Diagnostics</p>
 <p>checkresiduals(fit) # From forecast package Box.test(residuals(fit), lag = 20, type = “Ljung-Box”) 7.6 Forecast Accuracy</p>
