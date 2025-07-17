@@ -38,17 +38,17 @@ Effect size quantifies the **magnitude** of the difference, independent of sampl
 
 ### 📌 R Code Example (Cohen’s d)
 
-# Load required package
+## Load required package
 install.packages("lsr")
 library(lsr)
 
-# Load your data (CSV format)
+## Load your data (CSV format)
 my.csv.data <- read.csv("yourdata.csv")
 
-# Independent groups Cohen's d
+## Independent groups Cohen's d
 lsr::cohensD(my.csv.data[["CSE_1"]], my.csv.data[["CSE_2"]])
 
-# One-sample mean vs population mean
+## One-sample mean vs population mean
 lsr::cohensD(my.csv.data[["CSE_1"]], mu = 3.9)
 🧠 Practical Use:
 Effect size helps you understand practical significance, especially in behavioral research where p-values alone are insufficient.
@@ -93,7 +93,7 @@ Useful for outlier detection and distribution shape
 
 4.2 Bivariate Continuous vs Categorical
 
-# Visualizing continuous DV vs categorical IV
+## Visualizing continuous DV vs categorical IV
 flexplot(CSE_1 ~ Gender, data = my.csv.data)
 Automatically creates beeswarm or violin plots
 
@@ -121,10 +121,10 @@ Helps uncover interaction
 
 4.5 Logistic Regression Visualization
 
-# Convert pass/fail variable to factor
+## Convert pass/fail variable to factor
 my.csv.data$Pass <- as.factor(my.csv.data$Pass)
 
-# Logistic visualization
+## Logistic visualization
 flexplot(Pass ~ Hours, data = my.csv.data, family = "binomial")
 5. RKWard vs RStudio: Interface & Functionality
 Feature	RKWard	RStudio

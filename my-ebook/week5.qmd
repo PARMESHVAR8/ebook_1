@@ -20,18 +20,6 @@ bibliography: references.bib
 ---
 
 
-## 1. Introduction
-
-Welcome to **Week 5** of _Basic Statistics using GUI-R (RKWard)_, where we cover **relationship testing**, **correlation**, **regression**, **ANOVA**, and related diagnostics in **depth**, using both theory and R-based implementation.
-
-This book is designed to:
-
-- Clarify statistical concepts visually
-- Use real data simulations
-- Empower you with reproducible R/RKWard workflows
-- Prepare you to run statistical diagnostics and build interpretations
-
----
 
 ## 2. Lecture 24 – Deep Dive: Correlation
 
@@ -271,7 +259,7 @@ Independence	Design-level assurance	Design phase
 # Normality check
 shapiro.test(residuals(anova_model))
 
-# Homogeneity check
+## Homogeneity check
 library(car)
 leveneTest(score ~ group, data = data)
 5.7 Visualizing F-Distribution
@@ -296,9 +284,9 @@ summary(aov_model)
 ➡️ End of Part 2/4. Part 3 includes Regression (Simple, Multiple, Non-linear), VIF, Residuals, and Advanced Modeling
 
 
-# 6. Lecture 28 – Simple Linear Regression
+## 6. Lecture 28 – Simple Linear Regression
 
-## 6.1 Theory Refresher
+### 6.1 Theory Refresher
 
 Linear regression predicts a **dependent variable (Y)** using an **independent variable (X)**.
 
@@ -316,7 +304,7 @@ Where:
 
 ---
 
-## 6.2 Example in R
+### 6.2 Example in R
 
 ```{r}
 study_time <- c(2, 3, 4, 5, 6)
@@ -372,7 +360,7 @@ VIF > 10 → serious problem
 avPlots(multi_model)
 7.4 Plot 3D Regression Plane
 
-## install.packages("scatterplot3d")
+### install.packages("scatterplot3d")
 library(scatterplot3d)
 scatterplot3d(df$Hours, df$Sleep, df$Exam, highlight.3d=TRUE, type="h",
               angle=55, color="darkgreen", pch=16)
@@ -420,13 +408,13 @@ residuals <- actual - pred
 mse <- mean(residuals^2)
 rmse <- sqrt(mse)
 
-# 10. Lecture 32 – Logistic Regression
+## 10. Lecture 32 – Logistic Regression
 
-## 10.1 When to Use
+### 10.1 When to Use
 
 Logistic regression is used when the **dependent variable is categorical** (typically binary: 0/1, Yes/No, Pass/Fail).
 
-## 10.2 Logistic Function
+### 10.2 Logistic Function
 
 $$
 P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X)}}
@@ -434,7 +422,7 @@ $$
 
 ---
 
-## 10.3 R Example: Predicting Admission
+### 10.3 R Example: Predicting Admission
 
 ```{r}
 df <- data.frame(

@@ -7,21 +7,21 @@ book:
   author: "Parmeshvar"
   date: "7/6/2025"
   chapters:
-    - index.qmd 
     # - part: Preface
     #   chapters:
     #     - why-read.qmd
     #     - Developing.qmd
     # - lec_1.qmd
     # - introduction-to-statistics.qmd
-    - week1.qmd
-    - week2.qmd
-    - week3.qmd
-    - week4.qmd
-    - week5.qmd
-    # - week6.qmd
-    - week7.qmd
-    - week8.qmd
+    - index.qmd 
+    # - week1.qmd
+    # - week2.qmd
+    # - week3.qmd
+    # - week4.qmd
+    # - week5.qmd
+    - week6.qmd
+    # - week7.qmd
+    # - week8.qmd
 # /    - basic-statistics5.qmd
 #     - basic-statistics6.qmd
 #     - basic-statistics7.qmd

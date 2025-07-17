@@ -28,7 +28,7 @@ This eBook focuses on key statistical topics covered in **Week 7** of the course
 
 ### 2.1 Overview of Time Series Data
 
-# Load and visualize example data
+## Load and visualize example data
 install.packages("TSA")
 library(TSA)
 data(tempdub)
@@ -114,20 +114,20 @@ print(c(MAE = MAE, RMSE = RMSE, MAPE = MAPE))
 3.1 Conditional Probability
 If $P(B) > 0$, then:
 
-# Simulate joint probability
+## Simulate joint probability
 joint <- matrix(c(0.1, 0.2, 0.2, 0.5), nrow = 2)
 P_A_given_B <- joint[1,2] / (joint[1,2] + joint[2,2])
 print(P_A_given_B)
 3.2 Bayes’ Theorem
 
-# Prior probabilities
+## Prior probabilities
 P_user <- 0.05
 P_pos_given_user <- 0.9
 P_neg_given_nonuser <- 0.8
 P_nonuser <- 1 - P_user
 P_pos_given_nonuser <- 1 - P_neg_given_nonuser
 
-# Bayes' formula
+## Bayes' formula
 P_user_given_pos <- (P_pos_given_user * P_user) / 
   ((P_pos_given_user * P_user) + (P_pos_given_nonuser * P_nonuser))
 
